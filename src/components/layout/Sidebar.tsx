@@ -33,8 +33,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => 
 
   const navItems = [
     { id: 'home', label: 'Ana Sayfa', icon: Home },
-    { id: 'practice', label: 'Test Çöz', icon: Sparkles, badge: '860 Soru', color: 'text-teal-400' },
-    { id: 'cheat-sheet', label: '⚡ Sınav Hapları (10 Dk)', icon: Zap, badge: 'Hızlı Tekrar', color: 'text-amber-300' },
+    { id: 'practice', label: 'Test Çöz', icon: Sparkles, badge: '860 Soru', color: 'text-teal-600 dark:text-teal-400' },
+    { id: 'cheat-sheet', label: '⚡ Sınav Hapları (10 Dk)', icon: Zap, badge: 'Hızlı Tekrar', color: 'text-amber-600 dark:text-amber-400' },
     { id: 'flashcards', label: 'Öğrenme Kartları', icon: Layers, badge: '400 Kart' },
     { id: 'study-notes', label: 'Konu Anlatımları', icon: FileText, badge: '32 Bölüm' },
     { id: 'mistakes', label: 'Yanlışlarım Defteri', icon: AlertTriangle, count: mistakeCount, color: 'text-rose-500 dark:text-rose-400' },

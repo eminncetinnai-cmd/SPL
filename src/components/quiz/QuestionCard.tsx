@@ -116,7 +116,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           const isPracticeMode = mode === 'practice';
 
           let buttonStyle = 'bg-white hover:bg-slate-50 border-slate-200 text-slate-800 hover:border-slate-300 shadow-sm dark:bg-fintech-card dark:hover:bg-fintech-cardHover dark:border-fintech-border dark:text-slate-200';
-          let badgeStyle = 'bg-slate-100 text-slate-700 border-slate-300 font-bold dark:bg-slate-800 dark:text-slate-400 dark:border-slate-700';
+          let badgeStyle = 'bg-slate-100 text-slate-800 border-slate-300 font-bold dark:bg-slate-800 dark:text-slate-200 dark:border-slate-600';
 
           if (isPracticeMode && isLocked) {
             if (isCorrect) {

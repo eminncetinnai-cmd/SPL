@@ -14,9 +14,11 @@ import {
   Flame,
   ShieldCheck,
   Building2,
-  Coins
+  Coins,
+  Download
 } from 'lucide-react';
 import { ModuleId } from '../types/exam';
+import { generateCheatSheetPdf } from '../utils/cheatSheetPdfGenerator';
 
 interface CheatSheetPageProps {
   onNavigate: (page: string, params?: any) => void;
@@ -1851,6 +1853,48 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
     filterItem(`${t.myth} ${t.reality} ${t.whyImportant}`, t.moduleId)
   );
 
+  const filteredTotal = filteredDurations.length + filteredRatios.length + filteredComparisons.length + filteredTraps.length;
+  const isFilterActive = moduleFilter !== 'all' || searchQuery.trim() !== '' || activeTab !== 'all';
+
+  const handleDownloadPdf = (scope: 'all' | 'filtered' = 'all') => {
+    if (scope === 'all') {
+      generateCheatSheetPdf({
+        durations: DURATIONS,
+        ratios: RATIOS,
+        comparisons: COMPARISONS,
+        traps: TRAPS,
+        title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
+        filterTitle: 'Tüm Müfredat ve 4 Temel Modül (1001, 1003, 1005, 1012) - 115 Altın Hap Bilgi',
+      });
+    } else {
+      const moduleNameMap: Record<string, string> = {
+        all: 'Tüm Dersler',
+        '1001': '1001 Sermaye Piyasası Mevzuatı',
+        '1003': '1003 Sermaye Piyasası Araçları 1',
+        '1005': '1005 Yatırım Kuruluşları',
+        '1012': '1012 Takas, Saklama ve Operasyon',
+      };
+      const currentModule = moduleNameMap[moduleFilter] || moduleFilter;
+      const searchDesc = searchQuery.trim() ? ` / Arama: "${searchQuery.trim()}"` : '';
+      const categoryMap: Record<string, string> = {
+        all: 'Tüm Kategoriler',
+        durations: 'Kanuni Süreler',
+        ratios: 'Kritik Eşikler ve Rakamlar',
+        comparisons: 'Karıştırılan İkili Kavramlar',
+        traps: 'Ölümcül Sınav Tuzakları',
+      };
+      const catTitle = categoryMap[activeTab] || activeTab;
+      generateCheatSheetPdf({
+        durations: activeTab === 'all' || activeTab === 'durations' ? filteredDurations : [],
+        ratios: activeTab === 'all' || activeTab === 'ratios' ? filteredRatios : [],
+        comparisons: activeTab === 'all' || activeTab === 'comparisons' ? filteredComparisons : [],
+        traps: activeTab === 'all' || activeTab === 'traps' ? filteredTraps : [],
+        title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
+        filterTitle: `Özel Filtre: ${currentModule} • ${catTitle}${searchDesc} (${filteredTotal} Madde)`,
+      });
+    }
+  };
+
   return (
     <div className="space-y-8 animate-fadeIn pb-16">
       {/* Header Banner */}
@@ -1871,21 +1915,35 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
 
           {/* Quick Actions */}
           <div className="flex flex-wrap items-center gap-3 shrink-0">
+            {/* Primary PDF Download Button */}
             <button
-              onClick={() => window.print()}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-border/50 border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-200 text-xs font-bold transition-all shadow-sm"
-              title="Sayfayı yazdır veya PDF olarak kaydet"
+              onClick={() => handleDownloadPdf('all')}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 text-xs font-black shadow-md shadow-teal-500/25 transition-all active:scale-95"
+              title="115 Altın Hap Bilgiyi yazdırılabilir A4 PDF olarak hazırla ve indir"
             >
-              <Printer className="w-4 h-4 text-slate-500 dark:text-slate-400" />
-              <span>Yazdır / PDF</span>
+              <Download className="w-4 h-4 text-slate-950 stroke-[2.5]" />
+              <span>PDF İndir (115 Madde)</span>
             </button>
 
+            {/* Filtered Download Button (only shown when filtered) */}
+            {isFilterActive && (
+              <button
+                onClick={() => handleDownloadPdf('filtered')}
+                className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-amber-100 hover:bg-amber-200 dark:bg-amber-500/20 dark:hover:bg-amber-500/30 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 text-xs font-bold transition-all shadow-sm active:scale-95"
+                title="Sadece ekranda listelenen maddeleri PDF olarak indir"
+              >
+                <Download className="w-3.5 h-3.5 text-amber-700 dark:text-amber-400" />
+                <span>Seçili Görünümü İndir ({filteredTotal})</span>
+              </button>
+            )}
+
+            {/* Test CTA */}
             <button
-              onClick={() => onNavigate('practice', { initialSourceFilter: 'genel' })}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 text-xs font-black shadow-md shadow-teal-500/20 transition-all active:scale-95"
+              onClick={() => onNavigate('practice', { initialFilterMode: 'unseen' })}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-border/50 border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-200 text-xs font-bold transition-all shadow-sm active:scale-95"
             >
-              <Play className="w-4 h-4 fill-slate-950" />
-              <span>Bu Bilgilerle Test Çöz</span>
+              <Play className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400 fill-teal-600 dark:fill-teal-400" />
+              <span>Çözülmemiş Sorular</span>
             </button>
           </div>
         </div>
@@ -2186,21 +2244,29 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
       <div className="rounded-2xl bg-gradient-to-r from-teal-50 via-slate-50 to-white dark:from-teal-500/10 dark:via-fintech-card dark:to-slate-900 border border-teal-200 dark:border-teal-500/30 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
         <div>
           <h4 className="text-sm font-black text-slate-900 dark:text-white">Sınav Bilgilerini Tazeledin mi?</h4>
-          <p className="text-xs text-slate-600 dark:text-slate-400">Şimdi çıkmış sınav sorularıyla veya genel soru havuzuyla gerçek bir deneme çöz.</p>
+          <p className="text-xs text-slate-600 dark:text-slate-400">115 altın hap bilgiyi PDF olarak saklayabilir veya çözülmemiş sorularla hemen pratik yapabilirsin.</p>
         </div>
 
-        <div className="flex items-center gap-3 w-full sm:w-auto">
+        <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
           <button
-            onClick={() => onNavigate('past-exams')}
-            className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-amber-100 dark:bg-amber-500/15 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 hover:bg-amber-200 text-xs font-bold transition-all shadow-sm"
+            onClick={() => handleDownloadPdf('all')}
+            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface border border-slate-300 dark:border-fintech-border text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-fintech-card text-xs font-bold transition-all shadow-sm"
           >
-            🎯 Çıkmış Sorular (110)
+            <Download className="w-4 h-4 text-slate-600 dark:text-slate-300" />
+            <span>PDF İndir</span>
           </button>
           <button
-            onClick={() => onNavigate('practice', { initialSourceFilter: 'genel' })}
-            className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 text-slate-950 text-xs font-black shadow-md shadow-teal-500/20 hover:from-teal-400 hover:to-emerald-400 transition-all"
+            onClick={() => onNavigate('practice', { initialFilterMode: 'unseen' })}
+            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-100 dark:bg-amber-500/15 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 hover:bg-amber-200 text-xs font-bold transition-all shadow-sm"
           >
-            📚 Genel Havuz (540)
+            <Play className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
+            <span>Çözülmemiş Soruları Çöz</span>
+          </button>
+          <button
+            onClick={() => onNavigate('practice')}
+            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 text-slate-950 text-xs font-black shadow-md shadow-teal-500/20 hover:from-teal-400 hover:to-emerald-400 transition-all"
+          >
+            <span>Rastgele Test Başlat (860)</span>
           </button>
         </div>
       </div>

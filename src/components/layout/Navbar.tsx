@@ -162,118 +162,111 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden pt-4 pb-2 border-t border-fintech-border mt-3 space-y-3 animate-slide-up">
+        <div className="md:hidden pt-4 pb-2 border-t border-slate-200 dark:border-fintech-border mt-3 space-y-3 animate-slide-up">
           <div className="grid grid-cols-2 gap-2 text-xs font-medium">
             <button
               onClick={() => handleMobileNav('home')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-teal-300 text-left font-bold"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-teal-800 dark:text-teal-300 text-left font-bold shadow-xs"
             >
-              <Home className="w-4 h-4 text-teal-400" />
+              <Home className="w-4 h-4 text-teal-600 dark:text-teal-400" />
               <span>Ana Sayfa</span>
             </button>
             <button
               onClick={() => handleMobileNav('cheat-sheet')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-300 text-left font-bold"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-amber-50 dark:bg-amber-500/20 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 text-left font-bold shadow-xs"
             >
-              <Zap className="w-4 h-4 text-amber-400 fill-amber-400" />
+              <Zap className="w-4 h-4 text-amber-600 dark:text-amber-400 fill-amber-500 dark:fill-amber-400" />
               <span>⚡ Sınav Hapları (10 Dk)</span>
             </button>
             <button
-              onClick={() => handleMobileNav('past-exams')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-300 text-left font-bold"
+              onClick={() => handleMobileNav('practice')}
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-teal-800 dark:text-teal-300 text-left font-bold shadow-xs"
             >
-              <Award className="w-4 h-4 text-amber-400" />
-              <span>🎯 Çıkmış Sınav Grubu</span>
+              <Sparkles className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+              <span>Test Çöz (860 Soru)</span>
             </button>
             <button
               onClick={() => handleMobileNav('simulation-prep')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-teal-300 text-left font-bold"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left font-bold shadow-xs"
             >
-              <Sparkles className="w-4 h-4 text-teal-400" />
+              <Award className="w-4 h-4 text-amber-500" />
               <span>Sınav Simülasyonu</span>
             </button>
             <button
               onClick={() => handleMobileNav('flashcards')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-teal-300 text-left font-bold"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left font-bold shadow-xs"
             >
-              <Sparkles className="w-4 h-4 text-teal-400" />
+              <Sparkles className="w-4 h-4 text-purple-600 dark:text-purple-400" />
               <span>Öğrenme Kartları (400)</span>
             </button>
             <button
               onClick={() => handleMobileNav('study-notes')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-slate-200 text-left"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left shadow-xs"
             >
-              <FileText className="w-4 h-4 text-cyan-400" />
+              <FileText className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
               <span>Konu Anlatımları</span>
             </button>
             <button
               onClick={() => handleMobileNav('mistakes')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-rose-300 text-left"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-rose-800 dark:text-rose-300 text-left shadow-xs"
             >
-              <AlertTriangle className="w-4 h-4 text-rose-400" />
+              <AlertTriangle className="w-4 h-4 text-rose-600 dark:text-rose-400" />
               <span>Yanlışlarım ({mistakeCount})</span>
             </button>
             <button
               onClick={() => handleMobileNav('bookmarks')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-amber-300 text-left"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-amber-800 dark:text-amber-300 text-left shadow-xs"
             >
-              <Star className="w-4 h-4 text-amber-400" />
+              <Star className="w-4 h-4 text-amber-500 dark:text-amber-400" />
               <span>Yıldızlılar ({bookmarkCount})</span>
             </button>
             <button
               onClick={() => handleMobileNav('explorer')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-slate-200 text-left"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left shadow-xs"
             >
-              <Search className="w-4 h-4 text-purple-400" />
-              <span>540 Soru Bankası</span>
+              <Search className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+              <span>Soru Havuzu Ara</span>
             </button>
             <button
               onClick={() => handleMobileNav('dashboard')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-slate-200 text-left"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left shadow-xs"
             >
-              <BarChart3 className="w-4 h-4 text-emerald-400" />
+              <BarChart3 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
               <span>İstatistik & Grafik</span>
-            </button>
-            <button
-              onClick={() => handleMobileNav('settings')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-fintech-card text-slate-200 text-left"
-            >
-              <Settings className="w-4 h-4 text-slate-400" />
-              <span>Ayarlar</span>
             </button>
           </div>
 
-          <div className="pt-2 border-t border-fintech-border/60">
-            <p className="text-[10px] font-mono uppercase tracking-wider text-slate-400 font-bold mb-2">
+          <div className="pt-2 border-t border-slate-200 dark:border-fintech-border/60">
+            <p className="text-[10px] font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold mb-2">
               Ders Pratik Testleri
             </p>
             <div className="grid grid-cols-2 gap-2 text-xs">
               <button
                 onClick={() => handleMobileNav('module-quiz-prep', { moduleId: '1001' })}
-                className="flex items-center gap-1.5 p-2 rounded-lg bg-emerald-500/10 text-emerald-300 text-left"
+                className="flex items-center gap-1.5 p-2 rounded-lg bg-emerald-50 text-emerald-900 border border-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-300 dark:border-emerald-500/30 text-left font-medium"
               >
-                <Scale className="w-3.5 h-3.5" />
+                <Scale className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                 <span>1001 Mevzuat</span>
               </button>
               <button
                 onClick={() => handleMobileNav('module-quiz-prep', { moduleId: '1003' })}
-                className="flex items-center gap-1.5 p-2 rounded-lg bg-cyan-500/10 text-cyan-300 text-left"
+                className="flex items-center gap-1.5 p-2 rounded-lg bg-cyan-50 text-cyan-900 border border-cyan-200 dark:bg-cyan-500/10 dark:text-cyan-300 dark:border-cyan-500/30 text-left font-medium"
               >
-                <Coins className="w-3.5 h-3.5" />
+                <Coins className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
                 <span>1003 Araçlar</span>
               </button>
               <button
                 onClick={() => handleMobileNav('module-quiz-prep', { moduleId: '1005' })}
-                className="flex items-center gap-1.5 p-2 rounded-lg bg-purple-500/10 text-purple-300 text-left"
+                className="flex items-center gap-1.5 p-2 rounded-lg bg-purple-50 text-purple-900 border border-purple-200 dark:bg-purple-500/10 dark:text-purple-300 dark:border-purple-500/30 text-left font-medium"
               >
-                <Building2 className="w-3.5 h-3.5" />
+                <Building2 className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
                 <span>1005 Yatırım Kur.</span>
               </button>
               <button
                 onClick={() => handleMobileNav('module-quiz-prep', { moduleId: '1012' })}
-                className="flex items-center gap-1.5 p-2 rounded-lg bg-amber-500/10 text-amber-300 text-left"
+                className="flex items-center gap-1.5 p-2 rounded-lg bg-amber-50 text-amber-900 border border-amber-200 dark:bg-amber-500/10 dark:text-amber-300 dark:border-amber-500/30 text-left font-medium"
               >
-                <ShieldCheck className="w-3.5 h-3.5" />
+                <ShieldCheck className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
                 <span>1012 Takas/Saklama</span>
               </button>
             </div>

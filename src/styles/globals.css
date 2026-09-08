@@ -109,24 +109,44 @@ html:not(.dark) .bg-fintech-card .text-slate-400 {
   color: #64748B;
 }
 
-/* Retain crisp white on explicit solid colored buttons */
-html:not(.dark) button.bg-teal-500,
+/* Retain crisp white on solid colored dark buttons unless explicitly set with dark text */
 html:not(.dark) button.bg-teal-600,
-html:not(.dark) button.bg-emerald-500,
 html:not(.dark) button.bg-emerald-600,
 html:not(.dark) button.bg-rose-500,
 html:not(.dark) button.bg-rose-600,
-html:not(.dark) button.bg-amber-500,
-html:not(.dark) button.bg-amber-600,
-html:not(.dark) [class*="bg-gradient-to-"] button,
-html:not(.dark) button[class*="bg-gradient-to-"] {
+html:not(.dark) [class*="bg-gradient-to-"] button:not([class*="text-slate-9"]):not([class*="text-gray-9"]):not([class*="text-black"]),
+html:not(.dark) button[class*="bg-gradient-to-"]:not([class*="text-slate-9"]):not([class*="text-gray-9"]):not([class*="text-black"]) {
   color: #FFFFFF !important;
+}
+
+/* Buttons with text-slate-950 / text-slate-900 must maintain ultra-crisp dark text */
+html button[class*="text-slate-950"],
+html button[class*="text-slate-900"],
+html button[class*="text-slate-950"] *,
+html button[class*="text-slate-900"] * {
+  color: #020617 !important;
 }
 
 html:not(.dark) button[class*="bg-gradient-to-"] span,
 html:not(.dark) button[class*="bg-teal-"] span,
 html:not(.dark) button[class*="bg-emerald-"] span {
   color: inherit;
+}
+
+/* Print optimizations */
+@media print {
+  header,
+  aside,
+  nav,
+  .no-print,
+  button:not(.print-include) {
+    display: none !important;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
 }
 
 /* Glass & Glow adjustments for light mode */
