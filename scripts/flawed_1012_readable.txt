@@ -1,0 +1,641 @@
+ID: q_1012_cikmis_001 | Outlier: False | Giveaway: True
+Text: Bir işlemin borsada eşleştiği anda merkezi takas kuruluşunun piyasa katılımcıları arasına girerek alıcıya karşı satıcı, satıcıya karşı ise alıcı konumuna geçtiği ve işlemin takasının tamamlanmasını garanti ettiği finansal mekanizma hangisidir?
+  A: Brüt Takas Sistemi (len=18)
+  B: Merkezi Karşı Taraf (MKT) (len=25) [CORRECT]
+  C: Kaydi Saklama Sistemi (len=21)
+  D: Ödünç Pay Piyasası (len=18)
+  E: Otomatik Virman (len=15)
+Explanation: 6362 sayılı SPKn m. 78 uyarınca Merkezi Karşı Taraf (MKT); takas kuruluşunun alıcıya karşı satıcı, satıcıya karşı alıcı rolünü üstlenerek takasın tamamlanmasını garanti etmesidir. Türkiye'de bu görevi Takasbank yürütür.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• MKT: Merkezi Karşı Taraf (Central Counterparty - Takas odasının takasın tamamlanmasını mali olarak garanti etmesi)
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+• SPKn: 6362 sayılı Sermaye Piyasası Kanunu
+--------------------------------------------------------------------------------
+ID: q_1012_cikmis_006 | Outlier: False | Giveaway: True
+Text: Merkezi takas kuruluşunun alıcıya karşı satıcı, satıcıya karşı alıcı konumuna geçerek takasın ifasını garanti ettiği mekanizma hangisidir?
+  A: Brüt Takas (len=10)
+  B: Merkezi Karşı Taraf (MKT) (len=25) [CORRECT]
+  C: Kaydi Saklama (len=13)
+  D: Ödünç Sistemi (len=13)
+  E: Serbest Takas (len=13)
+Explanation: 6362 sayılı Kanun m. 78 uyarınca Takasbank'ın alıcıya karşı satıcı, satıcıya karşı alıcı rolünü üstlenmesi MKT mekanizmasıdır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• MKT: Merkezi Karşı Taraf (Central Counterparty - Takas odasının takasın tamamlanmasını mali olarak garanti etmesi)
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+--------------------------------------------------------------------------------
+ID: q_1012_cikmis_007 | Outlier: True | Giveaway: False
+Text: SPKn m. 79 uyarınca düzenlenen 'Takas Kesinliği' ilkesinin en önemli hukuki sonucu nedir?
+  A: Üye kurum iflas etse dahi sisteme iletilen takas emirleri geri alınamaz ve Takasbank teminatları iflas masasına devredilemez. (len=125) [CORRECT]
+  B: İflas halinde takastaki tüm işlemler iptal edilir. (len=50)
+  C: Üye dilediği an takas emrini geri çekebilir. (len=44)
+  D: Teminatlar kamu alacakları için öncelikle haczedilir. (len=53)
+  E: Yalnızca para piyasasında takas kesinliği uygulanır. (len=52)
+Explanation: Takas kesinliği ilkesi gereği takas emirleri geri alınamaz; teminatlar kamu haczi dahil hiçbir hacze konu edilemez ve doğrudan takas yükümlülüğünün ifasında kullanılır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+• SPKn: 6362 sayılı Sermaye Piyasası Kanunu
+--------------------------------------------------------------------------------
+ID: q_1012_cikmis_010 | Outlier: False | Giveaway: True
+Text: Olağandışı fiyat ve miktar hareketleri nedeniyle SPK veya Borsa tarafından brüt takasa alınan bir hisse senedinde hangi kural geçerlidir?
+  A: Aynı gün içinde alınan hisse aynı gün satılabilir ve gün içi netleştirme uygulanır (len=82)
+  B: Netleştirme uygulanmaz; alım bedeli peşin nakit, satım hissesi hazır olmalıdır (aynı gün satılamaz) (len=99) [CORRECT]
+  C: Kredili alım, açığa satış ve ödünç alma işlemleri serbest marjla yapılabilir (len=76)
+  D: Takas mutabakatı Borsa İstanbul tarafından iptal edilerek hesaplar bir önceki güne döndürülür (len=93)
+  E: Yalnızca şirketin imtiyazlı pay sahiplerinin alım satım yapmasına izin verilir (len=78)
+Explanation: Brüt takas tedbirinde; yatırımcıların gün içi alım-satım farkı üzerinden netleştirme yapmasına izin verilmez. Alım için hesapta nakdin peşin bulunması, satım için ise hissenin portföyde hazır bulunması şarttır; aynı gün alınan pay aynı gün satılamaz.
+--------------------------------------------------------------------------------
+ID: q_1012_cikmis_017 | Outlier: False | Giveaway: True
+Text: Borçlanma Araçları Piyasası'nda ve takas sistemlerinde menkul kıymet devri ile nakit transferinin eş zamanlı gerçekleşmesini sağlayan prensip nedir?
+  A: Açığa Satış (len=11)
+  B: Teslim Karşılığı Ödeme (DvP - Delivery versus Payment) (len=54) [CORRECT]
+  C: Vadeli Takas (len=12)
+  D: Temerrüt Faizi (len=14)
+  E: Tek Taraflı Takas (len=17)
+Explanation: DvP prensibi, menkul kıymet teslim edilmeden paranın ödenmemesini, para ödenmeden menkul kıymetin devredilmemesini güvenceye alır.
+--------------------------------------------------------------------------------
+ID: q_1012_cikmis_018 | Outlier: False | Giveaway: True
+Text: Borsa İstanbul Borçlanma Araçları Piyasası'nda aynı gün valörlü işlemlerin takası en geç ne zaman sonuçlandırılır?
+  A: İşlem gününde (T+0) (len=19) [CORRECT]
+  B: T+2 günü (len=8)
+  C: T+3 günü (len=8)
+  D: Hafta sonu (len=10)
+  E: 15 gün sonra (len=12)
+Explanation: BAP'ta aynı gün valörlü (T+0) işlemler aynı iş günü içinde Takasbank nezdinde sonuçlandırılır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+--------------------------------------------------------------------------------
+ID: q_1012_cikmis_023 | Outlier: False | Giveaway: True
+Text: Takas, Saklama ve Operasyon mevzuatı ve Takasbank/MKK esasları uyarınca; Olağanüstü piyasa dalgalanmalarında Takasbank'ın üyelerden standart teminatlara ilave olarak talep ettiği ek teminat hangisidir?
+  A: Başlangıç Teminatı (len=18)
+  B: Munzam (Ek) Teminat (len=19) [CORRECT]
+  C: Garanti Fonu (len=12)
+  D: Kira Bedeli (len=11)
+  E: Tazminat Fonu (len=13)
+Explanation: Risk artışlarında Takasbank üyelerden munzam (ilave) teminat talep edebilir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+--------------------------------------------------------------------------------
+ID: q_1012_cikmis_024 | Outlier: False | Giveaway: True
+Text: Takas, Saklama ve Operasyon mevzuatı ve Takasbank/MKK esasları uyarınca; Halka açık ortaklıkların genel kurul toplantılarına pay sahiplerinin uzaktan elektronik imzayla katılmasını sağlayan sistem kime aittir?
+  A: Borsa İstanbul (len=14)
+  B: Merkezi Kayıt Kuruluşu (MKK) (len=28) [CORRECT]
+  C: Takasbank (len=9)
+  D: SPK (len=3)
+  E: Ticaret Bakanlığı (len=17)
+Explanation: e-GKS altyapısı münhasıran MKK tarafından geliştirilmiş ve işletilmektedir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+--------------------------------------------------------------------------------
+ID: q_1012_konu_006 | Outlier: False | Giveaway: True
+Text: BİAŞ Borçlanma Araçları Piyasası Repo-Ters Repo Pazarı'nda emir iletiminde uygulanabilecek azami ileri başlangıç valör süresi ile azami bitiş valör süresi sırasıyla ne kadardır?
+  A: Aynı gün / 30 gün (len=17)
+  B: 7 gün / 1 yıl (365 gün) (len=23) [CORRECT]
+  C: 2 gün / 180 gün (len=15)
+  D: 15 gün / 2 yıl (len=14)
+  E: 30 gün / 5 yıl (len=14)
+Explanation: Repo pazarında üyeler en fazla 7 güne kadar ileri başlangıç valörlü (forward repo) emir iletebilirler. Repo bitiş valörü ise en fazla 1 yıl (365 gün) olabilir.
+--------------------------------------------------------------------------------
+ID: q_1012_konu_008 | Outlier: False | Giveaway: True
+Text: Portföy Saklama Hizmetine İlişkin Esaslar Tebliği (III-56.1) uyarınca, kolektif yatırım kuruluşlarının varlıklarının saklanmasından ve kayıt mutabakatından sorumlu birincil kuruluş aşağıdakilerden hangisidir?
+  A: Borsa İstanbul (len=14)
+  B: Portföy Saklama Kuruluşu (Portföy Saklayıcısı) (len=46) [CORRECT]
+  C: Yatırımcı Tazmin Merkezi (len=24)
+  D: Tüketici Mahkemesi (len=18)
+  E: Merkez Bankası (len=14)
+Explanation: Kolektif yatırım kuruluşlarının (yatırım fonlarının) varlıklarının saklanmasından ve denetiminden Portföy Saklayıcısı sorumludur.
+--------------------------------------------------------------------------------
+ID: q_1012_master_004 | Outlier: True | Giveaway: False
+Text: İstanbul Takas ve Saklama Bankası A.Ş.'nin (Takasbank) hukuki statüsü ve SPK Kanunu'ndaki konumu nedir?
+  A: Doğrudan Cumhurbaşkanlığına bağlı bir kamu tüzel kişiliğidir. (len=61)
+  B: Yalnızca yabancı yatırımcıların hesap açabildiği özel bir offshore bankadır. (len=76)
+  C: Özel bir anonim şirket statüsünde, Bankacılık Kanunu'na tabi bir yatırım/kalkınma bankası ve SPKn m.77 uyarınca Türkiye'nin Merkezi Takas Kuruluşudur. (len=150) [CORRECT]
+  D: Borsa İstanbul bünyesinde şubesi bulunmayan ticari bir mevduat bankasıdır. (len=74)
+  E: Vakıf tüzel kişiliğine sahip kâr amacı gütmeyen bir yardım kuruluşudur. (len=71)
+Explanation: Takasbank; Bankacılık Kanunu'na tabi bir yatırım ve kalkınma bankası olup, 6362 sayılı Kanun m.77 uyarınca Türkiye'nin Merkezi Takas Kuruluşu ve yetkilendirilmiş Merkezi Karşı Tarafıdır.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. Doğru seçenek: "Özel bir anonim şirket statüsünde, Bankacılık Kanunu'na tabi bir yatırım/kalkınma bankası ve SPKn m.77 uyarınca Türkiye'nin Merkezi Takas Kuruluşudur.".
+--------------------------------------------------------------------------------
+ID: q_1012_master_007 | Outlier: True | Giveaway: True
+Text: Uluslararası takas standartlarında kabul edilen ve 'parası ödenmeden menkul kıymetin teslim edilmemesi, menkul kıymet teslim edilmeden paranın ödenmemesi' prensibine ne ad verilir?
+  A: Ödeme Karşılığı Teslim İlkesi (DvP / Delivery versus Payment) (len=61) [CORRECT]
+  B: Açığa Satış ve Ödünç İlkesi (len=27)
+  C: Tek Taraflı Takas İlkesi (len=24)
+  D: Zamanaşımı İlkesi (len=17)
+  E: Kayıtsız Şartsız Teslim İlkesi (len=30)
+Explanation: Teslim Karşılığı Ödeme (DvP); menkul kıymet devri ile nakit ödemenin eşanlı olarak gerçekleşmesini şart koşarak anapara temerrüt riskini sıfırlar.
+--------------------------------------------------------------------------------
+ID: q_1012_master_008 | Outlier: False | Giveaway: True
+Text: Takasbank bünyesinde üyelerin kısa vadeli (genellikle gecelik / O/N) likidite fazlalarını değerlendirdiği veya likidite açıklarını kapattığı organize para piyasası hangisidir?
+  A: Takasbank Para Piyasası (TPP) (len=29) [CORRECT]
+  B: BIST Tahvil Bono Kesin Alım Pazarı (len=34)
+  C: Serbest Altın Piyasası (len=22)
+  D: Bankalararası Repo Pazarı (len=25)
+  E: VİOP Vadeli Pazar (len=17)
+Explanation: Takasbank üyelerinin kısa vadeli TL likidite ihtiyaçlarını karşıladıkları çok taraflı kör havuz piyasası Takasbank Para Piyasası'dır (TPP).
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• TPP: Takasbank Para Piyasası
+--------------------------------------------------------------------------------
+ID: q_1012_master_009 | Outlier: False | Giveaway: True
+Text: Takasbank mevzuatına göre takas üyeleri yetki ve sorumlulukları bakımından hangi iki temel gruba ayrılır?
+  A: Doğrudan Takas Üyesi (DCM) ve Genel Takas Üyesi (GCM) (len=53) [CORRECT]
+  B: Bireysel Takas Üyesi ve Kurumsal Takas Üyesi (len=44)
+  C: Yerli Takas Üyesi ve Yabancı Takas Üyesi (len=40)
+  D: Kısa Vadeli Takas Üyesi ve Uzun Vadeli Takas Üyesi (len=50)
+  E: Teminatlı Takas Üyesi ve Teminatsız Takas Üyesi (len=47)
+Explanation: Takasbank Merkezi Karşı Taraf mevzuatında üyeler; yalnızca kendi ve müşterilerinin işlemlerini takas eden 'Doğrudan Takas Üyesi' (Direct Clearing Member) ve diğer aracı kuruluşların işlemlerinin takasını da üstlenebilen 'Genel Takas Üyesi' (General Clearing Member) olarak ikiye ayrılır.
+--------------------------------------------------------------------------------
+ID: q_1012_master_011 | Outlier: False | Giveaway: True
+Text: Bankalararası Türk Lirası ve döviz çek takası işlemlerinin elektronik ortamda takasını yürüten kurum hangisidir?
+  A: Takasbank ve Bankalararası Takas Odaları Merkezi (BTOM) (len=55) [CORRECT]
+  B: Merkezi Kayıt Kuruluşu (len=22)
+  C: Sermaye Piyasası Kurulu (len=23)
+  D: Gelir İdaresi Başkanlığı (len=24)
+  E: Borsa İstanbul (len=14)
+Explanation: Bankalararası çek takası işlemleri Takasbank ve BTOM koordinasyonunda elektronik ortamda yürütülür.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• BTOM: Bankalararası Takas Odaları Merkezi
+--------------------------------------------------------------------------------
+ID: q_1012_master_015 | Outlier: False | Giveaway: True
+Text: Borsa İstanbul ve SPK tarafından olağandışı fiyat ve miktar hareketleri nedeniyle bir hisse hakkında 'Brüt Takas' tedbiri uygulandığında ne olur?
+  A: Aynı gün alınan hisse aynı gün satılamaz (netleştirme yapılamaz), takas T+2'de brüt nakit ve menkul kıymetle yapılır (len=116) [CORRECT]
+  B: İlgili hisse senedi derhal Borsa kotundan çıkarılarak tüm tahtası kalıcı olarak işleme kapatılır (len=96)
+  C: Şirketin tüm yönetimi Sermaye Piyasası Kurulu tarafından atanan geçici kayyıma devredilir (len=89)
+  D: İşlem takas süresi T+2 valöründen T+0 anlık teslimat valörüne dönüştürülür (len=74)
+  E: Yalnızca profesyonel nitelikli yatırımcıların alım satım yapmasına izin verilir (len=79)
+Explanation: Brüt takas uygulaması getirilen paylarda; gün içi alım satımlarda takas netleştirmesi yapılamaz, aynı gün alınan hisse aynı gün satılamaz, kredili alım ve açığa satış yapılamaz; takas T+2'de brüt olarak gerçekleştirilir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_018 | Outlier: False | Giveaway: True
+Text: VİOP'ta pozisyon açılırken yatırılması zorunlu olan asgari teminata ne ad verilir?
+  A: Başlangıç Teminatı (Initial Margin) (len=35) [CORRECT]
+  B: Sürdürme Teminatı (len=17)
+  C: Kâr Teminatı (len=12)
+  D: Serbest Teminat (len=15)
+  E: Rüçhan Teminatı (len=15)
+Explanation: Pozisyon açılışında zorunlu asgari teminat 'Başlangıç Teminatı'; piyasa dalgalanmasında pozisyonun açık kalması için gereken asgari seviye ise 'Sürdürme Teminatı'dır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• BIST: Borsa İstanbul A.Ş. (Türkiye'nin organize menkul kıymet, kıymetli maden ve türev piyasası borsası)
+• VİOP: Vadeli İşlem ve Opsiyon Piyasası (BIST bünyesindeki türev araçlar piyasası)
+--------------------------------------------------------------------------------
+ID: q_1012_master_023 | Outlier: False | Giveaway: True
+Text: Takasbank'ın takas gününde üyelerin geçici nakit açıklarını kapatmak üzere teminat karşılığı sağladığı krediye ne ad verilir?
+  A: Konut Kredisi (len=13)
+  B: İhracat Kredisi (len=15)
+  C: Taşıt Kredisi (len=13)
+  D: Gün İçi Likidite Kredisi (Intraday Credit) (len=42) [CORRECT]
+  E: Mevduat Kredisi (len=15)
+Explanation: Takas üyelerinin operasyonel takas kilitlenmelerini önlemek amacıyla Takasbank gün içi veya gecelik likidite kredisi imkanı sunar.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+--------------------------------------------------------------------------------
+ID: q_1012_master_025 | Outlier: False | Giveaway: True
+Text: Yatırım fonları ve emeklilik fonlarının portföy saklayıcılığını yürüten birincil kurum hangisidir?
+  A: Borsa İstanbul A.Ş. (len=19)
+  B: Merkezi Kayıt Kuruluşu A.Ş. (len=27)
+  C: Türkiye Sermaye Piyasaları Birliği (len=34)
+  D: Kredi Garanti Fonu (len=18)
+  E: İstanbul Takas ve Saklama Bankası A.Ş. (Takasbank) (len=50) [CORRECT]
+Explanation: Kolektif yatırım kuruluşlarının (fonların) varlıklarının saklandığı birincil portföy saklayıcısı kuruluşu Takasbank'tır.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş.
+--------------------------------------------------------------------------------
+ID: q_1012_master_026 | Outlier: True | Giveaway: False
+Text: 6362 sayılı Kanun m.81 uyarınca Merkezi Kayıt Kuruluşu'nun (MKK) temel kanuni görevi nedir?
+  A: Şirketlerin vergi borçlarını tahsil etmek ve vergi dairesine yatırmak (len=69)
+  B: Borsa İstanbul Pay Piyasası hisse senedi işlemlerinde kredi tahsis etmek (len=72)
+  C: Borsada işlem gören şirketlerin yönetim kurulu başkanlarını seçmek (len=66)
+  D: Sermaye piyasası araçlarının kaydileştirilmesine ilişkin işlemleri yürütmek, bunların hak sahipleri bazında elektronik ortamda kayden izlenmesini ve merkezi saklamasını sağlamak (len=177) [CORRECT]
+  E: Döviz kurlarını günlük olarak ilan etmek ve para basmak (len=55)
+Explanation: 6362 sayılı Kanun m.81 uyarınca MKK'nın temel kanuni görevi; sermaye piyasası araçlarının kaydileştirilmesi ve hak sahipleri bazında kayden izlenmesidir.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• MKK: Merkezi Kayıt Kuruluşu A.Ş. Doğru seçenek: "Sermaye piyasası araçlarının kaydileştirilmesine ilişkin işlemleri yürütmek, bunların hak sahipleri bazında elektronik ortamda kayden izlenmesini ve merkezi saklamasını sağlamak".
+--------------------------------------------------------------------------------
+ID: q_1012_master_027 | Outlier: False | Giveaway: True
+Text: Menkul kıymetlerin fiziki kağıt ve senet olarak basılması yerine elektronik ortamda dijital kayıtlar olarak ihraç edilip izlenmesine ne ad verilir?
+  A: Fiziki Tescil (len=13)
+  B: Blokaj Şerhi (len=12)
+  C: Virmanlama (len=10)
+  D: Kotasyon (len=8)
+  E: Kaydileştirme (Dematerialization) (len=33) [CORRECT]
+Explanation: Takas ve saklama mevzuatı uyarınca: Menkul kıymetlerin fiziki kağıt senet yerine elektronik veri olarak ihraç edilip sistemde izlenmesine Kaydileştirme (Dematerialization) denir. Doğru seçenek: "Kaydileştirme (Dematerialization)".
+--------------------------------------------------------------------------------
+ID: q_1012_master_030 | Outlier: True | Giveaway: True
+Text: 6362 sayılı Sermaye Piyasası Kanunu m.13 uyarınca, kaydileştirilmesine karar verilmesine rağmen süresi içinde MKK'ya teslim edilmeyerek fiziki olarak elde tutulan pay senetleri ile ilgili hukuki kural nedir?
+  A: Fiziki pay senetleri süresiz olarak geçerliliğini korur ve şirket pay defteri kayıtları MKK kayıtlarına üstün sayılır. (len=118)
+  B: Kaydileştirilmeyen paylara ilişkin temettü dışındaki ortaklık hakları (oy kullanma, genel kurula katılma vb.) paylar kaydileştirilinceye kadar donar; hak sahipleri diledikleri zaman başvurarak paylarını kaydileştirebilirler. (len=224) [CORRECT]
+  C: Paylar sahibinin talebine gerek olmaksızın otomatik olarak borsada resen satılır. (len=81)
+  D: Pay senetleri anonim şirket tarafından nominal değerleri üzerinden otomatik olarak itfa edilir ve ortaklık hakları düşer. (len=121)
+  E: Teslim edilmeyen paylar derhal iptal edilir ve şirket sermayesi bu tutarda mahkeme kararıyla azaltılır. (len=103)
+Explanation: 6362 sayılı Sermaye Piyasası Kanunu m.13/4 uyarınca kaydileştirilmesine karar verilen sermaye piyasası araçlarının teslimi zorunludur. Teslim edilmeyen paylar borsada işlem göremez, aracı kurumlarca alım satımına aracılık edilemez ve kaydileştirilmeyen paylara ilişkin temettü dışındaki ortaklık hakları (oy hakkı, genel kurula katılma vb.) paylar kaydileştirilinceye kadar DONAR. Anayasa Mahkemesi'nin mülkiyet hakkı ihlali gerekçesiyle verdiği iptal kararı ve 7226 sayılı Kanun düzenlemesi uyarınca pay sahiplerinin hakları sona ermez; hak sahipleri her zaman MKK'ya başvurarak paylarının kayden izlenmesini ve kaydileştirilmesini talep edebilirler.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• MKK: Merkezi Kayıt Kuruluşu A.Ş.
+• SPKn: 6362 sayılı Sermaye Piyasası Kanunu
+• YTM: Yatırımcı Tazmin Merkezi
+--------------------------------------------------------------------------------
+ID: q_1012_master_031 | Outlier: False | Giveaway: True
+Text: Türk Ticaret Kanunu ve Sermaye Piyasası Kanunu uyarınca kaydi sermaye piyasası araçları üzerindeki hak sahipliğinin ispatında hangi kayıtlar esas alınır?
+  A: Aracı kurum çalışanlarının tuttuğu şirket içi Excel çalışma tabloları (len=69)
+  B: Merkezi Kayıt Kuruluşu (MKK) nezdinde tutulan elektronik kayıtlar kesin delil teşkil eder (len=89) [CORRECT]
+  C: İhraççı şirketin ticaret sicil müdürlüğüne verdiği sözlü kurucu beyanları (len=73)
+  D: Yatırımcının noter onaylı genel vekâletnamesi (len=45)
+  E: Borsa aracı kurumunun basılı aylık müşteri tanıtım broşürleri (len=61)
+Explanation: SPKn m.13 uyarınca kaydileştirilen sermaye piyasası araçlarına ilişkin hakların ispatında ve üçüncü kişilere karşı ileri sürülmesinde MKK nezdinde tutulan elektronik kayıtlar kesin delil teşkil eder.
+--------------------------------------------------------------------------------
+ID: q_1012_master_036 | Outlier: False | Giveaway: True
+Text: Kamuyu Aydınlatma Platformu'nun (KAP) teknik işletimi, kullanıcı yetkilendirmesi ve e-imza altyapısı hangi kurum tarafından sağlanır?
+  A: Merkezi Kayıt Kuruluşu A.Ş. (MKK) (len=33) [CORRECT]
+  B: Borsa İstanbul A.Ş. (len=19)
+  C: Takasbank (len=9)
+  D: Bilgi Teknolojileri ve İletişim Kurumu (len=38)
+  E: Gelir İdaresi Başkanlığı (len=24)
+Explanation: Kamuyu Aydınlatma Platformu'nun (KAP) teknik altyapısı ve işletimi Merkezi Kayıt Kuruluşu (MKK) tarafından yürütülür.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• KAP: Kamuyu Aydınlatma Platformu
+• MKK: Merkezi Kayıt Kuruluşu. Doğru seçenek: "Merkezi Kayıt Kuruluşu A.Ş. (MKK)".
+--------------------------------------------------------------------------------
+ID: q_1012_master_040 | Outlier: False | Giveaway: True
+Text: Bir yatırımcının A aracı kurumundaki hisselerini B aracı kurumundaki kendi hesabına aktarması işlemine ne ad verilir?
+  A: Kotasyon (len=8)
+  B: Temerrüt (len=8)
+  C: Tahsis (len=6)
+  D: Virman (Menkul Kıymet Transferi) (len=32) [CORRECT]
+  E: Takas Netleştirmesi (len=19)
+Explanation: Bir yatırımcının bir kurumdaki menkul kıymetlerini başka bir aracı kurumdaki hesabına transfer etmesine 'Virman' denir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_042 | Outlier: True | Giveaway: True
+Text: Kaydi paylarda şirketlerin pay defteri tutma yükümlülüğü nasıl yerine getirilir?
+  A: Şirketler halen her ay fiziki defteri notere onaylatmak zorundadır. (len=67)
+  B: Pay defteri yükümlülüğü Ticaret Bakanlığı müfettişlerince elle tutulur. (len=71)
+  C: MKK tarafından tutulan kaydi hesap kayıtları ortaklıklar açısından pay defteri hükmündedir (Ayrı fiziki defter tutma zorunluluğu kalkmıştır). (len=141) [CORRECT]
+  D: Pay defteri tutma yükümlülüğü tamamen yürürlükten kaldırılmıştır. (len=65)
+  E: Şirket pay defteri yalnızca ticaret sicil müdürlüğü tarafından fiziki mühürlü defterlerde tutulur. (len=98)
+Explanation: TTK ve SPKn m.13 uyarınca kaydileştirilen paylarda MKK kayıtları şirketler açısından pay defteri hükmündedir.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• MKK: Merkezi Kayıt Kuruluşu
+--------------------------------------------------------------------------------
+ID: q_1012_master_044 | Outlier: False | Giveaway: True
+Text: MKK'nın kaydi saklama ve hesap bakım ücretleri kim tarafından onaylanır?
+  A: Borsa İstanbul Yönetim Kurulu (len=29)
+  B: Türkiye Bankalar Birliği (len=24)
+  C: Sermaye Piyasası Kurulu (SPK) (len=29) [CORRECT]
+  D: Rekabet Kurulu (len=14)
+  E: Hazine ve Maliye Bakanlığı (len=26)
+Explanation: MKK ve Takasbank'ın uygulayacağı hizmet tarifeleri ve ücret tarifeleri Sermaye Piyasası Kurulu (SPK) onayı ile yürürlüğe girer.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• SPK: Sermaye Piyasası Kurulu
+--------------------------------------------------------------------------------
+ID: q_1012_master_049 | Outlier: False | Giveaway: True
+Text: Hesabında rehin veya haciz blokajı bulunan bir hisse senedinin genel kurulda oy hakkını kural olarak kim kullanır?
+  A: İcra dairesi müdürü veya alacaklı taraf oy hakkını bizzat kullanır (len=66)
+  B: Hacizli payların genel kuruldaki tüm oy hakları kanunen askıya alınır (len=69)
+  C: Oy hakkı otomatik olarak şirketin yönetim kurulu başkanına intikal eder (len=71)
+  D: Paylar genel kurulda Borsa İstanbul A.Ş. temsilcisi tarafından temsil edilir (len=76)
+  E: Aksine bir sözleşme veya mahkeme kararı olmadıkça payın asıl maliki (ortağı) oy hakkını kullanır (len=96) [CORRECT]
+Explanation: Türk Ticaret Kanunu uyarınca; pay üzerinde intifa hakkı varsa oy hakkı intifa hakkı sahibinindir. Ancak rehin veya haciz halinde aksine bir mahkeme kararı veya rehin sözleşmesi hükmü bulunmadıkça mülkiyet sahibi pay sahibi oy hakkını kullanmaya devam eder.
+--------------------------------------------------------------------------------
+ID: q_1012_master_057 | Outlier: False | Giveaway: True
+Text: VİOP'ta tek bir üyenin veya bir yatırımcının aynı sözleşmede taşıyabileceği azami açık pozisyon sayısını sınırlayan kurala ne ad verilir?
+  A: Kaldıraç Tavanı (len=15)
+  B: Temerrüt Marjı (len=14)
+  C: Mutlak Pozisyon Limiti (Position Limit) (len=39) [CORRECT]
+  D: Volatilite Marjı (len=16)
+  E: İskonto Katsayısı (len=17)
+Explanation: VİOP'ta tek bir üyenin veya yatırımcının sözleşme bazında taşıyabileceği azami açık pozisyon adedini belirleyen kurala Pozisyon Limiti (Position Limit) denir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_059 | Outlier: False | Giveaway: True
+Text: Ödünç piyasasında ödünç alanın ödünç verene ödediği faiz/kira benzeri bedele ne ad verilir?
+  A: Repo Oranı (len=10)
+  B: Kupon Oranı (len=11)
+  C: Gecikme Zammı (len=13)
+  D: Damga Vergisi (len=13)
+  E: Ödünç Komisyon Oranı (Borrowing Fee) (len=36) [CORRECT]
+Explanation: Ödünç Pay Piyasasında pay ödünç alan tarafın ödünç verene ödediği komisyon/faiz bedeline 'Ödünç Komisyon Oranı' denir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_060 | Outlier: False | Giveaway: True
+Text: Takasbank Para Piyasasında (TPP) faiz hesaplamaları hangi gün bazına göre yapılır?
+  A: 30 / 360 (len=8)
+  B: Ay / 30 (len=7)
+  C: Gerçek Gün / 365 (Actual/365) (len=29) [CORRECT]
+  D: Sabit 90 Gün (len=12)
+  E: İş Günü / 250 (len=13)
+Explanation: Takas ve saklama mevzuatı uyarınca: Takasbank Para Piyasasında (TPP) faiz hesaplamaları uluslararası para piyasası standardı olan Gerçek Gün / 365 (Actual/365) esasına göre yapılır. Doğru seçenek: "Gerçek Gün / 365 (Actual/365)".
+--------------------------------------------------------------------------------
+ID: q_1012_master_062 | Outlier: True | Giveaway: True
+Text: Borsada endekse bağlı devre kesici çalıştığında o ana kadar gerçekleşen işlemlerin takası ne olur?
+  A: Tüm gerçekleşen işlemler iptal edilir. (len=38)
+  B: Takas süresi 1 yıl ertelenir. (len=29)
+  C: Paralar aracı kurumun kendi hesabında bloke kalır. (len=50)
+  D: İşlemlerin takası iptal edilerek portföyler seans açılış durumuna döndürülür. (len=77)
+  E: Devre kesici devreye girene kadar gerçekleşmiş tüm işlemler geçerlidir ve takası normal valöründe (T+2) yapılır. (len=112) [CORRECT]
+Explanation: Devre kesici sadece yeni emir giriş ve eşleşmelerini geçici durdurur; eşleşmiş işlemler hukuken kesinleşmiştir ve takası yapılır.
+--------------------------------------------------------------------------------
+ID: q_1012_master_064 | Outlier: False | Giveaway: True
+Text: BIST 30 Endeks Vadeli İşlem Sözleşmelerinde vade sonu takas ve uzlaşması nasıl gerçekleştirilir?
+  A: Sözleşme büyüklüğü kadar hisse senedi sepetinin fiziki kaydi devir yoluyla teslim edilmesiyle (len=93)
+  B: Sözleşme tutarının tamamının Amerikan Doları cinsinden Takasbank'a ödenmesiyle (len=78)
+  C: Dayanak endeks yerine BIST Likit Banka Endeksi paylarının takas edilmesiyle (len=75)
+  D: Sözleşme vadesinin otomatik olarak bir sonraki takvim yılına ertelenmesiyle (len=75)
+  E: Kâr/zarar farkının taraflar arasında nakden tahsil edilip ödenmesiyle (Nakit Uzlaşma) (len=85) [CORRECT]
+Explanation: Endeks vadeli işlem sözleşmeleri fiziki teslime konu edilemez; vade sonundaki uzlaşma fiyatı ile pozisyon fiyatı arasındaki fark nakit olarak hesaplar arasında tahsil edilip ödenir (Nakit Uzlaşma / Cash Settlement).
+--------------------------------------------------------------------------------
+ID: q_1012_master_066 | Outlier: True | Giveaway: False
+Text: Ters repo yapan bir yatırımcının takas günü gerçekleşen işlemi nedir?
+  A: Menkul kıymet satıp parayı faizsiz olarak vadeli mevduata yatırır. (len=66)
+  B: Hisse senedi alıp aynı gün açığa satış işlemi yapar. (len=52)
+  C: Borsa endeksine dayalı varant satın alıp vadesine kadar bekler. (len=63)
+  D: Şirket tahvilini vade sonunda hisse senedine dönüştürür. (len=56)
+  E: Nakit verip karşılığında menkul kıymeti teminat olarak teslim alır; vade sonunda parayı faiziyle geri alıp kıymeti iade eder. (len=125) [CORRECT]
+Explanation: Ters repo; nakit borç vererek karşılığında menkul kıymet teminatı alma ve vade bitiminde parayı faiziyle tahsil edip kıymeti iade etme işlemidir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_069 | Outlier: False | Giveaway: True
+Text: MKK ve KAP sistemine yüklenen elektronik bildirimlerin hukuki zaman kanıtı nasıl sağlanır?
+  A: TÜBİTAK onaylı resmi Zaman Damgası (Time Stamp) ve Nitelikli Elektronik Sertifika (e-İmza) ile (len=94) [CORRECT]
+  B: İlçe Ticaret Sicil Müdürlüğü'nün fiziki defter tasdik mührü ile (len=63)
+  C: Şirket yönetim kurulu başkanının ıslak imzalı onay beyannamesi ile (len=66)
+  D: Borsa İstanbul Teftiş Kurulu'nun haftalık onay yazısı ile (len=57)
+  E: Türkiye Sermaye Piyasaları Birliği'nin basılı resmî bülteni ile (len=63)
+Explanation: KAP ve MKK sistemlerindeki elektronik bildirimlerin değiştirilmediğini ve kesin zamanını kanıtlamak üzere 5070 sayılı Elektronik İmza Kanunu uyarınca Nitelikli Elektronik Sertifika ve TÜBİTAK Zaman Damgası kullanılır.
+--------------------------------------------------------------------------------
+ID: q_1012_master_070 | Outlier: False | Giveaway: True
+Text: Takasbank ve MKK'nın ana merkezlerinde deprem veya yangın gibi afetler yaşanması durumunda takasın kesintisiz sürmesini sağlayan yedek altyapıya ne ad verilir?
+  A: Borsa Müzesi (len=12)
+  B: Olağanüstü Durum Merkezi (ODM / Disaster Recovery Center) (len=57) [CORRECT]
+  C: Hakem Heyeti Binası (len=19)
+  D: Arşiv Odası (len=11)
+  E: Test Laboratuvarı (len=17)
+Explanation: Afet ve kriz anlarında finansal altyapının kesintisiz çalışmasını garanti eden yedek tesise Olağanüstü Durum Merkezi (ODM) denir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_073 | Outlier: False | Giveaway: True
+Text: Merkezi Karşı Tarafın temerrüt risklerini karşılamak amacıyla takas üyelerinin katkılarıyla oluşturulan ortak fona ne ad verilir?
+  A: Garanti Fonu (Takasbank Garanti Fonu / Default Fund) (len=52) [CORRECT]
+  B: İşsizlik Fonu (len=13)
+  C: Emeklilik Fonu (len=14)
+  D: Kambiyo Fonu (len=12)
+  E: Varlık Fonu (len=11)
+Explanation: MKT temerrüt risklerini karşılamak için takas üyelerinin katkılarıyla oluşturulan ortak rezerv fonu Takasbank Garanti Fonu'dur (Default Fund).
+--------------------------------------------------------------------------------
+ID: q_1012_master_075 | Outlier: False | Giveaway: True
+Text: Satış yapan bir üyenin takas gününde hisse senetlerini Takasbank'a teslim edememesi (kıymet temerrüdü) halinde Takasbank bu açığı nasıl kapatır?
+  A: Alıcı tarafa hisse teslimi yapılmaz, gerçekleşen borsa işlemi Borsa Yönetim Kurulu kararıyla feshedilir (len=103)
+  B: Alıcı takas üyesinden yazılı feragat alınarak ilgili takas mutabakatı tarafların mutabakatıyla iptal edilir (len=107)
+  C: Kıymet teslim yükümlülüğü temerrüt faizi işletilmeksizin bir sonraki takvim ayının ilk iş gününe ertelenir (len=106)
+  D: Takasbank 'Buy-In' (Zorunlu Alım) yaparak veya Ödünç Pay Piyasasından temin ederek hisseyi alıcıya teslim eder (len=110) [CORRECT]
+  E: Alıcı üyeye pay senedi yerine aracı kurumun kendi portföyündeki borçlanma araçları zorunlu devredilir (len=101)
+Explanation: Kıymet temerrüdünde Takasbank MKT garantisi kapsamında; önce Ödünç Pay Piyasası'ndan hisseyi temin eder veya piyasada bizzat 'Buy-In' (Zorunlu Satın Alma) işlemi yaparak hisseyi alır ve alıcıya verir; tüm maliyet ve cezaları temerrüt eden üyeye fatura eder.
+--------------------------------------------------------------------------------
+ID: q_1012_master_077 | Outlier: True | Giveaway: True
+Text: VİOP'ta oluşan teminat açıklarının nakden tamamlanması için Takasbank tarafından her iş günü uygulanan son saat kuralı nedir?
+  A: Aynı gün saat 12:00'ye kadar (len=28)
+  B: İşlem gününü izleyen iş günü (T+1) saat 14:30 / 15:00'e kadar (len=61) [CORRECT]
+  C: T+2 günü saat 18:00'e kadar (len=27)
+  D: Hafta sonu mesai bitimine kadar (len=31)
+  E: Süre sınırlaması olmaksızın ay sonuna kadar (len=43)
+Explanation: VİOP marjin kapama çağrısı (Margin Call) ertesi iş günü (T+1) en geç saat 14:30 / 15:00'e kadar nakden tamamlanmalıdır.
+
+📌 Soruda Geçen Kısaltmalar ve Açılımları:
+• VİOP: Vadeli İşlem ve Opsiyon Piyasası
+--------------------------------------------------------------------------------
+ID: q_1012_master_078 | Outlier: False | Giveaway: True
+Text: Takasbank'ın nakit dışı teminatları (hisse, tahvil, eurobond vb.) teminat kabul ederken piyasa dalgalanma riskine karşı değerinden belirli bir yüzde düşerek kabul etmesine ne ad verilir?
+  A: Volatilite Artırımı (len=19)
+  B: Kaldıraç Çarpanı (len=16)
+  C: Değer Kesintisi / İskonto Oranı (Haircut) (len=41) [CORRECT]
+  D: Temerrüt Marjı (len=14)
+  E: Kredi Baremi (len=12)
+Explanation: Nakit dışı menkul kıymetlerin teminat kabul edilirken piyasa fiyatından belirli bir yüzde kırılarak kabul edilmesine Değer Kesintisi (Haircut) denir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_079 | Outlier: False | Giveaway: True
+Text: Takasbank'ın Garanti Fonunun ve teminatların aşırı piyasa krizlerinde yeterli olup olmadığını ölçmek için yaptığı simülasyonlara ne ad verilir?
+  A: Muhasebe Denetimi (len=17)
+  B: Vergi Teftişi (len=13)
+  C: Piyasa Anketi (len=13)
+  D: Stres Testleri (Stress Testing) (len=31) [CORRECT]
+  E: Yazılı Sınav (len=12)
+Explanation: Takasbank teminat ve Garanti Fonunun olağanüstü piyasa çöküşlerinde yeterliliğini ölçmek için düzenli olarak Stres Testleri (Stress Testing) uygular.
+--------------------------------------------------------------------------------
+ID: q_1012_master_081 | Outlier: False | Giveaway: True
+Text: Bir takas üyesinin batmasının zincirleme reaksiyonla diğer üyeleri ve tüm finansal sistemi çökertme tehlikesine ne ad verilir?
+  A: Enflasyon Riski (len=15)
+  B: Politik Risk (len=12)
+  C: Mevzuat Riski (len=13)
+  D: Kur Riski (len=9)
+  E: Sistemik Risk (Systemic Risk) (len=29) [CORRECT]
+Explanation: Bir finansal kurumun batmasının domino etkisiyle diğer tüm piyasa aktörlerini çökertme tehlikesine Sistemik Risk (Systemic Risk) denir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_082 | Outlier: False | Giveaway: True
+Text: Temerrüt şelalesinde diğer üyelerin Garanti Fonu paralarına dokunulmadan önce Takasbank'ın kendi sermayesinden koyduğu güvenlik tamponuna ne ad verilir?
+  A: Sermaye Tavanı (len=14)
+  B: Kıdem Tazminatı (len=15)
+  C: İtfa Payı (len=9)
+  D: SITG (Skin in the Game / Takasbank Özkaynak Katkısı) (len=52) [CORRECT]
+  E: Yedek Akçe (len=10)
+Explanation: Temerrüt şelalesinde diğer masum üyelerin fonlarına başvurulmadan önce Takasbank'ın kendi sermayesinden koyduğu güvenlik tamponu SITG (Skin in the Game) olarak adlandırılır.
+--------------------------------------------------------------------------------
+ID: q_1012_master_085 | Outlier: False | Giveaway: True
+Text: Pay Piyasası takasında açıkta kalan hisseyi kapatmak için Takasbank sisteminin otomatik olarak devreye soktuğu ödünç alma işlemine ne ad verilir?
+  A: Zorunlu Repo (len=12)
+  B: İcra İhalesi (len=12)
+  C: Otomatik Ödünç Pay Servisi (Auto-Borrowing) (len=43) [CORRECT]
+  D: Bedelsiz Transfer (len=17)
+  E: Açığa Satış İptali (len=18)
+Explanation: Takas günü hisse teslim açığı oluşan üye için Takasbank sisteminin otomatik olarak piyasadan pay ödünç almasına Otomatik Ödünç Pay Servisi denir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_086 | Outlier: False | Giveaway: True
+Text: Yetersiz veya başarısız iç süreçler, insanlar, sistemler veya harici olaylardan kaynaklanan zarar etme riskine ne ad verilir?
+  A: Piyasa Riski (len=12)
+  B: Likidite Riski (len=14)
+  C: Operasyonel Risk (Operational Risk) (len=35) [CORRECT]
+  D: Kredi Riski (len=11)
+  E: Ülke Riski (len=10)
+Explanation: İnsan hatası, yazılım çökmesi, dolandırıcılık veya sistem arızalarından kaynaklanan risk Operasyonel Risk (Operational Risk) olarak tanımlanır.
+--------------------------------------------------------------------------------
+ID: q_1012_master_087 | Outlier: False | Giveaway: True
+Text: Beklenmedik bir kriz veya siber saldırı durumunda aracı kurumun kritik operasyonlarını kesintisiz sürdürebilme planına ne ad verilir?
+  A: Pazarlama Planı (len=15)
+  B: Satış Stratejisi (len=16)
+  C: Halka Arz İzahnamesi (len=20)
+  D: Bütçe Tablosu (len=13)
+  E: İş Sürekliliği Planı (İSP / BCP) (len=32) [CORRECT]
+Explanation: İş Sürekliliği Planı; felaket anlarında finansal verilerin korunması ve operasyonların dakikalar içinde yedek merkezden devam etmesini sağlayan kurumsal plandır.
+--------------------------------------------------------------------------------
+ID: q_1012_master_088 | Outlier: False | Giveaway: True
+Text: SPK Bilgi Sistemleri Tebliği uyarınca yatırım kuruluşlarının bilgi sistemlerine en az yılda bir kez bağımsız uzmanlara yaptırmak zorunda olduğu güvenlik testine ne ad verilir?
+  A: Sızma Testi (Penetration Test) (len=30) [CORRECT]
+  B: Mali Denetim (len=12)
+  C: Yazılı Yoklama (len=14)
+  D: Vergi Teftişi (len=13)
+  E: Müşteri Memnuniyet Anketi (len=25)
+Explanation: SPK Bilgi Sistemleri Tebliği uyarınca yatırım kuruluşları siber güvenlik için yılda en az bir kez bağımsız uzmanlara Sızma Testi (Penetration Test) yaptırmak zorundadır. Doğru seçenek: "Sızma Testi (Penetration Test)".
+--------------------------------------------------------------------------------
+ID: q_1012_master_090 | Outlier: True | Giveaway: False
+Text: Yatırım fonlarında fon kurucusu olan Portföy Yönetim Şirketi ile fon portföyünü saklayan Portföy Saklayıcısı (Takasbank/Banka) arasındaki ilişki nasıldır?
+  A: Saklayıcı kuruluş PYŞ'nin hiyerarşik bağlı alt birimidir. (len=57)
+  B: Fon kurucusu aynı zamanda fonun yegâne portföy saklayıcısı olmak zorundadır. (len=76)
+  C: Saklama kuruluşu kurucu PYŞ'den tamamen bağımsızdır ve PYŞ'nin tüm fon işlemlerinin mevzuata uygunluğunu gözetmek ve denetlemekle yükümlüdür. (len=141) [CORRECT]
+  D: Saklayıcı kuruluş fonun yatırım stratejisini bizzat yönetir. (len=60)
+  E: Saklama kuruluşu fon üzerinde hiçbir denetim yetkisine sahip değildir. (len=70)
+Explanation: Saklama kuruluşu fon malvarlığını korurken aynı zamanda kurucu PYŞ'nin işlemlerinin mevzuata ve fon içtüzüğüne uygunluğunu gözetleyen bağımsız denetim kalkanıdır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+• PYŞ: Portföy Yönetim Şirketi (Fon ve portföyleri yönetmekle münhasıran yetkili kurum)
+--------------------------------------------------------------------------------
+ID: q_1012_master_091 | Outlier: True | Giveaway: False
+Text: Bir aracı kurum iflas ettiğinde yatırımcının MKK'da kendi adına kayıtlı bulunan hisse senetleri ne olur?
+  A: Hisseler aracı kurumun borçlularına dağıtılır. (len=46)
+  B: Hisseler aracı kurumun iflas masasına DAHİL EDİLEMEZ; yatırımcı hisselerini MKK üzerinden başka bir aracı kuruma virmanlayarak mülkiyetini aynen korur. (len=151) [CORRECT]
+  C: Hisseler Hazineye gelir kaydedilir. (len=35)
+  D: Hisseler otomatik nakde çevrilip iflas masasına devredilir. (len=59)
+  E: Hisselerin mülkiyeti aracı kurumun hâkim ortaklarına geçer. (len=59)
+Explanation: Doğrudan hak sahipliği sayesinde hisseler müşterinin mülkiyetindedir; aracı kurum batsa dahi hisseler iflas masasından muaftır ve anında başka kuruma taşınabilir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)
+--------------------------------------------------------------------------------
+ID: q_1012_master_093 | Outlier: False | Giveaway: True
+Text: Aracı kurumlarda operasyonel dolandırıcılığı önlemek için emir giren personelin aynı zamanda takas ve para transferini onaylamasını engelleyen ilkeye ne ad verilir?
+  A: Yetki Devri İlkesi (len=18)
+  B: Tek İmza İlkesi (len=15)
+  C: Görevler Ayrılığı İlkesi (Segregation of Duties) (len=48) [CORRECT]
+  D: Gizlilik İlkesi (len=15)
+  E: Serbest Piyasa İlkesi (len=21)
+Explanation: Hile ve suistimalleri önlemek için emir alan, takası yapan ve muhasebeleştiren personelin birbirinden bağımsız olması Görevler Ayrılığı İlkesi'dir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_095 | Outlier: True | Giveaway: False
+Text: TPP'de borcunu kapatan üyenin Takasbank'ta blokeli duran teminatları ne zaman serbest bırakılır?
+  A: 10 yıl boyunca hiçbir şekilde çözülemez. (len=40)
+  B: Borç ve faiz tam olarak kapatıldığı anda sistem tarafından otomatik olarak blokaj çözülerek serbest bırakılır. (len=110) [CORRECT]
+  C: Sadece yıl başında Takasbank Genel Kurulu kararıyla çözülür. (len=60)
+  D: Mahkeme kararı olmadan asla serbest bırakılamaz. (len=48)
+  E: Yalnızca SPK Başkanı'nın yazılı onayı ile çözülür. (len=50)
+Explanation: Takasbank Para Piyasasında borç ve faizini ödeyen üyenin rehinli teminatları Takasbank sistemi tarafından anlık ve otomatik olarak serbest bırakılır.
+--------------------------------------------------------------------------------
+ID: q_1012_master_096 | Outlier: False | Giveaway: True
+Text: MKK ve Takasbank tüm takas ve saklama işlem kayıtlarını mevzuat gereğince en az kaç yıl süreyle elektronik arşivde saklamak zorundadır?
+  A: En az 1 yıl (len=11)
+  B: En az 3 yıl (len=11)
+  C: En az 5 yıl (len=11)
+  D: En az 10 yıl (ve mülkiyet kayıtları süresiz olarak) (len=51) [CORRECT]
+  E: En az 30 yıl (len=12)
+Explanation: MKK ve Takasbank takas ve saklama kayıtlarını en az 10 yıl süreyle elektronik arşivde saklar; mülkiyeti belirleyen kaydileştirme kayıtları ise süresiz muhafaza edilir.
+--------------------------------------------------------------------------------
+ID: q_1012_master_097 | Outlier: False | Giveaway: True
+Text: Genel kurullardan önce şirket yönetimine verilen ve pay sahiplerinin ad, soyad, pay adedi ve blokaj durumunu gösteren belgeye ne ad verilir?
+  A: Gelir Tablosu (len=13)
+  B: Hak Sahipleri Çizelgesi (Hazır Bulunanlar Listesi) (len=50) [CORRECT]
+  C: Vergi Matrahı (len=13)
+  D: Ticaret Sicil Gazetesi (len=22)
+  E: Vakıf Senedi (len=12)
+Explanation: Genel kurullarda oy kullanabilecek ortakları gösteren ve MKK tarafından üretilen resmi belge Hak Sahipleri Çizelgesi'dir (Hazır Bulunanlar Listesi).
+--------------------------------------------------------------------------------
+ID: q_1012_ogretici_004 | Outlier: True | Giveaway: False
+Text: Merkezi karşı taraf uygulamasının temel ekonomik işlevlerinden biri nedir?
+  A: Her yatırımcıya zarar garantisi vermek (len=38)
+  B: Borsa fiyatlarını belirlemek (len=28)
+  C: Şirketlerin bilançosunu hazırlamak (len=34)
+  D: İşlem tarafları arasındaki karşı taraf riskini yönetmeye yardımcı olmak (len=71) [CORRECT]
+  E: Müşteri sınıflandırması yapmak (len=30)
+Explanation: MKT, uygun piyasalarda işlemlerde karşı taraf olarak devreye girerek risk yönetimi ve teminat mekanizmalarını işletir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• MKT: Merkezi Karşı Taraf (Central Counterparty - Takas odasının takasın tamamlanmasını mali olarak garanti etmesi)
+--------------------------------------------------------------------------------
+ID: q_1012_ogretici_005 | Outlier: True | Giveaway: False
+Text: Temerrüt kavramı takas ve operasyon süreçlerinde neyi ifade eder?
+  A: İşlemin kârla kapanmasını (len=25)
+  B: Sermaye artırımı yapılmasını (len=28)
+  C: Fonun yeni pay ihraç etmesini (len=29)
+  D: Sadece fiyatın düşmesini (len=24)
+  E: Yükümlülüğün zamanında veya usulüne uygun yerine getirilmemesi durumunu (len=71) [CORRECT]
+Explanation: Temerrüt, teslimat, ödeme veya diğer yükümlülüklerin belirlenen şartlarda yerine getirilmemesiyle ilgilidir.
+--------------------------------------------------------------------------------
+ID: q_1012_ogretici_010 | Outlier: True | Giveaway: False
+Text: Operasyonel süreçlerde mutabakatın temel amacı nedir?
+  A: Piyasa fiyatını tahmin etmek (len=28)
+  B: Yatırım tavsiyesi vermek (len=24)
+  C: Müşteri sınıfını değiştirmek (len=28)
+  D: Vergi oranını belirlemek (len=24)
+  E: Kayıtların ve işlem bilgilerinin taraflar arasında tutarlılığını kontrol etmek (len=78) [CORRECT]
+Explanation: Mutabakat, kayıt ve işlem verilerindeki uyumsuzlukların tespit edilmesine yardımcı olur.
+--------------------------------------------------------------------------------
+ID: q_1012_ogretici_012 | Outlier: True | Giveaway: False
+Text: Takasbank'ın 'Merkezi Karşı Taraf' (CCP) sıfatıyla hizmet verdiği piyasalarda bir üye aracı kurum temerrüde düştüğünde (borcunu ödeyemediğinde) Takasbank'ın işlettiği 'Temerrüt Kaynakları Kullanım Hiyerarşisi' nasıldır?
+  A: Önce masum diğer üyelerin paraları -> Sonra mahkeme kararı (len=58)
+  B: Önce temerrüt eden üyenin teminatları ve katkı payı -> Sonra Takasbank'ın özkaynak katkısı -> Sonra diğer üyelerin Garanti Fonu katkı payları (len=141) [CORRECT]
+  C: Tüm borsa işlemleri süresiz iptal edilir (len=40)
+  D: Yalnızca Merkez Bankası kaynakları kullanılır (len=45)
+  E: Zarar doğrudan hisse senedini satan yatırımcıya yüklenir (len=56)
+Explanation: CCP temerrüt yönetiminde Takasbank 'Temerrüt Şelalesi'ni (Default Waterfall) işletir: Sırasıyla temerrüde düşen üyenin marjin teminatları ve garanti fonu payı kullanılır, yetmezse Takasbank'ın önceden taahhüt ettiği sermaye payı, o da yetmezse diğer üyelerin fon payları devreye girer.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• CCP: Merkezi Karşı Taraf (Central Counterparty - Takas odasının alıcıya karşı satıcı, satıcıya karşı alıcı olması)
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+--------------------------------------------------------------------------------
+ID: q_1012_ogretici_014 | Outlier: True | Giveaway: False
+Text: Yatırımcı Tazmin Merkezi (YTM) hangi durumların ortaya çıkması halinde aracı kurumlardaki yatırımcıların varlıklarını kanuni tazmin limitine kadar korumakla yükümlüdür?
+  A: Yatırımcının borsa fiyatlarındaki düşüş nedeniyle zarar etmesi halinde (len=70)
+  B: Şirketin kâr payı dağıtmaması durumunda (len=39)
+  C: Hisse senedi fiyatının taban yapması durumunda (len=46)
+  D: Yatırım kuruluşunun iflası veya hakkında tedrici tasfiye kararı verilmesi halinde nakit ve menkul kıymet teslim borçlarının karşılanamaması durumunda (len=149) [CORRECT]
+  E: Yatırımcının kredi kartı borçlarını ödeyememesi durumunda (len=57)
+Explanation: YTM piyasadaki piyasa riski veya yatırım zararını değil; aracı kuruluşun mali acze düşmesi, iflası veya tasfiyesi nedeniyle yatırımcılara ait hisse ve nakitleri tevdi edememesi durumundaki dolandırıcılık/mali yetersizlik riskini tazmin eder.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• YTM: Yatırımcı Tazmin Merkezi (Aracı kurumların iflası/tasfiyesinde yatırımcı varlıklarını tazmin eden kurum)
+--------------------------------------------------------------------------------
+ID: q_1012_ogretici_017 | Outlier: True | Giveaway: False
+Text: Takasbank Para Piyasası (TPP) ile ilgili olarak aşağıda yer alan temel operasyonel kurallardan hangisi DOĞRUDUR?
+  A: TPP'de hiçbir teminat verilmeden sınırsız borçlanılabilir (len=57)
+  B: Üyeler nakit borçlanabilmek için Takasbank'a mevzuatça kabul edilen menkul kıymet teminatı vermek zorundadır ve işlemler çok taraflı kör havuzda eşleşir (len=152) [CORRECT]
+  C: Yalnızca gerçek kişiler kendi aralarında borç alıp verebilir (len=60)
+  D: TPP faiz oranları her yıl başında sabitlenir, yıl boyu değişmez (len=63)
+  E: Takasbank bu piyasada hiçbir şekilde merkezi takas hizmeti sunmaz (len=65)
+Explanation: TPP; üyelerin likidite ihtiyaçlarını Takasbank'ın belirlediği teminatlar (DİBS, BIST payları, döviz, nakit) karşılığında ve kör havuzda anonim olarak karşıladığı organize para piyasasıdır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+• BIST: Borsa İstanbul A.Ş. (Türkiye'nin organize menkul kıymet, kıymetli maden ve türev piyasası borsası)
+• TPP: Takasbank Para Piyasası (Üyelerin karşılıklı Türk Lirası likidite borçlanıp borç verdiği piyasa)
+• DİBS: Devlet İç Borçlanma Senetleri (Hazine Müsteşarlığı/Bakanlığı tarafından ihraç edilen Bono ve Tahviller)
+--------------------------------------------------------------------------------
+ID: q_1012_ogretici_018 | Outlier: False | Giveaway: True
+Text: Borsa İstanbul Pay Piyasası'nda açığa satış yapan veya takas günü teslim yükümlülüğünü karşılayamayan bir aracı kurumun başvurabileceği organize Takasbank piyasası hangisidir?
+  A: Döviz Efektif Piyasası (len=22)
+  B: Vadeli İşlem ve Opsiyon Piyasası (len=32)
+  C: Ödünç Pay Piyasası (ÖPA) (len=24) [CORRECT]
+  D: Hazine Müsteşarlığı İhale Sistemi (len=33)
+  E: Yatırımcı Tazmin Merkezi Havuz Hesabı (len=37)
+Explanation: Ödünç Pay Piyasası (ÖPA); pay piyasasında açığa satış yapan veya takas yükümlülüğünü yerine getirmek için hisse senedine ihtiyaç duyan üyelerin, belirli bir komisyon ve teminat karşılığında hisse ödünç alabildiği Takasbank piyasasıdır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+• ÖPA: Ödünç Pay Piyasası (Açığa satış veya teslim yükümlülüğü için hisse ödünç alınan Takasbank piyasası)
+--------------------------------------------------------------------------------
+ID: q_1012_ogretici_020 | Outlier: False | Giveaway: True
+Text: Merkezi Saklama Kuruluşu (MKK) nezdinde 10 yıl boyunca hiçbir işlem görmeyen ve hak sahipleri tarafından aranmayan zamanaşımına uğramış sermaye piyasası araçları ve temettüler nereye aktarılır?
+  A: Aracı kurumun kâr hanesine aktarılır (len=36)
+  B: Yatırımcı Tazmin Merkezi'ne (YTM) devredilir (len=44) [CORRECT]
+  C: Aracı kurumun özkaynaklarına gelir olarak kaydedilir (len=52)
+  D: Süresiz olarak MKK havuzunda bekletilir (len=39)
+  E: Diğer müşterilere temettü olarak dağıtılır (len=42)
+Explanation: 6362 sayılı Sermaye Piyasası Kanunu m.83 uyarınca; yatırım kuruluşları ve ihraççılar nezdindeki 10 yıl süreyle aranmayan ve işlem görmeyen her türlü emanet, alacak, sermaye piyasası aracı ve temettüler zamanaşımına uğrayarak Yatırımcı Tazmin Merkezi'ne (YTM) intikal eder.
+--------------------------------------------------------------------------------

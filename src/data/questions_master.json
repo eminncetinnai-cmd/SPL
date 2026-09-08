@@ -11827,23 +11827,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Doğrudan Cumhurbaşkanlığına bağlı bir kamu tüzel kişiliğidir."
+        "text": "Doğrudan Hazine ve Maliye Bakanlığına bağlı, kamu sermayeli ve tüzel kişiliği haiz bir kalkınma bankasıdır."
       },
       {
         "key": "B",
-        "text": "Yalnızca yabancı yatırımcıların hesap açabildiği özel bir offshore bankadır."
+        "text": "Yalnızca yabancı kurumsal yatırımcıların hesap açabildiği ve serbest döviz transferi yapan kıyı bankasıdır."
       },
       {
         "key": "C",
-        "text": "Özel bir anonim şirket statüsünde, Bankacılık Kanunu'na tabi bir yatırım/kalkınma bankası ve SPKn m.77 uyarınca Türkiye'nin Merkezi Takas Kuruluşudur."
+        "text": "Özel bir anonim şirket statüsünde, Bankacılık Kanunu'na tabi kalkınma ve yatırım bankası ile SPKn uyarınca Merkezi Takas Kuruluşudur."
       },
       {
         "key": "D",
-        "text": "Borsa İstanbul bünyesinde şubesi bulunmayan ticari bir mevduat bankasıdır."
+        "text": "Borsa İstanbul bünyesinde işletilen, mevduat kabul etme yetkisine sahip ve şube ağıyla çalışan kamu mevduat bankasıdır."
       },
       {
         "key": "E",
-        "text": "Vakıf tüzel kişiliğine sahip kâr amacı gütmeyen bir yardım kuruluşudur."
+        "text": "Türkiye Sermaye Piyasaları Birliği bünyesinde faaliyet yürüten, kâr amacı gütmeyen kamu yararına bir tüzel kişiliktir."
       }
     ],
     "correct_answer": "C",
@@ -11917,11 +11917,11 @@
       },
       {
         "key": "D",
-        "text": "Haftalık takas"
+        "text": "T+5 (Beşinci iş günü)"
       },
       {
         "key": "E",
-        "text": "T+1 (İşlem gününü izleyen birinci iş günü)"
+        "text": "T+1 (Birinci iş günü)"
       }
     ],
     "correct_answer": "E",
@@ -11944,7 +11944,7 @@
     "options": [
       {
         "key": "A",
-        "text": "Ödeme Karşılığı Teslim İlkesi (DvP / Delivery versus Payment)"
+        "text": "Teslim Karşılığı Ödeme İlkesi"
       },
       {
         "key": "B",
@@ -11956,11 +11956,11 @@
       },
       {
         "key": "D",
-        "text": "Zamanaşımı İlkesi"
+        "text": "Takas Kesinliği İlkesi"
       },
       {
         "key": "E",
-        "text": "Kayıtsız Şartsız Teslim İlkesi"
+        "text": "Kayıtsız Şartsız Devir İlkesi"
       }
     ],
     "correct_answer": "A",
@@ -11983,23 +11983,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Takasbank Para Piyasası (TPP)"
+        "text": "Takasbank Para Piyasası"
       },
       {
         "key": "B",
-        "text": "BIST Tahvil Bono Kesin Alım Pazarı"
+        "text": "BIST Tahvil Kesin Alım Pazarı"
       },
       {
         "key": "C",
-        "text": "Serbest Altın Piyasası"
+        "text": "Serbest Altın ve Döviz Piyasası"
       },
       {
         "key": "D",
-        "text": "Bankalararası Repo Pazarı"
+        "text": "Bankalararası Tahvil Repo Pazarı"
       },
       {
         "key": "E",
-        "text": "VİOP Vadeli Pazar"
+        "text": "Vadeli İşlem ve Opsiyon Pazarı"
       }
     ],
     "correct_answer": "A",
@@ -12022,23 +12022,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Doğrudan Takas Üyesi (DCM) ve Genel Takas Üyesi (GCM)"
-      },
-      {
-        "key": "B",
         "text": "Bireysel Takas Üyesi ve Kurumsal Takas Üyesi"
       },
       {
+        "key": "B",
+        "text": "Doğrudan Takas Üyesi ve Genel Takas Üyesi"
+      },
+      {
         "key": "C",
-        "text": "Yerli Takas Üyesi ve Yabancı Takas Üyesi"
+        "text": "Tam Yetkili Takas Üyesi ve Kısmi Takas Üyesi"
       },
       {
         "key": "D",
-        "text": "Kısa Vadeli Takas Üyesi ve Uzun Vadeli Takas Üyesi"
+        "text": "Yerel Takas Üyesi ve Uluslararası Takas Üyesi"
       },
       {
         "key": "E",
-        "text": "Teminatlı Takas Üyesi ve Teminatsız Takas Üyesi"
+        "text": "Birincil Takas Üyesi ve İkincil Takas Üyesi"
       }
     ],
     "correct_answer": "A",
@@ -12100,23 +12100,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Takasbank ve Bankalararası Takas Odaları Merkezi (BTOM)"
+        "text": "Takasbank ve Bankalararası Takas Odaları Merkezi"
       },
       {
         "key": "B",
-        "text": "Merkezi Kayıt Kuruluşu"
+        "text": "Merkezi Kayıt Kuruluşu ve Borsa İstanbul"
       },
       {
         "key": "C",
-        "text": "Sermaye Piyasası Kurulu"
+        "text": "Sermaye Piyasası Kurulu ve Maliye Bakanlığı"
       },
       {
         "key": "D",
-        "text": "Gelir İdaresi Başkanlığı"
+        "text": "Türkiye Sermaye Piyasaları Birliği ve TCMB"
       },
       {
         "key": "E",
-        "text": "Borsa İstanbul"
+        "text": "Bankacılık Düzenleme ve Denetleme Kurumu ve BİAŞ"
       }
     ],
     "correct_answer": "A",
@@ -12256,23 +12256,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Aynı gün alınan hisse aynı gün satılamaz (netleştirme yapılamaz), takas T+2'de brüt nakit ve menkul kıymetle yapılır"
+        "text": "Yatırımcı gün içinde aldığı hisse senedini aynı gün serbestçe satabilir ve net bakiye üzerinden takasa dahil olur."
       },
       {
         "key": "B",
-        "text": "İlgili hisse senedi derhal Borsa kotundan çıkarılarak tüm tahtası kalıcı olarak işleme kapatılır"
+        "text": "Alınan hisse gün içi satılamaz, netleştirme yapılmaz; takas T+2'de brüt nakit ve brüt hisse ile sonuçlandırılır."
       },
       {
         "key": "C",
-        "text": "Şirketin tüm yönetimi Sermaye Piyasası Kurulu tarafından atanan geçici kayyıma devredilir"
+        "text": "Aracı kurumlar takas alacaklarını Takasbank'tan peşin tahsil eder ancak borçlarını T+5 gününe kadar erteleyebilirler."
       },
       {
         "key": "D",
-        "text": "İşlem takas süresi T+2 valöründen T+0 anlık teslimat valörüne dönüştürülür"
+        "text": "Hisse senedi üzerindeki tüm temettü ve oy hakları brüt takas tedbiri kaldırılıncaya kadar kanunen dondurulur."
       },
       {
         "key": "E",
-        "text": "Yalnızca profesyonel nitelikli yatırımcıların alım satım yapmasına izin verilir"
+        "text": "Yatırımcılar işlemlerini sadece fiziki hisse senetlerini takas merkezine bizzat elden teslim ederek gerçekleştirebilirler."
       }
     ],
     "correct_answer": "A",
@@ -12373,7 +12373,7 @@
     "options": [
       {
         "key": "A",
-        "text": "Başlangıç Teminatı (Initial Margin)"
+        "text": "Başlangıç Teminatı"
       },
       {
         "key": "B",
@@ -12381,15 +12381,15 @@
       },
       {
         "key": "C",
-        "text": "Kâr Teminatı"
+        "text": "Olağanüstü Teminat"
       },
       {
         "key": "D",
-        "text": "Serbest Teminat"
+        "text": "Fiziki Teslimat Teminatı"
       },
       {
         "key": "E",
-        "text": "Rüçhan Teminatı"
+        "text": "Değişim Teminatı"
       }
     ],
     "correct_answer": "A",
@@ -12568,23 +12568,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Konut Kredisi"
+        "text": "Gün İçi Likidite Kredisi"
       },
       {
         "key": "B",
-        "text": "İhracat Kredisi"
+        "text": "Uzun Vadeli Yatırım Kredisi"
       },
       {
         "key": "C",
-        "text": "Taşıt Kredisi"
+        "text": "Müşteri Kredili İşlem Avansı"
       },
       {
         "key": "D",
-        "text": "Gün İçi Likidite Kredisi (Intraday Credit)"
+        "text": "Gecelik Repo Kredisi"
       },
       {
         "key": "E",
-        "text": "Mevduat Kredisi"
+        "text": "Döviz Swap Destek Kredisi"
       }
     ],
     "correct_answer": "D",
@@ -12646,23 +12646,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Borsa İstanbul A.Ş."
-      },
-      {
-        "key": "B",
         "text": "Merkezi Kayıt Kuruluşu A.Ş."
       },
       {
+        "key": "B",
+        "text": "Borsa İstanbul Anonim Şirketi"
+      },
+      {
         "key": "C",
-        "text": "Türkiye Sermaye Piyasaları Birliği"
+        "text": "İstanbul Takas ve Saklama Bankası A.Ş."
       },
       {
         "key": "D",
-        "text": "Kredi Garanti Fonu"
+        "text": "Türkiye Cumhuriyet Merkez Bankası"
       },
       {
         "key": "E",
-        "text": "İstanbul Takas ve Saklama Bankası A.Ş. (Takasbank)"
+        "text": "Sermaye Piyasası Kurulu"
       }
     ],
     "correct_answer": "E",
@@ -12685,23 +12685,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Şirketlerin vergi borçlarını tahsil etmek ve vergi dairesine yatırmak"
+        "text": "Borsada işlem gören sermaye piyasası araçlarının fiziki basımını, güvenli matbaalarda üretimini ve teslimini organize etmek."
       },
       {
         "key": "B",
-        "text": "Borsa İstanbul Pay Piyasası hisse senedi işlemlerinde kredi tahsis etmek"
+        "text": "Sermaye piyasası araçlarının kaydileştirilmesini sağlamak, hak sahipliği sicilini tutmak ve merkezi saklamasını yürütmek."
       },
       {
         "key": "C",
-        "text": "Borsada işlem gören şirketlerin yönetim kurulu başkanlarını seçmek"
+        "text": "Yatırım kuruluşlarına kredi tahsis etmek ve organize para piyasalarında gecelik faiz oranlarını belirleyerek uygulamak."
       },
       {
         "key": "D",
-        "text": "Sermaye piyasası araçlarının kaydileştirilmesine ilişkin işlemleri yürütmek, bunların hak sahipleri bazında elektronik ortamda kayden izlenmesini ve merkezi saklamasını sağlamak"
+        "text": "Halka açık ortaklıkların hisse senetlerinde manipülasyon ve içeriden öğrenenlerin ticaretini tespit edip idari para cezası kesmek."
       },
       {
         "key": "E",
-        "text": "Döviz kurlarını günlük olarak ilan etmek ve para basmak"
+        "text": "Tüm sermaye piyasası kurumlarının bağımsız denetim raporlarını hazırlamak ve vergi beyannamelerini doğrudan onaylamak."
       }
     ],
     "correct_answer": "D",
@@ -12724,23 +12724,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Fiziki Tescil"
+        "text": "Halka Arz Süreci"
       },
       {
         "key": "B",
-        "text": "Blokaj Şerhi"
+        "text": "Kaydileştirme"
       },
       {
         "key": "C",
-        "text": "Virmanlama"
+        "text": "Kotasyon Alma"
       },
       {
         "key": "D",
-        "text": "Kotasyon"
+        "text": "Konsolidasyon"
       },
       {
         "key": "E",
-        "text": "Kaydileştirme (Dematerialization)"
+        "text": "Sermaye Azaltımı"
       }
     ],
     "correct_answer": "E",
@@ -12841,23 +12841,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Fiziki pay senetleri süresiz olarak geçerliliğini korur ve şirket pay defteri kayıtları MKK kayıtlarına üstün sayılır."
+        "text": "Söz konusu hisse senetleri tamamen iptal edilir ve bedelleri hiçbir hak talep edilmeksizin Yatırımcı Tazmin Merkezi'ne irat kaydedilir."
       },
       {
         "key": "B",
-        "text": "Kaydileştirilmeyen paylara ilişkin temettü dışındaki ortaklık hakları (oy kullanma, genel kurula katılma vb.) paylar kaydileştirilinceye kadar donar; hak sahipleri diledikleri zaman başvurarak paylarını kaydileştirebilirler."
+        "text": "Pay sahiplerinin ortaklık sıfatı düşer ve şirket yönetimi bu hisseleri genel kurul yetkisiyle üçüncü şahıslara yeniden satabilir."
       },
       {
         "key": "C",
-        "text": "Paylar sahibinin talebine gerek olmaksızın otomatik olarak borsada resen satılır."
+        "text": "Hisseler borsada işlem göremez, aracı kurumlarca aracılık edilemez; temettü dışı haklar donar, teslim edilince haklar canlanır."
       },
       {
         "key": "D",
-        "text": "Pay senetleri anonim şirket tarafından nominal değerleri üzerinden otomatik olarak itfa edilir ve ortaklık hakları düşer."
+        "text": "Şirket bu hisseleri otomatik olarak tahvile dönüştürerek yatırımcılara sabit faizli borçlanma senedi olarak teslim etmek zorundadır."
       },
       {
         "key": "E",
-        "text": "Teslim edilmeyen paylar derhal iptal edilir ve şirket sermayesi bu tutarda mahkeme kararıyla azaltılır."
+        "text": "Hisselerin mülkiyeti doğrudan Hazine ve Maliye Bakanlığı'na geçer ve şirket sermayesi azaltılarak paylar sicilden terkin edilir."
       }
     ],
     "correct_answer": "B",
@@ -12880,23 +12880,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Aracı kurum çalışanlarının tuttuğu şirket içi Excel çalışma tabloları"
+        "text": "Kayıtlar sadece bilgilendirme amaçlı olup resmi uyuşmazlıklarda aracı kurumun fiziki dekontları esas alınır."
       },
       {
         "key": "B",
-        "text": "Merkezi Kayıt Kuruluşu (MKK) nezdinde tutulan elektronik kayıtlar kesin delil teşkil eder"
+        "text": "Merkezi Kayıt Kuruluşu nezdinde tutulan elektronik kayıtlar mülkiyetin ispatında kanunen kesin delil teşkil eder."
       },
       {
         "key": "C",
-        "text": "İhraççı şirketin ticaret sicil müdürlüğüne verdiği sözlü kurucu beyanları"
+        "text": "Hak sahipliği ispatı yalnızca şirket merkezinde tutulan fiziki basılı pay defterinin ibraz edilmesiyle mümkündür."
       },
       {
         "key": "D",
-        "text": "Yatırımcının noter onaylı genel vekâletnamesi"
+        "text": "Elektronik kayıtlar adi karine sayılır ve noter tasdikli sözleşme ibraz edilmedikçe mahkemelerce delil kabul edilmez."
       },
       {
         "key": "E",
-        "text": "Borsa aracı kurumunun basılı aylık müşteri tanıtım broşürleri"
+        "text": "MKK kayıtları sadece genel kurula katılım hakkı verir, hisse devirlerinde ve hacizlerde herhangi bir bağlayıcılığı yoktur."
       }
     ],
     "correct_answer": "B",
@@ -12958,23 +12958,23 @@
     "options": [
       {
         "key": "A",
-        "text": "e-Devlet Portalı"
+        "text": "e-VEDOP Vergi Dairesi Portalı"
       },
       {
         "key": "B",
-        "text": "KAP Sistemi"
+        "text": "KAP Kamuyu Aydınlatma Platformu"
       },
       {
         "key": "C",
-        "text": "e-ŞİRKET: Şirketler Bilgi Portalı"
+        "text": "e-ŞİRKET Şirketler Bilgi Portalı"
       },
       {
         "key": "D",
-        "text": "e-YATIRIMCI"
+        "text": "e-YATIRIMCI Yatırımcı Bilgi Portalı"
       },
       {
         "key": "E",
-        "text": "e-GKS"
+        "text": "e-GKS Elektronik Genel Kurul Sistemi"
       }
     ],
     "correct_answer": "C",
@@ -13075,23 +13075,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Merkezi Kayıt Kuruluşu A.Ş. (MKK)"
+        "text": "Borsa İstanbul Anonim Şirketi"
       },
       {
         "key": "B",
-        "text": "Borsa İstanbul A.Ş."
+        "text": "Merkezi Kayıt Kuruluşu Anonim Şirketi"
       },
       {
         "key": "C",
-        "text": "Takasbank"
+        "text": "İstanbul Takas ve Saklama Bankası A.Ş."
       },
       {
         "key": "D",
-        "text": "Bilgi Teknolojileri ve İletişim Kurumu"
+        "text": "Sermaye Piyasası Kurulu Başkanlığı"
       },
       {
         "key": "E",
-        "text": "Gelir İdaresi Başkanlığı"
+        "text": "Türkiye Sermaye Piyasaları Birliği"
       }
     ],
     "correct_answer": "A",
@@ -13231,23 +13231,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Kotasyon"
+        "text": "Virman İşlemi"
       },
       {
         "key": "B",
-        "text": "Temerrüt"
+        "text": "Blokaj İşlemi"
       },
       {
         "key": "C",
-        "text": "Tahsis"
+        "text": "Kotasyon İşlemi"
       },
       {
         "key": "D",
-        "text": "Virman (Menkul Kıymet Transferi)"
+        "text": "Takas Kesinliği"
       },
       {
         "key": "E",
-        "text": "Takas Netleştirmesi"
+        "text": "Repo Sözleşmesi"
       }
     ],
     "correct_answer": "D",
@@ -13309,23 +13309,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Şirketler halen her ay fiziki defteri notere onaylatmak zorundadır."
+        "text": "Ortaklıklar fiziki pay defteri tutmaya devam etmek zorunda olup MKK kayıtları sadece yardımcı istatistiki bilgi sunar."
       },
       {
         "key": "B",
-        "text": "Pay defteri yükümlülüğü Ticaret Bakanlığı müfettişlerince elle tutulur."
+        "text": "MKK tarafından tutulan kaydi hesap kayıtları ortaklıklar açısından pay defteri hükmündedir ve fiziki defter aranmaz."
       },
       {
         "key": "C",
-        "text": "MKK tarafından tutulan kaydi hesap kayıtları ortaklıklar açısından pay defteri hükmündedir (Ayrı fiziki defter tutma zorunluluğu kalkmıştır)."
+        "text": "Pay defteri kayıtları yalnızca Ticaret Sicil Müdürlüğü nezdinde tutulur ve MKK sistemine herhangi bir veri aktarılmaz."
       },
       {
         "key": "D",
-        "text": "Pay defteri tutma yükümlülüğü tamamen yürürlükten kaldırılmıştır."
+        "text": "Kaydi hisse senetleri için her yıl sonunda noter onaylı basılı pay defteri hazırlanıp MKK'ya onaylatılmalıdır."
       },
       {
         "key": "E",
-        "text": "Şirket pay defteri yalnızca ticaret sicil müdürlüğü tarafından fiziki mühürlü defterlerde tutulur."
+        "text": "Anonim şirketler pay defterini aracı kurumlar vasıtasıyla saklar ve MKK kayıtları pay defteri yerine geçmez."
       }
     ],
     "correct_answer": "C",
@@ -13387,23 +13387,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Borsa İstanbul Yönetim Kurulu"
+        "text": "Borsa İstanbul Anonim Şirketi"
       },
       {
         "key": "B",
-        "text": "Türkiye Bankalar Birliği"
+        "text": "Sermaye Piyasası Kurulu"
       },
       {
         "key": "C",
-        "text": "Sermaye Piyasası Kurulu (SPK)"
+        "text": "Merkezi Kayıt Kuruluşu"
       },
       {
         "key": "D",
-        "text": "Rekabet Kurulu"
+        "text": "Takasbank A.Ş."
       },
       {
         "key": "E",
-        "text": "Hazine ve Maliye Bakanlığı"
+        "text": "Ticaret Bakanlığı"
       }
     ],
     "correct_answer": "C",
@@ -13598,7 +13598,7 @@
       },
       {
         "key": "E",
-        "text": "Aksine bir sözleşme veya mahkeme kararı olmadıkça payın asıl maliki (ortağı) oy hakkını kullanır"
+        "text": "Aksine bir sözleşme veya mahkeme kararı olmadıkça payın asıl pay sahibi oy hakkını kullanır"
       }
     ],
     "correct_answer": "E",
@@ -13902,7 +13902,7 @@
       },
       {
         "key": "C",
-        "text": "Mutlak Pozisyon Limiti (Position Limit)"
+        "text": "Mutlak Pozisyon Limiti"
       },
       {
         "key": "D",
@@ -13988,7 +13988,7 @@
       },
       {
         "key": "E",
-        "text": "Ödünç Komisyon Oranı (Borrowing Fee)"
+        "text": "Ödünç Komisyon Oranı"
       }
     ],
     "correct_answer": "E",
@@ -14019,7 +14019,7 @@
       },
       {
         "key": "C",
-        "text": "Gerçek Gün / 365 (Actual/365)"
+        "text": "Gerçek Gün / 365"
       },
       {
         "key": "D",
@@ -14089,23 +14089,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Tüm gerçekleşen işlemler iptal edilir."
+        "text": "O seans yapılan tüm alım satım işlemleri Borsa tarafından derhal iptal edilir ve takasa dahil edilmez."
       },
       {
         "key": "B",
-        "text": "Takas süresi 1 yıl ertelenir."
+        "text": "Devre kesici anına kadar gerçekleşmiş tüm işlemler geçerlidir ve standart takas süreci aynen yürütülür."
       },
       {
         "key": "C",
-        "text": "Paralar aracı kurumun kendi hesabında bloke kalır."
+        "text": "İlgili hissede o günkü takas işlemleri iptal edilerek tüm nakit ve hisseler yatırımcılara iade edilir."
       },
       {
         "key": "D",
-        "text": "İşlemlerin takası iptal edilerek portföyler seans açılış durumuna döndürülür."
+        "text": "Takas valörü otomatik olarak T+5 gününe uzatılır ve üyelerden ilave munzam teminat talep edilir."
       },
       {
         "key": "E",
-        "text": "Devre kesici devreye girene kadar gerçekleşmiş tüm işlemler geçerlidir ve takası normal valöründe (T+2) yapılır."
+        "text": "Yalnızca kurumsal yatırımcıların işlemleri geçerli sayılır, bireysel yatırımcıların takasları askıya alınır."
       }
     ],
     "correct_answer": "E",
@@ -14183,7 +14183,7 @@
       },
       {
         "key": "E",
-        "text": "Kâr/zarar farkının taraflar arasında nakden tahsil edilip ödenmesiyle (Nakit Uzlaşma)"
+        "text": "Kâr/zarar farkının taraflar arasında nakden tahsil edilip ödenmesiyle"
       }
     ],
     "correct_answer": "E",
@@ -14245,23 +14245,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Menkul kıymet satıp parayı faizsiz olarak vadeli mevduata yatırır."
+        "text": "Menkul kıymeti satıp karşılığında nakit alır; vade bitiminde nakdi faiziyle geri ödeyerek menkul kıymeti geri alır."
       },
       {
         "key": "B",
-        "text": "Hisse senedi alıp aynı gün açığa satış işlemi yapar."
+        "text": "Nakit verip karşılığında menkul kıymeti teminat alır; vade sonunda menkul kıymeti iade edip nakdi faiziyle alır."
       },
       {
         "key": "C",
-        "text": "Borsa endeksine dayalı varant satın alıp vadesine kadar bekler."
+        "text": "Müşterisinin hisse senetlerini açığa satarak piyasadaki fiyat düşüşlerinden risksiz arbitraj geliri elde eder."
       },
       {
         "key": "D",
-        "text": "Şirket tahvilini vade sonunda hisse senedine dönüştürür."
+        "text": "Takasbank Garanti Fonuna katkı payı yatırarak temerrüde düşen diğer üyelerin borçlarını tasfiye etmeyi üstlenir."
       },
       {
         "key": "E",
-        "text": "Nakit verip karşılığında menkul kıymeti teminat olarak teslim alır; vade sonunda parayı faiziyle geri alıp kıymeti iade eder."
+        "text": "VİOP pazarında vadeli sözleşme satın alarak dayanak varlığı vade sonunda fiziki teslimatla talep etme hakkı kazanır."
       }
     ],
     "correct_answer": "E",
@@ -14362,7 +14362,7 @@
     "options": [
       {
         "key": "A",
-        "text": "TÜBİTAK onaylı resmi Zaman Damgası (Time Stamp) ve Nitelikli Elektronik Sertifika (e-İmza) ile"
+        "text": "TÜBİTAK onaylı resmi Zaman Damgası ve Nitelikli Elektronik Sertifika ile"
       },
       {
         "key": "B",
@@ -14405,7 +14405,7 @@
       },
       {
         "key": "B",
-        "text": "Olağanüstü Durum Merkezi (ODM / Disaster Recovery Center)"
+        "text": "Olağanüstü Durum Merkezi"
       },
       {
         "key": "C",
@@ -14518,7 +14518,7 @@
     "options": [
       {
         "key": "A",
-        "text": "Garanti Fonu (Takasbank Garanti Fonu / Default Fund)"
+        "text": "Garanti Fonu"
       },
       {
         "key": "B",
@@ -14608,7 +14608,7 @@
       },
       {
         "key": "D",
-        "text": "Takasbank 'Buy-In' (Zorunlu Alım) yaparak veya Ödünç Pay Piyasasından temin ederek hisseyi alıcıya teslim eder"
+        "text": "Takasbank Temerrüt Pazarında Zorunlu Alım yaparak veya Ödünç Piyasasından temin ederek hisseyi teslim eder"
       },
       {
         "key": "E",
@@ -14674,23 +14674,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Aynı gün saat 12:00'ye kadar"
+        "text": "İşlem gününde seans kapanışından hemen önce saat 17:30'a kadar"
       },
       {
         "key": "B",
-        "text": "İşlem gününü izleyen iş günü (T+1) saat 14:30 / 15:00'e kadar"
+        "text": "İşlem gününü izleyen T+1 günü en geç saat 15:00'e kadar"
       },
       {
         "key": "C",
-        "text": "T+2 günü saat 18:00'e kadar"
+        "text": "Standart takas günü olan T+2 günü saat 16:45'e kadar"
       },
       {
         "key": "D",
-        "text": "Hafta sonu mesai bitimine kadar"
+        "text": "Haftalık takas mutabakatının yapıldığı Cuma günü seans sonuna kadar"
       },
       {
         "key": "E",
-        "text": "Süre sınırlaması olmaksızın ay sonuna kadar"
+        "text": "Sözleşme vadesinin dolduğu son işlem gününde saat 12:00'ye kadar"
       }
     ],
     "correct_answer": "B",
@@ -14721,7 +14721,7 @@
       },
       {
         "key": "C",
-        "text": "Değer Kesintisi / İskonto Oranı (Haircut)"
+        "text": "Değer Kesintisi / İskonto Oranı"
       },
       {
         "key": "D",
@@ -14764,7 +14764,7 @@
       },
       {
         "key": "D",
-        "text": "Stres Testleri (Stress Testing)"
+        "text": "Stres Testleri"
       },
       {
         "key": "E",
@@ -14846,7 +14846,7 @@
       },
       {
         "key": "E",
-        "text": "Sistemik Risk (Systemic Risk)"
+        "text": "Sistemik Risk"
       }
     ],
     "correct_answer": "E",
@@ -14869,23 +14869,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Sermaye Tavanı"
+        "text": "Borsa İstanbul Olağanüstü Durum Yedek Fonu"
       },
       {
         "key": "B",
-        "text": "Kıdem Tazminatı"
+        "text": "TCMB Bankalararası Para Piyasası Garanti Blokesi"
       },
       {
         "key": "C",
-        "text": "İtfa Payı"
+        "text": "Yatırımcı Tazmin Merkezi Genel Tazmin Fonu Hesabı"
       },
       {
         "key": "D",
-        "text": "SITG (Skin in the Game / Takasbank Özkaynak Katkısı)"
+        "text": "Takasbank Karşılanmış Risklere Tahsis Edilen Sermayesi"
       },
       {
         "key": "E",
-        "text": "Yedek Akçe"
+        "text": "Sermaye Piyasası Kurulu İdari Para Cezaları Havuzu"
       }
     ],
     "correct_answer": "D",
@@ -14994,7 +14994,7 @@
       },
       {
         "key": "C",
-        "text": "Otomatik Ödünç Pay Servisi (Auto-Borrowing)"
+        "text": "Otomatik Ödünç Pay Servisi"
       },
       {
         "key": "D",
@@ -15033,7 +15033,7 @@
       },
       {
         "key": "C",
-        "text": "Operasyonel Risk (Operational Risk)"
+        "text": "Operasyonel Risk"
       },
       {
         "key": "D",
@@ -15080,7 +15080,7 @@
       },
       {
         "key": "E",
-        "text": "İş Sürekliliği Planı (İSP / BCP)"
+        "text": "İş Sürekliliği Planı"
       }
     ],
     "correct_answer": "E",
@@ -15103,7 +15103,7 @@
     "options": [
       {
         "key": "A",
-        "text": "Sızma Testi (Penetration Test)"
+        "text": "Sızma Testi"
       },
       {
         "key": "B",
@@ -15142,23 +15142,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Omnibus Havuz Saklama"
+        "text": "Omnibus Hesap Modeli (Global Havuz Saklama)"
       },
       {
         "key": "B",
-        "text": "Ayrıştırılmış Doğrudan Saklama (Segregated Direct Custody)"
+        "text": "Doğrudan Hak Sahipliği (Ayrıştırılmış Saklama)"
       },
       {
         "key": "C",
-        "text": "Global (Omnibus) Saklama"
+        "text": "Kolektif Hesap Modeli (Ortak Saklama Hesabı)"
       },
       {
         "key": "D",
-        "text": "Kayıtsız Saklama"
+        "text": "Fidüsyar Hesap Modeli (Temsili Saklama Hesabı)"
       },
       {
         "key": "E",
-        "text": "Gizli Saklama"
+        "text": "Anonim Hesap Modeli (Gizli Saklama Hesabı)"
       }
     ],
     "correct_answer": "B",
@@ -15181,23 +15181,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Saklayıcı kuruluş PYŞ'nin hiyerarşik bağlı alt birimidir."
+        "text": "Saklama kuruluşu kurucu PYŞ'nin iştiraki olmak zorunda olup fon harcamalarının onayını kurucu yönetim kurulundan alır."
       },
       {
         "key": "B",
-        "text": "Fon kurucusu aynı zamanda fonun yegâne portföy saklayıcısı olmak zorundadır."
+        "text": "Saklama kuruluşu PYŞ'den tamamen bağımsızdır ve fon malvarlığını korumak üzere mevzuata uygunluk gözetimi yapar."
       },
       {
         "key": "C",
-        "text": "Saklama kuruluşu kurucu PYŞ'den tamamen bağımsızdır ve PYŞ'nin tüm fon işlemlerinin mevzuata uygunluğunu gözetmek ve denetlemekle yükümlüdür."
+        "text": "Saklama kuruluşu fon portföyündeki hisse senetlerinin alım ve satım kararlarını doğrudan kendi analistleriyle belirler."
       },
       {
         "key": "D",
-        "text": "Saklayıcı kuruluş fonun yatırım stratejisini bizzat yönetir."
+        "text": "Saklama kuruluşu yalnızca fon katılma paylarının halka arz izahnamesini hazırlamak ve SPK'ya tescil ettirmekle görevlidir."
       },
       {
         "key": "E",
-        "text": "Saklama kuruluşu fon üzerinde hiçbir denetim yetkisine sahip değildir."
+        "text": "Saklama kuruluşu fon yönetim ücretlerini tahsil ederek tamamını Yatırımcı Tazmin Merkezi'ne aktarmakla yükümlüdür."
       }
     ],
     "correct_answer": "C",
@@ -15220,23 +15220,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Hisseler aracı kurumun borçlularına dağıtılır."
+        "text": "Hisseler aracı kurumun iflas masasına devredilir ve aracı kurumun diğer tüm ticari borçlularına oransal paylaştırılır."
       },
       {
         "key": "B",
-        "text": "Hisseler aracı kurumun iflas masasına DAHİL EDİLEMEZ; yatırımcı hisselerini MKK üzerinden başka bir aracı kuruma virmanlayarak mülkiyetini aynen korur."
+        "text": "Hisseler iflas masasına DAHİL EDİLEMEZ; MKK nezdinde yatırımcı adına kayıtlı olduğundan korunur ve YTM devri yapılır."
       },
       {
         "key": "C",
-        "text": "Hisseler Hazineye gelir kaydedilir."
+        "text": "Yatırımcının hisse senetleri derhal Borsa İstanbul'da piyasa fiyatından satılarak elde edilen nakit Hazineye aktarılır."
       },
       {
         "key": "D",
-        "text": "Hisseler otomatik nakde çevrilip iflas masasına devredilir."
+        "text": "Yatırımcı hisselerinin mülkiyetini kaybeder ve yalnızca aracı kurumun sermayesi oranında sınırlı tazminat talep edebilir."
       },
       {
         "key": "E",
-        "text": "Hisselerin mülkiyeti aracı kurumun hâkim ortaklarına geçer."
+        "text": "Hisse senetleri Takasbank Garanti Fonu'na intikal eder ve Takasbank üyeleri arasında eşit olarak bölüştürülür."
       }
     ],
     "correct_answer": "B",
@@ -15306,7 +15306,7 @@
       },
       {
         "key": "C",
-        "text": "Görevler Ayrılığı İlkesi (Segregation of Duties)"
+        "text": "Görevler Ayrılığı İlkesi"
       },
       {
         "key": "D",
@@ -15376,23 +15376,23 @@
     "options": [
       {
         "key": "A",
-        "text": "10 yıl boyunca hiçbir şekilde çözülemez."
+        "text": "Teminat iadesi ancak ilgili şirketin yıllık olağan genel kurul toplantısında onaylanması üzerine yapılabilir."
       },
       {
         "key": "B",
-        "text": "Borç ve faiz tam olarak kapatıldığı anda sistem tarafından otomatik olarak blokaj çözülerek serbest bırakılır."
+        "text": "Borç ve temerrüt faizi kapatıldığı anda sistem tarafından otomatik olarak üyenin serbest hesabına iade edilir."
       },
       {
         "key": "C",
-        "text": "Sadece yıl başında Takasbank Genel Kurulu kararıyla çözülür."
+        "text": "Takasbank teminatı 1 yıl boyunca faizsiz blokede tutar ve üyenin yeni bir temerrüde düşmeyeceğini izler."
       },
       {
         "key": "D",
-        "text": "Mahkeme kararı olmadan asla serbest bırakılamaz."
+        "text": "Teminatın %50'si aracı kuruma iade edilirken kalan %50'lik kısım Takasbank gelir havuzuna irat kaydedilir."
       },
       {
         "key": "E",
-        "text": "Yalnızca SPK Başkanı'nın yazılı onayı ile çözülür."
+        "text": "Teminatlar nakit olarak ödenmeyip yalnızca Borsa İstanbul A.Ş. pay senetleri şeklinde mislen iade edilebilir."
       }
     ],
     "correct_answer": "B",
@@ -15427,7 +15427,7 @@
       },
       {
         "key": "D",
-        "text": "En az 10 yıl (ve mülkiyet kayıtları süresiz olarak)"
+        "text": "En az 10 yıl"
       },
       {
         "key": "E",
@@ -15458,7 +15458,7 @@
       },
       {
         "key": "B",
-        "text": "Hak Sahipleri Çizelgesi (Hazır Bulunanlar Listesi)"
+        "text": "Hak Sahipleri Çizelgesi"
       },
       {
         "key": "C",
@@ -17560,23 +17560,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Aynı gün / 30 gün"
+        "text": "Aynı gün başlangıç / En fazla 30 gün bitiş"
       },
       {
         "key": "B",
-        "text": "7 gün / 1 yıl (365 gün)"
+        "text": "En fazla 7 gün başlangıç / En fazla 1 yıl bitiş"
       },
       {
         "key": "C",
-        "text": "2 gün / 180 gün"
+        "text": "En fazla 2 gün başlangıç / En fazla 180 gün bitiş"
       },
       {
         "key": "D",
-        "text": "15 gün / 2 yıl"
+        "text": "En fazla 15 gün başlangıç / En fazla 2 yıl bitiş"
       },
       {
         "key": "E",
-        "text": "30 gün / 5 yıl"
+        "text": "En fazla 30 gün başlangıç / En fazla 5 yıl bitiş"
       }
     ],
     "correct_answer": "B",
@@ -17638,11 +17638,11 @@
     "options": [
       {
         "key": "A",
-        "text": "Borsa İstanbul"
+        "text": "Borsa İstanbul Anonim Şirketi"
       },
       {
         "key": "B",
-        "text": "Portföy Saklama Kuruluşu (Portföy Saklayıcısı)"
+        "text": "Portföy Saklama Kuruluşu"
       },
       {
         "key": "C",
@@ -17650,11 +17650,11 @@
       },
       {
         "key": "D",
-        "text": "Tüketici Mahkemesi"
+        "text": "Türkiye Sermaye Piyasaları Birliği"
       },
       {
         "key": "E",
-        "text": "Merkez Bankası"
+        "text": "Merkezi Kayıt Kuruluşu"
       }
     ],
     "correct_answer": "B",
@@ -20470,23 +20470,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Her yatırımcıya zarar garantisi vermek"
+        "text": "Halka açık şirketlerin mali tablolarını bağımsız denetim standartlarına göre denetlemek"
       },
       {
         "key": "B",
-        "text": "Borsa fiyatlarını belirlemek"
+        "text": "İşlem tarafları arasındaki karşı taraf kredi riskini yönetmek ve takasın ifasını garanti etmek"
       },
       {
         "key": "C",
-        "text": "Şirketlerin bilançosunu hazırlamak"
+        "text": "Yatırımcıların portföylerini yöneterek borsa endeksinin üzerinde getiri performansı sağlamak"
       },
       {
         "key": "D",
-        "text": "İşlem tarafları arasındaki karşı taraf riskini yönetmeye yardımcı olmak"
+        "text": "Aracı kurumlara sermaye piyasası faaliyet izni ve lisans belgesi tahsis etmek"
       },
       {
         "key": "E",
-        "text": "Müşteri sınıflandırması yapmak"
+        "text": "Şirketlerin genel kurul toplantılarını bizzat yönetmek ve yönetim kurulu üyelerini seçmek"
       }
     ],
     "correct_answer": "D",
@@ -20510,23 +20510,23 @@
     "options": [
       {
         "key": "A",
-        "text": "İşlemin kârla kapanmasını"
+        "text": "Üyenin Borsa İstanbul nezdinde rekor düzeyde işlem hacmine ulaşarak işlem limitlerini doldurmasıdır."
       },
       {
         "key": "B",
-        "text": "Sermaye artırımı yapılmasını"
+        "text": "Takas yükümlülüğünün süresinde yerine getirilmemesi sonucu üyenin mali taahhüdünü ifa edememesidir."
       },
       {
         "key": "C",
-        "text": "Fonun yeni pay ihraç etmesini"
+        "text": "Aracı kurumun müşterilerine sunduğu yatırım danışmanlığı tavsiyelerinde isabetsiz tahmin yapmasıdır."
       },
       {
         "key": "D",
-        "text": "Sadece fiyatın düşmesini"
+        "text": "Halka açık şirketin genel kurulunda pay sahiplerine temettü dağıtılmaması yönünde karar alınmasıdır."
       },
       {
         "key": "E",
-        "text": "Yükümlülüğün zamanında veya usulüne uygun yerine getirilmemesi durumunu"
+        "text": "Merkezi Kayıt Kuruluşu nezdinde açılan hesapların kimlik teyidi yapılmadan kullanıma sunulmasıdır."
       }
     ],
     "correct_answer": "E",
@@ -20710,23 +20710,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Piyasa fiyatını tahmin etmek"
+        "text": "Piyasadaki hisse senetlerinin hedef fiyatlarını belirlemek amacıyla yapılan şirket analizleridir."
       },
       {
         "key": "B",
-        "text": "Yatırım tavsiyesi vermek"
+        "text": "Kayıtların ve takas verilerinin taraflar arasında tutarlılığını kontrol eden operasyonel teyit sürecidir."
       },
       {
         "key": "C",
-        "text": "Müşteri sınıfını değiştirmek"
+        "text": "Aracı kurum personeline verilen periyodik sermaye piyasası mevzuat eğitim programıdır."
       },
       {
         "key": "D",
-        "text": "Vergi oranını belirlemek"
+        "text": "Yatırımcıların borsa emirlerinin eşleşmesi amacıyla geliştirilen yüksek hızlı işlem altyapısıdır."
       },
       {
         "key": "E",
-        "text": "Kayıtların ve işlem bilgilerinin taraflar arasında tutarlılığını kontrol etmek"
+        "text": "Halka açık ortaklıkların Kamuyu Aydınlatma Platformu'na gönderdikleri özel durum açıklamalarıdır."
       }
     ],
     "correct_answer": "E",
@@ -20790,23 +20790,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Önce masum diğer üyelerin paraları -> Sonra mahkeme kararı"
+        "text": "Mütemerrit üyenin teminat ve katkısı -> Takasbank tahsisli sermayesi -> Diğer üyelerin Garanti Fonu katkıları"
       },
       {
         "key": "B",
-        "text": "Önce temerrüt eden üyenin teminatları ve katkı payı -> Sonra Takasbank'ın özkaynak katkısı -> Sonra diğer üyelerin Garanti Fonu katkı payları"
+        "text": "Diğer üyelerin Garanti Fonu katkıları -> Takasbank taahhütlü sermayesi -> Mütemerrit üyenin teminatları"
       },
       {
         "key": "C",
-        "text": "Tüm borsa işlemleri süresiz iptal edilir"
+        "text": "Takasbank tahsisli sermayesi -> Mütemerrit üyenin teminatları -> Diğer üyelerin ilave katkı payları"
       },
       {
         "key": "D",
-        "text": "Yalnızca Merkez Bankası kaynakları kullanılır"
+        "text": "Yatırımcı Tazmin Merkezi fonları -> Takasbank kalan sermayesi -> Borsa İstanbul Garanti Fonu rezervi"
       },
       {
         "key": "E",
-        "text": "Zarar doğrudan hisse senedini satan yatırımcıya yüklenir"
+        "text": "Türkiye Cumhuriyet Merkez Bankası avansı -> Takasbank munzam teminatı -> Mütemerrit üye portföyü"
       }
     ],
     "correct_answer": "B",
@@ -20870,23 +20870,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Yatırımcının borsa fiyatlarındaki düşüş nedeniyle zarar etmesi halinde"
+        "text": "Yatırım kuruluşunun iflası veya tedrici tasfiyesi halinde yatırımcıların hisse senetleri korunur ve YTM tazmini devreye girer."
       },
       {
         "key": "B",
-        "text": "Şirketin kâr payı dağıtmaması durumunda"
+        "text": "Aracı kurum iflas ettiğinde yatırımcıların tüm hisse senetleri iflas masasına dahil edilir ve genel alacaklılara satılır."
       },
       {
         "key": "C",
-        "text": "Hisse senedi fiyatının taban yapması durumunda"
+        "text": "Yatırımcıların zararları doğrudan Borsa İstanbul Yönetim Kurulu üyelerinin şahsi malvarlıklarından nakden karşılanır."
       },
       {
         "key": "D",
-        "text": "Yatırım kuruluşunun iflası veya hakkında tedrici tasfiye kararı verilmesi halinde nakit ve menkul kıymet teslim borçlarının karşılanamaması durumunda"
+        "text": "Merkezi Kayıt Kuruluşu iflas eden kurumun tüm yatırımcı hesaplarını resen kapatarak mülkiyet kayıtlarını tamamen siler."
       },
       {
         "key": "E",
-        "text": "Yatırımcının kredi kartı borçlarını ödeyememesi durumunda"
+        "text": "Yatırımcıların yalnızca döviz cinsinden varlıkları korunur, Türk Lirası ve hisse senedi varlıkları tamamen tazminatsız kalır."
       }
     ],
     "correct_answer": "D",
@@ -20990,23 +20990,23 @@
     "options": [
       {
         "key": "A",
-        "text": "TPP'de hiçbir teminat verilmeden sınırsız borçlanılabilir"
+        "text": "Üyeler teminatsız olarak diledikleri tutarda sınırsız nakit borçlanma hakkına sahip olurlar."
       },
       {
         "key": "B",
-        "text": "Üyeler nakit borçlanabilmek için Takasbank'a mevzuatça kabul edilen menkul kıymet teminatı vermek zorundadır ve işlemler çok taraflı kör havuzda eşleşir"
+        "text": "Üyeler nakit borçlanabilmek için Takasbank'a mevzuatta kabul edilen geçerli teminatları vermek zorundadır."
       },
       {
         "key": "C",
-        "text": "Yalnızca gerçek kişiler kendi aralarında borç alıp verebilir"
+        "text": "Nakit borçlanma faiz oranları üyeler tarafından kendi aralarında ikili müzakereyle gizlice kararlaştırılır."
       },
       {
         "key": "D",
-        "text": "TPP faiz oranları her yıl başında sabitlenir, yıl boyu değişmez"
+        "text": "Yalnızca yabancı bankaların işlem yapabildiği, yerli aracı kurumlara kapalı bir pazar yapısıdır."
       },
       {
         "key": "E",
-        "text": "Takasbank bu piyasada hiçbir şekilde merkezi takas hizmeti sunmaz"
+        "text": "Borçlanılan nakit tutarlar sadece Borsa İstanbul A.Ş. hisse senetlerinin alımında kullanılabilir."
       }
     ],
     "correct_answer": "B",
@@ -21038,7 +21038,7 @@
       },
       {
         "key": "C",
-        "text": "Ödünç Pay Piyasası (ÖPA)"
+        "text": "Ödünç Pay Piyasası"
       },
       {
         "key": "D",
@@ -21114,7 +21114,7 @@
       },
       {
         "key": "B",
-        "text": "Yatırımcı Tazmin Merkezi'ne (YTM) devredilir"
+        "text": "Yatırımcı Tazmin Merkezi'ne devredilir"
       },
       {
         "key": "C",
@@ -24554,11 +24554,11 @@
       },
       {
         "key": "B",
-        "text": "Merkezi Karşı Taraf (MKT)"
+        "text": "Merkezi Karşı Taraf"
       },
       {
         "key": "C",
-        "text": "Kaydi Saklama Sistemi"
+        "text": "Merkezi Kaydi Saklama"
       },
       {
         "key": "D",
@@ -24566,7 +24566,7 @@
       },
       {
         "key": "E",
-        "text": "Otomatik Virman"
+        "text": "Şartlı Virman Sistemi"
       }
     ],
     "correct_answer": "B",
@@ -24750,23 +24750,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Brüt Takas"
+        "text": "Brüt Takas Yöntemi"
       },
       {
         "key": "B",
-        "text": "Merkezi Karşı Taraf (MKT)"
+        "text": "Merkezi Karşı Taraf"
       },
       {
         "key": "C",
-        "text": "Kaydi Saklama"
+        "text": "Doğrudan Kaydi Saklama"
       },
       {
         "key": "D",
-        "text": "Ödünç Sistemi"
+        "text": "Ödünç Pay Piyasası"
       },
       {
         "key": "E",
-        "text": "Serbest Takas"
+        "text": "Serbest Virman Sistemi"
       }
     ],
     "correct_answer": "B",
@@ -24790,23 +24790,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Üye kurum iflas etse dahi sisteme iletilen takas emirleri geri alınamaz ve Takasbank teminatları iflas masasına devredilemez."
+        "text": "Üye kurum iflas etse dahi takas emirleri geri alınamaz ve teminatlar iflas masasına dahil edilemez."
       },
       {
         "key": "B",
-        "text": "İflas halinde takastaki tüm işlemler iptal edilir."
+        "text": "İflas veya tasfiye kararı verilmesi halinde takas sisteminde bekleyen tüm işlemler derhal hükümsüz kalır."
       },
       {
         "key": "C",
-        "text": "Üye dilediği an takas emrini geri çekebilir."
+        "text": "Üye kurum piyasada işlem hacmi daraldığında sisteme ilettiği takas emirlerini tek taraflı geri çekebilir."
       },
       {
         "key": "D",
-        "text": "Teminatlar kamu alacakları için öncelikle haczedilir."
+        "text": "Takas kuruluşuna teslim edilen teminatlar üzerinde kamu alacakları için öncelikli ihtiyati haciz uygulanır."
       },
       {
         "key": "E",
-        "text": "Yalnızca para piyasasında takas kesinliği uygulanır."
+        "text": "Takas kesinliği yalnızca organize para piyasalarında geçerli olup hisse senedi piyasalarında uygulanmaz."
       }
     ],
     "correct_answer": "A",
@@ -24910,23 +24910,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Aynı gün içinde alınan hisse aynı gün satılabilir ve gün içi netleştirme uygulanır"
+        "text": "Aynı gün içinde alınan hisse aynı gün satılabilir ve gün içi çok taraflı netleştirme uygulanır."
       },
       {
         "key": "B",
-        "text": "Netleştirme uygulanmaz; alım bedeli peşin nakit, satım hissesi hazır olmalıdır (aynı gün satılamaz)"
+        "text": "Netleştirme uygulanmaz; alım bedeli peşin nakit, satım hissesi hazır olmalıdır ve aynı gün satılamaz."
       },
       {
         "key": "C",
-        "text": "Kredili alım, açığa satış ve ödünç alma işlemleri serbest marjla yapılabilir"
+        "text": "Kredili alım, açığa satış ve ödünç verme işlemleri standart marjin oranları üzerinden serbestçe yapılabilir."
       },
       {
         "key": "D",
-        "text": "Takas mutabakatı Borsa İstanbul tarafından iptal edilerek hesaplar bir önceki güne döndürülür"
+        "text": "Takas mutabakatı Borsa İstanbul tarafından iptal edilerek yatırımcı hesapları bir önceki seans gününe döndürülür."
       },
       {
         "key": "E",
-        "text": "Yalnızca şirketin imtiyazlı pay sahiplerinin alım satım yapmasına izin verilir"
+        "text": "Yalnızca şirketin hakim veya imtiyazlı ortaklarının hisse senetlerinde alım satım yapılmasına izin verilir."
       }
     ],
     "correct_answer": "B",
@@ -25150,23 +25150,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Temettü dağıtım günü (T+0)"
+        "text": "Temettü hakkı kullanım tarihi olan işlem gününde (T+0)"
       },
       {
         "key": "B",
-        "text": "Ertesi gün (T+1)"
+        "text": "Temettü hakkı kullanım tarihini izleyen ilk iş gününde (T+1)"
       },
       {
         "key": "C",
-        "text": "Temettü hakkı kullanım tarihini izleyen ikinci iş günü (T+2)"
+        "text": "Temettü hakkı kullanım tarihini izleyen ikinci iş gününde (T+2)"
       },
       {
         "key": "D",
-        "text": "1 ay sonra"
+        "text": "Temettü hakkı kullanım tarihini izleyen üçüncü iş gününde (T+3)"
       },
       {
         "key": "E",
-        "text": "Yıl sonunda"
+        "text": "Temettü hakkı kullanım tarihini izleyen beşinci iş gününde (T+5)"
       }
     ],
     "correct_answer": "C",
@@ -25190,23 +25190,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Açığa Satış"
+        "text": "Açığa Satış İlkesi"
       },
       {
         "key": "B",
-        "text": "Teslim Karşılığı Ödeme (DvP - Delivery versus Payment)"
+        "text": "Teslim Karşılığı Ödeme İlkesi"
       },
       {
         "key": "C",
-        "text": "Vadeli Takas"
+        "text": "Vadeli Netleştirme İlkesi"
       },
       {
         "key": "D",
-        "text": "Temerrüt Faizi"
+        "text": "Temerrüt Faizi İlkesi"
       },
       {
         "key": "E",
-        "text": "Tek Taraflı Takas"
+        "text": "Çok Taraflı Takas İlkesi"
       }
     ],
     "correct_answer": "B",
@@ -25234,19 +25234,19 @@
       },
       {
         "key": "B",
-        "text": "T+2 günü"
+        "text": "İki iş günü sonra (T+2)"
       },
       {
         "key": "C",
-        "text": "T+3 günü"
+        "text": "Üç iş günü sonra (T+3)"
       },
       {
         "key": "D",
-        "text": "Hafta sonu"
+        "text": "Hafta sonu takas seansında"
       },
       {
         "key": "E",
-        "text": "15 gün sonra"
+        "text": "On beş iş günü sonra (T+15)"
       }
     ],
     "correct_answer": "A",
@@ -25270,23 +25270,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Black-Scholes"
+        "text": "BISTECH Black-Scholes Opsiyon Fiyatlama Modeli"
       },
       {
         "key": "B",
-        "text": "SPAN (Standard Portfolio Analysis of Risk)"
+        "text": "SPAN (Standard Portfolio Analysis of Risk) Modeli"
       },
       {
         "key": "C",
-        "text": "VaR (Riske Maruz Değer)"
+        "text": "Tarihsel Simülasyonlu Parametrik VaR Risk Yöntemi"
       },
       {
         "key": "D",
-        "text": "Monte Carlo"
+        "text": "Stokastik Volatiliteli Monte Carlo Simülasyonu"
       },
       {
         "key": "E",
-        "text": "CAPM"
+        "text": "Dinamik Sabit Oranlı Portföy Sigortası (CPPI) Modeli"
       }
     ],
     "correct_answer": "B",
@@ -25350,23 +25350,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Borsa İstanbul A.Ş."
+        "text": "Borsa İstanbul Anonim Şirketi (BIST)"
       },
       {
         "key": "B",
-        "text": "Merkezi Karşı Taraf olarak Takasbank"
+        "text": "Merkezi Karşı Taraf Olarak Takasbank"
       },
       {
         "key": "C",
-        "text": "Merkezi Kayıt Kuruluşu"
+        "text": "Merkezi Kayıt Kuruluşu Anonim Şirketi"
       },
       {
         "key": "D",
-        "text": "SPK"
+        "text": "Sermaye Piyasası Kurulu Başkanlığı (SPK)"
       },
       {
         "key": "E",
-        "text": "Hazine"
+        "text": "T.C. Hazine ve Maliye Bakanlığı Teşkilatı"
       }
     ],
     "correct_answer": "B",
@@ -25434,19 +25434,19 @@
       },
       {
         "key": "B",
-        "text": "Munzam (Ek) Teminat"
+        "text": "Munzam Teminat"
       },
       {
         "key": "C",
-        "text": "Garanti Fonu"
+        "text": "Garanti Fonu Katkısı"
       },
       {
         "key": "D",
-        "text": "Kira Bedeli"
+        "text": "Üyelik Teminatı"
       },
       {
         "key": "E",
-        "text": "Tazminat Fonu"
+        "text": "Değişim Teminatı"
       }
     ],
     "correct_answer": "B",
@@ -25470,23 +25470,23 @@
     "options": [
       {
         "key": "A",
-        "text": "Borsa İstanbul"
+        "text": "Borsa İstanbul Anonim Şirketi"
       },
       {
         "key": "B",
-        "text": "Merkezi Kayıt Kuruluşu (MKK)"
+        "text": "Merkezi Kayıt Kuruluşu Anonim Şirketi"
       },
       {
         "key": "C",
-        "text": "Takasbank"
+        "text": "İstanbul Takas ve Saklama Bankası A.Ş."
       },
       {
         "key": "D",
-        "text": "SPK"
+        "text": "Sermaye Piyasası Kurulu Başkanlığı"
       },
       {
         "key": "E",
-        "text": "Ticaret Bakanlığı"
+        "text": "Türkiye Sermaye Piyasaları Birliği"
       }
     ],
     "correct_answer": "B",
@@ -25537,6 +25537,1956 @@
       "1012",
       "Çıkmış Sınav Sorusu",
       "Haciz ve Tedbir Blokajı"
+    ]
+  },
+  {
+    "id": "q_1012_master_101",
+    "module_id": "1012",
+    "number": 101,
+    "source": "genel",
+    "topic": "MKK Sermayesi ve Fiili Ortaklık Yapısı",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Merkezi Kayıt Kuruluşu A.Ş.'nin (MKK) 100 Milyon TL olan sermayesinde en büyük paya sahip olan kurucu ortak ve fiili sermaye payı oranı aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İstanbul Takas ve Saklama Bankası A.Ş. - %64,9"
+      },
+      {
+        "key": "B",
+        "text": "Borsa İstanbul A.Ş. - %51,0"
+      },
+      {
+        "key": "C",
+        "text": "Türkiye Sermaye Piyasaları Birliği - %35,0"
+      },
+      {
+        "key": "D",
+        "text": "T.C. Hazine ve Maliye Bakanlığı - %49,0"
+      },
+      {
+        "key": "E",
+        "text": "Merkezi Kayıt Kuruluşu A.Ş. - %40,0"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "MKK'nın 100 milyon TL'lik sermayesinde ortaklık dağılımı: Takasbank %64.9 (64.9M TL), Borsa İstanbul %30.1 (30.1M TL) ve TSPB %5.0 (5M TL)'dir.",
+    "trap": "MKK'nın en büyük pay sahibi sanılanın aksine Borsa İstanbul değil, %64.9 ile Takasbank'tır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "MKK Sermayesi ve Ortaklık Yapısı"
+    ]
+  },
+  {
+    "id": "q_1012_master_102",
+    "module_id": "1012",
+    "number": 102,
+    "source": "genel",
+    "topic": "MKK Esas Sözleşmesi Azami Pay Sahipliği Tavanları",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Merkezi Kayıt Kuruluşu A.Ş. Esas Sözleşmesi Madde 7 uyarınca, pay sahiplerinin sermayede sahip olabileceği azami yasal pay oranlarına ilişkin aşağıdaki ifadelerden hangisi doğrudur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa İstanbul payı en çok %75, Takasbank payı en çok %50 ve TSPB payı en çok %25 olabilir."
+      },
+      {
+        "key": "B",
+        "text": "Takasbank payı %75'i, Borsa İstanbul payı %50'yi, TSPB payı %10'u ve diğer ortaklar %5'i geçemez."
+      },
+      {
+        "key": "C",
+        "text": "Tüm kurucu ortaklar sermayede eşit olarak azami %33.33 oranında pay sahibi olmak zorundadır."
+      },
+      {
+        "key": "D",
+        "text": "Borsa İstanbul payı %51'in altına inemez, Takasbank payı ise azami %20 ile sınırlandırılmıştır."
+      },
+      {
+        "key": "E",
+        "text": "Sermaye Piyasası Kurulu izniyle dahi hiçbir tüzel kişi MKK sermayesinde %25'ten fazla pay alamaz."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "MKK Esas Sözleşmesi m. 7-2 uyarınca pay tavanları: Takasbank max %75, Borsa İstanbul max %50, TSPB max %10, diğer ortakların her biri max %5'tir.",
+    "trap": "Fiili paylar (%64.9 / %30.1 / %5) ile esas sözleşme tavanları (%75 / %50 / %10 / %5) karıştırılmamalıdır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Esas Sözleşmesi Azami Pay Tavanları"
+    ]
+  },
+  {
+    "id": "q_1012_master_103",
+    "module_id": "1012",
+    "number": 103,
+    "source": "genel",
+    "topic": "MKK Hizmet Sınıflarına Göre Komisyon Belirlenmesi",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "MKK Yönetmeliği uyarınca, MKK'nın 'tek sunucu olduğu temel hizmetler' nedeniyle uygulayacağı ücret ve komisyonların belirlenmesi ve yürürlüğe girmesi sürecine ilişkin kural hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "MKK Genel Müdürü tarafından serbestçe belirlenir ve Resmî Gazete'de yayımlanarak yürürlüğe girer."
+      },
+      {
+        "key": "B",
+        "text": "Türkiye Sermaye Piyasaları Birliği Disiplin Kurulu önerisi ve BİAŞ Yönetim Kurulu kararıyla onaylanır."
+      },
+      {
+        "key": "C",
+        "text": "MKK Yönetim Kurulu kararı ile belirlenir ve Sermaye Piyasası Kurulu'nun onayı ile kesinleşir."
+      },
+      {
+        "key": "D",
+        "text": "Hazine ve Maliye Bakanlığı tarafından her yıl Yeniden Değerleme Oranında otomatik olarak artırılır."
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca Borsa İstanbul Genel Kurulu tarafından kabul edilen tarife esas alınarak tahakkuk ettirilir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "MKK'nın tek sunucu olduğu temel hizmetler Yönetim Kurulu kararıyla belirlenir ve SPK onayı gerekir (EKK hizmetlerinde ise Ticaret Bakanlığı onayı gerekir).",
+    "trap": "Zorunlu olmayan hizmetlerde SPK bilgisine sunulurken, tek sunucu olunan temel hizmetlerde SPK ONAYI şarttır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "MKK Komisyon ve Ücret Onayı"
+    ]
+  },
+  {
+    "id": "q_1012_master_104",
+    "module_id": "1012",
+    "number": 104,
+    "source": "genel",
+    "topic": "Tedrici Tasfiye Halinde MKK İşlem Yetkisi ve Ücret Muafiyeti",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Hakkında tazmin veya tedrici tasfiye kararı verilen yatırım kuruluşlarının MKK nezdindeki kayıtları üzerinde işlem yapma yetkisinin devri ve uygulanacak tarife kuralı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yetki doğrudan Borsa İstanbul'a geçer ve devralınan hesaplara 1 yıl boyunca ücret tahakkuk ettirilmez."
+      },
+      {
+        "key": "B",
+        "text": "İşlem yetkisi SPK Denetleme Dairesine devredilir ve hesaplar tasfiye bitene kadar dondurulur."
+      },
+      {
+        "key": "C",
+        "text": "Yetki doğrudan Takasbank'a devredilir ve devralınan hesaplara derhal iki kat saklama komisyonu yansıtılır."
+      },
+      {
+        "key": "D",
+        "text": "İşlem yetkisi YTM'ye devredilir; MKK'ca belirlenen üyeye devri halinde hesaplara 3 ay ücret uygulanmaz."
+      },
+      {
+        "key": "E",
+        "text": "İşlem yetkisi Ticaret Mahkemesi iflas masasına devredilir ve MKK tüm geçmiş kayıtları siler."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "MKK Yönetmeliği uyarınca, tedrici tasfiye/tazmin kararı verilen kurumun yetkisi YTM'ye geçer. Başka bir üyeye devri halinde devralınan hesaplara 3 ay boyunca ücret tahakkuk ettirilmez.",
+    "trap": "Ücret muafiyet süresi 6 ay değil, 3 aydır; devir mercii ise YTM'dir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Tedrici Tasfiye ve YTM Devri"
+    ]
+  },
+  {
+    "id": "q_1012_master_105",
+    "module_id": "1012",
+    "number": 105,
+    "source": "genel",
+    "topic": "Hamiline Yazılı Payların MKK Tarafından Kayden İzlenmesi (7262 Sayılı Kanun)",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "7262 sayılı Kanun ile Türk Ticaret Kanunu'nda yapılan düzenleme uyarınca, 1 Nisan 2021 tarihi itibarıyla payları kayden izlenen halka açık şirketler dışında kalan anonim şirketlerin hamiline yazılı pay senetlerine ilişkin zorunluluk hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hamiline pay senetleri tamamen yasaklanmış olup tüm şirketler halka açık anonim ortaklığa dönüştürülmüştür."
+      },
+      {
+        "key": "B",
+        "text": "Hamiline payların fiziki olarak basılıp şirket kasasında kilitli saklanması ve SPK'ya onaylatılması zorunludur."
+      },
+      {
+        "key": "C",
+        "text": "Pay sahiplerinin isimleri şirket yönetim kurulu tarafından sadece Türkiye Ticaret Sicili Gazetesi'nde ilan edilir."
+      },
+      {
+        "key": "D",
+        "text": "Hamiline pay senetlerinin devri noter huzurunda yapılmakta olup MKK sistemine herhangi bir bildirim yapılmaz."
+      },
+      {
+        "key": "E",
+        "text": "Hamiline yazılı pay sahipleri ve sahip oldukları paylara ilişkin bilgiler MKK sisteminde kayden izlenir."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "7262 sayılı Kanun m. 30-31 uyarınca TTK 486 ve 489'a eklenen hükümlerle, kapalı anonim şirketlerin hamiline yazılı pay sahipleri MKK Hamiline Pay Kayıt Sistemi'nde (HPKS) kayden izlenir.",
+    "trap": "Hamiline pay kayıt zorunluluğu sadece halka açıklar için değil, halka kapalı anonim şirketler için de MKK nezdinde geçerlidir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "7262 Sayılı Kanun ve Hamiline Paylar"
+    ]
+  },
+  {
+    "id": "q_1012_master_106",
+    "module_id": "1012",
+    "number": 106,
+    "source": "genel",
+    "topic": "TCMB'nin MKK Üyeliğindeki Özel Hukuki Statüsü",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Merkezi Kayıt Kuruluşu Yönetmeliği hükümleri çerçevesinde Türkiye Cumhuriyet Merkez Bankası'nın (TCMB) MKK üyeliğine ilişkin yasal ayrıcalık aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "TCMB'ye talebi üzerine özel üyelik statüsü verilir; disiplin cezaları, gözetim ve üyelik iptali hükümleri uygulanmaz."
+      },
+      {
+        "key": "B",
+        "text": "TCMB diğer tüm aracı kurumlarla aynı statüye tabi olup yükümlülük gecikmesinde MKK tarafından disiplin cezası kesilir."
+      },
+      {
+        "key": "C",
+        "text": "TCMB MKK nezdinde hiçbir hesap açamaz, yalnızca fiziki menkul kıymet saklama kasalarını kullanabilir."
+      },
+      {
+        "key": "D",
+        "text": "TCMB'nin MKK nezdindeki DİBS depo hesapları Takasbank Genel Müdürü'nün çift imzasıyla yönetilir."
+      },
+      {
+        "key": "E",
+        "text": "TCMB MKK sermayesinde doğrudan altın hisseye sahip olup yönetim kurulu üyelerinin çoğunluğunu bizzat atar."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "MKK Yönetmeliği m. 11 uyarınca TCMB'ye özel üyelik statüsü verilir. Üyelerin yükümlülüklerine, disiplin cezalarına, üyeliğin askıya alınması veya iptaline, gözetim ve denetime ilişkin hükümler TCMB hakkında uygulanmaz.",
+    "trap": "TCMB'ye diğer üyelere uygulanan disiplin cezaları veya denetim yaptırımları kesinlikle uygulanamaz.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "TCMB MKK Özel Statüsü"
+    ]
+  },
+  {
+    "id": "q_1012_master_107",
+    "module_id": "1012",
+    "number": 107,
+    "source": "genel",
+    "topic": "MKK ve Üyelerin Kayıt Sorumluluğu ve Sorumluluk Sigortası",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "MKK ve üyelerinin, kayıtların yanlış tutulmasından dolayı hak sahiplerinin uğrayacağı zararlara ilişkin hukuki sorumluluğu hakkında hangisi doğrudur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tüm zararlardan yalnızca MKK sorumludur; üyeler sözleşmeyle tamamen tazminat muafiyeti kazanırlar."
+      },
+      {
+        "key": "B",
+        "text": "MKK ve üyeleri kusurları oranında sorumludur; sözleşmelere konulacak hükümlerle bu sorumluluk kaldırılamaz."
+      },
+      {
+        "key": "C",
+        "text": "Zararlar yalnızca üye kurumun sermayesinden tazmin edilir, MKK tüzel kişiliğine hiçbir hukuki dava açılamaz."
+      },
+      {
+        "key": "D",
+        "text": "Kayıt hatalarından doğan zararlar doğrudan Yatırımcı Tazmin Merkezi tarafından limitsiz olarak tazmin edilir."
+      },
+      {
+        "key": "E",
+        "text": "Hak sahipleri dava açamaz; yalnızca SPK tarafından takdir edilecek idari para cezası tahsil edilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "MKK ve üyeleri kayıtların yanlış tutulmasından kusurları oranında sorumludur. Yapılacak sözleşmelerle sorumluluk hafifletilemez veya kaldırılamaz. MKK YK üyelerin sorumluluk sigortası yaptırmasına karar verebilir.",
+    "trap": "Sorumluluk sadece MKK'ya ya da sadece üyeye ait değildir; kusurları oranındadır ve sözleşmeyle hafifletilemez.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "MKK Kayıt Sorumluluğu"
+    ]
+  },
+  {
+    "id": "q_1012_master_108",
+    "module_id": "1012",
+    "number": 108,
+    "source": "genel",
+    "topic": "Elektronik Kayıt Kuruluşu (EKK) ve Lisanslı Depo Üyeliği İptali",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "5300 sayılı Kanun ve EKK Yönetmeliği uyarınca, lisanslı depo işletmesinin lisansının Ticaret Bakanlığı'nca iptal edilmesi halinde EKK nezdindeki üyelik ve ELÜS süreci nasıl sonuçlandırılır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Depodaki tüm ürünler derhal Hazine mülkiyetine geçer ve ELÜS kayıtları MKK tarafından resen silinir."
+      },
+      {
+        "key": "B",
+        "text": "Lisans iptaline rağmen depo işletmesi 1 yıl boyunca yeni elektronik ürün senedi basmaya devam edebilir."
+      },
+      {
+        "key": "C",
+        "text": "Yeni ELÜS oluşturulamaz; tüm ürünler mudilere teslim edilip ELÜS'ler iptal edildikten sonra EKK üyeliği iptal edilir."
+      },
+      {
+        "key": "D",
+        "text": "EKK üyeliği hemen sonlandırılır ancak tedavüldeki ELÜS'ler borsada süresiz işlem görmeye devam eder."
+      },
+      {
+        "key": "E",
+        "text": "Ürünler yetkili sınıflandırıcı laboratuvara devredilir ve tazminat Toprak Mahsulleri Ofisi'nce ödenir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Lisansı iptal edilen lisanslı depo işletmesinin yeni ELÜS oluşturmasına izin verilmez. Tüm ürünlerin mudilere teslim edilmesi ve mevcut ELÜS'lerin iptal edilmesini takiben EKK üyeliği iptal edilir.",
+    "trap": "Üyelik hemen kapatılmaz; önce fiziki ürünler mudilere teslim edilip senetler iptal edilir, ardından üyelik sonlandırılır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "EKK ve ELÜS İptal Süreci"
+    ]
+  },
+  {
+    "id": "q_1012_master_109",
+    "module_id": "1012",
+    "number": 109,
+    "source": "genel",
+    "topic": "MKK Nezdinde İhraççı Hesapları Hiyerarşisi",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Kaydileştirilen Sermaye Piyasası Araçlarına İlişkin Kayıtların Tutulması Tebliği (II-13.1) uyarınca, MKK nezdinde açılan ihraççı hesapları hangi alt hesaplardan oluşur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "DİBS Depo Hesabı, Müşteri Takas Hesabı ve Hazine Bloke Hesabı"
+      },
+      {
+        "key": "B",
+        "text": "Teminat Havuz Hesabı, Serbest Fon Hesabı ve Yabancı Saklama Global Hesabı"
+      },
+      {
+        "key": "C",
+        "text": "Portföy Saklama Hesabı, Türev Marjin Hesabı ve Rehin Alt Hesabı"
+      },
+      {
+        "key": "D",
+        "text": "İhraççı Havuz Hesabı, Ortak Hesabı ve Bilinmeyen Ortak / Katılımcı Hesabı"
+      },
+      {
+        "key": "E",
+        "text": "Takas Havuz Hesabı, Üye Cari Hesabı ve Yatırımcı Blokaj Hesabı"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Tebliğ II-13.1 uyarınca ihraççı hesabı: 1) İhraççı havuz hesabı (satış süresince geçici kayıtlar), 2) Ortak hesabı (borsa dışı paylar), 3) Bilinmeyen ortak/katılımcı hesabından (kaydi dönüşümde bilinmeyenler) oluşur.",
+    "trap": "Ortak hesabına sadece BORSADA İŞLEM GÖRMEYEN payların kaydı yapılabilir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "MKK İhraççı Hesapları"
+    ]
+  },
+  {
+    "id": "q_1012_master_110",
+    "module_id": "1012",
+    "number": 110,
+    "source": "genel",
+    "topic": "Yabancı Saklama Global Hesabı ve Hak Sahipliği",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "MKK nezdinde Yabancı Merkezi Saklama Kuruluşları (YMSK) ve genel saklama yetkili yatırım kuruluşları adına açılan 'Yabancı Saklama Global Hesabı'na ilişkin aşağıdaki esaslardan hangisi geçerlidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bu hesaplarda her yabancı yatırımcı adına zorunlu olarak tekil T.C. Kimlik Numarası üretilir."
+      },
+      {
+        "key": "B",
+        "text": "Global hesapta tutulan yabancı menkul kıymetlerin mülkiyeti doğrudan Borsa İstanbul A.Ş.'ye aittir."
+      },
+      {
+        "key": "C",
+        "text": "YMSK'lar kendi portföyleri adına MKK nezdinde yatırımcı hesabı açma hakkına sahip değillerdir."
+      },
+      {
+        "key": "D",
+        "text": "Bu hesaplarda yalnızca Türkiye'de yerleşik Türk vatandaşlarının dövizli tahvilleri saklanabilir."
+      },
+      {
+        "key": "E",
+        "text": "Hak sahibi ismine açılmaksızın toplu tutulur ve bu hesaba atanan sicil doğrudan hak sahipliğini göstermez."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "YMSK Global Hesabı hak sahibi bazında izlenmeyen havuz hesabıdır. MKK nezdinde bu hesaplara atanan sicil numarası alt yatırımcı açısından doğrudan mülkiyet/hak sahipliğini ispatlamaz.",
+    "trap": "Global havuz hesaplarına atanan sicil doğrudan hak sahipliğini göstermez (Omnibus kuralı).",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "YMSK Global Saklama Hesabı"
+    ]
+  },
+  {
+    "id": "q_1012_master_111",
+    "module_id": "1012",
+    "number": 111,
+    "source": "genel",
+    "topic": "Teslim Edilmeyen Sermaye Piyasası Araçlarının Hukuki Durumu",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "SPK tarafından kaydileştirilmesine karar verilen ancak belirlenen süre içerisinde MKK'ya teslim edilmeyen fiziki sermaye piyasası araçları hakkında mevzuat uyarınca hangisi uygulanır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsada işlem göremez, aracı kurumlarca alım satımına aracılık edilemez ve temettü dışı hakları donar."
+      },
+      {
+        "key": "B",
+        "text": "Mülkiyeti kendiliğinden devlete geçer ve hisseler Borsa İstanbul tarafından derhal imha edilir."
+      },
+      {
+        "key": "C",
+        "text": "Yatırımcılar hakkında Cumhuriyet Savcılığı'na doğrudan piyasa dolandırıcılığı suç duyurusunda bulunulur."
+      },
+      {
+        "key": "D",
+        "text": "Şirket bu hisseleri otomatik olarak iptal edip bedellerini Yatırımcı Tazmin Merkezi'ne irat kaydeder."
+      },
+      {
+        "key": "E",
+        "text": "Teslim edilmeyen hisseler borsada serbestçe alınıp satılabilir ancak şirket genel kurulunda oy kullanamaz."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Teslim edilmeyen sermaye piyasası araçları kaydileştirilme kararından sonra borsada işlem göremez, aracı kurumlarca alım satımına aracılık edilemez; hak sahipleri başvurana kadar temettü dışı ortaklık hakları donar.",
+    "trap": "Teslim edilenler kendiliğinden hükümsüz kalır; teslim edilmeyenler ise borsada işlem göremez ve hakları donar (mülkiyet silinmez).",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Teslim Edilmeyen Payların Hukuku"
+    ]
+  },
+  {
+    "id": "q_1012_master_112",
+    "module_id": "1012",
+    "number": 112,
+    "source": "genel",
+    "topic": "Sermaye Artırımlarında MKK Bildirim ve Hak Kayıt Takvimi",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Kaydileştirilen paylarda ihraççıların bedelli sermaye artırım sürecine ve MKK'ya bildirim takvimine ilişkin aşağıdaki kurallardan hangisi doğrudur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sermaye artırım tarihinden en az 10 iş günü önce noter onaylı pay defteri MKK'ya sunulmalıdır."
+      },
+      {
+        "key": "B",
+        "text": "Sermaye artırım tarihinden en geç 1 iş günü öncesine kadar bilgiler MKK'ya bildirilir; yeni pay hakları hesaplara kaydedilir."
+      },
+      {
+        "key": "C",
+        "text": "Süresi içinde kullanılmayan yeni pay alma hakları otomatik olarak Takasbank Garanti Fonuna devredilir."
+      },
+      {
+        "key": "D",
+        "text": "Borsa dışında yapılan satışlar satış gününden önce MKK onayına bağlanmadıkça hiçbir şekilde tescil edilemez."
+      },
+      {
+        "key": "E",
+        "text": "Bedelsiz sermaye artırımlarında pay dağıtımı genel kurul tarihinden tam 30 takvim günü sonra başlatılır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "İhraççılar sermaye artırım tarihinden en geç bir iş günü öncesine kadar bilgileri MKK'ya bildirirler. Bedelli artırımda yeni pay alma hakları hesaplara kaydedilir, bedel ödenince hisseler aktarılır; kullanılmayan haklar sürenin sonunda hesaplardan silinir.",
+    "trap": "MKK bildirim süresi en geç 1 İŞ GÜNÜ ÖNCESİNE kadardır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Sermaye Artırımı ve MKK Takvimi"
+    ]
+  },
+  {
+    "id": "q_1012_master_113",
+    "module_id": "1012",
+    "number": 113,
+    "source": "genel",
+    "topic": "Genel Kurul Katılım Listesi ve MKK Hazırlık Süresi (TTK 417)",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Türk Ticaret Kanunu m. 417 uyarınca, payları MKK nezdinde kayden izlenen anonim ortaklıkların genel kurul toplantılarına katılabilecek hak sahipleri listesi ne zaman ve kim tarafından hazırlanır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Genel kurul günü saat 09:00 itibarıyla toplantı divan başkanı tarafından salonda bizzat hazırlanır."
+      },
+      {
+        "key": "B",
+        "text": "Toplantı tarihinden en az 7 iş günü önce Borsa İstanbul Kotasyon Müdürlüğü tarafından ilan edilir."
+      },
+      {
+        "key": "C",
+        "text": "Genel kurul gününden bir gün önce Merkezi Kayıt Kuruluşu tarafından hazırlanır."
+      },
+      {
+        "key": "D",
+        "text": "Genel kuruldan 3 iş günü önce şirket bağımsız denetçisi tarafından hazırlanıp KAP'ta yayımlanır."
+      },
+      {
+        "key": "E",
+        "text": "Toplantıdan 15 gün önce Ticaret Bakanlığı il müdürlüğü tarafından noter kanalıyla tebliğ edilir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "TTK 417 uyarınca genel kurula katılacaklara ilişkin liste, genel kurul gününden bir gün önce MKK tarafından hazırlanır. Pay sahipleri ve temsilcileri bu liste esas alınarak genel kurula katılır.",
+    "trap": "Hazırlık süresi 'genel kurul gününden 1 gün önce' ve hazırlayan kurum MKK'dır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "TTK 417 Genel Kurul Listesi"
+    ]
+  },
+  {
+    "id": "q_1012_master_114",
+    "module_id": "1012",
+    "number": 114,
+    "source": "genel",
+    "topic": "Kaydi Menkul Kıymetlerde Hakların Üçüncü Kişilere Karşı İleri Sürülmesi",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "6362 sayılı SPKn m. 13 ve Tebliğ II-13.1 uyarınca, kaydi sermaye piyasası araçları üzerindeki hakların (mülkiyet, rehin, intifa vb.) üçüncü kişilere karşı ileri sürülebilmesinde hangi an esas alınır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Taraflar arasında noter onaylı devir veya rehin sözleşmesinin imzalandığı resmi tarih ve saat"
+      },
+      {
+        "key": "B",
+        "text": "İlgili anonim şirketin fiziki pay defterine yönetim kurulu kararıyla kayıt yapıldığı tarih"
+      },
+      {
+        "key": "C",
+        "text": "Sermaye Piyasası Kurulu'nun haftalık bülteninde hak tesisine ilişkin kararın yayımlandığı gün"
+      },
+      {
+        "key": "D",
+        "text": "MKK'ya ilgili üye tarafından elektronik yöntemlerle yapılan bildirim tarihi"
+      },
+      {
+        "key": "E",
+        "text": "Alım satım veya rehin bedelinin Takasbank cari hesabından karşı tarafa fiilen ödendiği gün"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "SPKn 13 ve Tebliğ II-13.1 m. 21 uyarınca kaydi sermaye piyasası araçları üzerindeki hakların üçüncü kişilere karşı ileri sürülebilmesinde MKK'ya elektronik yöntemlerle yapılan bildirim tarihi esas alınır.",
+    "trap": "Sözleşme tarihi veya şirket pay defteri değil, MKK'ya bildirim tarihi belirleyicidir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Üçüncü Kişilere Karşı İleri Sürülebilme"
+    ]
+  },
+  {
+    "id": "q_1012_master_115",
+    "module_id": "1012",
+    "number": 115,
+    "source": "genel",
+    "topic": "DİBS İtfa Sürecinde EMKT Hareketsizleştirme ve Silinme",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Devlet İç Borçlanma Senetleri'nin (DİBS) anapara ve faiz ödemelerinde MKK ve TCMB EMKT sistemleri entegrasyonuna ilişkin takvim kuralı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ödeme gününden 5 iş günü önce DİBS'ler borsadan çekilerek fiziki olarak Darphaneye teslim edilir."
+      },
+      {
+        "key": "B",
+        "text": "İtfa günü seans bitiminde tüm DİBS kayıtları otomatik silinir, ödemeler takip eden hafta EFT yapılır."
+      },
+      {
+        "key": "C",
+        "text": "Ödemeden 3 gün önce MKK üye hesaplarını dondurur ve faiz tutarlarını Yatırımcı Tazmin Merkezi'ne aktarır."
+      },
+      {
+        "key": "D",
+        "text": "DİBS faiz ödemeleri yalnızca yatırımcıların şirket merkezine bizzat başvurup makbuz imzalamasıyla ödenir."
+      },
+      {
+        "key": "E",
+        "text": "Ödeme gününden bir gün önce EMKT kapanışı sonrası DİBS hareketsizleştirilir; itfa günü ödemeyle MKK'dan silinir."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "DİBS anapara ve faiz ödemesinde ödemenin yapılacağı günden 1 gün önce EMKT kapanışı sonrasında kıymet hareketsizleştirilir. Artık bu kıymet için işlem yapılmaz. İtfa günü ödeme işlemi ile birlikte bakiyeler silinir.",
+    "trap": "Hareketsizleştirme ödemeden 1 gün önce EMKT kapanışında yapılır; silinme ise itfa günü ödemeyle gerçekleşir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "DİBS İtfası ve EMKT Entegrasyonu"
+    ]
+  },
+  {
+    "id": "q_1012_master_116",
+    "module_id": "1012",
+    "number": 116,
+    "source": "genel",
+    "topic": "e-YATIRIMCI / Yatırımcı Bilgi Merkezi Kaydı ve Yatırımcı Blokajı",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "MKK nezdinde yatırımcıların hesapları üzerindeki tasarruf yetkilerini bizzat kısıtlayabildikleri Yatırımcı Blokajı ve e-YATIRIMCI sistemine ilişkin SPK düzenlemesi uyarınca hangisi doğrudur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "e-YATIRIMCI sistemine kaydolmayan yatırımcıların hesaplarından rehin veya teminat amaçlı pay çıkışı engellenir."
+      },
+      {
+        "key": "B",
+        "text": "Yatırımcı blokajı konulan paylara ilişkin temettü ve bedelsiz sermaye artırımı hakları tamamen iptal edilir."
+      },
+      {
+        "key": "C",
+        "text": "Yatırımcı blokajı sadece aracı kurum yönetim kurulu kararı ve SPK'nın yazılı onayı ile tesis edilebilir."
+      },
+      {
+        "key": "D",
+        "text": "e-YATIRIMCI şifresi alan yatırımcıların borsa emirleri aracı kurum araya girmeden doğrudan MKK'ya iletilir."
+      },
+      {
+        "key": "E",
+        "text": "Yatırımcı blokajı konulan paylar Borsa İstanbul'da otomatik olarak açığa satış teminatı sayılır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "SPK kararı uyarınca e-MKK (e-YATIRIMCI) sistemine kaydolmayan yatırımcıların hesaplarından rehin tesisi veya teminat amaçlı pay senedi çıkış işlemleri güvenlik amacıyla engellenir.",
+    "trap": "e-YATIRIMCI kaydı bulunmayan hesaplardan rehin ve teminat amaçlı pay çıkışı sistem tarafından bloke edilir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "e-YATIRIMCI ve Yatırımcı Blokajı"
+    ]
+  },
+  {
+    "id": "q_1012_master_117",
+    "module_id": "1012",
+    "number": 117,
+    "source": "genel",
+    "topic": "Merkezi Karşı Tarafın Hukuki Niteliği ve Teminat Mülkiyeti (SPKn m.78)",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 78 uyarınca Merkezi Karşı Taraf (MKT) uygulaması ve alınan teminatların hukuki niteliğine ilişkin aşağıdaki ilkelerden hangisi kanuni kuraldır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "MKT üyelerinin müşterilerine karşı doğrudan hukuki ve cezai kefil olup müşterilerin tüm zararlarını tazmin eder."
+      },
+      {
+        "key": "B",
+        "text": "MKT çerçevesinde takas kuruluşuna teslim edilen teminatların mülkiyeti kanunen takas kuruluşuna geçer."
+      },
+      {
+        "key": "C",
+        "text": "Takasbank'a verilen teminatlar kamu borçları için vergi dairelerince birinci sırada doğrudan haczedilebilir."
+      },
+      {
+        "key": "D",
+        "text": "MKT hizmeti verilecek piyasalarda açık teklif haricinde hiçbir takas yöntemi SPK tarafından onaylanamaz."
+      },
+      {
+        "key": "E",
+        "text": "MKT kuruluşunun mali sorumluluğu sınırsız olup Türkiye Cumhuriyet Merkez Bankası'nın tüm rezervlerini kapsar."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 78/3 uyarınca MKT çerçevesinde takas kuruluşları tarafından alınan teminatların mülkiyeti takas kuruluşuna geçer. Takas kuruluşları üyelerinin müşterilerine olan yükümlülüklerinden sorumlu değildir; teminatlar kamu alacağı için dahi haczedilemez.",
+    "trap": "MKT'ye verilen teminatların mülkiyeti üyede rehinli kalmaz, mülkiyet kanunen Takasbank'a geçer.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "SPKn 78 MKT Teminat Mülkiyeti"
+    ]
+  },
+  {
+    "id": "q_1012_master_118",
+    "module_id": "1012",
+    "number": 118,
+    "source": "genel",
+    "topic": "Takasbank'ın MKT Rolü Üstlenmediği Piyasalar",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "İstanbul Takas ve Saklama Bankası A.Ş.'nin (Takasbank) merkezi takas kuruluşu olarak hizmet verdiği ancak 'Merkezi Karşı Taraf (MKT) rolünü ÜSTLENMEDİĞİ' piyasa aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa İstanbul Pay Piyasası"
+      },
+      {
+        "key": "B",
+        "text": "Borsa İstanbul Vadeli İşlem ve Opsiyon Piyasası"
+      },
+      {
+        "key": "C",
+        "text": "Takasbank Para Piyasası"
+      },
+      {
+        "key": "D",
+        "text": "Borçlanma Araçları Piyasası BIST Para Piyasası"
+      },
+      {
+        "key": "E",
+        "text": "Borsa İstanbul Swap Piyasası"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Resmi ders notu Tablo 3 uyarınca Takasbank; Kıymetli Madenler ve Taşlar Piyasası, EPİAŞ Elektrik Piyasası, Takasbank Para Piyasası (TPP) ve TEFAS'ta MKT rolünü ÜSTLENMEMEKTEDİR. Diğer piyasalarda (Pay, BAP, VİOP, Swap, ÖPP, OTC) MKT'dir.",
+    "trap": "Takasbank Para Piyasası'nda (TPP) Takasbank işletici ve takas merkezidir ancak MKT garantörü değildir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank MKT Olmayan Piyasalar"
+    ]
+  },
+  {
+    "id": "q_1012_master_119",
+    "module_id": "1012",
+    "number": 119,
+    "source": "genel",
+    "topic": "MKT Temerrüt Şelalesi Kaynak Sıralaması (Yönetmelik Madde 36)",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Takasbank MKT Yönetmeliği m. 36 uyarınca, MKT üyelerinin temerrüdü halinde başvurulacak teminat ve kaynakların kullanımındaki 4. ve 5. sıralar aşağıdakilerden hangisinde doğru eşleştirilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4. Sıra: Temerrüt eden üyenin garanti fonu katkısı / 5. Sıra: Sigorta poliçesi tazminleri"
+      },
+      {
+        "key": "B",
+        "text": "4. Sıra: Diğer üyelerin ilave katkıları / 5. Sıra: Takasbank taahhütlü sermayesi"
+      },
+      {
+        "key": "C",
+        "text": "4. Sıra: Yatırımcı Tazmin Merkezi fonları / 5. Sıra: BİAŞ olağanüstü fonu"
+      },
+      {
+        "key": "D",
+        "text": "4. Sıra: Takasbank tahsisli sermayesi / 5. Sıra: Diğer MKT üyelerinin yatırılmış garanti fonu katkıları"
+      },
+      {
+        "key": "E",
+        "text": "4. Sıra: TCMB acil likidite desteği / 5. Sıra: BAP garanti fonu rezervi"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Madde 36 sıralaması: 1. Mütemerrit teminatları, 2. Mütemerrit yatırılmış Garanti Fonu, 3. Varsa sigorta, 4. Takasbank tahsisli sermayesi (ç bendi), 5. Diğer MKT üyelerinin yatırılmış Garanti Fonu katkıları (d bendi), 6. İlave Garanti Fonu, 7. Takasbank taahhütlü sermayesi.",
+    "trap": "Diğer masum üyelerin garanti fonuna başvurulmadan ÖNCE Takasbank'ın tahsisli özkaynağı (4. sıra) devreye girer.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Madde 36 Temerrüt Şelalesi Sıralaması"
+    ]
+  },
+  {
+    "id": "q_1012_master_120",
+    "module_id": "1012",
+    "number": 120,
+    "source": "genel",
+    "topic": "Takasbank MKT Tahsis ve Taahhüt Sermayesi Güncelleme Takvimi",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Takasbank'ın MKT temerrüt yönetiminde karşılanmış riskler için tahsis ve taahhüt edeceği özkaynak tutarlarının güncellenme takvimi ve eksilen sermayenin ikame kuralı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Her ayın son iş günü güncellenir ve eksilen sermaye derhal aynı gün TCMB tarafından tamamlanır."
+      },
+      {
+        "key": "B",
+        "text": "Yılda iki kez güncellenir; eksilen sermaye 6 ay içerisinde borsa gelirlerinden karşılanır."
+      },
+      {
+        "key": "C",
+        "text": "Her üç yılda bir SPK tarafından güncellenir; eksilen tutarlar üyelerden eşit olarak tahsil edilir."
+      },
+      {
+        "key": "D",
+        "text": "Takvim yılı başında güncellenir; eksilen sermaye BİAŞ tarafından 15 gün içinde nakden ödenir."
+      },
+      {
+        "key": "E",
+        "text": "Yılda bir kez en geç 4. ayın ilk iş günü güncellenir; temerrütte eksilen tahsisli sermaye 1 ay içinde tamamlanır."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Takasbank tahsis ve taahhüt sermayesini yılda bir kez, en geç içinde bulunulan yılın 4. ayının (Nisan) ilk iş günü günceller ve internet sitesinde duyurur. Temerrütte kullanılan tahsisli sermaye 1 ay içinde tamamlanır.",
+    "trap": "Güncelleme yılın 4. ayının (Nisan) ilk iş günüdür; tamamlama süresi 1 aydır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Tahsis ve Taahhüt Sermaye Takvimi"
+    ]
+  },
+  {
+    "id": "q_1012_master_121",
+    "module_id": "1012",
+    "number": 121,
+    "source": "genel",
+    "topic": "MKT Garanti Fonu Büyüklüğü Belirleme Kriteri",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Merkezi Karşı Taraf (MKT) uygulamasında Garanti Fonunun toplam büyüklüğünün belirlenmesinde esas alınan yasal asgari stres testi kuralı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "En büyük pozisyona sahip üyenin temerrüdü ile 2. ve 3. en büyük üyenin birlikte temerrüdünden büyük olanından az olamaz."
+      },
+      {
+        "key": "B",
+        "text": "Piyasadaki tüm aracı kurumların toplam özkaynaklarının en az %10'u kadar maktu nakit tutardan oluşmalıdır."
+      },
+      {
+        "key": "C",
+        "text": "Borsa İstanbul'un son bir yıllık toplam işlem hacminin binde biri oranında maktu belirlenir."
+      },
+      {
+        "key": "D",
+        "text": "Yalnızca en büyük açık pozisyona sahip ilk 5 üyenin ortalama işlem teminatı toplamına eşit olmalıdır."
+      },
+      {
+        "key": "E",
+        "text": "Merkez Bankası'nın belirlediği bankalararası para piyasası zorunlu karşılık tutarından az olamaz."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Garanti fonu büyüklüğü: en büyük açık pozisyona sahip üyenin temerrüdü halinde ortaya çıkacak kaynak ihtiyacı ile 2. ve 3. büyüklükteki üyelerin birlikte temerrüdü ihtiyacından büyük olanından az olamaz.",
+    "trap": "Kural: Max(En Büyük Üye, 2. Üye + 3. Üye) ihtiyacından az olamaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Garanti Fonu Büyüklük Kriteri"
+    ]
+  },
+  {
+    "id": "q_1012_master_122",
+    "module_id": "1012",
+    "number": 122,
+    "source": "genel",
+    "topic": "İlave Garanti Fonu Katkı Payı Talep Sınırları",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "MKT piyasalarında Garanti Fonunun yetersiz kalması durumunda üyelerden talep edilebilecek 'İlave Garanti Fonu Katkı Payı'na ilişkin yıllık sınır ve tutar kuralı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Her ay sınırsız sayıda istenebilir ve tutarı üyenin ödenmiş sermayesinin iki katına kadar çıkabilir."
+      },
+      {
+        "key": "B",
+        "text": "1 Nisan - 31 Mart döneminde en fazla 4 sefer istenebilir ve talep edilen ilave pay yatırılmış katkıyı aşamaz."
+      },
+      {
+        "key": "C",
+        "text": "Yılda yalnızca bir kez talep edilebilir ve maktu olarak her üyeden 10 Milyon TL nakit tahsil edilir."
+      },
+      {
+        "key": "D",
+        "text": "İlave katkı payı yalnızca Borsa İstanbul A.Ş. yönetim kurulu kararıyla Hazine garantisi altında istenir."
+      },
+      {
+        "key": "E",
+        "text": "Takvim yılı içinde en çok 12 defa istenebilir ve üye ödemeyi 30 gün sonra yapma hakkına sahiptir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1 Nisan - 31 Mart arasındaki yıllık dönemde üyelerden en fazla 4 sefer (Swap piyasasında 2 sefer) ilave katkı payı istenebilir. Talep edilecek tutar üyenin yatırılmış garanti fonu katkı payını aşamaz.",
+    "trap": "Dönem 1 Nisan - 31 Mart arasıdır; sefer sayısı yılda en çok 4'tür (Swap'ta 2); üst sınır yatırılmış katkı kadardır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "İlave Garanti Fonu Talep Sınırı"
+    ]
+  },
+  {
+    "id": "q_1012_master_123",
+    "module_id": "1012",
+    "number": 123,
+    "source": "genel",
+    "topic": "MKT Üyelik Kısıtlamaları ve İyileştirme Süreleri",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "MKT üyesinin mali yeterliliğinin yüklendiği riskler karşısında yetersiz kalması durumunda Takasbank Yönetim Kurulu'nun uygulayabileceği tedbir ve tanınacak süre hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Üyenin tüm banka hesaplarına tedbir konur ve SPK tarafından derhal iflas davası açılır."
+      },
+      {
+        "key": "B",
+        "text": "Üyelik 1 yıl süreyle askıya alınır ve üyenin tüm müşterileri doğrudan Takasbank personeline devredilir."
+      },
+      {
+        "key": "C",
+        "text": "Üyelik 3 ayı aşmamak üzere askıya alınabilir; yetersizliklerin giderilmesi için 6 ayı aşmamak üzere süre verilir."
+      },
+      {
+        "key": "D",
+        "text": "Üyeye hiçbir kısıtlama yapılmaz; Takasbank zararları kendi yedek akçelerinden karşılıksız karşılar."
+      },
+      {
+        "key": "E",
+        "text": "İşlem öncesi depo şartı kaldırılarak üyenin sınırsız kredili işlem yapmasına 30 gün izin verilir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Takasbank YK; işlem öncesi depo şartı, üyeliğin 3 ayı aşmamak üzere askıya alınması, brüt teminatlandırma vb. tedbirleri uygulayabilir. Yetersizliklerin giderilmesi için en fazla 6 ay süre verilir.",
+    "trap": "Askıya alma süresi azami 3 ay, yetersizlik giderme süresi azami 6 aydır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKT Üyelik Kısıtlama Süreleri"
+    ]
+  },
+  {
+    "id": "q_1012_master_124",
+    "module_id": "1012",
+    "number": 124,
+    "source": "genel",
+    "topic": "Takas Kesinliği ve İflas Muafiyeti (SPKn m. 79)",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 79'da düzenlenen 'Takas Kesinliği' ilkesinin koruma kapsamı aşağıdakilerden hangisini içerir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Üyelerin müşterilerine karşı olan tüm taahhütlerinin devlet tarafından şartsız karşılanmasını"
+      },
+      {
+        "key": "B",
+        "text": "Borsada gerçekleşen işlemlerin tarafların anlaşmasıyla her zaman geriye dönük iptal edilebilmesini"
+      },
+      {
+        "key": "C",
+        "text": "Takas kuruluşunun kusurlu işlemlerinden dolayı hiçbir zaman hukuki tazminat ödememesini"
+      },
+      {
+        "key": "D",
+        "text": "Faaliyet durdurulsa veya tasfiye/iflas başlasa dahi takas talimatlarının geri alınamamasını ve iptal edilememesini"
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca devlet tahvili takaslarının kesinleşmesini, özel sektör hisselerinin kapsam dışı tutulmasını"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "SPKn 79 uyarınca; takas talimat ve işlemleri ile ödeme işlemleri, üyelerin faaliyetlerinin durdurulması, idari/adli tasfiye veya iflas hallerinde dahi geri alınamaz ve iptal edilemez.",
+    "trap": "Takas kesinliği iflas ve tasfiye durumunda bile takas talimatlarının iptal edilemeyeceğini emreder.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Takas Kesinliği İlkesi"
+    ]
+  },
+  {
+    "id": "q_1012_master_125",
+    "module_id": "1012",
+    "number": 125,
+    "source": "genel",
+    "topic": "Önceden Depo Şartı Uygulama Esasları",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Piyasa dolandırıcılığını ve bilgi suiistimalini önlemek amacıyla SPK veya Borsa tarafından getirilebilen 'Önceden Depo Şartı'na ilişkin doğru kural hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Emir konusu nakit ve hisse senetleri emir verilmeden önce doğrudan TCMB kasasına tevdi edilir."
+      },
+      {
+        "key": "B",
+        "text": "Takasbank nezdinde müşteri nakit hesabı tutulduğundan depo kontrolü bizzat Takasbank tarafından yapılır."
+      },
+      {
+        "key": "C",
+        "text": "Önceden depo şartı yalnızca yabancı yatırımcılar için zorunlu olup yerli yatırımcılara uygulanamaz."
+      },
+      {
+        "key": "D",
+        "text": "Depo şartı getirilen hisselerde takas süresi otomatik olarak T+0'a düşürülerek brüt takas kaldırılır."
+      },
+      {
+        "key": "E",
+        "text": "Kıymet veya nakdin hesapta bulunma kontrolü emir verilen yatırım kuruluşu tarafından yapılır."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Takasbank nezdinde müşteri bazında nakit hesap tutulmadığından ve kıymetler MKK müşteri hesaplarında izlendiğinden, önceden depo şartının kontrolü emir verilen yatırım kuruluşu tarafından yerine getirilir.",
+    "trap": "Depo şartı kontrol sorumluluğu Takasbank'ta değil, emir verilen aracı kurumdadır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Önceden Depo Şartı Kontrolü"
+    ]
+  },
+  {
+    "id": "q_1012_master_126",
+    "module_id": "1012",
+    "number": 126,
+    "source": "genel",
+    "topic": "Temerrüt Mağduriyet Ödemesi Usul ve Oranı",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Takas taahhüdünü yerine getirmeyen üye nedeniyle alacağını gecikmeli alan üyeye yapılan 'Mağduriyet Ödemesi'ne ilişkin esas hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mütemerrit üyeden tahsil edilen temerrüt faiz/cezasının 2/3'ü, talep aranmaksızın alacaklı üyeye ödenir."
+      },
+      {
+        "key": "B",
+        "text": "Tahsil edilen tüm ceza tutarı Takasbank Garanti Fonu hesabına irat kaydedilir, alacaklıya ödeme yapılmaz."
+      },
+      {
+        "key": "C",
+        "text": "Alacaklı üyenin mağduriyet ödemesi alabilmesi için Ticaret Mahkemesi'nden kesinleşmiş ilam alması şarttır."
+      },
+      {
+        "key": "D",
+        "text": "Alacaklı üyeye gecikilen gün başına Borsa İstanbul A.Ş. pay senetlerinden re'sen bedelsiz hisse dağıtılır."
+      },
+      {
+        "key": "E",
+        "text": "Mağduriyet ödemesi yalnızca BİAŞ Para Piyasası'nda uygulanır, Pay Piyasası'nda mağduriyet ödemesi yoktur."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Temerrüt nedeniyle alacağını gecikmeli alan üyeye, tahsil edilen temerrüt cezasının 2/3'ü mağduriyet ödemesi olarak yapılır. Üyenin talebi aranmaz. Aynı gün ödeme yapılırsa mağduriyet ödemesi yapılmaz.",
+    "trap": "Mağduriyet ödemesi için talep aranmaz ve oranı tahsil edilen cezanın 2/3'üdür.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Mağduriyet Ödemesi 2/3 Kuralı"
+    ]
+  },
+  {
+    "id": "q_1012_master_127",
+    "module_id": "1012",
+    "number": 127,
+    "source": "genel",
+    "topic": "Portföy Saklama Tebliği (III-56.1) Kapsamı ve İstisnaları",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Portföy Saklama Hizmetine ve Bu Hizmette Bulunacak Kuruluşlara İlişkin Esaslar Tebliği (III-56.1) uyarınca, portföy saklama zorunluluğundan MUAF olan ve KAPSAMDA olan kuruluşlar hangisinde doğru verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Menkul Kıymet Yatırım Fonları muaf tutulmuşken; Emeklilik Yatırım Fonları tebliğ kapsamında zorunludur."
+      },
+      {
+        "key": "B",
+        "text": "GYO, GSYO ve Emeklilik Fonları tebliğden muafken; Gayrimenkul ve Girişim Sermayesi Fonları kapsamdadır."
+      },
+      {
+        "key": "C",
+        "text": "Tüm yatırım ortaklıkları ve fonlar istisnasız olarak tebliğ kapsamında aynı kurallara tabi tutulmuştur."
+      },
+      {
+        "key": "D",
+        "text": "Borsa Yatırım Fonları muaf tutulmuşken; serbest fonlar ve garantili fonlar kapsam dışındadır."
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca yabancı yatırım fonları tebliğe tabi olup yerli yatırım fonları saklayıcı tutmaktan muaftır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Tebliğ NOTU: GYO, Altyapı GYO, GSYO ve Emeklilik Yatırım Fonları (EYF) portföy saklama tebliği kapsamında saklama zorunluluğunda DEĞİLDİR. Gayrimenkul Yatırım Fonları (GYF) ve Girişim Sermayesi Yatırım Fonları (GSYF) ise bu Tebliğ KAPSAMINDADIR.",
+    "trap": "EYF ve GYO'lar muafken, GYF ve GSYF fonları Tebliğ KAPSAMINDADIR.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Portföy Saklama Kapsamı ve İstisnalar"
+    ]
+  },
+  {
+    "id": "q_1012_master_128",
+    "module_id": "1012",
+    "number": 128,
+    "source": "genel",
+    "topic": "Tek Portföy Saklayıcısı Kuralı ve Aracı Kurum Aracılık Yasağı",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Portföy Saklama Tebliği (III-56.1) uyarınca bir kolektif yatırım kuruluşuna saklama hizmeti veren aracı kurumlara getirilen temel işlem yasağı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hiçbir müşterisine sermaye piyasasında emir iletimi veya yatırım danışmanlığı hizmeti veremezler."
+      },
+      {
+        "key": "B",
+        "text": "Takasbank Para Piyasası'nda gecelik borçlanma veya borç verme işlemi gerçekleştiremezler."
+      },
+      {
+        "key": "C",
+        "text": "Portföy saklayıcısı olarak hizmet verdikleri kolektif yatırım kuruluşuna pay senedi alım satımına aracılık edemezler."
+      },
+      {
+        "key": "D",
+        "text": "Borsa İstanbul Borçlanma Araçları Piyasası'nda ters repo ve kesin alım satım işlemi yapamazlar."
+      },
+      {
+        "key": "E",
+        "text": "Kendi nam ve hesaplarına BIST 100 endeksine dahil hisse senetlerinde portföy aracılığı yapamazlar."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Portföy saklayıcısı olarak hizmet verecek aracı kurumlar tarafından, bu saklama hizmetinin verildiği kolektif yatırım kuruluşuna pay senedi alım satımına aracılık hizmeti SUNULAMAZ.",
+    "trap": "Saklama hizmeti verilen fona hisse senedi alım-satımında aracılık yapılamaz (çıkar çatışması yasağı).",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Portföy Saklayıcısı Aracılık Yasağı"
+    ]
+  },
+  {
+    "id": "q_1012_master_129",
+    "module_id": "1012",
+    "number": 129,
+    "source": "genel",
+    "topic": "Portföy Saklama Birim Yöneticisi ve Personeli Lisans Şartları",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Portföy Saklama Tebliği uyarınca, saklama hizmet birimi yöneticisi ile iç kontrol elemanında aranan asgari mesleki tecrübe ve lisans şartları hangisinde doğru verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yönetici: 2 yıl tecrübe + Düzey 1 Lisansı / İç Kontrol: 1 yıl tecrübe + Lisanssız"
+      },
+      {
+        "key": "B",
+        "text": "Yönetici: 3 yıl tecrübe + Kredi Derecelendirme Lisansı / İç Kontrol: 5 yıl tecrübe + Değerleme Lisansı"
+      },
+      {
+        "key": "C",
+        "text": "Yönetici: 10 yıl tecrübe + Finans Doktorası / İç Kontrol: 7 yıl tecrübe + Düzey 2 Lisansı"
+      },
+      {
+        "key": "D",
+        "text": "Yönetici: En az 5 yıl tecrübe + Düzey 3 ve Türev Lisansı / İç Kontrol: En az 3 yıl tecrübe + Düzey 3 Lisansı"
+      },
+      {
+        "key": "E",
+        "text": "Yönetici: En az 1 yıl tecrübe + Düzey 2 Lisansı / İç Kontrol: En az 2 yıl tecrübe + Türev Lisansı"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Saklama birimi yöneticisinin en az 5 yıl tecrübe ve Düzey 3 + Türev Araçlar Lisansına sahip olması; iç kontrol elemanının ise en az 3 yıl tecrübe ve Düzey 3 Lisansına sahip olması şarttır.",
+    "trap": "Birim yöneticisinde Düzey 3'e EK OLARAK Türev Araçlar Lisansı da zorunludur.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Portföy Saklayıcısı Lisans Şartları"
+    ]
+  },
+  {
+    "id": "q_1012_master_130",
+    "module_id": "1012",
+    "number": 130,
+    "source": "genel",
+    "topic": "Portföy Saklayıcısı ile PYŞ Arasındaki Bağımsızlık İlkesi",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Portföy Saklama Tebliği (III-56.1) m. 14 uyarınca saklayıcı ile portföy yönetim şirketi (PYŞ) arasındaki bağımsızlık ve yönetim kısıtlamasına ilişkin kural hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "PYŞ yönetim kurulu başkanı aynı zamanda portföy saklayıcısında murahhas üye olarak imza yetkisine sahiptir."
+      },
+      {
+        "key": "B",
+        "text": "Portföy saklayıcısının genel müdürü SPK'dan izin alarak PYŞ'de bağımsız yönetim kurulu üyesi olabilir."
+      },
+      {
+        "key": "C",
+        "text": "PYŞ çalışanları portföy saklayıcısının saklama biriminde iç denetçi olarak eşanlı görev yapabilirler."
+      },
+      {
+        "key": "D",
+        "text": "Portföy saklayıcısı ile PYŞ'nin ortaklık yapıları ve yönetim kadroları tamamen özdeş olmak zorundadır."
+      },
+      {
+        "key": "E",
+        "text": "Portföy saklayıcısı yöneticileri PYŞ'de, PYŞ ortak ve yöneticileri de saklayıcıda yönetici ya da temsilci olamazlar."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Portföy saklayıcılarının yöneticileri ve temsilcileri PYŞ'de ortak, yönetici veya temsilci olamazlar; PYŞ ortak ve yöneticileri de saklayıcıda yönetici veya temsilci olamazlar (Bağımsızlık ilkesi).",
+    "trap": "İki kurum arasında hiçbir yönetici, temsilci ve ortaklık bağı bulunamaz.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Saklayıcı ve PYŞ Bağımsızlık İlkesi"
+    ]
+  },
+  {
+    "id": "q_1012_master_131",
+    "module_id": "1012",
+    "number": 131,
+    "source": "genel",
+    "topic": "Portföy Saklama Sözleşmesinin Feshi ve İhbar Süresi",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Portföy yönetim şirketinin portföy saklayıcısını değiştirmek istemesi veya saklayıcının sözleşmeyi sona erdirmek istemesi halinde uygulanacak yasal bildirim kuralı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Durum en az 90 gün önceden sözleşmenin karşı tarafına ve SPK'ya gerekçeleriyle birlikte bildirilir."
+      },
+      {
+        "key": "B",
+        "text": "Durum 15 iş günü önceden Borsa İstanbul Yönetim Kurulu'na bildirilir ve fon derhal tasfiye edilir."
+      },
+      {
+        "key": "C",
+        "text": "Sözleşme tek taraflı feshedildiği anda saklayıcının yasal sorumluluğu derhal ve tamamen sona erer."
+      },
+      {
+        "key": "D",
+        "text": "Değişiklik yalnızca fon katılma payı sahiplerinin tamamının noter onaylı muvafakatiyle yapılabilir."
+      },
+      {
+        "key": "E",
+        "text": "SPK hiçbir durumda portföy saklayıcısının değiştirilmesi yönünde bir talepte bulunamaz."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Sözleşmenin sona erdirilmek istenmesi halinde durum en az 90 gün önceden sözleşmenin karşı tarafına ve SPK'ya bildirilir. Yeni sözleşme yürürlüğe girene kadar eski saklayıcının sorumluluğu devam eder.",
+    "trap": "İhbar süresi 30 veya 60 gün değil, 90 gündür; yeni sözleşmeye kadar eski saklayıcının sorumluluğu sürer.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Portföy Saklama Fesih İhbarı 90 Gün"
+    ]
+  },
+  {
+    "id": "q_1012_master_132",
+    "module_id": "1012",
+    "number": 132,
+    "source": "genel",
+    "topic": "Portföy Saklayıcısının Bağımsız Denetim ve Rapor İletim Süresi",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Portföy Saklama Tebliği uyarınca, saklayıcı nezdindeki varlıkların mevcudiyetinin tespiti amacıyla yapılacak bağımsız denetim sıklığı ve raporun SPK'ya gönderilme süresi hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ayda bir kez denetim yapılır ve rapor ertesi iş günü Borsa İstanbul'a teslim edilir."
+      },
+      {
+        "key": "B",
+        "text": "Yılda en az bir defa bağımsız denetim yapılır ve denetim raporu altı iş günü içinde SPK'ya iletilir."
+      },
+      {
+        "key": "C",
+        "text": "Her üç yılda bir denetim yapılır ve rapor 30 takvim günü içinde Ticaret Bakanlığı'na sunulur."
+      },
+      {
+        "key": "D",
+        "text": "Yılda iki kez denetim yapılır ve rapor yalnızca MKK internet sitesinde ilan edilerek arşivlenir."
+      },
+      {
+        "key": "E",
+        "text": "Beş yılda bir defa denetim yapılır ve raporun bir nüshası Yatırımcı Tazmin Merkezi'ne devredilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Portföy saklayıcısı nezdindeki varlıkların tespiti amacıyla yılda en az 1 defa bağımsız denetim yapılması ve düzenlenecek raporun bir örneğinin 6 iş günü içinde SPK'ya iletilmesi zorunludur.",
+    "trap": "Denetim periyodu yılda en az 1 defa, SPK'ya iletim süresi 6 İŞ GÜNÜDÜR.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Bağımsız Denetim ve 6 İş Günü"
+    ]
+  },
+  {
+    "id": "q_1012_master_133",
+    "module_id": "1012",
+    "number": 133,
+    "source": "genel",
+    "topic": "Portföy Saklayıcısının Sorumluluk Sınırları ve Piyasa Fiyat Riskleri",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Portföy saklayıcısının kolektif yatırım kuruluşuna karşı hukuki sorumluluğunun sınırlarına ilişkin aşağıdaki ilkelerden hangisi mevzuata uygundur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fon portföyünde hisse senedi fiyatlarının düşmesinden doğan zararları saklayıcı şahsen ödemekle yükümlüdür."
+      },
+      {
+        "key": "B",
+        "text": "Portföy yönetim şirketinin aldığı hatalı hisse yatırım kararlarının tüm zararları saklayıcıya rücu edilir."
+      },
+      {
+        "key": "C",
+        "text": "Saklayıcı portföylerin yönetiminden veya piyasadaki fiyat hareketlerinden kaynaklanan zararlardan sorumlu değildir."
+      },
+      {
+        "key": "D",
+        "text": "Saklayıcı sözleşmeye koyacağı tek taraflı bir madde ile kanuni saklama sorumluluklarını tamamen devredebilir."
+      },
+      {
+        "key": "E",
+        "text": "Alt saklayıcı kullanılması halinde ana saklayıcının fona karşı müteselsil sorumluluğu derhal kalkar."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Portföy saklayıcısı, portföy saklama hizmeti verdiği portföylerin yönetiminden veya piyasadaki fiyat hareketlerinden kaynaklanan zararlardan sorumlu değildir. Ancak gözetim ve saklama kusurlarından sorumludur.",
+    "trap": "Saklayıcı piyasa fiyat düşüşlerinden sorumlu tutulamaz; sorumluluğu saklama, mutabakat ve gözetimle sınırlıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Saklayıcının Fiyat Riskinden Sorumsuzluğu"
+    ]
+  },
+  {
+    "id": "q_1012_master_134",
+    "module_id": "1012",
+    "number": 134,
+    "source": "genel",
+    "topic": "Portföy Saklayıcısının Aykırılık Tespiti ve SPK'ya Bildirim Yükümlülüğü",
+    "chapter": "BÖLÜM 2: TAKAS, SAKLAMA VE KAYDİLEŞTİRME DÜZENLEMELERİ",
+    "text": "Portföy saklayıcısının görevlerini yerine getirirken fon içtüzüğü veya kanuna aykırı bir işlem tespit etmesi halinde izlemesi gereken yasal prosedür hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aykırılığı gizli tutarak yalnızca yıl sonu olağan denetim raporunda dipnot olarak açıklar."
+      },
+      {
+        "key": "B",
+        "text": "İşlemi yapan portföy yöneticisini derhal görevden alır ve yerine kendi personelini vekil tayin eder."
+      },
+      {
+        "key": "C",
+        "text": "Fona ait tüm katılma paylarını borsa ekranında satışa çıkararak nakde döner ve borçları kapatır."
+      },
+      {
+        "key": "D",
+        "text": "İvedilikle PYŞ'yi bilgilendirir; önemli nitelikteki aykırılıkları ve düzeltilmeyen durumları ivedilikle SPK'ya bildirir."
+      },
+      {
+        "key": "E",
+        "text": "Doğrudan Cumhuriyet Başsavcılığı'na başvurarak şirketin tüm banka hesaplarını bloke ettirir."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Saklayıcı herhangi bir aykırılık tespitinde ivedilikle PYŞ/ortaklığı bilgilendirir. Önemli nitelikteki aykırılıkları ve öngörülen sürede giderilmeyen durumları ivedilikle SPK'ya bildirir.",
+    "trap": "Önemli aykırılıklar derhal SPK'ya bildirilir; saklayıcı bizzat fon yöneticisi atayamaz veya fonu tasfiye edemez.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Portföy Saklayıcısı Aykırılık Bildirimi"
+    ]
+  },
+  {
+    "id": "q_1012_master_135",
+    "module_id": "1012",
+    "number": 135,
+    "source": "genel",
+    "topic": "Pay Piyasası Takas Döngüsü ve MKK-Takasbank Hesap Akışı",
+    "chapter": "BÖLÜM 3: BİAŞ PAY PİYASASI TAKAS, TEMERRÜT VE TRANSFER İŞLEMLERİ",
+    "text": "Borsa İstanbul Pay Piyasası'nda T işlem gününden T+2 takas gününe kadar gerçekleşen menkul kıymet takas akışına ilişkin adımlar hangisinde doğru özetlenmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "T günü kıymetler satıcıdan alıcıya elden fiziki teslim edilir; T+2 günü Borsa İstanbul parayı tahsil eder."
+      },
+      {
+        "key": "B",
+        "text": "T günü Borsa takası iptal eder; T+1 günü mahkeme onayı alınır; T+2 günü doğrudan Merkez Bankası öder."
+      },
+      {
+        "key": "C",
+        "text": "T günü hisseler Takasbank mülkiyetine geçer; T+1 günü YTM'ye devredilir; T+2 günü hesaplara dağıtılır."
+      },
+      {
+        "key": "D",
+        "text": "T günü alım satımlar serbest virman yapılır; T+1 günü hata düzeltme yasaktır; T+2 günü brüt işlem yapılır."
+      },
+      {
+        "key": "E",
+        "text": "T günü SERB alt hesabından TAVB'ye aktarılır; T+1 seans sonuna kadar düzeltme yapılır; T+2'de AKTAH üzerinden TBTAH'a aktarılır."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Pay Piyasası takas akışı: T günü SERB'den TAVB (Takas Amaçlı Virman Blokajı) hesabına bloke; T+1 seans sonuna kadar hata düzeltme / AKHATAP; T+2 günü AKTAH (Aracı Kurum Takas Havuz Hesabı) üzerinden TBTAH (Takasbank Takas Havuz Hesabı) aktarımı ile borç kapanır.",
+    "trap": "Bloke TAVB alt hesabında gerçekleşir; T+1 seans sonuna kadar düzeltilebilir; T+2'de AKTAH'tan TBTAH'a aktarılır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Pay Piyasası Takas Hesap Akışı"
+    ]
+  },
+  {
+    "id": "q_1012_master_136",
+    "module_id": "1012",
+    "number": 136,
+    "source": "genel",
+    "topic": "Pay Piyasası Temerrüt Faiz Katsayıları ve Uygulama Saatleri",
+    "chapter": "BÖLÜM 3: BİAŞ PAY PİYASASI TAKAS, TEMERRÜT VE TRANSFER İŞLEMLERİ",
+    "text": "Borsa İstanbul Pay Piyasası'nda saat 16:45'e kadar takas borcunu kapatamayan üyeye uygulanacak temerrüt faizi katsayıları saat dilimlerine göre hangisinde doğru verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "16:46 - 17:30 arasında yerine getirilirse katsayı 1; 17:31 ve sonrasında veya izleyen günlerde katsayı 3 uygulanır."
+      },
+      {
+        "key": "B",
+        "text": "16:46 - 17:00 arasında katsayı 0.25; 17:01 - 18:45 arasında katsayı 0.50; ertesi günlerde katsayı 2 uygulanır."
+      },
+      {
+        "key": "C",
+        "text": "Saat kaçta ödenirse ödensin sabit katsayı 5 olarak uygulanır ve üst sınır aranmaksızın tahsil edilir."
+      },
+      {
+        "key": "D",
+        "text": "Aynı gün içinde ödenirse hiçbir faiz uygulanmaz; ertesi gün ödenirse yasal kanuni faiz oranı işletilir."
+      },
+      {
+        "key": "E",
+        "text": "16:46 - 18:00 arasında katsayı 2; 18:01 sonrasında katsayı 4 ve üyenin tüm teminatları derhal irat kaydedilir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Pay Piyasası Temerrüt Tablosu: Borç kapama son saati 16:45'tir. Yükümlülüğün 16:46-17:30 (17:30 dahil) yerine getirilmesi halinde katsayı 1; 17:31 ve daha sonra veya izleyen günlerde yerine getirilmesi halinde katsayı 3 uygulanır.",
+    "trap": "0.25 ve 0.50 katsayıları Borçlanma Araçları Piyasası'na (BAP) aittir; Pay Piyasası'nda saat 17:30'a kadar katsayı 1, 17:31 sonrası katsayı 3'tür.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Pay Piyasası Temerrüt Katsayıları"
+    ]
+  },
+  {
+    "id": "q_1012_master_137",
+    "module_id": "1012",
+    "number": 137,
+    "source": "genel",
+    "topic": "ISIN Kodu Standartları ve Banka Bonosu Değişikliği",
+    "chapter": "BÖLÜM 4: BORSA İSTANBUL BORÇLANMA ARAÇLARI PİYASASI",
+    "text": "Borçlanma Araçları Piyasası'nda 12 haneli ISIN kodu sistematiğinde 3. hane menkul kıymet türünü gösterir. SPK'nın Tebliğ değişikliği uyarınca kısa vadeli borçlanma araçlarında yapılan kodlama reformu hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hazine Bonosu (B) tanımı kaldırılarak tüm devlet iç borçlanma senetleri Devlet Tahvili (T) koduyla üretilmeye başlanmıştır."
+      },
+      {
+        "key": "B",
+        "text": "Banka Bonosu (Q) tanımı kaldırılarak tüm kısa vadeli ihraçlar Finansman Bonosu (F) olarak kodlanmaya başlanmıştır."
+      },
+      {
+        "key": "C",
+        "text": "Kira Sertifikası (D) kodu tamamen iptal edilerek Varlığa Dayalı Menkul Kıymet (P) koduyla birleştirilmiştir."
+      },
+      {
+        "key": "D",
+        "text": "Gelir Ortaklığı Senedi (G) kaldırılmış ve tüm kamu ihraçlarına Likidite Senedi (M) kodu atanmıştır."
+      },
+      {
+        "key": "E",
+        "text": "Özel Sektör Tahvili (S) kodu kaldırılarak tüm özel sektör ihraçları Paya Dönüştürülebilir Tahvil (T) yapılmıştır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPK Borçlanma Araçları Tebliği değişikliği ile 'Banka Bonosu' tanımı kaldırılarak tüm kısa vadeli borçlanma araçları 'Finansman Bonosu' olarak tanımlanmıştır. 1 Haziran 2017'den itibaren banka bonosu (Q) yerine finansman bonosu (F) koduyla (TRF...) üretilmektedir.",
+    "trap": "Eski TRQ kodlu banka bonoları vadesine kadar geçerli kalmış; ancak yeni tüm ihraçlar TRF (Finansman Bonosu) koduyla üretilmektedir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "ISIN Kodu ve Finansman Bonosu"
+    ]
+  },
+  {
+    "id": "q_1012_master_138",
+    "module_id": "1012",
+    "number": 138,
+    "source": "genel",
+    "topic": "BAP Takas Prensipleri ve Netleştirme Dışı Kalan Pazarlar",
+    "chapter": "BÖLÜM 4: BORSA İSTANBUL BORÇLANMA ARAÇLARI PİYASASI",
+    "text": "Borsa İstanbul Borçlanma Araçları Piyasası'nda (BAP) çok taraflı netleştirme yöntemine DÂHİL EDİLMEYEN ve takası işlem bazında (brüt) sonuçlandırılan pazarlar hangileridir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kesin Alım Satım Pazarı ve Repo-Ters Repo Pazarı"
+      },
+      {
+        "key": "B",
+        "text": "BIST Para Piyasası ve Pay Senedi Repo Pazarı"
+      },
+      {
+        "key": "C",
+        "text": "Taahhütlü İşlemler Pazarı ve Uluslararası Tahvil Pazarı"
+      },
+      {
+        "key": "D",
+        "text": "Menkul Kıymet Tercihli Repo Pazarı ve Para Swap Pazarı"
+      },
+      {
+        "key": "E",
+        "text": "Nitelikli Yatırımcıya İhraç Pazarı ve Kıymetli Madenler Swap Pazarı"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "BAP Takas Prensipleri uyarınca Taahhütlü İşlemler Pazarı ve Uluslararası Tahvil Pazarındaki (Eurotahvil) işlemler hariç çok taraflı netleştirme yapılır. Bu iki pazardaki işlemler netleştirmeye dahil edilmez, işlem bazında takas edilir.",
+    "trap": "Taahhütlü İşlemler ve Uluslararası Tahvil Pazarı'nda netleştirme KESİNLİKLE YAPILMAZ.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "BAP Netleştirme Dışı Pazarlar"
+    ]
+  },
+  {
+    "id": "q_1012_master_139",
+    "module_id": "1012",
+    "number": 139,
+    "source": "genel",
+    "topic": "BAP Temerrüt Faizi Katsayıları ve Saat Dilimleri",
+    "chapter": "BÖLÜM 4: BORSA İSTANBUL BORÇLANMA ARAÇLARI PİYASASI",
+    "text": "Borsa İstanbul Borçlanma Araçları Piyasası'nda (BAP) 16:45 sonrasında takas yükümlülüğünü yerine getiren üyelere uygulanacak temerrüt faiz katsayıları (Tablo 12) hangisinde doğru gösterilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "16:46-17:30 arası katsayı 1; 17:31 ve ertesi günlerde katsayı 3 olarak uygulanır."
+      },
+      {
+        "key": "B",
+        "text": "16:46-18:00 arası katsayı 0.10; 18:01-20:00 arası katsayı 0.20; valör sonrası katsayı 1 uygulanır."
+      },
+      {
+        "key": "C",
+        "text": "16:46-17:15 arası katsayı 2; 17:16 sonrasında katsayı 4 ve ertesi günlerde katsayı 6 uygulanır."
+      },
+      {
+        "key": "D",
+        "text": "16:46-17:00 arası 0.25; 17:01-18:45 arası 0.50; 18:46'dan sonra ve valör tarihinden sonra 3 uygulanır."
+      },
+      {
+        "key": "E",
+        "text": "Gün içinde ödenen tüm borçlara katsayı 0 uygulanır; yalnızca valör aşılırsa katsayı 1 işletilir."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "BAP Temerrüt Tablosu 12: 16:46-17:00 arası 0.25 (ön temerrüt); 17:01-18:45 arası 0.50; 18:46'dan sonra aynı gün valörüyle ve valör tarihinden sonra ise katsayı 3 uygulanır. Repo kıymet bildirimi 15:00 sonrası ise katsayı 0.05'tir.",
+    "trap": "BAP'ta kademeli katsayılar 0.25, 0.50 ve 3'tür; Pay Piyasası'ndaki 1 ve 3 katsayılarından farklıdır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "BAP Temerrüt Faiz Katsayıları"
+    ]
+  },
+  {
+    "id": "q_1012_master_140",
+    "module_id": "1012",
+    "number": 140,
+    "source": "genel",
+    "topic": "Nakit Akım Teminatlandırma (NAT) Yöntemi ve Verim Eğrisi 3 Bileşeni",
+    "chapter": "BÖLÜM 4: BORSA İSTANBUL BORÇLANMA ARAÇLARI PİYASASI",
+    "text": "Takasbank'ın Borçlanma Araçları Piyasası'nda uyguladığı Nakit Akım Teminatlandırma (NAT) Yönteminde verim eğrilerinin maruz kaldığı kabul edilen üç bağımsız temel bileşen (Principal Components) hangileridir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enflasyon Şoku, Kur Değişimi ve Kredi Derecelendirme Notu İndirimi"
+      },
+      {
+        "key": "B",
+        "text": "Kupon Faiz Artışı, Anapara Ertelemesi ve Likidite Daralması"
+      },
+      {
+        "key": "C",
+        "text": "Volatilite Genişlemesi, Delta Duyarlılığı ve Gama Katsayısı Değişimi"
+      },
+      {
+        "key": "D",
+        "text": "Vade Uzaması, İskonto Oranı Sapması ve Nominal Değer Artışı"
+      },
+      {
+        "key": "E",
+        "text": "Paralel Kayma, Eğimin Değişmesi ve Eğrilik Derecesinin Değişmesi"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "NAT yönteminde temel bileşenler verim eğrilerindeki bağımsız değişikliklerdir: 1) Paralel Kayma (eğrinin bütünüyle yukarı/aşağı kayması), 2) Eğimin Değişmesi, 3) Eğrilik Derecesinin Değişmesi (Curvature).",
+    "trap": "NAT modelinin 3 temel bileşeni: Paralel Kayma, Eğim Değişimi ve Eğrilik (Curvature) değişimidir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "NAT Yöntemi ve 3 Temel Bileşen"
+    ]
+  },
+  {
+    "id": "q_1012_master_141",
+    "module_id": "1012",
+    "number": 141,
+    "source": "genel",
+    "topic": "BİAŞ Para Piyasası Risk ve Teminat Yönetimi Kuralları",
+    "chapter": "BÖLÜM 4: BORSA İSTANBUL BORÇLANMA ARAÇLARI PİYASASI",
+    "text": "Borsa İstanbul Para Piyasası'nda (BİAŞ PP) Takasbank'ın MKT rolü, takas valörü ve teminat yapısına ilişkin aşağıdaki ilkelerden hangisi geçerlidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İşlemler T+0 valörlüdür, Takasbank açık teklifle MKT'dir ve asgari Nakit TL teminat zorunluluğu yoktur."
+      },
+      {
+        "key": "B",
+        "text": "İşlemler zorunlu T+2 valörlüdür ve işlem teminatının en az %50'sinin nakit Türk Lirası olması şarttır."
+      },
+      {
+        "key": "C",
+        "text": "Takasbank bu piyasada MKT rolünü üstlenmez, sadece ikili mutabakat sağlayan aracı kurumdur."
+      },
+      {
+        "key": "D",
+        "text": "Piyasada temerrüt oluşursa borçlar doğrudan TCMB döviz rezervlerinden aynı gün hibe olarak karşılanır."
+      },
+      {
+        "key": "E",
+        "text": "Garanti Fonu sabit katkı payı her üye için maktu 3.575.000 TL nakit olarak tahsil edilir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "BİAŞ Para Piyasası'nda takas T+0'dır. Takasbank açık teklif ile MKT'dir. Sabit Garanti Fonu 50.000 TL'dir. Diğer MKT piyasalarından farklı olarak asgari Türk Lirası oranı UYGULANMAMAKTADIR.",
+    "trap": "BİAŞ Para Piyasası'nda asgari Nakit TL oranı zorunluluğu YOKTUR; Garanti Fonu sabit katkısı 50.000 TL'dir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "BİAŞ Para Piyasası Takas ve Teminatı"
+    ]
+  },
+  {
+    "id": "q_1012_master_142",
+    "module_id": "1012",
+    "number": 142,
+    "source": "genel",
+    "topic": "Borsa İstanbul SWAP Piyasası Garanti Fonu ve İlave Katkı Sınırı",
+    "chapter": "BÖLÜM 4: BORSA İSTANBUL BORÇLANMA ARAÇLARI PİYASASI",
+    "text": "Borsa İstanbul SWAP Piyasası'nda Takasbank MKT uygulaması uyarınca Garanti Fonu sabit katkı payı tutarı ve bir yıllık dönemde azami ilave katkı talep sayısı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabit katkı 50.000 TL olup; bir yıllık dönemde üyelerden en fazla dört sefer ilave katkı istenebilir."
+      },
+      {
+        "key": "B",
+        "text": "Sabit katkı 2.875.000 TL olup; 1 Nisan - 31 Mart döneminde en fazla iki sefer ilave katkı istenebilir."
+      },
+      {
+        "key": "C",
+        "text": "Sabit katkı 700.000 TL olup; üyelerden hiçbir zaman ilave garanti fonu katkı payı talep edilemez."
+      },
+      {
+        "key": "D",
+        "text": "Sabit katkı 3.575.000 TL olup; döviz işlemlerinde ilave katkı yalnızca ABD Doları olarak yatırılır."
+      },
+      {
+        "key": "E",
+        "text": "Sabit katkı 200.000 TL olup; bir yıllık dönemde her ay birer kez olmak üzere 12 sefer talep edilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SWAP Piyasası'nda üyelerin yatırması gereken sabit Garanti Fonu katkı payı 2.875.000 TL'dir. Diğer piyasalardan (4 sefer) farklı olarak, 1 Nisan - 31 Mart arasında en fazla İKİ SEFER ilave katkı payı istenebilir.",
+    "trap": "SWAP Piyasası'nda yıllık ilave katkı talep sayısı 4 değil, EN FAZLA 2 SEFERDİR; sabit tutar 2.875.000 TL'dir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "SWAP Garanti Fonu ve 2 Sefer Sınırı"
+    ]
+  },
+  {
+    "id": "q_1012_master_143",
+    "module_id": "1012",
+    "number": 143,
+    "source": "genel",
+    "topic": "VİOP BISTECH Marjin Yöntemi 5 Aşamalı Risk Algoritması",
+    "chapter": "BÖLÜM 5: TÜREV ARAÇLARDA TAKAS, UZLAŞMA VE FİZİKİ TESLİMAT",
+    "text": "Takasbank tarafından VİOP ve Pay Piyasası'nda başlangıç teminatının hesaplanmasında kullanılan BISTECH Marjin Yöntemi'nin hesaplama adımları arasında hangisi YER ALMAZ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ürün Grubu Risk Analizi"
+      },
+      {
+        "key": "B",
+        "text": "Ürün Grupları Arası Risk Analizi"
+      },
+      {
+        "key": "C",
+        "text": "Halka Arz Sabit Fiyatlama ve Talep Toplama Analizi"
+      },
+      {
+        "key": "D",
+        "text": "Başlangıç ve Değişim Teminatının Hesaplanması"
+      },
+      {
+        "key": "E",
+        "text": "Toplam Teminat Gereksiniminin Hesaplanması"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "BISTECH Marjin Yöntemi 5 adımdan oluşur: 1) Ürün Grubu Risk Analizi, 2) Ürün Grupları Arası Risk Analizi, 3) Netleştirme Etkisi Analizi (veya Marjin Risk Değeri), 4) Başlangıç ve Değişim Teminatı Hesabı, 5) Toplam Teminat Gereksinimi Hesabı. Halka arz fiyatlama bu yöntemde yer almaz.",
+    "trap": "BISTECH Marjin bir teminatlandırma algoritmasıdır; halka arz veya hisse değerleme adımı içermez.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "BISTECH Marjin Yöntemi Adımları"
+    ]
+  },
+  {
+    "id": "q_1012_master_144",
+    "module_id": "1012",
+    "number": 144,
+    "source": "genel",
+    "topic": "VİOP Pozisyon Limitleri (Sicil, Piyasa ve ELÜS Eşikleri)",
+    "chapter": "BÖLÜM 5: TÜREV ARAÇLARDA TAKAS, UZLAŞMA VE FİZİKİ TESLİMAT",
+    "text": "VİOP'ta pay vadeli işlem ve opsiyon sözleşmelerinde uygulanan 'Sicil Bazında' ve 'Piyasa Bazında' azami pozisyon limitleri sırasıyla fiili dolaşımdaki pay miktarının yüzde kaçıdır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sicil Bazında: %10 / Piyasa Bazında: %50"
+      },
+      {
+        "key": "B",
+        "text": "Sicil Bazında: %5 / Piyasa Bazında: %20"
+      },
+      {
+        "key": "C",
+        "text": "Sicil Bazında: %1 / Piyasa Bazında: %15"
+      },
+      {
+        "key": "D",
+        "text": "Sicil Bazında: %3 / Piyasa Bazında: %25"
+      },
+      {
+        "key": "E",
+        "text": "Sicil Bazında: %7 / Piyasa Bazında: %35"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "VİOP pozisyon limitleri: Pay vadeli işlem ve opsiyonlarda sicil bazında limit MKK fiili dolaşımdaki payların %3'ü; piyasa bazında limit ise fiili dolaşımın %25'idir (vade sonu işlemlerinde %35'e çıkarılabilir).",
+    "trap": "Sicil limiti %3, piyasa limiti %25'tir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "VİOP Pozisyon Limitleri %3 ve %25"
+    ]
+  },
+  {
+    "id": "q_1012_master_145",
+    "module_id": "1012",
+    "number": 145,
+    "source": "genel",
+    "topic": "VİOP Pasif Aşım ve %12 Uygulama Eşiği",
+    "chapter": "BÖLÜM 5: TÜREV ARAÇLARDA TAKAS, UZLAŞMA VE FİZİKİ TESLİMAT",
+    "text": "VİOP'ta bir üyenin pozisyonunda artış olmamasına rağmen piyasadaki toplam açık pozisyonun azalması sebebiyle limit aşımı oluşması (pasif aşım) halinde Takasbank hangi durumda tedbir uygular?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pasif aşım oluştuğu anda üyenin tüm pozisyonları istisnasız derhal piyasa fiyatından kapatılır."
+      },
+      {
+        "key": "B",
+        "text": "Üyenin Borsa İstanbul nezdindeki tüm işlem yetkisi 3 ay süreyle tamamen askıya alınır."
+      },
+      {
+        "key": "C",
+        "text": "Üyeye 30 günlük süre verilir ve bu süre içinde hiçbir teminat tamamlama çağrısı yapılmaz."
+      },
+      {
+        "key": "D",
+        "text": "Yalnızca ilgili şirketin yönetim kurulunun yazılı talepte bulunması şartıyla emir kısıtı konur."
+      },
+      {
+        "key": "E",
+        "text": "Piyasadaki dayanak varlığa bağlı aynı yönlü toplam açık pozisyonun %12 seviyesini aşması durumunda tedbir uygulanır."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Pasif aşımda olan siciller için derhal re'sen kapatma uygulanmaz. Tedbir hükümleri yalnızca piyasadaki ilgili dayanak varlığa bağlı sözleşmelerde aynı yönlü toplam açık pozisyonun %12 seviyesini aşması durumunda uygulanır.",
+    "trap": "Pasif aşım tolerans eşiği %12'dir; %12 aşılmadıkça pozisyon re'sen kapatılmaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "VİOP Pasif Aşım ve %12 Kuralı"
+    ]
+  },
+  {
+    "id": "q_1012_master_146",
+    "module_id": "1012",
+    "number": 146,
+    "source": "genel",
+    "topic": "VİOP Teminat Kompozisyonu ve Nemalandırma Kısıtlamaları",
+    "chapter": "BÖLÜM 5: TÜREV ARAÇLARDA TAKAS, UZLAŞMA VE FİZİKİ TESLİMAT",
+    "text": "VİOP'ta işlem teminatı ve garanti fonu katkı payında aranılan asgari Nakit TL kompozisyon oranları ile nemalandırma alt sınırı hangisinde doğru verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İşlem teminatında en az %50 Nakit TL, Garanti Fonunda en az %30 Nakit TL; 5.000 TL altı bakiyelere nema ödenmez."
+      },
+      {
+        "key": "B",
+        "text": "İşlem teminatında en az %10 Nakit TL, Garanti Fonunda en az %10 Nakit TL; 100.000 TL altı bakiyelere nema ödenmez."
+      },
+      {
+        "key": "C",
+        "text": "İşlem teminatında en az %100 Nakit TL aranır, nakit dışı varlık kabul edilmez; nema alt sınırı yoktur."
+      },
+      {
+        "key": "D",
+        "text": "İşlem teminatında en az %25 Nakit TL, Garanti Fonunda %50 Nakit TL; 1.000 TL altı bakiyeler nemalandırılmaz."
+      },
+      {
+        "key": "E",
+        "text": "Hem işlem teminatında hem Garanti Fonunda Nakit TL zorunluluğu tamamen kaldırılmıştır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "VİOP işlem teminatının en az %50'si, Garanti Fonu katkı payının ise en az %30'u nakit Türk Lirası olmak zorundadır. Saat 15:40 sonrası yatırılan nakitler ile 5.000 TL'nin altında bakiye bulunan hesaplar nemalandırılmaz.",
+    "trap": "VİOP işlem teminatı %50 TL, Garanti Fonu %30 TL'dir. Nemalandırma alt sınırı 5.000 TL'dir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "VİOP Teminat Kompozisyonu"
+    ]
+  },
+  {
+    "id": "q_1012_master_147",
+    "module_id": "1012",
+    "number": 147,
+    "source": "genel",
+    "topic": "VİOP Takas ve Operasyon İşlem Saatleri",
+    "chapter": "BÖLÜM 5: TÜREV ARAÇLARDA TAKAS, UZLAŞMA VE FİZİKİ TESLİMAT",
+    "text": "VİOP normal işlem gününde 'Eksi Nakit Kapama', 'Marjin Kapama (Temerrüt Başlangıcı)' ve 'TL Teminat Çekme / Nemalandırma' son saatleri sırasıyla hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "09:30 – 12:00 – 17:00"
+      },
+      {
+        "key": "B",
+        "text": "11:00 – 15:00 – 15:40"
+      },
+      {
+        "key": "C",
+        "text": "10:00 – 14:30 – 16:45"
+      },
+      {
+        "key": "D",
+        "text": "11:30 – 16:00 – 18:00"
+      },
+      {
+        "key": "E",
+        "text": "12:00 – 15:30 – 17:15"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "VİOP Tablo 18 işlem saatleri: Eksi nakit kapama son saati 11:00, Marjin kapama son saati (temerrüt başlangıcı) 15:00, TL teminat çekme ve nemalandırma son saati 15:40'tır.",
+    "trap": "Eksi nakit 11:00, marjin kapama 15:00, TL çekme/nema 15:40 saatlerini ezbere bilmek sınavda tam puan kazandırır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "VİOP Takas ve Marjin Saatleri"
+    ]
+  },
+  {
+    "id": "q_1012_master_148",
+    "module_id": "1012",
+    "number": 148,
+    "source": "genel",
+    "topic": "Tezgah Üstü (OTC) Türev İşlemlerde Takas ve Teminat Kuralları",
+    "chapter": "BÖLÜM 5: TÜREV ARAÇLARDA TAKAS, UZLAŞMA VE FİZİKİ TESLİMAT",
+    "text": "Takasbank'ın MKT hizmeti verdiği Tezgah Üstü (OTC) Türev İşlemler Piyasası'nda takasa konu sözleşmeler ve Garanti Fonu sabit katkı payı tutarı hangisinde doğru verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pay opsiyonları ve varantlar işlem görür; sabit katkı payı 100.000 TL'dir."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca döviz forward kontratları takas edilir; sabit katkı payı 2.875.000 TL'dir."
+      },
+      {
+        "key": "C",
+        "text": "TLREF faizine dayalı TL IRS ve TL OIS kontratları takas edilir; sabit katkı payı 500.000 TL'dir."
+      },
+      {
+        "key": "D",
+        "text": "Kripto varlık türevleri takas edilir; sabit katkı payı 5.000.000 TL'dir."
+      },
+      {
+        "key": "E",
+        "text": "Altın ve gümüş vadeli sözleşmeleri takas edilir; sabit katkı payı 700.000 TL'dir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Takasbank 19.12.2019'dan itibaren TLREF faizine dayalı TL IRS (Interest Rate Swap) ve TL OIS (Overnight Index Swap) tezgah üstü kontratlarına MKT hizmeti vermektedir. Sabit Garanti Fonu katkı payı 500.000 TL'dir.",
+    "trap": "OTC türev kontratları TL IRS ve TL OIS'tir; sabit Garanti Fonu katkısı 500.000 TL'dir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "OTC Türevler TL IRS ve TL OIS"
+    ]
+  },
+  {
+    "id": "q_1012_master_149",
+    "module_id": "1012",
+    "number": 149,
+    "source": "genel",
+    "topic": "Teminat Değerleme Katsayısı Formülü ve Risk Bileşenleri",
+    "chapter": "BÖLÜM 6: İSTANBUL TAKAS VE SAKLAMA BANKASI A.Ş. TEMİNAT YÖNETİMİ",
+    "text": "Takasbank Teminat Yönetimi'nde teminata kabul edilen varlıklara uygulanacak 'Teminat Değerleme Katsayısı'nın hesaplanmasında kullanılan temel matematiksel formül hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Teminat Değerleme Katsayısı = 1 + (Piyasa Riski × Faiz Riski)"
+      },
+      {
+        "key": "B",
+        "text": "Teminat Değerleme Katsayısı = (Piyasa Riski + Likidite Riski) / Kredi Riski"
+      },
+      {
+        "key": "C",
+        "text": "Teminat Değerleme Katsayısı = 1 / (1 + Kur Riski + Enflasyon Riski)"
+      },
+      {
+        "key": "D",
+        "text": "Teminat Değerleme Katsayısı = 1 - (Piyasa Riski + Likidite Riski + Kredi Riski)"
+      },
+      {
+        "key": "E",
+        "text": "Teminat Değerleme Katsayısı = Nominal Değer × (1 - İskonto Oranı)"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Resmi ders notu Bölüm 6.4 uyarınca: Teminat Değerleme Katsayısı = 1 - (Piyasa Riski + Likidite Riski + Kredi Riski) formülü ile hesaplanır. Katsayı varlığın karşı karşıya olduğu üç temel risk primini içerir.",
+    "trap": "Formül: 1 - (Piyasa + Likidite + Kredi) riskidir; eksi işareti ve bu üç riskin toplamı esastır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Teminat Değerleme Katsayısı Formülü"
+    ]
+  },
+  {
+    "id": "q_1012_master_150",
+    "module_id": "1012",
+    "number": 150,
+    "source": "genel",
+    "topic": "Teminata Kabul Edilen Varlıkların Değerleme Katsayıları (Tablo 29)",
+    "chapter": "BÖLÜM 6: İSTANBUL TAKAS VE SAKLAMA BANKASI A.Ş. TEMİNAT YÖNETİMİ",
+    "text": "Takasbank Teminat Yönetimi Tablo 29 uyarınca; Nakit Türk Lirası, ABD Doları (USD), BIST 100 pay senetleri ve Standart Külçe Altın için uygulanan teminat değerleme katsayıları sırasıyla hangisinde doğru eşleştirilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nakit TL: %90 / USD: %80 / BIST 100: %70 / Altın: %75"
+      },
+      {
+        "key": "B",
+        "text": "Nakit TL: %100 / USD: %100 / BIST 100: %90 / Altın: %95"
+      },
+      {
+        "key": "C",
+        "text": "Nakit TL: %100 / USD: %85 / BIST 100: %80 / Altın: %85"
+      },
+      {
+        "key": "D",
+        "text": "Nakit TL: %95 / USD: %90 / BIST 100: %85 / Altın: %90"
+      },
+      {
+        "key": "E",
+        "text": "Nakit TL: %100 / USD: %90 / BIST 100: %83 / Altın: %88"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "Tablo 29 Teminat Değerleme Katsayıları: Nakit Türk Lirası %100, Konvertibl Döviz USD %90 (EUR/GBP %89), BIST 30 payları %84, BIST 100 payları %83, Borsada İşlem Gören Standart Altın %88, Borsa İstanbul A.Ş. payları %100.",
+    "trap": "USD katsayısı %90, Altın katsayısı %88, BIST 100 katsayısı %83, Nakit TL katsayısı %100'dür.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Tablo 29 Teminat Değerleme Katsayıları"
     ]
   },
   {

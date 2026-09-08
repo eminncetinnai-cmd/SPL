@@ -32,7 +32,7 @@ except Exception as e:
 try:
     with open("src/data/all_questions.json", encoding="utf-8") as f:
         questions = json.load(f)
-    assert len(questions) == 810, f"Expected 810 unique questions, got {len(questions)}"
+    assert len(questions) == 860, f"Expected 860 unique questions, got {len(questions)}"
     
     unique_texts = set(q["text"].strip().lower() for q in questions)
     assert len(unique_texts) == len(questions), f"Duplicate questions found: {len(questions) - len(unique_texts)} duplicates"
@@ -54,7 +54,8 @@ try:
     assert mod_counts["1001"] == 210, f"Expected 210 questions for 1001, got {mod_counts['1001']}"
     assert mod_counts["1003"] == 210, f"Expected 210 questions for 1003, got {mod_counts['1003']}"
     assert mod_counts["1005"] == 230, f"Expected 230 questions for 1005, got {mod_counts['1005']}"
-    print(f"  [PASS] 2. Soru Havuzu (810 %100 Benzersiz Soru: 1001: 210, 1003: 210, 1005: 230, 1012: 160 Soru, 5 Şık A-E, Sıfır Kopya, Cevap Anahtarı & Çözümler Doğrulandı)")
+    assert mod_counts["1012"] == 210, f"Expected 210 questions for 1012, got {mod_counts['1012']}"
+    print(f"  [PASS] 2. Soru Havuzu (860 %100 Benzersiz Soru: 1001: 210, 1003: 210, 1005: 230, 1012: 210 Soru, 5 Şık A-E, Sıfır Kopya, Cevap Anahtarı & Çözümler Doğrulandı)")
     print(f"         Modül Dağılımı: {mod_counts}")
 except Exception as e:
     errors.append(f"Questions Test Error: {e}")

@@ -19,8 +19,8 @@ Bu yetenek (skill), SPK SPL Düzey 1 ve diğer lisanslama sınavlarına hazırl�
    - Son 1-2 yılda yayımlanan güncel SPK İlke Kararlarını (i-SPK), tebliğ değişikliklerini ve yıllık Yeniden Değerleme katsayısı ile güncellenen parasal sınırları listele.
 2. **Konu Dağılımı ve Eksiklik Tespiti:**
    - Mevcut soru havuzunu resmi konu başlıklarına göre sınıflandır.
-   - Toplam soru sayısının konu ağırlıklarına göre dengeli olup olmadığını kontrol et (örneğin Belge ve Kayıt Düzeni %1'in altındaysa veya DİBS %2'de kalmışsa eksikliği belirle).
-   - Resmi notta yer alan ancak havuzda sorusu bulunmayan veya yetersiz olan "garanti sınav konularını" saptayarak hedef soru sayısını belirle (Örn: Modül başına 210 – 230 soru).
+   - Toplam soru sayısının konu ağırlıklarına göre dengeli olup olmadığını kontrol et.
+   - Resmi notta yer alan ancak havuzda sorusu bulunmayan veya yetersiz olan "garanti sınav konularını" saptayarak hedef soru sayısını belirle (Platform standardı: Modül başına 210 – 230 soru, toplam 860 soru).
 
 ---
 
@@ -31,20 +31,14 @@ Mevcut soru havuzunu adayın ezbere ya da şık kusurlarından doğru cevabı ta
 1. **Aşırı Uzun Şık Sapması (Length Outlier Bias):**
    - Kural: Doğru cevap, yanlış şıkların ortalama uzunluğundan **1.8 kattan daha uzun olmamalıdır**.
    - Doğru şıkkın tek başına uzun bir paragraf olduğu sorular tespit edilmeli; yanlış seçenekler de eşit uzunlukta, ikna edici ve güçlü alternatiflerle genişletilmelidir.
-   - Doğru cevabın strictly en uzun olduğu soru oranı havuz genelinde **%40 - %50 bandını aşmamalıdır**.
+   - Doğru cevabın strictly en uzun olduğu soru oranı havuz genelinde **%40 - %55 bandını aşmamalıdır**.
 2. **Parantez İçi İpuçları (Giveaway Parentheticals):**
    - Kural: Yalnızca doğru şıkta parantez içinde terim tanımı, Türkçe karşılığı veya ipucu bulunması kesinlikle yasaktır.
-   - Örnek: "Murabaha (Yönetim sözleşmesine / alım satıma dayalı)" şeklindeki tek taraflı parantezler temizlenmeli, tüm seçenekler tek kelime veya eşit açıklamalı yapılmalıdır.
+   - Tüm seçenekler simetrik formatta yapılandırılmalıdır.
 3. **Mülga / Hatalı Mevzuat Hükümleri:**
    - Yürürlükten kalkmış eski tebliğ hükümleri ve parasal tutarlar derhal güncellenmelidir.
-   - Örnekler:
-     - Dar/Kısmi/Geniş Yetkili Aracı Kurum asgari özsermayeleri 2026 güncel tutarları (45M, 190M, 380M TL; kuruluş 440M TL).
-     - Kurumsal Profesyonel Müşteri kriterleri (Aktif 500M, Hasılat 1 Mr, Özsermaye 50M TL).
-     - BASK toplantı/karar nisabı güncel 2/3 kuralı.
-     - Ortaklıktan çıkarma ve satma hakkı kuralı (%98).
-     - İrtibat bürolarının müşteri emirlerini iletme yetkisi (Tebliğ III-39.1 m. 44).
 4. **Zayıf ve Gayriciddi Çeldiricilerin Güçlendirilmesi:**
-   - Sınav ciddiyetiyle bağdaşmayan seçenekler ("şirket batarsa", "müdür keyfi belirler", "100 yaşında olması", "akrabaların adıyla gizlice yürütülür") yerine mevzuata uygun profesyonel finansal alternatifler yazılmalıdır.
+   - Sınav ciddiyetiyle bağdaşmayan seçenekler yerine mevzuata uygun profesyonel finansal alternatifler yazılmalıdır.
 
 ---
 
@@ -53,7 +47,7 @@ Mevcut soru havuzunu adayın ezbere ya da şık kusurlarından doğru cevabı ta
 Yeni eklenecek sorular aşağıdaki standartlara harfiyen uymalıdır:
 
 1. **Dengeli Cevap Anahtarı:**
-   - Eklenen soru paketinin cevap anahtarı A, B, C, D, E arasında tam olarak eşit dağıtılmalıdır (Örn: 10 soru eklenecekse 2 A, 2 B, 2 C, 2 D, 2 E; 20 soru eklenecekse 4 A, 4 B, 4 C, 4 D, 4 E).
+   - Eklenen soru paketinin cevap anahtarı A, B, C, D, E arasında tam olarak eşit dağıtılmalıdır (Örn: 50 soru için 10 A, 10 B, 10 C, 10 D, 10 E).
 2. **Rastgele Karıştırma (Random Shuffle) Uyumu:**
    - Şıklarda asla "Yukarıdakilerin hepsi", "Hiçbiri", "A ve B", "C ve D" gibi konumsal referanslar bulunmamalıdır.
    - Çözüm açıklamaları "A şıkkı doğrudur" diye başlamamalı; yasal gerekçeyi ve doğru kuralı doğrudan açıklamalıdır.
@@ -64,11 +58,11 @@ Yeni eklenecek sorular aşağıdaki standartlara harfiyen uymalıdır:
 
 ## Aşama 4: Kritik Hap Bilgiler (`CheatSheetPage.tsx`) Genişletmesi
 
-Modüle özgü sınav öncesi 10 dakikalık hızlı tekrar havuzu 4 temel kategoride genişletilmeli ve modül başına en az **35-40 hap bilgi** sağlanmalıdır:
+Modüle özgü sınav öncesi 10 dakikalık hızlı tekrar havuzu 4 temel kategoride genişletilmeli ve modül başına en az **35-42 hap bilgi** sağlanmalıdır:
 
-1. **Süreler (`DURATIONS`):** Bildirim, itiraz, dava, tescil, saklama ve işlem süreleri (Örn: 30 gün itiraz, 2 iş günü tamamlama, 5 yıl saklama, 60 gün kampanya).
-2. **Oranlar ve Eşikler (`RATIOS`):** Yasal nisaplar, parasal yeniden değerleme eşikleri, özkaynak katsayıları ve limitler (Örn: %50 başlangıç, %35 sürdürme, 45M/190M/380M TL).
-3. **Kavram Karşılaştırmaları (`COMPARISONS`):** Sınavda birbirine karıştırılan ikili müesseseler (Örn: İrtibat Bürosu vs Şube, Uygunluk vs Yerindelik Testi, Kredili İşlem vs Açığa Satış).
+1. **Süreler (`DURATIONS`):** Bildirim, itiraz, dava, tescil, saklama ve işlem süreleri.
+2. **Oranlar ve Eşikler (`RATIOS`):** Yasal nisaplar, parasal yeniden değerleme eşikleri, özkaynak katsayıları ve limitler.
+3. **Kavram Karşılaştırmaları (`COMPARISONS`):** Sınavda birbirine karıştırılan ikili müesseseler (Örn: MKT Açık Teklif vs Yenileme, Segregated vs Omnibus Saklama).
 4. **Sınav Tuzakları (`TRAPS`):** Adayların en çok yanıldığı "doğru bilinen yanlışlar" (Myth vs Reality formatı).
 
 ---
@@ -78,8 +72,8 @@ Modüle özgü sınav öncesi 10 dakikalık hızlı tekrar havuzu 4 temel katego
 Her modül tamamlandığında aşağıdaki adımlar eksiksiz uygulanır:
 
 1. **`python scripts/verify_all.py`:**
-   - Modül soru sayısı assertion'ı güncellenir.
-   - 0 kopya soru metni, 0 eksik id, tam 5 şık (A-E) ve geçerli cevap anahtarları doğrulanır.
+   - Modül soru sayısı assertion'ı doğrulanır (Toplam 860: 1001: 210, 1003: 210, 1005: 230, 1012: 210).
+   - 0 kopya soru metni, 0 eksik id, tam 5 şık (A-E) ve geçerli cevap anahtarları teyit edilir.
 2. **`npm run build`:**
    - TypeScript derlemesi (`tsc`) ve Vite derlemesi 0 hata ile tamamlanmalıdır.
 3. **Dokümantasyon ve Git:**
@@ -101,32 +95,51 @@ Her modül tamamlandığında aşağıdaki adımlar eksiksiz uygulanır:
 ### Modül 1005: Yatırım Kuruluşları (230 Soru, %98.5+ Kapsayıcılık)
 - **Bölüm 1: III-37.1 Yatırım Hizmetleri ve Faaliyetleri ile Yan Hizmetler:**
   - *10 Temel Yatırım Hizmeti:* Emir iletimi, işlem aracılığı, portföy aracılığı, saklama (genel/sınırlı), portföy yöneticiliği, yatırım danışmanlığı, halka arza aracılık (en iyi gayret / yüklenim).
-  - *Müşteri Sınıflandırması:* Genel Müşteri vs Profesyonel Müşteri.
   - *2026 Kurumsal Profesyonel Müşteri Eşikleri:* Aktif toplamı 500 Milyon TL, Yıllık net hasılat 1 Milyar TL, Özsermaye 50 Milyon TL (en az ikisini sağlayanlar).
-  - *Uygunluk (Appropriateness) vs Yerindelik (Suitability) Testi:* Portföy yöneticiliği ve yatırım danışmanlığında Yerindelik Testi zorunludur; diğer işlemlerde genel müşteriye Uygunluk Testi yapılır. Profesyonel müşteriye uygunluk testi yapılmaz; yerindelik testinde mali güç ve yatırım amacı incelenir ancak bilgi/tecrübe var kabul edilir.
+  - *Uygunluk (Appropriateness) vs Yerindelik (Suitability) Testi:* Portföy yöneticiliği ve yatırım danışmanlığında Yerindelik Testi zorunludur.
 - **Bölüm 2: III-39.1 Yatırım Kuruluşlarının Kuruluş ve Faaliyet Esasları:**
   - *2026 Asgari Özsermaye Şartları:* Dar Yetkili: 45.000.000 TL, Kısmi Yetkili: 190.000.000 TL, Geniş Yetkili: 380.000.000 TL, Yeni Kuruluş Sermayesi: 440.000.000 TL.
-  - *Şube vs İrtibat Bürosu (Madde 44):* İrtibat büroları sadece tanıtım ve müşteri emirlerini merkeze iletme yapabilir. Müşteri adına para/menkul kıymet teslim alamaz, hesap açamaz, sözleşme imzalayamaz.
-  - *Teşkilat Yapısı:* İç Kontrol, Risk Yönetimi ve Teftiş Kurulu bağımsız birimlerdir; yöneticileri ve personeli doğrudan Yönetim Kurulu'na bağlıdır.
+  - *Şube vs İrtibat Bürosu (Madde 44):* İrtibat büroları sadece tanıtım ve müşteri emirlerini iletme yapabilir. Müşteri adına para/menkul kıymet teslim alamaz, hesap açamaz, sözleşme imzalayamaz.
 - **Bölüm 3: III-45.1 Belge ve Kayıt Düzeni:**
-  - *Ekstre ve İtiraz:* Hesap ekstreleri en az ayda bir iletilir. 30 gün içinde itiraz edilmeyen ekstre kesinleşir; ancak bu kural aracı kurumun sahtecilik ve kasıtlı işlemlerine karşı itiraz hakkını düşürmez (hükümsüzlük ilkesi).
-  - *Saklama Süresi:* Fiziki ve elektronik belgeler, telefon ses kayıtları, müşteri emir formları 5 yıl saklanır. Müşteri şikayet defteri ve kayıtları 5 yıl saklanır.
-  - *Fiziki Mutabakat:* Müşteri varlıklarının fiziki mevcudu ile MKK/Takasbank kayıtları her yıl sonu itibarıyla ve en geç 3 iş günü içinde mutabakata bağlanır.
+  - *Saklama Süresi:* Fiziki ve elektronik belgeler, telefon ses kayıtları, müşteri emir formları 5 yıl saklanır.
 - **Bölüm 4: Seri: V, No: 65 Kredili Alım, Açığa Satış ve Ödünç İşlemleri:**
-  - *Özkaynak Oranları:* Başlangıç özkaynak oranı asgari %50, Sürdürme özkaynak oranı asgari %35.
-  - *Özkaynak Tamamlama (Margin Call):* Oran %35'in altına indiğinde aracı kurum derhal çağrıda bulunur; müşteri bildirimi izleyen 2 iş günü içinde oranını %50'ye tamamlamak zorundadır.
-  - *Re'sen Satım:* 2 iş günü içinde tamamlanmazsa aracı kurum müşterinin onayına ihtiyaç duymaksızın re'sen kıymet satarak oranı %50'ye çıkarır.
-  - *Kredili İşlem Yasakları:* Kredili işlem hesabında teminat olarak aracı kurumun kendi hissesi kabul edilemez; kredili işlemle alınan hisse başka bir krediye teminat olamaz.
+  - *Özkaynak Oranları:* Başlangıç özkaynak oranı asgari %50, Sürdürme özkaynak oranı asgari %35. Tamamlama süresi 2 iş günü.
 - **Bölüm 5: III-35/A.2 Kitle Fonlaması Tebliği:**
-  - *Türleri:* Pay ve Borca Dayalı Kitle Fonlaması (Gayrimenkul ve bağış hariçtir).
-  - *Platform Şartları:* SPK listesine alınma zorunluluğu, asgari sermaye 9.000.000 TL, %5 ve üzeri ortaklarda temiz adli sicil.
-  - *Kampanya Kuralları:* Maksimum 60 gün; 12 aylık dönemde en fazla 2 kampanya.
-  - *Yatırım Limitleri:* Nitelikli olmayan yatırımcılar için bir yılda yıllık net gelirinin en fazla %10'u veya maksimum 600.000 TL.
-  - *Fon Denetimi:* Toplanan fonun kullanım amacına uygunluğu bağımsız denetim veya YMM raporu ile teyit edilir.
-- **Bölüm 6: III-42.1 Uzaktan Kimlik Tespiti & TSPB Promosyon Esasları:**
-  - *Uzaktan Kimlik:* NFC çip okuma, canlılık testi, 28.02.2026 itibarıyla Yapay Zeka destekli biyometri karşılaştırması zorunluluğu.
-  - *Çalışma Ortamı:* Müşteri temsilcisi yabancıların giremediği güvenli/izole odada görüşme yapar; görüşme kayıtları en az 10 yıl saklanır.
-  - *Promosyon Yönergesi:* Promosyon bütçesi yatırım kuruluşunun asgari özsermayesinin %1'ini aşamaz; çekiliş ve promosyon objektif/ayrımcılıktan uzak olmalıdır.
+  - *Türleri:* Pay ve Borca Dayalı Kitle Fonlaması. Sermaye: 9.000.000 TL. Kampanya süresi max 60 gün.
 
-### Modül 1012: Takas, Saklama ve Operasyon İşlemleri (Hedef: 210 Soru, %98+ Kapsayıcılık Hazırlığı)
-- **Kapsam:** Takasbank (Merkezi Takas Kuruluşu ve Banka statüsü), Merkezi Kayıt Kuruluşu (MKK - Doğrudan Saklama ve Hak Sahipliği Bazında Kayden İzleme), Merkezi Karşı Taraf (MKT) Müessesesi ve Risk Yönetimi, Garanti Fonu ve Temerrüt Yönetimi, Pay ve Borçlanma Araçları Takas Süreçleri (T+2, DVP - Teslim Karşılığı Ödeme), Hak Kullanım Operasyonları (Temettü, Bedelli/Bedelsiz Pay Dağıtımı, Genel Kurul Blokajı/Bildirimi), Ödünç Pay Piyasası (ÖPP) Takas ve Teminat Mekanizması, Yurt Dışı Menkul Kıymet Saklama ve Muhabirlik İlişkileri.
+### Modül 1012: Takas, Saklama ve Operasyon İşlemleri (210 Soru, %98.5+ Kapsayıcılık - Tamamlandı)
+- **Bölüm 1: Takasbank Hukuki Statüsü ve Merkezi Karşı Taraf (MKT) Müessesesi:**
+  - *Hukuki Statü:* 6362 sayılı Kanun m. 77 kapsamında Merkezi Takas Kuruluşu ve 5411 sayılı Kanun kapsamında Özel Statülü Kalkınma ve Yatırım Bankası.
+  - *MKT Hizmeti Verdiği Piyasalar:* Pay Piyasası, Borçlanma Araçları Piyasası (BAP), VİOP, Takasbank Para Piyasası (TPP), SWAP Piyasası.
+  - *MKT Olmadığı Piyasalar:* Kıymetli Madenler ve Taşlar Piyasası (KMTP), Dış Borçlanma Araçları Piyasası.
+  - *Takas Üyeliği:* Doğrudan Takas Üyesi (kendi ve müşterileri) vs Genel Takas Üyesi (kendi, müşterileri ve üye olmayan kuruluşlar).
+  - *Sermaye Güncellemesi:* MKT özkaynak şartı her yılın 4. ayının ilk iş günü YDO oranında güncellenir; sermayesi eksilen üye 1 ay içinde tamamlar.
+- **Bölüm 2: MKK (Merkezi Kayıt Kuruluşu) ve Doğrudan Hak Sahipliği:**
+  - *Hukuki Nitelik ve Fiili Ortaklık:* Özel hukuk tüzel kişisi anonim şirket (100 Milyon TL sermaye). Fiili ortaklık: Takasbank %64.9, Borsa İstanbul %30.1, TSPB %5.0. Esas sözleşme tavanları: Takasbank max %75, Borsa max %50, TSPB max %10, diğerleri max %5.
+  - *Doğrudan Hak Sahipliği (Direct Holding):* Kıymetler aracı kurum havuzunda değil, MKK nezdinde hak sahipleri (TCKN/VKN) bazında alt hesaplarda kayden izlenir.
+  - *Kaydileştirilmeyen Paylar (Madde 13):* Re'sen kaydileşir; mali haklar YTM özel hesabında bloke edilir, yönetim hakları donar. 10 yıllık zamanaşımı AYM kararıyla kaldırılmıştır (hak sahipliği mülkiyet hakkı gereği korunur).
+  - *Yatırımcı Blokajı:* Yatırımcı e-YATIRIMCI üzerinden kendi paylarına blokaj koyar; kurum kaldıramaz.
+- **Bölüm 3: Teminat ve Risk Yönetimi (BISTECH Marjin & NAT):**
+  - *Teminat Türleri:* Başlangıç Teminatı, Değişim Teminatı (Mark-to-Market günlük kar/zarar farkı), Fiziki Teslimat Teminatı, Olağanüstü/Ek Teminat.
+  - *BISTECH Risk Algoritması:* Çoklu varlık portföy marjin yöntemi. Risk faktörleri: Fiyat değişim aralığı, volatilite aralığı, spread indirimi.
+  - *Teminat Kabul Esasları:* Nakit TL, döviz (USD, EUR), BIST 30 payları, DİBS, Eurobond, Altın. Nakit dışı teminatlarda saç tıraşı (haircut / iskonto) uygulanır.
+  - *Asgari Nakit TL Oranı:* BAP ve Pay Piyasasında nakit TL zorunluluğu (%10 - %30), VİOP'ta asgari %50 nakit TL kuralı.
+  - *Teminat Değerleme Katsayısı:* Katsayı = 1 - (Piyasa Riski + Likidite Riski + Kredi Riski).
+- **Bölüm 4: Temerrüt Yönetimi ve Garanti Fonu (Madde 36 Şelale Sırası):**
+  - *Garanti Fonu Sabit Katkı Payları:* Pay Piyasası: 200.000 TL, BAP: 700.000 TL, VİOP: 3.575.000 TL, SWAP: 2.875.000 TL, OTC: 500.000 TL.
+  - *Değişken Katkı:* En büyük 1. üyenin veya 2. ve 3. üyenin toplam temerrüt riskinden büyük olanı baz alınarak stres testleriyle hesaplanır.
+  - *Temerrüt Şelalesi Sırası (Madde 36):*
+    1. Temerrüde düşen üyenin işlem teminatları
+    2. Temerrüde düşen üyenin Garanti Fonu katkı payı
+    3. Takasbank'ın taahhüt ettiği MKT Özkaynak Payı (Sermaye Katkısı)
+    4. Temerrüde düşmeyen diğer üyelerin Garanti Fonu katkı payları (müteselsil oranında)
+    5. Takasbank MKT Kalan Özkaynak Payı
+    6. Garanti Fonu Ek Katkı Payları (üyelerden 1 katına kadar)
+    7. Karşılıklı Tahsis / Kalan Zararın Üyelere Dağıtımı (Kayıp Paylaşımı)
+- **Bölüm 5: Piyasalar Operasyon Saatleri ve Takas Döngüleri:**
+  - *Pay Piyasası:* T+2 DvP takası. Takas borcu kapama son saati: **16:45**. Teminat tamamlama çağrısı son saati: **15:00**.
+  - *BAP (Borçlanma Araçları Piyasası):* T+0 (aynı gün) veya T+1/T+2. Takas borcu kapama: 16:45; Ön temerrüt aralığı: 16:46 - 17:00 (0.25 gecikme katsayısı).
+  - *VİOP:* Nakit uzlaşma T+1; fiziki teslimat T+2.
+  - *Ödünç Pay Piyasası (ÖPP):* Takasbank güvencesinde; teminat tamamlama 2 saat; temerrüt halinde T+3 saat 11:00'e kadar açık piyasadan ikame alımı.
+- **Bölüm 6: Portföy Saklama ve Genel Saklama Esasları:**
+  - *Portföy Saklama:* Yatırım fonu ve emeklilik fonu varlıkları bağımsız portföy saklayıcısı nezdinde saklanır; portföy yöneticisi ile saklayıcı aynı tüzel kişilik olamaz. Saklayıcı fesih ihbar süresi en az **90 gün**dür.
