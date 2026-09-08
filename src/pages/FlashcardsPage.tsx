@@ -186,7 +186,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({
           <button
             onClick={() => setFilterMode('all')}
             className={`px-3 py-1.5 rounded-lg font-bold transition-all ${
-              filterMode === 'all' ? 'bg-teal-500 text-slate-950 shadow-sm font-black' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              filterMode === 'all' ? 'bg-teal-600 text-white shadow-sm font-black' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             Tümü ({allCards.filter((c) => selectedModule === 'all' || c.module_id === selectedModule).length})
@@ -202,7 +202,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({
           <button
             onClick={() => setFilterMode('learned')}
             className={`px-3 py-1.5 rounded-lg font-bold transition-all ${
-              filterMode === 'learned' ? 'bg-emerald-500 text-slate-950 shadow-sm font-black' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              filterMode === 'learned' ? 'bg-emerald-600 text-white shadow-sm font-black' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
             }`}
           >
             Öğrenilenler ({moduleLearnedCount})
@@ -381,7 +381,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({
                 }}
                 className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-6 py-3 rounded-2xl border text-xs font-black transition-all ${
                   isCardLearned(currentCard.id)
-                    ? 'bg-emerald-500 text-slate-950 border-emerald-400 shadow-md shadow-emerald-500/20'
+                    ? 'bg-emerald-600 text-white border-emerald-700 shadow-md shadow-emerald-700/20'
                     : 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border-emerald-500/40 hover:bg-emerald-500/30'
                 }`}
               >
@@ -392,10 +392,10 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({
 
             <button
               onClick={handleNext}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-teal-500 hover:bg-teal-400 text-slate-950 text-xs font-black shadow-md shadow-teal-500/20 active:scale-95 transition-all"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs font-black shadow-md shadow-teal-700/20 active:scale-95 transition-all cursor-pointer"
             >
-              <span>Sonraki Kart</span>
-              <ArrowRight className="w-4 h-4" />
+              <span className="text-white font-black">Sonraki Kart</span>
+              <ArrowRight className="w-4 h-4 text-white" />
             </button>
           </div>
         </div>

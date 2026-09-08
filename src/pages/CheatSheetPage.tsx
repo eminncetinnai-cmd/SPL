@@ -15,10 +15,11 @@ import {
   ShieldCheck,
   Building2,
   Coins,
-  Download
+  Download,
+  Loader2
 } from 'lucide-react';
 import { ModuleId } from '../types/exam';
-import { generateCheatSheetPdf } from '../utils/cheatSheetPdfGenerator';
+import { downloadCheatSheetPdf, openCheatSheetInNewTab } from '../utils/cheatSheetPdfGenerator';
 
 interface CheatSheetPageProps {
   onNavigate: (page: string, params?: any) => void;
@@ -1854,45 +1855,64 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
   );
 
   const filteredTotal = filteredDurations.length + filteredRatios.length + filteredComparisons.length + filteredTraps.length;
+  const [isGeneratingPdf, setIsGeneratingPdf] = useState<boolean>(false);
   const isFilterActive = moduleFilter !== 'all' || searchQuery.trim() !== '' || activeTab !== 'all';
 
-  const handleDownloadPdf = (scope: 'all' | 'filtered' = 'all') => {
-    if (scope === 'all') {
-      generateCheatSheetPdf({
-        durations: DURATIONS,
-        ratios: RATIOS,
-        comparisons: COMPARISONS,
-        traps: TRAPS,
-        title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
-        filterTitle: 'Tüm Müfredat ve 4 Temel Modül (1001, 1003, 1005, 1012) - 115 Altın Hap Bilgi',
-      });
-    } else {
-      const moduleNameMap: Record<string, string> = {
-        all: 'Tüm Dersler',
-        '1001': '1001 Sermaye Piyasası Mevzuatı',
-        '1003': '1003 Sermaye Piyasası Araçları 1',
-        '1005': '1005 Yatırım Kuruluşları',
-        '1012': '1012 Takas, Saklama ve Operasyon',
-      };
-      const currentModule = moduleNameMap[moduleFilter] || moduleFilter;
-      const searchDesc = searchQuery.trim() ? ` / Arama: "${searchQuery.trim()}"` : '';
-      const categoryMap: Record<string, string> = {
-        all: 'Tüm Kategoriler',
-        durations: 'Kanuni Süreler',
-        ratios: 'Kritik Eşikler ve Rakamlar',
-        comparisons: 'Karıştırılan İkili Kavramlar',
-        traps: 'Ölümcül Sınav Tuzakları',
-      };
-      const catTitle = categoryMap[activeTab] || activeTab;
-      generateCheatSheetPdf({
-        durations: activeTab === 'all' || activeTab === 'durations' ? filteredDurations : [],
-        ratios: activeTab === 'all' || activeTab === 'ratios' ? filteredRatios : [],
-        comparisons: activeTab === 'all' || activeTab === 'comparisons' ? filteredComparisons : [],
-        traps: activeTab === 'all' || activeTab === 'traps' ? filteredTraps : [],
-        title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
-        filterTitle: `Özel Filtre: ${currentModule} • ${catTitle}${searchDesc} (${filteredTotal} Madde)`,
-      });
+  const handleDownloadPdf = async (scope: 'all' | 'filtered' = 'all') => {
+    setIsGeneratingPdf(true);
+    try {
+      if (scope === 'all') {
+        await downloadCheatSheetPdf({
+          durations: DURATIONS,
+          ratios: RATIOS,
+          comparisons: COMPARISONS,
+          traps: TRAPS,
+          title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
+          filterTitle: 'Tüm Müfredat ve 4 Temel Modül (1001, 1003, 1005, 1012) - 115 Altın Hap Bilgi',
+        });
+      } else {
+        const moduleNameMap: Record<string, string> = {
+          all: 'Tüm Dersler',
+          '1001': '1001 Sermaye Piyasası Mevzuatı',
+          '1003': '1003 Sermaye Piyasası Araçları 1',
+          '1005': '1005 Yatırım Kuruluşları',
+          '1012': '1012 Takas, Saklama ve Operasyon',
+        };
+        const currentModule = moduleNameMap[moduleFilter] || moduleFilter;
+        const searchDesc = searchQuery.trim() ? ` / Arama: "${searchQuery.trim()}"` : '';
+        const categoryMap: Record<string, string> = {
+          all: 'Tüm Kategoriler',
+          durations: 'Kanuni Süreler',
+          ratios: 'Kritik Eşikler ve Rakamlar',
+          comparisons: 'Karıştırılan İkili Kavramlar',
+          traps: 'Ölümcül Sınav Tuzakları',
+        };
+        const catTitle = categoryMap[activeTab] || activeTab;
+        await downloadCheatSheetPdf({
+          durations: activeTab === 'all' || activeTab === 'durations' ? filteredDurations : [],
+          ratios: activeTab === 'all' || activeTab === 'ratios' ? filteredRatios : [],
+          comparisons: activeTab === 'all' || activeTab === 'comparisons' ? filteredComparisons : [],
+          traps: activeTab === 'all' || activeTab === 'traps' ? filteredTraps : [],
+          title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
+          filterTitle: `Özel Filtre: ${currentModule} • ${catTitle}${searchDesc} (${filteredTotal} Madde)`,
+        });
+      }
+    } catch (err) {
+      console.error('PDF indirme hatası:', err);
+    } finally {
+      setIsGeneratingPdf(false);
     }
+  };
+
+  const handleOpenPreview = () => {
+    openCheatSheetInNewTab({
+      durations: activeTab === 'all' || activeTab === 'durations' ? filteredDurations : [],
+      ratios: activeTab === 'all' || activeTab === 'ratios' ? filteredRatios : [],
+      comparisons: activeTab === 'all' || activeTab === 'comparisons' ? filteredComparisons : [],
+      traps: activeTab === 'all' || activeTab === 'traps' ? filteredTraps : [],
+      title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
+      filterTitle: 'Altın Hap Bilgiler Raporu',
+    });
   };
 
   return (
@@ -1918,29 +1938,45 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
             {/* Primary PDF Download Button */}
             <button
               onClick={() => handleDownloadPdf('all')}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 text-xs font-black shadow-md shadow-teal-500/25 transition-all active:scale-95"
-              title="115 Altın Hap Bilgiyi yazdırılabilir A4 PDF olarak hazırla ve indir"
+              disabled={isGeneratingPdf}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs font-bold shadow-md shadow-teal-700/20 transition-all active:scale-95 disabled:opacity-60 cursor-pointer"
+              title="115 Altın Hap Bilgiyi doğrudan bilgisayarına PDF olarak indir"
             >
-              <Download className="w-4 h-4 text-slate-950 stroke-[2.5]" />
-              <span>PDF İndir (115 Madde)</span>
+              {isGeneratingPdf ? (
+                <Loader2 className="w-4 h-4 text-white animate-spin" />
+              ) : (
+                <Download className="w-4 h-4 text-white stroke-[2.5]" />
+              )}
+              <span className="text-white font-bold">{isGeneratingPdf ? 'PDF Hazırlanıyor...' : 'PDF İndir (115 Madde)'}</span>
+            </button>
+
+            {/* Preview in New Tab Button */}
+            <button
+              onClick={handleOpenPreview}
+              className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-card border border-slate-300 dark:border-fintech-border text-slate-800 dark:text-slate-100 text-xs font-bold transition-all shadow-sm active:scale-95 cursor-pointer"
+              title="Yeni sekmede temiz A4 formatında görüntüle veya yazdır"
+            >
+              <Printer className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+              <span>Önizle / Yazdır</span>
             </button>
 
             {/* Filtered Download Button (only shown when filtered) */}
             {isFilterActive && (
               <button
                 onClick={() => handleDownloadPdf('filtered')}
-                className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-amber-100 hover:bg-amber-200 dark:bg-amber-500/20 dark:hover:bg-amber-500/30 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 text-xs font-bold transition-all shadow-sm active:scale-95"
+                disabled={isGeneratingPdf}
+                className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition-all shadow-sm active:scale-95 disabled:opacity-60 cursor-pointer"
                 title="Sadece ekranda listelenen maddeleri PDF olarak indir"
               >
-                <Download className="w-3.5 h-3.5 text-amber-700 dark:text-amber-400" />
-                <span>Seçili Görünümü İndir ({filteredTotal})</span>
+                <Download className="w-3.5 h-3.5 text-slate-950" />
+                <span className="text-slate-950 font-bold">Seçili Görünümü İndir ({filteredTotal})</span>
               </button>
             )}
 
             {/* Test CTA */}
             <button
               onClick={() => onNavigate('practice', { initialFilterMode: 'unseen' })}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-border/50 border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-200 text-xs font-bold transition-all shadow-sm active:scale-95"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-card border border-slate-300 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-xs font-bold transition-all shadow-sm active:scale-95 cursor-pointer"
             >
               <Play className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400 fill-teal-600 dark:fill-teal-400" />
               <span>Çözülmemiş Sorular</span>
@@ -1955,20 +1991,20 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
         <div className="flex flex-wrap items-center gap-2 border-b border-slate-100 dark:border-fintech-border/60 pb-3">
           <button
             onClick={() => setActiveTab('all')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'all'
-                ? 'bg-teal-500 text-slate-950 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
+                ? 'bg-teal-600 text-white shadow-sm'
+                : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             Tüm Hap Bilgiler ({DURATIONS.length + RATIOS.length + COMPARISONS.length + TRAPS.length})
           </button>
           <button
             onClick={() => setActiveTab('durations')}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'durations'
                 ? 'bg-amber-500 text-slate-950 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
+                : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             <Clock className="w-3.5 h-3.5" />
@@ -1976,10 +2012,10 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
           </button>
           <button
             onClick={() => setActiveTab('ratios')}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'ratios'
-                ? 'bg-emerald-500 text-slate-950 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
+                ? 'bg-emerald-600 text-white shadow-sm'
+                : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             <Percent className="w-3.5 h-3.5" />
@@ -1987,10 +2023,10 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
           </button>
           <button
             onClick={() => setActiveTab('comparisons')}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'comparisons'
                 ? 'bg-purple-600 text-white shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
+                : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             <Scale className="w-3.5 h-3.5" />
@@ -1998,10 +2034,10 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
           </button>
           <button
             onClick={() => setActiveTab('traps')}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'traps'
-                ? 'bg-rose-500 text-white shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
+                ? 'bg-rose-600 text-white shadow-sm'
+                : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             <AlertTriangle className="w-3.5 h-3.5" />
@@ -2250,23 +2286,31 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
         <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
           <button
             onClick={() => handleDownloadPdf('all')}
-            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface border border-slate-300 dark:border-fintech-border text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-fintech-card text-xs font-bold transition-all shadow-sm"
+            disabled={isGeneratingPdf}
+            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs font-bold transition-all shadow-sm disabled:opacity-60 cursor-pointer"
           >
-            <Download className="w-4 h-4 text-slate-600 dark:text-slate-300" />
-            <span>PDF İndir</span>
+            {isGeneratingPdf ? <Loader2 className="w-4 h-4 text-white animate-spin" /> : <Download className="w-4 h-4 text-white" />}
+            <span className="text-white font-bold">{isGeneratingPdf ? 'PDF Hazırlanıyor...' : 'PDF İndir (115 Madde)'}</span>
+          </button>
+          <button
+            onClick={handleOpenPreview}
+            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface border border-slate-300 dark:border-fintech-border text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-fintech-card text-xs font-bold transition-all shadow-sm cursor-pointer"
+          >
+            <Printer className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+            <span>Önizle / Yazdır</span>
           </button>
           <button
             onClick={() => onNavigate('practice', { initialFilterMode: 'unseen' })}
-            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-100 dark:bg-amber-500/15 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 hover:bg-amber-200 text-xs font-bold transition-all shadow-sm"
+            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition-all shadow-sm cursor-pointer"
           >
-            <Play className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-            <span>Çözülmemiş Soruları Çöz</span>
+            <Play className="w-3.5 h-3.5 fill-slate-950 text-slate-950" />
+            <span className="text-slate-950 font-bold">Çözülmemiş Soruları Çöz</span>
           </button>
           <button
             onClick={() => onNavigate('practice')}
-            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 text-slate-950 text-xs font-black shadow-md shadow-teal-500/20 hover:from-teal-400 hover:to-emerald-400 transition-all"
+            className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-black shadow-md shadow-teal-700/20 transition-all cursor-pointer"
           >
-            <span>Rastgele Test Başlat (860)</span>
+            <span className="text-white font-bold">Rastgele Test Başlat (860)</span>
           </button>
         </div>
       </div>

@@ -71,66 +71,86 @@ html:not(.dark) .bg-fintech-card {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
 }
 
-/* Light Theme Text Contrast in Card Headers & Body */
-html:not(.dark) .bg-fintech-surface > div > h1,
-html:not(.dark) .bg-fintech-surface > div > h2,
-html:not(.dark) .bg-fintech-surface > div > h3,
-html:not(.dark) .bg-fintech-surface h1.text-white,
-html:not(.dark) .bg-fintech-surface h2.text-white,
-html:not(.dark) .bg-fintech-surface h3.text-white,
-html:not(.dark) .bg-fintech-surface h4.text-white,
-html:not(.dark) .bg-fintech-card h1.text-white,
-html:not(.dark) .bg-fintech-card h2.text-white,
-html:not(.dark) .bg-fintech-card h3.text-white,
-html:not(.dark) .bg-fintech-surface span.text-white,
-html:not(.dark) .bg-fintech-card span.text-white,
-html:not(.dark) .bg-fintech-surface .font-black.text-white,
-html:not(.dark) .bg-fintech-card .font-black.text-white {
+/* Light Theme Text Contrast in Card Headers & Body - EXCLUDE buttons and badges */
+html:not(.dark) .bg-fintech-surface :is(h1, h2, h3, h4).text-white:not(button *),
+html:not(.dark) .bg-fintech-card :is(h1, h2, h3, h4).text-white:not(button *),
+html:not(.dark) .bg-fintech-surface > span.text-white,
+html:not(.dark) .bg-fintech-card > span.text-white,
+html:not(.dark) .bg-fintech-surface p.text-white:not(button *),
+html:not(.dark) .bg-fintech-card p.text-white:not(button *) {
   color: #0F172A;
 }
 
-html:not(.dark) .bg-fintech-surface .text-slate-100,
-html:not(.dark) .bg-fintech-card .text-slate-100 {
+html:not(.dark) .bg-fintech-surface > .text-slate-100,
+html:not(.dark) .bg-fintech-card > .text-slate-100 {
   color: #0F172A;
 }
 
-html:not(.dark) .bg-fintech-surface .text-slate-200,
-html:not(.dark) .bg-fintech-card .text-slate-200 {
+html:not(.dark) .bg-fintech-surface > .text-slate-200,
+html:not(.dark) .bg-fintech-card > .text-slate-200 {
   color: #1E293B;
 }
 
-html:not(.dark) .bg-fintech-surface .text-slate-300,
-html:not(.dark) .bg-fintech-card .text-slate-300 {
+html:not(.dark) .bg-fintech-surface > .text-slate-300,
+html:not(.dark) .bg-fintech-card > .text-slate-300 {
   color: #334155;
 }
 
-html:not(.dark) .bg-fintech-surface .text-slate-400,
-html:not(.dark) .bg-fintech-card .text-slate-400 {
+html:not(.dark) .bg-fintech-surface > .text-slate-400,
+html:not(.dark) .bg-fintech-card > .text-slate-400 {
   color: #64748B;
 }
 
-/* Retain crisp white on solid colored dark buttons unless explicitly set with dark text */
-html:not(.dark) button.bg-teal-600,
-html:not(.dark) button.bg-emerald-600,
-html:not(.dark) button.bg-rose-500,
-html:not(.dark) button.bg-rose-600,
-html:not(.dark) [class*="bg-gradient-to-"] button:not([class*="text-slate-9"]):not([class*="text-gray-9"]):not([class*="text-black"]),
-html:not(.dark) button[class*="bg-gradient-to-"]:not([class*="text-slate-9"]):not([class*="text-gray-9"]):not([class*="text-black"]) {
+/* ========================================================= */
+/* BUTTON CONTRAST & LEGIBILITY PROTECTION (WCAG AAA)        */
+/* ========================================================= */
+
+/* 1. Buttons explicitly styled with white text */
+button.text-white,
+button.text-white *,
+button[class*="text-white"],
+button[class*="text-white"] * {
   color: #FFFFFF !important;
 }
 
-/* Buttons with text-slate-950 / text-slate-900 must maintain ultra-crisp dark text */
-html button[class*="text-slate-950"],
-html button[class*="text-slate-900"],
-html button[class*="text-slate-950"] *,
-html button[class*="text-slate-900"] * {
+/* 2. Buttons explicitly styled with dark text */
+button.text-slate-950,
+button.text-slate-950 *,
+button[class*="text-slate-950"],
+button[class*="text-slate-950"] *,
+button.text-slate-900,
+button.text-slate-900 *,
+button[class*="text-slate-900"],
+button[class*="text-slate-900"] * {
   color: #020617 !important;
 }
 
-html:not(.dark) button[class*="bg-gradient-to-"] span,
-html:not(.dark) button[class*="bg-teal-"] span,
-html:not(.dark) button[class*="bg-emerald-"] span {
-  color: inherit;
+/* 3. Solid colored dark buttons: always crisp white text */
+button.bg-teal-600,
+button.bg-teal-600 *,
+button.bg-teal-700,
+button.bg-teal-700 *,
+button.bg-emerald-600,
+button.bg-emerald-600 *,
+button.bg-emerald-700,
+button.bg-emerald-700 *,
+button.bg-purple-600,
+button.bg-purple-600 *,
+button.bg-purple-700,
+button.bg-purple-700 *,
+button.bg-rose-600,
+button.bg-rose-600 *,
+button.bg-rose-700,
+button.bg-rose-700 * {
+  color: #FFFFFF !important;
+}
+
+/* 4. Amber / Yellow buttons: always crisp dark text */
+button.bg-amber-400,
+button.bg-amber-400 *,
+button.bg-amber-500,
+button.bg-amber-500 * {
+  color: #020617 !important;
 }
 
 /* Print optimizations */

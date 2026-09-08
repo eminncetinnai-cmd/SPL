@@ -77,19 +77,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           <div className="flex flex-col sm:flex-row lg:flex-col gap-2.5 w-full sm:w-auto shrink-0">
             <button
               onClick={() => onNavigate('practice')}
-              className="flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-black text-sm shadow-md shadow-teal-500/20 active:scale-95 transition-all cursor-pointer"
+              className="flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-black text-sm shadow-md shadow-teal-700/20 active:scale-95 transition-all cursor-pointer"
             >
-              <Play className="w-4 h-4 fill-slate-950" />
-              <span>Test Çözmeye Başla</span>
-              <ArrowRight className="w-4 h-4" />
+              <Play className="w-4 h-4 fill-white text-white" />
+              <span className="text-white font-black">Test Çözmeye Başla</span>
+              <ArrowRight className="w-4 h-4 text-white" />
             </button>
 
             <button
               onClick={() => onNavigate('cheat-sheet')}
-              className="flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-500/15 dark:hover:bg-amber-500/25 border border-amber-200 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 font-bold text-xs shadow-xs transition-all cursor-pointer"
+              className="flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-2xl bg-amber-400 hover:bg-amber-500 active:bg-amber-600 text-slate-950 font-black text-xs shadow-xs transition-all cursor-pointer"
             >
-              <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500 dark:fill-amber-300" />
-              <span>⚡ Sınav Öncesi 10 Dk Hap Bilgiler</span>
+              <Zap className="w-3.5 h-3.5 fill-slate-950 text-slate-950" />
+              <span className="text-slate-950 font-black">⚡ Sınav Öncesi 10 Dk Hap Bilgiler</span>
             </button>
 
             <div className="grid grid-cols-2 gap-2">
@@ -282,17 +282,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       <div className="space-y-4 pt-4">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-xl font-bold text-white tracking-tight">
+            <h2 className="text-xl font-black text-slate-900 dark:text-white tracking-tight">
               Sınav Hazırlık & Performans Analitiği
             </h2>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-slate-600 dark:text-slate-400">
               Ders bazlı başarı dağılımı ve resmi SPK barajı (%50) simülasyonu.
             </p>
           </div>
 
           <button
             onClick={() => onNavigate('dashboard')}
-            className="text-xs text-teal-400 hover:text-teal-300 font-mono font-semibold flex items-center gap-1 hover:underline"
+            className="text-xs text-teal-600 dark:text-teal-400 hover:text-teal-700 dark:hover:text-teal-300 font-mono font-semibold flex items-center gap-1 hover:underline"
           >
             <span>Detaylı Analitik Görünümü</span>
             <ArrowRight className="w-3.5 h-3.5" />

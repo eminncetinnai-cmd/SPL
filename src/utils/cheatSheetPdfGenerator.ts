@@ -1,3 +1,5 @@
+import html2pdf from 'html2pdf.js';
+
 export interface DurationItem {
   id: string;
   moduleId: string;
@@ -45,7 +47,90 @@ export interface PdfExportOptions {
   filterTitle?: string;
 }
 
+/**
+ * Downloads a direct PDF file without window.print or iframes
+ */
+export async function downloadCheatSheetPdf(options: PdfExportOptions): Promise<void> {
+  const container = document.createElement('div');
+  container.innerHTML = generateCheatSheetInnerHtml(options, true);
+  container.style.width = '760px';
+  container.style.padding = '16px';
+  container.style.background = '#ffffff';
+  container.style.color = '#0f172a';
+  container.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+  container.style.position = 'fixed';
+  container.style.top = '-99999px';
+  container.style.left = '0';
+  document.body.appendChild(container);
+
+  const totalCount = options.durations.length + options.ratios.length + options.comparisons.length + options.traps.length;
+  const fileName = `SPK_SPL_1_Altin_Hap_Bilgiler_${totalCount}_Madde.pdf`;
+
+  try {
+    const opt = {
+      margin: [8, 8, 10, 8] as [number, number, number, number],
+      filename: fileName,
+      image: { type: 'jpeg' as const, quality: 0.98 },
+      html2canvas: { scale: 2, useCORS: true, logging: false },
+      jsPDF: { unit: 'mm' as const, format: 'a4' as const, orientation: 'portrait' as const },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    };
+    await (html2pdf() as any).set(opt).from(container).save();
+  } catch (err) {
+    console.error('html2pdf doğrudan kaydetme hatası, yeni sekmede açılıyor:', err);
+    openCheatSheetInNewTab(options);
+  } finally {
+    if (container.parentNode) {
+      container.parentNode.removeChild(container);
+    }
+  }
+}
+
+/**
+ * Alias for backward compatibility
+ */
 export function generateCheatSheetPdf(options: PdfExportOptions): void {
+  downloadCheatSheetPdf(options);
+}
+
+/**
+ * Opens full standalone view in a clean new tab where user can read or print safely
+ */
+export function openCheatSheetInNewTab(options: PdfExportOptions): void {
+  const html = generateFullStandaloneHtml(options);
+  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  window.open(url, '_blank');
+}
+
+/**
+ * Downloads standalone offline HTML report
+ */
+export function downloadCheatSheetHtml(options: PdfExportOptions): void {
+  const html = generateFullStandaloneHtml(options);
+  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const totalCount = options.durations.length + options.ratios.length + options.comparisons.length + options.traps.length;
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `SPK_SPL_1_Altin_Hap_Bilgiler_${totalCount}_Madde.html`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+}
+
+function escapeHtml(str: string): string {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function generateCheatSheetInnerHtml(options: PdfExportOptions, forPdfExport = false): string {
   const {
     durations,
     ratios,
@@ -62,12 +147,281 @@ export function generateCheatSheetPdf(options: PdfExportOptions): void {
     year: 'numeric',
   });
 
-  const html = `<!DOCTYPE html>
+  return `
+  <!-- Header Box -->
+  <div style="border: 2px solid #0f766e; border-radius: 8px; padding: 12px 16px; background: #f0fdfa; margin-bottom: 14px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #ccfbf1; padding-bottom: 6px; margin-bottom: 6px;">
+      <span style="font-size: 8pt; font-weight: 800; letter-spacing: 1px; color: #0f766e; text-transform: uppercase;">
+        T.C. SPK SERMAYE PİYASASI LİSANSLAMA SINAVLARI • PRO REHBER
+      </span>
+      <span style="font-size: 8pt; font-family: monospace; color: #475569; font-weight: 600;">
+        Hazırlayan: Emin ÇETİN • ${printDate}
+      </span>
+    </div>
+    <h1 style="font-size: 13pt; font-weight: 900; color: #042f2e; margin-bottom: 3px; letter-spacing: -0.3px;">
+      ${escapeHtml(title)}
+    </h1>
+    <p style="font-size: 8.5pt; color: #334155; margin-bottom: 8px; font-weight: 500; line-height: 1.35;">
+      <strong>Temmuz 2026 SPL Resmi Ders Çalışma Notları</strong> ve güncel mevzuat tebliğleri doğrultusunda sınav öncesi altın hap bilgiler.
+      Kapsam: <em>${escapeHtml(filterTitle)}</em>.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+      <span style="font-size: 7.5pt; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #fef3c7; color: #92400e; border: 1px solid #fde68a;">
+        ⏱️ ${durations.length} Kanuni Süre
+      </span>
+      <span style="font-size: 7.5pt; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0;">
+        📊 ${ratios.length} Kritik Eşik & Oran
+      </span>
+      <span style="font-size: 7.5pt; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #ede9fe; color: #5b21b6; border: 1px solid #ddd6fe;">
+        ⚖️ ${comparisons.length} İkili Kavram
+      </span>
+      <span style="font-size: 7.5pt; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #ffe4e6; color: #9f1239; border: 1px solid #fecdd3;">
+        🚨 ${traps.length} Ölümcül Tuzak
+      </span>
+      <span style="font-size: 7.5pt; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;">
+        Toplam ${totalCount} Madde
+      </span>
+    </div>
+  </div>
+
+  ${
+    durations.length > 0
+      ? `
+  <!-- Section 1 -->
+  <div style="background: #b45309; color: #ffffff; padding: 5px 10px; font-weight: 800; font-size: 8.5pt; border-radius: 4px; margin-bottom: 6px; page-break-after: avoid;">
+    ⏱️ 1. KANUNİ SÜRELER, GÜNLER VE VALÖRLER (${durations.length} Madde)
+  </div>
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 8pt;">
+    <thead>
+      <tr style="background: #f8fafc; color: #1e293b;">
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 28px; text-align: center;">#</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 45px; text-align: center;">Ders</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 75px; text-align: center;">Süre / Valör</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 140px;">Konu & Düzenleme</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px;">Açıklama & Sınavda Çıkış Şekli</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 180px;">Ölümcül Sınav Tuzağı</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${durations
+        .map(
+          (item, idx) => `
+        <tr style="background: ${idx % 2 === 0 ? '#ffffff' : '#fcfdfe'}; page-break-inside: avoid;">
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center; font-weight: bold; color: #64748b;">${idx + 1}</td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center;">
+            <span style="display: inline-block; padding: 2px 5px; border-radius: 4px; font-family: monospace; font-weight: 700; font-size: 7.5pt; background: #e2e8f0; color: #334155;">
+              ${item.moduleId}
+            </span>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center;">
+            <span style="display: inline-block; padding: 2px 6px; border-radius: 4px; font-weight: 800; font-size: 8pt; background: #fef3c7; color: #92400e; border: 1px solid #fde68a;">
+              ${escapeHtml(item.duration)}
+            </span>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; font-weight: 700; color: #0f172a;">
+            ${escapeHtml(item.title)}
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; color: #334155; line-height: 1.3;">
+            ${escapeHtml(item.description)}
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px;">
+            <div style="background: #fffbeb; border-left: 3px solid #f59e0b; padding: 4px 6px; border-radius: 3px; font-size: 7.5pt; color: #78350f; line-height: 1.25;">
+              ⚠️ ${escapeHtml(item.trap)}
+            </div>
+          </td>
+        </tr>
+      `
+        )
+        .join('')}
+    </tbody>
+  </table>
+  `
+      : ''
+  }
+
+  ${
+    ratios.length > 0
+      ? `
+  <!-- Section 2 -->
+  <div style="background: #047857; color: #ffffff; padding: 5px 10px; font-weight: 800; font-size: 8.5pt; border-radius: 4px; margin-bottom: 6px; page-break-after: avoid;">
+    📊 2. KRİTİK EŞİK DEĞERLERİ, RAKAMLAR VE ORANLAR (${ratios.length} Madde)
+  </div>
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 8pt;">
+    <thead>
+      <tr style="background: #f8fafc; color: #1e293b;">
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 28px; text-align: center;">#</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 45px; text-align: center;">Ders</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 75px; text-align: center;">Eşik / Oran</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 140px;">Konu & Düzenleme</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px;">Kanuni Esas & Detay</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 180px;">Ölümcül Sınav Tuzağı</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${ratios
+        .map(
+          (item, idx) => `
+        <tr style="background: ${idx % 2 === 0 ? '#ffffff' : '#fcfdfe'}; page-break-inside: avoid;">
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center; font-weight: bold; color: #64748b;">${idx + 1}</td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center;">
+            <span style="display: inline-block; padding: 2px 5px; border-radius: 4px; font-family: monospace; font-weight: 700; font-size: 7.5pt; background: #e2e8f0; color: #334155;">
+              ${item.moduleId}
+            </span>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center;">
+            <span style="display: inline-block; padding: 2px 6px; border-radius: 4px; font-weight: 800; font-size: 8pt; background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0;">
+              ${escapeHtml(item.value)}
+            </span>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; font-weight: 700; color: #0f172a;">
+            ${escapeHtml(item.title)}
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; color: #334155; line-height: 1.3;">
+            ${escapeHtml(item.description)}
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px;">
+            <div style="background: #fffbeb; border-left: 3px solid #f59e0b; padding: 4px 6px; border-radius: 3px; font-size: 7.5pt; color: #78350f; line-height: 1.25;">
+              ⚠️ ${escapeHtml(item.trap)}
+            </div>
+          </td>
+        </tr>
+      `
+        )
+        .join('')}
+    </tbody>
+  </table>
+  `
+      : ''
+  }
+
+  ${
+    comparisons.length > 0
+      ? `
+  <!-- Section 3 -->
+  <div style="background: #6d28d9; color: #ffffff; padding: 5px 10px; font-weight: 800; font-size: 8.5pt; border-radius: 4px; margin-bottom: 6px; page-break-after: avoid;">
+    ⚖️ 3. KARIŞTIRILAN İKİLİ TANIM VE KAVRAM KARŞILAŞTIRMALARI (${comparisons.length} Madde)
+  </div>
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 8pt;">
+    <thead>
+      <tr style="background: #f8fafc; color: #1e293b;">
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 28px; text-align: center;">#</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 45px; text-align: center;">Ders</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 200px;">Kavram A</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 200px;">Kavram B</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px;">Sınavdaki Altın Ayrım Kuralı</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${comparisons
+        .map(
+          (item, idx) => `
+        <tr style="background: ${idx % 2 === 0 ? '#ffffff' : '#fcfdfe'}; page-break-inside: avoid;">
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center; font-weight: bold; color: #64748b;">${idx + 1}</td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center;">
+            <span style="display: inline-block; padding: 2px 5px; border-radius: 4px; font-family: monospace; font-weight: 700; font-size: 7.5pt; background: #e2e8f0; color: #334155;">
+              ${item.moduleId}
+            </span>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px;">
+            <div style="background: #faf5ff; border: 1px solid #f3e8ff; padding: 4px 6px; border-radius: 4px; font-size: 7.5pt;">
+              <strong style="color: #6d28d9; display: block; margin-bottom: 2px;">${escapeHtml(item.conceptA.title)}</strong>
+              <div style="color: #334155; margin-bottom: 2px;">${escapeHtml(item.conceptA.desc)}</div>
+              <div style="font-weight: 700; color: #5b21b6;">💡 ${escapeHtml(item.conceptA.keyPoint)}</div>
+            </div>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px;">
+            <div style="background: #faf5ff; border: 1px solid #f3e8ff; padding: 4px 6px; border-radius: 4px; font-size: 7.5pt;">
+              <strong style="color: #6d28d9; display: block; margin-bottom: 2px;">${escapeHtml(item.conceptB.title)}</strong>
+              <div style="color: #334155; margin-bottom: 2px;">${escapeHtml(item.conceptB.desc)}</div>
+              <div style="font-weight: 700; color: #5b21b6;">💡 ${escapeHtml(item.conceptB.keyPoint)}</div>
+            </div>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px;">
+            <div style="background: #ede9fe; border-left: 3px solid #7c3aed; padding: 4px 6px; border-radius: 3px; font-size: 7.5pt; color: #4c1d95; line-height: 1.3;">
+              ⚡ <strong>ALTIN KURAL:</strong> ${escapeHtml(item.differenceRule)}
+            </div>
+          </td>
+        </tr>
+      `
+        )
+        .join('')}
+    </tbody>
+  </table>
+  `
+      : ''
+  }
+
+  ${
+    traps.length > 0
+      ? `
+  <!-- Section 4 -->
+  <div style="background: #be123c; color: #ffffff; padding: 5px 10px; font-weight: 800; font-size: 8.5pt; border-radius: 4px; margin-bottom: 6px; page-break-after: avoid;">
+    🚨 4. ÖLÜMCÜL SINAV TUZAKLARI VE YANILGILAR (${traps.length} Madde)
+  </div>
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 8pt;">
+    <thead>
+      <tr style="background: #f8fafc; color: #1e293b;">
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 28px; text-align: center;">#</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 45px; text-align: center;">Ders</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 220px;">Yaygın Sınav Yanılgısı (YANLIŞ)</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px;">Mevzuat ve Kanuni Gerçek (DOĞRU)</th>
+        <th style="border: 1px solid #cbd5e1; padding: 5px; width: 170px;">Soru Geliş Nedeni</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${traps
+        .map(
+          (item, idx) => `
+        <tr style="background: ${idx % 2 === 0 ? '#ffffff' : '#fcfdfe'}; page-break-inside: avoid;">
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center; font-weight: bold; color: #64748b;">${idx + 1}</td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px; text-align: center;">
+            <span style="display: inline-block; padding: 2px 5px; border-radius: 4px; font-family: monospace; font-weight: 700; font-size: 7.5pt; background: #e2e8f0; color: #334155;">
+              ${item.moduleId}
+            </span>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px;">
+            <div style="background: #fff1f2; border-left: 3px solid #f43f5e; padding: 4px 6px; border-radius: 3px; color: #881337; font-size: 7.5pt; line-height: 1.25;">
+              "${escapeHtml(item.myth)}"
+            </div>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px;">
+            <div style="background: #f0fdf4; border-left: 3px solid #10b981; padding: 4px 6px; border-radius: 3px; color: #064e3b; font-size: 7.5pt; line-height: 1.25;">
+              ✅ ${escapeHtml(item.reality)}
+            </div>
+          </td>
+          <td style="border: 1px solid #e2e8f0; padding: 5px;">
+            <div style="font-style: italic; color: #475569; font-size: 7.5pt; line-height: 1.25;">
+              💡 ${escapeHtml(item.whyImportant)}
+            </div>
+          </td>
+        </tr>
+      `
+        )
+        .join('')}
+    </tbody>
+  </table>
+  `
+      : ''
+  }
+
+  <!-- Footer -->
+  <div style="margin-top: 16px; padding-top: 8px; border-top: 1px solid #cbd5e1; display: flex; justify-content: space-between; font-size: 7.5pt; color: #64748b; font-family: monospace;">
+    <span>© 2026 Emin ÇETİN • Tüm Hakları Saklıdır</span>
+    <span>İçerik Kürasyonu & Yazılım Mimarisi: <strong>Emin ÇETİN</strong></span>
+    <span>SPK SPL Düzey 1 Lisanslama Hazırlık Platformu (Temmuz 2026 Standartları)</span>
+  </div>
+  `;
+}
+
+function generateFullStandaloneHtml(options: PdfExportOptions): string {
+  const content = generateCheatSheetInnerHtml(options, false);
+
+  return `<!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>SPK SPL Düzey 1 - Sınav Öncesi Kritik Hap Bilgiler Rehberi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPK SPL Düzey 1 - Sınav Öncesi Kritik Hap Bilgiler | Emin ÇETİN</title>
   <style>
     @page {
       size: A4 portrait;
@@ -85,10 +439,6 @@ export function generateCheatSheetPdf(options: PdfExportOptions): void {
         page-break-inside: avoid !important;
         break-inside: avoid !important;
       }
-      .section-heading {
-        page-break-after: avoid !important;
-        break-after: avoid !important;
-      }
     }
     * {
       box-sizing: border-box;
@@ -100,529 +450,66 @@ export function generateCheatSheetPdf(options: PdfExportOptions): void {
       font-size: 8.5pt;
       line-height: 1.35;
       color: #0f172a;
-      background: #ffffff;
-      padding: 10px;
+      background: #f8fafc;
+      padding: 16px;
     }
-    .header-box {
-      border: 2px solid #0f766e;
-      border-radius: 8px;
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
       padding: 12px 16px;
-      background: #f0fdfa;
-      margin-bottom: 14px;
-    }
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1.5px solid #ccfbf1;
-      padding-bottom: 6px;
-      margin-bottom: 6px;
-    }
-    .header-title-small {
-      font-size: 8pt;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: #0f766e;
-      text-transform: uppercase;
-    }
-    .header-date {
-      font-size: 8pt;
-      font-family: monospace;
-      color: #475569;
-      font-weight: 600;
-    }
-    .header-main-title {
-      font-size: 14pt;
-      font-weight: 900;
-      color: #042f2e;
-      margin-bottom: 3px;
-      letter-spacing: -0.3px;
-    }
-    .header-subtitle {
-      font-size: 9pt;
-      color: #334155;
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-    .stats-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .stat-pill {
-      font-size: 7.5pt;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 4px;
-      background: #ffffff;
-      border: 1px solid #99f6e4;
-      color: #0f766e;
-    }
-    .stat-pill.amber {
-      border-color: #fde68a;
-      background: #fef3c7;
-      color: #92400e;
-    }
-    .stat-pill.emerald {
-      border-color: #a7f3d0;
-      background: #d1fae5;
-      color: #065f46;
-    }
-    .stat-pill.purple {
-      border-color: #ddd6fe;
-      background: #ede9fe;
-      color: #5b21b6;
-    }
-    .stat-pill.rose {
-      border-color: #fecdd3;
-      background: #ffe4e6;
-      color: #9f1239;
-    }
-
-    .section-heading {
-      font-size: 11pt;
-      font-weight: 900;
-      padding: 6px 10px;
-      border-radius: 6px;
-      margin-top: 14px;
-      margin-bottom: 6px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #ffffff;
-    }
-    .bg-durations { background: #b45309; }
-    .bg-ratios { background: #047857; }
-    .bg-comparisons { background: #6d28d9; }
-    .bg-traps { background: #be123c; }
-
-    table.data-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 12px;
-      font-size: 8pt;
-    }
-    table.data-table th {
-      background: #f1f5f9;
-      color: #1e293b;
-      font-weight: 800;
-      text-align: left;
-      padding: 5px 6px;
-      border: 1px solid #cbd5e1;
-      font-size: 7.5pt;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    table.data-table td {
-      padding: 5px 6px;
-      border: 1px solid #e2e8f0;
-      vertical-align: top;
-      color: #0f172a;
-    }
-    table.data-table tr:nth-child(even) {
-      background-color: #f8fafc;
-    }
-
-    .badge-cell {
-      font-weight: 800;
-      font-family: monospace;
-      font-size: 8pt;
-      border-radius: 4px;
-      padding: 2px 5px;
-      display: inline-block;
-      white-space: nowrap;
-    }
-    .badge-amber {
-      background: #fef3c7;
-      color: #78350f;
-      border: 1px solid #fde68a;
-    }
-    .badge-emerald {
-      background: #d1fae5;
-      color: #064e3b;
-      border: 1px solid #a7f3d0;
-    }
-    .badge-purple {
-      background: #ede9fe;
-      color: #4c1d95;
-      border: 1px solid #ddd6fe;
-    }
-    .badge-rose {
-      background: #ffe4e6;
-      color: #881337;
-      border: 1px solid #fecdd3;
-    }
-
-    .module-code {
-      font-family: monospace;
-      font-weight: 800;
-      font-size: 7.5pt;
-      color: #475569;
-      background: #e2e8f0;
-      padding: 1px 4px;
-      border-radius: 3px;
-      display: inline-block;
-    }
-
-    .item-title {
-      font-weight: 800;
-      color: #0f172a;
-      display: block;
-      margin-bottom: 2px;
-    }
-    .item-desc {
-      color: #334155;
-      line-height: 1.3;
-    }
-    .trap-box {
-      background: #fffbeb;
-      border: 1px solid #fef3c7;
-      border-left: 3px solid #f59e0b;
-      padding: 3px 5px;
-      border-radius: 3px;
-      font-size: 7.5pt;
-      color: #78350f;
-      line-height: 1.25;
-    }
-    .trap-myth {
-      background: #fff1f2;
-      border: 1px solid #ffe4e6;
-      border-left: 3px solid #f43f5e;
-      padding: 4px 6px;
-      border-radius: 3px;
-      color: #881337;
-      font-size: 7.5pt;
-      line-height: 1.25;
-      margin-bottom: 3px;
-    }
-    .trap-reality {
-      background: #f0fdf4;
-      border: 1px solid #dcfce7;
-      border-left: 3px solid #10b981;
-      padding: 4px 6px;
-      border-radius: 3px;
-      color: #064e3b;
-      font-size: 7.5pt;
-      line-height: 1.25;
-    }
-
-    .comparison-box {
-      background: #faf5ff;
-      border: 1px solid #f3e8ff;
-      padding: 4px 6px;
-      border-radius: 4px;
-      margin-bottom: 3px;
-      font-size: 7.5pt;
-    }
-    .comparison-rule {
-      background: #ede9fe;
-      border-left: 3px solid #7c3aed;
-      padding: 4px 6px;
-      border-radius: 3px;
-      color: #4c1d95;
-      font-size: 7.5pt;
-      font-weight: 600;
-    }
-
-    .footer {
-      border-top: 1px solid #cbd5e1;
-      padding-top: 6px;
-      margin-top: 16px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 7pt;
-      color: #64748b;
-      font-family: monospace;
-    }
-
-    .print-button-bar {
-      margin-bottom: 12px;
-      text-align: right;
-    }
-    .btn-print {
       background: #0f766e;
       color: #ffffff;
-      border: none;
+      border-radius: 8px;
+    }
+    .btn {
       padding: 8px 16px;
       border-radius: 6px;
-      font-weight: 800;
+      font-weight: 700;
       font-size: 9pt;
       cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-print {
+      background: #ffffff;
+      color: #0f766e;
+    }
+    .btn-print:hover {
+      background: #ccfbf1;
+    }
+    .btn-close {
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+    }
+    .btn-close:hover {
+      background: rgba(255, 255, 255, 0.25);
     }
   </style>
 </head>
 <body>
-  <div class="print-button-bar no-print">
-    <button class="btn-print" onclick="window.print()">🖨️ PDF Olarak Kaydet / Yazdır</button>
-  </div>
-
-  <!-- Header -->
-  <div class="header-box">
-    <div class="header-top">
-      <span class="header-title-small">T.C. SPK SERMAYE PİYASASI LİSANSLAMA SINAVLARI • PRO REHBER</span>
-      <span class="header-date">Hazırlayan: Emin ÇETİN • ${printDate}</span>
+  <div class="wrapper">
+    <div class="top-bar no-print">
+      <div style="font-weight: 800; font-size: 10pt;">
+        📋 SPK SPL 1 Altın Hap Bilgiler Raporu
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <button class="btn btn-print" onclick="window.print()">🖨️ Yazdır / PDF Kaydet</button>
+        <button class="btn btn-close" onclick="window.close()">✕ Kapat</button>
+      </div>
     </div>
-    <h1 class="header-main-title">${title}</h1>
-    <p class="header-subtitle">
-      <strong>Temmuz 2026 SPL Resmi Ders Çalışma Notları</strong> ve güncel mevzuat tebliğleri doğrultusunda sınav öncesi hızlı tekrar rehberi.
-      Kapsam: <em>${filterTitle}</em>.
-    </p>
-    <div class="stats-pills">
-      <span class="stat-pill amber">⏱️ ${durations.length} Kanuni Süre</span>
-      <span class="stat-pill emerald">📊 ${ratios.length} Kritik Eşik & Oran</span>
-      <span class="stat-pill purple">⚖️ ${comparisons.length} İkili Kavram</span>
-      <span class="stat-pill rose">🚨 ${traps.length} Ölümcül Tuzak</span>
-      <span class="stat-pill">Toplam ${totalCount} Hap Bilgi</span>
-    </div>
-  </div>
 
-  ${
-    durations.length > 0
-      ? `
-  <!-- SECTION 1: DURATIONS -->
-  <div class="section-heading bg-durations">
-    <span>⏱️ 1. KANUNİ SÜRELER, GÜNLER VE VALÖRLER</span>
-    <span style="font-size: 8pt; font-weight: normal;">(${durations.length} Madde)</span>
+    ${content}
   </div>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th style="width: 24px;">#</th>
-        <th style="width: 44px;">Ders</th>
-        <th style="width: 105px;">Süre / Valör</th>
-        <th>Konu ve Kanuni Kural</th>
-        <th style="width: 220px;">⚠️ Sınav Tuzağı & Çeldirici</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${durations
-        .map(
-          (item, idx) => `
-        <tr>
-          <td style="text-align: center; font-weight: bold; color: #64748b;">${idx + 1}</td>
-          <td style="text-align: center;"><span class="module-code">${item.moduleId}</span></td>
-          <td><span class="badge-cell badge-amber">${escapeHtml(item.duration)}</span></td>
-          <td>
-            <span class="item-title">${escapeHtml(item.title)}</span>
-            <div class="item-desc">${escapeHtml(item.description)}</div>
-          </td>
-          <td>
-            <div class="trap-box">
-              <strong>Tuzak:</strong> ${escapeHtml(item.trap)}
-            </div>
-          </td>
-        </tr>
-      `
-        )
-        .join('')}
-    </tbody>
-  </table>
-  `
-      : ''
-  }
-
-  ${
-    ratios.length > 0
-      ? `
-  <!-- SECTION 2: RATIOS -->
-  <div class="section-heading bg-ratios">
-    <span>📊 2. KRİTİK EŞİKLER, ORANLAR VE PARASAL LİMİTLER</span>
-    <span style="font-size: 8pt; font-weight: normal;">(${ratios.length} Madde)</span>
-  </div>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th style="width: 24px;">#</th>
-        <th style="width: 44px;">Ders</th>
-        <th style="width: 110px;">Eşik / Oran / Değer</th>
-        <th>Konu ve Kanuni Hüküm</th>
-        <th style="width: 220px;">⚠️ Sınav Tuzağı & Çeldirici</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${ratios
-        .map(
-          (item, idx) => `
-        <tr>
-          <td style="text-align: center; font-weight: bold; color: #64748b;">${idx + 1}</td>
-          <td style="text-align: center;"><span class="module-code">${item.moduleId}</span></td>
-          <td><span class="badge-cell badge-emerald">${escapeHtml(item.value)}</span></td>
-          <td>
-            <span class="item-title">${escapeHtml(item.title)}</span>
-            <div class="item-desc">${escapeHtml(item.description)}</div>
-          </td>
-          <td>
-            <div class="trap-box">
-              <strong>Tuzak:</strong> ${escapeHtml(item.trap)}
-            </div>
-          </td>
-        </tr>
-      `
-        )
-        .join('')}
-    </tbody>
-  </table>
-  `
-      : ''
-  }
-
-  ${
-    comparisons.length > 0
-      ? `
-  <!-- SECTION 3: COMPARISONS -->
-  <div class="section-heading bg-comparisons">
-    <span>⚖️ 3. SIKÇA KARIŞTIRILAN İKİLİ KAVRAMLAR VE ALTIN AYRIM KURALLARI</span>
-    <span style="font-size: 8pt; font-weight: normal;">(${comparisons.length} Madde)</span>
-  </div>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th style="width: 24px;">#</th>
-        <th style="width: 44px;">Ders</th>
-        <th style="width: 210px;">Kavram A</th>
-        <th style="width: 210px;">Kavram B</th>
-        <th>🎯 Altın Ayrım Kuralı</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${comparisons
-        .map(
-          (item, idx) => `
-        <tr>
-          <td style="text-align: center; font-weight: bold; color: #64748b;">${idx + 1}</td>
-          <td style="text-align: center;"><span class="module-code">${item.moduleId}</span></td>
-          <td>
-            <div class="comparison-box">
-              <span class="item-title">${escapeHtml(item.conceptA.title)}</span>
-              <div class="item-desc">${escapeHtml(item.conceptA.desc)}</div>
-              <div style="font-weight: 700; color: #6d28d9; margin-top: 2px;">🔑 ${escapeHtml(item.conceptA.keyPoint)}</div>
-            </div>
-          </td>
-          <td>
-            <div class="comparison-box">
-              <span class="item-title">${escapeHtml(item.conceptB.title)}</span>
-              <div class="item-desc">${escapeHtml(item.conceptB.desc)}</div>
-              <div style="font-weight: 700; color: #6d28d9; margin-top: 2px;">🔑 ${escapeHtml(item.conceptB.keyPoint)}</div>
-            </div>
-          </td>
-          <td>
-            <div class="comparison-rule">
-              ${escapeHtml(item.differenceRule)}
-            </div>
-          </td>
-        </tr>
-      `
-        )
-        .join('')}
-    </tbody>
-  </table>
-  `
-      : ''
-  }
-
-  ${
-    traps.length > 0
-      ? `
-  <!-- SECTION 4: EXAM TRAPS -->
-  <div class="section-heading bg-traps">
-    <span>🚨 4. ÖLÜMCÜL SINAV TUZAKLARI (DOĞRU BİLİNEN YANLIŞLAR)</span>
-    <span style="font-size: 8pt; font-weight: normal;">(${traps.length} Madde)</span>
-  </div>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th style="width: 24px;">#</th>
-        <th style="width: 44px;">Ders</th>
-        <th style="width: 230px;">❌ Sınavda Çeldirici (YANLIŞ ALGI)</th>
-        <th style="width: 250px;">✅ Kanuni Gerçek (DOĞRU BİLGİ)</th>
-        <th>💡 Sınav Notu</th>
-      </tr>
-    </thead>
-    <tbody>
-      ${traps
-        .map(
-          (item, idx) => `
-        <tr>
-          <td style="text-align: center; font-weight: bold; color: #64748b;">${idx + 1}</td>
-          <td style="text-align: center;"><span class="module-code">${item.moduleId}</span></td>
-          <td>
-            <div class="trap-myth">
-              "${escapeHtml(item.myth)}"
-            </div>
-          </td>
-          <td>
-            <div class="trap-reality">
-              ${escapeHtml(item.reality)}
-            </div>
-          </td>
-          <td>
-            <div class="item-desc" style="font-style: italic; color: #475569;">
-              ${escapeHtml(item.whyImportant)}
-            </div>
-          </td>
-        </tr>
-      `
-        )
-        .join('')}
-    </tbody>
-  </table>
-  `
-      : ''
-  }
-
-  <div class="footer">
-    <span>© 2026 Emin ÇETİN • Tüm Hakları Saklıdır</span>
-    <span>İçerik Kürasyonu & Yazılım: <strong>Emin ÇETİN</strong></span>
-    <span>SPK SPL Düzey 1 Lisanslama Hazırlık Platformu (Temmuz 2026 Müfredatı)</span>
-  </div>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        window.print();
-      }, 400);
-    });
-  </script>
 </body>
 </html>`;
-
-  const iframe = document.createElement('iframe');
-  iframe.style.position = 'fixed';
-  iframe.style.right = '0';
-  iframe.style.bottom = '0';
-  iframe.style.width = '0';
-  iframe.style.height = '0';
-  iframe.style.border = '0';
-  document.body.appendChild(iframe);
-
-  const doc = iframe.contentWindow?.document || iframe.contentDocument;
-  if (!doc) {
-    const printWindow = window.open('', '_blank');
-    if (printWindow) {
-      printWindow.document.open();
-      printWindow.document.write(html);
-      printWindow.document.close();
-    }
-    return;
-  }
-
-  doc.open();
-  doc.write(html);
-  doc.close();
-
-  setTimeout(() => {
-    if (iframe.parentNode) {
-      iframe.parentNode.removeChild(iframe);
-    }
-  }, 120000);
-}
-
-function escapeHtml(str: string): string {
-  if (!str) return '';
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
 }

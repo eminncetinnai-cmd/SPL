@@ -445,7 +445,7 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
                     onClick={() => setQuestionCount(count)}
                     className={`py-3 rounded-xl border font-mono font-bold text-sm transition-all ${
                       questionCount === count
-                        ? 'bg-teal-500 text-slate-950 border-teal-400 shadow-sm shadow-teal-500/20'
+                        ? 'bg-teal-600 text-white border-teal-700 shadow-sm'
                         : 'bg-slate-50 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border-slate-200 dark:border-fintech-border hover:border-slate-300 dark:hover:border-slate-600'
                     }`}
                   >
@@ -523,10 +523,10 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
           <div className="space-y-2">
             <button
               onClick={handleStart}
-              className="w-full flex items-center justify-center gap-3 py-4 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-black text-base shadow-lg shadow-teal-500/25 active:scale-95 transition-all cursor-pointer"
+              className="w-full flex items-center justify-center gap-3 py-4 rounded-2xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-black text-base shadow-lg shadow-teal-700/25 active:scale-95 transition-all cursor-pointer"
             >
-              <Play className="w-5 h-5 fill-slate-950" />
-              <span>Testi Başlat ({questionCount} Soru • {testMode === 'practice' ? 'Pratik Modu' : 'Süreli Sınav'})</span>
+              <Play className="w-5 h-5 fill-white text-white" />
+              <span className="text-white font-black">Testi Başlat ({questionCount} Soru • {testMode === 'practice' ? 'Pratik Modu' : 'Süreli Sınav'})</span>
             </button>
             <p className="text-center text-[11px] font-mono text-slate-500 dark:text-slate-400">
               🎲 Sorular ve cevap seçenekleri (A, B, C, D, E) her testte otomatik olarak rastgele karıştırılır.
@@ -669,22 +669,22 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
             {isLastQuestion ? (
               <button
                 onClick={handleFinish}
-                className="flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs shadow-md shadow-emerald-500/25 active:scale-95 transition-all"
+                className="flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-black text-xs shadow-md shadow-emerald-700/25 active:scale-95 transition-all cursor-pointer"
               >
-                <CheckCircle2 className="w-4 h-4" />
-                <span>Testi Tamamla & Sonuçları Gör</span>
+                <CheckCircle2 className="w-4 h-4 text-white" />
+                <span className="text-white font-black">Testi Tamamla & Sonuçları Gör</span>
               </button>
             ) : (
               <button
                 onClick={handleNextOrFinish}
-                className={`flex items-center gap-2 px-6 py-3.5 rounded-2xl font-black text-xs transition-all ${
+                className={`flex items-center gap-2 px-6 py-3.5 rounded-2xl font-black text-xs transition-all cursor-pointer ${
                   (currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null)
-                    ? 'bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 shadow-md shadow-teal-500/25 active:scale-95'
+                    ? 'bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white shadow-md shadow-teal-700/25 active:scale-95'
                     : 'bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-fintech-border'
                 }`}
               >
-                <span>Sonraki Soru (Enter / →)</span>
-                <ArrowRight className="w-4 h-4" />
+                <span className={(currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null) ? 'text-white font-black' : ''}>Sonraki Soru (Enter / →)</span>
+                <ArrowRight className={`w-4 h-4 ${(currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null) ? 'text-white' : ''}`} />
               </button>
             )}
           </div>
@@ -746,7 +746,7 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
                   setShowExitConfirm(false);
                   handleFinish();
                 }}
-                className="px-4 py-2 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 text-xs font-bold shadow-md shadow-teal-500/25 transition-all"
+                className="px-4 py-2 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs font-bold shadow-md shadow-teal-700/25 transition-all cursor-pointer"
               >
                 Sonuçları Gör ve Bitir
               </button>

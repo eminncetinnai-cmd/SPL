@@ -302,10 +302,10 @@ export const SimulationExamPage: React.FC<SimulationExamPageProps> = ({ onNaviga
           {/* Start Exam Button */}
           <button
             onClick={handleStartExam}
-            className="w-full flex items-center justify-center gap-3 py-4 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-black text-base shadow-lg shadow-teal-500/25 active:scale-95 transition-all"
+            className="w-full flex items-center justify-center gap-3 py-4 rounded-2xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-black text-base shadow-lg shadow-teal-700/25 active:scale-95 transition-all cursor-pointer"
           >
-            <Sparkles className="w-5 h-5 fill-slate-950" />
-            <span>Sınavı Başlat & Sayacı Çalıştır</span>
+            <Sparkles className="w-5 h-5 fill-white text-white" />
+            <span className="text-white font-black">Sınavı Başlat & Sayacı Çalıştır</span>
           </button>
         </div>
       </div>
@@ -351,7 +351,7 @@ export const SimulationExamPage: React.FC<SimulationExamPageProps> = ({ onNaviga
 
           <button
             onClick={() => setShowFinishModal(true)}
-            className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-xs shadow-md shadow-emerald-500/20 active:scale-95 transition-all"
+            className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md shadow-emerald-700/20 active:scale-95 transition-all cursor-pointer"
           >
             Sınavı Bitir
           </button>
@@ -411,18 +411,18 @@ export const SimulationExamPage: React.FC<SimulationExamPageProps> = ({ onNaviga
             {isLastQuestion ? (
               <button
                 onClick={() => setShowFinishModal(true)}
-                className="flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs shadow-md shadow-emerald-500/25 active:scale-95 transition-all"
+                className="flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-black text-xs shadow-md shadow-emerald-700/25 active:scale-95 transition-all cursor-pointer"
               >
-                <CheckCircle2 className="w-4 h-4" />
-                <span>Sınavı Bitir</span>
+                <CheckCircle2 className="w-4 h-4 text-white" />
+                <span className="text-white font-black">Sınavı Bitir</span>
               </button>
             ) : (
               <button
                 onClick={nextQuestion}
-                className="flex items-center gap-2 px-6 py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-extrabold text-xs shadow-md shadow-teal-500/25 active:scale-95 transition-all"
+                className="flex items-center gap-2 px-6 py-3 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-extrabold text-xs shadow-md shadow-teal-700/25 active:scale-95 transition-all cursor-pointer"
               >
-                <span>Sonraki Soru</span>
-                <ArrowRight className="w-4 h-4" />
+                <span className="text-white font-bold">Sonraki Soru</span>
+                <ArrowRight className="w-4 h-4 text-white" />
               </button>
             )}
           </div>
@@ -483,7 +483,7 @@ export const SimulationExamPage: React.FC<SimulationExamPageProps> = ({ onNaviga
               </button>
               <button
                 onClick={handleFinishExam}
-                className="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-black shadow-md shadow-emerald-500/30 active:scale-95 transition-all"
+                className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white text-xs font-black shadow-md shadow-emerald-700/30 active:scale-95 transition-all cursor-pointer"
               >
                 Evet, Sınavı Bitir
               </button>
