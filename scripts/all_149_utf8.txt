@@ -1,0 +1,447 @@
+[q_1001_master_003] (Modul 1001) Correct [C]: 500
+  Q: 6362 sayılı Kanun'a göre, payları borsada işlem görmeyen anonim ortaklıkların pay sahibi sayısının kaçı aşması halinde ortaklığın payları halka arz olunmuş sayılır ve şirket halka açık ortaklık statüsü kazanır?
+
+[q_1001_master_054] (Modul 1001) Correct [E]: %10'u
+  Q: Yatırım fonlarının portföy yönetiminde 'Risk Dağıtım İlkesi' uyarınca genel olarak tek bir ihraççının para ve sermaye piyasası araçlarına fon toplam değerinin en fazla yüzde kaçı yatırılabilir (istisnai fonlar hariç genel kural)?
+
+[q_1001_master_058] (Modul 1001) Correct [C]: En fazla 7 yıl
+  Q: SPK ve KGK düzenlemelerine göre halka açık ortaklıkların aynı bağımsız denetim kuruluşundan kesintisiz olarak en fazla kaç yıl denetim hizmeti alabileceği (rotasyon kuralı) kurala bağlanmıştır?
+
+[q_1001_master_059] (Modul 1001) Correct [B]: Merkezi Kayıt Kuruluşu A.Ş. (MKK)
+  Q: Kamuyu Aydınlatma Platformu'nun (KAP) teknik işletimi ve yönetimi hangi sermaye piyasası kurumu tarafından yürütülmektedir?
+
+[q_1001_master_060] (Modul 1001) Correct [C]: Ayrılma hakkı kullanım süresi en az 10, en fazla 20 iş günüdür
+  Q: Ayrılma hakkını kullanmak isteyen pay sahibi, ortaklığın yaptığı bildirimi takip eden en geç kaç iş günü içinde paylarını ortaklığa devretmek üzere başvurmalıdır?
+
+[q_1001_master_063] (Modul 1001) Correct [E]: Büyüme potansiyeli olan erken aşama veya büyüme evresindeki girişim şirketlerine sermaye aktarmak amacıyla kurulur ve yalnızca nitelikli yatırımcılara satılır.
+  Q: Girişim Sermayesi Yatırım Fonları (GSYF) temel olarak hangi amaçla kurulur ve kimlere ihraç edilir?
+
+[q_1001_master_069] (Modul 1001) Correct [C]: Yatırım Danışmanlığı ve Bireysel Portföy Yöneticiliği hizmetlerinde
+  Q: Hangi yatırım hizmetlerinde yatırım kuruluşunun müşteriye 'Yerindelik Testi' yapması ZORUNLUDUR?
+
+[q_1001_master_073] (Modul 1001) Correct [E]: %50
+  Q: Kredili menkul kıymet işlemlerinde asgari başlangıç özkaynak oranı mevzuat uyarınca en az yüzde kaçtır?
+
+[q_1001_master_074] (Modul 1001) Correct [A]: Sahip olunmayan sermaye piyasası araçlarının satılmasını ya da satışına ilişkin emrin verilmesini ifade eder.
+  Q: Açığa satış işlemi kavramının tanımı aşağıdakilerden hangisidir?
+
+[q_1001_master_076] (Modul 1001) Correct [C]: Kamu kurumu niteliğinde bir meslek kuruluşu olup, SPK'dan faaliyet izni alan tüm aracı kurumlar, bankalar, portföy yönetim şirketleri ve yatırım ortaklıklarının üyeliği KANUNEN ZORUNLUDUR.
+  Q: Türkiye Sermaye Piyasaları Birliği'nin (TSPB) hukuki statüsü ve üyelik zorunluluğu ile ilgili hangisi DOĞRUDUR?
+
+[q_1001_master_095] (Modul 1001) Correct [B]: 1 aydan 2 yıla kadar (mevzuatta belirtilen azami süreler çerçevesinde)
+  Q: Geçici olarak faaliyetten men (veya mesleki faaliyetin geçici durdurulması) cezası en fazla ne kadar süreyle verilebilir?
+
+[q_1001_master_097] (Modul 1001) Correct [D]: Savunma için en az 10 gün süre verilir (haklı mazeret halinde ek süre tanınabilir)
+  Q: TSPB Disiplin Yönetmeliği'ne göre hakkında disiplin soruşturması açılan bir üye veya personele savunma yapması için tanınan asgari süre kaç gündür?
+
+[q_1001_master_098] (Modul 1001) Correct [E]: İlgililer tebliğden itibaren belirlenen süre içinde Birlik Yönetim Kurulu'na veya SPK'ya itiraz edebilirler; nihai idari kararlara karşı ise İdare Mahkemesi'nde iptal davası açılabilir.
+  Q: TSPB Disiplin Kurulu tarafından verilen disiplin cezalarına karşı izlenecek hukuki süreçle ilgili hangisi DOĞRUDUR?
+
+[q_1003_master_003] (Modul 1003) Correct [C]: Esas sözleşmeyle yetkilendirilmişse Yönetim Kurulu veya Genel Kurul kararıyla yapılabilir.
+  Q: Halka açık anonim ortaklıklarda rüçhan haklarının sınırlandırılması veya tamamen kaldırılması için hangi organ yetkilidir?
+
+[q_1003_master_005] (Modul 1003) Correct [C]: Hisse Senedi İhraç Primleri (Emisyon Primi)
+  Q: Payların nominal (itibari) değerinin üzerinde bir bedelle ihraç edilmesi sonucu elde edilen aradaki fark hangi muhasebe hesabında izlenir?
+
+[q_1003_master_008] (Modul 1003) Correct [C]: %5
+  Q: Halka açık anonim ortaklıklarda TTK ve SPKn uyarınca 'Azınlık (Azlık) Hakları' sermayenin en az yüzde kaçına sahip pay sahipleri tarafından kullanılabilir?
+
+[q_1003_master_012] (Modul 1003) Correct [B]: Bilgi alma veya inceleme hakkı önceden kullanılmış olmak şartıyla, genel kurul talebi reddetse dahi azınlık mahkemeden özel denetçi atanmasını isteyebilir.
+  Q: Halka açık anonim ortaklıklarda pay sahiplerinin 'Özel Denetçi' talep edebilmesi ile ilgili hangisi DOĞRUDUR?
+
+[q_1003_master_014] (Modul 1003) Correct [B]: 2.0
+  Q: Bir şirketin hisse senedinin borsa fiyatı 50 TL, pay başına defter değeri ise 25 TL ise bu şirketin PD/DD oranı kaçtır?
+
+[q_1003_master_016] (Modul 1003) Correct [D]: %5
+  Q: Borsada işlem fiyatı 80 TL olan bir hisse senedi hisse başına brüt 4 TL nakit temettü dağıtırsa temettü verimi yüzde kaçtır?
+
+[q_1003_master_017] (Modul 1003) Correct [C]: %20
+  Q: Fiyat aralığı ile talep toplama yönteminde tavan fiyat taban fiyatın en fazla yüzde kaç fazlası olabilir?
+
+[q_1003_master_019] (Modul 1003) Correct [C]: Merkezi Kayıt Kuruluşu (MKK) - EGKS Sistemi
+  Q: Halka açık anonim ortaklıklarda genel kurula elektronik ortamda katılım sağlayan sistemin işleticisi kimdir?
+
+[q_1003_master_029] (Modul 1003) Correct [A]: Düşer
+  Q: Piyasa faiz oranları yükseldiğinde sabit kuponlu bir tahvilin piyasa fiyatı nasıl değişir?
+
+[q_1003_master_030] (Modul 1003) Correct [E]: Durasyon (Macaulay Süresi)
+  Q: Tahvilin faiz riskine duyarlılığını ölçen ve kupon ödemelerinin ağırlıklı ortalama vadesini gösteren kavrama ne ad verilir?
+
+[q_1003_master_031] (Modul 1003) Correct [A]: Paya Dönüştürülebilir Tahvil (PDT)
+  Q: İhraççı şirketin paylarına dönüştürme hakkı veren borçlanma aracı aşağıdakilerden hangisidir?
+
+[q_1003_master_034] (Modul 1003) Correct [D]: BBB- (Baa3)
+  Q: Uluslararası derecelendirme kuruluşlarına göre 'Yatırım Yapılabilir Seviye' (Investment Grade) kabul edilen asgari uzun vadeli not baremi nedir?
+
+[q_1003_master_035] (Modul 1003) Correct [E]: Hazine Bonosu
+  Q: Hazine ve Maliye Bakanlığı tarafından yurt içi piyasada ihraç edilen DİBS'lerden vadesi 1 yıldan kısa olanlara ne ad verilir?
+
+[q_1003_master_038] (Modul 1003) Correct [B]: 5 katı
+  Q: Halka açık anonim ortaklıkların ihraç edebileceği borçlanma araçlarının azami ihraç tavanı kural olarak özkaynaklarının en fazla kaç katı olabilir?
+
+[q_1003_master_040] (Modul 1003) Correct [B]: Temerrüt (Default) Riski
+  Q: Bir borçlanma aracının ihraççısının vadesi geldiğinde kupon faizini veya anapara ödemesini yapamaması durumuna ne ad verilir?
+
+[q_1003_master_042] (Modul 1003) Correct [A]: %25
+  Q: Nominal değeri 1.000 TL olan ve yılda bir kez %20 sabit kupon faizi ödeyen bir tahvil piyasada 800 TL'den işlem görüyorsa cari getiri (current yield) oranı yüzde kaçtır?
+
+[q_1003_master_045] (Modul 1003) Correct [B]: İhraç Belgesi ve İhraç Tavanı Onayı
+  Q: Halka arz edilmeksizin nitelikli yatırımcılara ihraç edilecek finansman bonoları için SPK'dan hangi onay alınır?
+
+[q_1003_master_046] (Modul 1003) Correct [D]: En az 1 ayda bir (1, 3, 6 veya 12 aylık periyotlar)
+  Q: Borçlanma araçlarında kupon ödeme dönemleri mevzuat uyarınca en az kaç ayda bir yapılabilir?
+
+[q_1003_master_053] (Modul 1003) Correct [E]: Yönetim Sözleşmesine Dayalı Kira Sertifikası (Vekalet Sukuku)
+  Q: Kaynak kuruluşa ait varlıkların mülkiyet devri yapılmaksızın VKŞ lehine yönetilmesi ve elde edilen gelirlerin aktarılması esasına dayanan kira sertifikası hangisidir?
+
+[q_1003_master_054] (Modul 1003) Correct [C]: Alım-Satıma Dayalı Kira Sertifikası (Murabaha Sukuku)
+  Q: VKŞ'nin bir emtiayı peşin satın alıp vadeli olarak kâr marjıyla kaynak kuruluşa satması esasına dayanan kira sertifikası türü hangisidir?
+
+[q_1003_master_055] (Modul 1003) Correct [B]: Ortaklığa Dayalı Kira Sertifikası
+  Q: Emek-sermaye ortaklığı (Mudaraba) veya kâr-zarar ortaklığı (Muşaraka) ilkelerine dayalı kira sertifikası türü hangisidir?
+
+[q_1003_master_057] (Modul 1003) Correct [E]: Kaynak Kuruluş (Originator)
+  Q: Kira sertifikası ihracında finansman ihtiyacı duyan ve varlıklarını VKŞ'ye devreden veya kiralayan kuruluşa ne ad verilir?
+
+[q_1003_master_058] (Modul 1003) Correct [A]: Yukarıdakilerin hepsi
+  Q: Aşağıdakilerden hangisi SPK düzenlemelerine göre Varlık Kiralama Şirketi (VKŞ) kurabilecek kurumlardan biridir?
+
+[q_1003_master_059] (Modul 1003) Correct [B]: Borsa İstanbul Borçlanma Araçları Piyasası
+  Q: Halka arz edilen kira sertifikaları nerede işlem görür?
+
+[q_1003_master_061] (Modul 1003) Correct [C]: Eser Sözleşmesine Dayalı (İstisna Sukuku)
+  Q: VKŞ'nin işveren, kaynak kuruluşun yüklenici olduğu bir inşaat/üretim eser sözleşmesine dayalı sukuk türü hangisidir?
+
+[q_1003_master_062] (Modul 1003) Correct [A]: İtfa
+  Q: Kira sertifikalarında vade sonunda anaparanın ödenerek sertifikaların kapatılması işlemine ne ad verilir?
+
+[q_1003_master_063] (Modul 1003) Correct [B]: Gelir Ortaklığı Senedi (GOS)
+  Q: Köprü, baraj, otoyol gibi kamu altyapı tesislerinin gelirlerine ortaklık sağlayan menkul kıymet hangisidir?
+
+[q_1003_master_064] (Modul 1003) Correct [D]: Gelire Endeksli Senet (GES)
+  Q: Getirisi KİT'lerin bütçeye aktardıkları hasılat paylarına endekslenen DİBS türü hangisidir?
+
+[q_1003_master_065] (Modul 1003) Correct [C]: Hazine Müsteşarlığı Varlık Kiralama Şirketi A.Ş.
+  Q: Hazine ve Maliye Bakanlığı adına yurt içi ve yurt dışı piyasalarda sukuk ihraç eden kamu VKŞ'si hangisidir?
+
+[q_1003_master_067] (Modul 1003) Correct [A]: Alım Varantı (Call Warrant)
+  Q: Dayanak varlığın fiyatının gelecekte YÜKSELECEĞİNİ bekleyen bir yatırımcı hangi varant türünü satın almalıdır?
+
+[q_1003_master_069] (Modul 1003) Correct [E]: Avrupa Tipi (European Style)
+  Q: Sadece vadesinde (vade bitim gününde) kullanılabilen varant/opsiyon türüne ne ad verilir?
+
+[q_1003_master_070] (Modul 1003) Correct [D]: 20 TL
+  Q: Kullanım fiyatı 100 TL olan bir hisse senedi Alım Varantında, hissenin piyasa fiyatı 120 TL ise varantın 'İçsel Değeri' kaç TL'dir?
+
+[q_1003_master_071] (Modul 1003) Correct [C]: Başabaşta (At-the-Money)
+  Q: Spot fiyatın kullanım fiyatına eşit olduğu (Spot = Kullanım Fiyatı) varant pozisyonu nasıl adlandırılır?
+
+[q_1003_master_072] (Modul 1003) Correct [C]: Teta (Theta)
+  Q: Varantın vadesine yaklaştıkça değer kaybetmesine yol açan ve varant fiyatındaki zaman erimesini ifade eden greeks parametresi hangisidir?
+
+[q_1003_master_073] (Modul 1003) Correct [B]: Delta
+  Q: Dayanak varlığın fiyatındaki 1 birimlik değişimin varant fiyatında yaratacağı değişimi ölçen duyarlılık katsayısı hangisidir?
+
+[q_1003_master_074] (Modul 1003) Correct [A]: Piyasa Yapıcı Üye (Market Maker)
+  Q: Borsa İstanbul'da işlem gören varantlarda likiditeyi sağlamak ve sürekli alım-satım kotasyonu vermekle yükümlü olan aktör kimdir?
+
+[q_1003_master_075] (Modul 1003) Correct [D]: Yatırım Kuruluşu Sertifikası
+  Q: İhraççı yatırım kuruluşu tarafından çıkarılan ve belirli bir dayanak varlığın (altın, petrol, borsa endeksi) getirisine bire bir veya kaldıraçlı katılım sağlayan sermaye piyasası aracı hangisidir?
+
+[q_1003_master_076] (Modul 1003) Correct [B]: 20
+  Q: Dayanak hisse senedi fiyatı 50 TL, alım varantının fiyatı 2.5 TL ve dönüşüm oranı 1 ise bu varantın efektif kaldıraç oranı kaçtır?
+
+[q_1003_master_078] (Modul 1003) Correct [E]: 10 adet
+  Q: Bir varantın dönüşüm oranı 0.10 ise 1 adet dayanak hisse senedi üzerinde hak sahibi olabilmek için kaç adet varant gerekir?
+
+[q_1003_master_079] (Modul 1003) Correct [A]: Vega
+  Q: Dayanak varlığın 'Zımni Volatilitesindeki' (oynaklık) %1'lik değişimin varant fiyatına etkisini ölçen katsayı hangisidir?
+
+[q_1003_master_080] (Modul 1003) Correct [A]: Geniş Yetkili Aracı Kurum
+  Q: Aracı kuruluş varantı ihraç edebilmek için SPK'dan hangi yetki belgesine sahip olunması gerekir?
+
+[q_1003_master_082] (Modul 1003) Correct [C]: %80
+  Q: Bir yatırım fonunun 'Hisse Senedi Yoğun Fon' sayılabilmesi için fon portföyünün en az yüzde kaçının devamlı olarak BIST hisse senetlerinden oluşması zorunludur?
+
+[q_1003_master_085] (Modul 1003) Correct [E]: %80
+  Q: Fon toplam değerinin en az yüzde kaçı diğer yatırım fonları ve borsa yatırım fonlarının katılma paylarından oluşan fonlara 'Fon Sepeti Fonu' denir?
+
+[q_1003_master_086] (Modul 1003) Correct [E]: Yetkilendirilmiş Katılımcı (Authorized Participant)
+  Q: BYF paylarının ihraç ve itfasında (sepet oluşturma ve bozma) kurucu adına piyasada aracı olarak hareket eden kuruma ne ad verilir?
+
+[q_1003_master_087] (Modul 1003) Correct [D]: Katılım Fonu
+  Q: Faizsiz finans ilkelerine uygun hisse, kira sertifikası ve kıymetli madenlere yatırım yapan fon türü hangisidir?
+
+[q_1003_master_093] (Modul 1003) Correct [D]: İnşa edilecek veya edilmekte olan gayrimenkul projelerinin finansmanında kullanılan, belirli bir bağımsız bölümü veya alan birimini temsil eden menkul kıymettir.
+  Q: Gayrimenkul Sertifikası ile ilgili aşağıdakilerden hangisi DOĞRUDUR?
+
+[q_1003_master_094] (Modul 1003) Correct [A]: Asli Edim (Gayrimenkulün Mülkiyetini Devralma)
+  Q: Gayrimenkul sertifikası sahibinin yeterli sayıda sertifikayı biriktirerek projedeki bağımsız bölümün (dairenin) mülkiyetini talep etmesine ne ad verilir?
+
+[q_1003_master_098] (Modul 1003) Correct [E]: Hisse Fiyat Hareketi ve Döviz Kuru Riski
+  Q: Yurt dışı hisse senetlerine yatırım yapan bir yatırımcının karşılaştığı iki temel getiri/risk unsuru nedir?
+
+[q_1005_master_011] (Modul 1005) Correct [B]: %10, %20, %33, %50
+  Q: Aracı kurumların sermayesinde doğrudan veya dolaylı olarak pay oranının yüzde kaçı aşması (veya bu oranların altına düşmesi) SPK'nın ÖNCEDEN İZNİNE tabidir?
+
+[q_1005_master_021] (Modul 1005) Correct [B]: Emir İletimine Aracılık
+  Q: Müşteriden alınan sermaye piyasası aracı emirlerinin işlem gerçekleştirilmek üzere başka bir yatırım kuruluşuna veya borsaya iletilmesi faaliyeti hangisidir?
+
+[q_1005_master_022] (Modul 1005) Correct [A]: İşlem Aracılığı
+  Q: Müşteri nam ve hesabına veya kendi namına müşteri hesabına borsada emirlerin bizzat icra edilmesi faaliyeti hangisidir?
+
+[q_1005_master_062] (Modul 1005) Correct [D]: Varantlar, Yatırım Kuruluşu Sertifikaları ve Kaldıraçlı İşlemler (Forex)
+  Q: Aşağıdakilerden hangisi SPK mevzuatında genel müşteriler için 'Karmaşık Sermaye Piyasası Aracı' kabul edilir?
+
+[q_1005_master_072] (Modul 1005) Correct [E]: %50
+  Q: Kredili menkul kıymet işlemi yapacak bir yatırımcının yatırması gereken asgari Başlangıç Özkaynak Oranı yüzde kaçtır?
+
+[q_1005_master_073] (Modul 1005) Correct [C]: %35
+  Q: Kredili pozisyon açıkken hisse fiyatlarının düşmesi sonucu özkaynak oranı yüzde kaçın altına düşerse aracı kurum 'Özkaynak Tamamlama Bildirimi' (Margin Call) yapar?
+
+[q_1005_master_076] (Modul 1005) Correct [A]: Borsa İstanbul tarafından kredili işlem yasağı veya tedbiri getirilmiş pay senetleri ile C ve D grubu (veya Yakın İzleme Pazarı) hisseleri
+  Q: Aşağıdakilerden hangisi kredili menkul kıymet işlemlerine konu edilemez?
+
+[q_1005_master_091] (Modul 1005) Correct [A]: 1 yıl içinde
+  Q: Hakkında tazmin kararı verilen bir aracı kurumun müşterileri YTM'ye ilan tarihinden itibaren en geç ne kadar sürede başvurmalıdır?
+
+[q_1012_master_001] (Modul 1012) Correct [E]: Borsada gerçekleşen işlemlerden doğan menkul kıymet teslim ve nakit ödeme borçlarının karşılıklı olarak tasfiye edilip sonuçlandırılması sürecidir.
+  Q: Sermaye piyasasında 'Takas' (Settlement / Clearing) işlemi aşağıdakilerden hangisini ifade eder?
+
+[q_1012_master_002] (Modul 1012) Correct [D]: Alıcıya karşı SATICI, satıcıya karşı ALICI konumuna geçerek takasın tamamlanmasını mali olarak garanti etmesidir.
+  Q: Takasbank'ın 'Merkezi Karşı Taraf' (CCP) sıfatıyla hareket etmesi ne anlama gelir?
+
+[q_1012_master_004] (Modul 1012) Correct [C]: Özel bir anonim şirket statüsünde, Bankacılık Kanunu'na tabi bir yatırım/kalkınma bankası ve SPKn m.77 uyarınca Türkiye'nin Merkezi Takas Kuruluşudur.
+  Q: İstanbul Takas ve Saklama Bankası A.Ş.'nin (Takasbank) hukuki statüsü ve SPK Kanunu'ndaki konumu nedir?
+
+[q_1012_master_006] (Modul 1012) Correct [E]: T+1 (İşlem gününü izleyen birinci iş günü)
+  Q: Borsa İstanbul Vadeli İşlem ve Opsiyon Piyasası'nda (VİOP) kâr/zarar ve teminat tamamlama takas süresi nedir?
+
+[q_1012_master_007] (Modul 1012) Correct [A]: Ödeme Karşılığı Teslim İlkesi (DvP / Delivery versus Payment)
+  Q: Uluslararası takas standartlarında kabul edilen ve 'parası ödenmeden menkul kıymetin teslim edilmemesi, menkul kıymet teslim edilmeden paranın ödenmemesi' prensibine ne ad verilir?
+
+[q_1012_master_008] (Modul 1012) Correct [A]: Takasbank Para Piyasası (TPP)
+  Q: Takasbank bünyesinde üyelerin kısa vadeli (genellikle gecelik / O/N) likidite fazlalarını değerlendirdiği veya likidite açıklarını kapattığı organize para piyasası hangisidir?
+
+[q_1012_master_009] (Modul 1012) Correct [A]: Doğrudan Takas Üyesi (Direct Clearing Member) ve Genel Takas Üyesi (General Clearing Member)
+  Q: Takasbank mevzuatına göre takas üyeleri hangi iki temel gruba ayrılır?
+
+[q_1012_master_010] (Modul 1012) Correct [B]: T+0 (Aynı gün içinde)
+  Q: BIST Borçlanma Araçları Piyasası Kesin Alım Satım Pazarında aynı gün valörlü işlemlerin takası ne zaman yapılır?
+
+[q_1012_master_011] (Modul 1012) Correct [A]: Takasbank ve Bankalararası Takas Odaları Merkezi (BTOM)
+  Q: Bankalararası Türk Lirası ve döviz çek takası işlemlerinin elektronik ortamda takasını yürüten kurum hangisidir?
+
+[q_1012_master_012] (Modul 1012) Correct [D]: Takasbank
+  Q: TEFAS platformunda işlem gören fon katılma paylarının nakit ve pay takasını gerçekleştiren takas merkezi hangisidir?
+
+[q_1012_master_017] (Modul 1012) Correct [B]: Takasbank Kıymetli Madenler Saklama Kasaları
+  Q: Borsa İstanbul Kıymetli Madenler ve Kıymetli Taşlar Piyasası'nda işlem gören fiziki altınların saklama merkezi neresidir?
+
+[q_1012_master_019] (Modul 1012) Correct [B]: SPAN (Standard Portfolio Analysis of Risk)
+  Q: Takasbank'ın VİOP'ta portföy riskine göre dinamik teminat hesaplamak için kullandığı uluslararası algoritma hangisidir?
+
+[q_1012_master_020] (Modul 1012) Correct [A]: Takas ve MKT İşlem Ücreti
+  Q: Takasbank'ın sunduğu takas ve merkezi karşı taraf hizmetleri karşılığında üyelerden tahsil ettiği bedellere ne ad verilir?
+
+[q_1012_master_022] (Modul 1012) Correct [B]: Takip eden Salı günü
+  Q: BIST Pay Piyasasında Perşembe günü yapılan bir hisse senedi alım işleminin (T+2) araya giren Cuma gününün resmi tatil olması halinde takası hangi gün gerçekleşir?
+
+[q_1012_master_024] (Modul 1012) Correct [C]: TCMB EFT / Elektronik Fon Transfer Sistemi
+  Q: Takasbank'ın nakit netleştirmelerinde Türk Lirası büyük tutarlı nihai transferler hangi sistem üzerinden sonuçlandırılır?
+
+[q_1012_master_025] (Modul 1012) Correct [E]: İstanbul Takas ve Saklama Bankası A.Ş. (Takasbank)
+  Q: Yatırım fonları ve emeklilik fonlarının portföy saklayıcılığını yürüten birincil kurum hangisidir?
+
+[q_1012_master_026] (Modul 1012) Correct [D]: Sermaye piyasası araçlarının kaydileştirilmesine ilişkin işlemleri yürütmek, bunların hak sahipleri bazında elektronik ortamda kayden izlenmesini ve merkezi saklamasını sağlamak
+  Q: 6362 sayılı Kanun m.81 uyarınca Merkezi Kayıt Kuruluşu'nun (MKK) temel kanuni görevi nedir?
+
+[q_1012_master_027] (Modul 1012) Correct [B]: Kaydileştirme (Dematerialization)
+  Q: Menkul kıymetlerin fiziki kağıt ve senet olarak basılması yerine elektronik ortamda dijital kayıtlar olarak ihraç edilip izlenmesine ne ad verilir?
+
+[q_1012_master_030] (Modul 1012) Correct [B]: Kanunen YTM'ye intikal eder; pay sahiplerinin mülkiyet hakları YTM'ye devredilmiş sayılır ve paylar YTM tarafından satılarak bedeli Hazineye/YTM'ye aktarılır.
+  Q: 6362 sayılı Kanun m.13 uyarınca süresi içinde MKK'ya teslim edilmeyerek kaydileştirilmeyen fiziki pay senetleri ile ilgili kural nedir?
+
+[q_1012_master_033] (Modul 1012) Correct [C]: e-ŞİRKET: Şirketler Bilgi Portalı
+  Q: Halka açık şirketlerin ve TTK denetimine tabi şirketlerin finansal tablolarını, genel kurul kararlarını ve yasal bildirimlerini yayımladıkları MKK platformu hangisidir?
+
+[q_1012_master_034] (Modul 1012) Correct [C]: e-VEDO (Elektronik Veri Deposu)
+  Q: MKK bünyesinde kurulan ve türev işlem sözleşmelerinin raporlandığı 'Veri Depolama Kuruluşu' platformu hangisidir?
+
+[q_1012_master_036] (Modul 1012) Correct [A]: Merkezi Kayıt Kuruluşu A.Ş. (MKK)
+  Q: Kamuyu Aydınlatma Platformu'nun (KAP) teknik işletimi, kullanıcı yetkilendirmesi ve e-imza altyapısı hangi kurum tarafından sağlanır?
+
+[q_1012_master_040] (Modul 1012) Correct [D]: Virman (Menkul Kıymet Transferi)
+  Q: Bir yatırımcının A aracı kurumundaki hisselerini B aracı kurumundaki kendi hesabına aktarması işlemine ne ad verilir?
+
+[q_1012_master_042] (Modul 1012) Correct [C]: MKK tarafından tutulan kaydi hesap kayıtları ortaklıklar açısından pay defteri hükmündedir (Ayrı fiziki defter tutma zorunluluğu kalkmıştır).
+  Q: Kaydi paylarda şirketlerin pay defteri tutma yükümlülüğü nasıl yerine getirilir?
+
+[q_1012_master_043] (Modul 1012) Correct [D]: e-Ürün: Elektronik Ürün Senedi Merkezi Kayıt Sistemi
+  Q: MKK bünyesinde tarım ürünleri lisanslı depoculuk sisteminde çıkarılan Elektronik Ürün Senetlerinin (ELÜS) kayden izlendiği sistem hangisidir?
+
+[q_1012_master_044] (Modul 1012) Correct [C]: Sermaye Piyasası Kurulu (SPK)
+  Q: MKK'nın kaydi saklama ve hesap bakım ücretleri kim tarafından onaylanır?
+
+[q_1012_master_045] (Modul 1012) Correct [C]: Euroclear ve Clearstream
+  Q: MKK'nın uluslararası menkul kıymet takasını sağlamak üzere hesap açtığı yabancı merkezi saklama kuruluşları hangileridir?
+
+[q_1012_master_050] (Modul 1012) Correct [A]: Tüm yazılımlar ve fikri mülkiyet hakları MKK'nın kendi yerli ve milli özkaynaklarına aittir.
+  Q: MKK'nın Sanayi ve Teknoloji Bakanlığı onaylı Ar-Ge Merkezi statüsüyle geliştirdiği yazılımlar kime aittir?
+
+[q_1012_master_051] (Modul 1012) Correct [D]: Mutabakat (Reconciliation / Eşleştirme)
+  Q: Borsada gerçekleşen işlemlerin detaylarının Takasbank ve aracı kurum kayıtları arasında karşılıklı doğrulanması sürecine ne ad verilir?
+
+[q_1012_master_054] (Modul 1012) Correct [C]: Borsa İstanbul'da açılan 'Rüçhan Hakkı Kupon Pazarında' rüçhan kullanım süresi içinde satarak nakde çevirebilir.
+  Q: Bedelli sermaye artırımına katılmak istemeyen bir pay sahibi rüçhan hakkını ne yapabilir?
+
+[q_1012_master_056] (Modul 1012) Correct [D]: Takasbank ve SPK'ya
+  Q: Yatırım kuruluşları gün sonunda açık kalan pozisyonlarını, nakit durumlarını ve müşteri teminatlarını kime raporlamak zorundadır?
+
+[q_1012_master_057] (Modul 1012) Correct [C]: Mutlak Pozisyon Limiti (Position Limit)
+  Q: VİOP'ta tek bir üyenin veya bir yatırımcının aynı sözleşmede taşıyabileceği azami açık pozisyon sayısını sınırlayan kurala ne ad verilir?
+
+[q_1012_master_059] (Modul 1012) Correct [E]: Ödünç Komisyon Oranı (Borrowing Fee)
+  Q: Ödünç piyasasında ödünç alanın ödünç verene ödediği faiz/kira benzeri bedele ne ad verilir?
+
+[q_1012_master_060] (Modul 1012) Correct [C]: Gerçek Gün / 365 (Actual/365)
+  Q: Takasbank Para Piyasasında (TPP) faiz hesaplamaları hangi gün bazına göre yapılır?
+
+[q_1012_master_063] (Modul 1012) Correct [A]: Uzlaşma fiyatı üzerinden alıcı taraf nakdi Takasbank'a öder, satıcı taraf payları MKK nezdinde alıcıya transfer eder.
+  Q: VİOP'ta vadesi dolan Pay Vadeli İşlem Sözleşmelerinde fiziki teslimat nasıl gerçekleşir?
+
+[q_1012_master_065] (Modul 1012) Correct [E]: Talimat sisteme girilip karşı kurum onayladığı anda (veya belirlenen seansta) elektronik ortamda anlık olarak
+  Q: Aracı kurumlar arasındaki serbest hisse virman talimatları MKK sisteminde ne zaman gerçekleşir?
+
+[q_1012_master_066] (Modul 1012) Correct [E]: Nakit verip karşılığında menkul kıymeti (DİBS vb.) teminat/mülkiyet olarak teslim alır; vade sonunda parayı faiziyle geri alıp kıymeti iade eder.
+  Q: Ters repo yapan bir yatırımcının takas günü gerçekleşen işlemi nedir?
+
+[q_1012_master_067] (Modul 1012) Correct [B]: İhraççı şirket kupon tutarını Takasbank'taki takas hesabına yatırır; Takasbank MKK listesindeki hak sahiplerinin hesaplarına kupon faizlerini net olarak dağıtır.
+  Q: Özel sektör tahvilinin kupon faiz ödeme gününde Takasbank operasyonu nasıl işler?
+
+[q_1012_master_069] (Modul 1012) Correct [A]: TÜBİTAK onaylı resmi 'Zaman Damgası' (Time Stamp) ve Nitelikli Elektronik Sertifika (e-İmza) ile
+  Q: MKK ve KAP sistemine yüklenen elektronik belgelerin zaman kanıtı nasıl sağlanır?
+
+[q_1012_master_070] (Modul 1012) Correct [B]: Olağanüstü Durum Merkezi (ODM / Disaster Recovery Center)
+  Q: Takasbank ve MKK'nın ana merkezlerinde deprem veya yangın gibi afetler yaşanması durumunda takasın kesintisiz sürmesini sağlayan yedek altyapıya ne ad verilir?
+
+[q_1012_master_073] (Modul 1012) Correct [A]: Garanti Fonu (Takasbank Garanti Fonu / Default Fund)
+  Q: Merkezi Karşı Tarafın temerrüt risklerini karşılamak amacıyla takas üyelerinin katkılarıyla oluşturulan ortak fona ne ad verilir?
+
+[q_1012_master_074] (Modul 1012) Correct [E]: Temerrüt Faizi ve Cezai Şart
+  Q: Takas borcunu zamanında ödemeyen temerrüt halindeki üyeye Takasbank tarafından uygulanan gecikme cezasına ne ad verilir?
+
+[q_1012_master_077] (Modul 1012) Correct [B]: İşlem gününü izleyen iş günü (T+1) saat 14:30 / 15:00'e kadar
+  Q: VİOP'ta oluşan teminat açıklarının nakden tamamlanması için Takasbank tarafından her iş günü uygulanan son saat kuralı nedir?
+
+[q_1012_master_078] (Modul 1012) Correct [C]: Değer Kesintisi / İskonto Oranı (Haircut)
+  Q: Takasbank'ın nakit dışı teminatları (hisse, tahvil, eurobond vb.) teminat kabul ederken piyasa dalgalanma riskine karşı değerinden belirli bir yüzde düşerek kabul etmesine ne ad verilir?
+
+[q_1012_master_079] (Modul 1012) Correct [D]: Stres Testleri (Stress Testing)
+  Q: Takasbank'ın Garanti Fonunun ve teminatların aşırı piyasa krizlerinde yeterli olup olmadığını ölçmek için yaptığı simülasyonlara ne ad verilir?
+
+[q_1012_master_081] (Modul 1012) Correct [E]: Sistemik Risk (Systemic Risk)
+  Q: Bir takas üyesinin batmasının zincirleme reaksiyonla diğer üyeleri ve tüm finansal sistemi çökertme tehlikesine ne ad verilir?
+
+[q_1012_master_082] (Modul 1012) Correct [D]: SITG (Skin in the Game / Takasbank Özkaynak Katkısı)
+  Q: Temerrüt şelalesinde diğer üyelerin Garanti Fonu paralarına dokunulmadan önce Takasbank'ın kendi sermayesinden koyduğu güvenlik tamponuna ne ad verilir?
+
+[q_1012_master_083] (Modul 1012) Correct [D]: Takasbank Disiplin Komitesi
+  Q: Takas kurallarına uymayan ve sürekli temerrüde düşen üyeler hakkında disiplin soruşturması yürüten kurul hangisidir?
+
+[q_1012_master_084] (Modul 1012) Correct [C]: Karşı Taraf Kredi Riski
+  Q: İşlem yapılan karşı kurumun takas gününe kadar mali acze düşme ve yükümlülüğünü yerine getirememe riskine ne ad verilir?
+
+[q_1012_master_085] (Modul 1012) Correct [C]: Otomatik Ödünç Pay Servisi (Auto-Borrowing)
+  Q: Pay Piyasası takasında açıkta kalan hisseyi kapatmak için Takasbank sisteminin otomatik olarak devreye soktuğu ödünç alma işlemine ne ad verilir?
+
+[q_1012_master_086] (Modul 1012) Correct [C]: Operasyonel Risk (Operational Risk)
+  Q: Yetersiz veya başarısız iç süreçler, insanlar, sistemler veya harici olaylardan kaynaklanan zarar etme riskine ne ad verilir?
+
+[q_1012_master_088] (Modul 1012) Correct [A]: Sızma Testi (Penetration Test)
+  Q: SPK Bilgi Sistemleri Tebliği uyarınca yatırım kuruluşlarının bilgi sistemlerine en az yılda bir kez bağımsız uzmanlara yaptırmak zorunda olduğu güvenlik testine ne ad verilir?
+
+[q_1012_master_093] (Modul 1012) Correct [C]: Görevler Ayrılığı İlkesi (Segregation of Duties)
+  Q: Aracı kurumlarda operasyonel dolandırıcılığı önlemek için emir giren personelin aynı zamanda takas ve para transferini onaylamasını engelleyen ilkeye ne ad verilir?
+
+[q_1012_master_095] (Modul 1012) Correct [B]: Borç ve faiz tam olarak kapatıldığı anda sistem tarafından otomatik olarak blokaj çözülerek
+  Q: TPP'de borcunu kapatan üyenin Takasbank'ta blokeli duran teminatları ne zaman serbest bırakılır?
+
+[q_1012_master_096] (Modul 1012) Correct [D]: En az 10 yıl (ve kalıcı hak sahipliği kayıtları süresiz olarak)
+  Q: MKK ve Takasbank tüm takas ve saklama işlem kayıtlarını mevzuat gereğince en az kaç yıl süreyle elektronik arşivde saklamak zorundadır?
+
+[q_1012_master_097] (Modul 1012) Correct [B]: Hak Sahipleri Çizelgesi (Bloke Paylar / Hazır Bulunanlar Listesi)
+  Q: Genel kurullardan önce şirket yönetimine verilen ve pay sahiplerinin ad, soyad, pay adedi ve blokaj durumunu gösteren belgeye ne ad verilir?
+
+[q_1012_master_100] (Modul 1012) Correct [B]: Türkiye Sermaye Piyasaları Uçtan Uca İşlem ve İşlem Sonrası Altyapısı (Entegre Borsa Ekosistemi)
+  Q: Borsa İstanbul (İşlem Eşleştirme) -> Takasbank (Merkezi Takas & MKT) -> MKK (Merkezi Saklama & Hak Sahipliği) üçlü zincirinin oluşturduğu ekosisteme ne ad verilir?
+
+[q_1001_konu_002] (Modul 1001) Correct [B]: 20 iş günü
+  Q: Payları ilk defa halka arz edilecek olan bir ortaklığın izahname onayı için Sermaye Piyasası Kurulu'na yaptığı başvuru, belgelerin eksiksiz olarak sunulmasından itibaren en geç kaç iş günü içinde karara bağlanmak zorundadır?
+
+[q_1001_konu_003] (Modul 1001) Correct [A]: 2 iş günü
+  Q: Halka arz edilmek üzere yayımlanan bir izahnamede, satış süreci devam ederken yatırımcıların kararlarını etkileyebilecek yeni bir husus ortaya çıkmıştır. Bu değişikliğin yayımlanmasından önce talepte bulunmuş olan yatırımcılar, taleplerini geri alma hakkını en geç kaç iş günü içinde kullanabilirler?
+
+[q_1001_konu_006] (Modul 1001) Correct [B]: 10 yıl
+  Q: Yatırım kuruluşlarında bulunan emanet ve alacakların zamanaşımına uğrayarak Yatırımcı Tazmin Merkezi'ne (YTM) devredilmesi için, son talep, işlem veya yazılı talimat tarihinden itibaren kesintisiz olarak kaç yıl boyunca aranmamış olması gerekir?
+
+[q_1001_konu_015] (Modul 1001) Correct [D]: 10 iş günü
+  Q: Türkiye Sermaye Piyasaları Birliği (TSPB) Disiplin Yönetmeliği'ne göre, Birlik tarafından verilen disiplin cezalarına karşı tebliğ tarihinden itibaren en geç kaç iş günü içinde Sermaye Piyasası Kurulu'na (SPK) itiraz edilebilir?
+
+[q_1003_konu_003] (Modul 1003) Correct [E]: %20
+  Q: Borsada işlem gören ABC Ortaklığı paylarında 15 gün boyunca 'fiyat istikrarını sağlayıcı işlemler' yapılması planlanmaktadır. Bu işlemler için kullanılacak toplam fon bütçesi, yasal olarak halka arzdan elde edilen brüt gelirin en fazla yüzde kaçını aşamaz?
+
+[q_1003_konu_006] (Modul 1003) Correct [C]: %80
+  Q: Bir Hisse Senedi Yoğun Yatırım Fonunun portföy değerinin en az yüzde kaçı sürekli olarak borsa İstanbul'da işlem gören paylardan (hisse senetlerinden) oluşmak zorundadır?
+
+[q_1003_konu_007] (Modul 1003) Correct [D]: %40
+  Q: Bir genel yatırım fonu portföy yöneticisi, fon portföyünü oluştururken tek bir ihraççının (örneğin X şirketinin) paylarına en fazla %10 yatırım yapmıştır. Portföyde %5'ten fazla paya sahip olan tekil ihraççıların (X, Y, Z şirketleri) yatırımlarının toplamının fon portföy değerine oranı en fazla yüzde kaçı aşamaz?
+
+[q_1003_konu_008] (Modul 1003) Correct [A]: 45 gün
+  Q: Bir para piyasası şemsiye fonunun portföyündeki varlıkların ağırlıklı ortalama vadesi en fazla kaç gün olmak zorundadır?
+
+[q_1003_konu_011] (Modul 1003) Correct [B]: 3.500 TL
+  Q: Bir VİOP yatırımcısı başlangıç teminatı 15.000 TL, sürdürme teminatı 12.000 TL olan bir vadeli işlem sözleşmesinde uzun pozisyon taşımaktadır. Piyasadaki ters fiyat hareketi nedeniyle gün sonu hesap bakiyesi 11.500 TL'ye düşmüştür. Yatırımcıya yapılacak olan Teminat Tamamlama Çağrısı (Margin Call) tutarı kaç Türk Lirasıdır?
+
+[q_1003_konu_012] (Modul 1003) Correct [A]: 97,00 TL
+  Q: Nominal değeri 100 TL olan, kupon dönemi 180 gün süren ve dönemlik kupon faiz oranı %8 olan bir devlet tahvilinin, son kupon ödemesinden bu yana 45 gün geçmiştir. Tahvilin borsa ekranındaki temiz fiyatı (clean price) 95,00 TL olduğuna göre, alıcının satıcıya ödeyeceği kirli fiyat (dirty price) kaç Türk Lirasıdır?
+
+[q_1003_konu_013] (Modul 1003) Correct [E]: %3
+  Q: Sermaye Piyasası Kurulunun ilgili tebliğlerine göre, bir portföy yönetim şirketi yönettikleri tüm genel yatırım fonları için tek bir bankada en fazla yüzde kaç oranında mevduat veya katılma hesabı açabilir?
+
+[q_1005_konu_009] (Modul 1005) Correct [A]: %25
+  Q: Bir aracı kurumun iştirak sınırlamaları dikkate alındığında, aracı kurumların finansal kuruluşlar dışındaki ortaklıklara yapabilecekleri iştiraklerin toplamı özsermayelerinin en fazla yüzde kaçını aşamaz? (Dar ve Kısmi Yetkililer İçin)
+
+[q_1005_konu_013] (Modul 1005) Correct [A]: 10:1
+  Q: Kaldıraçlı alım satım (Forex) işlemlerinde genel müşteriler için yasal olarak uygulanabilecek azami kaldıraç oranı başlangıçta en fazla kaçtır?
+
+[q_1012_konu_001] (Modul 1012) Correct [D]: Takasbank - %64.9
+  Q: MKK ortaklık yapısı ve hisse grupları dikkate alındığında, en büyük pay sahibi ortak kuruluş ve pay oranı aşağıdakilerden hangisidir?
+
+[q_1012_konu_002] (Modul 1012) Correct [A]: T+2 / 15:00
+  Q: Borsa İstanbul Pay Piyasası'nda gerçekleşen işlemlerin yasal takas süresi hangi valör ile uygulanır ve takas günü borçların yerine getirilmesi gereken yasal son temerrüt saati kaçtır?
+
+[q_1012_konu_004] (Modul 1012) Correct [D]: %50
+  Q: MKK Esas Sözleşmesi Madde 7 uyarınca, Borsa İstanbul A.Ş.'nin sahip olabileceği azami MKK pay oranı yüzde kaçtır?
+
+[q_1012_konu_008] (Modul 1012) Correct [B]: Portföy Saklama Kuruluşu (Portföy Saklayıcısı)
+  Q: Portföy Saklama Hizmetine İlişkin Esaslar Tebliği (III-56.1) uyarınca, kolektif yatırım kuruluşlarının varlıklarının saklanmasından ve kayıt mutabakatından sorumlu birincil kuruluş aşağıdakilerden hangisidir?
+
+[q_1012_konu_010] (Modul 1012) Correct [A]: 11:00
+  Q: VİOP'ta yarım işlem günlerinde (resmi tatil arefeleri vb.) eksi nakit kapama ve marjin kapama (Margin Call) en son hangi saatte gerçekleştirilmelidir?
+
+[q_1012_konu_011] (Modul 1012) Correct [D]: %25
+  Q: Pay vadeli işlem ve opsiyon sözleşmelerinde piyasa bazında pozisyon limiti, her dayanak varlık için MKK tarafından açıklanan fiili dolaşımdaki pay miktarının en fazla yüzde kaçıdır?
+
+[q_1012_konu_012] (Modul 1012) Correct [B]: 6.000 TL
+  Q: Yatırımcı Hakan Bey'in VİOP hesabında başlangıç teminatı 20.000 TL, sürdürme teminatı ise 15.000 TL'dir. Hakan Bey'in bakiyesi gün sonu uzlaşma fiyatlarına göre 14.000 TL'ye düşmüştür. Hakan Bey'e yapılacak Margin Call sonrasında hesaba yatırılması gereken nakit tamamlama tutarı kaç TL'dir?
+
+[q_1001_ogretici_001] (Modul 1001) Correct [A]: Tasarrufların sermaye piyasası araçları yoluyla ekonomiye aktarılmasına aracılık etmek
+  Q: Sermaye piyasasının temel amacı açısından aşağıdakilerden hangisi en doğru ifadedir?
+
+[q_1001_ogretici_002] (Modul 1001) Correct [B]: Yatırımcıya karar vermesi için gerekli bilgiyi zamanında sağlamak
+  Q: Sermaye piyasası mevzuatında yatırımcının korunması bakımından kamunun aydınlatılması ilkesinin temel işlevi nedir?
+
+[q_1003_ogretici_004] (Modul 1003) Correct [D]: Alacaklı
+  Q: Tahvil sahibinin ihraççı karşısındaki temel konumu nedir?
+

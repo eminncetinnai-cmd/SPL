@@ -1,0 +1,430 @@
+Total flagged: 39
+
+==================================================
+ID: q_1005_master_004 (genel)
+Soru: Aşağıdaki faaliyetlerden hangisi kural olarak YALNIZCA 'Geniş Yetkili Aracı Kurumlar' tarafından yapılabilir?
+Doğru: D
+  [A]   Sadece emir iletimi
+  [B]   Basit hisse senedi alım satım emri kabulü
+  [C]   Yalnızca yatırımcı bilgilendirmesi
+  [D] ✓ Portföy Aracılığı (Kendi nam ve hesabına alım satım / Market Making) ve Bakiye Yüklenimi Halka Arz
+  [E]   Genel borsa haber bülteni dağıtımı
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_009 (genel)
+Soru: Aracı kurum yönetim kurulu üyelerinin çoğunluğunun asgari eğitim ve tecrübe şartı nedir?
+Doğru: B
+  [A]   İlkokul mezunu olmak
+  [B] ✓ En az 4 yıllık lisans mezunu olmak ve finans/ekonomi alanında asgari tecrübeye sahip olmak
+  [C]   Sadece yabancı üniversite mezunu olmak
+  [D]   En az 20 yıl borsa brokerliği yapmış olmak
+  [E]   Milletvekili olmak
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_016 (genel)
+Soru: Sermaye piyasası işlemlerinin içerdiği riskleri müşteriye açıklayan 'Genel Risk Bildirim Formu' ne zaman verilir?
+Doğru: D
+  [A]   Müşteri tüm parasını kaybettikten sonra
+  [B]   Sadece müşteri talep ederse 5 yıl sonra
+  [C]   Yalnızca yabancı müşterilere verilir
+  [D] ✓ Sözleşmenin imzalanması sırasında, müşteriye işlemlerin riskleri açıklanarak ve formun bir örneği müşteriye teslim edilip imzalatılarak verilir.
+  [E]   Risk formu verilmesi kanunen yasaktır
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_023 (genel)
+Soru: Aracı kurumun kendi nam ve hesabına sermaye piyasası araçlarının alım ve satımını yapması faaliyeti nasıl adlandırılır?
+Doğru: C
+  [A]   Emir İletimi
+  [B]   Bireysel Portföy Yönetimi
+  [C] ✓ Portföy Aracılığı
+  [D]   Kredili menkul kıymet alımı ve açığa satış işlemlerinde asgari %35 başlangıç özkaynak oranının korunması
+  [E]   Müşteri sırrı ve ticari sır niteliğindeki bilgilerin üçüncü şahıslara veya grup şirketlerine aktarılamaması
+Nedenler: REVERSE_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_030 (genel)
+Soru: Yatırım kuruluşlarının kendi bünyelerinde oluşturmak ve web sitelerinde yayımlamak zorunda oldukları 'Çıkar Çatışması Politikası'nın temel amacı nedir?
+Doğru: C
+  [A]   Müşterileri birbirine düşürmek
+  [B]   Kurumun her durumda en çok kâr etmesini sağlamak
+  [C] ✓ Müşteriler arası veya müşteri ile kurum arasındaki çıkar çatışmalarını tespit etmek, önlemek ve yönetmek
+  [D]   Vergiden kaçınma yollarını göstermek
+  [E]   Çalışanların maaşlarını gizlemek
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_032 (genel)
+Soru: İnternet veya mobil uygulama üzerinden emir kabul eden aracı kurumların sağlamak zorunda olduğu iki faktörlü kimlik doğrulama (2FA) kuralı neyi amaçlar?
+Doğru: E
+  [A]   Emirlerin iletilmesini geciktirmeyi
+  [B]   İnternet kullanımını azaltmayı
+  [C]   Sadece kurum personeline işlem yaptırmayı
+  [D]   Borsa sunucularını kapatmayı
+  [E] ✓ Müşteri hesabının yetkisiz kişilerce ele geçirilmesini ve siber dolandırıcılığı önlemeyi
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_033 (genel)
+Soru: Halka arz konsorsiyumunda 'Konsorsiyum Lideri'nin temel görevi nedir?
+Doğru: D
+  [A]   Sadece hisse fiyatını yukarı çekmek
+  [B]   Şirketin yönetim kurulunu görevden almak
+  [C]   Hisseleri sadece kendi akrabalarına satmak
+  [D] ✓ İzahnameyi hazırlamak, SPK ve Borsa başvurularını koordine etmek, konsorsiyum üyeleri arasında dağıtımı yönetmek ve halka arz sürecini yürütmek
+  [E]   Halka arz gelirini kendi hesabına aktarmak
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_036 (genel)
+Soru: Kısmi yetkili aracı kurumların verebileceği 'Sınırlı Saklama Hizmeti' neyi ifade eder?
+Doğru: D
+  [A]   Altın saklama yetkisi
+  [B]   Kasa kiralama yetkisi
+  [C]   Fiziki tahvil basma yetkisi
+  [D] ✓ Yalnızca kendi aracılık ettiği işlemlerle sınırlı olarak müşteri varlıklarını Takasbank ve MKK nezdinde izleme yetkisi
+  [E]   Müşterinin gayrimenkul tapusunu saklama
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_037 (genel)
+Soru: Aracı kurumlarda 'İç Kontrol Birimi'nin temel fonksiyonu nedir?
+Doğru: B
+  [A]   Müşterilere hisse alım tavsiyesi vermek
+  [B] ✓ Kurumun tüm faaliyetlerinin mevzuata, kurum içi politikalara ve yönetim kurulu kararlarına uygunluğunu sürekli izlemek ve riskleri kontrol etmek
+  [C]   Personelin öğle yemeği menüsünü belirlemek
+  [D]   Borsada kurum adına spekülasyon yapmak
+  [E]   Sadece vergi dairesine beyanname vermek
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_045 (genel)
+Soru: Portföy yönetim şirketlerinin yönettiği portföylerden başarı primi (performans ücreti) alabilmesi için hangi koşul gereklidir?
+Doğru: C
+  [A]   Portföyün zarar etmiş olması
+  [B]   Her ay koşulsuz olarak hesaptan kesilmesi
+  [C] ✓ Elde edilen getirinin sözleşmede belirlenen 'Karşılaştırma Ölçütü'nü (Benchmark / Eşik Değer) aşmış olması
+  [D]   Müşterinin onayının olmaması
+  [E]   Dolar kurunun düşmesi
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_049 (genel)
+Soru: Halka arza aracılık eden konsorsiyum lideri kurumun analistlerinin halka arz öncesinde ve sonrasında belirli bir süre araştırma raporu yayımlamasının kısıtlandığı döneme ne ad verilir?
+Doğru: E
+  [A]   Tatil Dönemi
+  [B]   İstikrar Dönemi
+  [C]   Kotasyon Dönemi
+  [D]   Rüçhan Dönemi
+  [E] ✓ Sessizlik Dönemi (Quiet Period)
+Nedenler: SILLY: [A] Tatil Dönemi
+
+==================================================
+ID: q_1005_master_058 (genel)
+Soru: Uygunluk testi hangi amaçla uygulanır?
+Doğru: A
+  [A] ✓ Genel müşterinin bilgi ve tecrübesinin, talep ettiği ürün veya hizmetin içerdiği riskleri anlamaya yeterli olup olmadığını tespit etmek
+  [B]   Müşterinin kredi notunu düşürmek
+  [C]   Müşteriden zorla komisyon almak
+  [D]   Müşterinin siyasi görüşünü öğrenmek
+  [E]   Kurumun hisselerini müşteriye satmak
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_059 (genel)
+Soru: Yerindelik testinde uygunluk testinden farklı olarak müşterinin hangi ek bilgileri detaylı olarak analiz edilir?
+Doğru: A
+  [A] ✓ Müşterinin yatırım amaçları, risk-getiri tercihleri ve en önemlisi finansal durumu ile olası zararları karşılayabilme kapasitesi
+  [B]   Müşterinin evinin tapu rengi
+  [C]   Müşterinin ehliyet sınıfı
+  [D]   Sadece pasaport numarası
+  [E]   Müşterinin çocuklarının okulu
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_064 (genel)
+Soru: Profesyonel bir müşterinin genel müşteri statüsüne geçme talebi yatırım kuruluşu tarafından nasıl karşılanır?
+Doğru: E
+  [A]   Kurum bu talebi reddetmek zorundadır.
+  [B]   Müşteriye ceza kesilir.
+  [C]   Geçiş için SPK Başkanının imzası gerekir.
+  [D]   Sadece yabancılar statü değiştirebilir.
+  [E] ✓ Kurum bu talebi koşulsuz olarak kabul etmek ve müşteriyi genel müşteri haklarından yararlandırmak zorundadır.
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_066 (genel)
+Soru: Uygunluk testi sonucunda müşterinin talep ettiği ürün müşterinin risk profiline 'Uygun Değil' çıkarsa kurum ne yapar?
+Doğru: C
+  [A]   Müşteriyi polise şikayet eder.
+  [B]   Müşterinin tüm hisselerini tabandan satar.
+  [C] ✓ Ürünün müşteriye uygun olmadığını yazılı/elektronik olarak müşteriye bildirir; müşteri buna rağmen yazılı ısrar ederse emri icra edebilir.
+  [D]   Müşteriye zorla para cezası uygular.
+  [E]   İşlemi sisteme gizlice girer.
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_069 (genel)
+Soru: Müşterilerine doğrudan piyasa erişimi (DMA / Algoritmik emir iletimi) sağlayan aracı kurumların alması gereken temel tedbir nedir?
+Doğru: E
+  [A]   Algoritmaları tamamen kapatmak
+  [B]   Sadece manuel faks ile emir almak
+  [C]   Algoritmik emirlerden komisyon almamak
+  [D]   Algoritmayı yazan mühendisi işten çıkarmak
+  [E] ✓ Ön işlem risk kontrolleri (fiyat, emir büyüklüğü, emir/işlem oranı limitleri) koymak ve sisteme filtre uygulamak
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_070 (genel)
+Soru: Müşteri temsilcisi (Broker), müşterinin sözlü talimatı olmadan kendi inisiyatifiyle müşteri hesabında hisse alıp satabilir mi?
+Doğru: A
+  [A] ✓ KESİNLİKLE YAPAMAZ; müşterinin yazılı/sesli açık talimatı olmadan yapılan tüm işlemler yetkisiz işlemdir ve ağır suçtur.
+  [B]   Hisse çok yükselecekse yapabilir.
+  [C]   Müşteri temsilcisi kurum müdüründen izin alırsa yapabilir.
+  [D]   Cuma günleri serbesttir.
+  [E]   Müşteri kâr ederse suç sayılmaz.
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_075 (genel)
+Soru: Yatırımcı verilen sürede teminat açığını kapatmazsa aracı kurumun kanuni yetkisi nedir?
+Doğru: C
+  [A]   Aracı kurum borcu affeder.
+  [B]   Müşteriye hediye çeki verir.
+  [C] ✓ Aracı kurum müşterinin hesabındaki hisseleri hiçbir ihbara gerek kalmaksızın RESEN (otomatikman) borsada satarak krediyi kapatır.
+  [D]   Hisseleri bekletmeye devam eder.
+  [E]   Kurum kendi sermayesini müşteriye bağışlar.
+Nedenler: EXTREME_LENGTH_BIAS, SILLY: [B] Müşteriye hediye çeki verir.
+
+==================================================
+ID: q_1005_master_081 (genel)
+Soru: Ödünç pay işlemlerinde ödünç verilen menkul kıymetin mülkiyeti kime geçer?
+Doğru: D
+  [A]   Mülkiyet daima devlette kalır.
+  [B]   Mülkiyet Takasbank genel müdürüne geçer.
+  [C]   Mülkiyet tamamen yok olur.
+  [D] ✓ Ödünç süresince geçici olarak ödünç alana geçer; vade sonunda aynı cins ve miktarda menkul kıymet iade edilir.
+  [E]   Ödünçte mülkiyet devri kanunen imkansızdır.
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_082 (genel)
+Soru: Ödünç verilen hisse senedine ödünç süresi içinde temettü (kâr payı) dağıtılırsa bu temettünün ekonomik sahibi kimdir?
+Doğru: B
+  [A]   Ödünç alan kişi parayı harcar
+  [B] ✓ Ödünç veren asıl pay sahibi (Ödünç alan bu tutarı ödünç verene tazmin etmekle yükümlüdür)
+  [C]   Takasbank temettüye el koyar
+  [D]   Temettü şirkete iade edilir
+  [E]   Temettü yanar
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_083 (genel)
+Soru: Bir aracı kurumun tek bir müşterisine kullandırabileceği kredili işlem tutarı kural olarak kurumun özsermayesinin en fazla yüzde kaçını aşamaz?
+Doğru: E
+  [A]   Bağımsız denetim kuruluşları tarafından altı aylık ve yıllık ara mali tabloların denetime tabi tutulması
+  [B]   Geniş Yetkili Aracı Kurum asgari özsermaye tabanının Kurul düzenlemelerine uygun olarak 150 milyon TL'ye yükseltilmesi
+  [C]   Aracı kurumun özsermaye yeterliliği tabanının risk karşılıkları toplamından düşük olmaması şartı
+  [D]   Aracı kurum yönetim kurulu üyelerinin çoğunluğunun icracı olmayan bağımsız üyelerden teşekkül etmesi
+  [E] ✓ %10'unu (veya istisnai gruplarda %25'ini)
+Nedenler: NON_PARALLEL
+
+==================================================
+ID: q_1005_master_084 (genel)
+Soru: Kredili işlem yapılabilmesi için müşteriyle 'Kredili Menkul Kıymet İşlemleri Çerçeve Sözleşmesi' imzalanması zorunlu mudur?
+Doğru: C
+  [A]   Hayır, sözlü anlaşma yeterlidir.
+  [B]   Sadece yabancılar sözleşme yapar.
+  [C] ✓ Evet, standart çerçeve sözleşmeye ek olarak ayrı bir Kredili İşlemler Sözleşmesi akdedilmesi kanunen zorunludur.
+  [D]   Sözleşme yapılması yasaktır.
+  [E]   Sözleşme sadece borsa kapandıktan sonra yapılır.
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_090 (genel)
+Soru: Yatırım kuruluşları nezdinde bulunan ve hak sahipleri tarafından aranmayan her türlü emanet ve alacak kaç yıl sonra YTM'ye devredilir?
+Doğru: E
+  [A]   Geniş Yetkili Aracı Kurum asgari özsermaye tabanının Kurul düzenlemelerine uygun olarak 150 milyon TL'ye yükseltilmesi
+  [B]   Müşteri emirlerinin zaman önceliği kuralına tabi olarak Borsa işlem sistemine iletilmesi
+  [C]   Aracı kurumun likidite yükümlülüğü oranının belirlenen minimum standart rasyonun üzerinde tutulması
+  [D]   Müşteri nakitlerinin aracı kurum hesaplarından ayrı olarak Takasbank nezdinde müşteri bazında nemalandırılması
+  [E] ✓ 10 yıl
+Nedenler: REVERSE_LENGTH_BIAS, NON_PARALLEL
+
+==================================================
+ID: q_1005_master_093 (genel)
+Soru: Mali durumu bozulan ve yükümlülüklerini yerine getiremeyen yatırım kuruluşlarının malvarlığının korunması ve tasfiyesi amacıyla SPK tarafından uygulanan sürece ne ad verilir?
+Doğru: D
+  [A]   İflas Erteleme
+  [B]   Tahsisli Tasfiye
+  [C]   Çıkar çatışması politikası gereğince analist raporlarının yayımlanmadan önce ilgili ihraççıya iletilmemesi
+  [D] ✓ Tedrici Tasfiye
+  [E]   Aracı kurum genel müdür ve müdür yardımcılarının SPK Düzey 3 ve Türev Araçlar Lisansı sahibi olması zorunluluğu
+Nedenler: REVERSE_LENGTH_BIAS
+
+==================================================
+ID: q_1005_master_095 (genel)
+Soru: SPK sermaye yeterliliği veya mevzuat ihlali nedeniyle bir yatırım kuruluşunun faaliyetlerini en fazla ne kadar süreyle geçici olarak durdurabilir?
+Doğru: E
+  [A]   Bağımsız denetim kuruluşları tarafından altı aylık ve yıllık ara mali tabloların denetime tabi tutulması
+  [B]   Finansal Duran Varlıklar tebliği uyarınca aracı kurumun iştirak sınırlarının özkaynağın %25'ini aşamaması
+  [C]   İç kontrolden sorumlu personelin doğrudan aracı kurum Yönetim Kurulu'na bağlı olarak görev yapması
+  [D]   Kısmi Yetkili Aracı Kurumların yalnızca en iyi gayret aracılığı ve emir iletimi faaliyetinde bulunabilmesi
+  [E] ✓ 6 aya kadar (gerektiğinde 6 ay daha uzatılabilir)
+Nedenler: NON_PARALLEL
+
+==================================================
+ID: q_1005_master_099 (genel)
+Soru: Tüzel kişi müşteri hesaplarında şirketin arkasındaki yüzde kaçı aşan nihai gerçek kişi ortakların kimlik tespiti zorunludur?
+Doğru: C
+  [A]   Aracı kurum yönetim kurulu üyelerinin çoğunluğunun icracı olmayan bağımsız üyelerden teşekkül etmesi
+  [B]   Bağımsız denetim kuruluşları tarafından altı aylık ve yıllık ara mali tabloların denetime tabi tutulması
+  [C] ✓ %25'i aşan gerçek kişi ortaklar
+  [D]   Müşterinin Genel Müşteri veya Profesyonel Müşteri olarak sınıflandırılması ve Yerindelik Testi yapılması
+  [E]   Kredili menkul kıymet alımı ve açığa satış işlemlerinde asgari %35 başlangıç özkaynak oranının korunması
+Nedenler: NON_PARALLEL
+
+==================================================
+ID: q_1005_master_100 (genel)
+Soru: Aşağıdakilerden hangisine bilgi verilmesi 'Müşteri Sırrının İhlali' SAYILMAZ?
+Doğru: B
+  [A]   Müşterinin arkadaşına bilgi vermek
+  [B] ✓ SPK Denetçilerine, Bağımsız Denetçilere, Mahkemelere ve MASAK'a kanuni yetkileri kapsamında bilgi verilmesi
+  [C]   Müşteri bilgilerini gazeteye satmak
+  [D]   Kahvehanede sohbet konusu yapmak
+  [E]   Sosyal medyada paylaşmak
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_konu_007 (genel)
+Soru: Yukarıdaki soruda (Soru 6) temerrüde düşen Hakan Bey'in, hesabını yasal limitlere uygun hale getirmek için yatırması gereken asgari nakit tamamlama tutarı kaç TL'dir?
+Doğru: D
+  [A]   Müşterinin Genel Müşteri veya Profesyonel Müşteri olarak sınıflandırılması ve Yerindelik Testi yapılması
+  [B]   Finansal Duran Varlıklar tebliği uyarınca aracı kurumun iştirak sınırlarının özkaynağın %25'ini aşamaması
+  [C]   İç kontrolden sorumlu personelin doğrudan aracı kurum Yönetim Kurulu'na bağlı olarak görev yapması
+  [D] ✓ 10.000 TL
+  [E]   Kısmi Yetkili Aracı Kurumların yalnızca en iyi gayret aracılığı ve emir iletimi faaliyetinde bulunabilmesi
+Nedenler: REVERSE_LENGTH_BIAS
+
+==================================================
+ID: q_1005_konu_015 (genel)
+Soru: Aracı kurum genel müdür ve genel müdür yardımcılarının yasal olarak sahip olmaları gereken asgari mesleki deneyim süresi mali piyasalar veya işletmecilik alanında en az kaç yıldır?
+Doğru: D
+  [A]   Merkez dışı örgütlerin (şube ve irtibat bürosu) açılabilmesi için SPK'dan önceden izin alınması zorunluluğu
+  [B]   Çıkar çatışması politikası gereğince analist raporlarının yayımlanmadan önce ilgili ihraççıya iletilmemesi
+  [C]   Kredili menkul kıymet alımı ve açığa satış işlemlerinde asgari %35 başlangıç özkaynak oranının korunması
+  [D] ✓ 7 yıl
+  [E]   Bağımsız denetim kuruluşları tarafından altı aylık ve yıllık ara mali tabloların denetime tabi tutulması
+Nedenler: REVERSE_LENGTH_BIAS, NON_PARALLEL
+
+==================================================
+ID: q_1005_ogretici_001 (genel)
+Soru: Yatırım hizmet ve faaliyetleri kapsamında müşteri emirlerinin alınması ve iletilmesi hangi amaca hizmet eder?
+Doğru: A
+  [A] ✓ Müşteri talimatlarının düzenlemelere uygun biçimde piyasaya veya ilgili kuruluşa ulaştırılmasına
+  [B]   Yatırımcıya getiri garantisi verilmesine
+  [C]   Kuruluşun kendi hesabına zorunlu işlem yapmasına
+  [D]   Saklama hizmetinin otomatik verilmesine
+  [E]   Vergi borçlarının silinmesine
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_ogretici_004 (genel)
+Soru: Yerindelik testi genel olarak hangi amaçla kullanılır?
+Doğru: D
+  [A]   Müşterinin kesin getiri talebinin ölçülmesi
+  [B]   Kuruluşun kârlılığını ölçmek
+  [C]   Borsanın işlem hacmini hesaplamak
+  [D] ✓ Müşterinin belirli ürün veya hizmete ilişkin bilgi ve deneyiminin değerlendirilmesi
+  [E]   Saklama ücretini belirlemek
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_ogretici_005 (genel)
+Soru: Uygunluk değerlendirmesinin temel mantığı nedir?
+Doğru: E
+  [A]   Her müşteriye en yüksek riskli ürünü sunmak
+  [B]   Sadece yaş bilgisini almak
+  [C]   Kuruluşun geçmiş kârını incelemek
+  [D]   Sadece işlem hacmine bakmak
+  [E] ✓ Müşterinin yatırım hedefleri, mali durumu ve ilgili diğer özellikleriyle hizmet/ürün arasındaki uyumu değerlendirmek
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_ogretici_007 (genel)
+Soru: Kredili işlemde temel ekonomik özellik nedir?
+Doğru: B
+  [A]   Yatırımcının hiçbir teminat vermemesi
+  [B] ✓ İşlemin belirli kısmında finansman kullanılması nedeniyle kaldıraç etkisinin oluşabilmesi
+  [C]   Zarar ihtimalinin ortadan kalkması
+  [D]   Yalnızca devlet tahvili alınabilmesi
+  [E]   Her işlemin vadesiz olması
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_ogretici_008 (genel)
+Soru: Açığa satış işleminin temel mantığı nedir?
+Doğru: C
+  [A]   Yalnızca eldeki payların uzun vadeli tutulmasıdır
+  [B]   Temettü dağıtımıdır
+  [C] ✓ Sahip olunmayan veya ödünç alınan sermaye piyasası aracının satılıp daha sonra yerine konulması sürecidir
+  [D]   Fon katılma payı ihracıdır
+  [E]   Şirket sermayesinin azaltılmasıdır
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_ogretici_010 (genel)
+Soru: Uzaktan kimlik tespitinde temel hedef nedir?
+Doğru: E
+  [A]   Kimlik doğrulamasını tamamen kaldırmak
+  [B]   Müşterinin yatırım riskini sıfırlamak
+  [C]   Piyasa verisini değiştirmek
+  [D]   Komisyonu otomatik azaltmak
+  [E] ✓ Müşteri kimliğinin güvenilir yöntemlerle doğrulanması ve güvenli sözleşme ilişkisinin kurulması
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_ogretici_018 (genel)
+Soru: Aracı kurumların müşterilerine ait nakit ve menkul kıymet varlıklarını saklama biçimi ile ilgili 'Müşteri Varlıklarının Ayrılığı' ilkesi neyi emreder?
+Doğru: C
+  [A]   Müşteri nakitleri aracı kurumun şirket kasasında fiziki nakit olarak tutulmalıdır
+  [B]   Kurum nakit sıkışıklığına düşerse müşteri paralarını geçici olarak kendi şirket giderlerinde kullanabilir
+  [C] ✓ Müşterilere ait nakitler Takasbank nezdindeki müşteri hesaplarında, menkul kıymetler ise MKK nezdinde müşteri bazında ayrı izlenir; kurumun kendi aktifleriyle karıştırılamaz
+  [D]   Tüm hisse senetleri aracı kurum genel müdürünün şahsi hesabına tescil edilir
+  [E]   Müşteri varlıkları noter emanetine tevdi edilmek zorundadır
+Nedenler: SILLY: [E] Müşteri varlıkları noter emanetine tevdi edilmek zorundadır
+
+==================================================
+ID: q_1005_ogretici_020 (genel)
+Soru: Aracı kurumlarda 'Yatırım Danışmanlığı' hizmeti sunulabilmesi için aşağıdaki yasal koşullardan hangisi ZORUNLUDUR?
+Doğru: E
+  [A]   Sosyal medya üzerinden anonim hesapla hisse tavsiyesi verilmesi
+  [B]   Müşteriye mutlaka kesin kâr garantisi taahhüt edilmesi
+  [C]   Yalnızca yabancı bankalara danışmanlık verilmesi
+  [D]   Danışmanın noter katibi unvanına sahip olması
+  [E] ✓ SPK'dan Yatırım Danışmanlığı yetki belgesi alınmış olması ve müşteri ile yazılı çerçeve sözleşmesi imzalanması
+Nedenler: SILLY: [D] Danışmanın noter katibi unvanına sahip olması
+
+==================================================
+ID: q_1005_cikmis_010 (cikmis)
+Soru: Uygunluk Testi'nin (Appropriateness) temel amacı nedir?
+Doğru: B
+  [A]   Müşterinin vergi borcunu tespit etmek
+  [B] ✓ Müşterinin talep ettiği ürünün risklerini anlayabilecek bilgi ve tecrübeye sahip olup olmadığını değerlendirmek
+  [C]   Müşterinin kredi notunu yükseltmek
+  [D]   Müşteriye gayrimenkul satmak
+  [E]   Müşterinin tasarruf miktarını artırmak
+Nedenler: EXTREME_LENGTH_BIAS
+
+==================================================
+ID: q_1005_cikmis_014 (cikmis)
+Soru: Müşterinin özkaynak tamamlama çağrısına süresi içinde uymaması halinde aracı kurumun kanuni yetkisi nedir?
+Doğru: B
+  [A]   Müşteri hakkında derhal iflas davası açmak
+  [B] ✓ Özkaynak oranını %50'ye getirecek miktarda hisse senedini müşterinin iznini aramaksızın borsada resen satmak
+  [C]   Pozisyonu süresiz dondurmak
+  [D]   Müşterinin banka hesaplarına el koymak
+  [E]   Borcu SPK'ya devretmek
+Nedenler: EXTREME_LENGTH_BIAS

@@ -1,0 +1,612 @@
+
+==================================================
+ID: q_1001_master_004 (Modul 1001)
+Soru: Kayıtlı sermaye sistemi ve tavan artırımıyla ilgili olarak aşağıda verilen hükümlerden hangisi YANLIŞTIR?
+Dogru: C
+  [A] (97 kr) Kayıtlı sermaye sistemine geçebilmek veya tavan yükseltmek için SPK'dan izin alınması zorunludur.
+  [B] (66 kr) Kayıtlı sermaye tavanı için verilen izin süresi en fazla 5 yıldır.
+  [C] (130 kr) 5 yıllık tavan süresi dolduktan sonra yönetim kurulu genel kuruldan yeni yetki almadan tavanı kendiliğinden 5 yıl daha uzatabilir.
+  [D] (120 kr) Kayıtlı sermaye sisteminde yönetim kurulu, sermaye tavanı içinde rüçhan haklarını kısıtlama yetkisine sahip kılınabilir.
+  [E] (88 kr) Yönetim kurulu, esas sözleşmeyle yetkilendirilmişse primli pay ihracına karar verebilir.
+Aciklama: 5 yıllık süre dolduğunda, yönetim kurulu tarafından genel kuruldan yeni bir 5 yıllık süre için yetki alınması ve SPK onayının bulunması şarttır. Yetki alınamazsa şirket kayıtlı sermaye sisteminden çıkmış sayılmaz ancak genel kurul kararı olmadan sermaye artıramaz; yönetim kurulu tavanı tek taraflı uzatamaz.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+
+==================================================
+ID: q_1001_master_009 (Modul 1001)
+Soru: 6362 sayılı SPKn m.106'ya göre doğrudan ya da dolaylı olarak sermaye piyasası araçları ya da ihraççılar hakkında, henüz kamuya duyurulmamış ve fiyatı etkileyebilecek nitelikteki bilgiye dayalı olarak işlem yaparak menfaat temin eden failler hakkında öngörülen hapis cezası aralığı nedir?
+Dogru: A
+  [A] (104 kr) 3 yıldan 5 yıla kadar hapis VEYA adli para cezası değil; 3 yıldan 5 yıla kadar hapis VE adli para cezası
+  [B] (20 kr) 6 aydan 2 yıla kadar
+  [C] (21 kr) 1 yıldan 3 yıla kadar
+  [D] (21 kr) 3 yıldan 5 yıla kadar
+  [E] (49 kr) 3 yıldan 5 yıla kadar hapis veya adli para cezası
+Aciklama: SPKn m.106 uyarınca Bilgi Suistimali suçunu işleyenler 3 yıldan 5 yıla kadar HAPİS VE adli para cezası ile cezalandırılır. 'Veya' değil, 'VE' bağlacı geçerlidir. Ayrıca verilecek adli para cezası elde edilen menfaatin iki katından az olamaz.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPKn: 6362 sayılı Sermaye Piyasası Kanunu
+
+==================================================
+ID: q_1001_master_011 (Modul 1001)
+Soru: 6362 sayılı SPKn m.107 kapsamında piyasa dolandırıcılığı suçunu işleyen bir kişinin etkin pişmanlıktan yararlanabilmesiyle ilgili hangisi DOĞRUDUR?
+Dogru: B
+  [A] (99 kr) Hakkında mahkemece kesinleşmiş hapis cezası verildikten sonra parayı öderse cezası tamamen silinir.
+  [B] (144 kr) Henüz SPK tarafından incelemeye başlanmadan önce durumu SPK'ya bildirip elde ettiği menfaatin iki katını Hazineye öderse hakkında ceza verilmez.
+  [C] (82 kr) Etkin pişmanlık sadece bilgi suistimalinde geçerlidir, manipülasyonda uygulanamaz.
+  [D] (82 kr) Soruşturma aşamasında menfaatin 5 katı ödense dahi cezada hiçbir indirim yapılmaz.
+  [E] (77 kr) Etkin pişmanlıktan yararlanmak için sadece şirketten özür dilemek yeterlidir.
+Aciklama: SPKn m.107/3 uyarınca; SPK tarafından incelemeye başlanmadan önce SPK'ya ihbarda bulunarak elde ettiği menfaatin iki katı tutarındaki parayı Hazineye ödeyen kişi hakkında cezaya hükmolunmaz. İnceleme başladıktan sonra ancak dava açılmadan önce öderse menfaatin katına göre cezada indirim uygulanır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+• SPKn: 6362 sayılı Sermaye Piyasası Kanunu
+
+==================================================
+ID: q_1001_master_013 (Modul 1001)
+Soru: SPK'dan izin almaksızın sermaye piyasasında izinsiz faaliyette (örneğin izinsiz foreks işlemi veya yetkisiz portföy yöneticiliği) bulunanlar hakkında öngörülen yaptırım nedir?
+Dogru: E
+  [A] (29 kr) Sadece kınama cezası verilir.
+  [B] (65 kr) Hiçbir adli yaptırım yoktur, sadece borsa işlem sırası kapatılır.
+  [C] (46 kr) Yalnızca şirketin ticaret sicil kaydı silinir.
+  [D] (43 kr) 6 ay süreyle dernek kurma yasağı getirilir.
+  [E] (89 kr) 2 yıldan 5 yıla kadar hapis ve 5.000 günden 10.000 güne kadar adli para cezası uygulanır.
+Aciklama: SPKn m.109/2 gereğince Kuruldan izin almaksızın sermaye piyasası faaliyetinde bulunanlar 2 yıldan 5 yıla kadar hapis ve beş bin günden on bin güne kadar adli para cezası ile cezalandırılırlar. Ayrıca internet sitelerine erişim engeli getirilir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+• SPKn: 6362 sayılı Sermaye Piyasası Kanunu
+
+==================================================
+ID: q_1001_master_025 (Modul 1001)
+Soru: Aracılık türlerinden 'Tümünü Yüklenim' (Stand-by / Full underwriting) yönteminde paylar aracı kurum tarafından ne zaman satın alınır?
+Dogru: A
+  [A] (133 kr) Halka arz başlamadan önce, payların tamamı aracı kurum tarafından satın alınarak bedeli ihraççıya ödenir ve ardından halka arz edilir
+  [B] (38 kr) Halka arz süresi bittikten 1 yıl sonra
+  [C] (33 kr) Sadece şirket tasfiye edildiğinde
+  [D] (29 kr) Hisse fiyatı taban yaptığında
+  [E] (37 kr) Şirketin kâr dağıtımı genel kurulunda
+Aciklama: Tümünü yüklenimde ihraç edilecek payların tamamı satış başlamadan önce aracı kuruluş/konsorsiyum tarafından satın alınır, ihraççı finansmanını peşin garantiler ve ardından satış yatırımcılara yapılır.
+
+==================================================
+ID: q_1001_master_031 (Modul 1001)
+Soru: Özel Durumlar Tebliği'ne (II-15.1) göre 'İçsel Bilgi' kavramının tanımı ve unsurlarıyla ilgili aşağıdakilerden hangisi DOĞRUDUR?
+Dogru: A
+  [A] (229 kr) Henüz kamuya açıklanmamış, doğrudan veya dolaylı olarak ihraççıya ya da sermaye piyasası araçlarına ilişkin, açıklandığında bu araçların fiyatını veya yatırımcıların yatırım kararlarını etkileyebilecek nitelikteki kesin bilgidir.
+  [B] (78 kr) Şirket hakkında sosyal medyada paylaşılan her türlü doğrulanmamış söylentidir.
+  [C] (77 kr) Şirketin web sitesinde 3 yıldır yayımlanmakta olan yıllık faaliyet raporudur.
+  [D] (84 kr) Yalnızca şirketin çalışan sayısı ve yemek menüsü gibi idari iç işleyiş bilgileridir.
+  [E] (58 kr) TCMB tarafından her ay açıklanan resmi enflasyon oranıdır.
+Aciklama: İçsel Bilgi; kamuya açıklanmamış olması, doğrudan/dolaylı olarak ihraççı veya araçla ilgili olması, belirli ve kesin bir olaya dayanması ve açıklandığında fiyat veya yatırım kararını etkileme potansiyeline ('önemlilik' testi) sahip olması unsurlarını birlikte taşır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• TCMB: Türkiye Cumhuriyet Merkez Bankası
+
+==================================================
+ID: q_1001_master_037 (Modul 1001)
+Soru: İdari sorumluluğu bulunan yöneticiler ve bunlarla yakından ilişkili kişilerin şirket paylarında yaptıkları işlemlerin kamuya açıklanmasıyla ilgili hangisi DOĞRUDUR?
+Dogru: A
+  [A] (143 kr) Tebliğde belirlenen eşiği (Kurulca belirlenen parasal tutarı) aşan tüm alım veya satım işlemleri işlemi yapan kişi tarafından KAP'ta açıklanır.
+  [B] (55 kr) İşlemler hiçbir zaman kamuya açıklanmaz, gizli tutulur.
+  [C] (41 kr) Yalnızca zarar edilen işlemler açıklanır.
+  [D] (80 kr) Sadece şirketin genel müdürü işlem yapabilir, yönetim kurulu üyeleri pay alamaz.
+  [E] (68 kr) İşlem bildirimleri sadece yıllık genel kurulda sözlü olarak yapılır.
+Aciklama: İdari sorumluluğu bulunan kişiler ve bunlarla ilişkili kişilerin gerçekleştirdiği pay alım-satım işlemleri, takvim yılı içindeki toplam işlem tutarı Kurulca belirlenen parasal limiti aştığında KAP'ta özel durum açıklaması olarak duyurulur.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• KAP: Kamuyu Aydınlatma Platformu (Şirketlerin özel durum ve finansal rapor bildirim sistemi)
+
+==================================================
+ID: q_1001_master_044 (Modul 1001)
+Soru: Halka açık şirketlerin ilişkili taraflarıyla gerçekleştirecekleri varlık ve hizmet alım/satımlarında SPK lisanslı bir değerleme kuruluşuna değerleme yaptırma zorunluluğu hangi eşikte doğar?
+Dogru: C
+  [A] (38 kr) Her türlü işlemde tutara bakılmaksızın
+  [B] (33 kr) Sadece 1 TL üzerindeki işlemlerde
+  [C] (111 kr) İşlem tutarının finansal tablolardaki aktif toplamına veya hasılata oranının %5'i (veya %10'u) aşması durumunda
+  [D] (58 kr) Şirket kâr ettiği yıllarda hiçbir zaman değerleme yapılmaz
+  [E] (40 kr) Sadece yabancı para cinsinden işlemlerde
+Aciklama: İlişkili taraf işlemlerinde; işlem tutarının kamuya açıklanan son finansal tablolardaki aktif büyüklüğüne, hasılata veya şirket değerine oranının %5'i aşması öngörüldüğünde değerleme raporu hazırlanması; %10'u aşması durumunda ise genel kurul onayına sunulması gibi katı eşikler uygulanır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+
+==================================================
+ID: q_1001_master_051 (Modul 1001)
+Soru: Borsa Yatırım Fonlarını diğer geleneksel yatırım fonlarından ayıran en belirgin temel özellik nedir?
+Dogru: A
+  [A] (113 kr) Fon paylarının gün boyunca Borsa İstanbul pay piyasasında hisse senedi gibi anlık fiyatlarla alınıp satılabilmesi
+  [B] (27 kr) Tüzel kişiliğe sahip olması
+  [C] (29 kr) Hiçbir endeksi takip etmemesi
+  [D] (46 kr) Sadece yabancı para birimleriyle işlem görmesi
+  [E] (43 kr) Kurucusunun sadece yabancı devletler olması
+Aciklama: Borsa Yatırım Fonu (BYF), bir endeksi (örneğin BIST 30, Altın endeksi) takip eden ve payları borsada işlem saatleri içinde hisse senedi gibi anlık fiyatlarla işlem gören fon türüdür.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• BIST: Borsa İstanbul A.Ş. (Türkiye'nin organize menkul kıymet, kıymetli maden ve türev piyasası borsası)
+• BYF: Borsa Yatırım Fonu (Borsada hisse senedi gibi anlık işlem gören endeks fonu - ETF)
+• ETF: Exchange Traded Fund (Borsa Yatırım Fonu)
+
+==================================================
+ID: q_1001_master_077 (Modul 1001)
+Soru: TSPB Meslek Kuralları ve Etik İlkeleri kimler açısından bağlayıcıdır?
+Dogru: D
+  [A] (54 kr) Sadece aracı kurum yönetim kurulu başkanları açısından
+  [B] (29 kr) Yalnızca stajyerler açısından
+  [C] (30 kr) Sadece SPK uzmanları açısından
+  [D] (112 kr) Tüm Birlik üyesi kuruluşlar ve bu kuruluşlarda çalışan tüm personel (lisanslı ve lisanssız çalışanlar) açısından
+  [E] (43 kr) Yalnızca yabancı fon yöneticileri açısından
+Aciklama: TSPB Meslek Kuralları ve Etik İlkeleri; tüm üye kuruluşları ve bu kuruluşların istisnasız tüm yöneticilerini ve çalışanlarını hukuken ve mesleki olarak bağlar.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+
+==================================================
+ID: q_1001_master_079 (Modul 1001)
+Soru: Sermaye piyasası çalışanlarının yatırımcılara tavsiyede bulunurken veya analiz hazırlarken uyması gereken 'Mesleki Özen ve Titizlik' kuralı neyi ifade eder?
+Dogru: E
+  [A] (81 kr) Sosyal medyada gördüğü dedikoduları hemen müşteriye hisse önerisi olarak iletmeyi
+  [B] (73 kr) Raporların sadece yapay zekaya yazdırılıp kontrol edilmeden dağıtılmasını
+  [C] (51 kr) Yatırımcılara yüzde yüz kazanç taahhüdü verilmesini
+  [D] (52 kr) Her gün en az 50 hisse için alım emri gönderilmesini
+  [E] (148 kr) Tavsiye ve kararların güvenilir verilere, kapsamlı araştırmalara ve analitik yöntemlere dayandırılmasını; gerekli dikkat ve basiretin gösterilmesini
+Aciklama: Mesleki özen ve titizlik; sermaye piyasası çalışanının bilgiye, araştırmaya, rasyonel finansal analizlere dayanarak ve basiretli bir uzmanın göstermesi gereken dikkatle hareket etmesini gerektirir.
+
+==================================================
+ID: q_1001_master_080 (Modul 1001)
+Soru: Aracı kurumun veya çalışanının kendi menfaati ile müşterinin menfaati çatıştığında hangisi geçerlidir?
+Dogru: B
+  [A] (36 kr) Her zaman kurumun kârı önceliklidir.
+  [B] (102 kr) MÜŞTERİ MENFAATİ DAİMA KURUMUN VE ÇALIŞANIN MENFAATİNDEN ÖNCE GELİR; müşteri aleyhine işlem yapılamaz.
+  [C] (48 kr) Her zaman çalışanın prim kazanması önceliklidir.
+  [D] (44 kr) Önce kim talep ederse onun menfaati korunur.
+  [E] (65 kr) Menfaat çatışmasında işlem derhal iptal edilerek müşteri kovulur.
+Aciklama: Sermaye piyasasının altın kuralı: 'Müşteri Menfaatinin Üstünlüğü'dür. Kurum menfaati veya çalışan çıkarı hiçbir koşulda müşteri menfaatinin önüne geçirilemez.
+
+==================================================
+ID: q_1001_master_081 (Modul 1001)
+Soru: Bir aracı kurum çalışanının, müşterinin piyasayı etkileyecek büyüklükteki bir alım emrini sisteme girmeden önce, bu emrin yaratacağı fiyat artışından yararlanmak için kendi hesabına pay alması fiili nasıl adlandırılır ve hükmü nedir?
+Dogru: E
+  [A] (36 kr) Arbitraj / Yasal bir finansal haktır
+  [B] (44 kr) Fiyat İstikrarı / Teşvik edilen bir işlemdir
+  [C] (45 kr) Likidite Sağlayıcılığı / Zorunlu bir görevdir
+  [D] (51 kr) Portföy Çeşitlemesi / Başarılı bir risk yönetimidir
+  [E] (92 kr) Front-Running (Önden Koşma) / Kesinlikle yasaklanmış etik dışı ve piyasa bozucu bir eylemdir
+Aciklama: Front-running (müşteri emrinin önüne geçme); müşterinin vereceği emrin piyasa etkisini bilerek çalışanın kendi nam ve hesabına önden işlem yapmasıdır. Ağır bir meslek suçu, etik ihlali ve piyasa bozucu eylemdir.
+
+==================================================
+ID: q_1001_master_083 (Modul 1001)
+Soru: Sermaye piyasası kurumları ve çalışanlarının 'Sır Saklama' yükümlülüğü ile ilgili aşağıdakilerden hangisi YANLIŞTIR?
+Dogru: E
+  [A] (110 kr) Çalışanlar müşterilere ait hesap durumlarını, kimlik bilgilerini ve işlem detaylarını gizli tutmak zorundadır.
+  [B] (75 kr) Sır saklama yükümlülüğü personelin işten ayrılmasından sonra da devam eder.
+  [C] (132 kr) Kanunen yetkili kılınan mercilere (SPK, Mahkemeler, Savcılık, MASAK vb.) bilgi verilmesi sır saklama yükümlülüğünün ihlali sayılmaz.
+  [D] (74 kr) Müşterinin yazılı rızası olmaksızın bilgiler üçüncü şahıslara açıklanamaz.
+  [E] (95 kr) Çalışan, müşteri sırlarını akşam arkadaş ortamında veya sosyal medyada sohbet konusu yapabilir.
+Aciklama: Müşteri ve piyasa sırları hiçbir yerde (arkadaş ortamı, sosyal medya vb.) paylaşılamaz. Sır saklama borcu süresizdir, görevden ayrıldıktan sonra da devam eder.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+• MASAK: Mali Suçları Araştırma Kurulu (Karapara aklama ve terörün finansmanıyla mücadele otoritesi)
+
+==================================================
+ID: q_1001_master_085 (Modul 1001)
+Soru: TSPB Meslek Kuralları uyarınca sermaye piyasası çalışanlarının müşterilerden veya üçüncü kişilerden hediye, ağırlama veya menfaat kabul etmesiyle ilgili temel ilke nedir?
+Dogru: D
+  [A] (70 kr) Çalışanlar istedikleri tutarda nakit parayı hediye olarak alabilirler.
+  [B] (51 kr) Yalnızca lüks otomobil hediyeleri kabul edilebilir.
+  [C] (52 kr) Hediye almak zorunludur, reddetmek disiplin suçudur.
+  [D] (197 kr) Çalışanlar tarafsızlıklarını, mesleki kararlarını ve bağımsızlıklarını etkileyebilecek nitelikte veya makul teamül sınırlarını aşan hiçbir hediye, ağırlama veya nakdi/ayni menfaati kabul edemezler.
+  [E] (65 kr) Müşterinin tatile gönderme teklifleri koşulsuz kabul edilmelidir.
+Aciklama: Çalışanlar bağımsızlıklarını, tarafsızlıklarını ve mesleki kararlarını şüpheye düşürecek büyüklükte veya teamül sınırlarını aşan maddi değeri olan hediyeleri, borçları veya tatil/ağırlamaları kabul edemezler. Sembolik promosyonlar kurum politikalarına tabidir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+
+==================================================
+ID: q_1001_master_091 (Modul 1001)
+Soru: TSPB Disiplin Yönetmeliği'ne göre üye kuruluşlara veya personeline verilebilecek disiplin cezaları aşağıdakilerden hangisinde TAM ve DOĞRU olarak sıralanmıştır?
+Dogru: D
+  [A] (39 kr) Hapis - Sürgün - Kınama - Rütbe İndirme
+  [B] (36 kr) Sadece Sözlü Uyarı ve Maaş Kesintisi
+  [C] (41 kr) Vatandaşlıktan Çıkarma - Kınama - Gözaltı
+  [D] (93 kr) Uyarı - Kınama - Para Cezası - Geçici Olarak Faaliyetten Men - Sürekli Olarak Faaliyetten Men
+  [E] (40 kr) İstifa Ettirme - Pasaport İptali - İhtar
+Aciklama: TSPB Disiplin Yönetmeliği m.4 uyarınca disiplin cezaları ağırlık sırasına göre şunlardır: 1) Uyarı, 2) Kınama, 3) Para Cezası, 4) Geçici Olarak Faaliyetten Men (veya geçici lisans iptali/üyelikten çıkarma), 5) Sürekli Olarak Faaliyetten Men (sürekli ihraç).
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+
+==================================================
+ID: q_1001_master_092 (Modul 1001)
+Soru: TSPB Disiplin Yönetmeliği'ne göre 'Uyarı' cezasının tanımı ve niteliği nedir?
+Dogru: C
+  [A] (54 kr) Çalışanın 5 yıl boyunca borsa salonuna sokulmamasıdır.
+  [B] (36 kr) Üyenin tüm gelirine el konulmasıdır.
+  [C] (140 kr) Üyenin veya çalışanın mesleki faaliyetlerinde ve görevlerinde daha dikkatli ve özenli davranması gerektiğinin YAZILI olarak bildirilmesidir.
+  [D] (36 kr) Çalışanın mahkemede yargılanmasıdır.
+  [E] (36 kr) Kurumun kapısına mühür vurulmasıdır.
+Aciklama: Uyarı cezası; mevzuatın, meslek kurallarının ve etik ilkelerin uygulanmasında ilk kez ve hafif nitelikte görülen kusur ve dikkatsizlikler karşısında ilgilinin yazılı olarak uyarılmasıdır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+
+==================================================
+ID: q_1001_master_094 (Modul 1001)
+Soru: TSPB tarafından verilen Disiplin Para Cezaları nereye ödenir ve tahsil edilmezse ne olur?
+Dogru: D
+  [A] (56 kr) Doğrudan teftiş kurulu başkanının şahsi hesabına ödenir.
+  [B] (53 kr) Borsadaki en çok işlem yapan müşteriye hediye edilir.
+  [C] (70 kr) Para cezası ödenmezse hiçbir işlem yapılmaz, ceza kendiliğinden düşer.
+  [D] (141 kr) Birliğe gelir kaydedilmek üzere Birliğe ödenir; süresinde ödenmezse yasal yollardan tahsil edilir ve daha ağır disiplin cezası uygulanabilir.
+  [E] (115 kr) Sermaye Piyasası Kurulu üyelerinin Cumhurbaşkanı tarafından beş yıllık süre için atanması ve bağımsızlığı güvencesi
+Aciklama: Disiplin para cezaları Birlik bütçesine ödenir. Tebliğ edilen süre içinde ödenmemesi halinde icra takibi ve ek disiplin yaptırımları uygulanır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+
+==================================================
+ID: q_1001_master_096 (Modul 1001)
+Soru: TSPB Disiplin Yönetmeliği'ne göre hangi eylemler 'Sürekli Faaliyetten Men / Meslekten İhraç' cezasını gerektirir?
+Dogru: B
+  [A] (28 kr) Sabah işe 5 dakika geç kalma
+  [B] (187 kr) Müşteri varlıklarını zimmetine geçirme, sahtecilik, dolandırıcılık veya hırsızlık gibi yüz kızartıcı suçları işleme ve meslek onuruyla bağdaşmayacak ağır suçları kasıtlı olarak tekrarlama
+  [C] (41 kr) Öğle yemeğini kurum yemekhanesinde yememe
+  [D] (51 kr) Müşteriye resmi tatil günlerinde e-posta göndermeme
+  [E] (46 kr) Şirket içi eğitim sınavından 90 yerine 80 alma
+Aciklama: Zimmet, irtikap, rüşvet, hırsızlık, dolandırıcılık, sahtecilik, güveni kötüye kullanma, bilgi suistimali ve piyasa dolandırıcılığı gibi yüz kızartıcı suçlar ve mesleğin icrasını imkansız kılan ağır kasıtlı fiiller SÜREKLİ MESLEKTEN MEN gerektirir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+
+==================================================
+ID: q_1001_master_099 (Modul 1001)
+Soru: TSPB Disiplin Yönetmeliği'ne göre disiplin cezasını gerektiren fiilin işlendiğinin öğrenildiği tarihten ve her halükarda fiilin işlendiği tarihten itibaren işlemeyen soruşturma/ceza zamanaşımı süreleri genel olarak nedir?
+Dogru: B
+  [A] (29 kr) Zamanaşımı süresi 100 yıldır.
+  [B] (193 kr) Öğrenilmesinden itibaren 1 yıl ve fiilin işlenmesinden itibaren 5 yıl geçmesiyle disiplin ceza verme yetkisi zamanaşımına uğrar (adli suç oluşturan fiillerde ceza kanunu zamanaşımı geçerlidir).
+  [C] (49 kr) Fiil işlendiği anda 24 saatte zamanaşımına uğrar.
+  [D] (32 kr) Hiçbir zamanaşımı süresi yoktur.
+  [E] (38 kr) Zamanaşımı sadece hafta sonları işler.
+Aciklama: Disiplin hukukunda genel kural: Disiplin amirlerince fiilin öğrenildiği tarihten itibaren 1 yıl ve her halükarda fiilin işlendiği tarihten itibaren 5 yıl içinde ceza verilmezse ceza verme yetkisi zamanaşımına uğrar. Fiil aynı zamanda adli bir suç teşkil ediyorsa TCK'daki daha uzun ceza zamanaşımı uygulanır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+
+==================================================
+ID: q_1001_konu_001 (Modul 1001)
+Soru: Türkiye Cumhuriyeti Merkez Bankası (TCMB) ile ilgili aşağıdaki ifadelerden hangisi 6362 sayılı Sermaye Piyasası Kanunu (SPKn) hükümleri bakımından doğrudur?
+Dogru: E
+  [A] (93 kr) TCMB, halka açık ortaklık statüsünde olduğu için Kurulun kurumsal yönetim ilkelerine tabidir.
+  [B] (96 kr) TCMB'nin gerçekleştirdiği tüm işlemler ve kendi bünyesindeki piyasalar SPKn hükümlerine tabidir.
+  [C] (101 kr) TCMB, yatırımcıları korumak adına Yatırımcı Tazmin Merkezi (YTM) sistemine zorunlu üye statüsündedir.
+  [D] (62 kr) TCMB, öz düzenleyici bir meslek kuruluşu olarak TSPB üyesidir.
+  [E] (194 kr) TCMB nezdinde kurulan ödeme ve menkul kıymet transfer sistemleri ile sermaye piyasası araçlarını konu alan teminat sözleşmeleri dışındaki TCMB işlemleri ve pazarlarına SPKn hükümleri uygulanmaz.
+Aciklama: Analiz ve Çözüm: SPKn Madde 2 uyarınca, TCMB ve onun bünyesindeki pazarlar, işlemler ve sistemler kural olarak SPKn kapsamı dışındadır. Tek istisnası, sermaye piyasası araçlarını konu alan teminat sözleşmelerine ilişkin maddedir (md. 47). Bu nedenle TCMB işlemleri ve pazarlarına SPKn hükümleri uygulanmaz. TCMB hiçbir şekilde YTM, TSPB veya kurumsal yönetim ilkelerine tabi değildir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPKn: 6362 sayılı Sermaye Piyasası Kanunu
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+• YTM: Yatırımcı Tazmin Merkezi (Aracı kurumların iflası/tasfiyesinde yatırımcı varlıklarını tazmin eden kurum)
+• TCMB: Türkiye Cumhuriyet Merkez Bankası
+
+==================================================
+ID: q_1001_ogretici_001 (Modul 1001)
+Soru: Sermaye piyasasının temel amacı açısından aşağıdakilerden hangisi en doğru ifadedir?
+Dogru: A
+  [A] (86 kr) Tasarrufların sermaye piyasası araçları yoluyla ekonomiye aktarılmasına aracılık etmek
+  [B] (66 kr) Tüm şirketleri kamu mülkiyetine geçirerek devlet kontrolü sağlamak
+  [C] (66 kr) Bankaların mevduat faizlerini her ay tek taraflı olarak sabitlemek
+  [D] (53 kr) Şirketlerin iflas etmesini tamamen kanunen yasaklamak
+  [E] (60 kr) Yatırımcıların borsa zararlarını genel bütçeden tazmin etmek
+Aciklama: Sermaye piyasasının temel ekonomik işlevi; bireysel ve kurumsal tasarrufların verimli yatırımlara ve ülke ekonomisine kanalize edilmesidir.
+
+==================================================
+ID: q_1001_ogretici_013 (Modul 1001)
+Soru: 6362 sayılı Kanun m.106 uyarınca 'İçsel Bilgiye Dayalı Ticaret' (İnsider Trading) suçunun oluşabilmesi için aşağıdakilerden hangisi zorunlu bir yasal unsurdur?
+Dogru: C
+  [A] (72 kr) İşlemin yalnızca aracı kurum yönetim kurulu başkanı tarafından yapılması
+  [B] (60 kr) Yapılan işlemin tutarının en az 10 milyon TL üzerinde olması
+  [C] (158 kr) Henüz kamuya açıklanmamış, doğrudan veya dolaylı sermaye piyasası aracının değerini etkileyebilecek nitelikteki bilgiye dayanarak menfaat temin edilmiş olması
+  [D] (51 kr) Şirketin yalnızca banka statüsünde bir kurum olması
+  [E] (63 kr) İçsel bilginin yazılı olarak noter onaylı tebliğ edilmiş olması
+Aciklama: İçsel bilgi suçu; henüz kamuya duyurulmamış, fiyatı etkileyebilecek önemdeki gizli bilgiye dayanılarak işlem yapılması ve bu suretle haksız menfaat sağlanması veya zarardan kaçınılması ile oluşur.
+
+==================================================
+ID: q_1001_ogretici_018 (Modul 1001)
+Soru: Türkiye Sermaye Piyasaları Birliği (TSPB) Disiplin Yönetmeliği kapsamında üye aracı kurum ve çalışanlara verilebilecek disiplin cezalarının hafiften ağıra doğru sıralanışı hangisidir?
+Dogru: C
+  [A] (40 kr) Hapis Cezası - Adli Para Cezası - Kınama
+  [B] (33 kr) Yalnızca İhtar ve İflas Bildirimi
+  [C] (94 kr) Uyarı - Kınama - Para Cezası - Geçici Olarak Faaliyetten Alıkoyma - Birlik Üyeliğinden Çıkarma
+  [D] (39 kr) Kınama - Şirketi Kapatma - Kayyum Atama
+  [E] (38 kr) Uyarı - Borsa Kotundan Çıkarma - İflas
+Aciklama: TSPB disiplin cezaları kademeli olarak: Uyarı, Kınama, Para Cezası, Geçici Faaliyetten Alıkoyma ve Birlik Üyeliğinden Çıkarma (İhraç) şeklinde kanuni yaptırımlara bağlanmıştır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• TSPB: Türkiye Sermaye Piyasaları Birliği (Öz düzenleyici meslek kuruluşu)
+
+==================================================
+ID: q_1001_cikmis_019 (Modul 1001)
+Soru: Aşağıdaki hallerin hangisinde Kurul zorunlu pay alım teklifinde bulunma yükümlülüğünden muafiyet VEREBİLİR?
+Dogru: A
+  [A] (94 kr) Şirketin finansal sıkıntı içinde olması ve sermaye artırımı yoluyla fon sağlanması zorunluluğu
+  [B] (46 kr) Hakim ortağın keyfi olarak paylarını artırması
+  [C] (38 kr) Borsada manipülatif işlemler yapılması
+  [D] (28 kr) Şirket kârının dağıtılmaması
+  [E] (39 kr) Şirket merkezinin yurt dışına taşınması
+Aciklama: Finansal güçlük içindeki ortaklığın kurtarılması amacıyla yapılan sermaye girişlerinde SPK zorunlu pay alım teklifinden muafiyet tanıyabilir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+
+==================================================
+ID: q_1001_cikmis_023 (Modul 1001)
+Soru: 6362 sayılı Kanun m. 106'da düzenlenen Bilgi Suistimali (İçeriden Öğrenenlerin Ticareti) suçunda menfaatin temininde kullanılan bilgi nasıl olmalıdır?
+Dogru: B
+  [A] (56 kr) Kamuyu Aydınlatma Platformu'nda (KAP) ilan edilmiş bilgi
+  [B] (87 kr) Henüz kamuya açıklanmamış, fiyatı etkileyebilecek nitelikte doğrudan veya dolaylı bilgi
+  [C] (48 kr) Geçmiş yıllara ait kamuya açık finansal raporlar
+  [D] (35 kr) Basında yer almış genel dedikodular
+  [E] (26 kr) Şirketin reklam broşürleri
+Aciklama: Bilgi suistimali suçunun temel unsuru, henüz kamuya açıklanmamış ve açıklandığında fiyatı etkileyebilecek somut içsel bilginin menfaat için kullanılmasıdır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• KAP: Kamuyu Aydınlatma Platformu (Şirketlerin özel durum ve finansal rapor bildirim sistemi)
+
+==================================================
+ID: q_1001_cikmis_035 (Modul 1001)
+Soru: 6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; Kitle fonlaması platformları üzerinden toplanan fonlar yatırımcı adına nerede bloke edilir? (Test Soru No: 30)
+Dogru: B
+  [A] (33 kr) Platformun kendi şirket hesabında
+  [B] (37 kr) Emanet yetkilisi nezdinde (Takasbank)
+  [C] (15 kr) Borsa kasasında
+  [D] (20 kr) TCMB döviz hesabında
+  [E] (15 kr) Noter kasasında
+Aciklama: Kitle fonlamasında toplanan paralar emanet yetkilisi olan Takasbank nezdindeki blokeli hesaplarda tutulur.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+• TCMB: Türkiye Cumhuriyet Merkez Bankası
+
+==================================================
+ID: q_1003_master_022 (Modul 1003)
+Soru: Halka açık ortaklıkların yapacağı bağış ve yardımlarla ilgili hangisi DOĞRUDUR?
+Dogru: E
+  [A] (49 kr) Şirket tüm malvarlığını serbestçe bağışlayabilir.
+  [B] (38 kr) Bağış yapmak kanunen tamamen yasaktır.
+  [C] (51 kr) Bağış tutarı sadece şirket müdürünün takdirindedir.
+  [D] (29 kr) Bağışlar KAP'ta ilan edilmez.
+  [E] (124 kr) Esas sözleşmede hüküm bulunmalı, genel kurulca üst sınır belirlenmeli ve SPK örtülü kazanç aktarımı kurallarına uyulmalıdır.
+Aciklama: Bağış yapılabilmesi için esas sözleşmede izin olması, genel kurulun azami bağış sınırı belirlemesi ve yapılan bağışların KAP'ta açıklanması zorunludur.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+• KAP: Kamuyu Aydınlatma Platformu (Şirketlerin özel durum ve finansal rapor bildirim sistemi)
+
+==================================================
+ID: q_1003_master_024 (Modul 1003)
+Soru: Hisse senedi bölünmesi (Stock Split) gerçekleştiğinde aşağıdakilerden hangisi gerçekleşir?
+Dogru: A
+  [A] (121 kr) Hisse sayısı artar, pay başına nominal değer ve borsa fiyatı aynı oranda düşer; ortaklığın toplam piyasa değeri değişmez.
+  [B] (30 kr) Şirketin sermayesi sıfırlanır.
+  [C] (49 kr) Yatırımcıların toplam portföy tutarı yarıya iner.
+  [D] (33 kr) Şirket borçlarını ödemiş sayılır.
+  [E] (44 kr) Bölünme sadece yabancı borsalarda uygulanır.
+Aciklama: Hisse bölünmesinde likiditeyi artırmak hedeflenir. Hisse adedi artarken fiyat aynı oranda düşer, toplam portföy ve piyasa değeri değişmez.
+
+==================================================
+ID: q_1003_master_025 (Modul 1003)
+Soru: Ters pay bölünmesi (hisse birleştirme) uygulamasında ne amaçlanır?
+Dogru: E
+  [A] (28 kr) Şirketi derhal tasfiye etmek
+  [B] (37 kr) Tüm hissedarları ortaklıktan çıkarmak
+  [C] (40 kr) Yalnızca bedelli sermaye artırımı yapmak
+  [D] (21 kr) Borsa kotundan çıkmak
+  [E] (97 kr) Düşük kuruşlu hisse fiyatını yukarı çekmek amacıyla pay adedini azaltıp nominal değeri yükseltmek
+Aciklama: Ters pay bölünmesinde hisse sayısı azaltılarak hisse başına fiyat yükseltilir, hissenin piyasa imajı ve işlem disiplini korunur.
+
+==================================================
+ID: q_1003_master_026 (Modul 1003)
+Soru: Tahvil ile hisse senedi arasındaki temel farklarla ilgili aşağıdakilerden hangisi YANLIŞTIR?
+Dogru: A
+  [A] (86 kr) Tahvil sahibi genel kurulda oy kullanma ve şirket yönetimine katılma hakkına sahiptir.
+  [B] (72 kr) Tahvil sahibi şirketin alacaklısıdır, hisse senedi sahibi ise ortağıdır.
+  [C] (59 kr) Tahvil belirli bir vade taşır, hisse senedinde vade yoktur.
+  [D] (86 kr) Tahvil sahibi şirketin kâr veya zarar etmesine bakılmaksızın faiz ve anaparasını alır.
+  [E] (89 kr) Şirketin tasfiyesi halinde tahvil sahipleri pay sahiplerinden önce alacağını tahsil eder.
+Aciklama: Tahvil bir borç senedidir. Tahvil sahibi şirkete ortak DEĞİLDİR; şirketin yönetimine katılamaz, genel kurulda OY KULLANAMAZ.
+
+==================================================
+ID: q_1003_master_032 (Modul 1003)
+Soru: PDT ile Değiştirilebilir Tahvil (DET) arasındaki en belirgin temel fark nedir?
+Dogru: E
+  [A] (50 kr) DET sadece kamu kurumları tarafından ihraç edilir.
+  [B] (30 kr) PDT faizsizdir, DET faizlidir.
+  [C] (27 kr) İkisi tamamen aynı üründür.
+  [D] (31 kr) DET'in vadesi en fazla 1 aydır.
+  [E] (152 kr) PDT'de tahvil ihraççının kendi paylarına dönüştürülürken; DET'te tahvil ihraççının portföyündeki başka bir şirketin (iştirakin) paylarıyla değiştirilir.
+Aciklama: PDT ihraççı şirketin KENDİ paylarına dönüştürülür; DET ise ihraççının sahip olduğu BAŞKA bir ortaklığın (örneğin iştirakinin) paylarıyla değiştirilir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• PDT: Paylara Dönüştürülebilir Tahvil (Vadesinde hisse senedine dönüştürülme hakkı veren borçlanma aracı)
+
+==================================================
+ID: q_1003_master_037 (Modul 1003)
+Soru: Enflasyona (TÜFE) endeksli devlet tahvillerinin yatırımcıya sağladığı temel koruma nedir?
+Dogru: B
+  [A] (26 kr) Dolar kurunun sabitlenmesi
+  [B] (119 kr) Anaparanın ve kupon ödemelerinin enflasyon oranında güncellenerek yatırımcının reel getirisinin garanti altına alınması
+  [C] (44 kr) Şirketin tüm hisselerinin bedelsiz verilmesi
+  [D] (31 kr) Vergiden tamamen muaf tutulması
+  [E] (35 kr) Kupon oranının her gün sıfırlanması
+Aciklama: TÜFE'ye endeksli tahvillerde anapara enflasyon oranında artırılır ve reel kupon oranı bu anaparaya uygulanarak yatırımcının satın alma gücü korunur.
+
+==================================================
+ID: q_1003_master_039 (Modul 1003)
+Soru: Yeşil Borçlanma Aracı (Green Bond) ihracından elde edilen fonların kullanım alanı ne olmalıdır?
+Dogru: E
+  [A] (46 kr) Şirketin her türlü ticari borcunun kapatılması
+  [B] (45 kr) Sadece yönetim kurulu üyelerine prim ödenmesi
+  [C] (33 kr) Fosil yakıt santralleri kurulması
+  [D] (46 kr) Borsada spekülatif hisse alım satımı yapılması
+  [E] (132 kr) İklim değişikliğiyle mücadele, yenilenebilir enerji, enerji verimliliği ve çevreye olumlu katkı sağlayan yeşil projelerin finansmanı
+Aciklama: Yeşil tahvil ihraç gelirleri münhasıran SPK Yeşil Borçlanma Aracı Rehberi ve uluslararası taksonomiye uygun çevresel/sürdürülebilir yeşil projelerde kullanılmak zorundadır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)
+
+==================================================
+ID: q_1003_master_041 (Modul 1003)
+Soru: İpotek Teminatlı Menkul Kıymetler (İTMK) ile Varlık Teminatlı Menkul Kıymetler (VTMK) arasındaki ortak koruma mekanizması nedir?
+Dogru: E
+  [A] (36 kr) Faizlerin devlet tarafından ödenmesi
+  [B] (29 kr) Yalnızca 1 ay vadeli olmaları
+  [C] (38 kr) Sadece gerçek kişilere satılabilmeleri
+  [D] (39 kr) Borsada işlem görmelerinin yasak olması
+  [E] (126 kr) İhraççının iflası halinde dahi teminat havuzundaki varlıkların ayrı tutularak öncelikle yatırımcılara ödenmesi (çifte güvence)
+Aciklama: Teminatlı menkul kıymetlerde (Covered Bonds) yatırımcı hem ihraççıya hem de özel teminat havuzuna (ipotek/kredi alacakları) rücu edebilir; ihraççı batsa dahi teminat havuzu iflas masası dışındadır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• İTMK: İpotek Teminatlı Menkul Kıymet (Konut ve gayrimenkul kredileri teminatlı menkul kıymet)
+
+==================================================
+ID: q_1003_master_047 (Modul 1003)
+Soru: Değişken faizli tahvillerde kupon faiz oranı neye göre belirlenir?
+Dogru: B
+  [A] (30 kr) Şirketin satış hasılatına göre
+  [B] (116 kr) Referans bir faiz oranına (örneğin TLREF, TRLIBOR veya DİBS ihale faizi) eklenen bir ek getiri (spread) marjına göre
+  [C] (33 kr) Hisse senedi borsa endeksine göre
+  [D] (43 kr) Yönetim kurulu başkanının doğum gününe göre
+  [E] (31 kr) Asgari ücret artış oranına göre
+Aciklama: Değişken kuponlu tahvillerde faiz = Referans Faiz (örn. TLREF) + Ek Getiri (Spread) formülüyle her kupon dönemi başında piyasa şartlarına göre güncellenir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• DİBS: Devlet İç Borçlanma Senetleri (Hazine Müsteşarlığı/Bakanlığı tarafından ihraç edilen Bono ve Tahviller)
+
+==================================================
+ID: q_1003_master_050 (Modul 1003)
+Soru: YTM'nin özel sektör tahvillerine ilişkin tazmin kapsamı nasıldır?
+Dogru: C
+  [A] (37 kr) Tüm tahvillerin anaparasını YTM öder.
+  [B] (39 kr) Sadece yabancı tahviller tazmin edilir.
+  [C] (122 kr) Tahvil ihraç eden şirketin iflas etmesi sonucu anapara ödeyememesi YTM güvencesinde DEĞİLDİR (Kredi riski tazmin edilmez).
+  [D] (35 kr) YTM tahvil faizlerini garanti eder.
+  [E] (43 kr) Tahvil tazmini için mahkeme kararı aranmaz.
+Aciklama: YTM yatırımcının saklamadaki varlıklarının aracı kurumca suistimalini tazmin eder; ihraççı şirketin tahvil borcunu ödeyememesinden (kredi/iflas riski) kaynaklanan zararları TAZMİN ETMEZ.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• YTM: Yatırımcı Tazmin Merkezi (Aracı kurumların iflası/tasfiyesinde yatırımcı varlıklarını tazmin eden kurum)
+
+==================================================
+ID: q_1003_master_066 (Modul 1003)
+Soru: Varant Tebliği'ne (VII-128.3) göre 'Aracı Kuruluş Varantı'nın tanımı aşağıdakilerden hangisidir?
+Dogru: D
+  [A] (45 kr) Anonim şirketin kâr payı dağıtma taahhüdüdür.
+  [B] (48 kr) Sadece devlet tarafından basılan madeni paradır.
+  [C] (44 kr) Vadesi olmayan süresiz bir ortaklık payıdır.
+  [D] (215 kr) Elinde bulunduran kişiye, dayanak varlığı önceden belirlenen fiyattan (kullanım fiyatı) belirli bir tarihte veya tarihe kadar alma ya da satma hakkı veren ve menkul kıymet niteliğinde olan sermaye piyasası aracıdır.
+  [E] (29 kr) Bir banka mevduat cüzdanıdır.
+Aciklama: Varant, sahibine dayanak varlığı alma (Call) veya satma (Put) HAKKI veren, ancak YÜKÜMLÜLÜK getirmeyen, menkul kıymetleştirilmiş bir opsiyon türevidir.
+
+==================================================
+ID: q_1003_master_077 (Modul 1003)
+Soru: Borsa İstanbul'da işlem gören aracı kuruluş varantlarında vade sonu kullanım kural olarak nasıl sonuçlandırılır?
+Dogru: E
+  [A] (44 kr) Fiziki hisse teslimatı ile gerçekleştirilir.
+  [B] (37 kr) Altın teslimatı ile gerçekleştirilir.
+  [C] (35 kr) Tahvil takası ile gerçekleştirilir.
+  [D] (49 kr) Yeni bir varant hediye edilerek gerçekleştirilir.
+  [E] (76 kr) Nakit Uzlaşma (Kâr farkının hesaba nakden yatırılması) ile gerçekleştirilir.
+Aciklama: BIST varant piyasasında kârda olan varantlar vade sonunda otomatik olarak 'Nakit Uzlaşma' yoluyla Takasbank nezdinde nakden kapatılır; fiziki hisse devri yapılmaz.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)
+• BIST: Borsa İstanbul A.Ş. (Türkiye'nin organize menkul kıymet, kıymetli maden ve türev piyasası borsası)
+
+==================================================
+ID: q_1003_master_083 (Modul 1003)
+Soru: Para Piyasası Fonlarının portföy yapısı ile ilgili hangisi DOĞRUDUR?
+Dogru: A
+  [A] (166 kr) Portföyün tamamı vadesine en fazla 184 gün kalmış likit para ve sermaye piyasası araçlarından oluşur ve portföyün günlük ağırlıklı ortalama vadesi en fazla 45 gündür.
+  [B] (38 kr) Sadece 10 yıl vadeli gayrimenkul alır.
+  [C] (45 kr) Türev araçlarda kaldıraçlı spekülasyon yapar.
+  [D] (46 kr) Fon payları sadece 5 yılda bir nakde çevrilir.
+  [E] (33 kr) Yalnızca döviz alım satımı yapar.
+Aciklama: Para Piyasası Fonlarında azami vade 184 gün, fon portföyünün ağırlıklı ortalama vadesi ise azami 45 gündür.
+
+==================================================
+ID: q_1003_master_097 (Modul 1003)
+Soru: Darphane tarafından ihraç edilen ve fiziki altına dönüşüm imkanı sağlayan 'Darphane Altın Sertifikası' ile ilgili hangisi DOĞRUDUR?
+Dogru: C
+  [A] (39 kr) Fiziki altına dönüşüm kanunen yasaktır.
+  [B] (37 kr) Sadece yabancı bankalarda geçerlidir.
+  [C] (142 kr) Borsa İstanbul Pay Piyasasında hisse senedi gibi alınıp satılabilir ve yeterli adede ulaşan yatırımcı Darphaneden fiziki altın talep edebilir.
+  [D] (36 kr) Sertifikanın hiçbir dayanağı yoktur.
+  [E] (48 kr) Altın fiyatı yükseldikçe sertifika fiyatı düşer.
+Aciklama: Darphane Altın Sertifikası (ALTIN.S1), BIST Pay Piyasasında işlem gören ve yatırımcılara hem borsa likiditesi hem de fiziki altın teslim alma hakkı sağlayan sermaye piyasası aracıdır.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• BIST: Borsa İstanbul A.Ş. (Türkiye'nin organize menkul kıymet, kıymetli maden ve türev piyasası borsası)
+
+==================================================
+ID: q_1003_master_098 (Modul 1003)
+Soru: Yurt dışı hisse senetlerine yatırım yapan bir yatırımcının karşılaştığı iki temel getiri/risk unsuru nedir?
+Dogru: E
+  [A] (24 kr) Yalnızca Temettü Vergisi
+  [B] (20 kr) Yalnızca Noter Harcı
+  [C] (22 kr) Banka Kredi Faiz Riski
+  [D] (25 kr) Enflasyon Sabitleme Riski
+  [E] (40 kr) Hisse Fiyat Hareketi ve Döviz Kuru Riski
+Aciklama: Yurt dışı hisse senetlerine yatırım yapan bir yatırımcı hem yabancı hissenin borsa fiyat hareketine (piyasa riski) hem de yabancı para biriminin TL karşısındaki kur dalgalanmasına (kur riski) maruz kalır.
+
+==================================================
+ID: q_1003_ogretici_011 (Modul 1003)
+Soru: Anonim ortaklıklarda nama yazılı paylar ile hamiline yazılı payların Borsa İstanbul Pay Piyasası'nda işlem görmesi ve devri açısından temel kural nedir?
+Dogru: A
+  [A] (114 kr) Borsada işlem gören payların tamamı MKK nezdinde kaydileştirilmiş olmak zorundadır ve fiziki senet devri yapılamaz
+  [B] (83 kr) Hamiline yazılı paylar borsada işlem göremez, sadece nama yazılı paylar işlem görür
+  [C] (63 kr) Nama yazılı pay devirleri mutlaka mahkeme sicil onayına tabidir
+  [D] (63 kr) Borsa payları noter huzurunda ciro edilerek elden teslim edilir
+  [E] (64 kr) Yabancı yatırımcılar yalnızca hamiline yazılı pay satın alabilir
+Aciklama: 6362 sayılı Kanun m.13 uyarınca borsada işlem gören paylar kaydileştirilmiştir; MKK nezdinde hak sahipleri bazında elektronik ortamda izlenir, fiziki teslimat veya zilyetlik devri söz konusu olamaz.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)
+
+==================================================
+ID: q_1003_ogretici_014 (Modul 1003)
+Soru: Tahvil ihraç eden bir anonim ortaklığın finansal durumu ile tahvil sahiplerinin hukuki konumu bakımından aşağıdakilerden hangisi KESİNLİKLE YANLIŞTIR?
+Dogru: D
+  [A] (110 kr) Tahvil sahibi şirketin alacaklısıdır, şirket kâr etmese dahi faiz ve anapara alacağını talep etme hakkı vardır
+  [B] (113 kr) Şirketin tasfiyesi halinde tahvil alacaklıları, pay sahiplerinden önce tasfiye bakiyesinden alacağını tahsil eder
+  [C] (60 kr) Tahviller sabit veya değişken faizli olarak ihraç edilebilir
+  [D] (107 kr) Tahvil sahipleri şirketin genel kurul toplantılarına katılarak oy kullanma ve temettü alma hakkına sahiptir
+  [E] (57 kr) Tahvillerin vadesi en az 1 yıl (365 gün) olmak zorundadır
+Aciklama: Tahvil sahipleri ortaklığın pay sahibi değil, alacaklısıdır. Bu nedenle şirket genel kurulunda oy kullanma, yönetime katılma veya temettü alma hakları bulunmaz; sadece anapara ve faiz alacağı talep ederler.
+
+==================================================
+ID: q_1003_cikmis_020 (Modul 1003)
+Soru: Borsa Yatırım Fonları (ETF) ile geleneksel yatırım fonları arasındaki en temel işlem farkı nedir?
+Dogru: B
+  [A] (48 kr) BYF'ler sadece yılda bir kez nakde çevrilebilir.
+  [B] (94 kr) BYF katılma payları Borsa İstanbul'da hisse senedi gibi seans içinde anlık alınıp satılabilir.
+  [C] (35 kr) BYF'lerin portföyü asla açıklanmaz.
+  [D] (39 kr) BYF katılma paylarına temettü ödenemez.
+  [E] (34 kr) BYF'lerde yönetim ücreti alınamaz.
+Aciklama: BYF payları organize borsada hisse senedi gibi işlem görür ve seans süresince değişen anlık fiyatlarla işlem yapılabilir.
+
+📌 Soruda Geçen Kısaltmalar & Terimler:
+• BYF: Borsa Yatırım Fonu (Borsada hisse senedi gibi anlık işlem gören endeks fonu - ETF)
+• ETF: Exchange Traded Fund (Borsa Yatırım Fonu)
+
+==================================================
+ID: q_1003_cikmis_025 (Modul 1003)
+Soru: Sermaye Piyasası Araçları mevzuatı ve piyasa uygulamaları uyarınca; VTMK ihracında ihraççının bilançosunda teminat havuzu olarak ayrılan varlıkların hukuki durumu hangisidir? (Test Soru No: 20)
+Dogru: A
+  [A] (90 kr) İhraççı iflas etse dahi kamu alacakları dahil haczedilemez, iflas masasına dahil edilemez.
+  [B] (44 kr) Genel alacaklılar tarafından haczedilebilir.
+  [C] (54 kr) İhraççı istediğinde teminatı serbestçe geri çekebilir.
+  [D] (39 kr) Yalnızca banka mevduatından oluşabilir.
+  [E] (38 kr) Borsa tarafından mülkiyeti devralınır.
+Aciklama: Teminat havuzu kanunen korunmuştur; iflas halinde dahi haczedilemez ve öncelikle VTMK sahiplerine ödenir.

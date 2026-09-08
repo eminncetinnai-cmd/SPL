@@ -1,0 +1,2720 @@
+{
+  "title": "SPL Düzey 1 X5 Detaylı Sınav Çalışma Kitabı",
+  "description": "1001 • 1003 • 1005 • 1012 Derin Konu Anlatımı, Kavram Haritaları, Sınav Çözme Motoru ve 80 Aktif Kavram Kontrol Sorusu",
+  "total_chapters": 11,
+  "chapters": [
+    {
+      "id": "x5_ch0",
+      "title": "BÖLÜM 0 – SINAV ÇÖZME MOTORU & STRATEJİLER",
+      "subtitle": "Her Soruda 5 Adım • Yanlış Analiz Sistemi • 4 Modülü Tek Haritada Birleştir",
+      "content": [
+        "SPL DÜZEY 1X5 DETAYLI SINAV ÇALIŞMA KİTABI",
+        "1001 • 1003 • 1005 • 1012Derin konu anlatımı • kavram haritaları • sınav algoritması • aktif tekrar • 80 soru",
+        "Bu sürüm, önceki çalışma kitabının yaklaşık 5 katı yoğunluğunda olacak şekilde genişletildi. İçerik, yüklenen referansın desteklediği kavram ve çerçeveler üzerinden derinleştirildi; kaynakta bulunmayan mevzuat ayrıntıları uydurulmadı."
+      ],
+      "bullets": [],
+      "traps": []
+    },
+    {
+      "id": "x5_ch1",
+      "title": "BÖLÜM 0 – SINAV ÇÖZME MOTORU",
+      "subtitle": "",
+      "content": [
+        "Her soruda 5 adım",
+        "Kontrol",
+        "1. Konu",
+        "Sorunun ana konusunu bul.",
+        "2. Taraf",
+        "Kim?",
+        "3. İşlem",
+        "Ne yapıyor?",
+        "4. Amaç",
+        "Bu düzenleme neden var?",
+        "5. Benzer kavram",
+        "Soru hangi iki kavramı karıştırmaya çalışıyor?",
+        "Yanlış analiz sistemi",
+        "A. Bilgi eksikliği – Konuyu bilmiyordum.",
+        "B. Kavram karışıklığı – İki kavramı birbirine karıştırdım.",
+        "C. Soru okuma hatası – Konuyu biliyordum fakat soruyu yanlış yorumladım.",
+        "Referansın kritik çalışma kuralı: Her yanlış, hangi konuyu tekrar etmen gerektiğini gösteren bir veri haline getirilmelidir.",
+        "Dört modülü tek haritada birleştir"
+      ],
+      "bullets": [
+        "Adım"
+      ],
+      "traps": []
+    },
+    {
+      "id": "x5_ch2",
+      "title": "1001 – Piyasa nasıl güvenilir tutulur?",
+      "subtitle": "",
+      "content": [
+        "Bilgi + Etik + Adil piyasa"
+      ],
+      "bullets": [],
+      "traps": []
+    },
+    {
+      "id": "x5_ch3",
+      "title": "1003 – Hangi araç neyi temsil eder?",
+      "subtitle": "",
+      "content": [
+        "Ortaklık + Alacaklılık + Türev ilişki"
+      ],
+      "bullets": [],
+      "traps": []
+    },
+    {
+      "id": "x5_ch4",
+      "title": "1005 – Yatırım kuruluşu ne yapıyor?",
+      "subtitle": "",
+      "content": [
+        "Emir iletiyor + Danışmanlık veriyor + Portföy yönetiyor"
+      ],
+      "bullets": [],
+      "traps": []
+    },
+    {
+      "id": "x5_ch5",
+      "title": "1012 – İşlemden sonra ne oluyor?",
+      "subtitle": "",
+      "content": [
+        "Mutabakat + Takas + Teslim + Saklama",
+        "1001 = GÜVEN | 1003 = ARAÇ | 1005 = HİZMET | 1012 = İŞLEM SONRASI"
+      ],
+      "bullets": [],
+      "traps": []
+    },
+    {
+      "id": "x5_ch6",
+      "title": "ANA ŞİFRE: Bilgi + Etik + Adil piyasa",
+      "subtitle": "",
+      "content": [
+        "1. Ana çerçeve",
+        "1001'i tek cümlede hatırla: Piyasanın güvenilirliği bilgi, etik ve adil piyasa ekseninde düşünülür.",
+        "Bir soruda güvenilirlik, yatırımcının kararını etkileyen bilgi ve piyasa davranışının niteliği öne çıkıyorsa 1001'in ana çerçevesine dön.",
+        "Bu modül için üç kelimelik zihinsel kanca: BİLGİ – ETİK – ADİLLİK.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "2. Bilgi",
+        "Referansın kullandığı ana kavramlardan biri doğru bilgidir. Soru bilgi üzerinden kuruluyorsa önce bilginin rolünü teşhis et.",
+        "Bilgi başlığında soru çözerken 'Soru bilgiye mi odaklanıyor?' diye sor.",
+        "Bilginin kendisi ile bilginin piyasadaki güvenilirlik üzerindeki rolünü birbirinden ayır: sınav sorusu çoğu zaman kavramı değil, kavramın amacını da ölçebilir.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "3. Etik",
+        "Etik, güvenilir piyasa çerçevesinin ikinci ana sütunudur.",
+        "Etik sorusunda davranışın dürüst ve güvenilir piyasa mantığıyla uyumunu düşün.",
+        "Bir davranışın sonucundan önce davranışın etik çerçevede olup olmadığına odaklan.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "4. Adil piyasa",
+        "Adil piyasa, güvenilirlik çerçevesinin üçüncü ana unsurudur.",
+        "Adillik sorusunda 'piyasa katılımcılarına adil yaklaşım var mı?' şeklinde zihinsel kontrol yap.",
+        "Bilgi + etik + adil piyasa birlikte soruluyorsa cevap ararken üçlü çerçeveyi koru.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "5. Şeffaflık",
+        "Referansın son hafıza kartında 1001 altında şeffaflık da ayrıca vurgulanır.",
+        "Şeffaflığı doğru bilgi ve güvenilir piyasa fikriyle birlikte hatırla.",
+        "Şeffaflık sorularında bilgi akışının güvenilir piyasa hedefiyle ilişkisini düşün.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "6. Kritik ayrım: kavram mı amaç mı?",
+        "Bir soru 'hangi kavram?' diyorsa doğrudan kavramı bul.",
+        "Bir soru 'neden?' veya 'hangi amaçla?' diyorsa kavramın düzenleyici amacını düşün.",
+        "Referansın 5 adımlı soru formülü özellikle amacı ayrıca bulmayı ister.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "Bölüm sonu hızlı tekrar"
+      ],
+      "bullets": [
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "▸ GÜVEN",
+        "▸ Doğru bilgi",
+        "▸ Adil piyasa",
+        "▸ Etik",
+        "▸ Şeffaflık",
+        "Kendini test et: Bu bölümün ana şifresini kitaba bakmadan söyleyebiliyor musun?  □ Evet  □ Hayır"
+      ],
+      "traps": [
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Bilgi + Etik + Adil piyasa.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Bilgi + Etik + Adil piyasa.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Bilgi + Etik + Adil piyasa.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Bilgi + Etik + Adil piyasa.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Bilgi + Etik + Adil piyasa.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Bilgi + Etik + Adil piyasa.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz."
+      ]
+    },
+    {
+      "id": "x5_ch7",
+      "title": "ANA ŞİFRE: Ortaklık + Alacaklılık + Türev ilişki",
+      "subtitle": "",
+      "content": [
+        "1. Ana çerçeve",
+        "1003'ün ana sorusu: Hangi araç neyi temsil eder?",
+        "Üçlü sınıflandırma: ortaklık, alacaklılık, türev ilişki.",
+        "Şıklar arasında kaybolduğunda önce aracı değil, temsil ettiği ekonomik ilişkiyi düşün.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "2. Pay = ortaklık",
+        "Referansın ana hafıza kartı doğrudan 'Pay = Ortaklık' der.",
+        "Pay sorusunda ilk kelimen ortaklık olmalıdır.",
+        "Bir şık payı alacaklılık olarak tanımlıyorsa temel ayrımı kontrol et.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "3. Tahvil = alacaklılık",
+        "Referansın ana hafıza kartı 'Tahvil = Alacaklılık' şeklindedir.",
+        "Bu nedenle araç sorularında 'ortaklık mı, alacaklılık mı?' ayrımı ilk eleme filtresidir.",
+        "Pay ve tahvili yan yana çalış: Pay → Ortaklık; Tahvil → Alacaklılık.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "4. Türev ilişki",
+        "Referans 1003'ü üçüncü eksen olarak türev ilişki ile tanımlar.",
+        "Bir soruda doğrudan ortaklık veya alacaklılık yerine türev ilişki vurgusu varsa üçüncü sınıfa yönel.",
+        "Bu başlıkta sınav stratejisi: önce ana sınıfı belirle, sonra ayrıntıya geç.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "5. Futures = yükümlülük",
+        "Referansın ana hafıza kartı: Futures = Yükümlülük.",
+        "Bu ifadeyi tek başına ezber kartı olarak tekrar et.",
+        "Bir şık futures için 'hak' diyorsa referanstaki ana ayrımla çelişir.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "6. Opsiyon = hak",
+        "Referansın ana hafıza kartı: Opsiyon = Hak.",
+        "Futures ile opsiyonu çift olarak çalış: Futures → Yükümlülük; Opsiyon → Hak.",
+        "Bu ikiliyi sınavda saniyeler içinde ayırabilmek hedeflenmelidir.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "7. Üçlü harita",
+        "Pay → Ortaklık.",
+        "Tahvil → Alacaklılık.",
+        "Futures → Yükümlülük.",
+        "Opsiyon → Hak.",
+        "Bu dört satır 1003'ün son tekrar kartıdır.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "Bölüm sonu hızlı tekrar"
+      ],
+      "bullets": [
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "▸ ARAÇLARI AYIR",
+        "▸ Pay = Ortaklık",
+        "▸ Tahvil = Alacaklılık",
+        "▸ Futures = Yükümlülük",
+        "▸ Opsiyon = Hak",
+        "Kendini test et: Bu bölümün ana şifresini kitaba bakmadan söyleyebiliyor musun?  □ Evet  □ Hayır"
+      ],
+      "traps": [
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Ortaklık + Alacaklılık + Türev ilişki.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Ortaklık + Alacaklılık + Türev ilişki.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Ortaklık + Alacaklılık + Türev ilişki.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Ortaklık + Alacaklılık + Türev ilişki.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Ortaklık + Alacaklılık + Türev ilişki.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Ortaklık + Alacaklılık + Türev ilişki.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Ortaklık + Alacaklılık + Türev ilişki.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz."
+      ]
+    },
+    {
+      "id": "x5_ch8",
+      "title": "ANA ŞİFRE: Emir iletiyor + Danışmanlık veriyor + Portföy yönetiyor",
+      "subtitle": "",
+      "content": [
+        "1. Ana çerçeve",
+        "1005'te ilk soru: Yatırım kuruluşu ne yapıyor?",
+        "Referans üç fiil kullanıyor: iletiyor, öneriyor/danışmanlık veriyor, yönetiyor.",
+        "Bu nedenle soru kökünde fiili bulmak en hızlı çözüm yöntemidir.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "2. Emir iletiyor",
+        "Birinci ayrım: yatırım kuruluşu emir iletiyor mu?",
+        "Zihinsel kanca: İLETİYOR → Emir iletimi.",
+        "Soruda talimatın iletilmesi ekseni baskınsa önce bu seçeneği değerlendir.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "3. Danışmanlık veriyor",
+        "İkinci ayrım: yatırım kuruluşu danışmanlık/öneri veriyor mu?",
+        "Zihinsel kanca: ÖNERİYOR → Yatırım danışmanlığı.",
+        "İletmek ile önermek aynı fiil değildir; sınavda bu fark özellikle korunmalıdır.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "4. Portföy yönetiyor",
+        "Üçüncü ayrım: yatırım kuruluşu portföyü yönetiyor mu?",
+        "Zihinsel kanca: YÖNETİYOR → Portföy yönetimi.",
+        "Bu başlıkta 'yönetiyor' kelimesini görünce doğrudan portföy yönetimi bağlantısını kur.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "5. Üçlü fiil testi",
+        "İLETİYOR MU? → Emir iletimi.",
+        "ÖNERİYOR MU? → Yatırım danışmanlığı.",
+        "YÖNETİYOR MU? → Portföy yönetimi.",
+        "Bu üç soruyu sırayla sormak, kavramları birbirine karıştırma riskini azaltır.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "6. Soru tuzakları",
+        "Bir şıkta 'iletiyor' ile 'öneriyor' aynı şeymiş gibi sunuluyorsa dikkat.",
+        "Bir şıkta 'öneriyor' ile 'yönetiyor' aynılaştırılıyorsa dikkat.",
+        "Referansın yöntemi tanımdan önce eylemi bulmaktır: Ne yapıyor?",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "Bölüm sonu hızlı tekrar"
+      ],
+      "bullets": [
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "▸ HİZMETİ BUL",
+        "▸ İletiyor mu?",
+        "▸ Öneriyor mu?",
+        "▸ Yönetiyor mu?",
+        "Kendini test et: Bu bölümün ana şifresini kitaba bakmadan söyleyebiliyor musun?  □ Evet  □ Hayır"
+      ],
+      "traps": [
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Emir iletiyor + Danışmanlık veriyor + Portföy yönetiyor.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Emir iletiyor + Danışmanlık veriyor + Portföy yönetiyor.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Emir iletiyor + Danışmanlık veriyor + Portföy yönetiyor.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Emir iletiyor + Danışmanlık veriyor + Portföy yönetiyor.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Emir iletiyor + Danışmanlık veriyor + Portföy yönetiyor.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Emir iletiyor + Danışmanlık veriyor + Portföy yönetiyor.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz."
+      ]
+    },
+    {
+      "id": "x5_ch9",
+      "title": "ANA ŞİFRE: Mutabakat + Takas + Teslim + Saklama",
+      "subtitle": "",
+      "content": [
+        "1. Ana işlem sonrası zincir",
+        "1012'nin ana haritası: İşlem → Mutabakat → Takas → Teslim/Ödeme → Saklama.",
+        "Bu zinciri sırasıyla ezberle.",
+        "Soruda hangi aşamanın anlatıldığını bulmak için zincirdeki konumu kullan.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "2. Mutabakat",
+        "Referans işlem sonrası zincirde mutabakatı ilk aşamalardan biri olarak verir.",
+        "Mutabakatı zincirin 'kontrol/uyum' noktası olarak düşün.",
+        "Bir soru işlem kayıtlarının uyumunu veya işlemin teyit edilmesini çağrıştırıyorsa mutabakatı kontrol et.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "3. Takas",
+        "Mutabakattan sonra takas gelir.",
+        "Zihinsel kanca: Mutabakat → Takas.",
+        "İki kavramı aynılaştırma: Mutabakat takasın kendisi değildir; zincirde farklı aşamalardır.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "4. Teslim / ödeme",
+        "Referans takastan sonra teslim/ödeme aşamasını gösterir.",
+        "Zincirdeki yerini bilmek, tanımı tam hatırlamadığın sorularda bile doğru seçenekleri elemeni sağlar.",
+        "Teslim ve ödeme ikilisini zincirin sonuçlandırma bölümünde hatırla.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "5. Saklama",
+        "Referans zincirin sonunda saklamayı gösterir.",
+        "Zihinsel kanca: İşlem → Mutabakat → Takas → Teslim/Ödeme → Saklama.",
+        "Saklamayı takasla aynı kavram gibi okumamak kritik.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "6. Zarar ≠ otomatik olarak temerrüt",
+        "Referansın final çalışma kuralı kavramları ayırmayı vurgular; bu kitapta temerrüt gibi kaynakta yer almayan ayrıntılar eklenmemiştir.",
+        "Bu nedenle 1012'de sınav stratejisi zincirdeki kavramları birbirinden ayırmaya odaklanır.",
+        "AKTİF TEKRAR: Kitabı kapat ve bu başlığı tek cümleyle kendi kendine anlat.",
+        "Bölüm sonu hızlı tekrar"
+      ],
+      "bullets": [
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "□ Bu kavramı biliyorum   □ Benzer kavramdan ayırabiliyorum   □ Senaryoda tanıyabiliyorum",
+        "▸ İŞLEM SONRASI ZİNCİR",
+        "▸ İşlem → Mutabakat → Takas → Teslim/Ödeme → Saklama",
+        "Kendini test et: Bu bölümün ana şifresini kitaba bakmadan söyleyebiliyor musun?  □ Evet  □ Hayır"
+      ],
+      "traps": [
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Mutabakat + Takas + Teslim + Saklama.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Mutabakat + Takas + Teslim + Saklama.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Mutabakat + Takas + Teslim + Saklama.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Mutabakat + Takas + Teslim + Saklama.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Mutabakat + Takas + Teslim + Saklama.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz.",
+        "SINAV MERCEĞİ: Bu başlıkta önce ana çerçeveyi hatırla: Mutabakat + Takas + Teslim + Saklama.",
+        "TUZAK: Soruyu doğrudan şık ezberiyle değil; anahtar fiil, ilişki veya işlem aşamasını bulup çöz."
+      ]
+    },
+    {
+      "id": "x5_ch10",
+      "title": "BÖLÜM 5 – KARIŞTIRILAN NOKTALAR",
+      "subtitle": "",
+      "content": [
+        "Modül",
+        "Karışan",
+        "Kısa ayrım",
+        "1001",
+        "Bilgi ↔ Etik",
+        "Bilgi: doğru bilgi ekseni. Etik: davranışın etik ekseni.",
+        "1001",
+        "Adil piyasa ↔ Şeffaflık",
+        "Adil piyasa: adillik ekseni. Şeffaflık: bilgi/güvenilirlik hafıza kartındaki kavram.",
+        "1003",
+        "Pay ↔ Tahvil",
+        "Pay = Ortaklık. Tahvil = Alacaklılık.",
+        "1003",
+        "Futures ↔ Opsiyon",
+        "Futures = Yükümlülük. Opsiyon = Hak.",
+        "1005",
+        "Emir iletimi ↔ Yatırım danışmanlığı",
+        "İletiyor = emir iletimi. Öneriyor = yatırım danışmanlığı.",
+        "1005",
+        "Yatırım danışmanlığı ↔ Portföy yönetimi",
+        "Öneriyor = danışmanlık. Yönetiyor = portföy yönetimi.",
+        "1012",
+        "Mutabakat ↔ Takas",
+        "Zincirde mutabakat takastan önce gelir.",
+        "1012",
+        "Takas ↔ Teslim/Ödeme",
+        "Zincirde takastan sonra teslim/ödeme gelir.",
+        "1012",
+        "Teslim/Ödeme ↔ Saklama",
+        "Zincirde teslim/ödemeden sonra saklama gelir."
+      ],
+      "bullets": [],
+      "traps": []
+    }
+  ],
+  "drill_questions": [
+    {
+      "number": 1,
+      "module_id": "1001",
+      "text": "Piyasanın güvenilirliği hangi üçlü çerçevede düşünülür?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Piyasa nasıl güvenilir tutulur?"
+        },
+        {
+          "key": "B",
+          "text": "Yatırımcıların mutlak kâr elde etmesi"
+        },
+        {
+          "key": "C",
+          "text": "Bilgi + Etik + Adil piyasa"
+        },
+        {
+          "key": "D",
+          "text": "Kâr garantisi ve hazine teminatı"
+        },
+        {
+          "key": "E",
+          "text": "Güvenilirlik"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Bilgi + Etik + Adil piyasa.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Bilgi + Etik + Adil piyasa' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 2,
+      "module_id": "1001",
+      "text": "1001'in ana sorusu nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Doğru bilgi vurgulandığı için"
+        },
+        {
+          "key": "B",
+          "text": "Yatırımcıların mutlak kâr elde etmesi"
+        },
+        {
+          "key": "C",
+          "text": "Amacı bulmak"
+        },
+        {
+          "key": "D",
+          "text": "Piyasa nasıl güvenilir tutulur?"
+        },
+        {
+          "key": "E",
+          "text": "Borsa endeksinin sürekli yükseltilmesi"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Piyasa nasıl güvenilir tutulur?.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Piyasa nasıl güvenilir tutulur?' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 3,
+      "module_id": "1001",
+      "text": "Güvenilir piyasa çerçevesinde bilgi neden merkezîdir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Doğru bilgi vurgulandığı için"
+        },
+        {
+          "key": "B",
+          "text": "Piyasa nasıl güvenilir tutulur?"
+        },
+        {
+          "key": "C",
+          "text": "Serbest piyasa faiz serbestisi"
+        },
+        {
+          "key": "D",
+          "text": "Doğru bilgi, adil piyasa, etik, şeffaflık"
+        },
+        {
+          "key": "E",
+          "text": "Banka kredi hacminin genişletilmesi"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Doğru bilgi vurgulandığı için.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Doğru bilgi vurgulandığı için' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 4,
+      "module_id": "1001",
+      "text": "Etik hangi genel hedefle birlikte düşünülür?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hayır; bilgi ve adil piyasa ile birlikte"
+        },
+        {
+          "key": "B",
+          "text": "Güvenilirlik"
+        },
+        {
+          "key": "C",
+          "text": "Güvenilir piyasa"
+        },
+        {
+          "key": "D",
+          "text": "Yatırımcıların mutlak kâr elde etmesi"
+        },
+        {
+          "key": "E",
+          "text": "Yanlışın türünü sınıflandırmak"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Güvenilir piyasa.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Güvenilir piyasa' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 5,
+      "module_id": "1001",
+      "text": "Adil piyasa hangi ana başlık altında yer alır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yatırımcıların mutlak kâr elde etmesi"
+        },
+        {
+          "key": "B",
+          "text": "Güvenilirlik"
+        },
+        {
+          "key": "C",
+          "text": "Bilgi + Etik + Adil piyasa"
+        },
+        {
+          "key": "D",
+          "text": "1001"
+        },
+        {
+          "key": "E",
+          "text": "Kamu borçlanmasının fonlanması"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru Cevap: B) Güvenilirlik.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Güvenilirlik' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 6,
+      "module_id": "1001",
+      "text": "1001 son hafıza kartında hangi kavram ayrıca vurgulanır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kamu borçlanmasının fonlanması"
+        },
+        {
+          "key": "B",
+          "text": "Bilgi + Etik + Adil piyasa"
+        },
+        {
+          "key": "C",
+          "text": "Şeffaflık"
+        },
+        {
+          "key": "D",
+          "text": "Borsa endeksinin sürekli yükseltilmesi"
+        },
+        {
+          "key": "E",
+          "text": "Serbest piyasa faiz serbestisi"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Şeffaflık.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Şeffaflık' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 7,
+      "module_id": "1001",
+      "text": "Soruda 'neden?' geçiyorsa 5 adımlı formülde hangi adım öne çıkar?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sorunun ana konusu"
+        },
+        {
+          "key": "B",
+          "text": "Şeffaflık"
+        },
+        {
+          "key": "C",
+          "text": "Piyasa nasıl güvenilir tutulur?"
+        },
+        {
+          "key": "D",
+          "text": "Referans 5 adımın içinde amacı ayrıca bulmayı ister"
+        },
+        {
+          "key": "E",
+          "text": "Amacı bul"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Amacı bul.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Amacı bul' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 8,
+      "module_id": "1001",
+      "text": "Soruda önce ne belirlenmelidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sorunun ana konusu"
+        },
+        {
+          "key": "B",
+          "text": "Yatırımcıların mutlak kâr elde etmesi"
+        },
+        {
+          "key": "C",
+          "text": "Borsa endeksinin sürekli yükseltilmesi"
+        },
+        {
+          "key": "D",
+          "text": "Vergi muafiyeti ve teşvik sistemi"
+        },
+        {
+          "key": "E",
+          "text": "Bilgi + Etik + Adil piyasa"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Sorunun ana konusu.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Sorunun ana konusu' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 9,
+      "module_id": "1001",
+      "text": "İkinci adım nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tarafları belirlemek"
+        },
+        {
+          "key": "B",
+          "text": "1001"
+        },
+        {
+          "key": "C",
+          "text": "Amacı bulmak"
+        },
+        {
+          "key": "D",
+          "text": "Bilgi + Etik + Adil piyasa"
+        },
+        {
+          "key": "E",
+          "text": "Sadece kurumsal yatırımcıların korunması"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Tarafları belirlemek.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Tarafları belirlemek' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 10,
+      "module_id": "1001",
+      "text": "Üçüncü adım nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bilgi + Etik + Adil piyasa"
+        },
+        {
+          "key": "B",
+          "text": "Tarafları belirlemek"
+        },
+        {
+          "key": "C",
+          "text": "Kamu borçlanmasının fonlanması"
+        },
+        {
+          "key": "D",
+          "text": "İşlemi belirlemek"
+        },
+        {
+          "key": "E",
+          "text": "Hayır; bilgi ve adil piyasa ile birlikte"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) İşlemi belirlemek.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'İşlemi belirlemek' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 11,
+      "module_id": "1001",
+      "text": "Dördüncü adım nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1001"
+        },
+        {
+          "key": "B",
+          "text": "Kamu borçlanmasının fonlanması"
+        },
+        {
+          "key": "C",
+          "text": "Doğru bilgi vurgulandığı için"
+        },
+        {
+          "key": "D",
+          "text": "Amacı bulmak"
+        },
+        {
+          "key": "E",
+          "text": "Banka kredi hacminin genişletilmesi"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Amacı bulmak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Amacı bulmak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 12,
+      "module_id": "1001",
+      "text": "Beşinci adım nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bilgi + Etik + Adil piyasa"
+        },
+        {
+          "key": "B",
+          "text": "Banka kredi hacminin genişletilmesi"
+        },
+        {
+          "key": "C",
+          "text": "Hayır; bilgi ve adil piyasa ile birlikte"
+        },
+        {
+          "key": "D",
+          "text": "Benzer kavramı bulmak"
+        },
+        {
+          "key": "E",
+          "text": "Doğru bilgi, adil piyasa, etik, şeffaflık"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Benzer kavramı bulmak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Benzer kavramı bulmak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 13,
+      "module_id": "1001",
+      "text": "1001'de güvenilirlik için etik tek başına mı düşünülür?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bilgi + Etik + Adil piyasa"
+        },
+        {
+          "key": "B",
+          "text": "Hayır; bilgi ve adil piyasa ile birlikte"
+        },
+        {
+          "key": "C",
+          "text": "Piyasa nasıl güvenilir tutulur?"
+        },
+        {
+          "key": "D",
+          "text": "1001"
+        },
+        {
+          "key": "E",
+          "text": "Tarafları belirlemek"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru Cevap: B) Hayır; bilgi ve adil piyasa ile birlikte.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Hayır; bilgi ve adil piyasa ile birlikte' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 14,
+      "module_id": "1001",
+      "text": "Bilgi + Etik + Adil piyasa hangi modülün ana şifresidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yatırımcıların mutlak kâr elde etmesi"
+        },
+        {
+          "key": "B",
+          "text": "Sorunun ana konusu"
+        },
+        {
+          "key": "C",
+          "text": "İşlemi belirlemek"
+        },
+        {
+          "key": "D",
+          "text": "Hayır; bilgi ve adil piyasa ile birlikte"
+        },
+        {
+          "key": "E",
+          "text": "1001"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) 1001.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: '1001' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 15,
+      "module_id": "1001",
+      "text": "Şeffaflık hangi modülün son hafıza kartında yer alır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yanlışın türünü sınıflandırmak"
+        },
+        {
+          "key": "B",
+          "text": "Doğru bilgi, adil piyasa, etik, şeffaflık"
+        },
+        {
+          "key": "C",
+          "text": "1001"
+        },
+        {
+          "key": "D",
+          "text": "Güvenilirlik"
+        },
+        {
+          "key": "E",
+          "text": "Doğru bilgi vurgulandığı için"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) 1001.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: '1001' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 16,
+      "module_id": "1001",
+      "text": "Soru iki benzer kavram arasında seçim yaptırıyorsa hangi strateji uygulanır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kâr garantisi ve hazine teminatı"
+        },
+        {
+          "key": "B",
+          "text": "Amacı bul"
+        },
+        {
+          "key": "C",
+          "text": "Benzer kavramı bulup ayrımı kurmak"
+        },
+        {
+          "key": "D",
+          "text": "Güvenilir piyasa"
+        },
+        {
+          "key": "E",
+          "text": "Bilgi + Etik + Adil piyasa"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Benzer kavramı bulup ayrımı kurmak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Benzer kavramı bulup ayrımı kurmak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 17,
+      "module_id": "1001",
+      "text": "1001'de 'güven' kelimesi hangi kavramlarla eşleştirilir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Doğru bilgi vurgulandığı için"
+        },
+        {
+          "key": "B",
+          "text": "Amacı bulmak"
+        },
+        {
+          "key": "C",
+          "text": "Borsa endeksinin sürekli yükseltilmesi"
+        },
+        {
+          "key": "D",
+          "text": "Güvenilir piyasa"
+        },
+        {
+          "key": "E",
+          "text": "Doğru bilgi, adil piyasa, etik, şeffaflık"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Doğru bilgi, adil piyasa, etik, şeffaflık.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Doğru bilgi, adil piyasa, etik, şeffaflık' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 18,
+      "module_id": "1001",
+      "text": "Bir soruda amaç bulunmadan doğrudan şık seçmek neden risklidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Benzer kavramı bulup ayrımı kurmak"
+        },
+        {
+          "key": "B",
+          "text": "Tarafları belirlemek"
+        },
+        {
+          "key": "C",
+          "text": "Serbest piyasa faiz serbestisi"
+        },
+        {
+          "key": "D",
+          "text": "Benzer kavramı bulmak"
+        },
+        {
+          "key": "E",
+          "text": "Referans 5 adımın içinde amacı ayrıca bulmayı ister"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Referans 5 adımın içinde amacı ayrıca bulmayı ister.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Referans 5 adımın içinde amacı ayrıca bulmayı ister' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 19,
+      "module_id": "1001",
+      "text": "Bilgi, etik ve adil piyasa birlikte verilmişse hangi çerçeve hatırlanmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sorunun ana konusu"
+        },
+        {
+          "key": "B",
+          "text": "Benzer kavramı bulup ayrımı kurmak"
+        },
+        {
+          "key": "C",
+          "text": "1001"
+        },
+        {
+          "key": "D",
+          "text": "Piyasa nasıl güvenilir tutulur?"
+        },
+        {
+          "key": "E",
+          "text": "Tarafları belirlemek"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) 1001.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: '1001' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 20,
+      "module_id": "1001",
+      "text": "Yanlış yapılan sorunun yalnızca cevabına bakmak yerine ne yapılmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1001"
+        },
+        {
+          "key": "B",
+          "text": "Yanlışın türünü sınıflandırmak"
+        },
+        {
+          "key": "C",
+          "text": "Amacı bul"
+        },
+        {
+          "key": "D",
+          "text": "Vergi muafiyeti ve teşvik sistemi"
+        },
+        {
+          "key": "E",
+          "text": "Benzer kavramı bulup ayrımı kurmak"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru Cevap: B) Yanlışın türünü sınıflandırmak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1001 için kritik referans kavramdır. Doğru eşleşme: 'Yanlışın türünü sınıflandırmak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 21,
+      "module_id": "1003",
+      "text": "1003'ün ana sorusu nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hangi araç neyi temsil eder?"
+        },
+        {
+          "key": "B",
+          "text": "Ortaklık + Alacaklılık + Türev ilişki"
+        },
+        {
+          "key": "C",
+          "text": "Tasfiye önceliği olmaksızın temettü"
+        },
+        {
+          "key": "D",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        },
+        {
+          "key": "E",
+          "text": "Hak"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Hangi araç neyi temsil eder?.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Hangi araç neyi temsil eder?' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 22,
+      "module_id": "1003",
+      "text": "1003'ün üçlü ana sınıflandırması nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kısa vadeli likidite fonlaması"
+        },
+        {
+          "key": "B",
+          "text": "Ortaklık + Alacaklılık + Türev ilişki"
+        },
+        {
+          "key": "C",
+          "text": "Alacaklılık"
+        },
+        {
+          "key": "D",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        },
+        {
+          "key": "E",
+          "text": "Sadece nakit temettü hakkı"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru Cevap: B) Ortaklık + Alacaklılık + Türev ilişki.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Ortaklık + Alacaklılık + Türev ilişki' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 23,
+      "module_id": "1003",
+      "text": "Pay neyi temsil eder?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ortaklık"
+        },
+        {
+          "key": "B",
+          "text": "Kısa vadeli likidite fonlaması"
+        },
+        {
+          "key": "C",
+          "text": "Ortaklık + Alacaklılık + Türev ilişki"
+        },
+        {
+          "key": "D",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        },
+        {
+          "key": "E",
+          "text": "Döviz swap sözleşmesi"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Ortaklık.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Ortaklık' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 24,
+      "module_id": "1003",
+      "text": "Tahvil neyi temsil eder?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kambiyo kuru sabitlemesi"
+        },
+        {
+          "key": "B",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        },
+        {
+          "key": "C",
+          "text": "Sadece nakit temettü hakkı"
+        },
+        {
+          "key": "D",
+          "text": "Ortaklık"
+        },
+        {
+          "key": "E",
+          "text": "Alacaklılık"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Alacaklılık.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Alacaklılık' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 25,
+      "module_id": "1003",
+      "text": "Futures'ın ana hafıza karşılığı nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        },
+        {
+          "key": "B",
+          "text": "Sadece nakit temettü hakkı"
+        },
+        {
+          "key": "C",
+          "text": "Karışan iki kavram yan yana tekrar edilmeli"
+        },
+        {
+          "key": "D",
+          "text": "Yükümlülük"
+        },
+        {
+          "key": "E",
+          "text": "Rüçhan hakkı kısıtlaması"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Yükümlülük.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Yükümlülük' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 26,
+      "module_id": "1003",
+      "text": "Opsiyonun ana hafıza karşılığı nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hak"
+        },
+        {
+          "key": "B",
+          "text": "Kambiyo kuru sabitlemesi"
+        },
+        {
+          "key": "C",
+          "text": "Süresiz devlet garantili getiri"
+        },
+        {
+          "key": "D",
+          "text": "1003 araç sınıflandırması"
+        },
+        {
+          "key": "E",
+          "text": "Rüçhan hakkı kısıtlaması"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Hak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Hak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 27,
+      "module_id": "1003",
+      "text": "Pay ile tahvili ayıran ilk filtre nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kısa vadeli likidite fonlaması"
+        },
+        {
+          "key": "B",
+          "text": "Aracın temsil ettiği ilişki"
+        },
+        {
+          "key": "C",
+          "text": "Ortaklık mı, alacaklılık mı?"
+        },
+        {
+          "key": "D",
+          "text": "Ortaklık + Alacaklılık + Türev ilişki"
+        },
+        {
+          "key": "E",
+          "text": "Futures ile karıştırılıp karıştırılmadığı kontrol edilmeli"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Ortaklık mı, alacaklılık mı?.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Ortaklık mı, alacaklılık mı?' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 28,
+      "module_id": "1003",
+      "text": "Futures ile opsiyonu ayıran ana filtre nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aracın temsil ettiği ilişki"
+        },
+        {
+          "key": "B",
+          "text": "Kısa vadeli likidite fonlaması"
+        },
+        {
+          "key": "C",
+          "text": "Yükümlülük"
+        },
+        {
+          "key": "D",
+          "text": "Tasfiye önceliği olmaksızın temettü"
+        },
+        {
+          "key": "E",
+          "text": "Yükümlülük mü, hak mı?"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Yükümlülük mü, hak mı?.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Yükümlülük mü, hak mı?' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 29,
+      "module_id": "1003",
+      "text": "1003'te araçtan önce ne düşünülmelidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kredi faiz indirim hakkı"
+        },
+        {
+          "key": "B",
+          "text": "Alacaklılık"
+        },
+        {
+          "key": "C",
+          "text": "Kambiyo kuru sabitlemesi"
+        },
+        {
+          "key": "D",
+          "text": "Yükümlülük"
+        },
+        {
+          "key": "E",
+          "text": "Aracın temsil ettiği ilişki"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Aracın temsil ettiği ilişki.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Aracın temsil ettiği ilişki' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 30,
+      "module_id": "1003",
+      "text": "Ortaklık hangi ana sınıfa aittir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ortaklık"
+        },
+        {
+          "key": "B",
+          "text": "Yükümlülük"
+        },
+        {
+          "key": "C",
+          "text": "1003 araç sınıflandırması"
+        },
+        {
+          "key": "D",
+          "text": "Karışan iki kavram yan yana tekrar edilmeli"
+        },
+        {
+          "key": "E",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) 1003 araç sınıflandırması.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: '1003 araç sınıflandırması' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 31,
+      "module_id": "1003",
+      "text": "Alacaklılık hangi ana sınıfa aittir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Süresiz devlet garantili getiri"
+        },
+        {
+          "key": "B",
+          "text": "1003 araç sınıflandırması"
+        },
+        {
+          "key": "C",
+          "text": "Alacaklılık"
+        },
+        {
+          "key": "D",
+          "text": "Kambiyo kuru sabitlemesi"
+        },
+        {
+          "key": "E",
+          "text": "Kısa vadeli likidite fonlaması"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru Cevap: B) 1003 araç sınıflandırması.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: '1003 araç sınıflandırması' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 32,
+      "module_id": "1003",
+      "text": "Türev ilişki 1003'te kaç ana eksenden biridir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Süresiz devlet garantili getiri"
+        },
+        {
+          "key": "B",
+          "text": "Pay-ortaklık; tahvil-alacaklılık; futures-yükümlülük; opsiyon-hak"
+        },
+        {
+          "key": "C",
+          "text": "Üç eksenden biri"
+        },
+        {
+          "key": "D",
+          "text": "Karışan iki kavram yan yana tekrar edilmeli"
+        },
+        {
+          "key": "E",
+          "text": "Yükümlülük mü, hak mı?"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Üç eksenden biri.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Üç eksenden biri' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 33,
+      "module_id": "1003",
+      "text": "Pay = ?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kısa vadeli likidite fonlaması"
+        },
+        {
+          "key": "B",
+          "text": "Rüçhan hakkı kısıtlaması"
+        },
+        {
+          "key": "C",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        },
+        {
+          "key": "D",
+          "text": "Ortaklık mı, alacaklılık mı?"
+        },
+        {
+          "key": "E",
+          "text": "Ortaklık"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Ortaklık.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Ortaklık' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 34,
+      "module_id": "1003",
+      "text": "Tahvil = ?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1003 araç sınıflandırması"
+        },
+        {
+          "key": "B",
+          "text": "Kambiyo kuru sabitlemesi"
+        },
+        {
+          "key": "C",
+          "text": "Tasfiye önceliği olmaksızın temettü"
+        },
+        {
+          "key": "D",
+          "text": "Alacaklılık"
+        },
+        {
+          "key": "E",
+          "text": "Ortaklık mı, alacaklılık mı?"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Alacaklılık.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Alacaklılık' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 35,
+      "module_id": "1003",
+      "text": "Futures = ?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yükümlülük"
+        },
+        {
+          "key": "B",
+          "text": "Hak"
+        },
+        {
+          "key": "C",
+          "text": "Pay-ortaklık; tahvil-alacaklılık; futures-yükümlülük; opsiyon-hak"
+        },
+        {
+          "key": "D",
+          "text": "Döviz swap sözleşmesi"
+        },
+        {
+          "key": "E",
+          "text": "Tasfiye önceliği olmaksızın temettü"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Yükümlülük.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Yükümlülük' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 36,
+      "module_id": "1003",
+      "text": "Opsiyon = ?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kısa vadeli likidite fonlaması"
+        },
+        {
+          "key": "B",
+          "text": "Süresiz devlet garantili getiri"
+        },
+        {
+          "key": "C",
+          "text": "Hak"
+        },
+        {
+          "key": "D",
+          "text": "Yükümlülük"
+        },
+        {
+          "key": "E",
+          "text": "Yükümlülük mü, hak mı?"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Hak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Hak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 37,
+      "module_id": "1003",
+      "text": "Bir şık 'pay = alacaklılık' diyorsa ne yapılmalı?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        },
+        {
+          "key": "B",
+          "text": "Ortaklık"
+        },
+        {
+          "key": "C",
+          "text": "Yükümlülük"
+        },
+        {
+          "key": "D",
+          "text": "Kısa vadeli likidite fonlaması"
+        },
+        {
+          "key": "E",
+          "text": "Karışan iki kavram yan yana tekrar edilmeli"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Temel hafıza kartıyla karşılaştırılmalı.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Temel hafıza kartıyla karşılaştırılmalı' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 38,
+      "module_id": "1003",
+      "text": "Bir şık 'opsiyon = yükümlülük' diyorsa ne yapılmalı?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kısa vadeli likidite fonlaması"
+        },
+        {
+          "key": "B",
+          "text": "Aracın temsil ettiği ilişki"
+        },
+        {
+          "key": "C",
+          "text": "Futures ile karıştırılıp karıştırılmadığı kontrol edilmeli"
+        },
+        {
+          "key": "D",
+          "text": "Pay-ortaklık; tahvil-alacaklılık; futures-yükümlülük; opsiyon-hak"
+        },
+        {
+          "key": "E",
+          "text": "Alacaklılık"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Futures ile karıştırılıp karıştırılmadığı kontrol edilmeli.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Futures ile karıştırılıp karıştırılmadığı kontrol edilmeli' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 39,
+      "module_id": "1003",
+      "text": "1003 için son tekrarın dört satırı nelerdir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sadece nakit temettü hakkı"
+        },
+        {
+          "key": "B",
+          "text": "Rüçhan hakkı kısıtlaması"
+        },
+        {
+          "key": "C",
+          "text": "Karışan iki kavram yan yana tekrar edilmeli"
+        },
+        {
+          "key": "D",
+          "text": "Pay-ortaklık; tahvil-alacaklılık; futures-yükümlülük; opsiyon-hak"
+        },
+        {
+          "key": "E",
+          "text": "Tasfiye önceliği olmaksızın temettü"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Pay-ortaklık; tahvil-alacaklılık; futures-yükümlülük; opsiyon-hak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Pay-ortaklık; tahvil-alacaklılık; futures-yükümlülük; opsiyon-hak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 40,
+      "module_id": "1003",
+      "text": "Yanlış cevapta kavram karışıklığı varsa ne yapılmalı?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1003 araç sınıflandırması"
+        },
+        {
+          "key": "B",
+          "text": "Temel hafıza kartıyla karşılaştırılmalı"
+        },
+        {
+          "key": "C",
+          "text": "Kredi faiz indirim hakkı"
+        },
+        {
+          "key": "D",
+          "text": "Yükümlülük mü, hak mı?"
+        },
+        {
+          "key": "E",
+          "text": "Karışan iki kavram yan yana tekrar edilmeli"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Karışan iki kavram yan yana tekrar edilmeli.\nX5 Sınav Motoru Analizi: Bu soru Modül 1003 için kritik referans kavramdır. Doğru eşleşme: 'Karışan iki kavram yan yana tekrar edilmeli' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 41,
+      "module_id": "1005",
+      "text": "1005'in ana sorusu nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yatırım kuruluşu ne yapıyor?"
+        },
+        {
+          "key": "B",
+          "text": "Hazine ihalesi düzenleme"
+        },
+        {
+          "key": "C",
+          "text": "Sorunun asıl faaliyetini ve amacını ayırmak"
+        },
+        {
+          "key": "D",
+          "text": "Kredi derecelendirme onayı"
+        },
+        {
+          "key": "E",
+          "text": "Modülün ana çerçevesidir"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Yatırım kuruluşu ne yapıyor?.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Yatırım kuruluşu ne yapıyor?' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 42,
+      "module_id": "1005",
+      "text": "1005'in üç ana hizmet fiili nelerdir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yatırım danışmanlığı"
+        },
+        {
+          "key": "B",
+          "text": "Modülün ana çerçevesidir"
+        },
+        {
+          "key": "C",
+          "text": "İletiyor + öneriyor/danışmanlık veriyor + yönetiyor"
+        },
+        {
+          "key": "D",
+          "text": "Fiili bulmak"
+        },
+        {
+          "key": "E",
+          "text": "Referans üç faaliyeti ayrı ayrı tanımlar"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) İletiyor + öneriyor/danışmanlık veriyor + yönetiyor.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'İletiyor + öneriyor/danışmanlık veriyor + yönetiyor' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 43,
+      "module_id": "1005",
+      "text": "İLETİYOR hangi hizmete bağlanır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yatırım danışmanlığı"
+        },
+        {
+          "key": "B",
+          "text": "1005"
+        },
+        {
+          "key": "C",
+          "text": "Kuruluşun yaptığı iş"
+        },
+        {
+          "key": "D",
+          "text": "Emir iletimi"
+        },
+        {
+          "key": "E",
+          "text": "Doğrudan vergi tahsilatı"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Emir iletimi.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Emir iletimi' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 44,
+      "module_id": "1005",
+      "text": "ÖNERİYOR hangi hizmete bağlanır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "İletiyor + öneriyor/danışmanlık veriyor + yönetiyor"
+        },
+        {
+          "key": "B",
+          "text": "Kredi derecelendirme onayı"
+        },
+        {
+          "key": "C",
+          "text": "Modülün ana çerçevesidir"
+        },
+        {
+          "key": "D",
+          "text": "Yatırım danışmanlığı"
+        },
+        {
+          "key": "E",
+          "text": "Kavram karışıklığı"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Yatırım danışmanlığı.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Yatırım danışmanlığı' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 45,
+      "module_id": "1005",
+      "text": "YÖNETİYOR hangi hizmete bağlanır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Önermek ve yönetmek fiillerine bakılır"
+        },
+        {
+          "key": "B",
+          "text": "İletiyor / öneriyor / yönetiyor"
+        },
+        {
+          "key": "C",
+          "text": "Portföy yönetimi"
+        },
+        {
+          "key": "D",
+          "text": "Doğrudan vergi tahsilatı"
+        },
+        {
+          "key": "E",
+          "text": "Modülün ana çerçevesidir"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Portföy yönetimi.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Portföy yönetimi' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 46,
+      "module_id": "1005",
+      "text": "Emir iletimi ile yatırım danışmanlığı nasıl ayrılır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "İletmek ve önermek fiillerine bakılır"
+        },
+        {
+          "key": "B",
+          "text": "İletiyor + öneriyor/danışmanlık veriyor + yönetiyor"
+        },
+        {
+          "key": "C",
+          "text": "Hazine ihalesi düzenleme"
+        },
+        {
+          "key": "D",
+          "text": "İletiyor / öneriyor / yönetiyor"
+        },
+        {
+          "key": "E",
+          "text": "Faktoring ve alacak tahsili"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) İletmek ve önermek fiillerine bakılır.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'İletmek ve önermek fiillerine bakılır' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 47,
+      "module_id": "1005",
+      "text": "Yatırım danışmanlığı ile portföy yönetimi nasıl ayrılır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "İletmek ve önermek fiillerine bakılır"
+        },
+        {
+          "key": "B",
+          "text": "Kredi derecelendirme onayı"
+        },
+        {
+          "key": "C",
+          "text": "Sigorta poliçesi tanzimi"
+        },
+        {
+          "key": "D",
+          "text": "Önermek ve yönetmek fiillerine bakılır"
+        },
+        {
+          "key": "E",
+          "text": "Yatırım kuruluşu ne yapıyor?"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Önermek ve yönetmek fiillerine bakılır.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Önermek ve yönetmek fiillerine bakılır' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 48,
+      "module_id": "1005",
+      "text": "1005'te en hızlı çözüm yöntemi nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Banka mevduat kabul faaliyeti"
+        },
+        {
+          "key": "B",
+          "text": "1005"
+        },
+        {
+          "key": "C",
+          "text": "Zorunlu karşılık yönetimi"
+        },
+        {
+          "key": "D",
+          "text": "Hazine ihalesi düzenleme"
+        },
+        {
+          "key": "E",
+          "text": "Fiili bulmak"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Fiili bulmak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Fiili bulmak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 49,
+      "module_id": "1005",
+      "text": "Soruda 'iletiyor' ifadesi baskınsa hangi seçenek kontrol edilir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kavram karışıklığı"
+        },
+        {
+          "key": "B",
+          "text": "Portföy yönetimi"
+        },
+        {
+          "key": "C",
+          "text": "Emir iletimi"
+        },
+        {
+          "key": "D",
+          "text": "İletiyor + öneriyor/danışmanlık veriyor + yönetiyor"
+        },
+        {
+          "key": "E",
+          "text": "İletmek ve önermek fiillerine bakılır"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Emir iletimi.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Emir iletimi' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 50,
+      "module_id": "1005",
+      "text": "Soruda 'öneriyor' ifadesi baskınsa hangi seçenek kontrol edilir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kredi derecelendirme onayı"
+        },
+        {
+          "key": "B",
+          "text": "Banka mevduat kabul faaliyeti"
+        },
+        {
+          "key": "C",
+          "text": "Sorunun asıl faaliyetini ve amacını ayırmak"
+        },
+        {
+          "key": "D",
+          "text": "Emir iletimi"
+        },
+        {
+          "key": "E",
+          "text": "Yatırım danışmanlığı"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Yatırım danışmanlığı.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Yatırım danışmanlığı' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 51,
+      "module_id": "1005",
+      "text": "Soruda 'yönetiyor' ifadesi baskınsa hangi seçenek kontrol edilir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Zorunlu karşılık yönetimi"
+        },
+        {
+          "key": "B",
+          "text": "Faktoring ve alacak tahsili"
+        },
+        {
+          "key": "C",
+          "text": "Önermek ve yönetmek fiillerine bakılır"
+        },
+        {
+          "key": "D",
+          "text": "Yatırım danışmanlığı"
+        },
+        {
+          "key": "E",
+          "text": "Portföy yönetimi"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Portföy yönetimi.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Portföy yönetimi' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 52,
+      "module_id": "1005",
+      "text": "1005'te kavramı bulmadan önce ne belirlenir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Önermek ve yönetmek fiillerine bakılır"
+        },
+        {
+          "key": "B",
+          "text": "Emir iletimi"
+        },
+        {
+          "key": "C",
+          "text": "İletiyor + öneriyor/danışmanlık veriyor + yönetiyor"
+        },
+        {
+          "key": "D",
+          "text": "Banka mevduat kabul faaliyeti"
+        },
+        {
+          "key": "E",
+          "text": "Kuruluşun yaptığı iş"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Kuruluşun yaptığı iş.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Kuruluşun yaptığı iş' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 53,
+      "module_id": "1005",
+      "text": "İletiyor mu? sorusu hangi modülün stratejisidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Referans üç faaliyeti ayrı ayrı tanımlar"
+        },
+        {
+          "key": "B",
+          "text": "Emir iletimi"
+        },
+        {
+          "key": "C",
+          "text": "1005"
+        },
+        {
+          "key": "D",
+          "text": "Kuruluşun yaptığı iş"
+        },
+        {
+          "key": "E",
+          "text": "Doğrudan vergi tahsilatı"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) 1005.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: '1005' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 54,
+      "module_id": "1005",
+      "text": "Öneriyor mu? sorusu hangi modülün stratejisidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1005"
+        },
+        {
+          "key": "B",
+          "text": "Hazine ihalesi düzenleme"
+        },
+        {
+          "key": "C",
+          "text": "İletmek ve önermek fiillerine bakılır"
+        },
+        {
+          "key": "D",
+          "text": "Modülün ana çerçevesidir"
+        },
+        {
+          "key": "E",
+          "text": "Kuruluşun yaptığı iş"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) 1005.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: '1005' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 55,
+      "module_id": "1005",
+      "text": "Yönetiyor mu? sorusu hangi modülün stratejisidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sorunun asıl faaliyetini ve amacını ayırmak"
+        },
+        {
+          "key": "B",
+          "text": "Faktoring ve alacak tahsili"
+        },
+        {
+          "key": "C",
+          "text": "1005"
+        },
+        {
+          "key": "D",
+          "text": "Hazine ihalesi düzenleme"
+        },
+        {
+          "key": "E",
+          "text": "Doğrudan vergi tahsilatı"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) 1005.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: '1005' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 56,
+      "module_id": "1005",
+      "text": "Bir soru aynı anda iki fiil içeriyorsa ne yapılmalı?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hazine ihalesi düzenleme"
+        },
+        {
+          "key": "B",
+          "text": "Kredi derecelendirme onayı"
+        },
+        {
+          "key": "C",
+          "text": "Kavram karışıklığı"
+        },
+        {
+          "key": "D",
+          "text": "Sorunun asıl faaliyetini ve amacını ayırmak"
+        },
+        {
+          "key": "E",
+          "text": "1005"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Sorunun asıl faaliyetini ve amacını ayırmak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Sorunun asıl faaliyetini ve amacını ayırmak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 57,
+      "module_id": "1005",
+      "text": "1005'in üçlü hafıza kartı nasıl özetlenir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sorunun asıl faaliyetini ve amacını ayırmak"
+        },
+        {
+          "key": "B",
+          "text": "Banka mevduat kabul faaliyeti"
+        },
+        {
+          "key": "C",
+          "text": "İletiyor / öneriyor / yönetiyor"
+        },
+        {
+          "key": "D",
+          "text": "Modülün ana çerçevesidir"
+        },
+        {
+          "key": "E",
+          "text": "Önermek ve yönetmek fiillerine bakılır"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) İletiyor / öneriyor / yönetiyor.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'İletiyor / öneriyor / yönetiyor' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 58,
+      "module_id": "1005",
+      "text": "Bir kavramı başka bir kavramla aynılaştıran şık neden şüphelidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Modülün ana çerçevesidir"
+        },
+        {
+          "key": "B",
+          "text": "Emir iletimi"
+        },
+        {
+          "key": "C",
+          "text": "Referans üç faaliyeti ayrı ayrı tanımlar"
+        },
+        {
+          "key": "D",
+          "text": "Kavram karışıklığı"
+        },
+        {
+          "key": "E",
+          "text": "Merkez Bankası açık piyasa işlemi"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Referans üç faaliyeti ayrı ayrı tanımlar.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Referans üç faaliyeti ayrı ayrı tanımlar' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 59,
+      "module_id": "1005",
+      "text": "1005 sorularında 'ne yapıyor?' sorusu neden önemlidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "İletiyor / öneriyor / yönetiyor"
+        },
+        {
+          "key": "B",
+          "text": "Referans üç faaliyeti ayrı ayrı tanımlar"
+        },
+        {
+          "key": "C",
+          "text": "Modülün ana çerçevesidir"
+        },
+        {
+          "key": "D",
+          "text": "Önermek ve yönetmek fiillerine bakılır"
+        },
+        {
+          "key": "E",
+          "text": "Portföy yönetimi"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Modülün ana çerçevesidir.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Modülün ana çerçevesidir' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 60,
+      "module_id": "1005",
+      "text": "Yanlış cevap hizmet karışıklığından kaynaklandıysa hangi hata türüdür?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hazine ihalesi düzenleme"
+        },
+        {
+          "key": "B",
+          "text": "Kavram karışıklığı"
+        },
+        {
+          "key": "C",
+          "text": "Emir iletimi"
+        },
+        {
+          "key": "D",
+          "text": "Modülün ana çerçevesidir"
+        },
+        {
+          "key": "E",
+          "text": "Fiili bulmak"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru Cevap: B) Kavram karışıklığı.\nX5 Sınav Motoru Analizi: Bu soru Modül 1005 için kritik referans kavramdır. Doğru eşleşme: 'Kavram karışıklığı' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 61,
+      "module_id": "1012",
+      "text": "1012'nin ana sorusu nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Zincirdeki konumlarını karşılaştırmak"
+        },
+        {
+          "key": "B",
+          "text": "Şirket genel kurul toplantısının yapılması"
+        },
+        {
+          "key": "C",
+          "text": "Finansal tabloların denetimi"
+        },
+        {
+          "key": "D",
+          "text": "İşlemden sonra ne oluyor?"
+        },
+        {
+          "key": "E",
+          "text": "Emirlerin borsa ekranına iletilmesi"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) İşlemden sonra ne oluyor?.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'İşlemden sonra ne oluyor?' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 62,
+      "module_id": "1012",
+      "text": "1012 işlem sonrası zinciri nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "İşlem"
+        },
+        {
+          "key": "B",
+          "text": "Takas"
+        },
+        {
+          "key": "C",
+          "text": "İşlem → Mutabakat → Takas → Teslim/Ödeme → Saklama"
+        },
+        {
+          "key": "D",
+          "text": "İşlemden sonra ne oluyor?"
+        },
+        {
+          "key": "E",
+          "text": "İşlem sonrası zinciri"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) İşlem → Mutabakat → Takas → Teslim/Ödeme → Saklama.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'İşlem → Mutabakat → Takas → Teslim/Ödeme → Saklama' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 63,
+      "module_id": "1012",
+      "text": "İşlemden sonra hangi aşama gelir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Şirket genel kurul toplantısının yapılması"
+        },
+        {
+          "key": "B",
+          "text": "Teslim/Ödeme"
+        },
+        {
+          "key": "C",
+          "text": "İşlem sonrası zinciri"
+        },
+        {
+          "key": "D",
+          "text": "Mutabakat"
+        },
+        {
+          "key": "E",
+          "text": "İşlemden sonra ne oluyor?"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Mutabakat.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Mutabakat' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 64,
+      "module_id": "1012",
+      "text": "Mutabakattan sonra hangi aşama gelir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yatırımcı risk anketinin yapılması"
+        },
+        {
+          "key": "B",
+          "text": "Mutabakat + Takas + Teslim + Saklama"
+        },
+        {
+          "key": "C",
+          "text": "Saklama"
+        },
+        {
+          "key": "D",
+          "text": "Takas"
+        },
+        {
+          "key": "E",
+          "text": "Kredi faiz oranlarının tespiti"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) Takas.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Takas' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 65,
+      "module_id": "1012",
+      "text": "Takasın ardından hangi aşama gösterilir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hayır; zincirde farklı aşamalardır"
+        },
+        {
+          "key": "B",
+          "text": "İşlemden sonra ne oluyor?"
+        },
+        {
+          "key": "C",
+          "text": "Teslim/Ödeme"
+        },
+        {
+          "key": "D",
+          "text": "Saklama"
+        },
+        {
+          "key": "E",
+          "text": "Bilgi eksikliği mi, kavram karışıklığı mı, soru okuma hatası mı?"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Teslim/Ödeme.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Teslim/Ödeme' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 66,
+      "module_id": "1012",
+      "text": "Zincirin son aşaması nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1012 işlem sonrası zinciri"
+        },
+        {
+          "key": "B",
+          "text": "Mutabakat + Takas + Teslim + Saklama"
+        },
+        {
+          "key": "C",
+          "text": "Saklama"
+        },
+        {
+          "key": "D",
+          "text": "Emirlerin borsa ekranına iletilmesi"
+        },
+        {
+          "key": "E",
+          "text": "İşlem sonrası zinciri"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Saklama.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Saklama' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 67,
+      "module_id": "1012",
+      "text": "1012'de ilk yapılması gereken nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1012 işlem sonrası zinciri"
+        },
+        {
+          "key": "B",
+          "text": "Emirlerin borsa ekranına iletilmesi"
+        },
+        {
+          "key": "C",
+          "text": "Finansal tabloların denetimi"
+        },
+        {
+          "key": "D",
+          "text": "Kredi faiz oranlarının tespiti"
+        },
+        {
+          "key": "E",
+          "text": "Sorunun hangi işlem sonrası aşamasını anlattığını bulmak"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Sorunun hangi işlem sonrası aşamasını anlattığını bulmak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Sorunun hangi işlem sonrası aşamasını anlattığını bulmak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 68,
+      "module_id": "1012",
+      "text": "Mutabakat ile takas aynı mıdır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Şirket birleşmelerinin onaylanması"
+        },
+        {
+          "key": "B",
+          "text": "Kredi faiz oranlarının tespiti"
+        },
+        {
+          "key": "C",
+          "text": "Takas"
+        },
+        {
+          "key": "D",
+          "text": "Mutabakat"
+        },
+        {
+          "key": "E",
+          "text": "Hayır; zincirde farklı aşamalardır"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Hayır; zincirde farklı aşamalardır.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Hayır; zincirde farklı aşamalardır' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 69,
+      "module_id": "1012",
+      "text": "Takas ile saklama aynı mıdır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "İşlem"
+        },
+        {
+          "key": "B",
+          "text": "Hayır; zincirde farklı aşamalardır"
+        },
+        {
+          "key": "C",
+          "text": "Halka arz fiyatının belirlenmesi"
+        },
+        {
+          "key": "D",
+          "text": "Mutabakat"
+        },
+        {
+          "key": "E",
+          "text": "Saklama"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru Cevap: B) Hayır; zincirde farklı aşamalardır.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Hayır; zincirde farklı aşamalardır' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 70,
+      "module_id": "1012",
+      "text": "1012'nin dört ana kavramı nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1012"
+        },
+        {
+          "key": "B",
+          "text": "Mutabakat + Takas + Teslim + Saklama"
+        },
+        {
+          "key": "C",
+          "text": "Portföy yönetim sözleşmesinin imzalanması"
+        },
+        {
+          "key": "D",
+          "text": "İşlem → Mutabakat → Takas → Teslim/Ödeme → Saklama"
+        },
+        {
+          "key": "E",
+          "text": "Şirket birleşmelerinin onaylanması"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Doğru Cevap: B) Mutabakat + Takas + Teslim + Saklama.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Mutabakat + Takas + Teslim + Saklama' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 71,
+      "module_id": "1012",
+      "text": "İşlem sonrası zincirin ilk kelimesi nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Portföy yönetim sözleşmesinin imzalanması"
+        },
+        {
+          "key": "B",
+          "text": "Şirket genel kurul toplantısının yapılması"
+        },
+        {
+          "key": "C",
+          "text": "İşlem sonrası zinciri"
+        },
+        {
+          "key": "D",
+          "text": "Saklama"
+        },
+        {
+          "key": "E",
+          "text": "İşlem"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) İşlem.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'İşlem' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 72,
+      "module_id": "1012",
+      "text": "İşlem sonrası zincirin ikinci kelimesi nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mutabakat"
+        },
+        {
+          "key": "B",
+          "text": "Zincirdeki konumlarını karşılaştırmak"
+        },
+        {
+          "key": "C",
+          "text": "Yatırımcı risk anketinin yapılması"
+        },
+        {
+          "key": "D",
+          "text": "Saklama"
+        },
+        {
+          "key": "E",
+          "text": "Teslim/Ödeme"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Mutabakat.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Mutabakat' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 73,
+      "module_id": "1012",
+      "text": "İşlem sonrası zincirin üçüncü kelimesi nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Takas"
+        },
+        {
+          "key": "B",
+          "text": "1012 işlem sonrası zinciri"
+        },
+        {
+          "key": "C",
+          "text": "Mutabakat + Takas + Teslim + Saklama"
+        },
+        {
+          "key": "D",
+          "text": "1012"
+        },
+        {
+          "key": "E",
+          "text": "İşlem → Mutabakat → Takas → Teslim/Ödeme → Saklama"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Takas.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Takas' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 74,
+      "module_id": "1012",
+      "text": "İşlem sonrası zincirin dördüncü bölümü nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Teslim/Ödeme"
+        },
+        {
+          "key": "B",
+          "text": "Portföy yönetim sözleşmesinin imzalanması"
+        },
+        {
+          "key": "C",
+          "text": "Emirlerin borsa ekranına iletilmesi"
+        },
+        {
+          "key": "D",
+          "text": "Zincirdeki konumlarını karşılaştırmak"
+        },
+        {
+          "key": "E",
+          "text": "1012"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Doğru Cevap: A) Teslim/Ödeme.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Teslim/Ödeme' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 75,
+      "module_id": "1012",
+      "text": "İşlem sonrası zincirin beşinci bölümü nedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Emirlerin borsa ekranına iletilmesi"
+        },
+        {
+          "key": "B",
+          "text": "Yatırımcı risk anketinin yapılması"
+        },
+        {
+          "key": "C",
+          "text": "Hayır; zincirde farklı aşamalardır"
+        },
+        {
+          "key": "D",
+          "text": "Portföy yönetim sözleşmesinin imzalanması"
+        },
+        {
+          "key": "E",
+          "text": "Saklama"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Saklama.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Saklama' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 76,
+      "module_id": "1012",
+      "text": "Bir soru iki aşamayı karıştırıyorsa hangi yöntem kullanılır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hayır; zincirde farklı aşamalardır"
+        },
+        {
+          "key": "B",
+          "text": "Yatırımcı risk anketinin yapılması"
+        },
+        {
+          "key": "C",
+          "text": "Zincirdeki konumlarını karşılaştırmak"
+        },
+        {
+          "key": "D",
+          "text": "Mutabakat + Takas + Teslim + Saklama"
+        },
+        {
+          "key": "E",
+          "text": "Kredi faiz oranlarının tespiti"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) Zincirdeki konumlarını karşılaştırmak.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Zincirdeki konumlarını karşılaştırmak' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 77,
+      "module_id": "1012",
+      "text": "1012'de 'sonra ne oluyor?' sorusu hangi stratejiyi çağırır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Finansal tabloların denetimi"
+        },
+        {
+          "key": "B",
+          "text": "Sorunun hangi işlem sonrası aşamasını anlattığını bulmak"
+        },
+        {
+          "key": "C",
+          "text": "İşlem sonrası zinciri"
+        },
+        {
+          "key": "D",
+          "text": "Kredi faiz oranlarının tespiti"
+        },
+        {
+          "key": "E",
+          "text": "Emirlerin borsa ekranına iletilmesi"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Doğru Cevap: C) İşlem sonrası zinciri.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'İşlem sonrası zinciri' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 78,
+      "module_id": "1012",
+      "text": "Saklama hangi zincirde yer alır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mutabakat"
+        },
+        {
+          "key": "B",
+          "text": "Şirket genel kurul toplantısının yapılması"
+        },
+        {
+          "key": "C",
+          "text": "İşlem sonrası zinciri"
+        },
+        {
+          "key": "D",
+          "text": "1012 işlem sonrası zinciri"
+        },
+        {
+          "key": "E",
+          "text": "Halka arz fiyatının belirlenmesi"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) 1012 işlem sonrası zinciri.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: '1012 işlem sonrası zinciri' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 79,
+      "module_id": "1012",
+      "text": "Takas hangi zincirde mutabakattan sonra gelir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Zincirdeki konumlarını karşılaştırmak"
+        },
+        {
+          "key": "B",
+          "text": "Mutabakat + Takas + Teslim + Saklama"
+        },
+        {
+          "key": "C",
+          "text": "Portföy yönetim sözleşmesinin imzalanması"
+        },
+        {
+          "key": "D",
+          "text": "1012"
+        },
+        {
+          "key": "E",
+          "text": "İşlem sonrası zinciri"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Doğru Cevap: D) 1012.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: '1012' olarak hafızada kodlanmalıdır."
+    },
+    {
+      "number": 80,
+      "module_id": "1012",
+      "text": "1012'de yanlış yapılan soruda ilk teşhis ne olmalıdır?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Şirket genel kurul toplantısının yapılması"
+        },
+        {
+          "key": "B",
+          "text": "Finansal tabloların denetimi"
+        },
+        {
+          "key": "C",
+          "text": "1012"
+        },
+        {
+          "key": "D",
+          "text": "İşlem sonrası zinciri"
+        },
+        {
+          "key": "E",
+          "text": "Bilgi eksikliği mi, kavram karışıklığı mı, soru okuma hatası mı?"
+        }
+      ],
+      "correct_answer": "E",
+      "explanation": "Doğru Cevap: E) Bilgi eksikliği mi, kavram karışıklığı mı, soru okuma hatası mı?.\nX5 Sınav Motoru Analizi: Bu soru Modül 1012 için kritik referans kavramdır. Doğru eşleşme: 'Bilgi eksikliği mi, kavram karışıklığı mı, soru okuma hatası mı?' olarak hafızada kodlanmalıdır."
+    }
+  ]
+}

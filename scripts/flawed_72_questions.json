@@ -1,0 +1,578 @@
+[
+  {
+    "id": "q_1001_master_003",
+    "module_id": "1001",
+    "text": "6362 sayılı Kanun'a göre, payları borsada işlem görmeyen anonim ortaklıkların pay sahibi sayısının kaçı aşması halinde ortaklığın payları halka arz olunmuş sayılır ve şirket halka açık ortaklık statüsü kazanır?",
+    "correct_answer": "C",
+    "correct_text": "500",
+    "topic": "Halka Açık Ortaklık Statüsü"
+  },
+  {
+    "id": "q_1001_master_054",
+    "module_id": "1001",
+    "text": "Yatırım fonlarının portföy yönetiminde 'Risk Dağıtım İlkesi' uyarınca genel olarak tek bir ihraççının para ve sermaye piyasası araçlarına fon toplam değerinin en fazla yüzde kaçı yatırılabilir (istisnai fonlar hariç genel kural)?",
+    "correct_answer": "E",
+    "correct_text": "%10'u",
+    "topic": "Fon Portföy Sınırlamaları ve Risk Dağıtımı"
+  },
+  {
+    "id": "q_1001_master_059",
+    "module_id": "1001",
+    "text": "Kamuyu Aydınlatma Platformu'nun (KAP) teknik işletimi ve yönetimi hangi sermaye piyasası kurumu tarafından yürütülmektedir?",
+    "correct_answer": "B",
+    "correct_text": "Merkezi Kayıt Kuruluşu A.Ş. (MKK)",
+    "topic": "Kamuyu Aydınlatma Platformu (KAP) İşleticisi"
+  },
+  {
+    "id": "q_1001_master_060",
+    "module_id": "1001",
+    "text": "Ayrılma hakkını kullanmak isteyen pay sahibi, ortaklığın yaptığı bildirimi takip eden en geç kaç iş günü içinde paylarını ortaklığa devretmek üzere başvurmalıdır?",
+    "correct_answer": "C",
+    "correct_text": "Ayrılma hakkı kullanım süresi en az 10, en fazla 20 iş günüdür",
+    "topic": "Önemli Nitelikteki İşlemlerde Şirketten Ayrılma Hakkı Süresi"
+  },
+  {
+    "id": "q_1001_master_063",
+    "module_id": "1001",
+    "text": "Girişim Sermayesi Yatırım Fonları (GSYF) temel olarak hangi amaçla kurulur ve kimlere ihraç edilir?",
+    "correct_answer": "E",
+    "correct_text": "Büyüme potansiyeli olan erken aşama veya büyüme evresindeki girişim şirketlerine sermaye aktarmak amacıyla kurulur ve yalnızca nitelikli yatırımcılara satılır.",
+    "topic": "Girişim Sermayesi Yatırım Fonları (GSYF)"
+  },
+  {
+    "id": "q_1001_master_069",
+    "module_id": "1001",
+    "text": "Hangi yatırım hizmetlerinde yatırım kuruluşunun müşteriye 'Yerindelik Testi' yapması ZORUNLUDUR?",
+    "correct_answer": "C",
+    "correct_text": "Yatırım Danışmanlığı ve Bireysel Portföy Yöneticiliği hizmetlerinde",
+    "topic": "Yerindelik Testi (Appropriateness Test)"
+  },
+  {
+    "id": "q_1001_master_073",
+    "module_id": "1001",
+    "text": "Kredili menkul kıymet işlemlerinde asgari başlangıç özkaynak oranı mevzuat uyarınca en az yüzde kaçtır?",
+    "correct_answer": "E",
+    "correct_text": "%50",
+    "topic": "Kredili Menkul Kıymet İşlemleri & Özkaynak Oranı"
+  },
+  {
+    "id": "q_1001_master_074",
+    "module_id": "1001",
+    "text": "Açığa satış işlemi kavramının tanımı aşağıdakilerden hangisidir?",
+    "correct_answer": "A",
+    "correct_text": "Sahip olunmayan sermaye piyasası araçlarının satılmasını ya da satışına ilişkin emrin verilmesini ifade eder.",
+    "topic": "Açığa Satış İşlemleri"
+  },
+  {
+    "id": "q_1001_master_076",
+    "module_id": "1001",
+    "text": "Türkiye Sermaye Piyasaları Birliği'nin (TSPB) hukuki statüsü ve üyelik zorunluluğu ile ilgili hangisi DOĞRUDUR?",
+    "correct_answer": "C",
+    "correct_text": "Kamu kurumu niteliğinde bir meslek kuruluşu olup, SPK'dan faaliyet izni alan tüm aracı kurumlar, bankalar, portföy yönetim şirketleri ve yatırım ortaklıklarının üyeliği KANUNEN ZORUNLUDUR.",
+    "topic": "TSPB'nin Hukuki Niteliği"
+  },
+  {
+    "id": "q_1001_master_095",
+    "module_id": "1001",
+    "text": "Geçici olarak faaliyetten men (veya mesleki faaliyetin geçici durdurulması) cezası en fazla ne kadar süreyle verilebilir?",
+    "correct_answer": "B",
+    "correct_text": "1 aydan 2 yıla kadar (mevzuatta belirtilen azami süreler çerçevesinde)",
+    "topic": "Geçici Faaliyetten Men Cezası"
+  },
+  {
+    "id": "q_1001_master_097",
+    "module_id": "1001",
+    "text": "TSPB Disiplin Yönetmeliği'ne göre hakkında disiplin soruşturması açılan bir üye veya personele savunma yapması için tanınan asgari süre kaç gündür?",
+    "correct_answer": "D",
+    "correct_text": "Savunma için en az 10 gün süre verilir (haklı mazeret halinde ek süre tanınabilir)",
+    "topic": "Disiplin Soruşturmasında Savunma Hakkı"
+  },
+  {
+    "id": "q_1001_master_098",
+    "module_id": "1001",
+    "text": "TSPB Disiplin Kurulu tarafından verilen disiplin cezalarına karşı izlenecek hukuki süreçle ilgili hangisi DOĞRUDUR?",
+    "correct_answer": "E",
+    "correct_text": "İlgililer tebliğden itibaren belirlenen süre içinde Birlik Yönetim Kurulu'na veya SPK'ya itiraz edebilirler; nihai idari kararlara karşı ise İdare Mahkemesi'nde iptal davası açılabilir.",
+    "topic": "Disiplin Kararlarına İtiraz ve SPK Onayı"
+  },
+  {
+    "id": "q_1003_master_003",
+    "module_id": "1003",
+    "text": "Halka açık anonim ortaklıklarda rüçhan haklarının sınırlandırılması veya tamamen kaldırılması için hangi organ yetkilidir?",
+    "correct_answer": "C",
+    "correct_text": "Esas sözleşmeyle yetkilendirilmişse Yönetim Kurulu veya Genel Kurul kararıyla yapılabilir.",
+    "topic": "Rüçhan Hakkının Kısıtlanması"
+  },
+  {
+    "id": "q_1003_master_005",
+    "module_id": "1003",
+    "text": "Payların nominal (itibari) değerinin üzerinde bir bedelle ihraç edilmesi sonucu elde edilen aradaki fark hangi muhasebe hesabında izlenir?",
+    "correct_answer": "C",
+    "correct_text": "Hisse Senedi İhraç Primleri (Emisyon Primi)",
+    "topic": "Primli Pay İhracı (Emisyon Primi)"
+  },
+  {
+    "id": "q_1003_master_008",
+    "module_id": "1003",
+    "text": "Halka açık anonim ortaklıklarda TTK ve SPKn uyarınca 'Azınlık (Azlık) Hakları' sermayenin en az yüzde kaçına sahip pay sahipleri tarafından kullanılabilir?",
+    "correct_answer": "C",
+    "correct_text": "%5",
+    "topic": "Azınlık Hakları Oranı"
+  },
+  {
+    "id": "q_1003_master_012",
+    "module_id": "1003",
+    "text": "Halka açık anonim ortaklıklarda pay sahiplerinin 'Özel Denetçi' talep edebilmesi ile ilgili hangisi DOĞRUDUR?",
+    "correct_answer": "B",
+    "correct_text": "Bilgi alma veya inceleme hakkı önceden kullanılmış olmak şartıyla, genel kurul talebi reddetse dahi azınlık mahkemeden özel denetçi atanmasını isteyebilir.",
+    "topic": "Özel Denetçi İsteme Hakkı"
+  },
+  {
+    "id": "q_1003_master_014",
+    "module_id": "1003",
+    "text": "Bir şirketin hisse senedinin borsa fiyatı 50 TL, pay başına defter değeri ise 25 TL ise bu şirketin PD/DD oranı kaçtır?",
+    "correct_answer": "B",
+    "correct_text": "2.0",
+    "topic": "Piyasa Değeri / Defter Değeri (PD/DD)"
+  },
+  {
+    "id": "q_1003_master_016",
+    "module_id": "1003",
+    "text": "Borsada işlem fiyatı 80 TL olan bir hisse senedi hisse başına brüt 4 TL nakit temettü dağıtırsa temettü verimi yüzde kaçtır?",
+    "correct_answer": "D",
+    "correct_text": "%5",
+    "topic": "Temettü Verimi (Dividend Yield)"
+  },
+  {
+    "id": "q_1003_master_017",
+    "module_id": "1003",
+    "text": "Fiyat aralığı ile talep toplama yönteminde tavan fiyat taban fiyatın en fazla yüzde kaç fazlası olabilir?",
+    "correct_answer": "C",
+    "correct_text": "%20",
+    "topic": "Halka Arzda Talep Toplama Fiyat Aralığı Kuralı"
+  },
+  {
+    "id": "q_1003_master_019",
+    "module_id": "1003",
+    "text": "Halka açık anonim ortaklıklarda genel kurula elektronik ortamda katılım sağlayan sistemin işleticisi kimdir?",
+    "correct_answer": "C",
+    "correct_text": "Merkezi Kayıt Kuruluşu (MKK) - EGKS Sistemi",
+    "topic": "Genel Kurula Elektronik Katılım (EGKS)"
+  },
+  {
+    "id": "q_1003_master_029",
+    "module_id": "1003",
+    "text": "Piyasa faiz oranları yükseldiğinde sabit kuponlu bir tahvilin piyasa fiyatı nasıl değişir?",
+    "correct_answer": "A",
+    "correct_text": "Düşer",
+    "topic": "Tahvil Fiyatı ve Faiz Oranı İlişkisi"
+  },
+  {
+    "id": "q_1003_master_030",
+    "module_id": "1003",
+    "text": "Tahvilin faiz riskine duyarlılığını ölçen ve kupon ödemelerinin ağırlıklı ortalama vadesini gösteren kavrama ne ad verilir?",
+    "correct_answer": "E",
+    "correct_text": "Durasyon (Macaulay Süresi)",
+    "topic": "Tahvilin Vadesine Kalan Süre (Duration / Süre)"
+  },
+  {
+    "id": "q_1003_master_031",
+    "module_id": "1003",
+    "text": "İhraççı şirketin paylarına dönüştürme hakkı veren borçlanma aracı aşağıdakilerden hangisidir?",
+    "correct_answer": "A",
+    "correct_text": "Paya Dönüştürülebilir Tahvil (PDT)",
+    "topic": "Paya Dönüştürülebilir Tahvil (PDT)"
+  },
+  {
+    "id": "q_1003_master_034",
+    "module_id": "1003",
+    "text": "Uluslararası derecelendirme kuruluşlarına göre 'Yatırım Yapılabilir Seviye' (Investment Grade) kabul edilen asgari uzun vadeli not baremi nedir?",
+    "correct_answer": "D",
+    "correct_text": "BBB- (Baa3)",
+    "topic": "Kredi Derecelendirme Notları (Credit Ratings)"
+  },
+  {
+    "id": "q_1003_master_035",
+    "module_id": "1003",
+    "text": "Hazine ve Maliye Bakanlığı tarafından yurt içi piyasada ihraç edilen DİBS'lerden vadesi 1 yıldan kısa olanlara ne ad verilir?",
+    "correct_answer": "E",
+    "correct_text": "Hazine Bonosu",
+    "topic": "DİBS Türleri - Hazine Bonosu vs Devlet Tahvili"
+  },
+  {
+    "id": "q_1003_master_038",
+    "module_id": "1003",
+    "text": "Halka açık anonim ortaklıkların ihraç edebileceği borçlanma araçlarının azami ihraç tavanı kural olarak özkaynaklarının en fazla kaç katı olabilir?",
+    "correct_answer": "B",
+    "correct_text": "5 katı",
+    "topic": "Borçlanma Araçları İhraç Limiti"
+  },
+  {
+    "id": "q_1003_master_042",
+    "module_id": "1003",
+    "text": "Nominal değeri 1.000 TL olan ve yılda bir kez %20 sabit kupon faizi ödeyen bir tahvil piyasada 800 TL'den işlem görüyorsa cari getiri (current yield) oranı yüzde kaçtır?",
+    "correct_answer": "A",
+    "correct_text": "%25",
+    "topic": "Kupon Oranı vs Getiri Oranı Ayrımı"
+  },
+  {
+    "id": "q_1003_master_045",
+    "module_id": "1003",
+    "text": "Halka arz edilmeksizin nitelikli yatırımcılara ihraç edilecek finansman bonoları için SPK'dan hangi onay alınır?",
+    "correct_answer": "B",
+    "correct_text": "İhraç Belgesi ve İhraç Tavanı Onayı",
+    "topic": "Finansman Bonosu İhraç Süreci"
+  },
+  {
+    "id": "q_1003_master_046",
+    "module_id": "1003",
+    "text": "Borçlanma araçlarında kupon ödeme dönemleri mevzuat uyarınca en az kaç ayda bir yapılabilir?",
+    "correct_answer": "D",
+    "correct_text": "En az 1 ayda bir (1, 3, 6 veya 12 aylık periyotlar)",
+    "topic": "Faiz Kupon Ödeme Sıklığı"
+  },
+  {
+    "id": "q_1003_master_053",
+    "module_id": "1003",
+    "text": "Kaynak kuruluşa ait varlıkların mülkiyet devri yapılmaksızın VKŞ lehine yönetilmesi ve elde edilen gelirlerin aktarılması esasına dayanan kira sertifikası hangisidir?",
+    "correct_answer": "E",
+    "correct_text": "Yönetim Sözleşmesine Dayalı Kira Sertifikası (Vekalet Sukuku)",
+    "topic": "Yönetim Sözleşmesine Dayalı Kira Sertifikası"
+  },
+  {
+    "id": "q_1003_master_054",
+    "module_id": "1003",
+    "text": "VKŞ'nin bir emtiayı peşin satın alıp vadeli olarak kâr marjıyla kaynak kuruluşa satması esasına dayanan kira sertifikası türü hangisidir?",
+    "correct_answer": "C",
+    "correct_text": "Alım-Satıma Dayalı Kira Sertifikası (Murabaha Sukuku)",
+    "topic": "Alım-Satıma Dayalı Kira Sertifikası (Murabaha)"
+  },
+  {
+    "id": "q_1003_master_055",
+    "module_id": "1003",
+    "text": "Emek-sermaye ortaklığı (Mudaraba) veya kâr-zarar ortaklığı (Muşaraka) ilkelerine dayalı kira sertifikası türü hangisidir?",
+    "correct_answer": "B",
+    "correct_text": "Ortaklığa Dayalı Kira Sertifikası",
+    "topic": "Ortaklığa Dayalı Kira Sertifikası (Mudaraba / Muşaraka)"
+  },
+  {
+    "id": "q_1003_master_057",
+    "module_id": "1003",
+    "text": "Kira sertifikası ihracında finansman ihtiyacı duyan ve varlıklarını VKŞ'ye devreden veya kiralayan kuruluşa ne ad verilir?",
+    "correct_answer": "E",
+    "correct_text": "Kaynak Kuruluş (Originator)",
+    "topic": "Kaynak Kuruluş Kavramı"
+  },
+  {
+    "id": "q_1003_master_058",
+    "module_id": "1003",
+    "text": "Aşağıdakilerden hangisi SPK düzenlemelerine göre Varlık Kiralama Şirketi (VKŞ) kurabilecek kurumlardan biridir?",
+    "correct_answer": "A",
+    "correct_text": "Yukarıdakilerin hepsi",
+    "topic": "VKŞ Kurucuları"
+  },
+  {
+    "id": "q_1003_master_059",
+    "module_id": "1003",
+    "text": "Halka arz edilen kira sertifikaları nerede işlem görür?",
+    "correct_answer": "B",
+    "correct_text": "Borsa İstanbul Borçlanma Araçları Piyasası",
+    "topic": "Kira Sertifikalarının Borsada İşlem Görmesi"
+  },
+  {
+    "id": "q_1003_master_061",
+    "module_id": "1003",
+    "text": "VKŞ'nin işveren, kaynak kuruluşun yüklenici olduğu bir inşaat/üretim eser sözleşmesine dayalı sukuk türü hangisidir?",
+    "correct_answer": "C",
+    "correct_text": "Eser Sözleşmesine Dayalı (İstisna Sukuku)",
+    "topic": "Eser Sözleşmesine Dayalı Kira Sertifikası (İstisna)"
+  },
+  {
+    "id": "q_1003_master_062",
+    "module_id": "1003",
+    "text": "Kira sertifikalarında vade sonunda anaparanın ödenerek sertifikaların kapatılması işlemine ne ad verilir?",
+    "correct_answer": "A",
+    "correct_text": "İtfa",
+    "topic": "Kira Sertifikalarında İtfa"
+  },
+  {
+    "id": "q_1003_master_063",
+    "module_id": "1003",
+    "text": "Köprü, baraj, otoyol gibi kamu altyapı tesislerinin gelirlerine ortaklık sağlayan menkul kıymet hangisidir?",
+    "correct_answer": "B",
+    "correct_text": "Gelir Ortaklığı Senedi (GOS)",
+    "topic": "Gelir Ortaklığı Senetleri (GOS)"
+  },
+  {
+    "id": "q_1003_master_064",
+    "module_id": "1003",
+    "text": "Getirisi KİT'lerin bütçeye aktardıkları hasılat paylarına endekslenen DİBS türü hangisidir?",
+    "correct_answer": "D",
+    "correct_text": "Gelire Endeksli Senet (GES)",
+    "topic": "Gelire Endeksli Senetler (GES)"
+  },
+  {
+    "id": "q_1003_master_065",
+    "module_id": "1003",
+    "text": "Hazine ve Maliye Bakanlığı adına yurt içi ve yurt dışı piyasalarda sukuk ihraç eden kamu VKŞ'si hangisidir?",
+    "correct_answer": "C",
+    "correct_text": "Hazine Müsteşarlığı Varlık Kiralama Şirketi A.Ş.",
+    "topic": "Hazine Kira Sertifikası İhraçları"
+  },
+  {
+    "id": "q_1003_master_067",
+    "module_id": "1003",
+    "text": "Dayanak varlığın fiyatının gelecekte YÜKSELECEĞİNİ bekleyen bir yatırımcı hangi varant türünü satın almalıdır?",
+    "correct_answer": "A",
+    "correct_text": "Alım Varantı (Call Warrant)",
+    "topic": "Alım Varantı (Call) vs Satım Varantı (Put)"
+  },
+  {
+    "id": "q_1003_master_069",
+    "module_id": "1003",
+    "text": "Sadece vadesinde (vade bitim gününde) kullanılabilen varant/opsiyon türüne ne ad verilir?",
+    "correct_answer": "E",
+    "correct_text": "Avrupa Tipi (European Style)",
+    "topic": "Kullanım Türüne Göre Varantlar (Avrupa vs Amerikan)"
+  },
+  {
+    "id": "q_1003_master_070",
+    "module_id": "1003",
+    "text": "Kullanım fiyatı 100 TL olan bir hisse senedi Alım Varantında, hissenin piyasa fiyatı 120 TL ise varantın 'İçsel Değeri' kaç TL'dir?",
+    "correct_answer": "D",
+    "correct_text": "20 TL",
+    "topic": "Varant Değerleme - İçsel Değer (Intrinsic Value)"
+  },
+  {
+    "id": "q_1003_master_071",
+    "module_id": "1003",
+    "text": "Spot fiyatın kullanım fiyatına eşit olduğu (Spot = Kullanım Fiyatı) varant pozisyonu nasıl adlandırılır?",
+    "correct_answer": "C",
+    "correct_text": "Başabaşta (At-the-Money)",
+    "topic": "Karda, Başabaş ve Zararda Varantlar"
+  },
+  {
+    "id": "q_1003_master_072",
+    "module_id": "1003",
+    "text": "Varantın vadesine yaklaştıkça değer kaybetmesine yol açan ve varant fiyatındaki zaman erimesini ifade eden greeks parametresi hangisidir?",
+    "correct_answer": "C",
+    "correct_text": "Teta (Theta)",
+    "topic": "Zaman Değeri ve Zaman Erimesi (Theta)"
+  },
+  {
+    "id": "q_1003_master_073",
+    "module_id": "1003",
+    "text": "Dayanak varlığın fiyatındaki 1 birimlik değişimin varant fiyatında yaratacağı değişimi ölçen duyarlılık katsayısı hangisidir?",
+    "correct_answer": "B",
+    "correct_text": "Delta",
+    "topic": "Delta Göstergesi"
+  },
+  {
+    "id": "q_1003_master_074",
+    "module_id": "1003",
+    "text": "Borsa İstanbul'da işlem gören varantlarda likiditeyi sağlamak ve sürekli alım-satım kotasyonu vermekle yükümlü olan aktör kimdir?",
+    "correct_answer": "A",
+    "correct_text": "Piyasa Yapıcı Üye (Market Maker)",
+    "topic": "Piyasa Yapıcılığı (Market Making)"
+  },
+  {
+    "id": "q_1003_master_075",
+    "module_id": "1003",
+    "text": "İhraççı yatırım kuruluşu tarafından çıkarılan ve belirli bir dayanak varlığın (altın, petrol, borsa endeksi) getirisine bire bir veya kaldıraçlı katılım sağlayan sermaye piyasası aracı hangisidir?",
+    "correct_answer": "D",
+    "correct_text": "Yatırım Kuruluşu Sertifikası",
+    "topic": "Yatırım Kuruluşu Sertifikaları"
+  },
+  {
+    "id": "q_1003_master_076",
+    "module_id": "1003",
+    "text": "Dayanak hisse senedi fiyatı 50 TL, alım varantının fiyatı 2.5 TL ve dönüşüm oranı 1 ise bu varantın efektif kaldıraç oranı kaçtır?",
+    "correct_answer": "B",
+    "correct_text": "20",
+    "topic": "Varantlarda Kaldıraç Oranı (Leverage)"
+  },
+  {
+    "id": "q_1003_master_078",
+    "module_id": "1003",
+    "text": "Bir varantın dönüşüm oranı 0.10 ise 1 adet dayanak hisse senedi üzerinde hak sahibi olabilmek için kaç adet varant gerekir?",
+    "correct_answer": "E",
+    "correct_text": "10 adet",
+    "topic": "Dönüşüm Oranı (Çarpan / Multiplier)"
+  },
+  {
+    "id": "q_1003_master_079",
+    "module_id": "1003",
+    "text": "Dayanak varlığın 'Zımni Volatilitesindeki' (oynaklık) %1'lik değişimin varant fiyatına etkisini ölçen katsayı hangisidir?",
+    "correct_answer": "A",
+    "correct_text": "Vega",
+    "topic": "Vega Parametresi"
+  },
+  {
+    "id": "q_1003_master_080",
+    "module_id": "1003",
+    "text": "Aracı kuruluş varantı ihraç edebilmek için SPK'dan hangi yetki belgesine sahip olunması gerekir?",
+    "correct_answer": "A",
+    "correct_text": "Geniş Yetkili Aracı Kurum",
+    "topic": "Varant İhraç Edebilecek Kuruluşlar"
+  },
+  {
+    "id": "q_1003_master_082",
+    "module_id": "1003",
+    "text": "Bir yatırım fonunun 'Hisse Senedi Yoğun Fon' sayılabilmesi için fon portföyünün en az yüzde kaçının devamlı olarak BIST hisse senetlerinden oluşması zorunludur?",
+    "correct_answer": "C",
+    "correct_text": "%80",
+    "topic": "Hisse Senedi Yoğun Fon Kriteri"
+  },
+  {
+    "id": "q_1003_master_085",
+    "module_id": "1003",
+    "text": "Fon toplam değerinin en az yüzde kaçı diğer yatırım fonları ve borsa yatırım fonlarının katılma paylarından oluşan fonlara 'Fon Sepeti Fonu' denir?",
+    "correct_answer": "E",
+    "correct_text": "%80",
+    "topic": "Fon Sepeti Fonları (Fund of Funds)"
+  },
+  {
+    "id": "q_1003_master_086",
+    "module_id": "1003",
+    "text": "BYF paylarının ihraç ve itfasında (sepet oluşturma ve bozma) kurucu adına piyasada aracı olarak hareket eden kuruma ne ad verilir?",
+    "correct_answer": "E",
+    "correct_text": "Yetkilendirilmiş Katılımcı (Authorized Participant)",
+    "topic": "Borsa Yatırım Fonlarında Yetkilendirilmiş Katılımcı"
+  },
+  {
+    "id": "q_1003_master_087",
+    "module_id": "1003",
+    "text": "Faizsiz finans ilkelerine uygun hisse, kira sertifikası ve kıymetli madenlere yatırım yapan fon türü hangisidir?",
+    "correct_answer": "D",
+    "correct_text": "Katılım Fonu",
+    "topic": "Katılım Yatırım Fonları"
+  },
+  {
+    "id": "q_1003_master_093",
+    "module_id": "1003",
+    "text": "Gayrimenkul Sertifikası ile ilgili aşağıdakilerden hangisi DOĞRUDUR?",
+    "correct_answer": "D",
+    "correct_text": "İnşa edilecek veya edilmekte olan gayrimenkul projelerinin finansmanında kullanılan, belirli bir bağımsız bölümü veya alan birimini temsil eden menkul kıymettir.",
+    "topic": "Gayrimenkul Sertifikaları Tebliği (VII-128.2)"
+  },
+  {
+    "id": "q_1003_master_094",
+    "module_id": "1003",
+    "text": "Gayrimenkul sertifikası sahibinin yeterli sayıda sertifikayı biriktirerek projedeki bağımsız bölümün (dairenin) mülkiyetini talep etmesine ne ad verilir?",
+    "correct_answer": "A",
+    "correct_text": "Asli Edim (Gayrimenkulün Mülkiyetini Devralma)",
+    "topic": "Gayrimenkul Sertifikasında Asli ve Tali Edim"
+  },
+  {
+    "id": "q_1003_master_098",
+    "module_id": "1003",
+    "text": "Yurt dışı hisse senetlerine yatırım yapan bir yatırımcının karşılaştığı iki temel getiri/risk unsuru nedir?",
+    "correct_answer": "E",
+    "correct_text": "Hisse Fiyat Hareketi ve Döviz Kuru Riski",
+    "topic": "Yabancı Hisse Senetlerinde Temettü ve Kur Riski"
+  },
+  {
+    "id": "q_1001_konu_002",
+    "module_id": "1001",
+    "text": "Payları ilk defa halka arz edilecek olan bir ortaklığın izahname onayı için Sermaye Piyasası Kurulu'na yaptığı başvuru, belgelerin eksiksiz olarak sunulmasından itibaren en geç kaç iş günü içinde karara bağlanmak zorundadır?",
+    "correct_answer": "B",
+    "correct_text": "20 iş günü",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1001_konu_003",
+    "module_id": "1001",
+    "text": "Halka arz edilmek üzere yayımlanan bir izahnamede, satış süreci devam ederken yatırımcıların kararlarını etkileyebilecek yeni bir husus ortaya çıkmıştır. Bu değişikliğin yayımlanmasından önce talepte bulunmuş olan yatırımcılar, taleplerini geri alma hakkını en geç kaç iş günü içinde kullanabilirler?",
+    "correct_answer": "A",
+    "correct_text": "2 iş günü",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1001_konu_006",
+    "module_id": "1001",
+    "text": "Yatırım kuruluşlarında bulunan emanet ve alacakların zamanaşımına uğrayarak Yatırımcı Tazmin Merkezi'ne (YTM) devredilmesi için, son talep, işlem veya yazılı talimat tarihinden itibaren kesintisiz olarak kaç yıl boyunca aranmamış olması gerekir?",
+    "correct_answer": "B",
+    "correct_text": "10 yıl",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1001_konu_015",
+    "module_id": "1001",
+    "text": "Türkiye Sermaye Piyasaları Birliği (TSPB) Disiplin Yönetmeliği'ne göre, Birlik tarafından verilen disiplin cezalarına karşı tebliğ tarihinden itibaren en geç kaç iş günü içinde Sermaye Piyasası Kurulu'na (SPK) itiraz edilebilir?",
+    "correct_answer": "D",
+    "correct_text": "10 iş günü",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1003_konu_003",
+    "module_id": "1003",
+    "text": "Borsada işlem gören ABC Ortaklığı paylarında 15 gün boyunca 'fiyat istikrarını sağlayıcı işlemler' yapılması planlanmaktadır. Bu işlemler için kullanılacak toplam fon bütçesi, yasal olarak halka arzdan elde edilen brüt gelirin en fazla yüzde kaçını aşamaz?",
+    "correct_answer": "E",
+    "correct_text": "%20",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1003_konu_006",
+    "module_id": "1003",
+    "text": "Bir Hisse Senedi Yoğun Yatırım Fonunun portföy değerinin en az yüzde kaçı sürekli olarak borsa İstanbul'da işlem gören paylardan (hisse senetlerinden) oluşmak zorundadır?",
+    "correct_answer": "C",
+    "correct_text": "%80",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1003_konu_007",
+    "module_id": "1003",
+    "text": "Bir genel yatırım fonu portföy yöneticisi, fon portföyünü oluştururken tek bir ihraççının (örneğin X şirketinin) paylarına en fazla %10 yatırım yapmıştır. Portföyde %5'ten fazla paya sahip olan tekil ihraççıların (X, Y, Z şirketleri) yatırımlarının toplamının fon portföy değerine oranı en fazla yüzde kaçı aşamaz?",
+    "correct_answer": "D",
+    "correct_text": "%40",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1003_konu_008",
+    "module_id": "1003",
+    "text": "Bir para piyasası şemsiye fonunun portföyündeki varlıkların ağırlıklı ortalama vadesi en fazla kaç gün olmak zorundadır?",
+    "correct_answer": "A",
+    "correct_text": "45 gün",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1003_konu_011",
+    "module_id": "1003",
+    "text": "Bir VİOP yatırımcısı başlangıç teminatı 15.000 TL, sürdürme teminatı 12.000 TL olan bir vadeli işlem sözleşmesinde uzun pozisyon taşımaktadır. Piyasadaki ters fiyat hareketi nedeniyle gün sonu hesap bakiyesi 11.500 TL'ye düşmüştür. Yatırımcıya yapılacak olan Teminat Tamamlama Çağrısı (Margin Call) tutarı kaç Türk Lirasıdır?",
+    "correct_answer": "B",
+    "correct_text": "3.500 TL",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1003_konu_012",
+    "module_id": "1003",
+    "text": "Nominal değeri 100 TL olan, kupon dönemi 180 gün süren ve dönemlik kupon faiz oranı %8 olan bir devlet tahvilinin, son kupon ödemesinden bu yana 45 gün geçmiştir. Tahvilin borsa ekranındaki temiz fiyatı (clean price) 95,00 TL olduğuna göre, alıcının satıcıya ödeyeceği kirli fiyat (dirty price) kaç Türk Lirasıdır?",
+    "correct_answer": "A",
+    "correct_text": "97,00 TL",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1003_konu_013",
+    "module_id": "1003",
+    "text": "Sermaye Piyasası Kurulunun ilgili tebliğlerine göre, bir portföy yönetim şirketi yönettikleri tüm genel yatırım fonları için tek bir bankada en fazla yüzde kaç oranında mevduat veya katılma hesabı açabilir?",
+    "correct_answer": "E",
+    "correct_text": "%3",
+    "topic": "Konu Anlatımı Çözümlü Deneme Soruları"
+  },
+  {
+    "id": "q_1001_ogretici_001",
+    "module_id": "1001",
+    "text": "Sermaye piyasasının temel amacı açısından aşağıdakilerden hangisi en doğru ifadedir?",
+    "correct_answer": "A",
+    "correct_text": "Tasarrufların sermaye piyasası araçları yoluyla ekonomiye aktarılmasına aracılık etmek",
+    "topic": "Öğretici Kavram Soruları"
+  },
+  {
+    "id": "q_1001_ogretici_002",
+    "module_id": "1001",
+    "text": "Sermaye piyasası mevzuatında yatırımcının korunması bakımından kamunun aydınlatılması ilkesinin temel işlevi nedir?",
+    "correct_answer": "B",
+    "correct_text": "Yatırımcıya karar vermesi için gerekli bilgiyi zamanında sağlamak",
+    "topic": "Öğretici Kavram Soruları"
+  }
+]

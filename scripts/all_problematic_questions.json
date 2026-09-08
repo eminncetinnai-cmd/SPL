@@ -1,0 +1,80 @@
+[
+  {
+    "id": "q_1003_master_065",
+    "module_id": "1003",
+    "number": 65,
+    "source": "genel",
+    "topic": "Hazine Kira Sertifikası İhraçları",
+    "chapter": "BÖLÜM 3: KİRA SERTİFİKALARI (SUKUK) VE FAİZSİZ FİNANSMAN ARAÇLARI",
+    "text": "Hazine ve Maliye Bakanlığı adına yurt içi ve yurt dışı piyasalarda sukuk ihraç eden kamu VKŞ'si hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa İstanbul A.Ş."
+      },
+      {
+        "key": "B",
+        "text": "İstanbul Takas ve Saklama Bankası A.Ş."
+      },
+      {
+        "key": "C",
+        "text": "Hazine Müsteşarlığı Varlık Kiralama Şirketi A.Ş."
+      },
+      {
+        "key": "D",
+        "text": "Merkezi Kayıt Kuruluşu A.Ş."
+      },
+      {
+        "key": "E",
+        "text": "Türkiye Cumhuriyet Merkez Bankası"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Hazine ve Maliye Bakanlığı adına yurt içi ve yurt dışı kamu kira sertifikası ihraçlarını Hazine Müsteşarlığı Varlık Kiralama Şirketi A.Ş. yürütür.\n\n📌 Soruda Geçen Kısaltmalar ve Açılımları:\n• VKŞ: Varlık Kiralama Şirketi",
+    "trap": "",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Hazine Kira Sertifikası İhraçları"
+    ]
+  },
+  {
+    "id": "q_1012_master_097",
+    "module_id": "1012",
+    "number": 97,
+    "source": "genel",
+    "topic": "MKK Hak Sahipliği Çizelgesi",
+    "chapter": "BÖLÜM 5: OPERASYONEL RİSKLER VE SAKLAMA GÜVENCESİ",
+    "text": "Genel kurullardan önce şirket yönetimine verilen ve pay sahiplerinin ad, soyad, pay adedi ve blokaj durumunu gösteren belgeye ne ad verilir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gelir Tablosu"
+      },
+      {
+        "key": "B",
+        "text": "Hak Sahipleri Çizelgesi (Bloke Paylar / Hazır Bulunanlar Listesi)"
+      },
+      {
+        "key": "C",
+        "text": "Vergi Matrahı"
+      },
+      {
+        "key": "D",
+        "text": "Ticaret Sicil Gazetesi"
+      },
+      {
+        "key": "E",
+        "text": "Vakıf Senedi"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Genel kurullarda oy kullanabilecek ortakları gösteren ve MKK tarafından üretilen resmi belge Hak Sahipleri Çizelgesi'dir (Hazır Bulunanlar Listesi).",
+    "trap": "",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "MKK Hak Sahipliği Çizelgesi"
+    ]
+  }
+]

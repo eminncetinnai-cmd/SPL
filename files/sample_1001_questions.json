@@ -1,0 +1,170 @@
+{
+  "subject": "1001",
+  "subject_name": "Sermaye Piyasası Mevzuatı Temel",
+  "description": "Sermaye piyasasının tanımı, fonksiyonları, örgütlenme şekli ve temel kavramları",
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "q_1001_001",
+      "number": 1,
+      "text": "Aşağıdakilerden hangisi sermaye piyasasının tanımı ile ilgili yanlış bir ifadedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Uzun vadeli fon arz ve talebinin karşılaştığı finansal piyasalardır."
+        },
+        {
+          "key": "B",
+          "text": "Kısa vadeli finansal araçların alım satımına da alınır."
+        },
+        {
+          "key": "C",
+          "text": "Hisse senetleri ve tahvillerin işlem gördüğü piyasalardır."
+        },
+        {
+          "key": "D",
+          "text": "Öz kaynaklar ve krediler arasında dengeli finansman sağlar."
+        },
+        {
+          "key": "E",
+          "text": "Ekonomik büyümeyi destekleyen başlıca finansal kuruluşları içerir."
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "Sermaye piyasası, tanımı gereği **uzun vadeli** fon arz ve talebinin karşılaştığı piyasalardır. Kısa vadeli finansal araçlar (para piyasası araçları) para piyasasında işlem görmektedir, sermaye piyasasında değil. Bu nedenle B seçeneği yanlıştır. Sermaye piyasasının temel fonksiyonları: (1) Tasarrufçuları yatırımcılarla buluşturmak, (2) Fon temin etmek için uzun vadeli araçlar sağlamak, (3) Ekonomik büyümeyi desteklemektir.",
+      "difficulty": "easy",
+      "tags": ["tanım", "temel-kavramlar"]
+    },
+    {
+      "id": "q_1001_002",
+      "number": 2,
+      "text": "Sermaye piyasasının araçları arasında yer almayan hangisidir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hisse senetleri"
+        },
+        {
+          "key": "B",
+          "text": "Tahviller"
+        },
+        {
+          "key": "C",
+          "text": "Varantlar"
+        },
+        {
+          "key": "D",
+          "text": "Hazine bonoları"
+        },
+        {
+          "key": "E",
+          "text": "Yatırım fonu katılma belgeleri"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "Hazine bonoları (T-bills), vadesi 1 yıldan kısa finansal araçlardır ve **para piyasası** araçları kategorisinde yer alır, sermaye piyasası araçları değil. Hazine tahvilleri (vadesi 1 yıl ve üzeri) sermaye piyasası aracıdır, ancak hazine bonoları değildir. Diğer seçenekler (hisse senetleri, tahviller, varantlar, yatırım fonu katılma belgeleri) hepsi sermaye piyasasında işlem gören araçlardır.",
+      "difficulty": "medium",
+      "tags": ["araçlar", "para-piyasası-vs-sermaye-piyasası"]
+    },
+    {
+      "id": "q_1001_003",
+      "number": 3,
+      "text": "Türkiye'de sermaye piyasasının düzenlenmesi ve denetlenmesinde aşağıdakilerden hangisinin rolü yoktur?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sermaye Piyasası Kurulu (SPK)"
+        },
+        {
+          "key": "B",
+          "text": "Borsa İstanbul (Bist)"
+        },
+        {
+          "key": "C",
+          "text": "Merkez Bankası (TCMB)"
+        },
+        {
+          "key": "D",
+          "text": "Bankaların Birliği"
+        },
+        {
+          "key": "E",
+          "text": "Merkezi Kayıt Kuruluşu (MKK)"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "SPK (Sermaye Piyasası Kurulu): Piyasayı düzenleme ve denetlemekle sorumlu bağımsız idari otorite. Borsa İstanbul: Menkul kıymetlerin ve türev ürünlerin alım-satımına imkan sağlayan kurum. TCMB (Merkez Bankası): Para politikası yönüyle piyasayı etkiler. MKK: Menkul kıymetlerin saklama ve kayıt işlemlerini yapar. Bankaların Birliği ise bankacılık sektörünün çıkarlarını savunan bir sivil toplum kuruluşudur ve sermaye piyasasının resmi düzenleme/denetim yapısında yer almaz.",
+      "difficulty": "medium",
+      "tags": ["kurumlar", "SPK", "örgütlenme"]
+    },
+    {
+      "id": "q_1001_004",
+      "number": 4,
+      "text": "Sermaye Piyasası Kanunu'nda yer alan halka arz tanımında aşağıdakilerden hangisi doğru değildir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "En az 100 kişiye menkul kıymet satış söz konusudur."
+        },
+        {
+          "key": "B",
+          "text": "Genel halka yönelik satış yapılır."
+        },
+        {
+          "key": "C",
+          "text": "Sabit fiyatla pazarlaması yapılmak zorundadır."
+        },
+        {
+          "key": "D",
+          "text": "SPK izni alınması gerekir."
+        },
+        {
+          "key": "E",
+          "text": "Prospektüs hazırlanması zorunludur."
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "Halka arzda fiyat belirleme yöntemi sabit olmak zorunda değildir. Defter yapılı halka arz (bookbuilding) gibi yöntemlerle talep ve arz dengesine göre fiyat belirlenebilir. Diğer seçenekler halka arzın gerekli şartlarıdır: En az 100 kişiye satış (veya en az 20 milyon TL değer), genel halka yönelik, SPK izni gerektiren, prospektüs hazırlanması zorunlu işlemlerdir.",
+      "difficulty": "hard",
+      "tags": ["halka-arz", "mevzuat", "SPK-kanunu"]
+    },
+    {
+      "id": "q_1001_005",
+      "number": 5,
+      "text": "Yatırım fonu aşağıdakilerden hangisinin tanımıyla en doğru şekilde örtüşmektedir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Yatırımcılardan toplanan paraları uzman yönetimcilerin denetiminde çeşitli menkul kıymetlere yatıran finansal araç"
+        },
+        {
+          "key": "B",
+          "text": "Devlet tarafından ihraç edilen ve sabit faiz getirisi sağlayan Borsa araçları"
+        },
+        {
+          "key": "C",
+          "text": "Şirketlerin mülkiyeti paylaşmak amacıyla ihraç ettikleri kıymetler"
+        },
+        {
+          "key": "D",
+          "text": "Kredi kuruluşlarının sundukları uzun vadeli borçlanma araçları"
+        },
+        {
+          "key": "E",
+          "text": "Geri almama garantisiyle sunulan tasarruf ürünleri"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "Yatırım fonu, **pooled investment** kavramına dayanır: Çok sayıda yatırımcıdan toplanan paraları (katılma belgeleri karşılığında) profesyonel yöneticiler tarafından (fon yönetimi şirketi) belirli bir yatırım stratejisine göre çeşitli menkul kıymetlere yatırılır. A seçeneği bu tanımı en doğru şekilde verir. B tahvil, C hisse senedi, D banka tahvili, E sadece tasarruf ürünü tanımıdır.",
+      "difficulty": "easy",
+      "tags": ["yatırım-fonu", "araçlar"]
+    }
+  ],
+  "metadata": {
+    "created_date": "2025-01-15",
+    "last_updated": "2025-01-15",
+    "version": "1.0",
+    "language": "tr",
+    "exam": "SPK SPL1"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1001",
+    "code": "1001",
+    "name": "Dar Kapsamlı Sermaye Piyasası Mevzuatı ve Meslek Kuralları",
+    "short_name": "Mevzuat & Meslek Kuralları",
+    "category": "Mevzuat",
+    "description": "6362 sayılı Sermaye Piyasası Kanunu, Kurumsal Yönetim, Özel Durumlar, TSPB Meslek Kuralları ve Disiplin Hükümleri.",
+    "color": "from-emerald-500/20 to-teal-500/20",
+    "borderColor": "border-emerald-500/30",
+    "accentColor": "text-emerald-400",
+    "icon": "Scale",
+    "total_exam_questions": 25,
+    "passing_score": 50,
+    "target_score": 70
+  },
+  {
+    "id": "1003",
+    "code": "1003",
+    "name": "Sermaye Piyasası Araçları 1",
+    "short_name": "Sermaye Piyasası Araçları",
+    "category": "Finansal Araçlar",
+    "description": "Paylar (Hisseler), Borçlanma Araçları (Tahvil/Bono), Kira Sertifikaları (Sukuk), Varantlar, Fonlar ve Depo Sertifikaları.",
+    "color": "from-cyan-500/20 to-blue-500/20",
+    "borderColor": "border-cyan-500/30",
+    "accentColor": "text-cyan-400",
+    "icon": "Coins",
+    "total_exam_questions": 25,
+    "passing_score": 50,
+    "target_score": 70
+  },
+  {
+    "id": "1005",
+    "code": "1005",
+    "name": "Yatırım Kuruluşları",
+    "short_name": "Yatırım Kuruluşları",
+    "category": "Kurumsal",
+    "description": "Aracı Kurumlar, Bankalar, Yetki Belgeleri, Müşteri Sınıflandırması, Uygunluk Testleri, Kredili İşlemler ve YTM.",
+    "color": "from-purple-500/20 to-indigo-500/20",
+    "borderColor": "border-purple-500/30",
+    "accentColor": "text-purple-400",
+    "icon": "Building2",
+    "total_exam_questions": 25,
+    "passing_score": 50,
+    "target_score": 70
+  },
+  {
+    "id": "1012",
+    "code": "1012",
+    "name": "Takas, Saklama ve Operasyon İşlemleri",
+    "short_name": "Takas, Saklama & Operasyon",
+    "category": "Operasyon",
+    "description": "Takasbank, Merkezi Kayıt Kuruluşu (MKK), Merkezi Karşı Taraf (MKT), T+2 Takas Döngüsü, DvP ve Temerrüt Yönetimi.",
+    "color": "from-amber-500/20 to-orange-500/20",
+    "borderColor": "border-amber-500/30",
+    "accentColor": "text-amber-400",
+    "icon": "ShieldCheck",
+    "total_exam_questions": 25,
+    "passing_score": 50,
+    "target_score": 70
+  }
+]

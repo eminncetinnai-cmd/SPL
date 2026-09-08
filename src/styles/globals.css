@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #F8FAFC;
+    --bg-surface: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-card-hover: #F1F5F9;
+    --border-color: #E2E8F0;
+    --border-light: #CBD5E1;
+    --teal-glow: #0D9488;
+  }
+
+  .dark {
+    --bg-main: #0B0F17;
+    --bg-surface: #111827;
+    --bg-card: #161F30;
+    --bg-card-hover: #1C283F;
+    --border-color: #22304A;
+    --border-light: #334466;
+    --teal-glow: #14B8A6;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #0F172A;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  .dark body {
+    color: #F1F5F9;
+  }
+}
+
+/* Modern Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0D131F;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #23334E;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #364B70;
+}
+
+/* Light Theme Contrast & Legibility Overrides */
+html:not(.dark) .bg-fintech-surface,
+html:not(.dark) .bg-fintech-card {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
+}
+
+/* Light Theme Text Contrast in Card Headers & Body */
+html:not(.dark) .bg-fintech-surface > div > h1,
+html:not(.dark) .bg-fintech-surface > div > h2,
+html:not(.dark) .bg-fintech-surface > div > h3,
+html:not(.dark) .bg-fintech-surface h1.text-white,
+html:not(.dark) .bg-fintech-surface h2.text-white,
+html:not(.dark) .bg-fintech-surface h3.text-white,
+html:not(.dark) .bg-fintech-surface h4.text-white,
+html:not(.dark) .bg-fintech-card h1.text-white,
+html:not(.dark) .bg-fintech-card h2.text-white,
+html:not(.dark) .bg-fintech-card h3.text-white,
+html:not(.dark) .bg-fintech-surface span.text-white,
+html:not(.dark) .bg-fintech-card span.text-white,
+html:not(.dark) .bg-fintech-surface .font-black.text-white,
+html:not(.dark) .bg-fintech-card .font-black.text-white {
+  color: #0F172A;
+}
+
+html:not(.dark) .bg-fintech-surface .text-slate-100,
+html:not(.dark) .bg-fintech-card .text-slate-100 {
+  color: #0F172A;
+}
+
+html:not(.dark) .bg-fintech-surface .text-slate-200,
+html:not(.dark) .bg-fintech-card .text-slate-200 {
+  color: #1E293B;
+}
+
+html:not(.dark) .bg-fintech-surface .text-slate-300,
+html:not(.dark) .bg-fintech-card .text-slate-300 {
+  color: #334155;
+}
+
+html:not(.dark) .bg-fintech-surface .text-slate-400,
+html:not(.dark) .bg-fintech-card .text-slate-400 {
+  color: #64748B;
+}
+
+/* Retain crisp white on explicit solid colored buttons */
+html:not(.dark) button.bg-teal-500,
+html:not(.dark) button.bg-teal-600,
+html:not(.dark) button.bg-emerald-500,
+html:not(.dark) button.bg-emerald-600,
+html:not(.dark) button.bg-rose-500,
+html:not(.dark) button.bg-rose-600,
+html:not(.dark) button.bg-amber-500,
+html:not(.dark) button.bg-amber-600,
+html:not(.dark) [class*="bg-gradient-to-"] button,
+html:not(.dark) button[class*="bg-gradient-to-"] {
+  color: #FFFFFF !important;
+}
+
+html:not(.dark) button[class*="bg-gradient-to-"] span,
+html:not(.dark) button[class*="bg-teal-"] span,
+html:not(.dark) button[class*="bg-emerald-"] span {
+  color: inherit;
+}
+
+/* Glass & Glow adjustments for light mode */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.dark .glass-panel {
+  background: rgba(22, 31, 48, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.dark .glass-card {
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(34, 48, 74, 0.9);
+}
+
+.glow-teal {
+  box-shadow: 0 4px 14px 0 rgba(13, 148, 136, 0.15);
+}
+
+.glow-emerald {
+  box-shadow: 0 4px 14px 0 rgba(5, 150, 105, 0.15);
+}
+
+.glow-rose {
+  box-shadow: 0 4px 14px 0 rgba(225, 29, 72, 0.15);
+}
+
+/* Subtle pulse */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.75; }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s infinite ease-in-out;
+}

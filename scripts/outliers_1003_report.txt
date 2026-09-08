@@ -1,0 +1,208 @@
+ID: q_1003_master_004 | Key: B | Ratio: 2.96 (C: 177, Avg W: 59.8)
+Text: Halka açık anonim ortaklıklarda bedelsiz sermaye artırımı uygulaması ve pay sahiplerinin hakları bakımından geçerli olan esas aşağıdakilerden hangisidir?
+       A: Şirket kasasına dışarıdan taze nakit girişi sağlanır.
+   [*] B: Şirketin iç kaynakları (yeniden değerleme artışı, dağıtılmamış geçmiş yıl kârları vb.) sermayeye eklenir ve ortaklara bedelsiz pay dağıtılır; şirketin özkaynak toplamı değişmez.
+       C: Mevcut ortakların sahip olduğu hisse sayısı azalır.
+       D: Bedelsiz pay ihracı için SPK'dan izin alınması gerekmez.
+       E: Bedelsiz sermaye artırımı sonrasında hisse fiyatı matematiksel olarak yükselir.
+------------------------------------------------------------
+ID: q_1003_master_012 | Key: B | Ratio: 2.41 (C: 155, Avg W: 64.2)
+Text: Halka açık anonim ortaklıklarda pay sahiplerinin 'Özel Denetçi' talep edebilme hakkı ve usulü bakımından aşağıdakilerden hangisi geçerlidir?
+       A: Özel denetçiyi sadece şirket genel müdürü atayabilir.
+   [*] B: Bilgi alma veya inceleme hakkı önceden kullanılmış olmak şartıyla, genel kurul talebi reddetse dahi azınlık mahkemeden özel denetçi atanmasını isteyebilir.
+       C: Özel denetçi atanması için şirket hisselerinin %99'una sahip olunmalıdır.
+       D: Özel denetim kararı hiçbir şekilde mahkemeye taşınamaz.
+       E: Özel denetçi yalnızca şirketin vergi beyannamelerini incelemekle yetkilidir.
+------------------------------------------------------------
+ID: q_1003_master_020 | Key: E | Ratio: 2.43 (C: 76, Avg W: 31.2)
+Text: Pay sahibinin anonim ortaklıkta oy hakkı kural olarak ne zaman doğar?
+       A: Şirket kurulduktan 5 yıl sonra
+       B: Sadece şirket kâr dağıttığı gün
+       C: Yalnızca bağımsız denetim onayından sonra
+       D: Hisseler satıldığı anda
+   [*] E: Pay bedelinin kanunen ödenmesi gereken asgari tutarı ödendiği andan itibaren
+------------------------------------------------------------
+ID: q_1003_master_021 | Key: D | Ratio: 3.59 (C: 78, Avg W: 21.8)
+Text: Önemli nitelikteki işlemlerde ayrılma hakkı kapsamında şirket tarafından geri alınan paylar ne kadar süre içinde elden çıkarılmalıdır?
+       A: 10 yıl içinde
+       B: Aynı gün içinde
+       C: Hiçbir zaman elden çıkarılamaz
+   [*] D: En geç 1 yıl içinde (elden çıkarılamazsa sermaye azaltımı yoluyla itfa edilir)
+       E: Sadece şirket batarsa satılır
+------------------------------------------------------------
+ID: q_1003_master_036 | Key: D | Ratio: 3.55 (C: 190, Avg W: 53.5)
+Text: Eurobond (Dış Borçlanma Aracı) ihraç yapısı, kupon ödeme periyodu ve vergilendirme niteliği bakımından geçerli esas aşağıdakilerden hangisidir?
+       A: Sadece Euro para birimi cinsinden ihraç edilebilir.
+       B: Kupon ödemeleri her hafta yapılır.
+       C: Eurobond'lar Takasbank yerine sadece New York Borsasında fiziki işlem görür.
+   [*] D: Bir devletin veya şirketin kendi ulusal para birimi ve ülkesi dışındaki uluslararası piyasalarda yabancı para cinsinden (genellikle USD veya EUR) ihraç ettiği uzun vadeli borçlanma aracıdır.
+       E: Eurobond ihraçlarında faiz getirisi kanunen yasaktır.
+------------------------------------------------------------
+ID: q_1003_master_056 | Key: E | Ratio: 2.35 (C: 146, Avg W: 62.2)
+Text: Varlık Kiralama Şirketleri (VKŞ) portföyündeki varlıkların hukuki statüsü ve ayrılığı ilkesi bakımından mevzuat kuralı aşağıdakilerden hangisidir?
+       A: Kaynak kuruluşun borçları nedeniyle haczedilebilir.
+       B: VKŞ kurucusu aracı kurum veya banka, portföydeki varlıkları kendi ticari kredi borçları için teminat gösterebilir.
+       C: Varlıklar sadece 1 ay süreyle korunur.
+       D: İcra daireleri bu varlıkları anında satabilir.
+   [*] E: Kira sertifikası sahiplerinin hakları itfa edilinceye kadar kamu alacakları için dahi haczedilemez, rehnedilemez ve iflas masasına dahil edilemez.
+------------------------------------------------------------
+ID: q_1003_master_090 | Key: D | Ratio: 2.99 (C: 146, Avg W: 48.8)
+Text: Bir PYŞ aynı anda yönettiği A Fonu ile B Fonu arasında varlık alım satımı yaparken hangi kurala uymak zorundadır?
+       A: Zarar eden fonun kâr eden fona ucuza hisse satması zorunludur.
+       B: Fonlar arası transfer tamamen gizli tutulmalıdır.
+       C: Fiyatı PYŞ genel müdürü keyfi belirler.
+   [*] D: İşlemin piyasa fiyatından (adil değer) yapılması, fonlar arası haksız kaynak aktarımı yapılmaması ve seans içi objektif borsa kurallarına uyulması
+       E: Fonlar arasında hiçbir zaman işlem yapılamaz.
+------------------------------------------------------------
+ID: q_1003_ogretici_002 | Key: B | Ratio: 3.35 (C: 82, Avg W: 24.5)
+Text: İmtiyazlı payın ayırt edici özelliği nedir?
+       A: Her durumda zarar riskini kaldırması
+   [*] B: Belirli haklar bakımından diğer paylara göre farklılaştırılmış haklar içerebilmesi
+       C: Sabit faiz ödemesi
+       D: Vadesinin bulunması
+       E: Devlet güvencesi taşıması
+------------------------------------------------------------
+ID: q_1003_ogretici_008 | Key: C | Ratio: 2.35 (C: 70, Avg W: 29.8)
+Text: Opsiyon alıcısının temel özelliği nedir?
+       A: Her durumda sözleşmeyi kullanmakla yükümlü olması
+       B: İhraççının ortağı olması
+   [*] C: Belirli koşullarda hakkını kullanıp kullanmama seçeneğine sahip olması
+       D: Sabit kupon alması
+       E: Temerrüt riskini sıfırlaması
+------------------------------------------------------------
+ID: q_1003_ogretici_017 | Key: B | Ratio: 2.2 (C: 139, Avg W: 63.2)
+Text: Varantlar (Warrants) ile VİOP Opsiyon Sözleşmeleri karşılaştırıldığında aşağıdakilerden hangisi Varantların ayırt edici bir özelliğidir?
+       A: Varantlarda yatırımcının zararı sınırsızdır
+   [*] B: Varantlar menkul kıymet niteliğinde olup yalnızca ihraççı kurum tarafından ihraç edilir ve teminat tamamlama çağrısı (Margin Call) bulunmaz
+       C: Varantlar hiçbir şekilde Borsa İstanbul'da işlem göremez
+       D: Varant işlemlerinde hem alıcı hem satıcı taraf takas merkezine nakit teminat yatırmakla yükümlüdür
+       E: Varantların vadesi kanunen en az 10 yıl olmak zorundadır
+------------------------------------------------------------
+ID: q_1003_ogretici_018 | Key: C | Ratio: 2.02 (C: 123, Avg W: 60.8)
+Text: Gayrimenkul Yatırım Ortaklıkları (GYO) ile ilgili olarak portföy sınırlamaları ve kazanç istisnası bakımından aşağıdakilerden hangisi DOĞRUDUR?
+       A: GYO'lar sadece altın ve kıymetli maden yatırımı yapmak zorundadır
+       B: GYO portföyünde hiçbir şekilde nakit veya mevduat bulundurulamaz
+   [*] C: GYO'lar kurumlar vergisinden muaftır ve portföylerinin en az %51'i gayrimenkul ve gayrimenkule dayalı haklardan oluşmalıdır
+       D: GYO'ların halka açılma zorunluluğu bulunmaz, tamamen kapalı kalabilirler
+       E: GYO payları Takasbank güvencesi dışındadır
+------------------------------------------------------------
+ID: q_1003_ogretici_019 | Key: D | Ratio: 2.6 (C: 162, Avg W: 62.2)
+Text: Borsa Yatırım Fonları (BYF / ETF) paylarının işlem görme biçimi geleneksel menkul kıymet yatırım fonlarından hangi temel yönüyle ayrılır?
+       A: BYF'ler sadece devlet bankaları tarafından satın alınabilir
+       B: BYF katılma payları hiçbir şekilde borsaya kote edilemez
+       C: Geleneksel fonlar seans içinde anlık işlem görürken BYF'ler ayda bir fiyatlanır
+   [*] D: Geleneksel fonlar gün sonunda tek fiyattan (NAD) işlem görürken, BYF payları borsa seans saatleri boyunca hisse senedi gibi anlık piyasa fiyatından alınıp satılır
+       E: BYF'lerde portföy yöneticisi bulunması kanunen yasaktır
+------------------------------------------------------------
+ID: q_1003_ogretici_020 | Key: E | Ratio: 1.98 (C: 104, Avg W: 52.5)
+Text: Varlığa Dayalı Menkul Kıymetler (VDMK) ihracında teminat havuzuna alınabilecek alacak türleri arasında aşağıdakilerden hangisi YER ALAMAZ?
+       A: Tüketici, konut ve taşıt kredisi alacakları
+       B: Finansal kiralama (leasing) sözleşmelerinden doğan gelecekteki kira alacakları
+       C: İhracat işlemlerinden doğan faturalı ticari alacaklar
+       D: İpotekli konut finansmanı alacakları
+   [*] E: Gelecekte doğması muhtemel ancak henüz sözleşmeye ve faturaya bağlanmamış şarta bağlı ticari beklentiler
+------------------------------------------------------------
+ID: q_1003_cikmis_004 | Key: B | Ratio: 2.17 (C: 143, Avg W: 66.0)
+Text: Türk Ticaret Kanunu m. 479 uyarınca anonim şirketlerde paylara tanınabilecek oy imtiyazının azami sınırı ve geçerli olmadığı kararlar hangisinde doğru verilmiştir?
+       A: Bir paya en fazla 5 oy verilebilir; sermaye artırımlarında geçerli değildir.
+   [*] B: Eşit itibari değerdeki bir paya en fazla 15 oy hakkı tanınabilir; esas sözleşme değişikliği ve ibra/sorumluluk davası açılmasında kullanılamaz.
+       C: Oy hakkı imtiyazına herhangi bir yasal üst sınır getirilmemiştir.
+       D: Hamiline yazılı paylara sınırsız oy imtiyazı tanınabilir.
+       E: Oy imtiyazı sadece yönetim kurulunun ilk toplantısında geçerlidir.
+------------------------------------------------------------
+ID: q_1003_cikmis_014 | Key: B | Ratio: 7.43 (C: 52, Avg W: 7.0)
+Text: Bir mal veya emtianın peşin bedelle satın alınıp vadeli olarak daha yüksek bir fiyata satılması esasına dayanan sukuk türü hangisidir?
+       A: İcara
+   [*] B: Murabaha (Yönetim sözleşmesine / alım satıma dayalı)
+       C: Mudaraba
+       D: Müşarake
+       E: İstisna
+------------------------------------------------------------
+ID: q_1003_cikmis_023 | Key: A | Ratio: 3.44 (C: 67, Avg W: 19.5)
+Text: Sermaye Piyasası Araçları mevzuatı ve piyasa uygulamaları uyarınca; Borçlanma Aracı Sahipleri Kurulu'nda (BASK) borçlanma aracının vade veya faiz şartlarının değiştirilmesine ilişkin ağırlaştırılmış karar nisabı nedir?
+   [*] A: Tedavüldeki borçlanma araçları toplamının en az 3/4'ünün olumlu oyu
+       B: Katılanların salt çoğunluğu
+       C: 1/2 oranında olumlu oy
+       D: Oybirliği
+       E: Yönetim kurulu onayı
+------------------------------------------------------------
+ID: q_1003_master_119 | Key: D | Ratio: 2.2 (C: 112, Avg W: 51.0)
+Text: Portföyünde 2.000.000 TL tutarında BIST 30 hisse senedi bulunduran bir portföy yöneticisi, önümüzdeki 1 ay boyunca borsada beklediği genel düşüş riskinden hisselerini satmadan korunmak (hedge etmek) istemektedir. Yöneticinin VİOP'ta alması gereken en uygun pozisyon aşağıdakilerden hangisidir?
+       A: BIST 30 Endeks vadeli sözleşmesinde Uzun (Long) pozisyon açmak
+       B: Pay senedi Alım (Call) opsiyonu satın almak
+       C: Dolar/TL vadeli sözleşmelerinde Kısa (Short) pozisyon açmak
+   [*] D: Portföy büyüklüğüne denk gelecek tutarda BIST 30 Endeks vadeli sözleşmesinde Kısa (Short / Satış) pozisyon açmak
+       E: Kredili pay senedi alımı gerçekleştirmek
+------------------------------------------------------------
+ID: q_1003_master_124 | Key: D | Ratio: 1.86 (C: 228, Avg W: 122.5)
+Text: Sermaye Piyasası Kurulu'nun Girişim Sermayesi Pazarı (GSP - Tebliğ II-16.3) düzenlemeleri ve 2026 yılı yeniden değerleme kriterleri çerçevesinde, şirketlerin GSP'de pay ihraç etmesine ilişkin aşağıdakilerden hangisi doğrudur?
+       A: GSP'de paylar halka arz edilerek satılır ve şirket ortakları diledikleri takdirde mevcut paylarını da halka arz edebilirler
+       B: GSP'de işlem görecek şirketlerin son mali yılda net kâr elde etmiş olması ve asgari 3 yıl faaliyet geçmişi bulunması zorunludur
+       C: GSP şirketleri 3 ve 9 aylık ara dönem finansal raporlarını bağımsız denetimden geçirerek KAP'ta ilan etmekle yükümlüdür
+   [*] D: 2026 yılı için aktif toplamı en az 50 Milyon TL, net satış hasılatı en az 25 Milyon TL ve sermayesi en az 25 Milyon TL olmalı; ihraç yalnızca sermaye artırımıyla nitelikli yatırımcılara yapılmalı ve ek pay satışı yapılamamalıdır
+       E: GSP'de satış süresi en az 15 iş günü olup nitelikli yatırımcılara tahsisli olarak sadece borçlanma aracı ihraç edilebilir
+------------------------------------------------------------
+ID: q_1003_master_127 | Key: B | Ratio: 2.18 (C: 260, Avg W: 119.2)
+Text: Pay Tebliği (VII-128.1) uyarınca, payları ilk defa halka arz edilen ortaklıkların halka arz sonrasında hazırlanacak 'Değerlendirme Raporları' ve ortaklığın 'Geleceğe Yönelik Varsayımları Karşılaştırma Raporu' takvimi hakkında hangisi doğrudur?
+       A: Değerlendirme raporları yalnızca halka arzdan 3 yıl sonra tek bir defaya mahsus olmak üzere hazırlanır
+   [*] B: Yetkili kuruluş ilk yıl içinde ilki payların işlem görmesinden 6 ay sonra ve aralarında en az 4 ay olmak üzere en az 2 adet değerlendirme raporu hazırlar; ortaklık ise izahnamedeki varsayımların gerçekleşmesini 2 yıl süreyle finansal raporlarıyla karşılaştırır
+       C: Ortaklık değerlendirme raporlarını aylık olarak hazırlar ve konsorsiyum üyelerinden bağımsız olarak Borsa İstanbul'a sunar
+       D: İlk halka arz sonrasında ortaklığın veya yetkili kuruluşun herhangi bir izleme veya gerçekleşme raporu hazırlama yükümlülüğü bulunmamaktadır
+       E: Değerlendirme raporu sadece fiyat istikrarı süresi içerisinde zarar eden ortaklıklar için yılda 4 defa hazırlanır
+------------------------------------------------------------
+ID: q_1003_master_128 | Key: C | Ratio: 2.05 (C: 228, Avg W: 111.2)
+Text: SPK Pay Tebliği (VII-128.1 md. 27) ve Kurulun i-SPK.128.19 sayılı İlke Kararı uyarınca, payları borsada işlem gören ortaklıkların ortaklarının borsada gerçekleştirecekleri pay satışları ve Pay Satış Bilgi Formu hakkında hangisi doğrudur?
+       A: Sermayenin %1'ini aşan pay satışlarında Kuruldan izin alınmasına gerek olmaksızın doğrudan Borsa İstanbul'da satış yapılabilir
+       B: Onaylanan pay satış bilgi formu KAP'ta ilan edildiği gün piyasa açılış seansında satış işlemlerine derhal başlanabilir
+   [*] C: Sermayenin %3'ünü aşan pay satışlarında SPK onaylı bilgi formu zorunludur; form satıştan en az 5 iş günü önce KAP'ta ilan edilir, satış en erken 3. iş günü başlar, günlük satış sermayenin %10'unu geçemez ve form 1 yıl geçerlidir
+       D: Pay satış bilgi formu sadece imtiyazlı pay sahipleri için düzenlenir ve formun yasal geçerlilik süresi 30 gündür
+       E: Günlük satış miktarı şirketin ödenmiş sermayesinin en az %25'i tutarında olmak zorundadır
+------------------------------------------------------------
+ID: q_1003_master_130 | Key: E | Ratio: 2.08 (C: 220, Avg W: 105.8)
+Text: Borçlanma Araçları Tebliği (VII-128.8 md. 9) uyarınca ihraç edilebilecek borçlanma araçlarının genel ihraç tavanı limitleri ve bankalara tanınan artırım oranı hakkında hangisi doğrudur?
+       A: İhraç tavanı tüm ortaklıklarda ödenmiş sermayenin 2 katı ile sınırlıdır ve bankalar için hiçbir istisna tanınmamıştır
+       B: Halka açık ortaklıklarda özkaynakların 10 katı, halka açık olmayanlarda ise 5 katı olarak uygulanır
+       C: İpotek finansmanı kuruluşları için ihraç limiti özkaynaklarının en fazla 3 katı ile sınırlandırılmıştır
+       D: İhraç tavanı hesaplanırken sadece şirketin kasasındaki nakit ve banka mevduatları toplamı dikkate alınır
+   [*] E: İhraç tavanı halka açık ortaklıklarda özkaynakların 5 katı, halka kapalı ortaklıklarda ise 3 katıdır; yatırım yapılabilir ilk 3 kademe nota sahip bankalarda bu oranlar %100 artırılarak sırasıyla 10 kat ve 6 kat uygulanır
+------------------------------------------------------------
+ID: q_1003_master_133 | Key: C | Ratio: 1.95 (C: 227, Avg W: 116.5)
+Text: SPK'nın Borçlanma Aracı Sahipleri Kurulu Tebliği (II-31/A.1) uyarınca, ihraç şartlarında değişiklik yapılması sürecinde Tertip BASK ve Genel BASK işleyişine ilişkin hangisi doğrudur?
+       A: Tertip BASK toplantısında kararlar basit çoğunlukla alınır ve karar alındığı anda yönetim kurulunun onayına gerek kalmaksızın derhal kesinleşir
+       B: Genel BASK toplanması için tüm tertip sahiplerinin oybirliği ile noter kanalıyla talepte bulunması kanunen şarttır
+   [*] C: Tertip BASK tedavüldeki nominal tutarın en az 2/3 çoğunluğunun olumlu oyu ile karar alır; karar 3 iş gününde YK onayına sunulur; diğer tertipler %20 ile 5 iş gününde Genel BASK talep edebilir (Genel BASK 15 iş gününde toplanır)
+       D: BASK kararları aleyhine SPK veya ticaret mahkemeleri nezdinde hiçbir itiraz veya dava yolu açılamaz
+       E: Tertip temsilcisi ihraççı şirketin genel müdürü tarafından re'sen atanır ve azli sadece şirketin yetkisindedir
+------------------------------------------------------------
+ID: q_1003_master_134 | Key: D | Ratio: 1.82 (C: 234, Avg W: 128.2)
+Text: SPK'nın Yeşil Borçlanma Aracı, Sürdürülebilir Borçlanma Aracı, Yeşil Kira Sertifikası ve Sürdürülebilir Kira Sertifikası Rehberi (i-SPK.128.18) çerçevesinde hangisi doğrudur?
+       A: Yeşil borçlanma araçlarından elde edilen gelirler şirketin her türlü işletme sermayesi ve genel borç geri ödemelerinde serbestçe kullanılabilir
+       B: İhraççının ikinci taraf görüşü (Second Party Opinion) veya dış değerlendirme raporu temin etme zorunluluğu bulunmamaktadır
+       C: Yeşil borçlanma araçları için SPK Kurul ücreti normal borçlanma araçlarına göre %100 zamlı tahsil edilir
+   [*] D: Rehber 4 temel bileşenden oluşur (Fonun Kullanımı, Proje Değerlendirme, Fonun Yönetimi, Raporlama); İkinci Taraf Görüşü zorunludur ve Kurul ücretinde %50 indirim uygulanır; deniz ve su kaynakları projelerine Mavi borçlanma aracı denir
+       E: Yeşil tahvil ihracında fon gelirlerinin takibi MKK yerine doğrudan T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı müfettişlerince yapılır
+------------------------------------------------------------
+ID: q_1003_master_137 | Key: B | Ratio: 2.66 (C: 231, Avg W: 87.0)
+Text: VİOP'ta açık pozisyonların kâr/zararının ve teminat tamamlama çağrılarının hesaplanmasında kullanılan 'Günlük Uzlaşma Fiyatı'nın belirlenmesinde uygulanan hiyerarşik sıralama hangisinde doğru verilmiştir?
+       A: Günün en yüksek işlem fiyatı ➔ Günün en düşük işlem fiyatı ➔ Aritmetik ortalama
+   [*] B: Normal seansın son 10 dakikasındaki işlemlerin miktar ağırlıklı ortalama fiyatı ➔ Son 10 dakikada 10'dan az işlem varsa geriye dönük son 10 işlemin ağırlıklı ortalaması ➔ Seans içinde hiç işlem olmamışsa önceki günün uzlaşma fiyatı
+       C: Tüm seans boyunca gerçekleşen tüm işlemlerin basit aritmetik ortalaması alınarak doğrudan belirlenir
+       D: Akşam seansının kapanış fiyatı doğrudan günlük uzlaşma fiyatı olarak sisteme kaydedilir
+       E: Takasbank Yönetim Kurulu tarafından piyasa kapanışından sonra re'sen takdir edilir
+------------------------------------------------------------
+ID: q_1003_master_138 | Key: C | Ratio: 2.15 (C: 202, Avg W: 94.0)
+Text: BIST 30 Endeks Vadeli İşlem Sözleşmelerinde vade sonunda pozisyonların nakdi olarak kapatılmasında kullanılan 'Vade Sonu Uzlaşma Fiyatı' nasıl hesaplanır?
+       A: Vade sonu günü VİOP seansında gerçekleşen son vadeli işlem fiyatı doğrudan uzlaşma fiyatı olur
+       B: BIST 100 endeksinin vade günündeki en yüksek ve en düşük değerlerinin geometrik ortalaması alınır
+   [*] C: BIST 30 spot endeksinin vade günündeki son 30 dakikasındaki sürekli müzayede işlemlerinin zaman ağırlıklı ortalama fiyatının %80'i ile BIST 30 kapanış seansı fiyatının %20'sinin toplanmasıyla hesaplanır
+       D: TCMB tarafından ilan edilen gösterge niteliğindeki döviz ve faiz kurlarının ağırlıklı ortalaması alınır
+       E: Vade sonundaki son 10 dakikanın miktar ağırlıklı vadeli sözleşme fiyatı kullanılır
+------------------------------------------------------------
+ID: q_1003_master_140 | Key: E | Ratio: 2.05 (C: 237, Avg W: 115.5)
+Text: Hazine ve Maliye Bakanlığı tarafından gerçekleştirilen Devlet İç Borçlanma Senedi (DİBS) ihraç yöntemleri ve Rekabetçi Olmayan Teklif (ROT) uygulaması hakkında hangisi doğrudur?
+       A: Tek fiyat ihalesinde kazanan katılımcılar bizzat kendi teklif ettikleri farklı fiyatlardan borçlanma senetlerini satın alırlar
+       B: Çoklu fiyat ihalesinde ihalede oluşan en düşük fiyat kazanan tüm katılımcılara tek bir satış fiyatı olarak uygulanır
+       C: ROT teklifleri ihale sonuçları kesinleştikten sonra kalan senetler için serbestçe verilebilir
+       D: Bireysel yatırımcılar Hazine ihalelerine doğrudan ve teminatsız olarak ROT teklifi vererek istedikleri tutarda DİBS alabilirler
+   [*] E: Çoklu fiyat ihalesinde herkes kendi teklif ettiği fiyattan alır; Tek fiyat ihalesinde ise herkes marjinal tek fiyattan alır. Rekabetçi Olmayan Teklif (ROT) ise yalnızca kamu kuruluşları ve Piyasa Yapıcı (PY) bankalara tanınmış bir haktır
+------------------------------------------------------------

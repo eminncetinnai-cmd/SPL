@@ -1,0 +1,4402 @@
+[
+  {
+    "id": "q_1001_cikmis_001",
+    "module_id": "1001",
+    "number": 1,
+    "source": "cikmis",
+    "topic": "Halka Arz & İzahname Onay Süresi",
+    "chapter": "BÖLÜM 3: HALKA ARZ VE İZAHNAME DÜZENLEMELERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu uyarınca, payları ilk defa halka arz edilecek ortaklıkların Kurul'a yapacakları izahname onayı başvurusunda, Kurul tarafından izahnamenin incelenmesi ve karara bağlanması azami kaç iş günü içinde tamamlanır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "10 iş günü"
+      },
+      {
+        "key": "B",
+        "text": "15 iş günü"
+      },
+      {
+        "key": "C",
+        "text": "20 iş günü"
+      },
+      {
+        "key": "D",
+        "text": "30 iş günü"
+      },
+      {
+        "key": "E",
+        "text": "45 iş günü"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "6362 sayılı SPKn m. 5 uyarınca, izahnamenin Kurul tarafından incelenip onaylanması başvuru tarihinden itibaren 10 iş günü içinde tamamlanır; ancak payları ilk defa halka arz edilecek ortaklıklar için bu süre 20 iş günüdür.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Sınavda en sık kurulan tuzak genel 10 iş günü ile ilk halka arz olan 20 iş gününün karıştırılmasıdır. İlk halka arzlarda süre 20 iş günüdür.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Halka Arz & İzahname Onay Süresi"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_002",
+    "module_id": "1001",
+    "number": 2,
+    "source": "cikmis",
+    "topic": "Sermaye Piyasası Suçları & Yaptırımlar",
+    "chapter": "BÖLÜM 2: SPK DENETİM YETKİLERİ VE SUÇLAR",
+    "text": "Aşağıdakilerden hangisi 6362 sayılı Sermaye Piyasası Kanunu'nda düzenlenen özel 'Sermaye Piyasası Suçları' arasında YER ALMAZ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bilgi suiistimali (İçeriden öğrenenlerin ticareti - m. 106)"
+      },
+      {
+        "key": "B",
+        "text": "Piyasa dolandırıcılığı (Manipülasyon - m. 107)"
+      },
+      {
+        "key": "C",
+        "text": "Usulsüz halka arz ve izinsiz sermaye piyasası faaliyeti (m. 109)"
+      },
+      {
+        "key": "D",
+        "text": "Örtülü kazanç aktarımı suçu (m. 110)"
+      },
+      {
+        "key": "E",
+        "text": "İrtikap ve rüşvet suçu"
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "İrtikap ve rüşvet, 5237 sayılı Türk Ceza Kanunu kapsamındaki genel kamu idaresine karşı suçlardandır; 6362 sayılı SPKn'da düzenlenen sermaye piyasası suçları bilgi suiistimali, piyasa dolandırıcılığı, usulsüz halka arz/izinsiz faaliyet, güveni kötüye kullanma ve sahteciliktir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Sermaye piyasası suçları SPKn 106-113 maddelerinde sınırlı (numerus clausus) olarak sayılmıştır.",
+    "difficulty": "easy",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Sermaye Piyasası Suçları & Yaptırımlar"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_003",
+    "module_id": "1001",
+    "number": 3,
+    "source": "cikmis",
+    "topic": "Genel Kurul Çağrı Süresi",
+    "chapter": "BÖLÜM 1: 6362 SAYILI KANUN VE GENEL HÜKÜMLER",
+    "text": "6362 sayılı SPKn m. 29 uyarınca, payları borsada işlem gören halka açık anonim ortaklıkların genel kurul toplantı çağrısına ilişkin asgari süre şartı aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İlan ve toplantı günleri hariç en az 2 hafta önce"
+      },
+      {
+        "key": "B",
+        "text": "İlan ve toplantı günleri dahil en az 15 gün önce"
+      },
+      {
+        "key": "C",
+        "text": "İlan ve toplantı günleri hariç olmak üzere en az 3 hafta önce"
+      },
+      {
+        "key": "D",
+        "text": "Toplantı gününden itibaren en geç 1 ay içinde"
+      },
+      {
+        "key": "E",
+        "text": "İlan ve toplantı günleri dahil olmak üzere en az 30 gün önce"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "TTK m. 414 uyarınca kapalı şirketlerde genel kurul çağrısı 2 hafta önceden yapılırken, 6362 sayılı SPKn m. 29 uyarınca halka açık ortaklıklarda çağrı ilan ve toplantı günleri hariç olmak üzere en az 3 hafta (21 gün) önce yapılmalıdır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu\n• TTK: 6102 sayılı Türk Ticaret Kanunu",
+    "trap": "TTK'daki 2 hafta ile SPKn'daki 3 haftayı karıştırmayınız.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Genel Kurul Çağrı Süresi"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_004",
+    "module_id": "1001",
+    "number": 4,
+    "source": "cikmis",
+    "topic": "Ayrılma Hakkı & Muhalefet Şerhi",
+    "chapter": "BÖLÜM 1: 6362 SAYILI KANUN VE GENEL HÜKÜMLER",
+    "text": "Halka açık anonim ortaklıklarda pay sahiplerinin 'Ayrılma Hakkı'nı (SPKn m. 24) kullanabilmeleri için gereken temel usuli şart aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Şirket sermayesinde en az %5 paya sahip olmak"
+      },
+      {
+        "key": "B",
+        "text": "Önemli nitelikteki işleme ilişkin genel kurul toplantısına katılıp olumsuz oy kullanarak muhalefet şerhini tutanağa işletmiş olmak"
+      },
+      {
+        "key": "C",
+        "text": "Şirketin son 3 mali yılda üst üste net zarar açıklamış olması"
+      },
+      {
+        "key": "D",
+        "text": "Yönetim kurulu üyelerinin ibrasına olumlu oy vermiş olmak"
+      },
+      {
+        "key": "E",
+        "text": "Toplantı tarihinden en az 1 yıl önce pay sahibi olduğunu MKK nezdinde kanıtlamak"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 24 ve II-23. 3 sayılı Tebliğ uyarınca ayrılma hakkı, önemli nitelikteki işlemlere (birleşme, bölünme, malvarlığının devri vb.) ilişkin genel kurul kararına olumsuz oy verip muhalefet şerhini toplantı tutanağına işleten pay sahipleri tarafından kullanılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Ayrılma hakkı için asgari bir pay sahipliği oranı aranmaz; 1 payı olan ortak dahi muhalefet şerhiyle ayrılma hakkını kullanabilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Ayrılma Hakkı & Muhalefet Şerhi"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_005",
+    "module_id": "1001",
+    "number": 5,
+    "source": "cikmis",
+    "topic": "Örtülü Kazanç Aktarımı Yasağı",
+    "chapter": "BÖLÜM 1: 6362 SAYILI KANUN VE GENEL HÜKÜMLER",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 21'de düzenlenen 'Örtülü Kazanç Aktarımı Yasağı'na ilişkin aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Halka açık ortaklıklar ilişkili taraflarıyla piyasa teamüllerine ve emsallerine aykırı fiyat, ücret veya bedel uygulayarak kazanç aktaramaz."
+      },
+      {
+        "key": "B",
+        "text": "Örtülü kazanç aktarımı yalnızca nakit para transferi yoluyla yapılabilir; mal satışı veya hizmet alımı bu kapsama girmez."
+      },
+      {
+        "key": "C",
+        "text": "Tespit edilen örtülü kazanç tutarının yasal faizi ile birlikte şirkete iadesi zorunludur."
+      },
+      {
+        "key": "D",
+        "text": "İade yükümlülüğünü yerine getirmeyen sorumlular hakkında Kurul tarafından dava açılabilir."
+      },
+      {
+        "key": "E",
+        "text": "Halka açık şirketlerce yapılan emsallerine göre bariz şekilde kârsız veya şirketi zarara uğratan ticari muameleler de bu kapsama girer."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Örtülü kazanç aktarımı; mal veya hizmet alım-satımı, üretim faktörlerinin devri, fason üretim, düşük/yüksek faizli borç verme gibi her türlü ticari ve iktisadi işlemle gerçekleştirilebilir.",
+    "trap": "Yasak yalnızca nakit transferlerini değil, piyasa fiyatından farklı yapılan her türlü mal ve hizmet ticaretini de kapsar.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Örtülü Kazanç Aktarımı Yasağı"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_006",
+    "module_id": "1001",
+    "number": 6,
+    "source": "cikmis",
+    "topic": "SPKn Kapsam",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu uyarınca aşağıdakilerden hangisi doğrudan Kanun'un kapsamı dışındadır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa İstanbul'da işlem gören paylar"
+      },
+      {
+        "key": "B",
+        "text": "Yatırım fonu katılma payları"
+      },
+      {
+        "key": "C",
+        "text": "Merkez Bankası'nın kendi bünyesindeki açık piyasa işlemleri"
+      },
+      {
+        "key": "D",
+        "text": "Özel sektör tahvilleri"
+      },
+      {
+        "key": "E",
+        "text": "Kira sertifikaları (Sukuk)"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "6362 sayılı Kanun m. 2 uyarınca Türkiye Cumhuriyet Merkez Bankası'nın kendi nezdindeki piyasalarda yürüttüğü para politikası ve açık piyasa işlemleri SPKn hükümlerine tabi değildir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "TCMB'nin kendi piyasaları SPKn dışındadır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "SPKn Kapsam"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_007",
+    "module_id": "1001",
+    "number": 7,
+    "source": "cikmis",
+    "topic": "Menkul Kıymet Sınırları",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Aşağıdakilerden hangisi Sermaye Piyasası Kanunu'na göre menkul kıymet niteliği TAŞIMAZ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Anonim şirket payları"
+      },
+      {
+        "key": "B",
+        "text": "İpotek teminatlı menkul kıymetler"
+      },
+      {
+        "key": "C",
+        "text": "Mevduat sertifikaları ve katılım hesapları"
+      },
+      {
+        "key": "D",
+        "text": "Devlet iç borçlanma senetleri (DİBS)"
+      },
+      {
+        "key": "E",
+        "text": "Yabancı hisse senetlerine dayalı depo sertifikaları"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Bankalardaki mevduat ve katılım fonu hesapları bankacılık mevzuatı kapsamındadır; menkul kıymet veya sermaye piyasası aracı değildir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• DİBS: Devlet İç Borçlanma Senetleri (Hazine Müsteşarlığı/Bakanlığı tarafından ihraç edilen Bono ve Tahviller)",
+    "trap": "Mevduat hesabı bir sermaye piyasası aracı değildir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Menkul Kıymet Sınırları"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_008",
+    "module_id": "1001",
+    "number": 8,
+    "source": "cikmis",
+    "topic": "Halka Açık Anonim Ortaklık Eşiği",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Kanun m. 16/2 uyarınca, pay sahibi sayısı kaçı aşan anonim şirketlerin payları halka arz olunmuş sayılır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "100"
+      },
+      {
+        "key": "B",
+        "text": "250"
+      },
+      {
+        "key": "C",
+        "text": "500"
+      },
+      {
+        "key": "D",
+        "text": "750"
+      },
+      {
+        "key": "E",
+        "text": "1.000"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPKn m. 16/2 uyarınca pay sahibi sayısı 500'ü aşan anonim ortaklıklar kanun gereği halka açık anonim ortaklık sayılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Kanuni halka açıklık eşiği 500 ortaktır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Halka Açık Anonim Ortaklık Eşiği"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_009",
+    "module_id": "1001",
+    "number": 9,
+    "source": "cikmis",
+    "topic": "İzahname Onay Süresi - Genel",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Payları ilk defa halka arz edilecek olanlar HARİÇ olmak üzere, Kurul'a sunulan izahname başvuruları azami kaç iş günü içinde karara bağlanır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "5 iş günü"
+      },
+      {
+        "key": "B",
+        "text": "10 iş günü"
+      },
+      {
+        "key": "C",
+        "text": "15 iş günü"
+      },
+      {
+        "key": "D",
+        "text": "20 iş günü"
+      },
+      {
+        "key": "E",
+        "text": "30 iş günü"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 5 uyarınca genel izahname inceleme süresi 10 iş günüdür; yalnızca ilk defa halka arz edilecek ortaklıklarda bu süre 20 iş günüdür.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Genel onay süresi 10 iş günüdür.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "İzahname Onay Süresi - Genel"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_010",
+    "module_id": "1001",
+    "number": 10,
+    "source": "cikmis",
+    "topic": "İzahnamenin Geçerlilik Süresi",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Kurul tarafından onaylanmış bir izahnamenin geçerlilik süresi onay tarihinden itibaren ne kadardır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3 ay"
+      },
+      {
+        "key": "B",
+        "text": "6 ay"
+      },
+      {
+        "key": "C",
+        "text": "12 ay"
+      },
+      {
+        "key": "D",
+        "text": "24 ay"
+      },
+      {
+        "key": "E",
+        "text": "Süresizdir"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPKn m. 6 uyarınca onaylanan izahname, onaylandığı tarihten itibaren 12 ay boyunca yapılacak ihraçlar için geçerlidir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "İzahname azami 12 ay geçerlidir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "İzahnamenin Geçerlilik Süresi"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_011",
+    "module_id": "1001",
+    "number": 11,
+    "source": "cikmis",
+    "topic": "İzahname Ek ve Değişiklik Bildirimi",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Satış süresi içinde izahnamede yer alan bilgileri etkileyebilecek önemli bir olayın meydana gelmesi halinde değişiklik metni Kurul'a ne kadar sürede sunulur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "En geç 2 iş günü içinde"
+      },
+      {
+        "key": "B",
+        "text": "En geç 5 iş günü içinde"
+      },
+      {
+        "key": "C",
+        "text": "En geç 10 gün içinde"
+      },
+      {
+        "key": "D",
+        "text": "En geç 15 gün içinde"
+      },
+      {
+        "key": "E",
+        "text": "Derhal 24 saat içinde"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "SPKn m. 5 uyarınca izahname ek veya değişiklikleri yeni olayın ortaya çıktığı tarihten itibaren en geç 2 iş günü içinde Kurul onayına sunulur.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "İzahname düzeltme başvurusu 2 iş günüdür.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "İzahname Ek ve Değişiklik Bildirimi"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_012",
+    "module_id": "1001",
+    "number": 12,
+    "source": "cikmis",
+    "topic": "İzahnameden Doğan Zararlarda Sorumluluk",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "İzahnamede yer alan yanlış veya yanıltıcı bilgilerden doğan zararların tazmininde kanunen BİRİNCİL sorumlu kimdir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aracı kurum konsorsiyum lideri"
+      },
+      {
+        "key": "B",
+        "text": "İhraççı ortaklık"
+      },
+      {
+        "key": "C",
+        "text": "Bağımsız denetim kuruluşu"
+      },
+      {
+        "key": "D",
+        "text": "Yeminli mali müşavir"
+      },
+      {
+        "key": "E",
+        "text": "Borsa İstanbul"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 10 uyarınca izahnameden doğan zararlardan birinci derecede ihraççı sorumludur; ihraççıdan tazmin edilemeyen kısım için aracı kurumlara ve bağımsız denetçilere gidilebilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Birincil sorumlu her zaman ihraççıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "İzahnameden Doğan Zararlarda Sorumluluk"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_013",
+    "module_id": "1001",
+    "number": 13,
+    "source": "cikmis",
+    "topic": "Kayıtlı Sermaye Tavanı İzin Süresi",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Kayıtlı sermaye sistemine geçen halka açık ortaklıklarda SPK tarafından verilen tavan izin süresi azami kaç yıldır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 yıl"
+      },
+      {
+        "key": "B",
+        "text": "2 yıl"
+      },
+      {
+        "key": "C",
+        "text": "3 yıl"
+      },
+      {
+        "key": "D",
+        "text": "5 yıl"
+      },
+      {
+        "key": "E",
+        "text": "10 yıl"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "SPKn m. 18 uyarınca kayıtlı sermaye tavan izni en çok 5 yıl için geçerlidir; 5 yıl sonunda genel kuruldan yeni tavan yetkisi alınmalıdır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Tavan izni azami 5 yıldır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Kayıtlı Sermaye Tavanı İzin Süresi"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_014",
+    "module_id": "1001",
+    "number": 14,
+    "source": "cikmis",
+    "topic": "Kayıtlı Sermaye Sisteminde Yönetim Kurulu Yetkisi",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Kayıtlı sermaye sisteminde yönetim kurulu aşağıdakilerden hangisini TEK BAŞINA yapamaz?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kayıtlı sermaye tavanı içinde sermayeyi artırmak"
+      },
+      {
+        "key": "B",
+        "text": "İmtiyazlı pay ihraç etmek (esas sözleşmede yetki varsa)"
+      },
+      {
+        "key": "C",
+        "text": "Rüçhan hakkını kısıtlamak (esas sözleşmede yetki varsa)"
+      },
+      {
+        "key": "D",
+        "text": "Kayıtlı sermaye tavanını aşarak sermaye artırmak"
+      },
+      {
+        "key": "E",
+        "text": "Primli pay ihracına karar vermek"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Yönetim kurulu kayıtlı sermaye tavanını aşarak sermaye artıramaz; tavan artırımı için esas sözleşme değişikliği ve genel kurul kararı zorunludur.",
+    "trap": "Tavanı aşma yetkisi sadece genel kuruldadır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Kayıtlı Sermaye Sisteminde Yönetim Kurulu Yetkisi"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_015",
+    "module_id": "1001",
+    "number": 15,
+    "source": "cikmis",
+    "topic": "Genel Kurul Çağrı Süresi",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Payları borsada işlem gören ortaklıkların genel kurul toplantı çağrısı ilan ve toplantı günleri hariç en az ne kadar süre önce yapılmalıdır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 hafta"
+      },
+      {
+        "key": "B",
+        "text": "2 hafta"
+      },
+      {
+        "key": "C",
+        "text": "3 hafta (21 gün)"
+      },
+      {
+        "key": "D",
+        "text": "1 ay (30 gün)"
+      },
+      {
+        "key": "E",
+        "text": "45 gün"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPKn m. 29 uyarınca halka açık anonim ortaklıklarda genel kurul toplantı çağrısı ilan ve toplantı günleri hariç en az 3 hafta önce yapılmak zorundadır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Halka açık şirketlerde süre ilan hariç 3 haftadır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Genel Kurul Çağrı Süresi"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_016",
+    "module_id": "1001",
+    "number": 16,
+    "source": "cikmis",
+    "topic": "Önemli Nitelikteki İşlemler",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Aşağıdakilerden hangisi 6362 sayılı Kanun m. 23 uyarınca 'Önemli Nitelikte İşlem' sayılan hallerden biri DEĞİLDİR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Birleşme, bölünme işlemlerine taraf olmak"
+      },
+      {
+        "key": "B",
+        "text": "Tür değiştirme kararı almak"
+      },
+      {
+        "key": "C",
+        "text": "Tüm veya önemli ölçüdeki aktifleri devretmek"
+      },
+      {
+        "key": "D",
+        "text": "Şirketin günlük olağan ticari mal alım satımı yapması"
+      },
+      {
+        "key": "E",
+        "text": "İmtiyaz öngörmek veya mevcut imtiyazların kapsamını değiştirmek"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "Şirketin olağan ticari faaliyetleri önemli nitelikte işlem sayılmaz; birleşme, bölünme, malvarlığı devri ve borsa kotundan çıkma önemli işlemdir.",
+    "trap": "Rutin ticari işlemler ayrılma hakkı doğurmaz.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Önemli Nitelikteki İşlemler"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_017",
+    "module_id": "1001",
+    "number": 17,
+    "source": "cikmis",
+    "topic": "Ayrılma Hakkı Kullanım Şartı",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Önemli nitelikteki işlemlerde pay sahiplerinin şirketten paylarını satarak ayrılabilmeleri (Ayrılma Hakkı) için hangi şart zorunludur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "En az %10 paya sahip olmak"
+      },
+      {
+        "key": "B",
+        "text": "Genel kurulda olumsuz oy kullanıp muhalefet şerhini tutanağa işletmiş olmak"
+      },
+      {
+        "key": "C",
+        "text": "Yönetim kuruluna dava açmış olmak"
+      },
+      {
+        "key": "D",
+        "text": "Şirketin son bilançosunda zarar açıklaması"
+      },
+      {
+        "key": "E",
+        "text": "Payların en az 2 yıldır elde tutulması"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 24 uyarınca ayrılma hakkı, genel kurul kararına ret oyu verip muhalefet şerhini tutanağa işleten pay sahipleri tarafından kullanılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Muhalefet şerhi toplantı tutanağına yazdırılmalıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Ayrılma Hakkı Kullanım Şartı"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_018",
+    "module_id": "1001",
+    "number": 18,
+    "source": "cikmis",
+    "topic": "Zorunlu Pay Alım Teklifi Doğuran Eşik",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Halka açık bir şirkette yönetim kontrolünün ele geçirilmesi ve zorunlu çağrı yükümlülüğü hangi durumda doğar?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Oy haklarının doğrudan veya dolaylı olarak %50'sinden fazlasına sahip olunması"
+      },
+      {
+        "key": "B",
+        "text": "Sermayenin %10'una sahip olunması"
+      },
+      {
+        "key": "C",
+        "text": "Şirket aktiflerinin %20'sinin satın alınması"
+      },
+      {
+        "key": "D",
+        "text": "Bağımsız denetim raporunun olumsuz çıkması"
+      },
+      {
+        "key": "E",
+        "text": "Şirket genel müdürünün değişmesi"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "II-26. 1 sayılı Tebliğ uyarınca oy haklarının %50'sinden fazlasına sahip olunması veya yönetim kurulu çoğunluğunu seçme imtiyazı kazanılması zorunlu pay alım teklifi doğurur.",
+    "trap": "Yönetim kontrolü eşiği oy hakkının %50'sidir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Zorunlu Pay Alım Teklifi Doğuran Eşik"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_019",
+    "module_id": "1001",
+    "number": 19,
+    "source": "cikmis",
+    "topic": "Pay Alım Teklifi Muafiyeti",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Aşağıdaki hallerin hangisinde Kurul zorunlu pay alım teklifinde bulunma yükümlülüğünden muafiyet VEREBİLİR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Şirketin finansal sıkıntı içinde olması ve sermaye artırımı yoluyla fon sağlanması zorunluluğu"
+      },
+      {
+        "key": "B",
+        "text": "Hakim ortağın keyfi olarak paylarını artırması"
+      },
+      {
+        "key": "C",
+        "text": "Borsada manipülatif işlemler yapılması"
+      },
+      {
+        "key": "D",
+        "text": "Şirket kârının dağıtılmaması"
+      },
+      {
+        "key": "E",
+        "text": "Şirket merkezinin yurt dışına taşınması"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Finansal güçlük içindeki ortaklığın kurtarılması amacıyla yapılan sermaye girişlerinde SPK zorunlu pay alım teklifinden muafiyet tanıyabilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)",
+    "trap": "Finansal yeniden yapılandırmada muafiyet verilebilir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Pay Alım Teklifi Muafiyeti"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_020",
+    "module_id": "1001",
+    "number": 20,
+    "source": "cikmis",
+    "topic": "Ortaklıktan Çıkarma Hakkı Eşiği",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "Halka açık ortaklıklarda hakim ortak konumundaki pay sahibinin diğer azınlık ortakları şirketten çıkarabilmesi veya azınlığın paylarını satabilmesi için sahip olunması gereken oy hakkı oranı kural olarak nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "En az %75"
+      },
+      {
+        "key": "B",
+        "text": "En az %85"
+      },
+      {
+        "key": "C",
+        "text": "En az %90"
+      },
+      {
+        "key": "D",
+        "text": "En az %98"
+      },
+      {
+        "key": "E",
+        "text": "En az %99"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "II-27.3 sayılı Ortaklıktan Çıkarma ve Satma Hakları Tebliği m. 4/1 ve resmi SPL ders notu sayfa 29/39 uyarınca kural olarak, ortaklıktan çıkarma ve satma haklarının kullanımı için sahip olunması gereken payların oy haklarının, ortaklığın oy haklarının %98'ine ulaşması veya bu konumda iken ek pay alınması suretiyle bu oranın aşılması gerekmektedir.",
+    "trap": "Eski mevzuatta %95 olan eşik, yürürlükteki II-27.3 Tebliği ve güncel SPK mevzuatında %98 olarak uygulanmaktadır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Ortaklıktan Çıkarma Hakkı Eşiği"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_021",
+    "module_id": "1001",
+    "number": 21,
+    "source": "cikmis",
+    "topic": "Örtülü Kazanç Aktarımı Yasağı Kapsamı",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "SPKn m. 21 uyarınca örtülü kazanç aktarımı yasağına ilişkin hangisi YANLIŞTIR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca nakit transferleri yasaktır; mal ve hizmet ticareti bu kapsama girmez."
+      },
+      {
+        "key": "B",
+        "text": "Emsallerine uygunluk ilkesine aykırı işlemler yasaktır."
+      },
+      {
+        "key": "C",
+        "text": "Aktarılan tutarın yasal faiziyle şirkete iadesi zorunludur."
+      },
+      {
+        "key": "D",
+        "text": "İadeyi yapmayanlar hakkında Kurul dava açma yetkisine sahiptir."
+      },
+      {
+        "key": "E",
+        "text": "Halka açık ortaklıkların bağlı ortaklıkları da bu yasağa tabidir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Örtülü kazanç aktarımı mal/hizmet alım-satımı, üretim faktörü devri veya kredi temini dahil her türlü ticari muameleyle işlenebilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Nakit dışı ticari işlemler de örtülü kazanç sayılır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Örtülü Kazanç Aktarımı Yasağı Kapsamı"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_022",
+    "module_id": "1001",
+    "number": 22,
+    "source": "cikmis",
+    "topic": "Örtülü Kazanç Aktarımı Cezası",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Kanun m. 110 uyarınca örtülü kazanç aktarımı suçunu işleyen failler hakkında verilecek hapis cezası aralığı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 yıldan 3 yıla kadar"
+      },
+      {
+        "key": "B",
+        "text": "2 yıldan 4 yıla kadar"
+      },
+      {
+        "key": "C",
+        "text": "3 yıldan 5 yıla kadar"
+      },
+      {
+        "key": "D",
+        "text": "5 yıldan 8 yıla kadar"
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca adli para cezası verilir"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPKn m. 110 uyarınca örtülü kazanç aktarımı suçu faillerine 3 yıldan 5 yıla kadar hapis ve beş bin güne kadar adli para cezası verilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Örtülü kazanç suçu 3 yıldan 5 yıla kadar hapistir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Örtülü Kazanç Aktarımı Cezası"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_023",
+    "module_id": "1001",
+    "number": 23,
+    "source": "cikmis",
+    "topic": "Bilgi Suistimali Suçunun Unsurları",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Kanun m. 106'da düzenlenen Bilgi Suistimali (İçeriden Öğrenenlerin Ticareti) suçunda menfaatin temininde kullanılan bilgi nasıl olmalıdır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kamuyu Aydınlatma Platformu'nda (KAP) ilan edilmiş bilgi"
+      },
+      {
+        "key": "B",
+        "text": "Henüz kamuya açıklanmamış, fiyatı etkileyebilecek nitelikte doğrudan veya dolaylı bilgi"
+      },
+      {
+        "key": "C",
+        "text": "Geçmiş yıllara ait kamuya açık finansal raporlar"
+      },
+      {
+        "key": "D",
+        "text": "Basında yer almış genel dedikodular"
+      },
+      {
+        "key": "E",
+        "text": "Şirketin reklam broşürleri"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Bilgi suistimali suçunun temel unsuru, henüz kamuya açıklanmamış ve açıklandığında fiyatı etkileyebilecek somut içsel bilginin menfaat için kullanılmasıdır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• KAP: Kamuyu Aydınlatma Platformu (Şirketlerin özel durum ve finansal rapor bildirim sistemi)",
+    "trap": "İçsel bilgi kamuya açıklanmamış olmalıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Bilgi Suistimali Suçunun Unsurları"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_024",
+    "module_id": "1001",
+    "number": 24,
+    "source": "cikmis",
+    "topic": "Bilgi Suistimali Cezası",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "SPKn m. 106 uyarınca bilgi suistimali suçunu işleyenlere verilecek hapis cezasının kanuni süresi nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6 aydan 2 yıla kadar"
+      },
+      {
+        "key": "B",
+        "text": "1 yıldan 3 yıla kadar"
+      },
+      {
+        "key": "C",
+        "text": "2 yıldan 5 yıla kadar"
+      },
+      {
+        "key": "D",
+        "text": "3 yıldan 5 yıla kadar"
+      },
+      {
+        "key": "E",
+        "text": "5 yıldan 10 yıla kadar"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "SPKn m. 106 uyarınca bilgi suistimali suçunun cezası 3 yıldan 5 yıla kadar hapis veya adli para cezasıdır; ancak adli para cezası elde edilen menfaatin iki katından az olamaz.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Hapis cezası 3 yıldan 5 yıla kadardır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Bilgi Suistimali Cezası"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_025",
+    "module_id": "1001",
+    "number": 25,
+    "source": "cikmis",
+    "topic": "Piyasa Dolandırıcılığı (Manipülasyon) Türleri",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı SPKn m. 107'de düzenlenen piyasa dolandırıcılığı suçu hangi iki temel kategoriye ayrılmıştır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İdari manipülasyon ve Adli manipülasyon"
+      },
+      {
+        "key": "B",
+        "text": "İşlem bazlı piyasa dolandırıcılığı ve Bilgi bazlı piyasa dolandırıcılığı"
+      },
+      {
+        "key": "C",
+        "text": "Banka bazlı ve Borsa bazlı"
+      },
+      {
+        "key": "D",
+        "text": "Kısa vadeli ve Uzun vadeli"
+      },
+      {
+        "key": "E",
+        "text": "Yurt içi ve Yurt dışı"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 107/1 işlem bazlı piyasa dolandırıcılığını (yapay fiyat, emir eşleştirme vb.), m. 107/2 ise bilgi bazlı piyasa dolandırıcılığını (yalan haber, asılsız söylenti yayma) düzenler.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "İşlem bazlı ve bilgi bazlı olarak ikiye ayrılır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Piyasa Dolandırıcılığı (Manipülasyon) Türleri"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_026",
+    "module_id": "1001",
+    "number": 26,
+    "source": "cikmis",
+    "topic": "Piyasa Dolandırıcılığı Cezası",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; SPKn m. 107 uyarınca piyasa dolandırıcılığı suçunu işleyenlere verilecek hapis cezası nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 yıldan 3 yıla kadar"
+      },
+      {
+        "key": "B",
+        "text": "2 yıldan 4 yıla kadar"
+      },
+      {
+        "key": "C",
+        "text": "3 yıldan 5 yıla kadar"
+      },
+      {
+        "key": "D",
+        "text": "4 yıldan 7 yıla kadar"
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca kınama cezası"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Piyasa dolandırıcılığı suçunun hapis cezası 3 yıldan 5 yıla kadardır ve beş bin güne kadar adli para cezası uygulanır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Ceza alt sınırı 3 yıldır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Piyasa Dolandırıcılığı Cezası"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_027",
+    "module_id": "1001",
+    "number": 27,
+    "source": "cikmis",
+    "topic": "Manipülasyonda Etkin Pişmanlık",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; İşlem bazlı piyasa dolandırıcılığı suçunda soruşturma başlamadan önce durumu ihbar eden ve menfaati devlete ödeyen kişi hakkında ceza durumu nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cezada 1/2 indirim yapılır"
+      },
+      {
+        "key": "B",
+        "text": "Cezaya hükmolunmaz"
+      },
+      {
+        "key": "C",
+        "text": "Yalnızca para cezası verilir"
+      },
+      {
+        "key": "D",
+        "text": "Cezası 1 yıl ertelenir"
+      },
+      {
+        "key": "E",
+        "text": "Hiçbir indirim uygulanmaz"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 107/3 uyarınca soruşturma başlamadan önce menfaati Hazineye aktaran faile ceza verilmez.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Soruşturma öncesi ihbar ve iadede ceza verilmez.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Manipülasyonda Etkin Pişmanlık"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_028",
+    "module_id": "1001",
+    "number": 28,
+    "source": "cikmis",
+    "topic": "Usulsüz Halka Arz Suçu",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; SPK'dan onay almadan sermaye piyasası araçlarını halka arz edenler hakkında verilecek hapis cezası nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6 aydan 1 yıla kadar"
+      },
+      {
+        "key": "B",
+        "text": "2 yıldan 5 yıla kadar"
+      },
+      {
+        "key": "C",
+        "text": "5 yıldan 10 yıla kadar"
+      },
+      {
+        "key": "D",
+        "text": "1 yıldan 2 yıla kadar"
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca idari para cezası"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 109/1 uyarınca onay almaksızın sermaye piyasası aracı ihraç veya halka arz edenlere 2 yıldan 5 yıla kadar hapis cezası verilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Usulsüz halka arz 2 yıldan 5 yıla kadar hapistir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Usulsüz Halka Arz Suçu"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_029",
+    "module_id": "1001",
+    "number": 29,
+    "source": "cikmis",
+    "topic": "İzinsiz Faaliyet Yürütenler",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; SPK'dan yetki belgesi almaksızın sermaye piyasası faaliyetinde bulunanlar hakkında hapis cezası nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 yıldan 3 yıla kadar"
+      },
+      {
+        "key": "B",
+        "text": "2 yıldan 5 yıla kadar"
+      },
+      {
+        "key": "C",
+        "text": "3 yıldan 6 yıla kadar"
+      },
+      {
+        "key": "D",
+        "text": "5 yıldan 8 yıla kadar"
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca borsa kotundan çıkarma"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 109/2 uyarınca izin almaksızın sermaye piyasası faaliyetinde bulunanlara 2 yıldan 5 yıla kadar hapis cezası verilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "İzinsiz faaliyet cezası 2-5 yıl hapistir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "İzinsiz Faaliyet Yürütenler"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_030",
+    "module_id": "1001",
+    "number": 30,
+    "source": "cikmis",
+    "topic": "Güveni Kötüye Kullanma Suçu",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; Sermaye piyasası kurumlarında emanet edilen müşteri para veya menkul kıymetlerini kendi yararına kullanan personel hakkında ceza nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca meslekten men"
+      },
+      {
+        "key": "B",
+        "text": "1 yıldan 3 yıla kadar hapis"
+      },
+      {
+        "key": "C",
+        "text": "2 yıldan 7 yıla kadar hapis ve adli para cezası"
+      },
+      {
+        "key": "D",
+        "text": "Sabit idari para cezası"
+      },
+      {
+        "key": "E",
+        "text": "Kınama"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPKn m. 110/2 uyarınca güveni kötüye kullanma suçunda 2 yıldan 7 yıla kadar hapis ve beş bin güne kadar adli para cezası hükmolunur.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Nitelikli güveni kötüye kullanma 2-7 yıl hapistir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Güveni Kötüye Kullanma Suçu"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_031",
+    "module_id": "1001",
+    "number": 31,
+    "source": "cikmis",
+    "topic": "Sır Saklama Yükümlülüğüne Aykırılık",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; SPKn m. 111 uyarınca meslek sırlarını kanunen yetkisiz kişilere açıklayanlara verilecek ceza nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 yıldan 3 yıla kadar hapis ve adli para cezası"
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca uyarı cezası"
+      },
+      {
+        "key": "C",
+        "text": "Ömür boyu meslekten men"
+      },
+      {
+        "key": "D",
+        "text": "6 ay borsa yasağı"
+      },
+      {
+        "key": "E",
+        "text": "Ceza öngörülmemiştir"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Meslek sırrını açıklayan kurum personeline 1 yıldan 3 yıla kadar hapis ve adli para cezası verilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Meslek sırrı ihlali 1-3 yıl hapistir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Sır Saklama Yükümlülüğüne Aykırılık"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_032",
+    "module_id": "1001",
+    "number": 32,
+    "source": "cikmis",
+    "topic": "SPK İdari Tedbirleri - Geçici İşlem Yasağı",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; Piyasa dolandırıcılığı veya bilgi suistimali şüphesi bulunan kişiler hakkında SPK azami ne kadar süreyle geçici işlem yasağı getirebilir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 ay"
+      },
+      {
+        "key": "B",
+        "text": "3 ay"
+      },
+      {
+        "key": "C",
+        "text": "6 ay (gerekirse 6 ay daha uzatılabilir, toplam 2 yıla kadar)"
+      },
+      {
+        "key": "D",
+        "text": "5 yıl"
+      },
+      {
+        "key": "E",
+        "text": "Süresiz"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPKn m. 101 uyarınca Kurul şüpheliler hakkında 6 ay süreyle borsada işlem yapma yasağı koyabilir; bu süre bir defaya mahsus 6 ay daha uzatılabilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Geçici işlem yasağı ilk etapta 6 aydır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "SPK İdari Tedbirleri - Geçici İşlem Yasağı"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_033",
+    "module_id": "1001",
+    "number": 33,
+    "source": "cikmis",
+    "topic": "İdari Para Cezası İtiraz Mercii",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; SPK tarafından verilen idari para cezalarına karşı hangi yargı merciinde dava açılabilir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa Tahkim Kurulu"
+      },
+      {
+        "key": "B",
+        "text": "Anayasa Mahkemesi"
+      },
+      {
+        "key": "C",
+        "text": "İdare Mahkemeleri"
+      },
+      {
+        "key": "D",
+        "text": "Tüketici Mahkemesi"
+      },
+      {
+        "key": "E",
+        "text": "Yargıtay"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPKn m. 105 uyarınca Kurul kararları ve idari para cezalarına karşı İdare Mahkemelerinde iptal davası açılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "İtiraz merci İdare Mahkemesidir.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "İdari Para Cezası İtiraz Mercii"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_034",
+    "module_id": "1001",
+    "number": 34,
+    "source": "cikmis",
+    "topic": "İdari Para Cezası Zamanaşımı",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; 6362 sayılı Kanun kapsamındaki idari para cezalarında zamanaşımı süresi kabahatin işlendiği tarihten itibaren kaç yıldır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 yıl"
+      },
+      {
+        "key": "B",
+        "text": "2 yıl"
+      },
+      {
+        "key": "C",
+        "text": "3 yıl"
+      },
+      {
+        "key": "D",
+        "text": "5 yıl"
+      },
+      {
+        "key": "E",
+        "text": "10 yıl"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "SPKn uyarınca idari para cezalarında soruşturma ve ceza verme zamanaşımı süresi 5 yıldır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Zamanaşımı süresi 5 yıldır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "İdari Para Cezası Zamanaşımı"
+    ]
+  },
+  {
+    "id": "q_1001_cikmis_035",
+    "module_id": "1001",
+    "number": 35,
+    "source": "cikmis",
+    "topic": "Kitle Fonlaması Emanet Yetkilisi",
+    "chapter": "Modül 1001: Mevzuat ve Kurallar",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu ve ilgili tebliğler uyarınca; Kitle fonlaması platformları üzerinden toplanan fonlar yatırımcı adına nerede bloke edilir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Platformun kendi şirket hesabında"
+      },
+      {
+        "key": "B",
+        "text": "Emanet yetkilisi nezdinde (Takasbank)"
+      },
+      {
+        "key": "C",
+        "text": "Borsa kasasında"
+      },
+      {
+        "key": "D",
+        "text": "Hazine ve Maliye Bakanlığı Merkez Muhasebe Birimi emanet hesaplarında"
+      },
+      {
+        "key": "E",
+        "text": "Noter kasasında"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Kitle fonlamasında toplanan paralar emanet yetkilisi olan Takasbank nezdindeki blokeli hesaplarda tutulur.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• TCMB: Türkiye Cumhuriyet Merkez Bankası",
+    "trap": "Emanet yetkilisi Takasbank'tır.",
+    "difficulty": "medium",
+    "tags": [
+      "1001",
+      "Çıkmış Sınav Sorusu",
+      "Kitle Fonlaması Emanet Yetkilisi"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_001",
+    "module_id": "1003",
+    "number": 1,
+    "source": "cikmis",
+    "topic": "Pay Sahipliği Hakları",
+    "chapter": "BÖLÜM 1: PAYLAR VE PAY BENZERİ MENKUL KIYMETLER",
+    "text": "Anonim ortaklıklarda pay sahipliğinden doğan haklar 'mali haklar' ve 'yönetsel haklar' olarak ikiye ayrılır. Buna göre aşağıdakilerden hangisi bir 'mali hak' DEĞİLDİR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kâr payı (temettü) alma hakkı"
+      },
+      {
+        "key": "B",
+        "text": "Yeni pay alma (rüçhan) hakkı"
+      },
+      {
+        "key": "C",
+        "text": "Genel kurulda oy kullanma hakkı"
+      },
+      {
+        "key": "D",
+        "text": "Tasfiye bakiyesine katılma hakkı"
+      },
+      {
+        "key": "E",
+        "text": "Bedelsiz pay alma hakkı"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Genel kurulda oy kullanma, toplantıya katılma, bilgi alma ve inceleme hakları pay sahibinin yönetime katılmasını sağlayan 'yönetsel (idari) haklar'dır. Kâr payı, rüçhan, tasfiye payı ve bedelsiz pay ise doğrudan parasal değeri olan 'mali haklar'dır.",
+    "trap": "Oy hakkı ve bilgi alma hakkı asla mali hak değildir, yönetsel haktır.",
+    "difficulty": "easy",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Pay Sahipliği Hakları"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_002",
+    "module_id": "1003",
+    "number": 2,
+    "source": "cikmis",
+    "topic": "Anonim Şirket Pay Mülkiyeti",
+    "chapter": "BÖLÜM 1: PAYLAR VE PAY BENZERİ MENKUL KIYMETLER",
+    "text": "Türk Ticaret Kanunu ve sermaye piyasası mevzuatı uyarınca anonim şirketlerde 'pay' (hisse senedi) ve pay sahipliği kavramına ilişkin aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pay sahibi, anonim şirketin fabrika, bina ve makineleri üzerinde doğrudan müşterek mülkiyet hakkına sahiptir."
+      },
+      {
+        "key": "B",
+        "text": "Pay, sahibine doğrudan şirket malları üzerinde mülkiyet hakkı vermez; şirketin tüzel kişiliğine karşı ortaklık hakları ve malvarlığı hakları sağlar."
+      },
+      {
+        "key": "C",
+        "text": "Pay sahipleri şirketin kamu borçlarından tüm şahsi malvarlıklarıyla birinci derecede sorumludur."
+      },
+      {
+        "key": "D",
+        "text": "Anonim şirketlerde payların tamamı yalnızca nama yazılı olmak zorundadır; hamiline pay ihracı yasaktır."
+      },
+      {
+        "key": "E",
+        "text": "Pay senedi bastırılmayan anonim şirketlerde ortaklık sıfatı doğmaz."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Anonim şirket malvarlığı şirketin tüzel kişiliğine aittir. Pay sahibi şirket mallarının doğrudan sahibi veya kiracısı olamaz; pay yalnızca şirkete karşı ortaklık haklarını (kâr payı, oy, rüçhan vb.) temsil eder.",
+    "trap": "Pay sahibi şirketin malının değil, şirketteki ortaklık payının sahibidir.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Anonim Şirket Pay Mülkiyeti"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_003",
+    "module_id": "1003",
+    "number": 3,
+    "source": "cikmis",
+    "topic": "Borçlanma Araçları Vade Ayrımı",
+    "chapter": "BÖLÜM 2: BORÇLANMA ARAÇLARI",
+    "text": "Sermaye piyasası mevzuatında anonim ortaklıklar tarafından ihraç edilen borçlanma araçlarının vadesine ilişkin temel sınıflandırma kuralı aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vadesi 1 yıla kadar (en çok 365 gün) olan borçlanma araçları tahvil, 1 yıldan uzun olanlar finansman bonosudur."
+      },
+      {
+        "key": "B",
+        "text": "Vadesi 1 yıldan (365 günden) kısa olanlar finansman bonosu, vadesi 1 yıl ve daha uzun olan borçlanma araçları ise tahvildir."
+      },
+      {
+        "key": "C",
+        "text": "Tahviller yalnızca 5 yıl ve daha uzun vadeli ihraç edilebilir."
+      },
+      {
+        "key": "D",
+        "text": "Finansman bonolarının vadesi en az 2 yıl olmak zorundadır."
+      },
+      {
+        "key": "E",
+        "text": "Özel sektör tahvilleri en çok 6 ay vadeli çıkarılabilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "II-31. 1 sayılı Borçlanma Araçları Tebliği uyarınca, vadesi 365 günden az olan borçlanma araçları 'bono' (finansman bonosu vb.), vadesi 1 yıl (365 gün) ve daha uzun olan borçlanma araçları ise 'tahvil' olarak adlandırılır.",
+    "trap": "1 yıl eşiğini bono ile tahvil arasında ters eşleştiren seçeneklere dikkat ediniz.",
+    "difficulty": "easy",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Borçlanma Araçları Vade Ayrımı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_004",
+    "module_id": "1003",
+    "number": 4,
+    "source": "cikmis",
+    "topic": "Oyda İmtiyaz Sınırı",
+    "chapter": "BÖLÜM 1: PAYLAR VE PAY BENZERİ MENKUL KIYMETLER",
+    "text": "Türk Ticaret Kanunu m. 479 uyarınca anonim şirketlerde paylara tanınabilecek oy imtiyazının azami sınırı ve geçerli olmadığı kararlar hangisinde doğru verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bir paya en fazla 5 oy verilebilir; sermaye artırımlarında geçerli değildir."
+      },
+      {
+        "key": "B",
+        "text": "Eşit itibari değerdeki bir paya en fazla 15 oy hakkı tanınabilir; esas sözleşme değişikliği ve ibra/sorumluluk davası açılmasında kullanılamaz."
+      },
+      {
+        "key": "C",
+        "text": "Oy hakkı imtiyazına herhangi bir yasal üst sınır getirilmemiştir."
+      },
+      {
+        "key": "D",
+        "text": "Hamiline yazılı paylara sınırsız oy imtiyazı tanınabilir."
+      },
+      {
+        "key": "E",
+        "text": "Oy imtiyazı sadece yönetim kurulunun ilk toplantısında geçerlidir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "TTK m. 479 uyarınca oyda imtiyaz, eşit itibari değerdeki paylara en çok 15 oy hakkı tanınarak verilebilir. Ancak esas sözleşme değişikliği ile yönetim kurulu üyelerinin ibrası ve sorumluluk davası açılması kararlarında oy imtiyazı kullanılamaz.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• TTK: 6102 sayılı Türk Ticaret Kanunu",
+    "trap": "İmtiyaz üst sınırı 15 oydur ve esas sözleşme değişikliği ile ibra davalarında kesinlikle oy imtiyazı uygulanamaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Oyda İmtiyaz Sınırı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_005",
+    "module_id": "1003",
+    "number": 5,
+    "source": "cikmis",
+    "topic": "Rüçhan Hakkı Kullanım Süresi",
+    "chapter": "BÖLÜM 1: PAYLAR VE PAY BENZERİ MENKUL KIYMETLER",
+    "text": "Sermaye piyasası mevzuatı ve TTK uyarınca, bedelli sermaye artırımlarında mevcut ortakların yeni pay alma (rüçhan) haklarını kullanabilmeleri için tanınması gereken yasal süre sınırları hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "En az 5 gün, en çok 15 gün"
+      },
+      {
+        "key": "B",
+        "text": "En az 10 gün, en çok 30 gün"
+      },
+      {
+        "key": "C",
+        "text": "En az 15 gün, en çok 60 gün"
+      },
+      {
+        "key": "D",
+        "text": "En az 30 gün, en çok 90 gün"
+      },
+      {
+        "key": "E",
+        "text": "Sabit 45 gün"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "TTK m. 461 ve SPK düzenlemeleri uyarınca rüçhan hakkı kullanım süresi en az 15 gün, en çok 60 gün olarak belirlenir. Bu süreden az veya çok belirlenemez.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• TTK: 6102 sayılı Türk Ticaret Kanunu",
+    "trap": "En az 15 gün, en çok 60 gün kuralı standart sınav rakamıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Rüçhan Hakkı Kullanım Süresi"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_006",
+    "module_id": "1003",
+    "number": 6,
+    "source": "cikmis",
+    "topic": "Pay Türleri",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Türk Ticaret Kanunu'na göre, bedelleri tamamen ödenmemiş paylar için hangi tür pay senedi çıkartılamaz?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nama yazılı pay senedi"
+      },
+      {
+        "key": "B",
+        "text": "Hamiline yazılı pay senedi"
+      },
+      {
+        "key": "C",
+        "text": "İntifa senedi"
+      },
+      {
+        "key": "D",
+        "text": "İmtiyazlı pay"
+      },
+      {
+        "key": "E",
+        "text": "Oydan yoksun pay"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "TTK m. 484/2 uyarınca, bedelleri tamamen ödenmemiş paylar için hamiline yazılı pay senetleri çıkarılamaz; çıkarılırsa geçersizdir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• TTK: 6102 sayılı Türk Ticaret Kanunu",
+    "trap": "Bedeli ödenmeyen paylar hamiline çıkarılamaz.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Pay Türleri"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_007",
+    "module_id": "1003",
+    "number": 7,
+    "source": "cikmis",
+    "topic": "Oyda İmtiyaz Üst Sınırı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "TTK m. 479 uyarınca anonim şirketlerde eşit itibari değerdeki paylara tanınabilecek oy hakkı imtiyazı azami kaç oydur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3 oy"
+      },
+      {
+        "key": "B",
+        "text": "5 oy"
+      },
+      {
+        "key": "C",
+        "text": "10 oy"
+      },
+      {
+        "key": "D",
+        "text": "15 oy"
+      },
+      {
+        "key": "E",
+        "text": "20 oy"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "TTK m. 479 gereğince eşit itibari değerdeki paylara en çok 15 oy hakkı tanınabilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• TTK: 6102 sayılı Türk Ticaret Kanunu",
+    "trap": "İmtiyaz tavanı 15 oydur.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Oyda İmtiyaz Üst Sınırı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_008",
+    "module_id": "1003",
+    "number": 8,
+    "source": "cikmis",
+    "topic": "Oy İmtiyazının Geçersiz Olduğu Kararlar",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Aşağıdaki genel kurul kararlarının hangisinde paylara tanınan oy imtiyazı KULLANILAMAZ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kâr dağıtımı kararı"
+      },
+      {
+        "key": "B",
+        "text": "Esas sözleşme değişikliği kararları"
+      },
+      {
+        "key": "C",
+        "text": "Yönetim kurulu üyelerinin seçimi"
+      },
+      {
+        "key": "D",
+        "text": "Şirket merkezinin aynı şehirde nakli"
+      },
+      {
+        "key": "E",
+        "text": "Faaliyet raporunun onaylanması"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "TTK m. 479/3 uyarınca esas sözleşme değişikliği ile yönetim kurulu üyelerinin ibrası ve sorumluluk davası açılması kararlarında oyda imtiyaz kullanılamaz.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• TTK: 6102 sayılı Türk Ticaret Kanunu",
+    "trap": "Esas sözleşme değişikliğinde imtiyaz geçersizdir.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Oy İmtiyazının Geçersiz Olduğu Kararlar"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_009",
+    "module_id": "1003",
+    "number": 9,
+    "source": "cikmis",
+    "topic": "Rüçhan Hakkı Asgari ve Azami Süresi",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Bedelli sermaye artırımlarında pay sahiplerine tanınan yeni pay alma (rüçhan) hakkı süresi kanunen ne kadardır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "En az 10 gün, en çok 30 gün"
+      },
+      {
+        "key": "B",
+        "text": "En az 15 gün, en çok 60 gün"
+      },
+      {
+        "key": "C",
+        "text": "En az 30 gün, en çok 90 gün"
+      },
+      {
+        "key": "D",
+        "text": "Sabit 1 ay"
+      },
+      {
+        "key": "E",
+        "text": "En çok 15 gün"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "TTK m. 461 ve SPK kuralları uyarınca rüçhan hakkı kullanım süresi en az 15 gün, en çok 60 gün olarak belirlenir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• TTK: 6102 sayılı Türk Ticaret Kanunu",
+    "trap": "Süre en az 15, en çok 60 gündür.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Rüçhan Hakkı Asgari ve Azami Süresi"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_010",
+    "module_id": "1003",
+    "number": 10,
+    "source": "cikmis",
+    "topic": "Temettü Avansı Karar Yetkisi",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Halka açık anonim ortaklıklarda temettü avansı dağıtılabilmesi için yönetim kuruluna yetki verme yetkisi kime aittir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Denetim Komitesi"
+      },
+      {
+        "key": "B",
+        "text": "Genel Kurul"
+      },
+      {
+        "key": "C",
+        "text": "Yalnızca Sermaye Piyasası Kurulu"
+      },
+      {
+        "key": "D",
+        "text": "Borsa İstanbul Yönetimi"
+      },
+      {
+        "key": "E",
+        "text": "Şirket Genel Müdürü"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 20 uyarınca kâr payı avansı dağıtılabilmesi için esas sözleşmede hüküm bulunması ve genel kurul tarafından yönetim kuruluna yetki verilmesi şarttır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Yetki genel kurul tarafından verilir.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Temettü Avansı Karar Yetkisi"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_011",
+    "module_id": "1003",
+    "number": 11,
+    "source": "cikmis",
+    "topic": "Bono ve Tahvil Vade Sınırı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Sermaye piyasası mevzuatında ihraç edilen borçlanma araçlarında 'bono' ve 'tahvil' arasındaki yasal vade sınırı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "6 ay (180 gün)"
+      },
+      {
+        "key": "B",
+        "text": "1 yıl (365 gün)"
+      },
+      {
+        "key": "C",
+        "text": "2 yıl"
+      },
+      {
+        "key": "D",
+        "text": "3 yıl"
+      },
+      {
+        "key": "E",
+        "text": "5 yıl"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "II-31. 1 sayılı Tebliğ uyarınca vadesi 365 günden kısa borçlanma araçları bono, 1 yıl ve daha uzun olanlar tahvildir.",
+    "trap": "Vade ayrımı 1 yıl (365 gün) eşiğidir.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Bono ve Tahvil Vade Sınırı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_012",
+    "module_id": "1003",
+    "number": 12,
+    "source": "cikmis",
+    "topic": "Hazine Bonosu Tanımı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "T.C. Hazine ve Maliye Bakanlığı tarafından ihraç edilen, vadesi 1 yıldan kısa olan DİBS türü hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Devlet Tahvili"
+      },
+      {
+        "key": "B",
+        "text": "Hazine Bonosu"
+      },
+      {
+        "key": "C",
+        "text": "Gelir Ortaklığı Senedi"
+      },
+      {
+        "key": "D",
+        "text": "Finansman Bonosu"
+      },
+      {
+        "key": "E",
+        "text": "Kira Sertifikası"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Hazine tarafından vadesi 1 yıldan kısa süreli olarak yurt içinde ihraç edilen kamu borçlanma araçları Hazine Bonosudur.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• DİBS: Devlet İç Borçlanma Senetleri (Hazine Müsteşarlığı/Bakanlığı tarafından ihraç edilen Bono ve Tahviller)",
+    "trap": "1 yıldan kısa devlet borçlanma aracı bonodur.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Hazine Bonosu Tanımı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_013",
+    "module_id": "1003",
+    "number": 13,
+    "source": "cikmis",
+    "topic": "Kira Sertifikası - İcara Yapısı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Bir varlığın Varlık Kiralama Şirketi (VKŞ) tarafından satın alınıp kaynak kuruluşa geri kiralanması ve kira gelirlerinin yatırımcılara aktarılması hangi sukuk türüdür?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Murabaha (Alım-satım)"
+      },
+      {
+        "key": "B",
+        "text": "İcara (Sahipliğe ve kiralamaya dayalı)"
+      },
+      {
+        "key": "C",
+        "text": "Müşarake (Ortaklık)"
+      },
+      {
+        "key": "D",
+        "text": "Mudaraba (Emek-sermaye)"
+      },
+      {
+        "key": "E",
+        "text": "İstisna (Eser)"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Sahipliğe dayalı ve geri kiralama yöntemiyle ihraç edilen kira sertifikaları İcara sukuk modelidir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• VKŞ: Varlık Kiralama Şirketi (Kira sertifikası - Sukuk ihraç etmek üzere kurulan özel şirket)",
+    "trap": "Kiralama modeli İcara sukuktur.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Kira Sertifikası - İcara Yapısı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_014",
+    "module_id": "1003",
+    "number": 14,
+    "source": "cikmis",
+    "topic": "Kira Sertifikası - Murabaha Yapısı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Bir mal veya emtianın peşin bedelle satın alınıp vadeli olarak daha yüksek bir fiyata satılması esasına dayanan sukuk türü hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İcara"
+      },
+      {
+        "key": "B",
+        "text": "Murabaha (Yönetim sözleşmesine / alım satıma dayalı)"
+      },
+      {
+        "key": "C",
+        "text": "Mudaraba"
+      },
+      {
+        "key": "D",
+        "text": "Müşarake"
+      },
+      {
+        "key": "E",
+        "text": "İstisna"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Murabaha; maliyet artı kâr prensibiyle emtia alım satımına dayanan vadeli getiri sağlayan sukuk türüdür.",
+    "trap": "Alım-satıma dayalı model Murabaha'dır.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Kira Sertifikası - Murabaha Yapısı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_015",
+    "module_id": "1003",
+    "number": 15,
+    "source": "cikmis",
+    "topic": "Kira Sertifikası - İstisna Yapısı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Henüz inşa edilmemiş bir eserin veya altyapı projesinin finansmanı için sipariş üzerine inşa edilmesi modeline dayanan kira sertifikası hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İcara"
+      },
+      {
+        "key": "B",
+        "text": "Murabaha"
+      },
+      {
+        "key": "C",
+        "text": "İstisna (Eser sözleşmesine dayalı)"
+      },
+      {
+        "key": "D",
+        "text": "Müşarake"
+      },
+      {
+        "key": "E",
+        "text": "Mudaraba"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "İstisna modeli henüz mevcut olmayan eser, gayrimenkul veya altyapı tesisinin üretilmesini finanse eden sukuk türüdür.",
+    "trap": "Eser/üretim modeli İstisna'dır.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Kira Sertifikası - İstisna Yapısı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_016",
+    "module_id": "1003",
+    "number": 16,
+    "source": "cikmis",
+    "topic": "Varantlarda Hak Sahibinin Durumu",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Alım Varantı (Call Warrant) satın alan bir yatırımcının hukuki hakkı ve sorumluluğu hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dayanak varlığı alma ZORUNLULUĞU vardır."
+      },
+      {
+        "key": "B",
+        "text": "Dayanak varlığı belirli fiyattan satın alma HAKKI verir, zorunluluk yüklemez."
+      },
+      {
+        "key": "C",
+        "text": "Dayanak varlığı satma ZORUNLULUĞU vardır."
+      },
+      {
+        "key": "D",
+        "text": "Şirket genel kurulunda oy kullanma hakkı verir."
+      },
+      {
+        "key": "E",
+        "text": "Şirket tasfiyesine ortak olma hakkı doğurur."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Varant sahibine hak verir, yükümlülük yüklemez; alım varantı dayanak varlığı vadede belirli kullanım fiyatından alma hakkı sağlar.",
+    "trap": "Varant bir hak doğurur, yükümlülük doğurmaz.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Varantlarda Hak Sahibinin Durumu"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_017",
+    "module_id": "1003",
+    "number": 17,
+    "source": "cikmis",
+    "topic": "Satım Varantı (Put Warrant) Mantığı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Dayanak varlığın piyasa fiyatının kullanım fiyatının altına düşmesi durumunda satım varantı hangi konumdadır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kârda (In-the-Money)"
+      },
+      {
+        "key": "B",
+        "text": "Zararda (Out-of-the-Money)"
+      },
+      {
+        "key": "C",
+        "text": "Başa baş (At-the-Money)"
+      },
+      {
+        "key": "D",
+        "text": "Hükümsüz"
+      },
+      {
+        "key": "E",
+        "text": "Temerrütte"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Satım varantında piyasa fiyatı kullanım fiyatının altına indiğinde varant 'Kârda' (In-the-Money) durumundadır.",
+    "trap": "Piyasa fiyatı < kullanım fiyatı ise satım varantı kârdadır.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Satım Varantı (Put Warrant) Mantığı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_018",
+    "module_id": "1003",
+    "number": 18,
+    "source": "cikmis",
+    "topic": "Yatırım Fonlarında Şemsiye Fon Kuralı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Yatırım fonu unvanında 'Hisse Senedi Şemsiye Fonu' ifadesi yer alan bir fonun portföyünün asgari yüzde kaçı devamlı olarak hisse senetlerinden oluşmalıdır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "%51"
+      },
+      {
+        "key": "B",
+        "text": "%60"
+      },
+      {
+        "key": "C",
+        "text": "%75"
+      },
+      {
+        "key": "D",
+        "text": "%80"
+      },
+      {
+        "key": "E",
+        "text": "%90"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "III-52. 1 sayılı Yatırım Fonları Tebliği uyarınca fon toplam değerinin en az %80'i fon unvanında belirtilen varlık grubundan oluşmalıdır.",
+    "trap": "Şemsiye fon asgari kuralı %80'dir.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Yatırım Fonlarında Şemsiye Fon Kuralı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_019",
+    "module_id": "1003",
+    "number": 19,
+    "source": "cikmis",
+    "topic": "TEFAS Platformu",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Yatırımcıların kendi aracı kurum veya bankalarından diğer tüm kurucuların yatırım fonlarını alıp satabilmelerini sağlayan elektronik fon dağıtım platformu hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa İstanbul Pay Piyasası"
+      },
+      {
+        "key": "B",
+        "text": "TEFAS (Türkiye Elektronik Fon Dağıtım Platformu)"
+      },
+      {
+        "key": "C",
+        "text": "KAP"
+      },
+      {
+        "key": "D",
+        "text": "MKK Sicil Sistemi"
+      },
+      {
+        "key": "E",
+        "text": "Takasbank Para Piyasası"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "TEFAS, Takasbank tarafından işletilen merkezi elektronik fon dağıtım platformudur.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• KAP: Kamuyu Aydınlatma Platformu (Şirketlerin özel durum ve finansal rapor bildirim sistemi)\n• TEFAS: Türkiye Elektronik Fon Alım Satım Platformu (Yatırım fonlarının merkezi alım-satım sistemi)",
+    "trap": "Fon işlem platformu TEFAS'tır.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "TEFAS Platformu"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_020",
+    "module_id": "1003",
+    "number": 20,
+    "source": "cikmis",
+    "topic": "Borsa Yatırım Fonları (BYF)",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Borsa Yatırım Fonları (ETF) ile geleneksel yatırım fonları arasındaki en temel işlem farkı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "BYF'ler sadece yılda bir kez nakde çevrilebilir."
+      },
+      {
+        "key": "B",
+        "text": "BYF katılma payları Borsa İstanbul'da hisse senedi gibi seans içinde anlık alınıp satılabilir."
+      },
+      {
+        "key": "C",
+        "text": "BYF'lerin portföyü asla açıklanmaz."
+      },
+      {
+        "key": "D",
+        "text": "BYF katılma paylarına temettü ödenemez."
+      },
+      {
+        "key": "E",
+        "text": "BYF'lerde yönetim ücreti alınamaz."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "BYF payları organize borsada hisse senedi gibi işlem görür ve seans süresince değişen anlık fiyatlarla işlem yapılabilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• BYF: Borsa Yatırım Fonu (Borsada hisse senedi gibi anlık işlem gören endeks fonu - ETF)\n• ETF: Exchange Traded Fund (Borsa Yatırım Fonu)",
+    "trap": "BYF borsa seansında anlık işlem görür.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Borsa Yatırım Fonları (BYF)"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_021",
+    "module_id": "1003",
+    "number": 21,
+    "source": "cikmis",
+    "topic": "Kupon Ödemeli Borçlanma Araçları",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Sermaye Piyasası Araçları mevzuatı ve piyasa uygulamaları uyarınca; Kuponlu bir tahvilde kupon faiz oranı ile piyasa faiz oranı eşit olduğunda tahvil hangi fiyattan işlem görür?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İskontolu fiyattan"
+      },
+      {
+        "key": "B",
+        "text": "Primli fiyattan"
+      },
+      {
+        "key": "C",
+        "text": "Başabaş (Nominal) fiyattan"
+      },
+      {
+        "key": "D",
+        "text": "Tasfiye değerinden"
+      },
+      {
+        "key": "E",
+        "text": "Sıfır kupon değerinden"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Kupon faiz oranı piyasa faiz oranına eşitse tahvilin fiyatı nominal (başabaş) değerine eşittir.",
+    "trap": "Kupon faizi = piyasa faizi ise fiyat nominaldir.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Kupon Ödemeli Borçlanma Araçları"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_022",
+    "module_id": "1003",
+    "number": 22,
+    "source": "cikmis",
+    "topic": "Temiz Fiyat ve Kirli Fiyat",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Sermaye Piyasası Araçları mevzuatı ve piyasa uygulamaları uyarınca; Tahvil ve bono piyasasında 'Kirli Fiyat' ile 'Temiz Fiyat' arasındaki farkı oluşturan unsur nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa işlem komisyonu"
+      },
+      {
+        "key": "B",
+        "text": "Birikmiş faiz tutarı"
+      },
+      {
+        "key": "C",
+        "text": "KDV tutarı"
+      },
+      {
+        "key": "D",
+        "text": "Aracı kurum kâr marjı"
+      },
+      {
+        "key": "E",
+        "text": "Takas teminatı"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Kirli Fiyat = Temiz Fiyat + Birikmiş Faiz formülüyle bulunur.",
+    "trap": "Fark birikmiş faizdir.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Temiz Fiyat ve Kirli Fiyat"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_023",
+    "module_id": "1003",
+    "number": 23,
+    "source": "cikmis",
+    "topic": "BASK Karar Nisabı",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Sermaye Piyasası Araçları mevzuatı ve piyasa uygulamaları uyarınca; Borçlanma Aracı Sahipleri Kurulu'nda (BASK) borçlanma aracının vade veya faiz şartlarının değiştirilmesine ilişkin ağırlaştırılmış karar nisabı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tedavüldeki borçlanma araçları toplamının en az 3/4'ünün olumlu oyu"
+      },
+      {
+        "key": "B",
+        "text": "Katılanların salt çoğunluğu"
+      },
+      {
+        "key": "C",
+        "text": "1/2 oranında olumlu oy"
+      },
+      {
+        "key": "D",
+        "text": "Oybirliği"
+      },
+      {
+        "key": "E",
+        "text": "Yönetim kurulu onayı"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Esaslı değişikliklerde tedavüldeki toplam nominal tutarın en az 3/4'ünün olumlu oyu aranır.",
+    "trap": "BASK ağırlaştırılmış nisabı tedavüldekilerin 3/4'üdür.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "BASK Karar Nisabı"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_024",
+    "module_id": "1003",
+    "number": 24,
+    "source": "cikmis",
+    "topic": "Dönüştürülebilir Tahvil (BDT)",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Sermaye Piyasası Araçları mevzuatı ve piyasa uygulamaları uyarınca; İhraççı şirketin borçlanma senedi sahibine vade sonunda veya vade içinde tahvilini hisse senedine dönüştürme hakkı tanıdığı menkul kıymet hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Finansman Bonosu"
+      },
+      {
+        "key": "B",
+        "text": "Borçlanma Aracına Dönüştürülebilir Tahvil (BDT)"
+      },
+      {
+        "key": "C",
+        "text": "Gelir Ortaklığı Senedi"
+      },
+      {
+        "key": "D",
+        "text": "Varant"
+      },
+      {
+        "key": "E",
+        "text": "Depo Sertifikası"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "BDT yatırımcıya tahvilini hisseye dönüştürerek şirkete ortak olma hakkı veren karma bir menkul kıymettir.",
+    "trap": "Hisseye dönüşüm hakkı BDT'dedir.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Dönüştürülebilir Tahvil (BDT)"
+    ]
+  },
+  {
+    "id": "q_1003_cikmis_025",
+    "module_id": "1003",
+    "number": 25,
+    "source": "cikmis",
+    "topic": "Varlık Teminatlı Menkul Kıymet (VTMK)",
+    "chapter": "Modül 1003: Sermaye Piyasası Araçları",
+    "text": "Sermaye Piyasası Araçları mevzuatı ve piyasa uygulamaları uyarınca; VTMK ihracında ihraççının bilançosunda teminat havuzu olarak ayrılan varlıkların hukuki durumu hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İhraççı iflas etse dahi kamu alacakları dahil haczedilemez, iflas masasına dahil edilemez."
+      },
+      {
+        "key": "B",
+        "text": "Genel alacaklılar tarafından haczedilebilir."
+      },
+      {
+        "key": "C",
+        "text": "İhraççı istediğinde teminatı serbestçe geri çekebilir."
+      },
+      {
+        "key": "D",
+        "text": "Yalnızca banka mevduatından oluşabilir."
+      },
+      {
+        "key": "E",
+        "text": "Borsa tarafından mülkiyeti devralınır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Teminat havuzu kanunen korunmuştur; iflas halinde dahi haczedilemez ve öncelikle VTMK sahiplerine ödenir.",
+    "trap": "Teminat havuzu haczedilemez ve iflasa dahil edilemez.",
+    "difficulty": "medium",
+    "tags": [
+      "1003",
+      "Çıkmış Sınav Sorusu",
+      "Varlık Teminatlı Menkul Kıymet (VTMK)"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_001",
+    "module_id": "1005",
+    "number": 1,
+    "source": "cikmis",
+    "topic": "Yatırım Danışmanlığı Faaliyeti Ayrımı",
+    "chapter": "BÖLÜM 1: YATIRIM HİZMET VE FAALİYETLERİ",
+    "text": "III-37.1 sayılı Yatırım Hizmetleri Tebliği uyarınca, aşağıdakilerden hangisi doğrudan bir 'Yatırım Danışmanlığı' faaliyeti KAPSAMINDA DEĞERLENDİRİLEMEZ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Müşterinin mali durumu, risk ve getiri tercihleri dikkate alınarak kişiye özel sermaye piyasası aracı tavsiyesi sunulması"
+      },
+      {
+        "key": "B",
+        "text": "Yatırım kuruluşları tarafından genel nitelikte hazırlanan ve herkese açık olarak dağıtılan günlük bülten, araştırma raporu ve piyasa yorumları"
+      },
+      {
+        "key": "C",
+        "text": "Yatırım danışmanlığı sözleşmesi çerçevesinde müşteriye özel portföy dağılımı önerilmesi"
+      },
+      {
+        "key": "D",
+        "text": "Müşteriye belli bir hisse senedini hedef fiyat belirterek doğrudan satın alması yönünde kişisel öneri verilmesi"
+      },
+      {
+        "key": "E",
+        "text": "Yerindelik testi sonucunda müşteriye uygun varlık dağılımı modelinin şahsa münhasır aktarılması"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Herkese açık piyasa bültenleri, genel teknik/temel analiz raporları ve genel yorumlar yatırım danışmanlığı sayılmaz; genel yatırım tavsiyesi niteliğindedir. Yatırım danışmanlığı sözleşmeye bağlı olarak şahsa ve mali duruma özel sunulur.",
+    "trap": "Genel araştırma bültenleri lisanslı yatırım danışmanlığı faaliyeti değildir.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Yatırım Danışmanlığı Faaliyeti Ayrımı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_002",
+    "module_id": "1005",
+    "number": 2,
+    "source": "cikmis",
+    "topic": "Kısmi Yetkili Aracı Kurum Yasakları",
+    "chapter": "BÖLÜM 2: YATIRIM KURULUŞLARININ SINIFLANDIRILMASI",
+    "text": "III-39.1 sayılı Yatırım Kuruluşları Tebliği uyarınca, 'Kısmi Yetkili Aracı Kurum'ların yapamayacağı (münhasıran geniş yetkili kurumlara tanınan) faaliyet hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Emir iletimine aracılık"
+      },
+      {
+        "key": "B",
+        "text": "İşlem aracılığı (Müşteri namına işlem yapma)"
+      },
+      {
+        "key": "C",
+        "text": "Portföy aracılığı (Kendi nam ve hesabına işlem yapma / piyasa yapıcılığı)"
+      },
+      {
+        "key": "D",
+        "text": "En iyi gayret aracılığıyla halka arza aracılık"
+      },
+      {
+        "key": "E",
+        "text": "Yatırım danışmanlığı faaliyeti"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Portföy aracılığı (kendi nam ve hesabına işlem yapma), aracılık yüklenimi ve kaldıraçlı işlemler (Forex) yalnızca 'Geniş Yetkili Aracı Kurumlar' tarafından yapılabilir. Kısmi yetkili aracı kurumlar kendi nam ve hesaplarına piyasa yapıcılık/portföy aracılığı yapamaz.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• Forex: Kaldıraçlı Döviz ve Emtia Alım Satım Piyasası",
+    "trap": "Portföy aracılığı kendi nam ve hesabına işlem yapmaktır ve sadece geniş yetkili kurumlara aittir.",
+    "difficulty": "hard",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Kısmi Yetkili Aracı Kurum Yasakları"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_003",
+    "module_id": "1005",
+    "number": 3,
+    "source": "cikmis",
+    "topic": "Kredili İşlemler ve Özkaynak Oranları",
+    "chapter": "BÖLÜM 3: KREDİLİ MENKUL KIYMET İŞLEMLERİ",
+    "text": "Kredili menkul kıymet alımı işlemlerinde; müşterinin işlem başında yatırması gereken asgari başlangıç özkaynak oranı ile teminat tamamlama çağrısına yol açan asgari özkaynak koruma oranı sırasıyla hangisinde doğru verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "%35 ve %20"
+      },
+      {
+        "key": "B",
+        "text": "%50 ve %35"
+      },
+      {
+        "key": "C",
+        "text": "%60 ve %40"
+      },
+      {
+        "key": "D",
+        "text": "%50 ve %25"
+      },
+      {
+        "key": "E",
+        "text": "%75 ve %50"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Seri: V No: 65 sayılı Tebliğ uyarınca, kredili hisse alımında başlangıç özkaynak oranı asgari %50'dir. Kredili pozisyon açıkken hisselerin değer kaybetmesiyle özkaynak oranının %35'in altına düşmesi halinde kuruma 'Özkaynak Tamamlama Çağrısı' (Margin Call) yapma zorunluluğu doğar.",
+    "trap": "Başlangıç %50, koruma/tamamlama eşiği %35'tir.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Kredili İşlemler ve Özkaynak Oranları"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_004",
+    "module_id": "1005",
+    "number": 4,
+    "source": "cikmis",
+    "topic": "Müşteri Temsilciliği & Lisanslama",
+    "chapter": "BÖLÜM 4: YATIRIM KURULUŞLARINDA İÇ SİSTEMLER VE PERSONEL",
+    "text": "Aracı kurumlarda müşterilerden sermaye piyasası aracı alım-satım emirlerini kabul eden ve piyasaya ileten müşteri temsilcilerinin sahip olması gereken asgari SPL lisans belgesi hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sermaye Piyasası Faaliyetleri Düzey 1 Lisansı"
+      },
+      {
+        "key": "B",
+        "text": "Türev Araçlar Lisansı"
+      },
+      {
+        "key": "C",
+        "text": "Kurumsal Yönetim Derecelendirme Lisansı"
+      },
+      {
+        "key": "D",
+        "text": "Gayrimenkul Değerleme Lisansı"
+      },
+      {
+        "key": "E",
+        "text": "Düzey 3 Lisansı"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Yatırım kuruluşlarında hisse senedi ve borçlanma aracı emirlerini kabul eden müşteri temsilcilerinin en az 'Sermaye Piyasası Faaliyetleri Düzey 1 Lisansı'na sahip olmaları mevzuat gereği zorunludur.",
+    "trap": "Emir kabulü için Düzey 1 yeterlidir; yatırım danışmanlığı için ise en az Düzey 2 veya Düzey 3 gerekir.",
+    "difficulty": "easy",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Müşteri Temsilciliği & Lisanslama"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_005",
+    "module_id": "1005",
+    "number": 5,
+    "source": "cikmis",
+    "topic": "Kaldıraçlı İşlemler (Forex) Kuralları",
+    "chapter": "BÖLÜM 5: KALDIRAÇLI İŞLEMLER VE YAN HİZMETLER",
+    "text": "SPK düzenlemeleri uyarınca yurt içinde yerleşik bireysel yatırımcıların aracı kurumlar nezdinde kaldıraçlı alım satım (Forex) işlemi yapabilmeleri için uygulanabilecek azami kaldıraç oranı hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1:100"
+      },
+      {
+        "key": "B",
+        "text": "1:50"
+      },
+      {
+        "key": "C",
+        "text": "1:20"
+      },
+      {
+        "key": "D",
+        "text": "1:10"
+      },
+      {
+        "key": "E",
+        "text": "1:5"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "SPK'nın Şubat 2017 düzenlemesiyle bireysel yatırımcılar için kaldıraçlı işlemlerde azami kaldıraç oranı 1:10 olarak sınırlandırılmış ve asgari 50. 000 TL (veya muadili döviz) başlangıç teminatı şartı getirilmiştir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• Forex: Kaldıraçlı Döviz ve Emtia Alım Satım Piyasası",
+    "trap": "Eski mevzuatta 1:100 olan oran, güncel düzenlemede kesin olarak 1:10'dur.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Kaldıraçlı İşlemler (Forex) Kuralları"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_006",
+    "module_id": "1005",
+    "number": 6,
+    "source": "cikmis",
+    "topic": "Yatırım Hizmetleri Ayrımı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "III-37.1 sayılı Tebliğ uyarınca, sermaye piyasası araçlarının kendi nam ve hesabına alınıp satılması hangi faaliyet kapsamındadır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Emir iletimine aracılık"
+      },
+      {
+        "key": "B",
+        "text": "İşlem aracılığı"
+      },
+      {
+        "key": "C",
+        "text": "Portföy aracılığı"
+      },
+      {
+        "key": "D",
+        "text": "Portföy yöneticiliği"
+      },
+      {
+        "key": "E",
+        "text": "Yatırım danışmanlığı"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Kurumun kendi nam ve hesabına işlem yaparak piyasada alıcı veya satıcı olması 'Portföy Aracılığı' faaliyetidir.",
+    "trap": "Kendi nam ve hesabına işlem portföy aracılığıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Yatırım Hizmetleri Ayrımı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_007",
+    "module_id": "1005",
+    "number": 7,
+    "source": "cikmis",
+    "topic": "Kısmi Yetkili Aracı Kurum Sınırı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Aşağıdaki faaliyetlerden hangisi Kısmi Yetkili Aracı Kurumlar tarafından YÜRÜTÜLEMEZ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Emir iletimine aracılık"
+      },
+      {
+        "key": "B",
+        "text": "İşlem aracılığı"
+      },
+      {
+        "key": "C",
+        "text": "Portföy aracılığı"
+      },
+      {
+        "key": "D",
+        "text": "Yatırım danışmanlığı"
+      },
+      {
+        "key": "E",
+        "text": "En iyi gayret aracılığıyla halka arza aracılık"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Kısmi yetkili aracı kurumlar kendi nam ve hesaplarına portföy aracılığı yapamaz; bu faaliyet münhasıran Geniş Yetkili kurumlara aittir.",
+    "trap": "Kısmi yetkili kurum portföy aracılığı yapamaz.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Kısmi Yetkili Aracı Kurum Sınırı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_008",
+    "module_id": "1005",
+    "number": 8,
+    "source": "cikmis",
+    "topic": "Dar Yetkili Aracı Kurum Yetkileri",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Dar Yetkili Aracı Kurumlar müşterilerden aldıkları emirleri nasıl icra ederler?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kendi nam ve hesaplarına doğrudan borsada"
+      },
+      {
+        "key": "B",
+        "text": "Borsaya doğrudan üye olarak kendi sistemlerinden"
+      },
+      {
+        "key": "C",
+        "text": "Yalnızca başka bir aracı kurum aracılığıyla (emir iletimine aracılık)"
+      },
+      {
+        "key": "D",
+        "text": "Yatırım bankası kurarak"
+      },
+      {
+        "key": "E",
+        "text": "Tezgahüstü piyasada"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Dar yetkili aracı kurumlar borsaya doğrudan emir iletemez; sadece emir iletimine aracılık yapabilirler.",
+    "trap": "Dar yetkili kurum sadece emir iletir.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Dar Yetkili Aracı Kurum Yetkileri"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_009",
+    "module_id": "1005",
+    "number": 9,
+    "source": "cikmis",
+    "topic": "Yerindelik Testi Zorunluluğu",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırım kuruluşları aşağıdaki hizmetlerden hangisini sunmadan önce müşteriye 'Yerindelik Testi' (Suitability) uygulamak ZORUNDADIR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsada hisse alım emri iletimi"
+      },
+      {
+        "key": "B",
+        "text": "Portföy yöneticiliği ve yatırım danışmanlığı hizmeti"
+      },
+      {
+        "key": "C",
+        "text": "Döviz büfesi işlemleri"
+      },
+      {
+        "key": "D",
+        "text": "Bono saklama hizmeti"
+      },
+      {
+        "key": "E",
+        "text": "Kredili mevduat hesabı açılışı"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Müşterinin mali durumu, risk ve getiri beklentilerini ölçen Yerindelik Testi münhasıran portföy yöneticiliği ve yatırım danışmanlığı öncesinde zorunludur.",
+    "trap": "Yerindelik testi portföy yöneticiliği ve danışmanlıkta şarttır.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Yerindelik Testi Zorunluluğu"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_010",
+    "module_id": "1005",
+    "number": 10,
+    "source": "cikmis",
+    "topic": "Uygunluk Testi Kapsamı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Uygunluk Testi'nin (Appropriateness) temel amacı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Müşterinin vergi borcunu tespit etmek"
+      },
+      {
+        "key": "B",
+        "text": "Müşterinin talep ettiği ürünün risklerini anlayabilecek bilgi ve tecrübeye sahip olup olmadığını değerlendirmek"
+      },
+      {
+        "key": "C",
+        "text": "Müşterinin kredi notunu yükseltmek"
+      },
+      {
+        "key": "D",
+        "text": "Müşteriye gayrimenkul satmak"
+      },
+      {
+        "key": "E",
+        "text": "Müşterinin tasarruf miktarını artırmak"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Uygunluk testi müşterinin sermaye piyasası aracının içerdiği riskleri kavrayacak bilgi ve tecrübesinin olup olmadığını tespit eder.",
+    "trap": "Uygunluk testi bilgi ve tecrübeyi ölçer.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Uygunluk Testi Kapsamı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_011",
+    "module_id": "1005",
+    "number": 11,
+    "source": "cikmis",
+    "topic": "Kredili İşlem Başlangıç Özkaynak Oranı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Kredili menkul kıymet alımı işleminde müşterinin pozisyon açılışında yatırması gereken asgari özkaynak oranı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "%20"
+      },
+      {
+        "key": "B",
+        "text": "%35"
+      },
+      {
+        "key": "C",
+        "text": "%50"
+      },
+      {
+        "key": "D",
+        "text": "%60"
+      },
+      {
+        "key": "E",
+        "text": "%75"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Seri: V No: 65 sayılı Tebliğ uyarınca kredili alımda başlangıç özkaynak oranı asgari %50'dir.",
+    "trap": "Başlangıç özkaynağı en az %50'dir.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Kredili İşlem Başlangıç Özkaynak Oranı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_012",
+    "module_id": "1005",
+    "number": 12,
+    "source": "cikmis",
+    "topic": "Özkaynak Tamamlama Çağrısı Eşiği",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Kredili pozisyon açıkken hisse senetlerinin değer kaybetmesi sonucu özkaynak oranının yüzde kaçın altına düşmesi halinde Margin Call yapılır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "%20"
+      },
+      {
+        "key": "B",
+        "text": "%25"
+      },
+      {
+        "key": "C",
+        "text": "%35"
+      },
+      {
+        "key": "D",
+        "text": "%50"
+      },
+      {
+        "key": "E",
+        "text": "%60"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Özkaynak oranı %35'in altına düştüğünde aracı kurum müşteriye Özkaynak Tamamlama Çağrısı (Margin Call) yapmak zorundadır.",
+    "trap": "Tamamlama çağrısı eşiği %35'tir.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Özkaynak Tamamlama Çağrısı Eşiği"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_013",
+    "module_id": "1005",
+    "number": 13,
+    "source": "cikmis",
+    "topic": "Özkaynak Tamamlama Süresi",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Özkaynak tamamlama çağrısı alan bir müşteri eksik teminatı en geç ne zamana kadar tamamlamak zorundadır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aynı gün 1 saat içinde"
+      },
+      {
+        "key": "B",
+        "text": "Bildirimi izleyen iş günü mesai saati sonuna kadar"
+      },
+      {
+        "key": "C",
+        "text": "3 iş günü içinde"
+      },
+      {
+        "key": "D",
+        "text": "1 hafta içinde"
+      },
+      {
+        "key": "E",
+        "text": "Ay sonuna kadar"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Tebliğ uyarınca müşteri teminat tamamlama çağrısını izleyen iş günü sonuna kadar özkaynağını asgari orana yükseltmelidir.",
+    "trap": "Süre ertesi iş günü mesai sonudur.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Özkaynak Tamamlama Süresi"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_014",
+    "module_id": "1005",
+    "number": 14,
+    "source": "cikmis",
+    "topic": "Resen Satış Yetkisi",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Müşterinin özkaynak tamamlama çağrısına süresi içinde uymaması halinde aracı kurumun kanuni yetkisi nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Müşteri hakkında derhal iflas davası açmak"
+      },
+      {
+        "key": "B",
+        "text": "Özkaynak oranını %50'ye getirecek miktarda hisse senedini müşterinin iznini aramaksızın borsada resen satmak"
+      },
+      {
+        "key": "C",
+        "text": "Pozisyonu süresiz dondurmak"
+      },
+      {
+        "key": "D",
+        "text": "Müşterinin banka hesaplarına el koymak"
+      },
+      {
+        "key": "E",
+        "text": "Müşterinin diğer bankalardaki tüm mevduat hesaplarına Kurul kanalıyla doğrudan ihtiyati haciz koydurmak"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Aracı kurum süresinde tamamlanmayan teminat açığını kapatmak için müşterinin menkul kıymetlerini borsada resen satarak krediyi kapatır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)",
+    "trap": "Aracı kurum resen satarak teminatı tamamlar.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Resen Satış Yetkisi"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_015",
+    "module_id": "1005",
+    "number": 15,
+    "source": "cikmis",
+    "topic": "Kaldıraçlı İşlemler (Forex) Azami Kaldıraç",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Bireysel yatırımcıların yurt içi aracı kurumlarda işlem yapabileceği azami Forex kaldıraç oranı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1:100"
+      },
+      {
+        "key": "B",
+        "text": "1:50"
+      },
+      {
+        "key": "C",
+        "text": "1:20"
+      },
+      {
+        "key": "D",
+        "text": "1:10"
+      },
+      {
+        "key": "E",
+        "text": "1:5"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "SPK düzenlemesi uyarınca yurt içi kaldıraçlı işlemlerde bireysel yatırımcılara uygulanabilecek azami oran 1:10'dur.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• Forex: Kaldıraçlı Döviz ve Emtia Alım Satım Piyasası",
+    "trap": "Forex azami kaldıraç 1:10'dur.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Kaldıraçlı İşlemler (Forex) Azami Kaldıraç"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_016",
+    "module_id": "1005",
+    "number": 16,
+    "source": "cikmis",
+    "topic": "Forex Asgari Başlangıç Teminatı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Kaldıraçlı alım satım işlemlerine başlayabilmek için yatırılması gereken asgari teminat tutarı ne kadardır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "10.000 TL"
+      },
+      {
+        "key": "B",
+        "text": "25.000 TL"
+      },
+      {
+        "key": "C",
+        "text": "50.000 TL (veya muadili döviz)"
+      },
+      {
+        "key": "D",
+        "text": "100.000 TL"
+      },
+      {
+        "key": "E",
+        "text": "250.000 TL"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPK tebliği uyarınca Forex başlangıç teminatı asgari 50. 000 TL veya muadili dövizdir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)\n• Forex: Kaldıraçlı Döviz ve Emtia Alım Satım Piyasası",
+    "trap": "Asgari teminat 50.000 TL'dir.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Forex Asgari Başlangıç Teminatı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_017",
+    "module_id": "1005",
+    "number": 17,
+    "source": "cikmis",
+    "topic": "Yatırımcı Tazmin Merkezi (YTM) Kapsamı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırımcı Tazmin Merkezi (YTM) hangi durumdaki yatırımcı alacaklarını tazmin eder?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsada hisse senedinin fiyatının düşmesinden doğan piyasa zararlarını"
+      },
+      {
+        "key": "B",
+        "text": "Hakkında tedrici tasfiye veya iflas kararı verilen yatırım kuruluşunun müşteriye ait hisse ve nakitleri iade edememesi durumunda"
+      },
+      {
+        "key": "C",
+        "text": "Yatırım danışmanının yanlış tavsiyesinden kaynaklanan zararları"
+      },
+      {
+        "key": "D",
+        "text": "Şirketin kâr dağıtmamasından kaynaklanan kayıpları"
+      },
+      {
+        "key": "E",
+        "text": "Döviz kuru dalgalanması kayıplarını"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "YTM piyasa riskini tazmin etmez; aracı kurumun iflası veya mali çöküşü sebebiyle müşteriye ait emanet varlıkların iade edilememesini tazmin eder.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• YTM: Yatırımcı Tazmin Merkezi (Aracı kurumların iflası/tasfiyesinde yatırımcı varlıklarını tazmin eden kurum)",
+    "trap": "YTM sadece kurumsal iflas ve varlık teslim temerrüdünü tazmin eder.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Yatırımcı Tazmin Merkezi (YTM) Kapsamı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_018",
+    "module_id": "1005",
+    "number": 18,
+    "source": "cikmis",
+    "topic": "Yatırımcı Varlıklarında Zamanaşımı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırım kuruluşları nezdindeki yatırımcıların her türlü emanet ve alacakları son işlem tarihinden itibaren kaç yıl geçmekle YTM'ye devredilir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "2 yıl"
+      },
+      {
+        "key": "B",
+        "text": "5 yıl"
+      },
+      {
+        "key": "C",
+        "text": "10 yıl"
+      },
+      {
+        "key": "D",
+        "text": "15 yıl"
+      },
+      {
+        "key": "E",
+        "text": "20 yıl"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "SPKn m. 83 uyarınca 10 yıl boyunca aranmayan her türlü emanet ve alacaklar Yatırımcı Tazmin Merkezi'ne devredilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu\n• YTM: Yatırımcı Tazmin Merkezi (Aracı kurumların iflası/tasfiyesinde yatırımcı varlıklarını tazmin eden kurum)",
+    "trap": "Zamanaşımı süresi 10 yıldır.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Yatırımcı Varlıklarında Zamanaşımı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_019",
+    "module_id": "1005",
+    "number": 19,
+    "source": "cikmis",
+    "topic": "Müşteri Varlıklarının Saklanması Kuralı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırım kuruluşlarında müşterilere ait nakit ve menkul kıymetlerin saklanmasına ilişkin kanuni kural hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aracı kurumun kendi malvarlığı ile müşteri varlıkları aynı hesapta karıştırılarak izlenir."
+      },
+      {
+        "key": "B",
+        "text": "Müşteri nakit ve menkul kıymetleri kurumun malvarlığından kesinlikle ayrı hesaplarda tutulur ve kurum borçları için haczedilemez."
+      },
+      {
+        "key": "C",
+        "text": "Kurum dilediğinde müşteri nakdini kendi giderleri için kullanabilir."
+      },
+      {
+        "key": "D",
+        "text": "Müşteri varlıkları aracı kurumun genel işletme sermayesi hesaplarıyla birleştirilerek değerlendirilir."
+      },
+      {
+        "key": "E",
+        "text": "Nakit ve menkul kıymetler aracı kurumun serbest tasarrufundaki vadeli mevduat havuzunda bloke edilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 45 ve 46 uyarınca müşteri varlıkları kurum malvarlığından ayrı tutulur, haczedilemez ve iflas masasına dahil edilemez.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Müşteri varlıkları ayrı tutulur ve haczedilemez.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Müşteri Varlıklarının Saklanması Kuralı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_020",
+    "module_id": "1005",
+    "number": 20,
+    "source": "cikmis",
+    "topic": "Müşteri Temsilcisi Asgari Lisansı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Aracı kurumlarda müşterilerden pay senedi alım satım emirlerini kabul etme ve iletme yetkisine sahip olmak için gereken asgari lisans nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sermaye Piyasası Faaliyetleri Düzey 1 Lisansı"
+      },
+      {
+        "key": "B",
+        "text": "Türev Araçlar Lisansı"
+      },
+      {
+        "key": "C",
+        "text": "Gayrimenkul Değerleme Lisansı"
+      },
+      {
+        "key": "D",
+        "text": "Kurumsal Yönetim Lisansı"
+      },
+      {
+        "key": "E",
+        "text": "Kredi Derecelendirme Lisansı"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Emir kabulü ve iletimi yapan müşteri temsilcileri için Düzey 1 lisansı mevzuat gereğince yeterlidir.",
+    "trap": "Asgari lisans Düzey 1'dir.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Müşteri Temsilcisi Asgari Lisansı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_021",
+    "module_id": "1005",
+    "number": 21,
+    "source": "cikmis",
+    "topic": "Müşteri Emrinin Belgelenmesi",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırım Kuruluşları düzenlemeleri ve tebliğleri uyarınca; Telefonla alınan müşteri alım satım emirlerinin ses kayıtlarının yatırım kuruluşları tarafından saklanma süresi en az kaç yıldır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 yıl"
+      },
+      {
+        "key": "B",
+        "text": "2 yıl"
+      },
+      {
+        "key": "C",
+        "text": "3 yıl"
+      },
+      {
+        "key": "D",
+        "text": "5 yıl"
+      },
+      {
+        "key": "E",
+        "text": "10 yıl"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "III-45. 1 sayılı Tebliğ uyarınca müşteri emirlerine ilişkin her türlü telefon kaydı ve elektronik log en az 5 yıl saklanmalıdır.",
+    "trap": "Kayıt saklama süresi en az 5 yıldır.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Müşteri Emrinin Belgelenmesi"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_022",
+    "module_id": "1005",
+    "number": 22,
+    "source": "cikmis",
+    "topic": "Kitle Fonlaması Yatırım Sınırı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırım Kuruluşları düzenlemeleri ve tebliğleri uyarınca; Nitelikli olmayan (genel) bireysel yatırımcıların bir takvim yılında paya dayalı kitle fonlaması yoluyla yapabilecekleri azami yatırım tutarı nasıl sınırlandırılmıştır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabit 10.000 TL"
+      },
+      {
+        "key": "B",
+        "text": "Beyan edilen yıllık net gelirin %10'u (azami yasal tavanı aşmamak kaydıyla)"
+      },
+      {
+        "key": "C",
+        "text": "Sınırsızdır"
+      },
+      {
+        "key": "D",
+        "text": "Mevduatının %50'si"
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca 1 projeye yatırım yapabilir"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Nitelikli olmayan yatırımcılar yıllık gelirlerinin %10'unu aşmayacak şekilde kitle fonlaması yatırımı yapabilirler.",
+    "trap": "Yıllık gelir sınırının %10'u kuralı uygulanır.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Kitle Fonlaması Yatırım Sınırı"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_023",
+    "module_id": "1005",
+    "number": 23,
+    "source": "cikmis",
+    "topic": "Aracılık Yüklenimi Türleri",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırım Kuruluşları düzenlemeleri ve tebliğleri uyarınca; Halka arza aracılıkta aracı kurumun satılamayan payların tamamını bedelini ödeyerek satın almayı taahhüt ettiği aracılık türü hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "En iyi gayret aracılığı"
+      },
+      {
+        "key": "B",
+        "text": "Bakiye yüklenim"
+      },
+      {
+        "key": "C",
+        "text": "Tümünü yüklenim"
+      },
+      {
+        "key": "D",
+        "text": "Kısmi aracılık"
+      },
+      {
+        "key": "E",
+        "text": "Komisyonculuk"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Tümünü yüklenimde aracı kurum halka arz edilecek payların tamamını peşinen veya satış sonunda satın almayı garanti eder.",
+    "trap": "Satılamayan payların tamamını alma taahhüdü yüklenimdir.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Aracılık Yüklenimi Türleri"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_024",
+    "module_id": "1005",
+    "number": 24,
+    "source": "cikmis",
+    "topic": "Mesleki Sorumluluk Sigortası",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırım Kuruluşları düzenlemeleri ve tebliğleri uyarınca; Yatırım danışmanlığı ve portföy yöneticiliği faaliyetinde bulunan kuruluşların çalışanlarının hatalarından doğabilecek zararları karşılamak üzere yaptırabileceği sigorta hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kefalet Sigortası"
+      },
+      {
+        "key": "B",
+        "text": "Mesleki Sorumluluk Sigortası"
+      },
+      {
+        "key": "C",
+        "text": "Kredi Sigortası"
+      },
+      {
+        "key": "D",
+        "text": "Emniyeti Suistimal Sigortası"
+      },
+      {
+        "key": "E",
+        "text": "Finansal Kayıplar ve Hırsızlık Sigortası"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Mevzuat gereği kuruluşlar mesleki sorumluluk sigortası yaptırabilirler.",
+    "trap": "Mesleki sorumluluk sigortasıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "Mesleki Sorumluluk Sigortası"
+    ]
+  },
+  {
+    "id": "q_1005_cikmis_025",
+    "module_id": "1005",
+    "number": 25,
+    "source": "cikmis",
+    "topic": "İç Kontrol Birimi Bağımsızlığı",
+    "chapter": "Modül 1005: Yatırım Kuruluşları",
+    "text": "Yatırım Kuruluşları düzenlemeleri ve tebliğleri uyarınca; Aracı kurumlarda iç kontrol ve risk yönetim birimleri hiyerarşik olarak kime doğrudan bağlı çalışır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Genel Müdüre"
+      },
+      {
+        "key": "B",
+        "text": "Yönetim Kuruluna veya Denetim Komitesine"
+      },
+      {
+        "key": "C",
+        "text": "Satış Birim Yöneticisine"
+      },
+      {
+        "key": "D",
+        "text": "Müşteri Temsilcilerine"
+      },
+      {
+        "key": "E",
+        "text": "İnsan Kaynaklarına"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "İç denetim ve kontrol birimleri operasyonel birimlerden bağımsız olarak doğrudan Yönetim Kuruluna/Denetim Komitesine bağlıdır.",
+    "trap": "İç denetim doğrudan Yönetim Kuruluna bağlıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1005",
+      "Çıkmış Sınav Sorusu",
+      "İç Kontrol Birimi Bağımsızlığı"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_001",
+    "module_id": "1012",
+    "number": 1,
+    "source": "cikmis",
+    "topic": "Merkezi Karşı Taraf (MKT) Uygulaması",
+    "chapter": "BÖLÜM 2: TAKAS VE TAKASBANK İŞLEMLERİ",
+    "text": "Bir işlemin borsada eşleştiği anda merkezi takas kuruluşunun piyasa katılımcıları arasına girerek alıcıya karşı satıcı, satıcıya karşı ise alıcı konumuna geçtiği ve işlemin takasının tamamlanmasını garanti ettiği finansal mekanizma hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Brüt Takas Sistemi"
+      },
+      {
+        "key": "B",
+        "text": "Merkezi Karşı Taraf (MKT)"
+      },
+      {
+        "key": "C",
+        "text": "Kaydi Saklama Sistemi"
+      },
+      {
+        "key": "D",
+        "text": "Ödünç Pay Piyasası"
+      },
+      {
+        "key": "E",
+        "text": "Otomatik Virman"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "6362 sayılı SPKn m. 78 uyarınca Merkezi Karşı Taraf (MKT); takas kuruluşunun alıcıya karşı satıcı, satıcıya karşı alıcı rolünü üstlenerek takasın tamamlanmasını garanti etmesidir. Türkiye'de bu görevi Takasbank yürütür.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKT: Merkezi Karşı Taraf (Central Counterparty - Takas odasının takasın tamamlanmasını mali olarak garanti etmesi)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Alıcıya karşı satıcı, satıcıya karşı alıcı tanımı kesin olarak Merkezi Karşı Taraf (MKT)'yi ifade eder.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Merkezi Karşı Taraf (MKT) Uygulaması"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_002",
+    "module_id": "1012",
+    "number": 2,
+    "source": "cikmis",
+    "topic": "Takas Kesinliği ve İflas Muafiyeti",
+    "chapter": "BÖLÜM 2: TAKAS VE TAKASBANK İŞLEMLERİ",
+    "text": "6362 sayılı SPKn m. 79'da düzenlenen 'Takas Kesinliği' ilkesine göre takas sistemine iletilen transfer emirleri ve teminatlara ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Üye kurum iflas etse dahi sisteme iletilen emirler geri alınamaz, iptal edilemez ve Takasbank nezdindeki teminatlar iflas masasına devredilemez."
+      },
+      {
+        "key": "B",
+        "text": "İflas eden üyenin takastaki tüm işlemleri derhal hükümsüz kalır ve iptal edilir."
+      },
+      {
+        "key": "C",
+        "text": "Üye kurum istediği zaman işlem gününün sonuna kadar verdiği takas emrini tek taraflı geri çekebilir."
+      },
+      {
+        "key": "D",
+        "text": "Teminatlar genel icra takibine konu edilerek haczedilebilir."
+      },
+      {
+        "key": "E",
+        "text": "Takas kesinliği yalnızca para piyasası işlemlerinde geçerlidir; pay piyasasında uygulanmaz."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Takas Kesinliği ilkesi uyarınca, sisteme girilen transfer emirleri geri alınamaz ve üyenin iflası halinde dahi teminatlar kamu alacakları dahil başka hiçbir alacak için haczedilemez, öncelikle takas yükümlülüklerinin kapatılmasında kullanılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Takasbank nezdindeki teminatlar haczedilemez ve iflas masasına devredilemez; öncelikle takasın ifası için kullanılır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Takas Kesinliği ve İflas Muafiyeti"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_003",
+    "module_id": "1012",
+    "number": 3,
+    "source": "cikmis",
+    "topic": "Merkezi Kayıt Kuruluşu (MKK) Görevleri",
+    "chapter": "BÖLÜM 1: MERKEZİ KAYIT KURULUŞU (MKK)",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 81 uyarınca Merkezi Kayıt Kuruluşu (MKK)'nun temel kuruluş amacı ve münhasır görevi aşağıdakilerden hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Halka arz edilecek şirketlerin finansal tablolarını bağımsız denetimden geçirmek"
+      },
+      {
+        "key": "B",
+        "text": "Sermaye piyasası araçlarının kaydileştirilerek hak sahipleri bazında elektronik ortamda merkezi kaydını ve saklamasını tutmak"
+      },
+      {
+        "key": "C",
+        "text": "Aracı kurumlara sermaye piyasası faaliyet izin belgesi vermek"
+      },
+      {
+        "key": "D",
+        "text": "Borsa İstanbul pay piyasasında alım-satım emirlerini eşleştirmek"
+      },
+      {
+        "key": "E",
+        "text": "Yatırım fonlarının günlük portföy değerini ve birim pay fiyatını belirlemek"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "MKK, Türkiye'nin merkezi saklama kuruluşudur. Sermaye piyasası araçlarının kaydi sistemde ihraç edilmesi, hak sahipleri bazında elektronik ortamda izlenmesi ve bunlara bağlı hakların takibi münhasıran MKK tarafından yürütülür.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)",
+    "trap": "Emir eşleştirme Borsa İstanbul'un, takas teminatı Takasbank'ın, kaydi mülkiyet saklaması ise MKK'nın görevidir.",
+    "difficulty": "easy",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Merkezi Kayıt Kuruluşu (MKK) Görevleri"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_004",
+    "module_id": "1012",
+    "number": 4,
+    "source": "cikmis",
+    "topic": "BIST Pay Piyasasında Takas Valörü (T+2)",
+    "chapter": "BÖLÜM 3: TAKAS SÜRELERİ VE VALÖR",
+    "text": "Borsa İstanbul Pay Piyasası'nda gerçekleştirilen bir hisse senedi alım-satım işleminin fiziki pay ve nakit takası kural olarak hangi günde (valörde) sonuçlandırılır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aynı gün (T+0)"
+      },
+      {
+        "key": "B",
+        "text": "İşlem gününü izleyen ilk iş günü (T+1)"
+      },
+      {
+        "key": "C",
+        "text": "İşlem gününü izleyen ikinci iş günü (T+2)"
+      },
+      {
+        "key": "D",
+        "text": "İşlem gününü izleyen üçüncü iş günü (T+3)"
+      },
+      {
+        "key": "E",
+        "text": "Haftalık takas gününde (T+5)"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Borsa İstanbul Pay Piyasası'nda standart takas süresi T+2'dir (işlem gününü izleyen ikinci iş günü). Örneğin Pazartesi günü yapılan işlemin takası Çarşamba günü tamamlanır.",
+    "trap": "Standart pay takası T+2'dir; Eurobond ve bazı borçlanma araçlarında farklı valörler uygulanabilmektedir.",
+    "difficulty": "easy",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "BIST Pay Piyasasında Takas Valörü (T+2)"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_005",
+    "module_id": "1012",
+    "number": 5,
+    "source": "cikmis",
+    "topic": "Temerrüt Yönetimi & Garanti Fonu",
+    "chapter": "BÖLÜM 2: TAKAS VE TAKASBANK İŞLEMLERİ",
+    "text": "Takas üyesinin takas günü nakit veya menkul kıymet yükümlülüğünü yerine getiremeyerek temerrüde düşmesi durumunda, Takasbank tarafından zararın karşılanmasında ilk başvurulan kaynak hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takasbank'ın kendi özkaynakları"
+      },
+      {
+        "key": "B",
+        "text": "Temerrüde düşen üyenin Takasbank nezdindeki teminatları ve katkı payı"
+      },
+      {
+        "key": "C",
+        "text": "Diğer masum üyelerin Garanti Fonu katkıları"
+      },
+      {
+        "key": "D",
+        "text": "Hazine ve Maliye Bakanlığı garanti ödeneği"
+      },
+      {
+        "key": "E",
+        "text": "Yatırımcı Tazmin Merkezi (YTM) fonları"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Temerrüt şelalesi (default waterfall) kuralı gereğince, temerrüt halinde ilk olarak temerrüde düşen kusurlu üyenin kendi teminatları ve Garanti Fonu'ndaki katkı payı nakde çevrilerek kullanılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• YTM: Yatırımcı Tazmin Merkezi (Aracı kurumların iflası/tasfiyesinde yatırımcı varlıklarını tazmin eden kurum)",
+    "trap": "İlk kaynak daima temerrüde düşen üyenin kendi teminatlarıdır, diğer üyelerin fonu veya Takasbank sermayesi en son devreye girer.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Temerrüt Yönetimi & Garanti Fonu"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_006",
+    "module_id": "1012",
+    "number": 6,
+    "source": "cikmis",
+    "topic": "Merkezi Karşı Taraf Tanımı",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Merkezi takas kuruluşunun alıcıya karşı satıcı, satıcıya karşı alıcı konumuna geçerek takasın ifasını garanti ettiği mekanizma hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Brüt Takas"
+      },
+      {
+        "key": "B",
+        "text": "Merkezi Karşı Taraf (MKT)"
+      },
+      {
+        "key": "C",
+        "text": "Kaydi Saklama"
+      },
+      {
+        "key": "D",
+        "text": "Ödünç Sistemi"
+      },
+      {
+        "key": "E",
+        "text": "Serbest Takas"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "6362 sayılı Kanun m. 78 uyarınca Takasbank'ın alıcıya karşı satıcı, satıcıya karşı alıcı rolünü üstlenmesi MKT mekanizmasıdır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKT: Merkezi Karşı Taraf (Central Counterparty - Takas odasının takasın tamamlanmasını mali olarak garanti etmesi)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)",
+    "trap": "Alıcıya satıcı, satıcıya alıcı olmak MKT'dir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Merkezi Karşı Taraf Tanımı"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_007",
+    "module_id": "1012",
+    "number": 7,
+    "source": "cikmis",
+    "topic": "Takas Kesinliği İlkesi",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "SPKn m. 79 uyarınca düzenlenen 'Takas Kesinliği' ilkesinin en önemli hukuki sonucu nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Üye kurum iflas etse dahi sisteme iletilen takas emirleri geri alınamaz ve Takasbank teminatları iflas masasına devredilemez."
+      },
+      {
+        "key": "B",
+        "text": "İflas halinde takastaki tüm işlemler iptal edilir."
+      },
+      {
+        "key": "C",
+        "text": "Üye dilediği an takas emrini geri çekebilir."
+      },
+      {
+        "key": "D",
+        "text": "Teminatlar kamu alacakları için öncelikle haczedilir."
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca para piyasasında takas kesinliği uygulanır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Takas kesinliği ilkesi gereği takas emirleri geri alınamaz; teminatlar kamu haczi dahil hiçbir hacze konu edilemez ve doğrudan takas yükümlülüğünün ifasında kullanılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Takas teminatları haczedilemez ve iflas masasına devredilmez.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Takas Kesinliği İlkesi"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_008",
+    "module_id": "1012",
+    "number": 8,
+    "source": "cikmis",
+    "topic": "BIST Pay Piyasası Standart Takas Süresi",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Borsa İstanbul Pay Piyasası'nda gerçekleştirilen hisse senedi işlemlerinde standart fiziki takas süresi (valör) nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aynı gün (T+0)"
+      },
+      {
+        "key": "B",
+        "text": "Ertesi iş günü (T+1)"
+      },
+      {
+        "key": "C",
+        "text": "İşlem gününü izleyen ikinci iş günü (T+2)"
+      },
+      {
+        "key": "D",
+        "text": "İşlem gününü izleyen üçüncü iş günü (T+3)"
+      },
+      {
+        "key": "E",
+        "text": "Haftalık valör (T+5)"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Borsa İstanbul Pay Piyasası standart takas valörü T+2'dir (işlem gününü takip eden ikinci iş günü).",
+    "trap": "Standart takas valörü T+2'dir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "BIST Pay Piyasası Standart Takas Süresi"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_009",
+    "module_id": "1012",
+    "number": 9,
+    "source": "cikmis",
+    "topic": "Çok Taraflı Netleştirme",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Borsa üyelerinin aynı gün içindeki alım ve satım işlemlerinin karşılıklı mahsup edilerek tek bir net borç veya alacak bakiyesine dönüştürülmesi sistemi hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Brüt Takas"
+      },
+      {
+        "key": "B",
+        "text": "Çok Taraflı Netleştirme"
+      },
+      {
+        "key": "C",
+        "text": "Havuzlama"
+      },
+      {
+        "key": "D",
+        "text": "Virman"
+      },
+      {
+        "key": "E",
+        "text": "Arbitraj"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Çok taraflı netleştirme, üyelerin tüm alacak ve borçlarının mahsup edilerek net tek bir bakiye üzerinden takas edilmesini sağlar.",
+    "trap": "Alacak ve borçların mahsubu netleştirmedir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Çok Taraflı Netleştirme"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_010",
+    "module_id": "1012",
+    "number": 10,
+    "source": "cikmis",
+    "topic": "Brüt Takas Uygulaması",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Olağandışı fiyat ve miktar hareketleri nedeniyle SPK veya Borsa tarafından brüt takasa alınan bir hisse senedinde hangi kural geçerlidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aynı gün içinde alınan hisse aynı gün satılabilir ve netleştirme yapılır."
+      },
+      {
+        "key": "B",
+        "text": "Netleştirme uygulanmaz; alım bedeli peşin nakit, satım hissesi ise fiziken hazır bulunmalıdır (aynı gün satılamaz)."
+      },
+      {
+        "key": "C",
+        "text": "Kredili alım ve açığa satış serbesttir."
+      },
+      {
+        "key": "D",
+        "text": "Tüm takaslar iptal edilir."
+      },
+      {
+        "key": "E",
+        "text": "İşlem hacmi sınırsızdır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Brüt takastaki hisselerde netleştirme yapılmaz, kredili işlem ve açığa satış yapılamaz; takas T+2'de brüt olarak gerçekleştirilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)",
+    "trap": "Brüt takasta netleştirme ve kredili işlem yapılamaz.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Brüt Takas Uygulaması"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_011",
+    "module_id": "1012",
+    "number": 11,
+    "source": "cikmis",
+    "topic": "Temerrüt Şelalesi Öncelik Sırası",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Takasbank'ta temerrüde düşen bir üyenin borcunun tasfiyesinde ilk olarak hangi kaynak kullanılır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takasbank'ın kendi özkaynağı"
+      },
+      {
+        "key": "B",
+        "text": "Temerrüde düşen üyenin kendi teminatları ve katkı payı"
+      },
+      {
+        "key": "C",
+        "text": "Diğer masum üyelerin Garanti Fonu payları"
+      },
+      {
+        "key": "D",
+        "text": "Borsa İstanbul bütçesi"
+      },
+      {
+        "key": "E",
+        "text": "Hazine kefaleti"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Temerrüt şelalesinde ilk başvurulan kaynak daima temerrüde düşen kusurlu üyenin kendi nakit/menkul kıymet teminatlarıdır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)",
+    "trap": "İlk kaynak daima temerrüt eden üyenin kendi teminatıdır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Temerrüt Şelalesi Öncelik Sırası"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_012",
+    "module_id": "1012",
+    "number": 12,
+    "source": "cikmis",
+    "topic": "Merkezi Kayıt Kuruluşu (MKK) Temel Görevi",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "6362 sayılı Kanun m. 81 uyarınca MKK'nın münhasır yasal görevi nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Şirketlerin bağımsız denetimini yapmak"
+      },
+      {
+        "key": "B",
+        "text": "Sermaye piyasası araçlarının kaydileştirilerek hak sahipleri bazında elektronik ortamda merkezi kaydını tutmak"
+      },
+      {
+        "key": "C",
+        "text": "Halka arz fiyatını belirlemek"
+      },
+      {
+        "key": "D",
+        "text": "Borsa endekslerini hesaplamak"
+      },
+      {
+        "key": "E",
+        "text": "Kredi notu vermek"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "MKK, sermaye piyasası araçlarının kaydileştirilmesi ve hak sahipliği sicilinin elektronik ortamda tutulmasından münhasıran sorumludur.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)",
+    "trap": "MKK kaydileştirme ve hak sahipliği sicil kuruluşudur.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Merkezi Kayıt Kuruluşu (MKK) Temel Görevi"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_013",
+    "module_id": "1012",
+    "number": 13,
+    "source": "cikmis",
+    "topic": "MKS'de Hesap Ayrımı İlkesi",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "MKK bünyesindeki Merkezi Kaydi Sistem'de (MKS) yatırımcıların payları hangi hesap düzeyinde izlenir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca aracı kurumun toplu genel havuz hesabında"
+      },
+      {
+        "key": "B",
+        "text": "Yatırımcının T.C. Kimlik / Vergi No'su ile eşleşen 'Yatırımcı Alt Hesabı'nda"
+      },
+      {
+        "key": "C",
+        "text": "Borsa İstanbul yönetim kurulu hesabında"
+      },
+      {
+        "key": "D",
+        "text": "Aracı kurum omnibus toplu saklama hesabında"
+      },
+      {
+        "key": "E",
+        "text": "Anonim şirket kurucularının hesabında"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "MKS'de her yatırımcının varlıkları kendi kimlik numarasına tanımlı 'Yatırımcı Alt Hesabı'nda münferiden izlenir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)",
+    "trap": "MKS'de hak sahipliği yatırımcı alt hesabında tutulur.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "MKS'de Hesap Ayrımı İlkesi"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_014",
+    "module_id": "1012",
+    "number": 14,
+    "source": "cikmis",
+    "topic": "Yatırımcı Blokajı (e-CAS)",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "MKK'nın Yatırımcı Bilgilendirme ve Blokaj Sistemi (e-CAS) ile bir yatırımcı kendi payları üzerine blokaj koyduğunda ne gerçekleşir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Paylar derhal borsada satışa çıkarılır."
+      },
+      {
+        "key": "B",
+        "text": "Yatırımcı blokajı kaldırmadıkça aracı kurum dahil hiç kimse o paylar üzerinde transfer veya satış işlemi yapamaz."
+      },
+      {
+        "key": "C",
+        "text": "Şirket kâr payı ödemeyi durdurur."
+      },
+      {
+        "key": "D",
+        "text": "Paylar devlet hazinesine devredilir."
+      },
+      {
+        "key": "E",
+        "text": "Genel kurul oy hakkı iptal edilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Yatırımcı blokajı, yatırımcının izni olmadan paylarının aracı kurumca transfer edilmesini engelleyen bir güvenlik kalkanıdır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)",
+    "trap": "Yatırımcı blokajı yetkisiz transferi engeller.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Yatırımcı Blokajı (e-CAS)"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_015",
+    "module_id": "1012",
+    "number": 15,
+    "source": "cikmis",
+    "topic": "Borsa Blokajı",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Borsa İstanbul'da işlem gören bir hisse senedinin fiziki satışı öncesinde MKS nezdinde uygulanan işlem nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takas dondurma"
+      },
+      {
+        "key": "B",
+        "text": "Satış amaçlı borsa blokajı konulması"
+      },
+      {
+        "key": "C",
+        "text": "Şirket tasfiyesi"
+      },
+      {
+        "key": "D",
+        "text": "Temerrüt bildirimi"
+      },
+      {
+        "key": "E",
+        "text": "Zamanaşımı kaydı"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Borsada satılacak paylar işlem öncesinde MKS'de satışa hazır hale getirilerek borsa blokajına alınır.",
+    "trap": "Satış öncesi borsa blokajı uygulanır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Borsa Blokajı"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_016",
+    "module_id": "1012",
+    "number": 16,
+    "source": "cikmis",
+    "topic": "Temettü Ödeme Döngüsü ve Valörü",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Halka açık bir ortaklığın nakit kâr payı (temettü) ödemesinde pay bedeli yatırımcının takas hesabına kural olarak hangi günde yansır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Temettü dağıtım günü (T+0)"
+      },
+      {
+        "key": "B",
+        "text": "Ertesi gün (T+1)"
+      },
+      {
+        "key": "C",
+        "text": "Temettü hakkı kullanım tarihini izleyen ikinci iş günü (T+2)"
+      },
+      {
+        "key": "D",
+        "text": "1 ay sonra"
+      },
+      {
+        "key": "E",
+        "text": "Yıl sonunda"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Temettü ödemelerinde nakit bakiye Takasbank ve MKK operasyonları sonucunda T+2 valöründe yatırımcı hesaplarına aktarılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)",
+    "trap": "Temettü nakit hesaba T+2'de geçer.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Temettü Ödeme Döngüsü ve Valörü"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_017",
+    "module_id": "1012",
+    "number": 17,
+    "source": "cikmis",
+    "topic": "Teslim Karşılığı Ödeme (DvP)",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Borçlanma Araçları Piyasası'nda ve takas sistemlerinde menkul kıymet devri ile nakit transferinin eş zamanlı gerçekleşmesini sağlayan prensip nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Açığa Satış"
+      },
+      {
+        "key": "B",
+        "text": "Teslim Karşılığı Ödeme (DvP - Delivery versus Payment)"
+      },
+      {
+        "key": "C",
+        "text": "Vadeli Takas"
+      },
+      {
+        "key": "D",
+        "text": "Temerrüt Faizi"
+      },
+      {
+        "key": "E",
+        "text": "Tek Taraflı Takas"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "DvP prensibi, menkul kıymet teslim edilmeden paranın ödenmemesini, para ödenmeden menkul kıymetin devredilmemesini güvenceye alır.",
+    "trap": "Eş zamanlı takas DvP ilkesidir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Teslim Karşılığı Ödeme (DvP)"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_018",
+    "module_id": "1012",
+    "number": 18,
+    "source": "cikmis",
+    "topic": "Borçlanma Araçları Piyasası (BAP) Takas Valörü",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Borsa İstanbul Borçlanma Araçları Piyasası'nda aynı gün valörlü işlemlerin takası en geç ne zaman sonuçlandırılır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İşlem gününde (T+0)"
+      },
+      {
+        "key": "B",
+        "text": "T+2 günü"
+      },
+      {
+        "key": "C",
+        "text": "T+3 günü"
+      },
+      {
+        "key": "D",
+        "text": "Hafta sonu"
+      },
+      {
+        "key": "E",
+        "text": "15 gün sonra"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "BAP'ta aynı gün valörlü (T+0) işlemler aynı iş günü içinde Takasbank nezdinde sonuçlandırılır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)",
+    "trap": "Aynı gün valörlü BAP takası T+0'dır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Borçlanma Araçları Piyasası (BAP) Takas Valörü"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_019",
+    "module_id": "1012",
+    "number": 19,
+    "source": "cikmis",
+    "topic": "VİOP Takas ve Teminatında SPAN Algoritması",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "VİOP'ta portföy bazında risk ve teminat hesaplamasında Takasbank tarafından kullanılan küresel algoritma hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Black-Scholes"
+      },
+      {
+        "key": "B",
+        "text": "SPAN (Standard Portfolio Analysis of Risk)"
+      },
+      {
+        "key": "C",
+        "text": "VaR (Riske Maruz Değer)"
+      },
+      {
+        "key": "D",
+        "text": "Monte Carlo"
+      },
+      {
+        "key": "E",
+        "text": "CAPM"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Takasbank VİOP'ta portföy bazında teminatlandırma için SPAN algoritmasını kullanmaktadır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• BIST: Borsa İstanbul A.Ş. (Türkiye'nin organize menkul kıymet, kıymetli maden ve türev piyasası borsası)\n• VİOP: Vadeli İşlem ve Opsiyon Piyasası (BIST bünyesindeki türev araçlar piyasası)",
+    "trap": "VİOP teminat algoritması SPAN'dır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "VİOP Takas ve Teminatında SPAN Algoritması"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_020",
+    "module_id": "1012",
+    "number": 20,
+    "source": "cikmis",
+    "topic": "VİOP Teminat Tamamlama Çağrısı (Margin Call)",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "VİOP pozisyonlarında gün sonu uzlaşma fiyatları sonucunda teminatı sürdürme seviyesinin altına düşen üye açığı ne zamana kadar kapatmalıdır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ertesi iş günü saat 14:30'a kadar"
+      },
+      {
+        "key": "B",
+        "text": "3 iş günü içinde"
+      },
+      {
+        "key": "C",
+        "text": "Aynı gün seans kapanmadan"
+      },
+      {
+        "key": "D",
+        "text": "Hafta sonunda"
+      },
+      {
+        "key": "E",
+        "text": "Ay sonuna kadar"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "VİOP teminat tamamlama çağrısı ertesi iş günü saat 14:30'a kadar nakit veya kabul edilebilir teminatla tamamlanmalıdır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• BIST: Borsa İstanbul A.Ş. (Türkiye'nin organize menkul kıymet, kıymetli maden ve türev piyasası borsası)\n• VİOP: Vadeli İşlem ve Opsiyon Piyasası (BIST bünyesindeki türev araçlar piyasası)",
+    "trap": "VİOP Margin Call süresi ertesi gün 14:30'dur.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "VİOP Teminat Tamamlama Çağrısı (Margin Call)"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_021",
+    "module_id": "1012",
+    "number": 21,
+    "source": "cikmis",
+    "topic": "Ödünç Pay Piyasası Garantörü",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Takas, Saklama ve Operasyon mevzuatı ve Takasbank/MKK esasları uyarınca; Takasbank Ödünç Pay Piyasası'nda ödünç alan ve veren taraflar arasındaki takas riskini kim üstlenir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa İstanbul A.Ş."
+      },
+      {
+        "key": "B",
+        "text": "Merkezi Karşı Taraf olarak Takasbank"
+      },
+      {
+        "key": "C",
+        "text": "Merkezi Kayıt Kuruluşu"
+      },
+      {
+        "key": "D",
+        "text": "SPK"
+      },
+      {
+        "key": "E",
+        "text": "Hazine"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Takasbank Ödünç Pay Piyasası'nda MKT sıfatıyla taraflara karşı takas garantörü konumundadır.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• MKT: Merkezi Karşı Taraf (Central Counterparty - Takas odasının takasın tamamlanmasını mali olarak garanti etmesi)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)",
+    "trap": "Ödünç piyasasında garantör MKT olarak Takasbank'tır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Ödünç Pay Piyasası Garantörü"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_022",
+    "module_id": "1012",
+    "number": 22,
+    "source": "cikmis",
+    "topic": "Kayıt Dışı Pay İhracının Hükmü",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Takas, Saklama ve Operasyon mevzuatı ve Takasbank/MKK esasları uyarınca; MKK nezdinde kaydileştirilmeden ihraç edilen sermaye piyasası araçlarının hukuki geçerliliği nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Geçerlidir ancak idari para cezası kesilir."
+      },
+      {
+        "key": "B",
+        "text": "Geçersizdir ve mülkiyet hakkı doğurmaz."
+      },
+      {
+        "key": "C",
+        "text": "Bakanlık izniyle geçerli kılınır."
+      },
+      {
+        "key": "D",
+        "text": "Borsa başkanının onayıyla işlem görür."
+      },
+      {
+        "key": "E",
+        "text": "1 yıl sonra kendiliğinden kaydileşir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "SPKn m. 13 uyarınca kaydileştirilmeyen araçlar hukuken geçersizdir ve devirleri hüküm ifade etmez.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• SPKn: 6362 sayılı Sermaye Piyasası Kanunu",
+    "trap": "Kaydileştirilmeyen ihraçlar hukuken geçersizdir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Kayıt Dışı Pay İhracının Hükmü"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_023",
+    "module_id": "1012",
+    "number": 23,
+    "source": "cikmis",
+    "topic": "Munzam Teminat",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Takas, Saklama ve Operasyon mevzuatı ve Takasbank/MKK esasları uyarınca; Olağanüstü piyasa dalgalanmalarında Takasbank'ın üyelerden standart teminatlara ilave olarak talep ettiği ek teminat hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Başlangıç Teminatı"
+      },
+      {
+        "key": "B",
+        "text": "Munzam (Ek) Teminat"
+      },
+      {
+        "key": "C",
+        "text": "Garanti Fonu"
+      },
+      {
+        "key": "D",
+        "text": "Kira Bedeli"
+      },
+      {
+        "key": "E",
+        "text": "Tazminat Fonu"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Risk artışlarında Takasbank üyelerden munzam (ilave) teminat talep edebilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)",
+    "trap": "İlave teminat munzam teminattır.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Munzam Teminat"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_024",
+    "module_id": "1012",
+    "number": 24,
+    "source": "cikmis",
+    "topic": "MKK Elektronik Genel Kurul Sistemi (e-GKS)",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Takas, Saklama ve Operasyon mevzuatı ve Takasbank/MKK esasları uyarınca; Halka açık ortaklıkların genel kurul toplantılarına pay sahiplerinin uzaktan elektronik imzayla katılmasını sağlayan sistem kime aittir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsa İstanbul"
+      },
+      {
+        "key": "B",
+        "text": "Merkezi Kayıt Kuruluşu (MKK)"
+      },
+      {
+        "key": "C",
+        "text": "Takasbank"
+      },
+      {
+        "key": "D",
+        "text": "SPK"
+      },
+      {
+        "key": "E",
+        "text": "Ticaret Bakanlığı"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "e-GKS altyapısı münhasıran MKK tarafından geliştirilmiş ve işletilmektedir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)\n• SPK: Sermaye Piyasası Kurulu (Sermaye piyasalarının düzenleyici ve denetleyici kamu otoritesi)",
+    "trap": "e-GKS sistemi MKK tarafından işletilir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "MKK Elektronik Genel Kurul Sistemi (e-GKS)"
+    ]
+  },
+  {
+    "id": "q_1012_cikmis_025",
+    "module_id": "1012",
+    "number": 25,
+    "source": "cikmis",
+    "topic": "Haciz ve Tedbir Blokajı",
+    "chapter": "Modül 1012: Takas, Saklama ve Operasyon",
+    "text": "Takas, Saklama ve Operasyon mevzuatı ve Takasbank/MKK esasları uyarınca; Mahkeme veya icra dairelerince bir yatırımcının paylarına haciz konulması işlemi nerede kayden işlenir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yatırımcının bağlı bulunduğu vergi dairesinin emanet hesabında"
+      },
+      {
+        "key": "B",
+        "text": "MKK nezdindeki yatırımcı alt hesabında blokaj konulmak suretiyle"
+      },
+      {
+        "key": "C",
+        "text": "Borsa bülteninde ilan edilerek"
+      },
+      {
+        "key": "D",
+        "text": "Takasbank Para Piyasasında"
+      },
+      {
+        "key": "E",
+        "text": "Şirket pay defterinde elle yazılarak"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Kaydi sistemde haciz ve tedbirler doğrudan MKK nezdindeki yatırımcı alt hesabına elektronik blokaj konularak tesis edilir.\n\n📌 Soruda Geçen Kısaltmalar & Terimler:\n• MKK: Merkezi Kayıt Kuruluşu A.Ş. (Türkiye'nin Merkezi Saklama Kuruluşu ve Hak Sahipliği Sicili)\n• Takasbank: İstanbul Takas ve Saklama Bankası A.Ş. (Merkezi Takas Kuruluşu)",
+    "trap": "Haciz MKK nezdindeki alt hesaba blokaj konularak işlenir.",
+    "difficulty": "medium",
+    "tags": [
+      "1012",
+      "Çıkmış Sınav Sorusu",
+      "Haciz ve Tedbir Blokajı"
+    ]
+  }
+]
