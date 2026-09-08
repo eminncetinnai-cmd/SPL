@@ -87,3 +87,93 @@ Müfredat boşluklarını kapatan 50 yeni soru eklenerek soru sayısı **160'tan
 
 - **`python scripts/verify_all.py`:** %100 BAŞARILI (860 soru, 400 kart, 29 konu notu).
 - **`npm run build`:** Sıfır Hata (✓ built in 5.06s).
+
+
+---
+
+# SPK SPL Düzey 1 Konu Anlatımları (1001, 1003, 1005, 1012) Sınav Odaklı Güncelleme Raporu
+
+Kullanıcı talebi doğrultusunda, **1001, 1003, 1005 ve 1012** modüllerinin tamamına ait konu anlatımları (`src/data/topic_notes.json`), en güncel **Temmuz 2026 (30 Haziran 2026) Resmi SPL Ders Çalışma Notları**, güncel tebliğ hükümleri ve `spl-module-curator` standartları esas alınarak baştan sona güncellenmiştir.
+
+Ders notları, karmaşık mevzuat dili yerine **temel seviyede basit, anlaşılır, zihinde kalıcı kodlamalar (hafıza çengelleri), somut piyasa senaryoları, sınav tuzakları ve net karşılaştırma tabloları** içerecek şekilde pedagojik olarak yapılandırılmıştır.
+
+---
+
+## 1. Genel Yapı ve Pedagojik Standartlar (32 Bölüm, 32 Formatlı Tablo)
+
+Her modül **8 seçkin bölümden** (toplam **32 kapsamlı bölüm**) oluşmakta olup, her bölümde şu pedagojik katmanlar eksiksiz yer almaktadır:
+1. **Özet Mantık / Ne İşe Yarar?:** Konunun amacını tek cümlede kavratan giriş.
+2. **Temiz ve Akıcı Paragraflar (`content`):** Kuru kanun maddeleri yerine işleyiş mantığını, aktörleri ve sorumlulukları anlatan 4-6 anlaşılır paragraf.
+3. **Somut Piyasa Senaryosu (`concrete_examples`):** Borsa İstanbul ve aracı kurum pratiğinden somut olay incelemesi.
+4. **Sınavda Çıkacak Önemli Maddeler (`key_takeaways`):** 4-6 maddelik net sınav kontrol listesi.
+5. **Sınav Tuzakları (`exam_traps`):** Soru yazarlarının adayı yanıltmak için kurduğu tipik tuzaklar.
+6. **Karşılaştırma ve Özet Tablosu (`tables`):** Karıştırılan kavramları, süreleri ve oranları yan yana gösteren formatlı tablolar.
+
+---
+
+## 2. Modül Bazında Tamamlanan Güncellemeler
+
+### A. Modül 1001: Dar Kapsamlı Sermaye Piyasası Mevzuatı ve Meslek Kuralları (8 Bölüm)
+1. **`sec_1001_01`:** SPKn'nun Amacı, SPK Teşkilatı (7 üye, 5 yıl görev), Denetim Yetkileri ve Dava Yolları (İdare Mahkemesi, **30 gün** dava açma süresi).
+2. **`sec_1001_02`:** İzahname, İhraç Belgesi ve Halka Arz Sorumluluk Hiyerarşisi (Onay: **10 iş günü / ilk halka arzda 20 iş günü**, geçerlilik: **12 ay**, ihraççı ➔ lider kurum ➔ denetçi müteselsil sorumluluk sırası).
+3. **`sec_1001_03`:** Kamuyu Aydınlatma, Özel Durumlar (KAP) ve Finansal Raporlama (Derhal / seans öncesi bildirim, erteleme şartları, konsolide **70 gün** / konsolide olmayan **60 gün**).
+4. **`sec_1001_04`:** Kurumsal Yönetim İlkeleri (Adillik, Şeffaflık, Hesap Verebilirlik, Sorumluluk), Bağımsız Üyeler (en az 1/3 ve min 2 üye) ve Denetim Komitesi (**üyelerinin tamamı bağımsız olmak zorundadır**).
+5. **`sec_1001_05`:** Pay Sahipliği Hakları (Mali vs İdari), Azınlık Hakları (Halka açıkta **%5**, kapalıda **%10**), Bilanço erteleme (**1 ay**) ve Ayrılma Hakkı.
+6. **`sec_1001_06`:** Sermaye Piyasası Suçları ve Etkin Pişmanlık (Bilgi Suistimali 3-5 yıl; İşlem Bazlı Manipülasyon 3-5 yıl hapis VE adli para cezası birlikte, min menfaatin 2 katı; Etkin Pişmanlıkta soruşturma öncesi **2 katını Hazineye ödeyen cezasız kalır**).
+7. **`sec_1001_07`:** Yatırımcı Tazmin Merkezi (YTM) ve Zamanaşımı (Yalnızca saklama/teslimat tazmin edilir, fiyat düşüşü tazmin edilmez; **Anayasa Mahkemesi kararıyla 10 yıllık zamanaşımıyla hisselerin devlete geçmesi hükmü iptal edilmiştir**).
+8. **`sec_1001_08`:** TSPB Meslek Kuralları ve 5 Temel Disiplin Cezası (Uyarma, Kınama, Para Cezası, Faaliyetten Geçici Men, Birlikten İhraç; **Geçici Men ve İhraç yalnızca SPK ONAYI ile yürürlüğe girer**).
+
+---
+
+### B. Modül 1003: Sermaye Piyasası Araçları 1 (8 Bölüm)
+1. **`sec_1003_01`:** Paylar, İmtiyaz Sınırları (oyda imtiyaz tavanı **en çok 15 oy**) ve 2026 Halka Arz Eşikleri (**<750M TL** tamamı yüklenim, **750M-1.5B TL** aşan kısmın %50'si, **>1.5B TL** serbest; Satışa hazır bekletilen paylar **<950M TL**, nominalin %25'i, 1 yıl %25 fazlası).
+2. **`sec_1003_02`:** Borçlanma Araçları: Tahviller (>= 365 gün), Finansman Bonoları (30-364 gün), Temiz/Kirli Fiyat, İhraç Tavanı (özkaynakların 5 katı / 3 katı) ve **BASK Karar Nisabı (en az 2/3 çoğunluk)**.
+3. **`sec_1003_03`:** Kamu Borçlanma Araçları (DİBS), İhale Yöntemleri (Çoklu Fiyat / Amerikan vs Tek Fiyat / Hollanda), TÜFEX anapara koruması ve **ROT (yalnızca Kamu Kurumları ve PY Bankalar)**.
+4. **`sec_1003_04`:** Kira Sertifikaları (Sukuk) ve 5 Temel İhraç Modeli (İcara, Yönetim Sözleşmesi, Murabaha, Mudaraba/Müşarake, İstisna; VKŞ malvarlığının dokunulmazlığı).
+5. **`sec_1003_05`:** Menkul Kıymetleştirme: VDMK (VFF ihraç eder, bilanço dışı) vs İTMK (Banka ihraç eder, bilanço içi, **Çifte Teminat / Dual Recourse** ilkesi, Teminat Sorumlusu).
+6. **`sec_1003_06`:** Yatırım Fonları, TEFAS, Borsa Yatırım Fonları (BYF/ETF - hisse gibi seans içinde anlık işlem) ve Serbest Fonlar (yalnızca nitelikli yatırımcıya).
+7. **`sec_1003_07`:** Türev Araçlar, VİOP Sözleşmeleri (BIST 30 nakdi uzlaşma, Pay VİS fiziki teslimat) ve Varantlar (Alım/Satım, Asli Değer + Zaman Değeri, Moneyness).
+8. **`sec_1003_08`:** Karma Menkul Kıymetler (PDT ihraççının payına dönüşür / masraf ihraççıya aittir / min 365 gün; DET başka ortaklık payına dönüşür; KİS max %50 ve oy hakkı yok) ve Varant Risk Parametreleri (Delta, Gamma, Theta, Vega, Rho).
+
+---
+
+### C. Modül 1005: Yatırım Kuruluşları (8 Bölüm)
+1. **`sec_1005_01`:** Yatırım Hizmetleri, Faaliyetleri (10 temel hizmet) ve Yan Hizmetler (Kredi verme, döviz, genel tavsiye).
+2. **`sec_1005_02`:** Aracı Kurum Grupları ve 2026 Asgari Sermaye Şartları (**Dar Yetkili: 45.000.000 TL**, **Kısmi Yetkili: 190.000.000 TL**, **Geniş Yetkili: 380.000.000 TL**, **Yeni Kuruluş: 440.000.000 TL**).
+3. **`sec_1005_03`:** Müşteri Sınıflandırması ve 2026 Kurumsal Profesyonel Müşteri Kriterleri (En az 2 şart: **Aktif 500M TL**, **Hasılat 1 Mr TL**, **Özsermaye 50M TL**).
+4. **`sec_1005_04`:** Uygunluk Testi (Appropriateness - alım satımda bilgi/tecrübe) vs Yerindelik Testi (Suitability - portföy yöneticiliği ve danışmanlıkta zorunlu; mali güç + amaç + tecrübe).
+5. **`sec_1005_05`:** Kredili Menkul Kıymet, Açığa Satış ve Özkaynak Oranları (**Başlangıç: Asgari %50**, **Sürdürme: Asgari %35**, Margin Call tamamlama süresi: **EN GEÇ 2 İŞ GÜNÜ**, tamamlama hedefi: **%50 başlangıç oranı**).
+6. **`sec_1005_06`:** Teşkilat Yapısı, Şube ve İrtibat Bürosu Esasları (**İrtibat bürosu m.44: Müşteri emirlerini iletebilir ve tanıtım yapabilir; para/kıymet alamaz, hesap açamaz, sözleşme yapamaz**; İç Sistemler doğrudan Yönetim Kurulu'na bağlıdır).
+7. **`sec_1005_07`:** Belge ve Kayıt Düzeni (Genel belgeler, formlar ve ses kayıtları **en az 5 yıl**; Uzaktan kimlik tespiti kayıtları **en az 10 yıl**; Ekstreye itiraz süresi **30 gün**).
+8. **`sec_1005_08`:** Kitle Fonlaması Platformları (Paya ve Borca Dayalı; gayrimenkul ve bağış yasak; kampanya azami **60 gün**, yatırımcı cayma hakkı **48 saat**) ve TSPB Promosyon Esasları (Bütçe max özsermayenin %1'i; Forex'te promosyon yasaktır).
+
+---
+
+### D. Modül 1012: Takas, Saklama ve Operasyon İşlemleri (8 Bölüm)
+1. **`sec_1012_01`:** Takasbank Hukuki Statüsü (**Özel Statülü Kalkınma ve Yatırım Bankasıdır, mevduat bankası değildir**) ve Merkezi Karşı Taraf (MKT) Müessesesi (Sözleşme Yenileme / Novation; KMTP ve Dış Borçlanmada MKT yoktur).
+2. **`sec_1012_02`:** Takas Döngüleri, Valörler ve Operasyonel Saatler (Pay T+2 DvP, takas borcu kapama saati: **16:45**; Teminat tamamlama son saati: **15:00**; BAP ön temerrüt aralığı: **16:46-17:00 / 0.25 ceza katsayısı**).
+3. **`sec_1012_03`:** Teminat ve Risk Yönetimi (Başlangıç, Değişim / Mark-to-Market, Fiziki Teslimat; BISTECH Portföy Marjin Modeli; Teminat Değerleme Katsayısı = `1 - (Piyasa + Likidite + Kredi Riski)`; VİOP'ta asgari %50 nakit TL).
+4. **`sec_1012_04`:** Temerrüt Yönetimi, Garanti Fonu (Pay: 200K, BAP: 700K, VİOP: 3.575M TL) ve **Madde 36 Uyarınca 7 Aşamalı Temerrüt Şelalesi** (1. Üyenin teminatı ➔ 2. Üyenin GF payı ➔ 3. Takasbank taahhüt özkaynağı ➔ 4. Diğer üyelerin GF payı ➔ 5. Takasbank kalan özkaynağı ➔ 6. Ek katkı payı ➔ 7. Karşılıklı tahsis).
+5. **`sec_1012_05`:** MKK ve Doğrudan Hak Sahipliği Sistemi (Fiili ortaklık: Takasbank %64.9, BIST %30.1, TSPB %5.0; Tavanlar: %75 / %50 / %10 / %5; TCKN bazında doğrudan alt hesaplarda saklama; YMSK omnibus istisnası; **AYM kararıyla 10 yıllık zamanaşımıyla hisselerin devlete geçmesi kuralı iptal edilmiştir**).
+6. **`sec_1012_06`:** MKK Elektronik Platformları (e-YATIRIMCI, e-GKS, e-ŞİRKET; **Yatırımcı Güvenlik Blokajını aracı kurum kaldıramaz, yalnızca yatırımcı kaldırabilir**; temettü T+2).
+7. **`sec_1012_07`:** Takasbank Para Piyasası (TPP - kısa vadeli nakit fonlama, kör havuz) ve Ödünç Pay Piyasası (ÖPP - teminat tamamlama **en geç 2 saat**, temerrütte Takasbank piyasadan alım son süresi **T+3 saat 11:00**).
+8. **`sec_1012_08`:** Portföy Saklama ve Saklama Kuruluşlarının Sorumlulukları (Genel vs Portföy Saklama; fon yöneticisi ile saklayıcı **aynı tüzel kişilik olamaz**; fesih ihbar süresi **en az 90 gün**).
+
+---
+
+## 3. Doğrulama ve Derleme Sonuçları
+
+- **Veri ve Entegrasyon Testi (`python scripts/verify_all.py`):**
+  ```
+  [PASS] 1. Modül Meta Verileri (4/4 Modül Tam & Eksiksiz)
+  [PASS] 2. Soru Havuzu (860 %100 Benzersiz Soru: 1001: 210, 1003: 210, 1005: 230, 1012: 210 Soru)
+  [PASS] 3. Öğrenme Kartları (400/400 Kart: Tanım, Somut Örnek & Sınav Tuzağı Doğrulandı)
+  [PASS] 4. Konu Anlatımları (32 Bölüm, 32 Formatlı Karşılaştırma Tablosu)
+  [PASS] 6. Seslendirme & Metin Temizleme Motoru (Tüm Türkçe kısaltmalar & telaffuz kuralları hazır)
+  ✅ TÜM VERİ VE ENTEGRASYON TESTLERİ %100 BAŞARIYLA GEÇTİ!
+  ```
+- **Uygulama Derleme (`npm run build`):**
+  ```
+  ✓ 2488 modules transformed.
+  ✓ built in 4.96s (Sıfır hata)
+  ```
