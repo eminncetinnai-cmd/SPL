@@ -4,6 +4,7 @@ export interface SmartSelectionOptions {
   moduleId?: ModuleId | 'all';
   count: number;
   sourceFilter?: 'all' | 'master' | 'cikmis' | 'ogretici' | 'konu' | 'genel';
+  filterMode?: 'unseen' | 'all' | 'mistakes' | 'bookmarks';
   seenQuestionIds: string[];
   avoidRepetition?: boolean;
 }
@@ -128,9 +129,12 @@ export function selectSmartQuestions(
     moduleId = 'all',
     count = 25,
     sourceFilter = 'all',
+    filterMode = 'unseen',
     seenQuestionIds = [],
     avoidRepetition = true,
   } = options;
+
+  const shouldAvoidRepetition = filterMode === 'all' ? false : avoidRepetition;
 
   // 1. Filter the candidate pool by module and source, ensuring fingerprint uniqueness
   const seenFingerprints = new Set<string>();
@@ -168,8 +172,8 @@ export function selectSmartQuestions(
     };
   }
 
-  // If repetition avoidance is turned off, perform standard random shuffle
-  if (!avoidRepetition) {
+  // If repetition avoidance is turned off or all questions selected, perform standard random shuffle
+  if (!shouldAvoidRepetition) {
     const shuffled = shuffleArray(candidatePool);
     const selected = shuffled.slice(0, Math.min(count, totalPoolCount));
     const seenSet = new Set(seenQuestionIds);
@@ -201,23 +205,33 @@ export function selectSmartQuestions(
   let selectedQuestions: Question[] = [];
   let isNewCycleStarted = false;
 
-  // Case A: We have enough unseen questions to fulfill the entire requested count
-  if (unseenPool.length >= requestedCount) {
-    const shuffledUnseen = shuffleArray(unseenPool);
-    selectedQuestions = shuffledUnseen.slice(0, requestedCount);
-  } 
-  // Case B: We have SOME unseen questions, but not enough for the full count
-  else if (unseenPool.length > 0) {
-    const neededFromSeen = requestedCount - unseenPool.length;
-    const shuffledSeen = shuffleArray(seenPool);
-    const pickedSeen = shuffledSeen.slice(0, neededFromSeen);
-    selectedQuestions = shuffleArray([...unseenPool, ...pickedSeen]);
-  } 
-  // Case C: 100% of the candidate pool has been seen! Start a fresh new rotation cycle!
-  else {
-    isNewCycleStarted = true;
-    const shuffled = shuffleArray(candidatePool);
-    selectedQuestions = shuffled.slice(0, requestedCount);
+  if (filterMode === 'unseen') {
+    if (unseenPool.length === 0) {
+      // Tüm havuz en az bir kez çözüldü! Otomatik yeni döngü başlat
+      isNewCycleStarted = true;
+      const shuffled = shuffleArray(candidatePool);
+      selectedQuestions = shuffled.slice(0, requestedCount);
+    } else {
+      // Kesinlikle sadece çözülmemiş taze soruları al (en fazla mevcut çözülmemiş kadar)
+      const takeCount = Math.min(requestedCount, unseenPool.length);
+      const shuffledUnseen = shuffleArray(unseenPool);
+      selectedQuestions = shuffledUnseen.slice(0, takeCount);
+    }
+  } else {
+    // Standart akıllı dağılım
+    if (unseenPool.length >= requestedCount) {
+      const shuffledUnseen = shuffleArray(unseenPool);
+      selectedQuestions = shuffledUnseen.slice(0, requestedCount);
+    } else if (unseenPool.length > 0 && avoidRepetition) {
+      const neededFromSeen = requestedCount - unseenPool.length;
+      const shuffledSeen = shuffleArray(seenPool);
+      const pickedSeen = shuffledSeen.slice(0, neededFromSeen);
+      selectedQuestions = shuffleArray([...unseenPool, ...pickedSeen]);
+    } else {
+      isNewCycleStarted = true;
+      const shuffled = shuffleArray(candidatePool);
+      selectedQuestions = shuffled.slice(0, requestedCount);
+    }
   }
 
   // Final pass: ensure selected questions are thoroughly randomized

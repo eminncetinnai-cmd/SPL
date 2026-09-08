@@ -34,7 +34,7 @@ export const App: React.FC = () => {
   const handleNavigate = (page: string, params: any = {}) => {
     if (page === 'past-exams') {
       setCurrentPage('practice');
-      setPageParams({ sourceFilter: 'cikmis', ...params });
+      setPageParams({ filterMode: 'unseen', ...params });
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
@@ -48,18 +48,13 @@ export const App: React.FC = () => {
       case 'home':
         return <HomePage onNavigate={handleNavigate} />;
       case 'past-exams':
-        return (
-          <PracticeQuizPage
-            initialModuleId={pageParams.moduleId as ModuleId}
-            initialSourceFilter="cikmis"
-            onNavigate={handleNavigate}
-          />
-        );
       case 'module-quiz-prep':
       case 'practice':
         return (
           <PracticeQuizPage
             initialModuleId={pageParams.moduleId as ModuleId}
+            initialFilterMode={pageParams.filterMode}
+            initialTestMode={pageParams.testMode}
             initialSourceFilter={pageParams.sourceFilter}
             onNavigate={handleNavigate}
           />

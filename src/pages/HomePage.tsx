@@ -76,38 +76,39 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           {/* Quick Action CTA Box */}
           <div className="flex flex-col sm:flex-row lg:flex-col gap-2.5 w-full sm:w-auto shrink-0">
             <button
-              onClick={() => onNavigate('past-exams')}
-              className="flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-sm shadow-sm hover:shadow active:scale-95 transition-all"
+              onClick={() => onNavigate('practice')}
+              className="flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-black text-sm shadow-md shadow-teal-500/20 active:scale-95 transition-all cursor-pointer"
             >
-              <Award className="w-4 h-4 text-white" />
-              <span>🎯 Çıkmış Sınav Soruları (110 Soru)</span>
+              <Play className="w-4 h-4 fill-slate-950" />
+              <span>Test Çözmeye Başla</span>
               <ArrowRight className="w-4 h-4" />
-            </button>
-
-            <button
-              onClick={() => onNavigate('practice', { sourceFilter: 'genel' })}
-              className="flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow active:scale-95 transition-all"
-            >
-              <Sparkles className="w-4 h-4 fill-white" />
-              <span>📚 Genel Soru Havuzu (550 Soru)</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-
-            <button
-              onClick={() => onNavigate('simulation-prep')}
-              className="flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-teal-500/15 dark:hover:bg-teal-500/25 text-slate-800 dark:text-teal-300 border border-slate-200 dark:border-teal-500/40 text-xs font-bold transition-all"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
-              <span>Sınav Simülasyonu (100 Soru / Süreli)</span>
             </button>
 
             <button
               onClick={() => onNavigate('cheat-sheet')}
-              className="flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-gradient-to-r dark:from-amber-500/20 dark:via-fintech-card dark:to-amber-500/10 border border-amber-200 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 font-bold text-xs shadow-xs transition-all"
+              className="flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-2xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-500/15 dark:hover:bg-amber-500/25 border border-amber-200 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 font-bold text-xs shadow-xs transition-all cursor-pointer"
             >
               <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500 dark:fill-amber-300" />
               <span>⚡ Sınav Öncesi 10 Dk Hap Bilgiler</span>
             </button>
+
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                onClick={() => onNavigate('flashcards')}
+                className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-xs font-semibold transition-all cursor-pointer"
+              >
+                <Layers className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
+                <span>400 Kart</span>
+              </button>
+
+              <button
+                onClick={() => onNavigate('study-notes')}
+                className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-xs font-semibold transition-all cursor-pointer"
+              >
+                <BookOpen className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
+                <span>32 Not</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -115,9 +116,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       {/* KPI Stats Strip */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <div className="bg-white dark:bg-fintech-surface p-4 rounded-2xl border border-slate-200 dark:border-fintech-border space-y-1 shadow-sm">
-          <span className="text-xs text-slate-500 dark:text-slate-400 font-mono uppercase block font-semibold">Soru Bankası Havuzu</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-mono uppercase block font-semibold">Toplam Soru Havuzu</span>
           <span className="text-xl sm:text-2xl font-black font-mono text-slate-900 dark:text-white">{(allQuestionsData as any[]).length} Soru</span>
-          <span className="text-[11px] text-teal-700 dark:text-teal-400 block font-sans font-medium">110 Çıkmış + 400 Master + 150 Diğer</span>
+          <span className="text-[11px] text-teal-700 dark:text-teal-400 block font-sans font-medium">4 Modül • Sıfır Tekrar • Karışık Şıklar</span>
         </div>
 
         <div className="bg-white dark:bg-fintech-surface p-4 rounded-2xl border border-slate-200 dark:border-fintech-border space-y-1 shadow-sm">
@@ -127,7 +128,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </div>
 
         <div className="bg-white dark:bg-fintech-surface p-4 rounded-2xl border border-slate-200 dark:border-fintech-border space-y-1 shadow-sm">
-          <span className="text-xs text-slate-500 dark:text-slate-400 font-mono uppercase block font-semibold">Tamamlanan Sınav</span>
+          <span className="text-xs text-slate-500 dark:text-slate-400 font-mono uppercase block font-semibold">Tamamlanan Test</span>
           <span className="text-xl sm:text-2xl font-black font-mono text-cyan-700 dark:text-cyan-400">{totalQuizzes} Adet</span>
           <span className="text-[11px] text-slate-500 dark:text-slate-400 block font-sans font-medium">{totalAnswered} Soru Çözüldü</span>
         </div>
@@ -145,46 +146,54 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </div>
       </div>
 
-      {/* Çıkmış Sınav Soruları Özel Test Grubu Banner */}
-      <div className="rounded-3xl bg-amber-50/70 dark:bg-gradient-to-r dark:from-amber-500/10 dark:via-fintech-surface dark:to-slate-900 border border-amber-200 dark:border-amber-500/30 p-6 shadow-sm space-y-4">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1.5">
-            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-200 dark:bg-amber-500/20 dark:text-amber-300 dark:border-amber-500/40 text-[11px] font-mono font-bold">
-              <Award className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-              <span>ÖZEL ÇIKMIŞ SINAV GRUBU • 110 SORU</span>
+      {/* Hızlı Test Başlatıcı Şeridi */}
+      <div className="rounded-3xl bg-slate-50/80 dark:bg-fintech-surface/80 border border-slate-200 dark:border-fintech-border p-5 space-y-3 shadow-sm">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-teal-500/15 border border-teal-500/30 flex items-center justify-center text-teal-600 dark:text-teal-400">
+              <Sparkles className="w-4 h-4" />
             </div>
-            <h3 className="text-lg font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-              🎯 Çıkmış Sınav Soruları Grubu
-            </h3>
-            <p className="text-xs text-slate-700 dark:text-slate-300 max-w-2xl leading-relaxed">
-              SPK Lisanslama sınavlarında birebir çıkan soru kalıpları, süreler, kanuni yaptırımlar ve operasyonel iş akışlarından derlenen 110 soruluk özel çıkmış sınav havuzu.
-            </p>
+            <div>
+              <h3 className="text-sm font-black text-slate-900 dark:text-white tracking-tight">
+                Hızlı Test Başlat
+              </h3>
+              <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                Tek tıkla çözülmemiş taze sorulardan rastgele test oluşturun.
+              </p>
+            </div>
           </div>
-
           <button
-            onClick={() => onNavigate('past-exams')}
-            className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs shadow-sm active:scale-95 transition-all shrink-0"
+            onClick={() => onNavigate('practice', { filterMode: 'unseen' })}
+            className="text-xs font-mono font-bold text-teal-600 dark:text-teal-400 hover:underline self-start sm:self-auto"
           >
-            <Play className="w-4 h-4 fill-white" />
-            <span>Çıkmış Sorulardan Test Başlat</span>
-            <ArrowRight className="w-4 h-4" />
+            Tüm Ayarları Özelleştir &rarr;
           </button>
         </div>
 
-        {/* Quick Module Buttons */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-amber-200 dark:border-amber-500/20 text-xs">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 pt-1">
+          <button
+            onClick={() => onNavigate('practice', { moduleId: 'all', filterMode: 'unseen' })}
+            className="p-3 rounded-xl bg-white dark:bg-fintech-card hover:bg-teal-50 dark:hover:bg-teal-500/15 border border-slate-200 dark:border-fintech-border hover:border-teal-400 text-left transition-all group"
+          >
+            <span className="text-[10px] font-mono uppercase text-teal-600 dark:text-teal-400 font-bold block">Karma Havuz</span>
+            <span className="font-bold text-xs text-slate-900 dark:text-white block group-hover:text-teal-600 dark:group-hover:text-teal-300">Tüm Dersler</span>
+            <span className="text-[10px] text-slate-500 dark:text-slate-400 block mt-0.5">860 Soru</span>
+          </button>
+
           {[
-            { id: '1001', name: '1001: Mevzuat (35 Soru)' },
-            { id: '1003', name: '1003: SP Araçları (25 Soru)' },
-            { id: '1005', name: '1005: Yatırım Kur. (25 Soru)' },
-            { id: '1012', name: '1012: Takas & Sakl. (25 Soru)' },
+            { id: '1001', code: '1001', name: 'Mevzuat & Meslek', count: '210 Soru' },
+            { id: '1003', code: '1003', name: 'SP Araçları 1', count: '210 Soru' },
+            { id: '1005', code: '1005', name: 'Yatırım Kur.', count: '230 Soru' },
+            { id: '1012', code: '1012', name: 'Takas & Saklama', count: '210 Soru' },
           ].map((m) => (
             <button
               key={m.id}
-              onClick={() => onNavigate('past-exams', { moduleId: m.id })}
-              className="py-2 px-3 rounded-lg bg-white dark:bg-slate-900/80 hover:bg-amber-100 dark:hover:bg-amber-500/15 border border-amber-200 dark:border-slate-800 hover:border-amber-300 dark:hover:border-amber-500/40 text-slate-800 dark:text-slate-300 hover:text-amber-900 dark:hover:text-amber-200 font-mono text-[11px] font-bold text-center transition-all shadow-xs"
+              onClick={() => onNavigate('practice', { moduleId: m.id, filterMode: 'unseen' })}
+              className="p-3 rounded-xl bg-white dark:bg-fintech-card hover:bg-teal-50 dark:hover:bg-teal-500/15 border border-slate-200 dark:border-fintech-border hover:border-teal-400 text-left transition-all group"
             >
-              {m.name} &rarr;
+              <span className="text-[10px] font-mono uppercase text-teal-600 dark:text-teal-400 font-bold block">Modül {m.code}</span>
+              <span className="font-bold text-xs text-slate-900 dark:text-white block truncate group-hover:text-teal-600 dark:group-hover:text-teal-300">{m.name}</span>
+              <span className="text-[10px] text-slate-500 dark:text-slate-400 block mt-0.5">{m.count}</span>
             </button>
           ))}
         </div>
@@ -198,7 +207,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               SPK SPL Düzey 1 Sınav Modülleri
             </h2>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Her ders için ortalama 165 soru, 100 flashcard ve tam mevzuat ders notları mevcuttur.
+              Her ders için ortalama 215 soru, 100 flashcard ve tam mevzuat ders notları mevcuttur.
             </p>
           </div>
         </div>
@@ -220,7 +229,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             400 Öğrenme Kartı (Flashcards)
           </h3>
           <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-            Kavram çiftleri, pratik örnekler ve sınav tuzaklarıyla hızlı tekrar yapın.
+            Kavram çiftleri, pratik örnekler ve sınav tuzaklarıyla zihinde kalıcı hızlı tekrar yapın.
           </p>
           <div className="flex items-center gap-1.5 text-xs text-teal-700 dark:text-teal-400 font-bold pt-1">
             <span>Kartları İncele</span>
@@ -237,10 +246,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <AlertTriangle className="w-6 h-6" />
           </div>
           <h3 className="font-bold text-base text-slate-900 dark:text-white group-hover:text-rose-700 dark:group-hover:text-rose-300 transition-colors">
-            Yanlışlarım & Tekrar Defteri
+            Yanlışlarım & Hata Defteri
           </h3>
           <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-            Hatalı yaptığınız {mistakeCount > 0 ? `${mistakeCount} soruyu` : 'soruları'} analiz edin ve tek tıkla zayıf noktalardan test oluşturun.
+            Hatalı yaptığınız {mistakeCount > 0 ? `${mistakeCount} soruyu` : 'soruları'} analiz edin ve tek tıkla zayıf noktalardan telafi testi çözün.
           </p>
           <div className="flex items-center gap-1.5 text-xs text-rose-400 font-bold pt-1">
             <span>Deftere Git ({mistakeCount})</span>
@@ -248,22 +257,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
         </div>
 
-        {/* 800 Question Bank Search */}
+        {/* Study Notes Box */}
         <div 
-          onClick={() => onNavigate('explorer')}
-          className="p-6 rounded-3xl bg-fintech-surface hover:bg-fintech-card border border-fintech-border hover:border-cyan-500/40 cursor-pointer transition-all space-y-3 group shadow-xl"
+          onClick={() => onNavigate('study-notes')}
+          className="p-6 rounded-3xl bg-white dark:bg-fintech-surface hover:bg-slate-50 dark:hover:bg-fintech-card border border-slate-200 dark:border-fintech-border hover:border-cyan-500/40 cursor-pointer transition-all space-y-3 group shadow-sm"
         >
-          <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Search className="w-6 h-6" />
+          <div className="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-700 border border-cyan-200 dark:bg-cyan-500/10 dark:text-cyan-400 dark:border-cyan-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <BookOpen className="w-6 h-6" />
           </div>
-          <h3 className="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">
-            540 Soru Bankası & Arama
+          <h3 className="font-bold text-base text-slate-900 dark:text-white group-hover:text-cyan-700 dark:group-hover:text-cyan-300 transition-colors">
+            32 Konu Anlatımı & Tablolar
           </h3>
-          <p className="text-xs text-slate-400 leading-relaxed">
-            Tüm soru havuzunda kanun maddesi veya anahtar kelimeye göre arama ve filtreleme yapın.
+          <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+            Temmuz 2026 güncel SPL müfredatı, 32 özet konu, 32 karşılaştırma tablosu ve sınav tuzakları.
           </p>
-          <div className="flex items-center gap-1.5 text-xs text-cyan-400 font-bold pt-1">
-            <span>Soru Havuzunu Keşfet</span>
+          <div className="flex items-center gap-1.5 text-xs text-cyan-600 dark:text-cyan-400 font-bold pt-1">
+            <span>Notları Oku & Dinle</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </div>
         </div>

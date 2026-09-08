@@ -33,14 +33,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => 
 
   const navItems = [
     { id: 'home', label: 'Ana Sayfa', icon: Home },
+    { id: 'practice', label: 'Test Çöz', icon: Sparkles, badge: '860 Soru', color: 'text-teal-400' },
     { id: 'cheat-sheet', label: '⚡ Sınav Hapları (10 Dk)', icon: Zap, badge: 'Hızlı Tekrar', color: 'text-amber-300' },
-    { id: 'past-exams', label: '🎯 Çıkmış Sınav Soruları', icon: Award, badge: '110 Soru', color: 'text-amber-400' },
-    { id: 'simulation-prep', label: 'Sınav Simülasyonu', icon: Sparkles, badge: 'Süreli' },
     { id: 'flashcards', label: 'Öğrenme Kartları', icon: Layers, badge: '400 Kart' },
-    { id: 'study-notes', label: 'Konu Anlatımları', icon: FileText },
+    { id: 'study-notes', label: 'Konu Anlatımları', icon: FileText, badge: '32 Bölüm' },
     { id: 'mistakes', label: 'Yanlışlarım Defteri', icon: AlertTriangle, count: mistakeCount, color: 'text-rose-500 dark:text-rose-400' },
     { id: 'bookmarks', label: 'Yıldızlı Sorular', icon: Star, count: bookmarkCount, color: 'text-amber-500 dark:text-amber-400' },
-    { id: 'explorer', label: 'Tüm Soru Bankası', icon: Search, badge: '660 Soru' },
     { id: 'dashboard', label: 'Analitik & İstatistik', icon: BarChart3 },
     { id: 'settings', label: 'Ayarlar & Yedek', icon: Settings },
   ];
@@ -95,14 +93,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => 
         {/* Modules Section */}
         <div className="space-y-1 pt-2 border-t border-slate-200 dark:border-fintech-border/60">
           <p className="px-3 text-[11px] font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold mb-2">
-            Modül Pratik Testleri
+            Modül Soru Çözümü
           </p>
           {modules.map((m) => {
             const Icon = m.icon;
             return (
               <button
                 key={m.id}
-                onClick={() => onNavigate('module-quiz-prep', { moduleId: m.id })}
+                onClick={() => onNavigate('practice', { moduleId: m.id })}
                 className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-slate-700 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-300 dark:hover:text-white dark:hover:bg-fintech-card transition-all group"
               >
                 <div className="flex items-center gap-2.5">
@@ -128,7 +126,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => 
           <span className="text-emerald-600 dark:text-emerald-400 font-bold">ONLINE</span>
         </div>
         <div className="text-[11px] text-slate-600 dark:text-slate-300 leading-tight">
-          660 Soru • 400 Flashcard • 4 Ders Tam Notları
+          860 Soru • 400 Flashcard • 32 Ders Notu
         </div>
       </div>
     </aside>

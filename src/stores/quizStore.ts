@@ -10,6 +10,7 @@ interface StartQuizOptions {
   moduleId?: ModuleId | 'all';
   questionCount?: number;
   sourceFilter?: 'all' | 'master' | 'cikmis' | 'ogretici' | 'konu' | 'genel';
+  filterMode?: 'unseen' | 'all' | 'mistakes' | 'bookmarks';
   customQuestions?: Question[];
   title?: string;
   timeLimitMinutes?: number;
@@ -68,14 +69,33 @@ export const useQuizStore = create<QuizState>((set, get) => ({
         shuffledGrouped = [...shuffledGrouped, ...shuffleArray(moduleMap[mod])];
       });
       selectedQuestions = shuffledGrouped;
+    } else if (options.filterMode === 'mistakes') {
+      const { mistakes } = useProgressStore.getState();
+      const unresolvedMistakeIds = new Set(
+        Object.values(mistakes).filter((m) => !m.resolved).map((m) => m.question.id)
+      );
+      let mistakePool = allQuestions.filter((q) => unresolvedMistakeIds.has(q.id));
+      if (options.moduleId && options.moduleId !== 'all') {
+        mistakePool = mistakePool.filter((q) => q.module_id === options.moduleId);
+      }
+      selectedQuestions = shuffleArray(mistakePool).slice(0, options.questionCount || 25);
+    } else if (options.filterMode === 'bookmarks') {
+      const { bookmarks } = useProgressStore.getState();
+      const bookmarkIds = new Set(bookmarks);
+      let bookmarkPool = allQuestions.filter((q) => bookmarkIds.has(q.id));
+      if (options.moduleId && options.moduleId !== 'all') {
+        bookmarkPool = bookmarkPool.filter((q) => q.module_id === options.moduleId);
+      }
+      selectedQuestions = shuffleArray(bookmarkPool).slice(0, options.questionCount || 25);
     } else {
       const { seenQuestionIds, avoidQuestionRepetition } = useProgressStore.getState();
       const selection = selectSmartQuestions(allQuestions, {
         moduleId: options.moduleId,
         count: options.questionCount || 25,
-        sourceFilter: options.sourceFilter,
+        sourceFilter: options.sourceFilter || 'all',
+        filterMode: options.filterMode || 'unseen',
         seenQuestionIds,
-        avoidRepetition: avoidQuestionRepetition,
+        avoidRepetition: options.filterMode === 'all' ? false : avoidQuestionRepetition,
       });
       selectedQuestions = shuffleArray(selection.questions);
     }

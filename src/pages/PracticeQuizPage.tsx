@@ -30,12 +30,16 @@ import allQuestionsData from '../data/all_questions.json';
 
 interface PracticeQuizPageProps {
   initialModuleId?: ModuleId;
+  initialFilterMode?: 'unseen' | 'all' | 'mistakes' | 'bookmarks';
+  initialTestMode?: 'practice' | 'simulation';
   initialSourceFilter?: 'all' | 'master' | 'cikmis' | 'ogretici' | 'genel';
   onNavigate: (page: string, params?: any) => void;
 }
 
 export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   initialModuleId,
+  initialFilterMode,
+  initialTestMode,
   initialSourceFilter,
   onNavigate,
 }) => {
@@ -57,27 +61,39 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   } = useQuizStore();
 
   const { soundEnabled } = useSettingsStore();
-  const { seenQuestionIds, avoidQuestionRepetition, setAvoidRepetition, resetSeenQuestions } = useProgressStore();
+  const { seenQuestionIds, avoidQuestionRepetition, setAvoidRepetition, resetSeenQuestions, mistakes, bookmarks } = useProgressStore();
 
-  // Setup state for configuration: Default to 'genel' (540 questions) or passed initialSourceFilter
-  const [selectedModule, setSelectedModule] = useState<ModuleId | 'all'>(initialModuleId || '1001');
-  const [questionCount, setQuestionCount] = useState<number>(25);
-  const [sourceFilter, setSourceFilter] = useState<'all' | 'master' | 'cikmis' | 'ogretici' | 'genel'>(
-    initialSourceFilter === 'cikmis' ? 'cikmis' : 'genel'
+  // Setup state for configuration
+  const [selectedModule, setSelectedModule] = useState<ModuleId | 'all'>(initialModuleId || 'all');
+  const [filterMode, setFilterMode] = useState<'unseen' | 'all' | 'mistakes' | 'bookmarks'>(
+    initialFilterMode || 'unseen'
   );
+  const [testMode, setTestMode] = useState<'practice' | 'simulation'>(
+    initialTestMode || 'practice'
+  );
+  const [questionCount, setQuestionCount] = useState<number>(25);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
 
   const allQs = allQuestionsData as Question[];
   const candidatePool = allQs.filter((q) => {
     if (selectedModule !== 'all' && q.module_id !== selectedModule) return false;
-    if (sourceFilter === 'cikmis' && q.source !== 'cikmis') return false;
-    if (sourceFilter === 'genel' && q.source === 'cikmis') return false;
     return true;
   });
 
   const totalModulePool = candidatePool.length;
   const seenCount = candidatePool.filter((q) => seenQuestionIds.includes(q.id)).length;
   const unseenCount = Math.max(0, totalModulePool - seenCount);
+
+  // Active mistakes and bookmarks in the selected scope
+  const mistakeCountInScope = Object.values(mistakes).filter(
+    (m) => !m.resolved && (selectedModule === 'all' || m.question.module_id === selectedModule)
+  ).length;
+
+  const bookmarkCountInScope = bookmarks.filter((bId) => {
+    const q = allQs.find((item) => item.id === bId);
+    return q && (selectedModule === 'all' || q.module_id === selectedModule);
+  }).length;
+
   const [autoAdvance, setAutoAdvance] = useState(false);
   const [autoAdvanceTimer, setAutoAdvanceTimer] = useState<number | null>(null);
 
@@ -90,10 +106,16 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   }, [initialModuleId]);
 
   useEffect(() => {
-    if (initialSourceFilter) {
-      setSourceFilter(initialSourceFilter);
+    if (initialFilterMode) {
+      setFilterMode(initialFilterMode);
     }
-  }, [initialSourceFilter]);
+  }, [initialFilterMode]);
+
+  useEffect(() => {
+    if (initialTestMode) {
+      setTestMode(initialTestMode);
+    }
+  }, [initialTestMode]);
 
   // Clean up auto advance timer on unmount or question change
   useEffect(() => {
@@ -118,8 +140,8 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
 
     selectOption(key);
 
-    // Auto Advance logic
-    if (autoAdvance && currentSession && currentSession.current_index < currentSession.questions.length - 1) {
+    // Auto Advance logic (only in practice mode)
+    if (testMode === 'practice' && autoAdvance && currentSession && currentSession.current_index < currentSession.questions.length - 1) {
       setAutoAdvanceTimer(1.5);
       if (autoAdvanceTimeoutRef.current) clearTimeout(autoAdvanceTimeoutRef.current);
 
@@ -176,11 +198,27 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   };
 
   const handleStart = () => {
+    // Validate question count for specialized filters
+    if (filterMode === 'mistakes' && mistakeCountInScope === 0) {
+      alert('Seçili kapsamda kayıtlı hatalı sorunuz bulunmamaktadır.');
+      return;
+    }
+    if (filterMode === 'bookmarks' && bookmarkCountInScope === 0) {
+      alert('Seçili kapsamda yıldızlanmış sorunuz bulunmamaktadır.');
+      return;
+    }
+
+    const timeLimitMinutes = testMode === 'simulation' ? Math.round(questionCount * 1.2) : undefined;
+    
     startQuiz({
-      mode: 'practice',
+      mode: testMode,
       moduleId: selectedModule,
       questionCount,
-      sourceFilter,
+      filterMode,
+      timeLimitMinutes,
+      title: selectedModule === 'all'
+        ? `Tüm Modüller ${testMode === 'simulation' ? 'Sınavı' : 'Pratik Testi'} (${questionCount} Soru)`
+        : `Modül ${selectedModule} ${testMode === 'simulation' ? 'Sınavı' : 'Pratik Testi'} (${questionCount} Soru)`,
     });
   };
 
@@ -206,10 +244,10 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
           </button>
           <div>
             <h1 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-              Modül Pratik Testi Hazırla
+              Test & Soru Çözümü
             </h1>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-              Anında açıklamalı, soru kilit mekanizmalı ve analitik çözümlü çalışma testi.
+              860 soruluk tek ve birleşik soru havuzundan modül bazlı veya karma test başlatın. Sorular ve şıklar otomatik karıştırılır.
             </p>
           </div>
         </div>
@@ -218,146 +256,204 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
         <div className="bg-white dark:bg-fintech-surface rounded-3xl border border-slate-200 dark:border-fintech-border p-6 sm:p-8 space-y-8 shadow-sm dark:shadow-2xl">
           {/* Step 1: Select Module */}
           <div className="space-y-3">
-            <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-              1. ÇALIŞILACAK DERS / MODÜLÜ SEÇİN
-            </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="flex items-center justify-between">
+              <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
+                1. ÇALIŞILACAK DERSİ SEÇİN
+              </label>
+              <span className="text-[11px] font-mono text-teal-600 dark:text-teal-400 font-bold">
+                Toplam Havuz: {candidatePool.length} Soru
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               <button
                 onClick={() => setSelectedModule('all')}
-                className={`p-4 rounded-2xl border text-left transition-all flex items-center justify-between ${
+                className={`p-4 rounded-2xl border text-left transition-all flex items-center justify-between sm:col-span-2 lg:col-span-1 ${
                   selectedModule === 'all'
                     ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-900 dark:text-teal-300 shadow-sm ring-1 ring-teal-500/30'
                     : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600'
                 }`}
               >
                 <div>
-                  <span className="font-bold text-sm block text-slate-900 dark:text-white">Tüm Modüller Karışık</span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">1001, 1003, 1005, 1012 ortak havuz ({allQs.length} Benzersiz Soru)</span>
+                  <span className="font-bold text-sm block text-slate-900 dark:text-white">Tüm Dersler Karma</span>
+                  <span className="text-xs text-slate-500 dark:text-slate-400">4 Modül Ortak Havuz ({allQs.length} Soru)</span>
                 </div>
-                <Sparkles className="w-5 h-5 text-teal-600 dark:text-teal-400" />
+                <Sparkles className="w-5 h-5 text-teal-600 dark:text-teal-400 shrink-0" />
               </button>
 
-              {modulesData.map((m) => (
-                <button
-                  key={m.id}
-                  onClick={() => setSelectedModule(m.id as ModuleId)}
-                  className={`p-4 rounded-2xl border text-left transition-all flex items-center justify-between ${
-                    selectedModule === m.id
-                      ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-900 dark:text-teal-300 shadow-sm ring-1 ring-teal-500/30'
-                      : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600'
-                  }`}
-                >
-                  <div>
-                    <span className="font-mono text-xs font-bold text-teal-600 dark:text-teal-400 block">Modül {m.code}</span>
-                    <span className="font-bold text-sm text-slate-900 dark:text-white block truncate">{m.short_name}</span>
-                  </div>
-                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400">{allQs.filter((q) => q.module_id === m.id).length} Soru</span>
-                </button>
-              ))}
+              {modulesData.map((m) => {
+                const modTotal = allQs.filter((q) => q.module_id === m.id).length;
+                const modSeen = seenQuestionIds.filter((id) => allQs.find(q => q.id === id && q.module_id === m.id)).length;
+                const modUnseen = Math.max(0, modTotal - modSeen);
+
+                return (
+                  <button
+                    key={m.id}
+                    onClick={() => setSelectedModule(m.id as ModuleId)}
+                    className={`p-4 rounded-2xl border text-left transition-all flex items-center justify-between ${
+                      selectedModule === m.id
+                        ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-900 dark:text-teal-300 shadow-sm ring-1 ring-teal-500/30'
+                        : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600'
+                    }`}
+                  >
+                    <div className="min-w-0 pr-2">
+                      <span className="font-mono text-xs font-bold text-teal-600 dark:text-teal-400 block">Modül {m.code}</span>
+                      <span className="font-bold text-sm text-slate-900 dark:text-white block truncate">{m.short_name}</span>
+                      <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5">
+                        {modUnseen} taze / {modTotal} soru
+                      </span>
+                    </div>
+                    <div className="w-2 h-2 rounded-full shrink-0 bg-teal-500" />
+                  </button>
+                );
+              })}
             </div>
           </div>
 
-          {/* Step 2: Question Count */}
-          <div className="space-y-3">
-            <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-              2. TESTTEKİ SORU SAYISI
-            </label>
-            <div className="grid grid-cols-4 gap-3">
-              {[10, 25, 50, 100].map((count) => (
-                <button
-                  key={count}
-                  onClick={() => setQuestionCount(count)}
-                  className={`py-3 rounded-xl border font-mono font-bold text-sm transition-all ${
-                    questionCount === count
-                      ? 'bg-teal-500 text-slate-950 border-teal-400 shadow-sm shadow-teal-500/20'
-                      : 'bg-slate-50 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border-slate-200 dark:border-fintech-border hover:border-slate-300 dark:hover:border-slate-600'
-                  }`}
-                >
-                  {count} Soru
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Step 3: Question Source Filter */}
+          {/* Step 2: Question Selection Filter Mode */}
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-                3. SORU KAYNAĞI FİLTRESİ
+                2. SORU SEÇİM KRİTERİ (FİLTRE)
               </label>
-              <span className="text-[11px] font-mono text-teal-600 dark:text-teal-400 font-bold">
-                Aktif Havuz: {totalModulePool} Soru
+              <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400">
+                {filterMode === 'unseen' ? `🟢 ${unseenCount} Çözülmemiş Soru` : `${totalModulePool} Soru Kapsamı`}
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               {[
-                { 
-                  id: 'cikmis', 
-                  label: '🎯 Çıkmış Sınav Soruları', 
-                  badge: '110 Soru',
-                  tag: 'RESMİ SINAV ARŞİVİ',
-                  desc: 'SPK lisanslama sınavlarında bizzat sorulmuş gerçek ve özgün çıkmış sınav soruları.' 
+                {
+                  id: 'unseen',
+                  label: '🟢 Sadece Çözülmemiş Sorular (Önerilen)',
+                  badge: `${unseenCount} Soru Hazır`,
+                  tag: 'SIFIR TEKRAR & TAZE SORULAR',
+                  desc: 'Daha önce hiç çözmediğiniz yeni sorular öncelikli olarak getirilir. Tüm müfredatı eksiksiz taramak için idealdir.',
+                  count: unseenCount,
                 },
-                { 
-                  id: 'genel', 
-                  label: '📚 Genel Soru Havuzu (Çıkmış Hariç)', 
-                  badge: '540 Soru',
-                  tag: 'ÖNCÜLLÜ & MEVZUAT EŞİKLERİ',
-                  desc: 'Çıkmış soruları içermeyen; öncüllü (I-II-III) soruları, tüm kanun maddelerini ve sayısal eşikleri kapsayan ana hazırlık bankası.' 
+                {
+                  id: 'all',
+                  label: '⚪ Tüm Sorulardan Rastgele Karışık',
+                  badge: `${totalModulePool} Soru`,
+                  tag: 'GENEL TEKRAR',
+                  desc: 'Çözülmüş veya çözülmemiş olmasına bakılmaksızın tüm soru havuzundan tamamen rastgele soru seçilir.',
+                  count: totalModulePool,
                 },
-              ].map((src) => (
+                {
+                  id: 'mistakes',
+                  label: '🔴 Hatalı Sorularım (Yanlış Defteri)',
+                  badge: `${mistakeCountInScope} Soru`,
+                  tag: 'HATA TELAFİSİ',
+                  desc: 'Daha önceki testlerde yanlış cevapladığınız soruları tekrar çözerek zayıf noktalarınızı pekiştirin.',
+                  count: mistakeCountInScope,
+                },
+                {
+                  id: 'bookmarks',
+                  label: '⭐ Yıldızlı Sorularım (Favoriler)',
+                  badge: `${bookmarkCountInScope} Soru`,
+                  tag: 'ÖZEL LİSTE',
+                  desc: 'Çözerken önemli veya zor bulup yıldızladığınız favori sorularınızdan test oluşturur.',
+                  count: bookmarkCountInScope,
+                },
+              ].map((filter) => (
                 <button
-                  key={src.id}
-                  onClick={() => setSourceFilter(src.id as any)}
-                  className={`p-5 rounded-2xl border text-left transition-all relative overflow-hidden ${
-                    sourceFilter === src.id
-                      ? src.id === 'cikmis'
-                        ? 'bg-amber-50 dark:bg-amber-500/15 border-amber-400 text-amber-950 dark:text-amber-200 ring-2 ring-amber-400/40 shadow-sm'
-                        : 'bg-teal-50 dark:bg-teal-500/15 border-teal-400 text-teal-950 dark:text-teal-200 ring-2 ring-teal-400/40 shadow-sm'
+                  key={filter.id}
+                  onClick={() => setFilterMode(filter.id as any)}
+                  className={`p-4 rounded-2xl border text-left transition-all relative overflow-hidden ${
+                    filterMode === filter.id
+                      ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-400 text-teal-950 dark:text-teal-200 ring-2 ring-teal-400/40 shadow-sm'
                       : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600'
                   }`}
                 >
-                  <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="font-bold text-sm block text-slate-900 dark:text-white">{src.label}</span>
+                  <div className="flex items-center justify-between gap-2 mb-1.5">
+                    <span className="font-bold text-sm block text-slate-900 dark:text-white">{filter.label}</span>
                     <span className={`text-[11px] font-mono px-2.5 py-0.5 rounded-full font-bold ${
-                      src.id === 'cikmis'
-                        ? 'bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-500/40'
-                        : 'bg-teal-100 dark:bg-teal-500/20 text-teal-800 dark:text-teal-300 border border-teal-300 dark:border-teal-500/40'
+                      filterMode === filter.id
+                        ? 'bg-teal-100 dark:bg-teal-500/20 text-teal-800 dark:text-teal-300 border border-teal-300 dark:border-teal-500/40'
+                        : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
                     }`}>
-                      {src.badge}
+                      {filter.badge}
                     </span>
                   </div>
-                  <span className="text-xs text-slate-600 dark:text-slate-300 block leading-relaxed">{src.desc}</span>
-                  <div className="mt-3 inline-flex items-center gap-1 text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                    <span className={`w-1.5 h-1.5 rounded-full ${src.id === 'cikmis' ? 'bg-amber-500' : 'bg-teal-500'}`} />
-                    <span>{src.tag}</span>
+                  <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-2.5">
+                    {filter.desc}
+                  </p>
+                  <div className="inline-flex items-center gap-1.5 text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                    <span className={`w-1.5 h-1.5 rounded-full ${filterMode === filter.id ? 'bg-teal-500' : 'bg-slate-400'}`} />
+                    <span>{filter.tag}</span>
                   </div>
                 </button>
               ))}
             </div>
+          </div>
 
-            {sourceFilter === 'cikmis' ? (
-              <div className="flex items-center gap-3 p-4 rounded-2xl bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-900 dark:text-amber-300 text-xs">
-                <span className="text-xl shrink-0">🎯</span>
-                <div>
-                  <span className="font-bold">Özel Çıkmış Sınav Grubu Seçildi:</span>
-                  <span className="text-amber-800 dark:text-amber-200/90 ml-1">
-                    Bu modda testinize yalnızca SPK lisanslama sınavlarında bizzat sorulan kanun maddeleri, tebliğler ve çıkmış sınav soruları (110 Soru) dahil edilir.
+          {/* Step 3: Test Mode & Question Count */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 border-t border-slate-200 dark:border-fintech-border/60">
+            {/* 3A: Test Mode */}
+            <div className="space-y-3">
+              <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
+                3. ÇALIŞMA FORMATI
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  type="button"
+                  onClick={() => setTestMode('practice')}
+                  className={`p-3.5 rounded-2xl border text-left transition-all ${
+                    testMode === 'practice'
+                      ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-400 text-teal-950 dark:text-teal-200 ring-2 ring-teal-400/40 shadow-sm'
+                      : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600'
+                  }`}
+                >
+                  <div className="flex items-center gap-2 mb-1">
+                    <Zap className="w-4 h-4 text-amber-500" />
+                    <span className="font-bold text-sm text-slate-900 dark:text-white">Pratik Modu</span>
+                  </div>
+                  <span className="text-[11px] text-slate-500 dark:text-slate-400 block leading-tight">
+                    Anında çözüm, gerekçeli açıklama ve kanun maddesi gösterilir.
                   </span>
-                </div>
-              </div>
-            ) : (
-              <div className="flex items-center gap-3 p-4 rounded-2xl bg-teal-50 dark:bg-teal-500/10 border border-teal-200 dark:border-teal-500/30 text-teal-900 dark:text-teal-300 text-xs">
-                <span className="text-xl shrink-0">📚</span>
-                <div>
-                  <span className="font-bold">Genel Soru Havuzu (Çıkmış Hariç) Seçildi:</span>
-                  <span className="text-teal-800 dark:text-teal-200/90 ml-1">
-                    Bu modda testinize çıkmış sorular dahil edilmez; öncüllü (I-II-III) sorular, 15 kritik sayısal/oransal eşik ve müfredatın tüm detaylarını içeren 540 soruluk kapsamlı soru havuzu sunulur.
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setTestMode('simulation')}
+                  className={`p-3.5 rounded-2xl border text-left transition-all ${
+                    testMode === 'simulation'
+                      ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-400 text-teal-950 dark:text-teal-200 ring-2 ring-teal-400/40 shadow-sm'
+                      : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600'
+                  }`}
+                >
+                  <div className="flex items-center gap-2 mb-1">
+                    <Sparkles className="w-4 h-4 text-teal-500" />
+                    <span className="font-bold text-sm text-slate-900 dark:text-white">Süreli Sınav</span>
+                  </div>
+                  <span className="text-[11px] text-slate-500 dark:text-slate-400 block leading-tight">
+                    Süre sayacı, optik form ve sınav sonunda ayrıntılı karne analizi.
                   </span>
-                </div>
+                </button>
               </div>
-            )}
+            </div>
+
+            {/* 3B: Question Count */}
+            <div className="space-y-3">
+              <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
+                4. TESTTEKİ SORU SAYISI
+              </label>
+              <div className="grid grid-cols-4 gap-2">
+                {[10, 25, 50, 100].map((count) => (
+                  <button
+                    key={count}
+                    onClick={() => setQuestionCount(count)}
+                    className={`py-3 rounded-xl border font-mono font-bold text-sm transition-all ${
+                      questionCount === count
+                        ? 'bg-teal-500 text-slate-950 border-teal-400 shadow-sm shadow-teal-500/20'
+                        : 'bg-slate-50 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border-slate-200 dark:border-fintech-border hover:border-slate-300 dark:hover:border-slate-600'
+                    }`}
+                  >
+                    {count} Soru
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Anti-Repeat Smart Pool Status Banner */}
@@ -369,10 +465,10 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
                 </div>
                 <div>
                   <span className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white block">
-                    🛡️ Akıllı Soru Rotasyonu & Tekrarsız Havuz
+                    🛡️ Soru Havuzu Kapsamı & Rotasyon
                   </span>
                   <span className="text-xs text-slate-600 dark:text-slate-300 block">
-                    {unseenCount} / {totalModulePool} çözülmemiş yeni soru mevcut
+                    {unseenCount} / {totalModulePool} çözülmemiş soru sırada bekliyor
                   </span>
                 </div>
               </div>
@@ -395,7 +491,7 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
                   <button
                     type="button"
                     onClick={() => {
-                      if (confirm('Bu modüle ait çözülmüş soru geçmişi sıfırlanacak ve tüm sorular taze havuza dönecek. Onaylıyor musunuz?')) {
+                      if (confirm('Bu modüle ait çözülmüş soru geçmişi sıfırlanacak ve tüm sorular taze havuza dönecektir. Onaylıyor musunuz?')) {
                         resetSeenQuestions(selectedModule);
                       }
                     }}
@@ -413,24 +509,29 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
               <div className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
                 <div 
                   className="h-full bg-gradient-to-r from-teal-500 to-emerald-400 transition-all duration-300"
-                  style={{ width: `${Math.round((seenCount / totalModulePool) * 100)}%` }}
+                  style={{ width: `${Math.round((seenCount / Math.max(1, totalModulePool)) * 100)}%` }}
                 />
               </div>
               <div className="flex justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">
-                <span>Çözülen Havuz Kapsamı: %{Math.round((seenCount / totalModulePool) * 100)}</span>
-                <span>{unseenCount > 0 ? `${unseenCount} taze soru sırada` : 'Tüm havuz çözüldü! Yeni döngü hazır.'}</span>
+                <span>Çözülen Havuz: %{Math.round((seenCount / Math.max(1, totalModulePool)) * 100)} ({seenCount} Soru)</span>
+                <span>{unseenCount > 0 ? `${unseenCount} taze soru hazır` : 'Tüm sorular çözüldü! Yeni tur başlayacak.'}</span>
               </div>
             </div>
           </div>
 
           {/* Start CTA */}
-          <button
-            onClick={handleStart}
-            className="w-full flex items-center justify-center gap-3 py-4 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-black text-base shadow-lg shadow-teal-500/25 active:scale-95 transition-all"
-          >
-            <Play className="w-5 h-5 fill-slate-950" />
-            <span>Pratik Testini Başlat</span>
-          </button>
+          <div className="space-y-2">
+            <button
+              onClick={handleStart}
+              className="w-full flex items-center justify-center gap-3 py-4 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-black text-base shadow-lg shadow-teal-500/25 active:scale-95 transition-all cursor-pointer"
+            >
+              <Play className="w-5 h-5 fill-slate-950" />
+              <span>Testi Başlat ({questionCount} Soru • {testMode === 'practice' ? 'Pratik Modu' : 'Süreli Sınav'})</span>
+            </button>
+            <p className="text-center text-[11px] font-mono text-slate-500 dark:text-slate-400">
+              🎲 Sorular ve cevap seçenekleri (A, B, C, D, E) her testte otomatik olarak rastgele karıştırılır.
+            </p>
+          </div>
         </div>
       </div>
     );
@@ -531,15 +632,15 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
           <QuestionCard
             question={currentQ}
             userAnswer={currentAns}
-            mode="practice"
-            isLocked={isAnswerLocked}
+            mode={currentSession.mode}
+            isLocked={currentSession.mode === 'practice' ? isAnswerLocked : false}
             questionIndex={currentIndex}
             totalQuestions={total}
             onSelectOption={handleSelectOptionWithSound}
           />
 
-          {/* Explanation Panel (Revealed when answered) */}
-          {isAnswerLocked && currentAns && currentAns.selected_option !== null && (
+          {/* Explanation Panel (Only shown in practice mode when answered) */}
+          {currentSession.mode === 'practice' && isAnswerLocked && currentAns && currentAns.selected_option !== null && (
             <ExplanationPanel
               question={currentQ}
               isCorrect={currentAns.is_correct}
@@ -577,7 +678,7 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
               <button
                 onClick={handleNextOrFinish}
                 className={`flex items-center gap-2 px-6 py-3.5 rounded-2xl font-black text-xs transition-all ${
-                  isAnswerLocked
+                  (currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null)
                     ? 'bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 shadow-md shadow-teal-500/25 active:scale-95'
                     : 'bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-fintech-border'
                 }`}
@@ -595,7 +696,7 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
             questions={currentSession.questions}
             userAnswers={currentSession.user_answers}
             currentIndex={currentIndex}
-            mode="practice"
+            mode={currentSession.mode}
             onSelectQuestion={goToQuestion}
           />
 
