@@ -17,6 +17,7 @@ import { useSettingsStore } from './stores/settingsStore';
 import { ModuleId } from './types/exam';
 
 import { AudioPlayerBar } from './components/audio/AudioPlayerBar';
+import { Footer } from './components/layout/Footer';
 
 export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<string>('home');
@@ -108,8 +109,11 @@ export const App: React.FC = () => {
       <div className="flex flex-1">
         <Sidebar currentPage={currentPage} onNavigate={handleNavigate} />
 
-        <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto w-full overflow-x-hidden">
-          {renderPage()}
+        <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto w-full overflow-x-hidden flex flex-col justify-between">
+          <div className="flex-1">
+            {renderPage()}
+          </div>
+          <Footer onNavigate={handleNavigate} />
         </main>
       </div>
 

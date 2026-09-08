@@ -359,8 +359,8 @@ export function generateCheatSheetPdf(options: PdfExportOptions): void {
   <!-- Header -->
   <div class="header-box">
     <div class="header-top">
-      <span class="header-title-small">T.C. SPK SERMAYE PİYASASI LİSANSLAMA SINAVLARI</span>
-      <span class="header-date">Basım Tarihi: ${printDate}</span>
+      <span class="header-title-small">T.C. SPK SERMAYE PİYASASI LİSANSLAMA SINAVLARI • PRO REHBER</span>
+      <span class="header-date">Hazırlayan: Emin ÇETİN • ${printDate}</span>
     </div>
     <h1 class="header-main-title">${title}</h1>
     <p class="header-subtitle">
@@ -571,9 +571,9 @@ export function generateCheatSheetPdf(options: PdfExportOptions): void {
   }
 
   <div class="footer">
-    <span>SPK SPL Düzey 1 Sınav Hazırlık Platformu • Sınav Öncesi Kritik Hap Bilgiler</span>
-    <span>Müfredat: Temmuz 2026 SPL Ders Notları Standartları</span>
-    <span>Sayfa Sonu</span>
+    <span>© 2026 Emin ÇETİN • Tüm Hakları Saklıdır</span>
+    <span>İçerik Kürasyonu & Yazılım: <strong>Emin ÇETİN</strong></span>
+    <span>SPK SPL Düzey 1 Lisanslama Hazırlık Platformu (Temmuz 2026 Müfredatı)</span>
   </div>
 
   <script>

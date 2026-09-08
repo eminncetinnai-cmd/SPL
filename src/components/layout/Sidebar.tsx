@@ -128,6 +128,15 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => 
         <div className="text-[11px] text-slate-600 dark:text-slate-300 leading-tight">
           860 Soru • 400 Flashcard • 32 Ders Notu
         </div>
+        <div className="pt-2 border-t border-slate-200 dark:border-fintech-border/60 text-[10px] space-y-0.5">
+          <div className="flex items-center justify-between">
+            <span className="text-slate-500 dark:text-slate-400">Geliştirici & Küratör:</span>
+            <span className="font-bold text-slate-800 dark:text-slate-200">Emin ÇETİN</span>
+          </div>
+          <p className="text-[9px] text-slate-400 dark:text-slate-500 font-mono">
+            © 2026 Tüm Hakları Saklıdır
+          </p>
+        </div>
       </div>
     </aside>
   );

@@ -265,18 +265,39 @@ export const SettingsPage: React.FC = () => {
           </div>
         </div>
 
-        {/* About SPK Exam */}
-        <div className="bg-slate-50 dark:bg-slate-900/60 rounded-2xl border border-slate-200 dark:border-fintech-border p-6 space-y-3 text-xs text-slate-600 dark:text-slate-400 leading-relaxed shadow-sm">
-          <div className="flex items-center gap-2 text-slate-900 dark:text-slate-200 font-bold">
-            <Info className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-            <span>SPK SPL Düzey 1 Sınav Platformu Hakkında</span>
+        {/* About & Copyright */}
+        <div className="bg-slate-50 dark:bg-slate-900/60 rounded-2xl border border-slate-200 dark:border-fintech-border p-6 space-y-4 text-xs text-slate-600 dark:text-slate-400 leading-relaxed shadow-sm">
+          <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+            <div className="flex items-center gap-2 text-slate-900 dark:text-slate-100 font-black text-sm">
+              <Info className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+              <span>SPK SPL Düzey 1 Sınav Platformu Hakkında</span>
+            </div>
+            <span className="px-2.5 py-0.5 rounded-full bg-teal-50 dark:bg-teal-500/10 text-teal-800 dark:text-teal-300 border border-teal-200 dark:border-teal-500/30 text-[10px] font-mono font-bold">
+              v2.5.0 PRO
+            </span>
           </div>
+
           <p>
-            Bu platform, Sermaye Piyasası Kurulu (SPK) SPL Düzey 1 Lisanslama Sınavına hazırlanan adaylar için özel olarak geliştirilmiş yüksek performanslı ve tam çevrimdışı (offline) bir masaüstü çalışma yazılımıdır.
+            Bu platform, Sermaye Piyasası Kurulu (SPK) SPL Düzey 1 Lisanslama Sınavlarına hazırlanan adaylar için özel olarak geliştirilmiş yüksek performanslı, interaktif ve tam çevrimdışı (offline) bir masaüstü çalışma yazılımıdır.
           </p>
-          <div className="flex items-center justify-between pt-2 border-t border-slate-200 dark:border-slate-800 text-[11px] font-mono">
-            <span>Sürüm: 1.0.0 Pro Edition</span>
-            <span>Veri Tabanı: 800 Soru + 4 Modül Konu Anlatımı</span>
+
+          <div className="p-4 rounded-xl bg-white dark:bg-fintech-card border border-slate-200 dark:border-fintech-border space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="font-mono text-[11px] uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400">
+                Fikri Mülkiyet & Telif Sahibi
+              </span>
+              <span className="font-bold text-slate-900 dark:text-slate-100 text-xs">
+                Emin ÇETİN
+              </span>
+            </div>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+              Programın tüm yazılım mimarisi, kullanıcı arayüzü tasarımı, sınav soru havuzu (860 soru), öğrenme kartları (400 kart) ve özet analiz tabloları <strong>Emin ÇETİN</strong> tarafından oluşturulmuştur. 5846 sayılı Fikir ve Sanat Eserleri Kanunu ile ilgili mevzuat hükümleri uyarınca <strong>tüm hakları saklıdır</strong>.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-between gap-2 pt-1 text-[11px] font-mono text-slate-500 dark:text-slate-400">
+            <span>Müfredat: Temmuz 2026 SPL Standartları</span>
+            <span>Veri Tabanı: 860 Soru • 400 Kart • 32 Bölüm</span>
           </div>
         </div>
       </div>
