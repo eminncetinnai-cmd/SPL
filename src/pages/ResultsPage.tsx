@@ -138,12 +138,12 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({ onNavigate }) => {
 
   const handleRetakeFull = () => {
     startQuiz({
-      mode: currentSession.mode,
+      mode: 'practice',
       moduleId: currentSession.module_id,
       customQuestions: currentSession.questions,
       title: currentSession.title,
     });
-    onNavigate(currentSession.mode === 'simulation' ? 'simulation' : 'practice');
+    onNavigate('practice');
   };
 
   return (

@@ -60,10 +60,10 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onNavigate }) => {
           )}
 
           <button
-            onClick={() => onNavigate('simulation-prep')}
-            className="flex items-center gap-2 px-5 py-2 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-black text-xs shadow-md shadow-teal-500/20 active:scale-95 transition-all"
+            onClick={() => onNavigate('practice')}
+            className="flex items-center gap-2 px-5 py-2 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-black text-xs shadow-md shadow-teal-500/20 active:scale-95 transition-all cursor-pointer"
           >
-            <span>Yeni Deneme Başlat</span>
+            <span>Yeni Test Başlat</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>

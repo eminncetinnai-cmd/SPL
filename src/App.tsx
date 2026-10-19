@@ -13,9 +13,6 @@ import { MobileBottomNav } from './components/layout/MobileBottomNav';
 const PracticeQuizPage = lazy(() =>
   import('./pages/PracticeQuizPage').then((m) => ({ default: m.PracticeQuizPage }))
 );
-const SimulationExamPage = lazy(() =>
-  import('./pages/SimulationExamPage').then((m) => ({ default: m.SimulationExamPage }))
-);
 const ResultsPage = lazy(() =>
   import('./pages/ResultsPage').then((m) => ({ default: m.ResultsPage }))
 );
@@ -75,18 +72,16 @@ export const App: React.FC = () => {
       case 'past-exams':
       case 'module-quiz-prep':
       case 'practice':
+      case 'simulation-prep':
+      case 'simulation':
         return (
           <PracticeQuizPage
             initialModuleId={pageParams.moduleId as ModuleId}
             initialFilterMode={pageParams.filterMode}
-            initialTestMode={pageParams.testMode}
             initialSourceFilter={pageParams.sourceFilter}
             onNavigate={handleNavigate}
           />
         );
-      case 'simulation-prep':
-      case 'simulation':
-        return <SimulationExamPage onNavigate={handleNavigate} />;
       case 'results':
         return <ResultsPage onNavigate={handleNavigate} />;
       case 'study-notes':

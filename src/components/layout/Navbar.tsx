@@ -153,13 +153,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             )}
           </button>
 
-          {/* Quick Simulation CTA (Desktop) */}
+          {/* Quick Quiz CTA (Desktop) */}
           <button
-            onClick={() => onNavigate('simulation-prep')}
-            className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs shadow-xs transition-all active:scale-95"
+            onClick={() => onNavigate('practice')}
+            className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs shadow-xs transition-all active:scale-95 cursor-pointer"
           >
             <Sparkles className="w-3.5 h-3.5 text-white" />
-            <span>Deneme Sınavı</span>
+            <span>Test Çöz</span>
           </button>
 
           {/* Mobile Secondary Menu Toggle */}
@@ -178,11 +178,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
         <div className="md:hidden pt-3 pb-2 border-t border-slate-200 dark:border-fintech-border mt-2.5 animate-slide-up">
           <div className="grid grid-cols-2 gap-2 text-xs font-semibold">
             <button
-              onClick={() => handleMobileNav('simulation-prep')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
+              onClick={() => handleMobileNav('practice')}
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left cursor-pointer"
             >
               <Award className="w-4 h-4 text-amber-500 shrink-0" />
-              <span>Deneme Sınavı</span>
+              <span>Soru Çözümü</span>
             </button>
             <button
               onClick={() => handleMobileNav('study-notes')}

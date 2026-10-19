@@ -227,16 +227,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </button>
 
         <button
-          onClick={() => onNavigate('simulation-prep')}
+          onClick={() => onNavigate('practice')}
           className="p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-fintech-surface hover:bg-slate-50 dark:hover:bg-fintech-card border border-slate-200 dark:border-fintech-border text-left transition-all flex items-center justify-between group shadow-xs cursor-pointer"
         >
           <div className="min-w-0 pr-2">
             <div className="flex items-center gap-1.5 text-teal-600 dark:text-teal-400 font-bold text-xs sm:text-sm">
               <Sparkles className="w-4 h-4 shrink-0" />
-              <span className="truncate">Deneme Sınavı</span>
+              <span className="truncate">Soru Havuzu</span>
             </div>
             <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5">
-              4 Ders Gerçek Prova
+              1.135 Çözümlü Soru
             </span>
           </div>
           <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-teal-500 shrink-0" />

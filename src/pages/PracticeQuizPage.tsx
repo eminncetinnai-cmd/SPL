@@ -13,7 +13,6 @@ import {
   ShieldCheck, 
   AlertCircle, 
   Zap, 
-  Pause, 
   Brain,
   ChevronDown,
   ChevronUp,
@@ -92,9 +91,6 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   const [filterMode, setFilterMode] = useState<'unseen' | 'all' | 'mistakes' | 'bookmarks'>(
     initialFilterMode || 'unseen'
   );
-  const [testMode, setTestMode] = useState<'practice' | 'simulation'>(
-    initialTestMode || 'practice'
-  );
   const [cognitiveFilter, setCognitiveFilter] = useState<'all' | 'KB1_Kavramsal' | 'KB2_Muhakeme' | 'KB3_Vaka'>('all');
   const [questionCount, setQuestionCount] = useState<number>(25);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
@@ -164,11 +160,6 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
     [bookmarks, selectedModule]
   );
 
-  const [autoAdvance, setAutoAdvance] = useState(false);
-  const [autoAdvanceTimer, setAutoAdvanceTimer] = useState<number | null>(null);
-
-  const autoAdvanceTimeoutRef = useRef<any>(null);
-
   useEffect(() => {
     if (initialModuleId) {
       setSelectedModule(initialModuleId);
@@ -180,21 +171,6 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
       setFilterMode(initialFilterMode);
     }
   }, [initialFilterMode]);
-
-  useEffect(() => {
-    if (initialTestMode) {
-      setTestMode(initialTestMode);
-    }
-  }, [initialTestMode]);
-
-  // Clean up auto advance timer on unmount or question change
-  useEffect(() => {
-    return () => {
-      if (autoAdvanceTimeoutRef.current) {
-        clearTimeout(autoAdvanceTimeoutRef.current);
-      }
-    };
-  }, [currentSession?.current_index]);
 
   const handleSelectOptionWithSound = (key: 'A' | 'B' | 'C' | 'D' | 'E') => {
     if (!activeQuestion) return;
@@ -209,24 +185,6 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
     }
 
     selectOption(key);
-
-    // Auto Advance logic (only in practice mode)
-    if (testMode === 'practice' && autoAdvance && currentSession && currentSession.current_index < currentSession.questions.length - 1) {
-      setAutoAdvanceTimer(1.5);
-      if (autoAdvanceTimeoutRef.current) clearTimeout(autoAdvanceTimeoutRef.current);
-
-      autoAdvanceTimeoutRef.current = setTimeout(() => {
-        setAutoAdvanceTimer(null);
-        nextQuestion();
-      }, 1500);
-    }
-  };
-
-  const handleCancelAutoAdvance = () => {
-    if (autoAdvanceTimeoutRef.current) {
-      clearTimeout(autoAdvanceTimeoutRef.current);
-      setAutoAdvanceTimer(null);
-    }
   };
 
   // Keyboard shortcut listener
@@ -258,7 +216,6 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   }, [currentSession, nextQuestion, prevQuestion, isAnswerLocked, activeQuestion, soundEnabled]);
 
   const handleNextOrFinish = () => {
-    handleCancelAutoAdvance();
     if (!currentSession) return;
     if (currentSession.current_index === currentSession.questions.length - 1) {
       handleFinish();
@@ -289,21 +246,18 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
       return;
     }
 
-    const timeLimitMinutes = testMode === 'simulation' ? Math.round(questionCount * 1.2) : undefined;
-    
     startQuiz({
-      mode: testMode,
+      mode: 'practice',
       moduleId: selectedModule,
       questionCount,
       filterMode,
-      timeLimitMinutes,
       title: selectedModule === 'all'
-        ? `Tüm Modüller ${testMode === 'simulation' ? 'Sınavı' : 'Pratik Testi'} (${questionCount} Soru)`
-        : `Modül ${selectedModule} ${testMode === 'simulation' ? 'Sınavı' : 'Pratik Testi'} (${questionCount} Soru)`,
+        ? `Tüm Modüller Soru Çözümü (${questionCount} Soru)`
+        : `Modül ${selectedModule} Soru Çözümü (${questionCount} Soru)`,
     });
   };
 
-  const handleQuickStart = (type: 'fresh' | 'mistakes' | 'simulation') => {
+  const handleQuickStart = (type: 'fresh' | 'mistakes' | 'all_pool') => {
     if (type === 'mistakes') {
       if (mistakeCountInScope === 0) {
         alert('Seçili kapsamda kayıtlı hatalı sorunuz bulunmamaktadır.');
@@ -322,17 +276,16 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
       return;
     }
 
-    if (type === 'simulation') {
+    if (type === 'all_pool') {
       const count = 25;
       startQuiz({
-        mode: 'simulation',
+        mode: 'practice',
         moduleId: selectedModule,
         questionCount: count,
         filterMode: 'all',
-        timeLimitMinutes: 30,
         title: selectedModule === 'all'
-          ? `Tüm Dersler Süreli Sınav Provası (25 Soru • 30 Dk)`
-          : `Modül ${selectedModule} Süreli Sınav Provası (25 Soru • 30 Dk)`,
+          ? `Tüm Dersler Karma Test (${count} Soru)`
+          : `Modül ${selectedModule} Karma Test (${count} Soru)`,
       });
       return;
     }
@@ -346,13 +299,12 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
       questionCount: count,
       filterMode: targetFilter,
       title: selectedModule === 'all'
-        ? `Tüm Dersler Pratik Test (${count} Soru)`
-        : `Modül ${selectedModule} Pratik Test (${count} Soru)`,
+        ? `Tüm Dersler Çözülmemiş Test (${count} Soru)`
+        : `Modül ${selectedModule} Çözülmemiş Test (${count} Soru)`,
     });
   };
 
   const handleFinish = () => {
-    handleCancelAutoAdvance();
     const completed = finishQuiz();
     if (completed) {
       onNavigate('results');
@@ -528,29 +480,29 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
               </div>
             </button>
 
-            {/* Quick 3: Süreli Sınav Simülasyonu */}
+            {/* Quick 3: Tüm Havuzdan Karma Test */}
             <button
-              onClick={() => handleQuickStart('simulation')}
+              onClick={() => handleQuickStart('all_pool')}
               className="p-4 rounded-2xl bg-white dark:bg-fintech-surface border border-slate-200 dark:border-fintech-border hover:border-teal-500/50 text-left transition-all active:scale-[0.98] cursor-pointer shadow-xs flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="p-2 rounded-xl bg-amber-100 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400">
+                  <span className="p-2 rounded-xl bg-teal-100 dark:bg-teal-500/20 text-teal-600 dark:text-teal-400">
                     <Sparkles className="w-4 h-4" />
                   </span>
-                  <span className="px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/20 text-[10px] font-mono font-bold text-amber-700 dark:text-amber-300">
-                    30 Dakika
+                  <span className="px-2 py-0.5 rounded-full bg-teal-100 dark:bg-teal-500/20 text-[10px] font-mono font-bold text-teal-700 dark:text-teal-300">
+                    25 Soru
                   </span>
                 </div>
                 <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-white">
-                  Süreli Sınav Provası
+                  Tüm Havuzdan Karma Test
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                  Gerçek sınav zamanlaması (30 dk, 25 soru), süre sayacı ve sınav sonu detaylı karne.
+                  Seçili dersten veya tüm derslerden rastgele karma 25 soru ile anında açıklamalı test.
                 </p>
               </div>
-              <div className="mt-3 pt-2 border-t border-slate-100 dark:border-fintech-border flex items-center justify-between text-[11px] font-mono text-amber-600 dark:text-amber-400">
-                <span>Zamanlı Prova</span>
+              <div className="mt-3 pt-2 border-t border-slate-100 dark:border-fintech-border flex items-center justify-between text-[11px] font-mono text-teal-600 dark:text-teal-400">
+                <span>Karma Test</span>
                 <span className="font-bold">Başla →</span>
               </div>
             </button>
@@ -648,66 +600,26 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
                 </div>
               </div>
 
-              {/* Çalışma Modu & Soru Sayısı */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-slate-100 dark:border-fintech-border/60">
-                <div className="space-y-1.5">
-                  <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-                    Çalışma Modu
-                  </label>
-                  <div className="grid grid-cols-2 gap-2">
+              {/* Soru Sayısı */}
+              <div className="space-y-1.5 pt-2 border-t border-slate-100 dark:border-fintech-border/60">
+                <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
+                  Soru Sayısı
+                </label>
+                <div className="grid grid-cols-4 gap-2">
+                  {[10, 25, 50, 100].map((count) => (
                     <button
+                      key={count}
                       type="button"
-                      onClick={() => setTestMode('practice')}
-                      className={`p-2 rounded-xl border text-left transition-all ${
-                        testMode === 'practice'
-                          ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-950 dark:text-teal-200 ring-1 ring-teal-400/40'
-                          : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400'
+                      onClick={() => setQuestionCount(count)}
+                      className={`py-2 rounded-xl border font-mono font-bold text-xs transition-all ${
+                        questionCount === count
+                          ? 'bg-teal-600 text-white border-teal-700 shadow-xs'
+                          : 'bg-slate-50 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border-slate-200 dark:border-fintech-border'
                       }`}
                     >
-                      <div className="flex items-center gap-1.5">
-                        <Zap className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                        <span className="font-bold text-xs text-slate-900 dark:text-white">Pratik Modu</span>
-                      </div>
-                      <span className="text-[10px] text-slate-500 dark:text-slate-400 block mt-0.5">Anında açıklama</span>
+                      {count}
                     </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setTestMode('simulation')}
-                      className={`p-2 rounded-xl border text-left transition-all ${
-                        testMode === 'simulation'
-                          ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-950 dark:text-teal-200 ring-1 ring-teal-400/40'
-                          : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400'
-                      }`}
-                    >
-                      <div className="flex items-center gap-1.5">
-                        <Sparkles className="w-3.5 h-3.5 text-teal-500 shrink-0" />
-                        <span className="font-bold text-xs text-slate-900 dark:text-white">Süreli Sınav</span>
-                      </div>
-                      <span className="text-[10px] text-slate-500 dark:text-slate-400 block mt-0.5">Sonunda karne</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-                    Soru Sayısı
-                  </label>
-                  <div className="grid grid-cols-4 gap-2">
-                    {[10, 25, 50, 100].map((count) => (
-                      <button
-                        key={count}
-                        onClick={() => setQuestionCount(count)}
-                        className={`py-2 rounded-xl border font-mono font-bold text-xs transition-all ${
-                          questionCount === count
-                            ? 'bg-teal-600 text-white border-teal-700 shadow-xs'
-                            : 'bg-slate-50 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border-slate-200 dark:border-fintech-border'
-                        }`}
-                      >
-                        {count}
-                      </button>
-                    ))}
-                  </div>
+                  ))}
                 </div>
               </div>
 
@@ -718,7 +630,7 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
               >
                 <Play className="w-4 h-4 fill-white text-white" />
                 <span className="text-white font-black">
-                  Özel Ayarlarla Başlat ({questionCount} Soru • {testMode === 'practice' ? 'Pratik' : 'Süreli'})
+                  Özel Ayarlarla Başlat ({questionCount} Soru)
                 </span>
               </button>
             </div>
@@ -777,20 +689,6 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
             <span>Optik ({answeredCount}/{total})</span>
           </button>
 
-          {/* Auto Advance Toggle */}
-          <button
-            onClick={() => setAutoAdvance(!autoAdvance)}
-            className={`flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-xl border text-xs font-mono font-semibold transition-all active:scale-95 ${
-              autoAdvance
-                ? 'bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-500/40 shadow-xs'
-                : 'bg-slate-50 dark:bg-fintech-card text-slate-500 dark:text-slate-400 border-slate-200 dark:border-fintech-border'
-            }`}
-            title="Şık seçildiğinde sonraki soruya otomatik geçiş yapar"
-          >
-            <Zap className={`w-3.5 h-3.5 ${autoAdvance ? 'text-amber-500 fill-amber-500 dark:text-amber-400 dark:fill-amber-400' : ''}`} />
-            <span className="hidden md:inline">Oto: {autoAdvance ? 'AÇIK' : 'KAPALI'}</span>
-          </button>
-
           <ExamTimer onTick={updateTimer} />
 
           <button
@@ -809,23 +707,6 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
           style={{ width: `${((currentIndex + 1) / total) * 100}%` }}
         />
       </div>
-
-      {/* Auto Advance Countdown Bar (if active) */}
-      {autoAdvanceTimer !== null && (
-        <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-500/40 rounded-2xl p-3 flex items-center justify-between gap-4 animate-slide-up shadow-sm">
-          <div className="flex items-center gap-2 text-amber-800 dark:text-amber-300 text-xs font-semibold">
-            <Zap className="w-4 h-4 text-amber-600 dark:text-amber-400 animate-pulse" />
-            <span>1.5 saniye sonra sonraki soruya geçiliyor...</span>
-          </div>
-          <button
-            onClick={handleCancelAutoAdvance}
-            className="flex items-center gap-1.5 px-3 py-1 rounded-xl bg-amber-100 hover:bg-amber-200 dark:bg-amber-500/20 dark:hover:bg-amber-500/30 text-amber-900 dark:text-amber-200 text-xs font-bold border border-amber-300 dark:border-amber-500/40"
-          >
-            <Pause className="w-3.5 h-3.5" />
-            <span>Durdur & Oku</span>
-          </button>
-        </div>
-      )}
 
       {/* Main Layout: Question on left, Optical Form on right (desktop) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
