@@ -107,6 +107,31 @@ const FORMULAS: FormulaItem[] = [
     example: 'Geniş yetkili aracı kurum olmak isteyen bir kurumun özsermayesi en az 380 Milyon TL olmalıdır.',
     examTrap: 'Eski tutarlar (25M / 65M / 150M) yürürlükten kalkmıştır. Güncel 2026 barajları 45M / 190M / 380M / 440M TL\'dir.',
   },
+  {
+    id: 'high_water_mark',
+    category: 'Portföy Yönetimi',
+    title: 'High-Water Mark (Zirve Değer İlkesi) & Başarı Primi',
+    formula: 'Başarı Primi = Max(0, Portföy Değeri - Zirve Değer - Eşik Değer Getirisi) × Prim Oranı',
+    variables: [
+      { name: 'Zirve Değer', desc: 'Portföyün geçmişte ulaştığı en yüksek net varlık değeri' },
+      { name: 'Eşik Değer (Hurdle Rate)', desc: 'Portföyün aşması gereken asgari kıyaslama getirisi (örn. BIST KYD Repo)' },
+      { name: 'Kural', desc: 'Zirve değerin altında kalınan dönemlerde performans/başarı primi kesinlikle tahakkuk ettirilemez.' },
+    ],
+    example: 'Geçmiş zirve değer 1.000.000 TL olan portföy 900.000 TL\'ye düşüp sonra 980.000 TL\'ye çıksa dahi 1.000.000 TL aşılmadığı için başarı primi alınamaz.',
+    examTrap: 'Portföy yükselse dahi geçmişteki zirveyi ve eşik değeri aşmadıkça başarı primi ödenemez.',
+  },
+  {
+    id: 'viop_kaldirac',
+    category: 'Türev Piyasalar (VİOP)',
+    title: 'VİOP Kaldıraç Oranı & Pozisyon Büyüklüğü',
+    formula: 'Pozisyon Büyüklüğü = Sözleşme Adedi × Sözleşme Büyüklüğü × Fiyat\nKaldıraç Oranı = Pozisyon Büyüklüğü / Yatırılan Başlangıç Teminatı',
+    variables: [
+      { name: 'Sözleşme Büyüklüğü', desc: 'Pay vadeli: 100 pay | Endeks vadeli: 10 pay' },
+      { name: 'Efektif Kaldıraç', desc: 'Toplam piyasa riskinin yatırılan teminata oranı' },
+    ],
+    example: '10 adet BIST 30 Endeks sözleşmesi (10×10×10.000 = 1.000.000 TL pozisyon) için 100.000 TL teminat yatırıldıysa:\nKaldıraç = 1.000.000 / 100.000 = 10 Kat.',
+    examTrap: 'Kaldıraç hesaplanırken kâr/zarar değil, toplam nominal pozisyon büyüklüğü teminata bölünür.',
+  },
 ];
 
 export const FormulaDrawer: React.FC<FormulaDrawerProps> = ({ isOpen, onClose }) => {

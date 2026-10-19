@@ -3,9 +3,7 @@ import { ModuleId, Question, QuizMode, QuizSession, UserAnswer } from '../types/
 import { calculateQuizResults } from '../utils/spkScoring';
 import { useProgressStore } from './progressStore';
 import { selectSmartQuestions, shuffleArray, shuffleQuestionOptions } from '../utils/questionSelector';
-import allQuestionsData from '../data/all_questions.json';
-
-interface StartQuizOptions {
+export interface StartQuizOptions {
   mode: QuizMode;
   moduleId?: ModuleId | 'all';
   questionCount?: number;
@@ -16,7 +14,7 @@ interface StartQuizOptions {
   timeLimitMinutes?: number;
 }
 
-interface QuizState {
+export interface QuizState {
   currentSession: QuizSession | null;
   activeQuestion: Question | null;
   activeAnswer: UserAnswer | null;
@@ -24,7 +22,7 @@ interface QuizState {
   explanationRead: boolean; // In practice mode, next button requires explanation view
   
   // Actions
-  startQuiz: (options: StartQuizOptions) => void;
+  startQuiz: (options: StartQuizOptions) => Promise<void> | void;
   selectOption: (optionKey: 'A' | 'B' | 'C' | 'D' | 'E') => void;
   unlockOrChangeAnswer: () => void;
   setExplanationRead: (read: boolean) => void;
@@ -37,7 +35,15 @@ interface QuizState {
   updateTimer: (elapsedSeconds: number) => void;
 }
 
-const allQuestions = allQuestionsData as Question[];
+// Lazy question pool loader - prevents downloading 2.1 MB on initial page load
+let cachedAllQuestions: Question[] | null = null;
+export async function getQuestionPool(): Promise<Question[]> {
+  if (!cachedAllQuestions) {
+    const data = await import('../data/all_questions.json');
+    cachedAllQuestions = data.default as Question[];
+  }
+  return cachedAllQuestions;
+}
 
 export const useQuizStore = create<QuizState>((set, get) => ({
   currentSession: null,
@@ -46,7 +52,7 @@ export const useQuizStore = create<QuizState>((set, get) => ({
   isAnswerLocked: false,
   explanationRead: false,
 
-  startQuiz: (options) => {
+  startQuiz: async (options) => {
     let selectedQuestions: Question[] = [];
 
     if (options.customQuestions && options.customQuestions.length > 0) {
@@ -70,6 +76,7 @@ export const useQuizStore = create<QuizState>((set, get) => ({
       });
       selectedQuestions = shuffledGrouped;
     } else if (options.filterMode === 'mistakes') {
+      const allQuestions = await getQuestionPool();
       const { mistakes } = useProgressStore.getState();
       const unresolvedMistakeIds = new Set(
         Object.values(mistakes).filter((m) => !m.resolved).map((m) => m.question.id)
@@ -80,6 +87,7 @@ export const useQuizStore = create<QuizState>((set, get) => ({
       }
       selectedQuestions = shuffleArray(mistakePool).slice(0, options.questionCount || 25);
     } else if (options.filterMode === 'bookmarks') {
+      const allQuestions = await getQuestionPool();
       const { bookmarks } = useProgressStore.getState();
       const bookmarkIds = new Set(bookmarks);
       let bookmarkPool = allQuestions.filter((q) => bookmarkIds.has(q.id));
@@ -88,6 +96,7 @@ export const useQuizStore = create<QuizState>((set, get) => ({
       }
       selectedQuestions = shuffleArray(bookmarkPool).slice(0, options.questionCount || 25);
     } else {
+      const allQuestions = await getQuestionPool();
       const { seenQuestionIds, avoidQuestionRepetition } = useProgressStore.getState();
       const selection = selectSmartQuestions(allQuestions, {
         moduleId: options.moduleId,

@@ -14,7 +14,7 @@ import {
 import { ModuleProgressCards } from '../components/dashboard/ModuleProgressCards';
 import { SpkBarrierCard } from '../components/dashboard/SpkBarrierCard';
 import { useProgressStore } from '../stores/progressStore';
-import allQuestionsData from '../data/all_questions.json';
+import { TOTAL_QUESTION_COUNT } from '../data/questionStats';
 
 interface HomePageProps {
   onNavigate: (page: string, params?: any) => void;
@@ -142,7 +142,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200/80 dark:border-fintech-border flex items-center justify-between">
             <span className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Soru Havuzu</span>
             <span className="text-xs sm:text-sm font-black font-mono text-slate-900 dark:text-white">
-              {seenQuestionIds.length} / {(allQuestionsData as any[]).length}
+              {seenQuestionIds.length} / {TOTAL_QUESTION_COUNT}
             </span>
           </div>
 

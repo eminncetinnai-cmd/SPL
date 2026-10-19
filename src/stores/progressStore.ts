@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { ModuleId, PastQuizSummary, MistakeEntry, Question, QuizSession } from '../types/exam';
-import allQuestionsData from '../data/all_questions.json';
+import { getModuleIdFromQuestionId } from '../data/questionStats';
 
 interface ModuleStats {
   attempts: number;
@@ -61,26 +61,8 @@ const defaultModuleStats: Record<ModuleId, ModuleStats> = {
   '1012': { attempts: 0, totalQuestions: 0, totalCorrect: 0, totalWrong: 0, averageAccuracy: 0, bestScore: 0, lastScore: null, lastDate: null },
 };
 
-const canonicalQuestions = new Map(
-  (allQuestionsData as Question[]).map((question) => [question.id, question])
-);
-
 function normalizeMistakeEntry(entry: MistakeEntry): MistakeEntry {
-  const canonicalQuestion = canonicalQuestions.get(entry.question.id);
-  if (!canonicalQuestion) return entry;
-
-  const selectedOption = entry.question.options.find(
-    (option) => option.key === entry.last_selected_option
-  );
-  const canonicalSelectedKey = selectedOption
-    ? canonicalQuestion.options.find((option) => option.text === selectedOption.text)?.key
-    : undefined;
-
-  return {
-    ...entry,
-    question: canonicalQuestion,
-    last_selected_option: canonicalSelectedKey || entry.last_selected_option,
-  };
+  return entry;
 }
 
 function normalizeMistakes(
@@ -260,18 +242,13 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     if (!isCorrect) {
       const existingMistake = state.mistakes[question.id];
       const newCount = existingMistake ? existingMistake.wrong_count + 1 : 1;
-      const canonicalQuestion = canonicalQuestions.get(question.id) || question;
-      const selectedOption = question.options.find((option) => option.key === selected);
-      const canonicalSelected = selectedOption
-        ? canonicalQuestion.options.find((option) => option.text === selectedOption.text)?.key
-        : undefined;
       newMistakes = {
         ...state.mistakes,
         [question.id]: {
-          question: canonicalQuestion,
+          question,
           wrong_count: newCount,
           last_wrong_date: new Date().toISOString(),
-          last_selected_option: canonicalSelected || selected,
+          last_selected_option: selected,
           correct_streak: 0,
           resolved: false,
         },
@@ -529,7 +506,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     } else {
       // Keep seen questions from other modules, reset only for this module
       const filtered = get().seenQuestionIds.filter(
-        (id) => canonicalQuestions.get(id)?.module_id !== moduleId
+        (id) => getModuleIdFromQuestionId(id) !== moduleId
       );
       set({ seenQuestionIds: filtered });
       saveToStorage({ ...get(), seenQuestionIds: filtered });
@@ -545,7 +522,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     let count = 0;
     const seen = get().seenQuestionIds;
     for (let i = 0; i < seen.length; i++) {
-      if (canonicalQuestions.get(seen[i])?.module_id === moduleId) {
+      if (getModuleIdFromQuestionId(seen[i]) === moduleId) {
         count++;
       }
     }
@@ -555,16 +532,11 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   addMistake: (question: Question, selected: string) => {
     const current = get().mistakes[question.id];
     const newCount = current ? current.wrong_count + 1 : 1;
-    const canonicalQuestion = canonicalQuestions.get(question.id) || question;
-    const selectedOption = question.options.find((option) => option.key === selected);
-    const canonicalSelected = selectedOption
-      ? canonicalQuestion.options.find((option) => option.text === selectedOption.text)?.key
-      : undefined;
     const entry: MistakeEntry = {
-      question: canonicalQuestion,
+      question,
       wrong_count: newCount,
       last_wrong_date: new Date().toISOString(),
-      last_selected_option: canonicalSelected || selected,
+      last_selected_option: selected,
       correct_streak: 0,
       resolved: false,
     };

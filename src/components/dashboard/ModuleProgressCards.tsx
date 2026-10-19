@@ -11,7 +11,7 @@ import {
 import modulesData from '../../data/modules.json';
 import { useProgressStore } from '../../stores/progressStore';
 import { ModuleId, ModuleInfo } from '../../types/exam';
-import allQuestionsData from '../../data/all_questions.json';
+import { MODULE_TOTAL_COUNTS } from '../../data/questionStats';
 
 interface ModuleProgressCardsProps {
   onNavigate?: (page: string, params?: any) => void;
@@ -19,14 +19,6 @@ interface ModuleProgressCardsProps {
   onReadNotes?: (moduleId: ModuleId) => void;
   onOpenFlashcards?: (moduleId: ModuleId) => void;
 }
-
-const MODULE_TOTAL_COUNTS: Record<string, number> = (allQuestionsData as any[]).reduce(
-  (acc, q) => {
-    acc[q.module_id] = (acc[q.module_id] || 0) + 1;
-    return acc;
-  },
-  {} as Record<string, number>
-);
 
 export const ModuleProgressCards: React.FC<ModuleProgressCardsProps> = ({
   onNavigate,

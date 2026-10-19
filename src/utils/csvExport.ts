@@ -46,13 +46,6 @@ export function exportQuizHistoryToCSV(history: PastQuizSummary[]): void {
   document.body.removeChild(link);
 }
 
-import allQuestionsData from '../data/all_questions.json';
-import { Question } from '../types/exam';
-
-const canonicalMap = new Map<string, Question>(
-  (allQuestionsData as Question[]).map((q) => [q.id, q])
-);
-
 export function exportMistakesToCSV(mistakes: MistakeEntry[]): void {
   if (!mistakes || mistakes.length === 0) {
     alert('Dışa aktarılacak hatalı soru bulunamadı.');
@@ -72,7 +65,7 @@ export function exportMistakesToCSV(mistakes: MistakeEntry[]): void {
   ];
 
   const rows = mistakes.map((item) => {
-    const q = canonicalMap.get(item.question.id) || item.question;
+    const q = item.question;
     return [
       `"${q.id}"`,
       `"${q.module_id}"`,
