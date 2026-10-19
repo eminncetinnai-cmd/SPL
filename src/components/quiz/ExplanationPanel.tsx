@@ -144,19 +144,6 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = React.memo(({
         onScroll={handleScroll}
         className="p-6 sm:p-7 space-y-5 text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed"
       >
-        {/* Maarif Pedagogical Skill Banner */}
-        <div className={`p-3.5 rounded-2xl border ${cognitiveMeta.bg} ${cognitiveMeta.border} space-y-1`}>
-          <div className="flex items-center gap-2">
-            <CognitiveIcon className="w-4 h-4 text-teal-600 dark:text-teal-400 shrink-0" />
-            <span className={`text-xs font-mono font-bold uppercase tracking-wider ${cognitiveMeta.text}`}>
-              {cognitiveMeta.badge}
-            </span>
-          </div>
-          <p className="text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
-            {cognitiveMeta.subtitle}
-          </p>
-        </div>
-
         {/* Solution & Glossary Section */}
         {question.explanation && (() => {
           const parts = question.explanation.split('📌 Soruda Geçen Kısaltmalar & Terimler:');
@@ -166,9 +153,15 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = React.memo(({
           return (
             <div className="space-y-4">
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-teal-700 dark:text-teal-400 font-bold text-xs tracking-wider uppercase font-mono">
-                  <Lightbulb className="w-4 h-4 text-amber-500" />
-                  <span>Formatif Çözüm & Kanuni Gerekçe</span>
+                <div className="flex items-center justify-between gap-2 flex-wrap">
+                  <div className="flex items-center gap-2 text-teal-700 dark:text-teal-400 font-bold text-xs tracking-wider uppercase font-mono">
+                    <Lightbulb className="w-4 h-4 text-amber-500" />
+                    <span>Formatif Çözüm & Kanuni Gerekçe</span>
+                  </div>
+                  <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg border text-[11px] font-mono font-bold ${cognitiveMeta.bg} ${cognitiveMeta.border} ${cognitiveMeta.text}`}>
+                    <CognitiveIcon className="w-3.5 h-3.5" />
+                    <span>{question.cognitive_skill === 'KB3_Vaka' ? 'Vaka Sorusu' : question.cognitive_skill === 'KB2_Muhakeme' ? 'Öncüllü Muhakeme' : 'Kavramsal Norm'}</span>
+                  </span>
                 </div>
                 <div className="bg-slate-50 dark:bg-fintech-card/80 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-fintech-border/80 text-slate-800 dark:text-slate-200 text-sm whitespace-pre-line leading-relaxed">
                   {mainExplanation}

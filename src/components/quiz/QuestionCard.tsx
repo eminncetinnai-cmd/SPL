@@ -38,30 +38,15 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     <div className="w-full bg-white dark:bg-fintech-surface rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-fintech-border shadow-xs sm:shadow-sm p-4 sm:p-6 space-y-4 sm:space-y-5">
       {/* Compact iOS-style Header Info */}
       <div className="flex items-center justify-between gap-2 border-b border-slate-100 dark:border-fintech-border/70 pb-3">
-        <div className="flex items-center gap-2 flex-wrap">
-          <span className="px-3 py-1 rounded-xl bg-teal-500/10 text-teal-800 dark:text-teal-300 border border-teal-500/20 font-mono text-xs font-bold">
-            Soru {questionIndex + 1} / {totalQuestions}
+        <div className="flex items-center gap-2">
+          <span className="px-2.5 py-1 rounded-xl bg-teal-500/10 text-teal-800 dark:text-teal-300 border border-teal-500/20 font-mono text-xs font-bold">
+            Soru {questionIndex + 1}
           </span>
           <span className="px-2.5 py-1 rounded-xl bg-slate-100 text-slate-700 font-mono text-xs font-semibold border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">
             Modül {question.module_id}
           </span>
-          {question.cognitive_skill === 'KB3_Vaka' && (
-            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-lg bg-indigo-50 text-indigo-800 border border-indigo-200 dark:bg-indigo-500/15 dark:text-indigo-300 dark:border-indigo-500/30 font-bold">
-              Vaka
-            </span>
-          )}
-          {question.cognitive_skill === 'KB2_Muhakeme' && (
-            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-lg bg-sky-50 text-sky-800 border border-sky-200 dark:bg-sky-500/15 dark:text-sky-300 dark:border-sky-500/30 font-bold">
-              Muhakeme
-            </span>
-          )}
-          {question.cognitive_skill === 'KB1_Kavramsal' && (
-            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 font-bold">
-              Kavramsal
-            </span>
-          )}
           {isLocked && question.topic && (
-            <span className="text-[11px] text-teal-800 dark:text-teal-300 font-mono font-semibold px-2 py-0.5 rounded-lg bg-teal-50 border border-teal-200 dark:bg-teal-950/40 dark:border-teal-500/30 hidden sm:inline-block">
+            <span className="text-[11px] text-slate-600 dark:text-slate-400 font-mono px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800 truncate max-w-[150px] sm:max-w-xs">
               {question.topic}
             </span>
           )}

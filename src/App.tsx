@@ -3,6 +3,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Sidebar } from './components/layout/Sidebar';
 import { HomePage } from './pages/HomePage';
 import { useSettingsStore } from './stores/settingsStore';
+import { useQuizStore } from './stores/quizStore';
 import { ModuleId } from './types/exam';
 
 import { AudioPlayerBar } from './components/audio/AudioPlayerBar';
@@ -54,6 +55,11 @@ export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<string>('home');
   const [pageParams, setPageParams] = useState<any>({});
   const { theme } = useSettingsStore();
+  const { currentSession } = useQuizStore();
+
+  const isQuizActive = Boolean(
+    currentSession && !currentSession.is_completed && (currentPage === 'practice' || currentPage === 'simulation')
+  );
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -141,6 +147,25 @@ export const App: React.FC = () => {
         return <HomePage onNavigate={handleNavigate} />;
     }
   };
+
+  // 100% Distraction-Free Pure Exam Cockpit (No Navbar, No Bottom Tabs, No Audio Bar, No Sidebar)
+  if (isQuizActive) {
+    return (
+      <div className="min-h-screen bg-slate-900 dark:bg-fintech-dark text-slate-100 flex flex-col font-sans selection:bg-teal-500/30 selection:text-teal-200">
+        <main className="flex-1 p-2 sm:p-4 lg:p-6 max-w-5xl mx-auto w-full">
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-center py-20">
+                <div className="w-8 h-8 rounded-full border-3 border-teal-500/30 border-t-teal-500 animate-spin" />
+              </div>
+            }
+          >
+            {renderPage()}
+          </Suspense>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-fintech-dark text-slate-900 dark:text-slate-100 flex flex-col font-sans selection:bg-teal-500/30 selection:text-teal-900 relative">
