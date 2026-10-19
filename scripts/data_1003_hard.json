@@ -1,0 +1,1952 @@
+[
+  {
+    "id": "q_1003_sert_001",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Bedelli Sermaye Artırımı & Rüçhan Hakkı Değeri",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Borsa İstanbul Yıldız Pazar'da işlem gören ve sermaye artırımı öncesi hisse kapanış fiyatı 40 TL olan Alfa Çimento A.Ş., %100 bedelli sermaye artırımına gitme kararı almıştır. Rüçhan hakkı kullanım fiyatı nominal değer olan 1 TL olarak belirlenmiştir.\n\nBuna göre bölünme sonrası hissenin teorik düzeltilmiş baz fiyatı ile 1 adet paya ait rüçhan hakkı kuponunun teorik değeri sırasıyla hangi seçenekte DOĞRU verilmiştir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeni Hisse Fiyatı: 20,50 TL; Rüçhan Hakkı Değeri: 19,50 TL"
+      },
+      {
+        "key": "B",
+        "text": "Yeni Hisse Fiyatı: 20,00 TL; Rüçhan Hakkı Değeri: 20,00 TL"
+      },
+      {
+        "key": "C",
+        "text": "Yeni Hisse Fiyatı: 19,50 TL; Rüçhan Hakkı Değeri: 20,50 TL"
+      },
+      {
+        "key": "D",
+        "text": "Yeni Hisse Fiyatı: 21,00 TL; Rüçhan Hakkı Değeri: 19,00 TL"
+      },
+      {
+        "key": "E",
+        "text": "Yeni Hisse Fiyatı: 40,00 TL; Rüçhan Hakkı Değeri: 1,00 TL"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Pay Piyasası Prosedürü ve VII-128.1 Pay Tebliği.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Bedelli sermaye artırımında yeni teorik hisse fiyatı: P_yeni = (P_eski + B * R_fiyat) / (1 + B). Rüçhan hakkı değeri ise: R = P_eski - P_yeni formülüyle hesaplanır.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- P_eski = 40 TL, B = %100 = 1,0, R_fiyat = 1 TL.\n- P_yeni = (40 + 1 * 1) / (1 + 1) = 41 / 2 = 20,50 TL.\n- Rüçhan Hakkı Değeri (R) = 40 - 20,50 = 19,50 TL.\n4. DOĞRU CEVAP VE SONUÇ: A şıkkında 20,50 TL ve 19,50 TL doğru verilmiştir.\n5. ÇELDİRİCİ TUZAĞI: Rüçhan fiyatını 1 TL yerine 0 almak veya P_eski / 2 = 20 TL ezberine düşmek.",
+    "trap": "Rüçhan kullanım fiyatı 1 TL hesaba katılmalıdır: P_yeni = 41/2 = 20,50 TL; R = 40 - 20,50 = 19,50 TL.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Bedelli Sermaye Artırımı & Rüçhan Hakkı Değeri"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_002",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Bedelli ve Bedelsiz Sermaye Artırımı Birlikte",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Sermayesi 100 milyon TL, hisse senedi son kapanış fiyatı 60 TL olan Beta Teknoloji A.Ş., aynı anda %100 bedelli ve %100 bedelsiz sermaye artırımı yapacağını duyurmuştur. Bedelli sermaye artırımında rüçhan hakkı kullanım fiyatı 2 TL'dir.\n\nBuna göre, sermaye artırımı sonrası oluşacak yeni hisse senedi teorik baz fiyatı kaç TL olacaktır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeni teorik baz fiyat 18,67 TL olarak belirlenir."
+      },
+      {
+        "key": "B",
+        "text": "Yeni teorik baz fiyat 20,67 TL olarak belirlenir."
+      },
+      {
+        "key": "C",
+        "text": "Yeni teorik baz fiyat 22,33 TL olarak belirlenir."
+      },
+      {
+        "key": "D",
+        "text": "Yeni teorik baz fiyat 25,00 TL olarak belirlenir."
+      },
+      {
+        "key": "E",
+        "text": "Yeni teorik baz fiyat 30,00 TL olarak belirlenir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Düzeltilmiş Pay Fiyatı Hesaplama Yöntemi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Bedelli ve bedelsiz sermaye artırımı birlikte yapıldığında formül:\nP_yeni = (P_eski + B * R_fiyat) / (1 + B + BD)'dir.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- P_eski = 60 TL\n- B (Bedelli oranı) = %100 = 1,0\n- BD (Bedelsiz oranı) = %100 = 1,0\n- R_fiyat = 2 TL\n- Payda = 1 + 1 + 1 = 3\n- Pay = 60 + (1 * 2) = 62 TL\n- P_yeni = 62 / 3 = 20,666... ≈ 20,67 TL.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneği 20,67 TL'dir.\n5. ÇELDİRİCİ TUZAĞI: Paydaya sadece bedelliyi eklemek veya rüçhan fiyatını nominal 1 TL varsayarak 61/3 = 20,33 bulmak.",
+    "trap": "Payda 1 + B + BD = 3 olur. Pay ise 60 + 2 = 62 TL. 62/3 = 20,67 TL.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Bedelli ve Bedelsiz Sermaye Artırımı Birlikte"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_003",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Nakit Temettü Dağıtımı ve Borsa Referans Fiyatı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Hisseleri Borsa İstanbul'da işlem gören Gama Sanayi A.Ş., hisse başına brüt 6 TL (%600), net 5,40 TL (%540) nakit temettü dağıtacaktır (Bireysel yatırımcı stopaj oranı %10). Şirket hisseleri temettü dağıtım tarihinden önceki son seansta 52 TL kapanış fiyatından işlem görmüştür.\n\nBuna göre temettü dağıtım günü seans açılışında geçerli olacak teorik hisse referans fiyatı kaç TL olacaktır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Açılış referans baz fiyatı 44,00 TL olarak sisteme girilir."
+      },
+      {
+        "key": "B",
+        "text": "Açılış referans baz fiyatı 45,40 TL olarak sisteme girilir."
+      },
+      {
+        "key": "C",
+        "text": "Açılış referans baz fiyatı 46,00 TL olarak sisteme girilir."
+      },
+      {
+        "key": "D",
+        "text": "Açılış referans baz fiyatı 46,60 TL olarak sisteme girilir."
+      },
+      {
+        "key": "E",
+        "text": "Açılış referans baz fiyatı 52,00 TL olarak sisteme girilir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Pay Piyasası İşleyiş Prosedürü.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Borsa referans fiyatı hesabında hisse kapanış fiyatından BRÜT TEMETTÜ düşülür. Stopaj yatırımcının şahsi vergi yükümlülüğü olup borsa baz fiyatını etkilemez.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- P_ref = P_kapanis - Brüt Temettü\n- P_ref = 52 - 6,00 = 46,00 TL.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir (46,00 TL).\n5. ÇELDİRİCİ TUZAĞI: Net temettüyü düşerek 52 - 5,40 = 46,60 TL bulmak (D şıkkı en yaygın tuzaktır).",
+    "trap": "Borsa referans fiyatı hesaplanırken brüt temettü düşülür, stopaj düşülmez: 52 - 6 = 46,00 TL.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Nakit Temettü Dağıtımı ve Borsa Referans Fiyatı"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_004",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Tahvil Kirli ve Temiz Fiyat Ayrımı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Yıllık %20 kupon faizi ödeyen, 1.000 TL nominal değerli bir devlet tahvilinin kupon ödeme sıklığı 6 ayda birdir (yılda iki kupon, kupon başına %10). Son kupon ödemesinin üzerinden 90 gün geçmiştir (Kupon dönemi 180 gün kabul edilecektir). Tahvilin borsadaki temiz fiyatı (clean price) 1.020 TL'dir.\n\nBuna göre söz konusu tahvilin alım satımına esas teşkil edecek 'Kirli Fiyatı' (dirty price) kaç TL'dir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İşleme esas kirli takas fiyatı 1.020 TL'dir."
+      },
+      {
+        "key": "B",
+        "text": "İşleme esas kirli takas fiyatı 1.040 TL'dir."
+      },
+      {
+        "key": "C",
+        "text": "İşleme esas kirli takas fiyatı 1.050 TL'dir."
+      },
+      {
+        "key": "D",
+        "text": "İşleme esas kirli takas fiyatı 1.070 TL'dir."
+      },
+      {
+        "key": "E",
+        "text": "İşleme esas kirli takas fiyatı 1.120 TL'dir."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sermaye Piyasasında Borçlanma Araçları Fiyatlama Esasları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Kirli Fiyat = Temiz Fiyat + Birikmiş Faiz (Accrued Interest).\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Nominal Değer = 1.000 TL\n- 6 aylık kupon faiz oranı = %10 -> 6 aylık kupon tutarı = 1.000 * %10 = 100 TL.\n- Kupon döneminde geçen gün = 90 gün / 180 gün = 0,5 (yarısı).\n- Birikmiş Faiz = 100 * (90 / 180) = 50 TL.\n- Kirli Fiyat = Temiz Fiyat + Birikmiş Faiz = 1.020 + 50 = 1.070 TL.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir (1.070 TL).\n5. ÇELDİRİCİ TUZAĞI: Yıllık faiz üzerinden 90 günlük hesap yapıp 1.000 * 0,20 * (90/360) = 50 TL bulup temiz fiyata eklemeyi unutup sadece 1.050 demek.",
+    "trap": "Kirli Fiyat = Temiz Fiyat + Birikmiş Faiz. Birikmiş faiz = 100 * (90/180) = 50 TL. Kirli fiyat = 1.020 + 50 = 1.070 TL.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Tahvil Kirli ve Temiz Fiyat Ayrımı"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_005",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Tahvil Getiri Eğrisi ve Beklentiler Teorisi",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Gelecekte kısa vadeli faiz oranlarının kesintisiz olarak yükseleceği genel piyasa aktörleri tarafından öngörüldüğünde, 'Geleneksel Beklentiler Teorisi' (Expectations Theory) uyarınca getiri eğrisinin (yield curve) şekli ve özellikleri hakkında;\n\nI. Uzun vadeli tahvil faizleri, gelecekte beklenen kısa vadeli faizlerin geometrik ortalamasını yansıtacağı için getiri eğrisi pozitif eğimli (yukarı eğimli) olur.\nII. Getiri eğrisinin ters (negatif eğimli) olması piyasada gelecekte faizlerin düşeceği beklentisine işaret eder.\nIII. Yatırımcıların uzun vadeli tahvillerde katlandıkları risk için talep ettikleri likidite primi pozitif eğimi daha da dikleştirir.\n\nYukarıda yer alan iktisadi ve finansal tespitlerden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı tespit teorik olarak doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı tespit teorik olarak doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı tespitler teorik olarak doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı tespitler teorik olarak doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı tespitlerin tamamı teorik olarak doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sermaye Piyasası Finansal Teori ve Sabit Getirili Menkul Kıymetler Analizi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Beklentiler teorisine göre uzun vadeli getiri gelecekteki kısa vadeli getirilerin ortalamasıdır. Faiz artışı beklentisi pozitif eğim yaratır; düşüş beklentisi ters eğim yaratır. Likidite primi eğimi dikleştirir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncülleri finans teorisinin getiri eğrisi aksiyomlarını eksiksiz açıklar.\n4. DOĞRU CEVAP VE SONUÇ: E şıkkıdır.\n5. ÇELDİRİCİ TUZAĞI: Faiz artışında getiri eğrisinin ters olacağını zannetmek.",
+    "trap": "Gelecekte faiz artışı beklentisi pozitif eğimli getiri eğrisi üretir; likidite primi ise eğimi daha da dikleştirir.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Tahvil Getiri Eğrisi ve Beklentiler Teorisi"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_006",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Tahvil Süresi (Duration) ve Fiyat Değişimi",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Portföy yöneticisi Ahmet Bey'in elinde modifiye süresi (Modified Duration) 4,5 yıl olan 10 milyon TL piyasa değerli sabit kuponlu tahvil bulunmaktadır. Piyasa faiz oranlarının (getirinin) derhal ve paralel olarak 200 baz puan (%2,00) ARTMASI durumunda;\n\nTahvil portföyünün piyasa değerinde yaklaşık olarak nasıl bir oransal ve parasal değişim meydana gelir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "%9 oranında değer kaybı gerçekleşir ve portföy değeri 900.000 TL azalır."
+      },
+      {
+        "key": "B",
+        "text": "%9 oranında değer kazancı gerçekleşir ve portföy değeri 900.000 TL artar."
+      },
+      {
+        "key": "C",
+        "text": "%4,5 oranında değer kaybı gerçekleşir ve portföy değeri 450.000 TL azalır."
+      },
+      {
+        "key": "D",
+        "text": "%2 oranında değer kaybı gerçekleşir ve portföy değeri 200.000 TL azalır."
+      },
+      {
+        "key": "E",
+        "text": "%18 oranında değer kaybı gerçekleşir ve portföy değeri 1.800.000 TL azalır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sabit Getirili Menkul Kıymetler Faiz Riski Ölçümü.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Tahvil fiyatının faiz değişimine duyarlılığı: Delta P / P ≈ - Modified Duration * Delta y.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- MD = 4,5 yıl\n- Faiz artışı (Delta y) = +%2 = +0,02 (200 baz puan)\n- Fiyat Değişimi (Delta P / P) = -4,5 * (+0,02) = -0,09 = -%9 (Yani %9 değer kaybı).\n- Parasal Tutar = 10.000.000 * %9 = 900.000 TL değer azalışı.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğinde %9 azalış ve 900.000 TL kayıp doğru verilmiştir.\n5. ÇELDİRİCİ TUZAĞI: Faiz arttığında tahvil fiyatının da artacağını sanmak (B şıkkı) veya 200 baz puanı %0,2 sanmak.",
+    "trap": "Fiyat değişimi = -MD * Delta y = -4,5 * %2 = -%9. Portföy 900.000 TL değer kaybeder.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Tahvil Süresi (Duration) ve Fiyat Değişimi"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_007",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "İskontolu Bono Basit Getiri Hesabı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Vadesine 73 gün kalmış olan 100 TL nominal değerli bir Hazine Bonosu piyasada 95 TL peşin fiyattan satılmaktadır (Faiz hesabında 1 yıl 365 gün kabul edilecektir).\n\nSöz konusu bonoyu satın alarak vadesine kadar elinde tutacak bir yatırımcının elde edeceği 'Yıllık Basit İskonto Getirisi' (yıllık basit faiz) yüzde kaçtır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yıllık basit iskonto getirisi yüzde 23,45 olarak gerçekleşir."
+      },
+      {
+        "key": "B",
+        "text": "Yıllık basit iskonto getirisi yüzde 26,32 olarak gerçekleşir."
+      },
+      {
+        "key": "C",
+        "text": "Yıllık basit iskonto getirisi yüzde 25,00 olarak gerçekleşir."
+      },
+      {
+        "key": "D",
+        "text": "Yıllık basit iskonto getirisi yüzde 28,15 olarak gerçekleşir."
+      },
+      {
+        "key": "E",
+        "text": "Yıllık basit iskonto getirisi yüzde 30,00 olarak gerçekleşir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Para ve Sermaye Piyasası Finansal Matematik Standartları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Basit Verim (Getiri) Formülü:\nr = [(Nominal - Satış Fiyatı) / Satış Fiyatı] * (365 / Gün Sayısı).\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Nominal = 100 TL, Alış Fiyatı = 95 TL, Vade = 73 gün.\n- Dönemsel Getiri = (100 - 95) / 95 = 5 / 95 = 0,05263 (%5,263).\n- Yıllık Basit Getiri = 0,05263 * (365 / 73) = 0,05263 * 5 = 0,26315 = %26,32.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneği (%26,32) tam doğrudur.\n5. ÇELDİRİCİ TUZAĞI: Paydaya satış fiyatı yerine nominal değeri yazıp (5/100) * 5 = %25 bulmak (C şıkkı klasik sınav tuzağıdır).",
+    "trap": "Getiri yatırılan anapara (95 TL) üzerinden hesaplanır: (5/95) * (365/73) = %26,32.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "İskontolu Bono Basit Getiri Hesabı"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_008",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Sukuk (Kira Sertifikası) Türleri ve Sahipliğe Dayalı İhraç",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-61.1 sayılı Kira Sertifikaları Tebliği uyarınca ihraç edilen kira sertifikası türleri arasında yer alan 'Sahipliğe Dayalı Kira Sertifikası' (İcara Sukuk) işleyiş mekanizmasına dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Varlık kiralama şirketi hiçbir varlık satın almaz; doğrudan faiz karşılığı borç para toplar."
+      },
+      {
+        "key": "B",
+        "text": "VKŞ tarafından kaynak kuruluştan satın alınan varlıklar derhal üçüncü şahıslara satılarak kapatılır."
+      },
+      {
+        "key": "C",
+        "text": "VKŞ varlığı devralır, tekrar kaynak kuruluşa kiralar ve kira gelirini sertifika sahiplerine dağıtır."
+      },
+      {
+        "key": "D",
+        "text": "Sahipliğe dayalı kira sertifikasında kaynak kuruluşun geri alım taahhüdünde bulunması kanunen yasaktır."
+      },
+      {
+        "key": "E",
+        "text": "Yatırımcılara ödenecek kira getirisi şirket hisse senetlerinin borsa performansına endekslenmek zorundadır."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-61.1 Tebliği m. 4.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Sahipliğe dayalı kira sertifikasında VKŞ varlığı satın alır, kaynak kuruluşa geri kiralar (Sat ve Geri Kirala - Sale and Leaseback) ve periyodik kira bedellerini yatırımcılara öder.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı sahipliğe dayalı sukukun mevzuattaki tanımıdır.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Borçlanma aracıyla aynı mekanizmada çalıştığının düşünülmesi.",
+    "trap": "Sahipliğe dayalı sukukta VKŞ varlığı alır, kaynak kuruluşa kiralar ve kira gelirlerini yatırımcılara aktarır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Sukuk (Kira Sertifikası) Türleri ve Sahipliğe Dayalı İhraç"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_009",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Kira Sertifikası Türleri Arasındaki Hukuki Farklar",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-61.1 sayılı Tebliğ kapsamında kira sertifikası türleri ve dayanak sözleşme eşleştirmelerine dair;\n\nI. Yönetim Sözleşmesine Dayalı: Varlık veya hakların VKŞ adına yönetilmesi amacıyla kaynak kuruluşa devredilmesi esasına dayanır.\nII. Ortaklığa Dayalı: Mudaraba (sermaye-emek ortaklığı) veya Müşareke (sermaye-sermaye ortaklığı) sözleşmelerine dayanılarak ihraç edilir.\nIII. Eser Sözleşmesine Dayalı: İstisna sözleşmesi kapsamında henüz imal edilmemiş veya inşa edilmemiş bir eserin meydana getirilmesini finanse etmek amacıyla ihraç edilir.\n\nYukarıda yapılan hukuki ve teknik nitelemelerden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı niteleme mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı niteleme mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı nitelemeler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "I, II ve III numaralı nitelemelerin tamamı mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "Yalnızca III numaralı niteleme mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-61.1 sayılı Tebliğ m. 4-8.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Tebliğde 5 temel kira sertifikası düzenlenmiştir: 1) Sahiplik, 2) Yönetim sözleşmesi (Vekalet), 3) Alım-satım (Murabaha), 4) Ortaklık (Mudaraba/Müşareke), 5) Eser sözleşmesi (İstisna).\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin her biri tebliğ maddeleriyle birebir uyumludur.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Eser sözleşmesinin sermaye piyasasında sukuka konu olamayacağını zannetmek.",
+    "trap": "Ortaklık sukuku Mudaraba/Müşareke, eser sözleşmesine dayalı sukuk ise İstisna prensibine dayanır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Kira Sertifikası Türleri Arasındaki Hukuki Farklar"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_010",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Alım Varantı (Call) Başabaş Noktası ve Kâr/Zarar",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Yatırımcı Cengiz Bey, Borsa İstanbul Varant Pazarı'nda XYZ hisse senedi üzerine yazılmış, kullanım fiyatı 80 TL ve çarpanı 0,50 olan bir alım varantını 4 TL prim ödeyerek satın almıştır.\n\nVade sonunda dayanak XYZ hisse senedinin piyasa fiyatının 92 TL olması durumunda, Cengiz Bey'in 1 adet varant başına net kârı veya zararı ne olur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Varant başına net sekiz TL kâr elde eder."
+      },
+      {
+        "key": "B",
+        "text": "Varant başına net altı TL kâr elde eder."
+      },
+      {
+        "key": "C",
+        "text": "Varant başına net dört TL zarar eder."
+      },
+      {
+        "key": "D",
+        "text": "Varant başabaş noktasında olup kâr veya zarar sıfırdır."
+      },
+      {
+        "key": "E",
+        "text": "Varant başına net iki TL kâr elde eder."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Varant ve Sertifikalar Piyasası İşleyiş Kılavuzu.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Alım varantı içsel değeri: Max[0, (Dayanak Fiyat - Kullanım Fiyatı) * Çarpan]. Net Kâr = İçsel Değer - Ödenen Prim.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Dayanak Fiyat (S) = 92 TL\n- Kullanım Fiyatı (K) = 80 TL\n- Fark = 92 - 80 = 12 TL\n- Çarpan = 0,50\n- Vade sonu varant değeri (ödeme) = 12 * 0,50 = 6 TL.\n- Başlangıçta ödenen varant primi = 4 TL.\n- Net Kâr = 6 - 4 = +2 TL.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir (+2 TL kâr).\n5. ÇELDİRİCİ TUZAĞI: Çarpanı (0,50) unutarak 92 - 80 = 12 TL bulup 12 - 4 = 8 TL demek veya primi düşmeyi unutarak 6 TL demek.",
+    "trap": "Varant itfa değeri = (92 - 80) * 0,5 = 6 TL. Net Kâr = 6 - 4 = +2 TL kâr.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Alım Varantı (Call) Başabaş Noktası ve Kâr/Zarar"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_011",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Satım Varantı (Put) Başabaş Noktası ve İtfa",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Kullanım fiyatı 50 TL, çarpanı 0,20 ve piyasa satış primi 1,50 TL olan bir satım varantının (Put Warrant) vade sonundaki 'Başabaş Noktası' (dayanak varlık hisse fiyatı) kaç TL'dir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Başabaş dayanak varlık hisse fiyatı 42,50 TL'dir."
+      },
+      {
+        "key": "B",
+        "text": "Başabaş dayanak varlık hisse fiyatı 48,50 TL'dir."
+      },
+      {
+        "key": "C",
+        "text": "Başabaş dayanak varlık hisse fiyatı 51,50 TL'dir."
+      },
+      {
+        "key": "D",
+        "text": "Başabaş dayanak varlık hisse fiyatı 57,50 TL'dir."
+      },
+      {
+        "key": "E",
+        "text": "Başabaş dayanak varlık hisse fiyatı 40,00 TL'dir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Yapılandırılmış Ürünler Pazarı Kılavuzu.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Satım varantında başabaş noktası (Break-even): Dayanak Varlık Fiyatı = Kullanım Fiyatı - (Ödenen Prim / Çarpan).\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Kullanım Fiyatı = 50 TL\n- Prim / Çarpan = 1,50 / 0,20 = 7,50 TL (Hisse başına katlanılan prim maliyeti).\n- Başabaş Fiyatı = 50 - 7,50 = 42,50 TL.\n- Kontrol: Hisse 42,50 TL olursa, varant değeri = (50 - 42,50) * 0,20 = 7,50 * 0,20 = 1,50 TL. Prim 1,50 TL ödendiğinden kâr/zarar = 0 TL.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir (42,50 TL).\n5. ÇELDİRİCİ TUZAĞI: Çarpanı bölmek yerine primle doğrudan çıkarmak (50 - 1,50 = 48,50 TL) veya alım varantı gibi toplayarak 57,50 TL bulmak.",
+    "trap": "Satım varantı başabaş = Kullanım Fiyatı - (Prim / Çarpan) = 50 - (1,50 / 0,20) = 42,50 TL.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Satım Varantı (Put) Başabaş Noktası ve İtfa"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_012",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Varant Göstergeleri: Kaldıraç ve Efektif Kaldıraç",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Dayanak hisse senedi fiyatı 100 TL, kullanım fiyatı 95 TL, varant fiyatı 5 TL, çarpanı 0,25 ve Deltası 0,60 olan bir alım varantının 'Kaldıraç' (Gearing) ve 'Efektif Kaldıraç' (Elasticity) değerleri sırasıyla nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kaldıraç: 20; Efektif Kaldıraç: 12"
+      },
+      {
+        "key": "B",
+        "text": "Kaldıraç: 5; Efektif Kaldıraç: 3"
+      },
+      {
+        "key": "C",
+        "text": "Kaldıraç: 10; Efektif Kaldıraç: 6"
+      },
+      {
+        "key": "D",
+        "text": "Kaldıraç: 4; Efektif Kaldıraç: 2,4"
+      },
+      {
+        "key": "E",
+        "text": "Kaldıraç: 15; Efektif Kaldıraç: 9"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sermaye Piyasasında Türev ve Yapılandırılmış Araçlar Risk Göstergeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Kaldıraç (Gearing) = (Dayanak Hisse Fiyatı * Çarpan) / Varant Fiyatı. Efektif Kaldıraç (Effective Gearing) = Delta * Kaldıraç.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Gearing = (100 * 0,25) / 5 = 25 / 5 = 5.\n- Effective Gearing = 0,60 * 5 = 3,0.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir (Kaldıraç: 5; Efektif Kaldıraç: 3).\n5. ÇELDİRİCİ TUZAĞI: Çarpanı paya çarpmayı unutup 100 / 5 = 20 demek ve efektif kaldıracı 20 * 0,6 = 12 bulmak (A şıkkı).",
+    "trap": "Gearing = (100 * 0,25) / 5 = 5. Efektif Kaldıraç = 5 * 0,60 = 3.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Varant Göstergeleri: Kaldıraç ve Efektif Kaldıraç"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_013",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "VİOP Vadeli İşlem Sözleşmesi Teorik Fiyatı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Dayanak varlık spot fiyatı 200 TL olan bir hisse senedi vadeli işlem sözleşmesinde vadenin bitimine 73 gün vardır. Yıllık risksiz faiz oranı %30, dayanak hissenin vadesi boyunca beklenen temettü verimi %5'tir (1 yıl = 365 gün kabul edilecektir).\n\nTaşıma Maliyeti Modeli (Cost of Carry) uyarınca söz konusu vadeli işlem sözleşmesinin teorik vadeli fiyatı kaç TL olmalıdır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Teorik vadeli uzlaşma fiyatı 205,00 TL olmalıdır."
+      },
+      {
+        "key": "B",
+        "text": "Teorik vadeli uzlaşma fiyatı 208,00 TL olmalıdır."
+      },
+      {
+        "key": "C",
+        "text": "Teorik vadeli uzlaşma fiyatı 210,00 TL olmalıdır."
+      },
+      {
+        "key": "D",
+        "text": "Teorik vadeli uzlaşma fiyatı 212,00 TL olmalıdır."
+      },
+      {
+        "key": "E",
+        "text": "Teorik vadeli uzlaşma fiyatı 215,00 TL olmalıdır."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul VİOP Prosedürü ve Vadeli Sözleşmeler Fiyatlama Teorisi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Vadeli Sözleşme Teorik Fiyatı: F = S * [1 + (r - q) * (t / 365)]. Burada S = Spot fiyat, r = Faiz oranı, q = Temettü verimi, t = Vadeye kalan gün.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Net Taşıma Maliyeti Oranı = r - q = %30 - %5 = %25 = 0,25.\n- Dönem Oranı = 73 / 365 = 1 / 5 = 0,20.\n- Net Taşıma Maliyeti Çarpanı = 1 + (0,25 * 0,20) = 1 + 0,05 = 1,05.\n- Vadeli Fiyat (F) = 200 * 1,05 = 210 TL.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir (210,00 TL).\n5. ÇELDİRİCİ TUZAĞI: Temettüyü düşmek yerine faize ekleyerek 200 * [1 + 0,35 * 0,2] = 214 TL veya temettüyü tamamen ihmal edip 200 * 1,06 = 212 TL bulmak (D şıkkı).",
+    "trap": "F = S * [1 + (r - q) * (t/365)] = 200 * [1 + 0,25 * 0,2] = 200 * 1,05 = 210 TL.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "VİOP Vadeli İşlem Sözleşmesi Teorik Fiyatı"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_014",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "VİOP Margin Call (Teminat Tamamlama Çağrısı) Kuralı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Yatırımcı Derya Hanım, VİOP'ta başlangıç teminatı sözleşme başına 2.000 TL, sürdürme teminatı oranı %75 (1.500 TL) olan bir sözleşmeden 10 adet uzun (long) pozisyon açmış ve hesabına 20.000 TL nakit teminat yatırmıştır. Gün sonunda piyasa aleyhine hareket etmiş ve hesaptaki toplam teminat tutarı 13.500 TL'ye (sözleşme başına 1.350 TL) gerilemiştir.\n\nTakasbank ve VİOP mevzuatı uyarınca Derya Hanım'a yapılacak teminat tamamlama çağrısı tutarı ve yasal tamamlama seviyesi nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Teminat sürdürme seviyesine (15.000 TL) tamamlanmalı ve 1.500 TL yatırılmalıdır."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca sözleşme başına 100 TL olmak üzere toplam 1.000 TL yatırılmalıdır."
+      },
+      {
+        "key": "C",
+        "text": "Pozisyonlar derhal re'sen kapatılır ve hiçbir nakit tamamlama talep edilemez."
+      },
+      {
+        "key": "D",
+        "text": "Teminat Başlangıç Teminatına (20.000 TL) tamamlanmalı ve 6.500 TL nakit yatırılmalıdır."
+      },
+      {
+        "key": "E",
+        "text": "Teminat tutarı 13.500 TL olduğu için herhangi bir margin call çağrısı oluşmaz."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank Merkezi Karşı Taraf Mevzuatı ve VİOP İşleyiş Esasları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Teminat tutarı Sürdürme Teminatı seviyesinin (10 * 1.500 = 15.000 TL) altına düştüğünde Margin Call oluşur. TEMİNAT SÜRDÜRME SEVİYESİNE DEĞİL, BAŞLANGIÇ TEMİNATI SEVİYESİNE (20.000 TL) TAMAMLANMAK ZORUNDADIR!\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Başlangıç Teminatı Hedefi = 10 * 2.000 = 20.000 TL.\n- Mevcut Teminat = 13.500 TL.\n- Eksik Tutar (Yatırılması gereken) = 20.000 - 13.500 = 6.500 TL.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir (Başlangıç teminatına tamamlama ve 6.500 TL).\n5. ÇELDİRİCİ TUZAĞI: Teminatın sürdürme teminatına tamamlanacağını zannederek 15.000 - 13.500 = 1.500 TL demek (A şıkkı sınavın en büyük tuzağıdır!).",
+    "trap": "VİOP'ta teminat sürdürme seviyesinin altına indiğinde BAŞLANGIÇ TEMİNATI'na tamamlanır. 20.000 - 13.500 = 6.500 TL.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "VİOP Margin Call (Teminat Tamamlama Çağrısı) Kuralı"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_015",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "VİOP Günlük Uzlaşma ve Mark-to-Market Mekanizması",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Borsa İstanbul Vadeli İşlem ve Opsiyon Piyasası'nda (VİOP) uygulanan 'Günlük Uzlaşma Fiyatı' ve pozisyonların piyasa fiyatına göre değerlenmesi (Mark-to-Market) sürecine ilişkin;\n\nI. Her iş günü seans sonunda Takasbank tarafından hesaplanan günlük uzlaşma fiyatına göre tüm açık pozisyonların kâr/zararı hesaplanır.\nII. Oluşan kârlar yatırımcının serbest teminat hesabına alacak, zararlar ise teminat hesabından borç kaydedilir.\nIII. Günlük uzlaşma fiyatı tespit edilirken son 10 dakika içinde seansta gerçekleşen işlemlerin ağırlıklı ortalama fiyatı esas alınır.\n\nYukarıda belirtilen VİOP operasyonel kurallarından hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı kural mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı kural mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı kurallar mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı kurallar mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı kuralların tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul VİOP Prosedürü Bölüm 7.\n2. HUKUKİ / TEKNİK ÇERÇEVE: VİOP'ta kâr/zarar her gün uzlaşma fiyatıyla realize olur. Kârlar nemalanır, zararlar teminattan düşer. Günlük uzlaşma fiyatında seans sonu son 10 dakikanın ağırlıklı ortalaması kullanılır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncülleri mark-to-market mekanizmasını tam ve doğru tarif eder.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Kâr/zararın sadece vade sonunda hesaba geçeceğini zannetmek.",
+    "trap": "VİOP'ta mark-to-market günlük işler, kâr/zarar nakit yansır ve son 10 dakikalık ağırlıklı ortalama fiyat esas alınır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "VİOP Günlük Uzlaşma ve Mark-to-Market Mekanizması"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_016",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Tahvil Fiyatı ve Faiz Oranı Duyarlılığı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Sabit getirili borçlanma araçları teorisinde 'Kupon Oranı' ve 'Vade' (Maturity) unsurlarının tahvilin faiz duyarlılığı (fiyat oynaklığı) üzerindeki etkisine dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vadesi daha uzun ve kupon oranı daha düşük olan tahviller faiz değişimlerine karşı en yüksek fiyat duyarlılığına sahiptir."
+      },
+      {
+        "key": "B",
+        "text": "Kupon oranı yüksek olan tahvillerin faiz değişimlerine karşı fiyat duyarlılığı kuponsuz tahvillerden daha fazladır."
+      },
+      {
+        "key": "C",
+        "text": "Vadenin uzaması tahvil fiyatının faiz değişimlerine karşı duyarlılığını her zaman azaltır."
+      },
+      {
+        "key": "D",
+        "text": "Kupon oranı ve vadenin tahvilin süre (duration) değeri ve faiz riskine hiçbir etkisi bulunmaz."
+      },
+      {
+        "key": "E",
+        "text": "Sadece değişken faizli tahvillerin faiz duyarlılığı vardır, sabit faizli tahvillerin fiyatı sabittir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sabit Getirili Menkul Kıymetler Analiz İlkeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Tahvil teoremleri: 1) Vade uzadıkça süre ve faiz duyarlılığı artar. 2) Kupon oranı azaldıkça süre artar ve faiz duyarlılığı artar. Sıfır kuponlu (kuponsuz) uzun vadeli tahvil en yüksek faiz riskine sahiptir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A seçeneğindeki uzun vade ve düşük kupon kombinasyonu en yüksek fiyat oynaklığını üretir.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Yüksek kuponun daha çok risk taşıdığı yanılgısı (yüksek kupon nakit akışını öne çekerek süreyi kısaltır ve riski azaltır).",
+    "trap": "Düşük kupon ve uzun vade en yüksek faiz duyarlılığını (duration) oluşturur.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Tahvil Fiyatı ve Faiz Oranı Duyarlılığı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_017",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Eurobond (Eurotahvil) Yapısı ve Özellikleri",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Türkiye Cumhuriyeti Hazine ve Maliye Bakanlığı veya yerli bir banka tarafından uluslararası piyasalarda ihraç edilen Eurobond'lara (Dış Borçlanma Araçları) ilişkin hangisi YANLIŞTIR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İhraççının kendi ulusal para birimi dışındaki bir para birimi (genellikle ABD Doları veya Avro) cinsinden ihraç edilir."
+      },
+      {
+        "key": "B",
+        "text": "Eurobond ihraçlarında takas ve saklama yalnızca Borsa İstanbul Takasbank nezdinde yapılmak zorundadır."
+      },
+      {
+        "key": "C",
+        "text": "Genellikle hamiline yazılı olarak ihraç edilir ve uluslararası takas Euroclear veya Clearstream üzerinden yürütülür."
+      },
+      {
+        "key": "D",
+        "text": "ABD Doları cinsi Eurobondlar kural olarak 6 ayda bir, Avro cinsi Eurobondlar ise yılda bir kupon faizi öder."
+      },
+      {
+        "key": "E",
+        "text": "Borsa İstanbul Borçlanma Araçları Piyasası bünyesinde oluşturulan Dış Borçlanma Araçları Pazarı'nda işlem görebilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 31 ve Dış Borçlanma Araçları Düzenlemeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Eurobondlar uluslararası piyasada ihraç edilir ve küresel saklama Euroclear ve Clearstream nezdindedir. Takasbank'ta saklanma zorunluluğu yoktur.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B seçeneğindeki Takasbank zorunluluğu açıkça yanlıştır.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Eurobond'un adındaki 'Euro' sebebiyle sadece para biriminin Avro olabileceğini sanmak.",
+    "trap": "Eurobond takas ve saklaması küresel ölçekte Euroclear ve Clearstream nezdinde gerçekleştirilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Eurobond (Eurotahvil) Yapısı ve Özellikleri"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_018",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Varlığa Dayalı Menkul Kıymetler (VDMK) ve Fon Malvarlığı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-58.1 sayılı Varlığa Dayalı Menkul Kıymetler Tebliği uyarınca kurulan 'Varlık Finansmanı Fonu' (VFF) ve fon portföyünün hukuki statüsüne dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Varlık Finansmanı Fonu bağımsız bir anonim şirket tüzel kişiliğine ve yönetim kuruluna sahiptir."
+      },
+      {
+        "key": "B",
+        "text": "Fon kurucusu veya kaynak kuruluş iflas ederse fon portföyündeki tüm varlıklar iflas masasına devredilir."
+      },
+      {
+        "key": "C",
+        "text": "Fonun tüzel kişiliği yoktur; malvarlığı kurucunun malvarlığından ayrı olup rehin edilemez ve haczedilemez."
+      },
+      {
+        "key": "D",
+        "text": "VDMK ihraçlarından elde edilen fonlar kurucu tarafından serbestçe genel kredi ödemelerinde kullanılabilir."
+      },
+      {
+        "key": "E",
+        "text": "VFF sadece devlet iç borçlanma senetlerini teminat alabilir, tüketici kredilerini teminat alamaz."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 58 ve III-58.1 Tebliği m. 4, 12.\n2. HUKUKİ / TEKNİK ÇERÇEVE: VFF inançlı mülkiyet esasına göre kurulur, tüzel kişiliği yoktur. Fon malvarlığı kurucu ve kaynak kuruluştan tamamen ayrıdır; iflas masasına dahil edilemez, rehin ve haczedilemez.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı fon malvarlığının yasal dokunulmazlığını doğru tanımlar.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Fonun tüzel kişiliği olduğunu veya kurucu iflas edince varlıkların iflas masasına gideceğini düşünmek.",
+    "trap": "VFF'nin tüzel kişiliği yoktur; malvarlığı ayrı olup kurucunun iflasında dahi haczedilemez ve iflas masasına girmez.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Varlığa Dayalı Menkul Kıymetler (VDMK) ve Fon Malvarlığı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_019",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Borsa Yatırım Fonları (BYF / ETF) İşleyiş İlkeleri",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.2 sayılı Borsa Yatırım Fonlarına İlişkin Esaslar Tebliği uyarınca 'Borsa Yatırım Fonları' (ETF) işleyişi hakkında aşağıdakilerden hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "BYF katılma payları Borsa İstanbul Pay Piyasası'nda hiçbir şekilde hisse senedi gibi işlem göremez."
+      },
+      {
+        "key": "B",
+        "text": "BYF katılma paylarının alım satımı sadece fon kurucusu portföy yönetim şirketi gişelerinden fiziken yapılır."
+      },
+      {
+        "key": "C",
+        "text": "BYF'ler sadece tek bir şirketin hisse senedine yatırım yapmak üzere kurulabilir."
+      },
+      {
+        "key": "D",
+        "text": "Yetkilendirilmiş katılımcılar asgari pay oluşturma birimi karşılığında ayni oluşturma veya ayni geri alım yapabilirler."
+      },
+      {
+        "key": "E",
+        "text": "BYF portföy kompozisyonunun kamuya açıklanması ticari sır gerekçesiyle mevzuatça yasaklanmıştır."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.2 m. 5, 11, 14.\n2. HUKUKİ / TEKNİK ÇERÇEVE: BYF payları borsada sürekli işlem görür. Yetkilendirilmiş Katılımcılar (AP) sepet hisseleri verip fon payı alır (ayni oluşturma) veya fon payı verip hisseleri alır (ayni geri alım).\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği BYF'nin temel farkı olan ayni mekanizmayı açıklar.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: BYF'lerin borsada işlem görmediğini sanmak.",
+    "trap": "Yetkilendirilmiş katılımcılar hisse sepeti karşılığı ayni pay oluşturma ve geri alım yaparlar.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Borsa Yatırım Fonları (BYF / ETF) İşleyiş İlkeleri"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_020",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Yatırım Fonlarında Portföy Sınırlamaları (%10 Kuralı)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.1 sayılı Yatırım Fonlarına İlişkin Esaslar Tebliği uyarınca, standart bir yatırım fonunun portföyüne tek bir ihraççının para ve sermaye piyasası araçlarının dahil edilmesine dair genel kural ve istisnalara ilişkin;\n\nI. Kural olarak tek bir ihraççının sermaye piyasası araçları fon toplam değerinin %10'unu aşamaz.\nII. T.C. Hazine ve Maliye Bakanlığı tarafından ihraç edilen Devlet İç Borçlanma Senetleri için %10 sınırı uygulanmaz.\nIII. İpotek teminatlı menkul kıymetler ile ipoteğe dayalı menkul kıymetlerde tek bir ihraççı sınırı %25 olarak uygulanabilir.\n\nYukarıda yer alan yatırım fonu portföy sınırlamalarından hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı sınırlama mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı sınırlama mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı sınırlamalar mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı sınırlamalar mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı sınırlamaların tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.1 m. 18.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Fonlarda tek ihraççı limiti %10'dur (risk dağıtım kuralı). Ancak kamu borçlanma araçları (DİBS) bu sınırdan muaftır. İpotekli menkul kıymetlerde ise sınır %25'e kadar esnetilebilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü tebliğ hükümleridir.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: DİBS için de %10 sınırı olduğunu zannetmek.",
+    "trap": "Yatırım fonlarında tek ihraççı sınırı %10'dur; kamu borçlanma araçları muaftır, ipoteklilerde %25'tir.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Yatırım Fonlarında Portföy Sınırlamaları (%10 Kuralı)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_021",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Gayrimenkul Yatırım Fonları (GYF - III-52.3) Sınırlamaları",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.3 sayılı Gayrimenkul Yatırım Fonlarına İlişkin Esaslar Tebliği uyarınca kurulan GYF'lerin faaliyetlerine ve portföy sınırlamalarına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "GYF katılma payları yalnızca Nitelikli Yatırımcılara satılabilir ve fon portföyünün en az %80'i gayrimenkul yatırımlarından oluşmalıdır."
+      },
+      {
+        "key": "B",
+        "text": "GYF katılma payları halka arz edilerek borsa aracı kurumları gişelerinden tüm küçük bireysel yatırımcılara serbestçe satılabilir."
+      },
+      {
+        "key": "C",
+        "text": "GYF'ler kendi nam ve hesaplarına inşaat müteahhitliği yaparak ticari konut inşa edip satabilirler."
+      },
+      {
+        "key": "D",
+        "text": "GYF portföyüne alınan hiçbir gayrimenkul için bağımsız gayrimenkul değerleme raporu alınması zorunlu değildir."
+      },
+      {
+        "key": "E",
+        "text": "GYF katılma payı sahipleri diledikleri gün fona başvurarak katılma paylarını nakde çevirme hakkına koşulsuz sahiptir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.3 m. 14, 18, 24.\n2. HUKUKİ / TEKNİK ÇERÇEVE: GYF'ler sadece Nitelikli Yatırımcılara satılır. Portföyün en az %80'i gayrimenkul yatırımlarından oluşmalıdır. GYF'ler bizzat inşaat yapamazlar (müteahhitlik yasağı vardır).\n3. ADIM ADIM İNCELEME / HESAPLAMA: A seçeneğindeki nitelikli yatırımcı ve %80 gayrimenkul kuralı tebliğin çekirdek hükmüdür.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: GYF'lerin konut müteahhitliği yapabileceği sanrısı.",
+    "trap": "GYF payları yalnızca Nitelikli Yatırımcılara ihraç edilir ve portföyün asgari %80'i gayrimenkul olmalıdır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Gayrimenkul Yatırım Fonları (GYF - III-52.3) Sınırlamaları"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_022",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Girişim Sermayesi Yatırım Fonları (GSYF - III-52.4)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.4 sayılı Girişim Sermayesi Yatırım Fonlarına İlişkin Esaslar Tebliği uyarınca, GSYF'lerin girişim şirketlerine yapacakları yatırımlara ilişkin hangisi YANLIŞTIR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Girişim şirketlerine doğrudan sermaye koyarak pay sahibi olmak şeklinde yatırım yapabilirler."
+      },
+      {
+        "key": "B",
+        "text": "Fon toplam değerinin en az %80'ini Borsa İstanbul Yıldız Pazar'da işlem gören hisse senetlerine yatırmak zorundadırlar."
+      },
+      {
+        "key": "C",
+        "text": "Girişim şirketlerinin ihraç ettiği borçlanma araçlarını ve dönüştürülebilir borçlanma araçlarını satın alabilirler."
+      },
+      {
+        "key": "D",
+        "text": "Girişim şirketlerine yurt dışında kurulu girişim sermayesi fonları aracılığıyla dolaylı ortak olabilirler."
+      },
+      {
+        "key": "E",
+        "text": "Girişim şirketlerine sermaye benzeri kredi veya paya dönüştürülebilir finansman sağlayabilirler."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.4 m. 18, 19.\n2. HUKUKİ / TEKNİK ÇERÇEVE: GSYF'ler fon toplam değerinin en az %80'ini GİRİŞİM SERMAYESİ YATIRIMLARINA (halka açık olmayan şirketlere) yönlendirmek zorundadır. Borsadaki Yıldız Pazar hisselerine %80 zorunluluğu tamamen yanlıştır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B şıkkı GSYF tanımıyla çelişir.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: GSYF'nin borsada işlem gören büyük şirketlere yatırım fonu sanılması.",
+    "trap": "GSYF portföyünün en az %80'i girişim şirketlerine yatırılmalıdır, borsa hisselerine değil.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Girişim Sermayesi Yatırım Fonları (GSYF - III-52.4)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_023",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Pay Türleri ve Hamiline/Nama Yazılı Pay Devri",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "6102 sayılı TTK ve Sermaye Piyasası Kanunu uyarınca anonim ortaklık pay türleri ve payların devir rejimine dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hamiline yazılı payların bedeli tamamen ödenmemiş olsa dahi bastırılıp ortaklara teslim edilmesi mümkündür."
+      },
+      {
+        "key": "B",
+        "text": "Hamiline yazılı payların devri MKK'ya bildirim yapılmaksızın sadece zilyetliğin devri ile şirket ve üçüncü kişilere karşı hüküm ifade eder."
+      },
+      {
+        "key": "C",
+        "text": "Hamiline yazılı pay senetlerinin devri Merkezi Kayıt Kuruluşu'na (MKK) bildirildiği tarihte hüküm ifade eder."
+      },
+      {
+        "key": "D",
+        "text": "Borsada işlem gören halka açık ortaklık payları fiziki olarak hamiline yazılı pay senedi şeklinde ortaklara elden dağıtılır."
+      },
+      {
+        "key": "E",
+        "text": "Nama yazılı payların devrinde ciro ve zilyetliğin devri yeterli olup şirket pay defterine kayıt yapılması gereksizdir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6102 sayılı TTK m. 484, 489 ve 6362 sayılı SPKn m. 13.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Hamiline yazılı paylar için MKK HPKS bildirimi zorunludur. Bildirim yapılmadıkça hak kullanılamaz ve devir şirkete/üçüncü kişilere karşı ileri sürülemez. Borsada paylar kaydidir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı 7262 sayılı Kanunla TTK 489'a eklenen MKK tescil hükmünü doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Eski kural olan 'sadece zilyetliğin devri yeterlidir' bilgisine takılmak (B şıkkı).",
+    "trap": "Hamiline pay senetlerinin devri MKK'ya bildirildiği tarihte şirkete ve üçüncü kişilere karşı hüküm ifade eder.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Pay Türleri ve Hamiline/Nama Yazılı Pay Devri"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_024",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Oyda İmtiyaz Sınırları ve Kurumsal Yönetim (TTK m. 479)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "6102 sayılı Türk Ticaret Kanunu m. 479 uyarınca anonim ortaklıklarda 'Oyda İmtiyaz' tanınmasına ilişkin yasal üst sınır ve kurallar hakkında hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bir paya en fazla 5 oy hakkı tanınabilir ve bu sınırlama hiçbir surette mahkemece veya genel kurulca aşılamaz."
+      },
+      {
+        "key": "B",
+        "text": "Halka açık ortaklıklarda oyda imtiyaz tanınması Sermaye Piyasası Kanunu uyarınca kesin olarak yasaklanmıştır."
+      },
+      {
+        "key": "C",
+        "text": "Oyda imtiyaz esas sözleşme değişikliği gerektirmeksizin yönetim kurulu kararıyla serbestçe verilebilir."
+      },
+      {
+        "key": "D",
+        "text": "Bir paya en çok 15 oy hakkı tanınabilir; ancak bu sınırlama kurumlaşmanın gerektirdiği hallerde mahkeme kararıyla kaldırılabilir."
+      },
+      {
+        "key": "E",
+        "text": "Oyda imtiyazlı paylar genel kurulda esas sözleşme değişikliği ve yönetim kurulunun ibra edilmemesi kararlarında da geçerlidir."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6102 sayılı TTK m. 479/2.\n2. HUKUKİ / TEKNİK ÇERÇEVE: TTK uyarınca oyda imtiyaz sınırı pay başına en çok 15 oydur. Haklı sebeplerle mahkemece kaldırılabilir. Ayrıca esas sözleşme değişikliği ve ibra davalarında oyda imtiyaz KULLANILAMAZ.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği TTK m. 479'un yasal kural ve istisnasını tam olarak ifade eder.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Azami sınırın 10 veya 20 sanılması.",
+    "trap": "Oyda imtiyaz sınırı en fazla 15 oydur; esas sözleşme değişikliğinde ve ibra davalarında imtiyaz kullanılamaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Oyda İmtiyaz Sınırları ve Kurumsal Yönetim (TTK m. 479)"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1003_sert_025",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Katılma İntifa Senetleri (KİS - II-31.1)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "II-31.1 sayılı Tebliğ uyarınca sermaye piyasasında ortaklıklar tarafından ihraç edilebilen 'Katılma İntifa Senetleri'ne (KİS) ilişkin;\n\nI. KİS sahiplerine ortaklığın genel kurulunda oy kullanma ve şirket yönetimine katılma hakkı VERİLEMEZ.\nII. KİS sahiplerine kârdan pay alma, tasfiye bakiyesinden pay alma veya yeni pay alma hakları tanınabilir.\nIII. KİS'ler süreli veya süresiz olarak ihraç edilebilir ve bedelleri tamamen nakit olarak ödenmelidir.\n\nYukarıda yer alan hukuki ilkelerden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı ilke mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı ilke mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı ilkeler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı ilkeler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı ilkelerin tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: II-31.1 Borçlanma Araçları Tebliği m. 27 ve TTK m. 502.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Katılma intifa senetleri mali haklar (kâr payı, tasfiye payı) sağlar. Ancak ASLA oy hakkı ve yönetime katılma hakkı vermez. Süreli veya süresiz çıkarılabilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü KİS rejimine uygundur.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: KİS sahiplerine oy hakkı verilebileceği yanılgısı.",
+    "trap": "Katılma intifa senedi sahiplerine hiçbir şekilde oy hakkı ve idari hak tanınamaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Katılma İntifa Senetleri (KİS - II-31.1)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_026",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Tahvil Konveksitesi (Convexity) ve Süre İyileştirmesi",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Sabit getirili bir tahvilin faiz oranlarındaki değişime bağlı fiyat duyarlılığı analiz edilirken yalnızca Süre (Duration) yerine 'Konveksite'nin (Bükeylik) de hesaba katılmasının nedeni hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Süre doğrusal bir yaklaşım sunduğundan, büyük faiz değişimlerinde fiyat-getiri eğriselliğini yakalamak amacıyla"
+      },
+      {
+        "key": "B",
+        "text": "Konveksite tahvilin vadesini sıfırlayarak piyasa faiz riskini tamamen ortadan kaldıran bir finansal sözleşmedir."
+      },
+      {
+        "key": "C",
+        "text": "Konveksite sadece hisse senedi opsiyonlarında kullanılan bir katsayı olup borçlanma araçlarında hesaplanamaz."
+      },
+      {
+        "key": "D",
+        "text": "Süre sadece kupon faizlerini ölçerken konveksite tahvilin tabi olduğu yasal kurumlar vergisi oranını belirler."
+      },
+      {
+        "key": "E",
+        "text": "Piyasa faiz oranları düştüğünde tahvil fiyatının da aynı oranda düşmesini sağlamak amacıyla bir ceza faktörüdür."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sermaye Piyasasında Portföy Yönetimi ve Faiz Riski Yönetimi İlkeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Tahvil fiyatı ile getiri arasındaki ilişki eğriseldir (convex). Duration bu eğriye teğet geçen doğrudur. Küçük faiz adımlarında yeterlidir; ancak büyük adımlarda konveksite terimi eklenmelidir: Delta P/P ≈ -MD*Delta y + 0.5*Convexity*(Delta y)^2.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A seçeneği eğrisellik ve doğrusal yaklaşım hatasını tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Konveksitenin faiz riskini sıfırlayan bir enstrüman sanılması (B şıkkı).",
+    "trap": "Duration doğrusal yaklaşımdır; büyük faiz hareketlerinde eğriselliği yakalamak için Konveksite eklenir.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Tahvil Konveksitesi (Convexity) ve Süre İyileştirmesi"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_027",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Borçlanma Aracı İhraç Limiti (II-31.1 m. 9)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "II-31.1 sayılı Tebliğ uyarınca, halka açık anonim ortaklıklar ile halka açık olmayan anonim ortaklıkların ihraç edebilecekleri azami borçlanma aracı tavanı (ihraç limiti) özsermayenin sırasıyla kaç katıdır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Halka açık ortaklıklar için 3 katı, halka açık olmayanlar için 5 katıdır."
+      },
+      {
+        "key": "B",
+        "text": "Halka açık ortaklıklar için 5 katı, halka açık olmayanlar için 3 katıdır."
+      },
+      {
+        "key": "C",
+        "text": "Her iki ortaklık türü için de istisnasız olarak özsermayenin 2 katıdır."
+      },
+      {
+        "key": "D",
+        "text": "Halka açık ortaklıklar için 10 katı, halka açık olmayanlar için 1 katıdır."
+      },
+      {
+        "key": "E",
+        "text": "Borçlanma araçlarında hiçbir ihraç limiti bulunmayıp ortaklıklar sınırsız ihraç yapabilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: II-31.1 Tebliği m. 9.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Borçlanma aracı ihraç limiti son yıllık denetlenmiş bilançodaki özsermayeye göre belirlenir:\n- Halka açık ortaklıklar: Özsermayenin 5 KATI.\n- Halka açık olmayan ortaklıklar: Özsermayenin 3 KATI.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B seçeneğindeki 5 kat ve 3 kat yasal sınırdır.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Halka açık olmayan şirketlere daha yüksek tavan verildiği zannı (A şıkkı).",
+    "trap": "Borçlanma aracı ihraç limiti: Halka açık şirketlerde özsermayenin 5 katı, halka açık olmayanlarda 3 katıdır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Borçlanma Aracı İhraç Limiti (II-31.1 m. 9)"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1003_sert_028",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "VİOP BIST 30 Endeks Vadeli Sözleşme Büyüklüğü",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "BIST 30 Endeks Vadeli İşlem Sözleşmesinde endeks uzlaşma fiyatı 10.000 puan iken, sözleşme büyüklüğü çarpanı 10'dur (1 sözleşme = Endeks Değeri x 10 TL). Başlangıç teminatı sözleşme başına 1.250 TL'dir.\n\nSöz konusu sözleşmeden 1 adet alan bir yatırımcının üstlendiği pozisyonun piyasa değeri (nominal büyüklüğü) ve pozisyondaki kaldıraç oranı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pozisyon Değeri: 10.000 TL; Kaldıraç Oranı: 8 kat"
+      },
+      {
+        "key": "B",
+        "text": "Pozisyon Değeri: 50.000 TL; Kaldıraç Oranı: 40 kat"
+      },
+      {
+        "key": "C",
+        "text": "Pozisyon Değeri: 100.000 TL; Kaldıraç Oranı: 80 kat"
+      },
+      {
+        "key": "D",
+        "text": "Pozisyon Değeri: 125.000 TL; Kaldıraç Oranı: 100 kat"
+      },
+      {
+        "key": "E",
+        "text": "Pozisyon Değeri: 200.000 TL; Kaldıraç Oranı: 160 kat"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul VİOP BIST 30 Vadeli İşlem Sözleşmesi Özellikleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Sözleşme Büyüklüğü = Endeks Puanı * Sözleşme Çarpanı. Kaldıraç = Pozisyon Büyüklüğü / Yatırılan Teminat.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Pozisyon Büyüklüğü = 10.000 * 10 = 100.000 TL.\n- Yatırılan Başlangıç Teminatı = 1.250 TL.\n- Kaldıraç Oranı = 100.000 / 1.250 = 80 kat.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğinde 100.000 TL ve 80 kat doğru verilmiştir.\n5. ÇELDİRİCİ TUZAĞI: Çarpanı 1 kabul edip pozisyon büyüklüğünü 10.000 TL ve kaldıracı 8 kat sanmak (A şıkkı).",
+    "trap": "Pozisyon Büyüklüğü = 10.000 * 10 = 100.000 TL. Kaldıraç = 100.000 / 1.250 = 80 kattır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "VİOP BIST 30 Endeks Vadeli Sözleşme Büyüklüğü"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_029",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Efektif Yıllık Faiz Oranı Hesabı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Bir mevduat veya borçlanma aracının yıllık nominal faiz oranı %40'tır ve faiz ödemeleri 6 ayda bir (yılda 2 dönem) bileşik olarak anaparaya ilave edilmektedir.\n\nSöz konusu finansal enstrümanın 'Efektif Yıllık Bileşik Faiz Oranı' (EAR) yüzde kaçtır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Efektif yıllık bileşik faiz oranı yüzde 40,00'dır."
+      },
+      {
+        "key": "B",
+        "text": "Efektif yıllık bileşik faiz oranı yüzde 42,00'dir."
+      },
+      {
+        "key": "C",
+        "text": "Efektif yıllık bileşik faiz oranı yüzde 43,50'dir."
+      },
+      {
+        "key": "D",
+        "text": "Efektif yıllık bileşik faiz oranı yüzde 44,00'tür."
+      },
+      {
+        "key": "E",
+        "text": "Efektif yıllık bileşik faiz oranı yüzde 46,41'dir."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Para ve Sermaye Piyasasında Faiz Hesaplama Standartları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Efektif Yıllık Faiz Formülü:\nr_ef = (1 + r_nom / m)^m - 1. Burada r_nom = 0,40, m = 2 (6 aylık periyot sayısı).\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Dönemsel Faiz = 0,40 / 2 = 0,20 (%20).\n- r_ef = (1 + 0,20)^2 - 1 = (1,20)^2 - 1 = 1,44 - 1 = 0,44 = %44,00.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir (%44,00).\n5. ÇELDİRİCİ TUZAĞI: Nominal faiz ile efektif faizi aynı kabul edip %40 demek veya çeyreklik (m=4) hesapla karıştırmak.",
+    "trap": "r_ef = (1 + 0,40/2)^2 - 1 = 1,20^2 - 1 = %44,00.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Efektif Yıllık Faiz Oranı Hesabı"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_030",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Varantlarda Zaman Değeri Erimesi (Theta)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Varant fiyatlamasında kullanılan Yunan harflerinden 'Teta' (Theta) göstergesi ve varantın zaman değeri erimesine ilişkin;\n\nI. Vadeye kalan süre azaldıkça varantın zaman değeri (time value) hızlanarak erir ve vade bitiminde sıfıra iner.\nII. Vade yaklaştıkça Teta'nın mutlak değeri artar; yani varant bir iş gününde daha fazla değer kaybeder.\nIII. Teta, diğer tüm faktörler sabitken vadenin bir gün kısalmasının varant fiyatında oluşturduğu değişimi gösterir.\n\nYukarıda yer alan finansal tespitlerden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı tespit teorik olarak doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı tespit teorik olarak doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı tespitler teorik olarak doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı tespitler teorik olarak doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı tespitlerin tamamı teorik olarak doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: Varant Fiyatlama Modelleri (Black-Scholes Modeli).\n2. HUKUKİ / TEKNİK ÇERÇEVE: Teta zaman aşımı erimesidir. Varantın zaman değeri vade sonuna doğru doğrusal değil, parabolik olarak hızlanarak tükenir. Vade sonunda zaman değeri sıfırdır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin her biri varant matematiğini tam yansıtır.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Zaman erimesinin her gün eşit miktarda doğrusal olduğunu varsaymak.",
+    "trap": "Teta zaman erimesini ölçer. Vade yaklaştıkça zaman değeri erimesi hızlanır ve vade sonunda sıfırlanır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Varantlarda Zaman Değeri Erimesi (Theta)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_031",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Pay Takas Döngüsü (T+2) ve Temettü Hak Edişi",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Hisseleri Borsa İstanbul'da işlem gören ve nakit temettü dağıtım tarihi 12 Mayıs Salı olan bir ortaklıktan nakit temettü almaya hak kazanabilmek için, yatırımcının en geç hangi işlem gününün kapanışı itibarıyla ilgili hisse senedine sahip olması gerekir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "En geç 11 Mayıs Pazartesi günü seans kapanışı itibarıyla paylara sahip olunmalıdır."
+      },
+      {
+        "key": "B",
+        "text": "En geç 12 Mayıs Salı günü seans kapanışı itibarıyla paylara sahip olunmalıdır."
+      },
+      {
+        "key": "C",
+        "text": "En geç 14 Mayıs Perşembe (T+2) günü seans kapanışı itibarıyla paylara sahip olunmalıdır."
+      },
+      {
+        "key": "D",
+        "text": "En geç 8 Mayıs Cuma günü seans açılışı itibarıyla paylara sahip olunmalıdır."
+      },
+      {
+        "key": "E",
+        "text": "Temettü tarihinden en az 30 gün önce hisse senedi satın alınmış olmalıdır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: II-19.1 Kâr Payı Tebliği ve Borsa İstanbul Takas Esasları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Temettü dağıtım tarihi (hak kullanım tarihi) hissenin temettü düşülmüş fiyattan işlem görmeye başladığı gündür. Temettü alabilmek için temettü dağıtım tarihinden bir önceki işlem gününün seans kapanışında hisseye sahip olmak gerekir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: 12 Mayıs Salı temettü günü ise, en geç 11 Mayıs Pazartesi kapanışta hisseye sahip olunmalıdır.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Salı günü hisse alsa da temettü alabileceğini sanmak (Salı günü hisse temettüsüz fiyattan açılır).",
+    "trap": "Temettüye hak kazanmak için temettü dağıtım tarihinden önceki son iş günü kapanışta hisseye sahip olunmalıdır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Pay Takas Döngüsü (T+2) ve Temettü Hak Edişi"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_032",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "VİOP Pay Vadeli İşlemlerde Fiziki Teslimat",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Borsa İstanbul Vadeli İşlem ve Opsiyon Piyasası'nda (VİOP) işlem gören Pay Vadeli İşlem Sözleşmelerinin vade sonu uzlaşma yöntemi ve fiziki teslimat prosedürüne ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tüm pay vadeli sözleşmelerinde vade sonu yalnızca nakdi uzlaşma ile kapatılır, hisse devri yapılmaz."
+      },
+      {
+        "key": "B",
+        "text": "Pay vadeli işlem sözleşmelerinde vade sonu uzlaşma yöntemi fiziki teslimattır ve takas T+2'de gerçekleşir."
+      },
+      {
+        "key": "C",
+        "text": "Fiziki teslimat için yatırımcının şirketin genel merkezine bizzat giderek payları elden teslim etmesi gerekir."
+      },
+      {
+        "key": "D",
+        "text": "Fiziki teslimat sözleşmelerinde hiçbir zaman temerrüt faizi ve temerrüt prosedürü işletilemez."
+      },
+      {
+        "key": "E",
+        "text": "Pay vadeli işlemlerinde fiziki teslimat sadece BIST 30 Endeks vadeli sözleşmelerinde uygulanır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul VİOP İşleyiş Prosedürü Madde 18.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Borsa İstanbul VİOP'ta tek hisse senedi üzerine yazılmış vadeli işlem sözleşmelerinde uzlaşma yöntemi FİZİKİ TESLİMATTIR. Vade sonunda uzun pozisyon sahiplerine hisse senedi devredilir, kısa pozisyon sahipleri hisseyi teslim eder.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B şıkkı fiziki teslimat kuralını ve T+2 takas gününü tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Tüm VİOP sözleşmelerinin nakdi uzlaşmalı olduğunu sanmak (Endeks nakdi, hisse vadeliler fiziki teslimatlıdır).",
+    "trap": "Tek pay vadeli işlem sözleşmelerinde vade sonu uzlaşma FİZİKİ TESLİMATTIR (T+2 takas).",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "VİOP Pay Vadeli İşlemlerde Fiziki Teslimat"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_033",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Yatırım Fonlarında Fiyat Hesaplama İlkeleri",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.1 sayılı Yatırım Fonlarına İlişkin Esaslar Tebliği uyarınca, bir menkul kıymet yatırım fonunun 'Pay Birim Fiyatı' nasıl hesaplanır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fon portföyündeki menkul kıymetlerin toplam alış maliyeti toplam pay sayısına bölünerek hesaplanır."
+      },
+      {
+        "key": "B",
+        "text": "Fon portföyündeki menkul kıymetlerin nominal değerleri toplamı tedavüldeki pay sayısına bölünerek bulunur."
+      },
+      {
+        "key": "C",
+        "text": "Fonun net varlık değeri (toplam portföy değeri + diğer varlıklar - fon borçları) tedavüldeki pay sayısına bölünerek hesaplanır."
+      },
+      {
+        "key": "D",
+        "text": "Her gün Borsa İstanbul Yönetim Kurulu tarafından fon kurucusuna bildirilen sabit fiyattır."
+      },
+      {
+        "key": "E",
+        "text": "Fon kurucusunun ödenmiş sermayesi toplam ihraç tavanına bölünerek haftalık belirlenir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.1 sayılı Tebliğ m. 25.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Fon Pay Birim Fiyatı = Fon Net Varlık Değeri (FNVD) / Tedavüldeki Pay Sayısı. FNVD = (Portföy Değeri + Diğer Varlıklar / Alacaklar) - (Fon Borçları / Yükümlülükleri).\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı net varlık değeri üzerinden pay birim fiyat formülünü eksiksiz tanımlar.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Alış maliyetinin esas alınacağını düşünmek (fonlar piyasa fiyatıyla değerlenir).",
+    "trap": "Fon pay birim fiyatı = Fon Net Varlık Değeri / Tedavüldeki Pay Sayısıdır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Yatırım Fonlarında Fiyat Hesaplama İlkeleri"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1003_sert_034",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "İpotek Teminatlı Menkul Kıymetler (İTMK - III-58.2)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-58.2 sayılı İpotek Teminatlı Menkul Kıymetler Tebliği uyarınca ihraç edilen İTMK'ların 'Teminat Havuzu' ve yatırımcı güvencesine dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Teminat havuzundaki ipotekli konut kredileri ihraççı bankanın genel bilançosundan tamamen çıkartılır."
+      },
+      {
+        "key": "B",
+        "text": "İhraççı banka iflas ederse teminat havuzundaki varlıklar doğrudan mudilerin mevduatlarını ödemede kullanılır."
+      },
+      {
+        "key": "C",
+        "text": "İTMK sahipleri sadece teminat havuzuna başvurabilir, ihraççı bankanın genel malvarlığına başvuramazlar."
+      },
+      {
+        "key": "D",
+        "text": "İTMK yatırımcıları hem teminat havuzu üzerinde birinci derecede rüçhanlı hakka, hem de ihraççının genel malvarlığına başvurma (çifte teminat) hakkına sahiptir."
+      },
+      {
+        "key": "E",
+        "text": "Teminat havuzunda yer alan ipoteklerin değerlemesi sadece 10 yılda bir defa yapılabilir."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-58.2 sayılı Tebliğ m. 4, 11, 23.\n2. HUKUKİ / TEKNİK ÇERÇEVE: İTMK (Covered Bond) bilanço içi ihraçtır. En büyük güvencesi 'Çifte Teminat İlkesi'dir (Dual Recourse): Yatırımcı hem teminat havuzuna rüçhanlıdır hem de ihraççının genel malvarlığına başvurabilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneğindeki çifte teminat kuralı İTMK'nın temel özelliğidir.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: VDMK gibi bilanço dışı sanıp sadece teminat havuzuna başvurulabileceğini düşünmek (C şıkkı).",
+    "trap": "İTMK yatırımcısı çifte teminat hakkına sahiptir: Hem teminat havuzu üzerinde rüçhanlıdır hem de bankaya başvurabilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "İpotek Teminatlı Menkul Kıymetler (İTMK - III-58.2)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_035",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Gelir Ortaklığı Senetleri (GOS) ve Gelire Endeksli Senetler (GES)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Kamu kuruluşları ve Hazine tarafından ihraç edilen Gelir Ortaklığı Senetleri (GOS) ve Gelire Endeksli Senetlere (GES) ilişkin;\n\nI. GOS, kamuya ait köprü, baraj, otoyol gibi tesislerin gelirlerine ortaklık hakkı veren senetlerdir.\nII. GOS sahipleri ilgili kamu tesisinin mülkiyetine ortak olmazlar; yalnızca tesisin sağladığı gelirden pay alırlar.\nIII. GES'lerin getirisi Devlet Malzeme Ofisi, KİT'ler veya kamu bankalarının bütçeye aktardığı hasılat paylarına endekslenir.\n\nYukarıda yer alan tespitlerden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı tespit mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı tespit mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı tespitler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı tespitler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı tespitlerin tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: 2983 sayılı Kanun ve Hazine Finansman Düzenlemeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: GOS mülkiyet devretmez, gelir ortaklığı sağlar. GES getirisi ise KİT'lerin bütçeye aktardığı hasılat paylarına endekslidir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü GOS ve GES'in yasal nitelikleridir.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: GOS sahiplerinin köprünün veya barajın mülkiyetine paydaş olduğunu zannetmek.",
+    "trap": "GOS mülkiyete değil sadece gelire ortaklık sağlar; GES ise KİT hasılat paylarına endekslidir.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Gelir Ortaklığı Senetleri (GOS) ve Gelire Endeksli Senetler (GES)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_036",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "İskontolu Tahvilde İç Verim Oranı (IRR / YTM)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Vadesine tam 2 yıl kalmış olan ve vadesinde 100 TL nominal değer ödeyecek olan sıfır kuponlu (iskontolu) bir tahvil piyasada 64 TL fiyattan işlem görmektedir.\n\nBu tahvili satın alan bir yatırımcının elde edeceği yıllık bileşik iç verim oranı (YTM / Vadeye Kadar Getiri) yüzde kaçtır?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yıllık bileşik iç verim oranı yüzde 25,00'dir."
+      },
+      {
+        "key": "B",
+        "text": "Yıllık bileşik iç verim oranı yüzde 28,12'dir."
+      },
+      {
+        "key": "C",
+        "text": "Yıllık bileşik iç verim oranı yüzde 36,00'dır."
+      },
+      {
+        "key": "D",
+        "text": "Yıllık bileşik iç verim oranı yüzde 56,25'tir."
+      },
+      {
+        "key": "E",
+        "text": "Yıllık bileşik iç verim oranı yüzde 20,00'dir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sabit Getirili Menkul Kıymetler İç Verim Oranı Esasları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Sıfır kuponlu tahvilde Fiyat = Nominal / (1 + y)^n. Buradan (1 + y)^n = Nominal / Fiyat -> 1 + y = (Nominal / Fiyat)^(1/n).\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Nominal = 100 TL, Fiyat = 64 TL, n = 2 yıl.\n- (1 + y)^2 = 100 / 64 = 1,5625.\n- 1 + y = Karekök(1,5625) = 1,25.\n- y = 1,25 - 1 = 0,25 = %25,00.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir (%25,00).\n5. ÇELDİRİCİ TUZAĞI: İki yıllık toplam getiriyi (36/64 = %56,25) ikiye bölüp basitçe %28,12 bulmak (B şıkkı) veya 100 - 64 = %36 demek.",
+    "trap": "(1 + y)^2 = 100 / 64 = 1,5625 -> 1 + y = 1,25 -> y = %25,00.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "İskontolu Tahvilde İç Verim Oranı (IRR / YTM)"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_037",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "VİOP Taşıma Arbitrajı (Cash-and-Carry)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Piyasada bir hisse senedinin vadeli işlem sözleşmesi fiyatının, taşıma maliyeti modeliyle hesaplanan teorik vadeli fiyatından DAHA YÜKSEK (aşırı değerli) olduğu tespit edilmiştir.\n\nBu durumda risksiz kâr elde etmek isteyen bir arbitrajörün piyasada derhal yapması gereken işlem çifti hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Spot piyasada hisse senedi açığa satılır, VİOP'ta vadeli sözleşme satın alınır (uzun)."
+      },
+      {
+        "key": "B",
+        "text": "Spot piyasada hisse senedi satın alınır, VİOP'ta vadeli işlem sözleşmesi satılır (kısa)."
+      },
+      {
+        "key": "C",
+        "text": "Hem spot piyasada hisse senedi hem de VİOP'ta vadeli sözleşme aynı anda satın alınır."
+      },
+      {
+        "key": "D",
+        "text": "Hem spot piyasada hem de VİOP'ta açığa satış pozisyonu açılır."
+      },
+      {
+        "key": "E",
+        "text": "Tahvil piyasasında faiz takası yapılır, vadeli piyasada hiçbir işlem yapılmaz."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sermaye Piyasasında Türev Piyasalar Arbitraj Mekanizmaları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Vadeli Fiyat > Teorik Fiyat ise vadeli kontrat pahalıdır, spot ucuzdur. Ucuz olan spot piyasadan alınır, pahalı olan vadeli piyasada satılır (Kısa pozisyon). Buna Taşıma Arbitrajı (Cash and Carry Arbitrage) denir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B seçeneği taşıma arbitrajının tanımıdır.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Ters Taşıma Arbitrajı (Reverse Cash and Carry) ile karıştırmak (A şıkkı).",
+    "trap": "Vadeli fiyat teorikten yüksekse: Spot alınır, vadeli satılır (Taşıma Arbitrajı).",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "VİOP Taşıma Arbitrajı (Cash-and-Carry)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_038",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Tahvil İtfa Türleri ve Erken İtfa (Call Option)",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "İhraççı şirkete belirli tarihlerde ve belirlenen bir fiyattan tahvilleri vadesinden önce geri satın alma hakkı veren tahvillere ne ad verilir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yatırımcıya satma hakkı tanıyan tahviller (Puttable Bonds)"
+      },
+      {
+        "key": "B",
+        "text": "Dönüştürülebilir tahviller (Convertible Bonds)"
+      },
+      {
+        "key": "C",
+        "text": "İhraççıya geri çağırma hakkı tanıyan tahviller (Callable Bonds)"
+      },
+      {
+        "key": "D",
+        "text": "Kuponsuz sıfır faizli devlet iç borçlanma senetleri"
+      },
+      {
+        "key": "E",
+        "text": "Enflasyona endeksli değişken faizli tahviller"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: II-31.1 Borçlanma Araçları Tebliği m. 15.\n2. HUKUKİ / TEKNİK ÇERÇEVE: İhraççının tahvili erken itfa etme (geri çağırma) hakkı 'Callable Bond' olarak adlandırılır. İhraççı piyasa faizleri düştüğünde eski yüksek faizli tahvili çağırıp daha düşük faizle borçlanır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı Callable Bond tanımıdır.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Yatırımcının satma hakkı olan Puttable Bond ile karıştırmak (A şıkkı).",
+    "trap": "İhraççıya vadesinden önce tahvili geri satın alma hakkı veren tahviller 'Callable Bond'dur.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Tahvil İtfa Türleri ve Erken İtfa (Call Option)"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1003_sert_039",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Varant İhraç Limitleri ve Piyasa Yapıcılık",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Borsa İstanbul Varant Pazarı'nda likiditeyi sağlamak amacıyla faaliyet gösteren 'Piyasa Yapıcı'nın yükümlülüklerine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Piyasa yapıcı seans boyunca sadece alış kotasyonu girmekle yükümlüdür, satış kotasyonu giremez."
+      },
+      {
+        "key": "B",
+        "text": "Piyasa yapıcı kotasyonları arasında azami fiyat farkı (makas) serbestçe sınırsız belirlenebilir."
+      },
+      {
+        "key": "C",
+        "text": "Piyasa yapıcının girdiği kotasyon emirleri iptal edilemez ve gün boyunca değiştirilemez."
+      },
+      {
+        "key": "D",
+        "text": "Piyasa yapıcı belirlenen kotasyon aralığında hem alış hem de satış yönünde çift taraflı kotasyon girmek zorundadır."
+      },
+      {
+        "key": "E",
+        "text": "Piyasa yapıcı Borsa İstanbul Yönetim Kurulu izni olmadan varant fiyatını tek taraflı belirleyemez."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Varant Piyasası Piyasa Yapıcılık Düzenlemeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Varantlarda piyasa yapıcı sürekli likidite sağlamak üzere çift taraflı (alış ve satış) kotasyon vermekle yükümlüdür. Kotasyonlar belirlenen azami makas aralığında olmalıdır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği piyasa yapıcılığın temel şartını doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Sadece alış yönlü kotasyon girilebileceği yanılgısı.",
+    "trap": "Piyasa yapıcı belirlenen maksimum spread (makas) içinde çift taraflı kotasyon vermekle yükümlüdür.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Varant İhraç Limitleri ve Piyasa Yapıcılık"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_040",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Fon Sepeti Fonları (Fund of Funds) Sınırlamaları",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.1 sayılı Yatırım Fonlarına İlişkin Esaslar Tebliği uyarınca 'Fon Sepeti Fonları'nın diğer yatırım fonlarının katılma paylarına yatırım yapma sınırlarına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fon sepeti fonu toplam portföyünün %100'ünü tek bir yatırım fonunun katılma paylarına yatırabilir."
+      },
+      {
+        "key": "B",
+        "text": "Fon sepeti fonları serbest fon katılma paylarına hiçbir surette yatırım yapamazlar."
+      },
+      {
+        "key": "C",
+        "text": "Fon sepeti fonu portföyünün en az %50'si nakit mevduatta tutulmak zorundadır."
+      },
+      {
+        "key": "D",
+        "text": "Fon sepeti fonları yabancı fon katılma paylarına yatırım yapmaktan kanunen men edilmiştir."
+      },
+      {
+        "key": "E",
+        "text": "Fon portföy değerinin en az %80'i diğer fonların ve borsa yatırım fonlarının katılma paylarından oluşur ve tek bir fona yatırım %20'yi aşamaz."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.1 m. 6, 18.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Fon sepeti fonlarında portföyün en az %80'i diğer yatırım fonu ve BYF paylarından oluşmalıdır. Çeşitlendirme gereği tek bir fona yapılabilecek yatırım fon portföy değerinin %20'sini aşamaz.\n3. ADIM ADIM İNCELEME / HESAPLAMA: E seçeneğindeki %80 ve %20 kuralları mevzuatın doğrudan amir hükmüdür.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Tek fona %100 yatırım yapılabileceği zannı (A şıkkı).",
+    "trap": "Fon sepeti fonunda asgari %80 fon payı şartı ve tek bir fona azami %20 sınırlaması vardır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Fon Sepeti Fonları (Fund of Funds) Sınırlamaları"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_041",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Rüçhan Hakkı Kupon Pazarı İşlem Kuralları",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Borsa İstanbul Pay Piyasası'nda bedelli sermaye artırımı sürecinde oluşturulan 'Rüçhan Hakkı Kupon Pazarı'na ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rüçhan hakkı kullanım süresi içinde kuponlar borsada 'R' koduyla işlem görür ve işlem sırası kullanım bitiminden önce kapanır."
+      },
+      {
+        "key": "B",
+        "text": "Rüçhan hakkı kuponları borsada alınıp satılamaz, sadece ihraççı şirket genel müdürlüğünde fiziken devredilebilir."
+      },
+      {
+        "key": "C",
+        "text": "Rüçhan kupon pazarında fiyat marjı serbest olup hiçbir tavan veya taban fiyat uygulanmaz."
+      },
+      {
+        "key": "D",
+        "text": "Rüçhan hakkı kupon pazarında sadece şirketin imtiyazlı pay sahipleri işlem yapabilir."
+      },
+      {
+        "key": "E",
+        "text": "Rüçhan hakkı kuponları hisse senedinden bağımsız olarak süresiz şekilde borsada işlem görmeye devam eder."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Pay Piyasası Yönergesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Bedelli artırımda rüçhan hakkını kullanmak istemeyenler kuponlarını 'R' sırasında satabilir. Rüçhan pazarı kullanım süresinin bitiminden önce (kural olarak 5 iş günü önce) kapanır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı rüçhan pazarının borsa işleyişini tam doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Rüçhan kuponlarının borsada işlem görmediği zannı.",
+    "trap": "Rüçhan kuponları borsada 'R' koduyla işlem görür ve kullanım süresi bitiminden önce işlem sırası kapanır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Rüçhan Hakkı Kupon Pazarı İşlem Kuralları"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_042",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Serbest Yatırım Fonları (Hedge Funds) Kuralları",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.1 sayılı Yatırım Fonlarına İlişkin Esaslar Tebliği uyarınca kurulan 'Serbest Yatırım Fonları'na ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Serbest fon katılma payları Borsa İstanbul gişelerinden tüm tasarruf sahiplerine serbestçe halka arz edilir."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca Nitelikli Yatırımcılara satılabilir, standart fon portföy kısıtlamalarına tabi değildir ve kaldıraç kullanabilirler."
+      },
+      {
+        "key": "C",
+        "text": "Serbest fonların portföylerine türev araç, vadeli işlem veya opsiyon sözleşmesi dahil etmeleri kanunen yasaktır."
+      },
+      {
+        "key": "D",
+        "text": "Serbest fonlar hiçbir şekilde yönetim ücreti veya performans primi tahsil edemezler."
+      },
+      {
+        "key": "E",
+        "text": "Serbest fonların portföy değerleme raporları sadece 5 yılda bir SPK'ya iletilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.1 m. 25, 26.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Serbest fonlar sadece Nitelikli Yatırımcılara satılır. SPK'nın genel yatırım sınırlamalarından muaftır; açığa satış, kaldıraç ve türev pozisyon serbestçe alabilirler.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B şıkkı serbest fonların yasal tanımını eksiksiz ifade eder.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Serbest fonların halka arz edilebileceğini zannetmek.",
+    "trap": "Serbest fonlar sadece Nitelikli Yatırımcılara satılır; genel fon kısıtlamalarından muaf olup kaldıraç kullanabilirler.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Serbest Yatırım Fonları (Hedge Funds) Kuralları"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_043",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Faiz Riski ve Yeniden Yatırım Riski Etkileşimi",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Sabit kuponlu bir tahvil yatırımcısının maruz kaldığı 'Piyasa Faiz Oranı Riski' (Fiyat Riski) ile 'Yeniden Yatırım Riski' (Reinvestment Risk) arasındaki ilişkiye dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Piyasa faizleri yükseldiğinde hem tahvilin fiyatı artar hem de kuponların yeniden yatırım geliri artar."
+      },
+      {
+        "key": "B",
+        "text": "Piyasa faizleri düştüğünde tahvil fiyatı düşer, yeniden yatırım getirisi yükselir."
+      },
+      {
+        "key": "C",
+        "text": "Piyasa faizleri arttığında tahvilin piyasa fiyatı düşerken, tahsil edilen kuponların yeniden yatırıma yönlendirilme getirisi artar."
+      },
+      {
+        "key": "D",
+        "text": "Sıfır kuponlu (iskontolu) tahvillerde yeniden yatırım riski en yüksek seviyededir."
+      },
+      {
+        "key": "E",
+        "text": "Her iki risk türü de faiz değişimlerine karşı her zaman aynı yönde hareket eder."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Finansal Piyasalarda Sabit Getirili Araçlar Risk Analizi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Faizler artınca tahvil fiyatı düşer (fiyat riski gerçekleşir). Ancak ara kupon ödemeleri daha yüksek faizden yatırıma yönlendirilir (yeniden yatırım kazancı artar). Bu iki risk zıt yönlüdür.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C seçeneğindeki zıt yönlü denge finans teorisinin temel prensibidir.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Sıfır kuponlu tahvilde yeniden yatırım riski olduğunu sanmak (sıfır kuponluda ara kupon olmadığı için yeniden yatırım riski SIFIRDIR).",
+    "trap": "Faiz artışı tahvil fiyatını düşürürken kuponların yeniden yatırım getirisini artırır; sıfır kuponlu tahvilde ise yeniden yatırım riski yoktur.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Faiz Riski ve Yeniden Yatırım Riski Etkileşimi"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_044",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "VİOP Teminat Tamamlama Bildirim Süresi",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Borsa İstanbul VİOP'ta gün sonu değerlemesi neticesinde teminat tamamlama çağrısı (Margin Call) alan bir yatırımcının yükümlü olduğu eksik teminatı en geç ne zamana kadar tamamlaması zorunludur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bildirimin yapıldığı gün seans bitiminden hemen sonra saat 18:30'a kadar"
+      },
+      {
+        "key": "B",
+        "text": "Aynı gün gece yarısı saat 24:00'e kadar"
+      },
+      {
+        "key": "C",
+        "text": "T+2 günü saat 12:00'ye kadar"
+      },
+      {
+        "key": "D",
+        "text": "Takip eden işlem günü (T+1) en geç saat 14:30'a kadar"
+      },
+      {
+        "key": "E",
+        "text": "Takip eden haftanın son iş günü seans açılışına kadar"
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank Merkezi Karşı Taraf Yönergesi ve VİOP İşleyiş Kılavuzu.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Gün sonunda oluşan margin call bildirimi aracı kurumca yatırımcıya iletilir. Yatırımcı eksik teminatı en geç T+1 günü saat 14:30'a kadar yatırmak zorundadır. Aksi halde pozisyonlar re'sen kapatılır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneğindeki T+1 saat 14:30 kesin operasyonel kuraldır.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: T+2 süresiyle karıştırmak veya aynı gün kapatılması gerektiğini sanmak.",
+    "trap": "VİOP margin call tamamlama süresi: Takip eden iş günü (T+1) en geç saat 14:30'dur.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "VİOP Teminat Tamamlama Bildirim Süresi"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1003_sert_045",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Yeşil Kira Sertifikası İhracında Fon Kullanımı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "SPK'nın Yeşil Borçlanma Araçları ve Yeşil Kira Sertifikası Rehberi uyarınca yeşil kira sertifikası ihraç eden bir VKŞ ve kaynak kuruluşun yükümlülüklerine ilişkin;\n\nI. İhraçtan sağlanan fonun tamamının yeşil proje kriterlerine uygun projelere tahsis edilmesi zorunludur.\nII. İhraççı, fonun kullanımına ilişkin olarak yılda en az bir kez 'Fon Tahsis Raporu' hazırlayıp KAP'ta yayımlamakla yükümlüdür.\nIII. Yeşil projelerden beklenen çevresel faydaların gerçekleşme derecesini gösteren 'Etki Raporu' hazırlanmalıdır.\n\nYukarıda yer alan yükümlülüklerden hangileri mevzuatça şart koşulmuştur?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı yükümlülük mevzuatça şart koşulmuştur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı yükümlülük mevzuatça şart koşulmuştur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı yükümlülükler mevzuatça şart koşulmuştur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı yükümlülükler mevzuatça şart koşulmuştur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı yükümlülüklerin tamamı mevzuatça şart koşulmuştur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: SPK Yeşil Borçlanma Aracı ve Yeşil Kira Sertifikası Rehberi Bölüm 4, 5.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Yeşil sukukta fonun yeşil projeye ayrılması, yıllık Fon Tahsis Raporu ve Etki Raporu (Impact Report) hazırlanması zorunludur.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü rehberin temel yükümlülükleridir.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Etki raporunun isteğe bağlı olduğunu düşünmek.",
+    "trap": "Yeşil ihraçlarda yeşil projeye tahsis, Fon Tahsis Raporu ve Etki Raporu zorunludur.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Yeşil Kira Sertifikası İhracında Fon Kullanımı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_046",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Şemsiye Fon Türleri ve Katılma Payı Alım Satım Valörü",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.1 sayılı Tebliğ uyarınca Türkiye Elektronik Fon Dağıtım Platformu (TEFAS) üzerinden işlem gören menkul kıymet yatırım fonlarının pay alım ve satım valör kurallarına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Para piyasası fonlarında alım ve satım işlemleri aynı gün valörlü (T+0) olarak gerçekleşir."
+      },
+      {
+        "key": "B",
+        "text": "Hisse senedi yoğun fonlarda satış bedelleri yatırımcı hesabına istisnasız T+10 günde geçer."
+      },
+      {
+        "key": "C",
+        "text": "Yabancı borçlanma araçları fonlarında alım işlemi T+0, satım işlemi T+30 günde yapılır."
+      },
+      {
+        "key": "D",
+        "text": "TEFAS'ta işlem gören fonların alım satım emirleri sadece cumartesi günleri sisteme girilebilir."
+      },
+      {
+        "key": "E",
+        "text": "Fon katılma payı satış emri verildiğinde satış fiyatı daima 1 ay önceki fiyattan hesaplanır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.1 Tebliği ve TEFAS Uygulama Esasları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Para piyasası fonları çok kısa vadeli likit araçlar taşıdığından alım ve satım aynı gün (T+0) valörle gerçekleştirilir. Hisse fonlarında genelde T+1 alış, T+2 satış valörü uygulanır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı para piyasası fonunun T+0 valör kuralını tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Para piyasası fonlarında da T+2 valör olduğunu varsaymak.",
+    "trap": "Para piyasası fonlarında katılma payı alım ve satımları aynı gün (T+0) valörle gerçekleşir.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Şemsiye Fon Türleri ve Katılma Payı Alım Satım Valörü"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1003_sert_047",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Tahvil Fiyatı ve Getiri Arasındaki Ters Yönlü İlişki",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Sabit kuponlu bir tahvilin kupon faiz oranı %15 iken, piyasa faiz oranlarının (piyasa getirisinin) %20'ye YÜKSELMESİ durumunda söz konusu tahvilin piyasa fiyatı hakkında hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tahvilin piyasa fiyatı nominal değerinin üzerine çıkar ve tahvil primli işlem görür."
+      },
+      {
+        "key": "B",
+        "text": "Tahvilin piyasa fiyatı nominal değerinin altına iner ve tahvil iskontolu işlem görür."
+      },
+      {
+        "key": "C",
+        "text": "Tahvilin piyasa fiyatı nominal değerine tam eşit kalır ve başabaş işlem görür."
+      },
+      {
+        "key": "D",
+        "text": "Tahvilin fiyatı faiz değişiminden hiçbir şekilde etkilenmez, kupon oranı %20'ye çıkarılır."
+      },
+      {
+        "key": "E",
+        "text": "Tahvil piyasadan geri çağrılarak zorunlu olarak imha edilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Sabit Getirili Menkul Kıymetler Değerleme Aksiyomları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Temel Kural:\n- Kupon Oranı = Piyasa Faizi -> Başabaş Fiyat (P = Nominal)\n- Kupon Oranı > Piyasa Faizi -> Primli Fiyat (P > Nominal)\n- Kupon Oranı < Piyasa Faizi -> İskontolu Fiyat (P < Nominal).\n3. ADIM ADIM İNCELEME / HESAPLAMA: Kupon %15, piyasa faizi %20 ise tahvil cazibesini kaybettiği için fiyatı nominalin altına düşer (iskontolu işlem görür).\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Faiz arttığında tahvil fiyatının da artacağını sanmak.",
+    "trap": "Piyasa faizi kupon oranından yüksekse tahvil nominal değerinin altına düşer (iskontolu işlem görür).",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Tahvil Fiyatı ve Getiri Arasındaki Ters Yönlü İlişki"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_048",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Kredili Menkul Kıymet İşlemlerinde Özkaynak Oranı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Seri: V, No: 65 sayılı Tebliğ uyarınca kredili pay alımı yapan bir yatırımcının hesabındaki özkaynak oranının kanuni sürdürme seviyesi olan %35'in altına düşmesi durumunda yürütülecek yasal süreç nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yatırımcının özkaynak oranı %10'a düşene kadar hiçbir bildirim yapılmaz ve beklenir."
+      },
+      {
+        "key": "B",
+        "text": "Yatırımcıdan özkaynak oranını doğrudan %35 seviyesine çıkaracak kadar nakit istenir."
+      },
+      {
+        "key": "C",
+        "text": "Yatırımcıya özkaynak tamamlama bildirimi yapılarak özkaynağın BAŞLANGIÇ SEVİYESİ OLAN %50'YE tamamlanması istenir."
+      },
+      {
+        "key": "D",
+        "text": "Aracı kurum yatırımcının tüm hisselerini aynı saniye içinde re'sen satmak zorundadır."
+      },
+      {
+        "key": "E",
+        "text": "Özkaynak açığı aracı kurumun kendi özkaynaklarından resen hibe edilerek kapatılır."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Seri: V, No: 65 Kredili Menkul Kıymet İşlemleri Tebliği m. 14, 15.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Özkaynak oranı %35'in altına düştüğünde aracı kurum tamamlama çağrısı yapar. Tamamlama hedefi %35 değil, BAŞLANGIÇ ORANI OLAN %50'DİR!\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı başlangıç seviyesi olan %50'ye tamamlama kuralını tam ifade eder.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Özkaynağın %35'e tamamlanacağını sanmak.",
+    "trap": "Kredili işlemde özkaynak %35 altına düşerse başlangıç oranı olan %50'ye tamamlanır.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Kredili Menkul Kıymet İşlemlerinde Özkaynak Oranı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1003_sert_049",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Dönüştürülebilir Tahvil (DET) Parite Fiyatı",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "Nominal değeri 1.000 TL olan bir Dönüştürülebilir Tahvilin (DET) hisse senedine dönüştürme oranı 50'dir (1 adet tahvil karşılığında 50 adet hisse senedi verilmektedir). Dayanak hisse senedinin piyasa fiyatı 24 TL'dir.\n\nBuna göre söz konusu DET'in 'Dönüştürme Değeri' (Parite Fiyatı / Conversion Value) kaç TL'dir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dönüştürme değeri 1.000 TL'dir."
+      },
+      {
+        "key": "B",
+        "text": "Dönüştürme değeri 1.100 TL'dir."
+      },
+      {
+        "key": "C",
+        "text": "Dönüştürme değeri 1.150 TL'dir."
+      },
+      {
+        "key": "D",
+        "text": "Dönüştürme değeri 1.200 TL'dir."
+      },
+      {
+        "key": "E",
+        "text": "Dönüştürme değeri 1.250 TL'dir."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: II-31.1 sayılı Tebliğ ve DET Değerleme Esasları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Dönüştürme Değeri = Dönüştürme Oranı * Dayanak Hisse Fiyatı.\n3. ADIM ADIM İNCELEME / HESAPLAMA:\n- Dönüştürme Oranı = 50 adet hisse\n- Hisse Fiyatı = 24 TL\n- Dönüştürme Değeri = 50 * 24 = 1.200 TL.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir (1.200 TL).\n5. ÇELDİRİCİ TUZAĞI: Nominal değer olan 1.000 TL'yi dönüştürme fiyatına bölüp hisse fiyatıyla çarpmayı unutmak.",
+    "trap": "Dönüştürme Değeri = Dönüştürme Oranı * Hisse Fiyatı = 50 * 24 = 1.200 TL.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Dönüştürülebilir Tahvil (DET) Parite Fiyatı"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1003_sert_050",
+    "module_id": "1003",
+    "source": "cikmis",
+    "topic": "Para Piyasası Fonları Portföy Sınırlamaları",
+    "chapter": "SERMAYE PİYASASI ARAÇLARI 1 GENEL TEORİ VE HESAPLAMALAR",
+    "text": "III-52.1 sayılı Yatırım Fonlarına İlişkin Esaslar Tebliği uyarınca 'Para Piyasası Fonları'nın (Money Market Funds) portföy yapısına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Para piyasası fonları portföylerine sadece Borsa İstanbul Yıldız Pazar hisse senetlerini dahil edebilirler."
+      },
+      {
+        "key": "B",
+        "text": "Fon portföyünün günlük vadesi en az 365 gün olmak zorundadır."
+      },
+      {
+        "key": "C",
+        "text": "Para piyasası fonları hiçbir şekilde banka mevduatına veya katılım hesabına yatırım yapamazlar."
+      },
+      {
+        "key": "D",
+        "text": "Fon portföyünde sadece yabancı devletlerin eurobondları yer alabilir, yerli enstrümanlar yasaktır."
+      },
+      {
+        "key": "E",
+        "text": "Portföyün günlük olarak hesaplanan ağırlıklı ortalama vadesi en fazla 45 gün olabilir ve vadesine 184 günden uzun kalan varlıklar portföye alınamaz."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-52.1 m. 6.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Para piyasası fonları likidite yönetim araçlarıdır. Fon portföyünün günlük ağırlıklı ortalama vadesi (AOV) en fazla 45 gün olabilir. Vadesine 184 günden fazla kalmış enstrümanlar portföye dahil edilemez.\n3. ADIM ADIM İNCELEME / HESAPLAMA: E şıkkındaki 45 gün AOV ve 184 gün azami vade para piyasası fonlarının yasal tanımıdır.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Vade sınırının 90 gün veya 1 yıl sanılması.",
+    "trap": "Para piyasası fonlarında fon ağırlıklı ortalama vadesi azami 45 gün olabilir, vadesi 184 günden uzun varlık alınamaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1003",
+      "Para Piyasası Fonları Portföy Sınırlamaları"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  }
+]

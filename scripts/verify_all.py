@@ -28,11 +28,11 @@ except Exception as e:
     errors.append(f"Modules Test Error: {e}")
     print("  [FAIL] 1. Modules metadata:", e)
 
-# 2. QUESTIONS TEST (935 Questions)
+# 2. QUESTIONS TEST (1135 Questions)
 try:
     with open("src/data/all_questions.json", encoding="utf-8") as f:
         questions = json.load(f)
-    assert len(questions) == 935, f"Expected 935 unique questions, got {len(questions)}"
+    assert len(questions) == 1135, f"Expected 1135 unique questions, got {len(questions)}"
     
     unique_texts = set(q["text"].strip().lower() for q in questions)
     assert len(unique_texts) == len(questions), f"Duplicate questions found: {len(questions) - len(unique_texts)} duplicates"
@@ -52,13 +52,13 @@ try:
         assert q.get("cognitive_skill") in ["KB1_Kavramsal", "KB2_Muhakeme", "KB3_Vaka"], f"Q {i} invalid cognitive_skill: {q.get('cognitive_skill')}"
         
     mod_counts = {m: sum(1 for q in questions if q["module_id"] == m) for m in ["1001", "1003", "1005", "1012"]}
-    assert mod_counts["1001"] == 233, f"Expected 233 questions for 1001, got {mod_counts['1001']}"
-    assert mod_counts["1003"] == 240, f"Expected 240 questions for 1003, got {mod_counts['1003']}"
-    assert mod_counts["1005"] == 238, f"Expected 238 questions for 1005, got {mod_counts['1005']}"
-    assert mod_counts["1012"] == 224, f"Expected 224 questions for 1012, got {mod_counts['1012']}"
+    assert mod_counts["1001"] == 283, f"Expected 283 questions for 1001, got {mod_counts['1001']}"
+    assert mod_counts["1003"] == 290, f"Expected 290 questions for 1003, got {mod_counts['1003']}"
+    assert mod_counts["1005"] == 288, f"Expected 288 questions for 1005, got {mod_counts['1005']}"
+    assert mod_counts["1012"] == 274, f"Expected 274 questions for 1012, got {mod_counts['1012']}"
     
     skill_counts = {s: sum(1 for q in questions if q.get("cognitive_skill") == s) for s in ["KB1_Kavramsal", "KB2_Muhakeme", "KB3_Vaka"]}
-    print(f"  [PASS] 2. Soru Havuzu (935 %100 Benzersiz Soru: 1001: 233, 1003: 240, 1005: 238, 1012: 224 Soru, 5 Şık A-E, Sıfır Kopya, Cevap Anahtarı & Çözümler Doğrulandı)")
+    print(f"  [PASS] 2. Soru Havuzu (1135 %100 Benzersiz Soru: 1001: 283, 1003: 290, 1005: 288, 1012: 274 Soru, 5 Şık A-E, Sıfır Kopya, Cevap Anahtarı & Çözümler Doğrulandı)")
     print(f"         Modül Dağılımı: {mod_counts}")
     print(f"         Maarif Bilişsel Düzey Dağılımı: {skill_counts}")
 except Exception as e:

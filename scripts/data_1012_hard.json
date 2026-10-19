@@ -1,0 +1,1952 @@
+[
+  {
+    "id": "q_1012_sert_001",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKT Temerrüt Şelalesi Sıralaması (Takasbank)",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "İstanbul Takas ve Saklama Bankası A.Ş.'nin (Takasbank) Merkezi Karşı Taraf (MKT) olarak hizmet verdiği piyasalarda bir takas üyesinin temerrüde düşmesi halinde, oluşan zararın karşılanmasında devreye sokulacak 'Temerrüt Şelalesi' (Default Waterfall) kanuni sıralaması hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1) Temerrüde düşen üyenin teminatları, 2) Temerrüt eden üyenin Garanti Fonu payı, 3) Takasbank'ın dedike özkaynak katkısı, 4) Diğer üyelerin Garanti Fonu payları, 5) Takasbank'ın kalan özkaynakları"
+      },
+      {
+        "key": "B",
+        "text": "1) Takasbank'ın genel özkaynakları, 2) SPK bütçesi, 3) Yatırımcı Tazmin Merkezi fonu, 4) Hazine ve Maliye Bakanlığı garantisi, 5) Temerrüt eden üyenin hisseleri"
+      },
+      {
+        "key": "C",
+        "text": "1) Diğer üyelerin garanti fonu payları, 2) Temerrüt eden üyenin teminatları, 3) Borsa İstanbul bütçesi, 4) Takasbank sermayesi, 5) Mahkeme iflas masası"
+      },
+      {
+        "key": "D",
+        "text": "1) Yatırımcı Tazmin Merkezi, 2) Temerrüt eden üyenin müşterilerinin nakit paraları, 3) Takasbank garanti fonu, 4) Borsa yönetim kurulu şahsi varlıkları, 5) Hazine"
+      },
+      {
+        "key": "E",
+        "text": "1) Borsa İstanbul temerrüt fonu, 2) Takasbank ihtiyat akçesi, 3) Temerrüde düşen üyenin yönetim kurulu üyeleri, 4) Garanti fonu, 5) SPK idari cezaları"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank MKT Yönetmeliği ve Takasbank Temerrüt Yönergesi m. 14.\n2. HUKUKİ / TEKNİK ÇERÇEVE: MKT Temerrüt Şelalesi 5 basamaktan oluşur:\n1. Temerrüde düşen üyenin başlangıç ve ilave teminatları,\n2. Temerrüde düşen üyenin Garanti Fonu katkı payı,\n3. Takasbank'ın peşin tahsis ettiği dedike özkaynak payı (Sitted Capital),\n4. Temerrüde düşmeyen diğer üyelerin Garanti Fonu katkıları (oranları nispetinde),\n5. Takasbank'ın kalan genel özkaynakları ve garanti fonunun tazmini.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı bu 5 adımlı uluslararası ve ulusal şelale sırasını eksiksiz belirtir.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Takasbank'ın dedike özkaynağının diğer üyelerin garanti fonundan önce devreye girdiğini unutmak.",
+    "trap": "Temerrüt şelalesi: 1) Üye teminatı, 2) Üye garanti fonu, 3) Takasbank dedike özkaynağı, 4) Diğer üyelerin garanti fonu, 5) Takasbank kalan özkaynakları.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKT Temerrüt Şelalesi Sıralaması (Takasbank)"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_002",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Merkezi Karşı Taraf Sıfatı ve Yenileme (Novation) Hükmü",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 77 ve Takasbank mevzuatı uyarınca Takasbank'ın 'Merkezi Karşı Taraf' (MKT) sıfatıyla takas işlemlerine dahil olması ve 'Yenileme' (Novation) ilkesine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takasbank sadece aracı kurumların iflası durumunda iflas masasının talebiyle devreye giren tasfiye takip organıdır."
+      },
+      {
+        "key": "B",
+        "text": "Eşleşen emirlerde alıcıya karşı satıcı, satıcıya karşı alıcı konumuna geçerek takası garanti eder; borç ilişkisi yenilenir."
+      },
+      {
+        "key": "C",
+        "text": "MKT rolü üstlenildiğinde alım satım sözleşmesi iptal edilir ve takas yükümlülüğü tamamen Borsa İstanbul Yönetimine devredilir."
+      },
+      {
+        "key": "D",
+        "text": "Yenileme ilkesi sadece yabancı para cinsinden eurobond işlemlerinde geçerli olup organize pay piyasasında uygulanmaz."
+      },
+      {
+        "key": "E",
+        "text": "Takasbank taraflardan biri temerrüde düştüğünde takas garantisi vermez, yalnızca taraflar arasında uzlaşma komisyonu kurar."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 77 ve Takasbank Esas Sözleşmesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: MKT (Central Counterparty), piyasada eşleşen alıcı ile satıcının arasına girer. Alıcıya karşı satıcı, satıcıya karşı alıcı olur (Novation). Böylece karşı taraf kredi riskini bizzat üstlenir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B seçeneği Novation (Yenileme) ilkesini ve MKT'nin iki ayrı bağımsız hukuki sözleşmeye dönüşümünü tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Takasbank'ın sadece aracı kurum iflasında devreye girdiğini sanmak (Takasbank işlem anında MKT'dir).",
+    "trap": "MKT, yenileme (novation) ile alıcıya karşı satıcı, satıcıya karşı alıcı olarak takas garantisi verir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Merkezi Karşı Taraf Sıfatı ve Yenileme (Novation) Hükmü"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_003",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Ödeme Karşılığı Teslimat (DVP) Prensibi",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Sermaye piyasalarında takas ve saklama operasyonlarının temel emniyet supabı olan 'Ödeme Karşılığı Teslimat' (Delivery Versus Payment - DVP) prensibine ilişkin aşağıdaki ifadelerden hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Menkul kıymetin mülkiyeti alıcıya sabah seans açılışında devredilir, nakit ödeme ise 1 ay sonra takas edilir."
+      },
+      {
+        "key": "B",
+        "text": "DVP sistemi sadece vadeli altın işlemlerinde uygulanır, pay piyasası takasında uygulanması kanunen yasaktır."
+      },
+      {
+        "key": "C",
+        "text": "Menkul kıymetin devri ile nakit bedelinin ödenmesi eşanlı (aynı saniyede) olarak gerçekleşir; nakit ödenmedikçe menkul kıymet, menkul kıymet teslim edilmedikçe nakit devrolmaz."
+      },
+      {
+        "key": "D",
+        "text": "Alıcı taraf nakit bedeli ödemekten imtina etse dahi menkul kıymet satıcıdan alınıp alıcının hesabına kesin olarak geçer."
+      },
+      {
+        "key": "E",
+        "text": "DVP prensibinde takas riski tamamen ortadan kalkmaz, aksine takas riski en üst düzeye çıkar."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: BIS-CPMI/IOSCO Finansal Piyasa Altyapıları İlkeleri (PFMI İlke 12) ve Takasbank Yönergesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: DVP (Ödeme Karşılığı Teslim), takas riskini (özellikle karşı tarafın menkul kıymeti alıp parayı ödememesi veya tersi riskini) sıfırlamak üzere tasarlanmış eşzamanlı takas mekanizmasıdır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı DVP prensibinin eşanlı devir kuralını eksiksiz belirtir.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Menkul kıymetin peşin geçip paranın sonradan ödeneceğini sanmak.",
+    "trap": "DVP prensibinde menkul kıymet devri ile nakit ödeme eşanlı gerçekleşir; biri olmadan diğeri devrolmaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Ödeme Karşılığı Teslimat (DVP) Prensibi"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_004",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Ödünç Pay Piyasası (ÖPP) ve Temettü Hak Sahipliği",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank Ödünç Pay Piyasası'nda (ÖPP) portföyündeki 100.000 lot hisse senedini 30 gün süreyle ödünç veren Yatırımcı Vedat Bey'in ödünç verdiği hisse senetleri, ödünç süresi devam ederken ihraççı şirket tarafından pay başına 4 TL nakit temettü dağıtmıştır.\n\nTakasbank Ödünç Pay Piyasası Yönergesi uyarınca söz konusu nakit temettü hakkına ve tutarına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hisseler ödünç alanın takas mülkiyetine geçtiğinden, dağıtılan nakit temettünün tamamı yasal olarak ödünç alana ait olur."
+      },
+      {
+        "key": "B",
+        "text": "Ödünç verilen payların temettü hakkı askıya alınır ve temettü tutarı şirket tarafından sermaye yedeklerine devredilir."
+      },
+      {
+        "key": "C",
+        "text": "Nakit temettü tutarı doğrudan Takasbank Garanti Fonu'na gelir kaydedilir ve ödünç sözleşmesi bitene kadar bloke tutulur."
+      },
+      {
+        "key": "D",
+        "text": "Temettü hakkı ödünç verene aittir; ödünç alan taraf temettü bedelini Takasbank aracılığıyla ödünç verene aktarmak zorundadır."
+      },
+      {
+        "key": "E",
+        "text": "Nakit temettü tutarı borsa kuralları gereği ödünç alan ile ödünç veren yatırımcı arasında yarı yarıya paylaştırılır."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank Ödünç Pay Piyasası Yönergesi m. 22.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Ödünç işlemlerinde menkul kıymet ödünç alana geçici olarak devredilse de, ekonomik mülkiyet ödünç verendedir. Ödünç süresince dağıtılan tüm nakit temettüler, bedelsiz paylar ve rüçhan hakları ÖDÜNÇ VEREN TARAFA (Vedat Bey'e) ödenir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği hak kullanımının ödünç verene ait olduğu kuralını tam ifade eder.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Hisseleri o an elinde tutan ödünç alanın temettüyü sahipleneceğini zannetmek (A şıkkı).",
+    "trap": "Ödünç süresince oluşan tüm temettü ve bedelsiz hakları ödünç verene aittir; ödünç alan temettüyü aktarmakla yükümlüdür.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Ödünç Pay Piyasası (ÖPP) ve Temettü Hak Sahipliği"
+    ],
+    "cognitive_skill": "KB3_Vaka"
+  },
+  {
+    "id": "q_1012_sert_005",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Merkezi Kayıt Kuruluşu (MKK) Hak Sahipliği ve Hesap Yapısı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 13 uyarınca Merkezi Kayıt Kuruluşu (MKK) nezdinde tutulan kaydi sisteme ilişkin;\n\nI. Sermaye piyasası araçları MKK nezdinde hak sahipleri itibarıyla (T.C. kimlik numarası / vergi kimlik numarası bazında) alt hesaplar açılarak kayden izlenir.\nII. MKK nezdinde kayden izlenen payların mülkiyetinin devri ve hakların üçüncü kişilere karşı ileri sürülebilmesi MKK sistemine kayıt yapılması ile hüküm ifade eder.\nIII. Yatırımcılar e-CAS (Yatırımcı Bilgilendirme Sistemi) üzerinden hesaplarındaki menkul kıymet hareketlerini anlık takip edebilir ve hisselerine bloke koyabilirler.\n\nYukarıda yer alan MKK yasal ve teknik ilkelerinden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı ilke mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı ilke mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı ilkeler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı ilkeler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı ilkelerin tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 13 ve MKK Esas Sözleşmesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Türkiye kaydi sistemi doğrudan hak sahibi bazında tutulur (Omnibus değil, doğrudan sicil sistemi). e-CAS ile yatırımcı hissesine blokaj koyabilir. Hak devirleri MKK kaydı ile hüküm ifade eder.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin üçü de SPKn m. 13 ve MKK operasyonlarını eksiksiz yansıtır.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Hesapların sadece aracı kurum bazında toplu (omnibus) tutulduğunu düşünmek.",
+    "trap": "MKK'da hesaplar hak sahibi bazında tutulur; devirler MKK kaydı ile hüküm ifade eder ve e-CAS yatırımcı blokajı vardır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Merkezi Kayıt Kuruluşu (MKK) Hak Sahipliği ve Hesap Yapısı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_006",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Elektronik Genel Kurul Sistemi (e-GKS) ve e-YÖNET",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "6102 sayılı Türk Ticaret Kanunu m. 1527 ve MKK düzenlemeleri uyarınca Borsa İstanbul'da işlem gören anonim ortaklıkların genel kurul toplantılarına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsada işlem gören şirketler genel kurullarını MKK'nın sağladığı e-GKS üzerinden eşzamanlı elektronik ortamda yapmak zorundadır."
+      },
+      {
+        "key": "B",
+        "text": "Elektronik genel kurulda oy kullanabilmek için şirketin merkezine noter onaylı taahhütname gönderilmesi zorunlu tutulmuştur."
+      },
+      {
+        "key": "C",
+        "text": "Elektronik genel kurula katılan pay sahipleri müzakereleri sadece izleyebilir; soru sorma ve muhalefet şerhi koyma hakları yoktur."
+      },
+      {
+        "key": "D",
+        "text": "Elektronik genel kurul sistemi sadece yabancı kurumsal fonların katılımına açık olup yerli bireysel ortaklar sisteme dahil edilemez."
+      },
+      {
+        "key": "E",
+        "text": "e-GKS üzerinden yapılan elektronik oylama sonuçları nihai olmayıp fiziki divan heyetinin onayından sonra geçerlilik kazanır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6102 sayılı TTK m. 1527 ve Anonim Şirketlerde Elektronik Genel Kurul Yönetmeliği.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Borsada işlem gören şirketlerin e-GKS sistemini kurması ve genel kurulu eşzamanlı elektronik olarak açması YASAL ZORUNLULUKTUR. Katılımcılar güvenli e-imza ile katılır, soru sorar, oy kullanır ve şerh koyabilirler.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı e-GKS zorunluluğunu tam doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: e-GKS'nin isteğe bağlı olduğunu zannetmek (borsa şirketlerinde zorunludur).",
+    "trap": "Halka açık şirketlerde genel kurula elektronik ortamda katılım imkanı (e-GKS) sağlanması zorunludur.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Elektronik Genel Kurul Sistemi (e-GKS) ve e-YÖNET"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_007",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Blokaj Türleri: İhraççı vs Yatırımcı Blokajı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "MKK nezdinde kayden izlenen hisse senetleri üzerine konulabilen blokaj türleri ve hukuki sonuçlarına dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yatırımcı blokajı konulan paylar aracı kurum tarafından portföy teminatı olarak Takasbank'a serbestçe devredilebilir."
+      },
+      {
+        "key": "B",
+        "text": "Yatırımcı blokajı (e-CAS), yatırımcı bizzat kaldırmadıkça kurum dahil hiç kimsenin payı satmasına veya virmanlamasına izin vermez."
+      },
+      {
+        "key": "C",
+        "text": "İhraççı blokajı sadece şirket genel kurulunda alınan kararla yöneticilerin şahsi malvarlığına el koymak üzere uygulanır."
+      },
+      {
+        "key": "D",
+        "text": "MKK nezdinde blokaja alınan hisse senetleri şirketin nakit kâr payı ve bedelsiz pay dağıtım haklarından mahrum bırakılır."
+      },
+      {
+        "key": "E",
+        "text": "Rehin blokajı tesis edilebilmesi için pay senetlerinin fiziki olarak bastırılarak alacaklı bankanın kasasına teslimi şarttır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: MKK İş ve İşleyiş Yönergesi m. 18, 19.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Yatırımcı Blokajı (e-CAS Blokajı), dolandırıcılık veya yetkisiz virmanları önlemek için yatırımcının kendi hissesini kilitlemesidir. Yatırımcı şifresiyle blokajı kaldırmadıkça aracı kurum dahi hisseyi satamaz veya virmanlayamaz.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B şıkkı yatırımcı blokajının tanım ve fonksiyonunu tam doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Blokajlı hissenin serbestçe satılabileceği zannı (A şıkkı; blokaj kalkmadan satılamaz).",
+    "trap": "Yatırımcı blokajı (e-CAS), yatırımcının hisselerini kilitleyerek izinsiz satış ve virmanları engelleyen güvenlik tedbiridir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Blokaj Türleri: İhraççı vs Yatırımcı Blokajı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_008",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Piyasa Takas Süreleri (T+2, T+0, T+1) Karşılaştırması",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Borsa İstanbul bünyesinde faaliyet gösteren piyasalar ve bu piyasalardaki standart takas valör sürelerine ilişkin aşağıdaki eşleştirmelerden hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pay Piyasası: T+0; Borçlanma Araçları Piyasası: T+3; VİOP: T+10"
+      },
+      {
+        "key": "B",
+        "text": "Pay Piyasası: T+1; Borçlanma Araçları Piyasası: T+2; VİOP: T+0"
+      },
+      {
+        "key": "C",
+        "text": "Pay Piyasası: T+2; Borçlanma Araçları Kesin Alım Satım: T+0 (aynı gün) veya T+1; Para Piyasası Fonları: T+0"
+      },
+      {
+        "key": "D",
+        "text": "Pay Piyasası: T+5; Borçlanma Araçları Piyasası: T+1; VİOP: T+2"
+      },
+      {
+        "key": "E",
+        "text": "Tüm piyasalarda istisnasız olarak takas süresi T+0 (aynı gün) olmak zorundadır."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul ve Takasbank Takas ve Uzlaşma Yönergesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Standart takas süreleri:\n- Pay Piyasası: T+2 (İşlemi takip eden ikinci iş günü),\n- Borçlanma Araçları (DİBS/ÖST): Genellikle T+0 (Aynı gün valörlü) veya T+1,\n- Para Piyasası Fonları: T+0 (Aynı gün).\n3. ADIM ADIM İNCELEME / HESAPLAMA: C seçeneğindeki Pay Piyasası T+2, Tahvil T+0/T+1 ve Para Piyasası Fonu T+0 eşleştirmesi tam doğrudur.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Pay piyasası takasının T+0 veya T+1 olduğunu sanmak.",
+    "trap": "Takas süreleri: Pay Piyasası T+2, Borçlanma Araçları Piyasası T+0/T+1 ve Para Piyasası Fonları T+0'dır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Piyasa Takas Süreleri (T+2, T+0, T+1) Karşılaştırması"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_009",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Para Piyasası (TPP) ve Teminatlandırma",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank Para Piyasası'nda (TPP) üyelerin nakit borç alma ve borç verme işlemlerine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takasbank Para Piyasası'nda borçlanma işlemleri tamamen teminatsız olarak güvene dayalı yürütülür."
+      },
+      {
+        "key": "B",
+        "text": "TPP'de sadece 10 yıl vadeli borçlanma yapılabilir, gecelik (O/N) işlem yapılması yasaktır."
+      },
+      {
+        "key": "C",
+        "text": "TPP'de borç veren taraf temerrüt riskini doğrudan borç alan üyeye karşı tek başına üstlenir ve Takasbank garantisi yoktur."
+      },
+      {
+        "key": "D",
+        "text": "Takasbank MKT sıfatıyla borç alan ile borç veren arasında yer alır, borçlanan taraftan teminat alır ve işlemlerin takasını garanti eder."
+      },
+      {
+        "key": "E",
+        "text": "Takasbank Para Piyasası'nda sadece altın ve yabancı para cinsinden borçlanma yapılabilir, TL borçlanma yapılamaz."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank Para Piyasası Yönetmeliği m. 4, 8.\n2. HUKUKİ / TEKNİK ÇERÇEVE: TPP'de Takasbank MKT'dir. Borç alan teminat yatırır, borç veren nakit sağlar. Takasbank araya girerek takas ve ödeme garantisi sunar.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği TPP'nin MKT ve teminatlandırma yapısını doğru belirtir.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: TPP'nin teminatsız bir piyasa olduğu yanılgısı (A şıkkı).",
+    "trap": "Takasbank Para Piyasası'nda Takasbank MKT olarak teminat alır ve takas garantisi verir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Para Piyasası (TPP) ve Teminatlandırma"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_010",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Elektronik Ürün Senedi (ELÜS) ve Lisanslı Depoculuk",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "5300 sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu kapsamında çıkarılan 'Elektronik Ürün Senetleri'nin (ELÜS) kayden izlenmesi ve takasına ilişkin;\n\nI. ELÜS'ler lisanslı depolara teslim edilen standartlaştırılmış tarım ürünlerini temsil eden kıymetli evrak niteliğindeki elektronik senetlerdir.\nII. ELÜS'lerin merkezi sicili ve kayden ihraç işlemleri Merkezi Kayıt Kuruluşu (MKK) nezdinde yürütülür.\nIII. ELÜS alım satım işlemleri Türkiye Ürün İhtisas Borsası (TÜRİB) bünyesinde gerçekleşir ve takası Takasbank tarafından sonuçlandırılır.\n\nYukarıda yer alan tespitlerden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı tespit mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı tespit mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı tespitler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı tespitler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı tespitlerin tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: 5300 sayılı Kanun ve ELÜS Yönetmeliği.\n2. HUKUKİ / TEKNİK ÇERÇEVE: ELÜS tarım ürünlerini temsil eder (I). MKK nezdinde kayden ihraç edilir (II). TÜRİB'de işlem görür ve takası Takasbank tarafından yapılır (III).\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü ELÜS sisteminin resmi mimarisini eksiksiz yansıtır.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: ELÜS kayıtlarının MKK yerine Tarım Bakanlığında tutulduğunu düşünmek.",
+    "trap": "ELÜS lisanslı depo ürününü temsil eder; MKK'da kayden izlenir, TÜRİB'de işlem görür ve Takasbank takas eder.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Elektronik Ürün Senedi (ELÜS) ve Lisanslı Depoculuk"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_011",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Hamiline Pay Kayıt Sistemi (HPKS) Tescil Zorunluluğu",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "7262 sayılı Kanun ile 6102 sayılı TTK m. 486 ve 489'da yapılan düzenlemeler uyarınca, halka açık olmayan anonim şirketlerin çıkardıkları hamiline yazılı paylara ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hamiline pay senetlerinin ihraç ve devirlerinin MKK HPKS sistemine tescili zorunludur; bildirim yapılmadıkça hak ileri sürülemez."
+      },
+      {
+        "key": "B",
+        "text": "Hamiline pay senetlerinin MKK'ya bildirimi ihtiyari olup şirket pay defterine noter huzurunda kaydedilmesi hukuken yeterlidir."
+      },
+      {
+        "key": "C",
+        "text": "HPKS bildirimi sadece sermayesi 500 milyon TL'yi aşan büyük ölçekli anonim şirketler için zorunlu kılınmış bir uygulamadır."
+      },
+      {
+        "key": "D",
+        "text": "Hamiline pay senedi zilyedi genel kurula katılabilmek için pay senedini toplantıdan 1 gün önce şirket merkezine rehin bırakır."
+      },
+      {
+        "key": "E",
+        "text": "HPKS bildirimi yapılmamış hamiline payların mülkiyeti kanun gereğince doğrudan şirket yönetim kurulu başkanına intikal eder."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6102 sayılı TTK m. 486, 489 ve HPKS Tebliği.\n2. HUKUKİ / TEKNİK ÇERÇEVE: 7262 sayılı Kanunla getirilen HPKS ile hamiline paylar kayıt altına alınmıştır. MKK'ya bildirim yapılmadıkça genel kurula katılma, kâr payı alma ve devir hükümleri geçerli olmaz.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı HPKS tescil zorunluluğunu ve bildirim yapılmamasının hukuki sonucunu tam doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Bildirim yapılmasa da zilyetliğin devrinin yeterli olacağını zannetmek (eski kural).",
+    "trap": "Hamiline pay senetlerinin ihraç ve devirleri MKK HPKS sistemine bildirilmek zorundadır; aksi halde haklar ileri sürülemez.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Hamiline Pay Kayıt Sistemi (HPKS) Tescil Zorunluluğu"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_012",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Temerrüt Yönetimi ve Temerrüt Faizi Hesabı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Borsa İstanbul Pay Piyasası'nda T+2 takas gününde 1.000.000 TL tutarındaki takas borcunu ödemeyerek temerrüde düşen Aracı Kurum A'ya karşı Takasbank'ın uygulayacağı operasyonel prosedüre dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takasbank temerrüde düşen üyenin borcunu derhal silerek zararı Borsa İstanbul bütçesinden doğrudan tazmin eder."
+      },
+      {
+        "key": "B",
+        "text": "Takasbank üyenin takas limitini kısıtlar, temerrüt faizi işletir ve mevcut teminatları paraya çevirerek takas açığını kapatır."
+      },
+      {
+        "key": "C",
+        "text": "Takasbank temerrüt eden üyenin yöneticilerini SPK kararı olmadan aynı gün ticaret mahkemesinde resen iflas ettirir."
+      },
+      {
+        "key": "D",
+        "text": "Takas açığı oluştuğunda takas süresi belirsiz bir tarihe kadar dondurulur ve hiçbir cezai faiz tahakkuk ettirilmez."
+      },
+      {
+        "key": "E",
+        "text": "Temerrüt faizi oranı her zaman TCMB gecelik borçlanma faiz oranının yarısı nispetinde sabit olarak hesaplanır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank Temerrüt Yönergesi m. 7, 8.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Temerrütte Takasbank piyasa bütünlüğünü korumak için temerrüt faizi işletir, üyenin takas limitini kapatır ve teminatlarını re'sen paraya çevirerek takası tamamlar.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B seçeneği temerrüt yaptırımlarını tam doğru özetler.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Takasbank'ın teminatları paraya çevirme yetkisi olmadığını düşünmek.",
+    "trap": "Temerrüt halinde Takasbank temerrüt faizi işletir, işlem yetkisini sınırlar ve teminatları paraya çevirir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Temerrüt Yönetimi ve Temerrüt Faizi Hesabı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_013",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Serbest Virman vs Bedelli Virman Ayrımı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Sermaye piyasası araçlarının saklama hesapları arasındaki transferinde 'Serbest Virman' ile 'Bedelli Virman' (DVP) arasındaki operasyonel fark nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Serbest virman sadece yabancı para transferlerinde, bedelli virman ise organize altın takasında kullanılan operasyon türüdür."
+      },
+      {
+        "key": "B",
+        "text": "Serbest virman Takasbank üzerinden yürütülürken bedelli virman işlemleri noter kanalıyla fiziki evrak üzerinden yapılır."
+      },
+      {
+        "key": "C",
+        "text": "Serbest virman nakit şartı aranmaksızın kıymet aktarımıdır; bedelli virman ise nakit bedelin ödenmesi şartına bağlı eşanlı devirdir."
+      },
+      {
+        "key": "D",
+        "text": "Bedelli virmanda kıymetin mülkiyeti aracı kuruma geçerken serbest virmanda kıymet doğrudan Yatırımcı Tazmin Merkezi'ne aktarılır."
+      },
+      {
+        "key": "E",
+        "text": "Serbest virman SPK tarafından tamamen yasaklanmış olup sermaye piyasasında yalnızca bedelli virman yapılmasına izin verilir."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: MKK ve Takasbank Operasyon Kılavuzları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Serbest Virman (Free of Payment - FOP): Karşılığında takas sistemi üzerinden bir nakit akışı olmaksızın yapılan virmandır (aynı kişinin farklı kurumdaki hesapları arası virman). Bedelli Virman (DVP): Menkul kıymet devrinin para transferine bağlandığı virmandır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı FOP ve DVP arasındaki nakit şartı farkını tam olarak ortaya koyar.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Serbest virmanın yasadışı olduğunu düşünmek.",
+    "trap": "Serbest virman nakit takassız virmandır; bedelli virman (DVP) ise paranın ödenmesi şartına bağlı eşzamanlı devirdir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Serbest Virman vs Bedelli Virman Ayrımı"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_014",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Kâr Payı Dağıtımında Hak Sahipliği Tespiti (Record Date)",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Halka açık bir anonim ortaklığın nakit kâr payı dağıtımı sürecinde 'Hak Sahipliği Belirlenme Tarihi' (Record Date) ve hak kullanım takasına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hak Sahipliği Tarihi (Record Date) temettü dağıtımından tam 30 gün önce şirket genel kurulunca re'sen belirlenen gündür."
+      },
+      {
+        "key": "B",
+        "text": "Record Date günü borsada hisse senedi alan bir yatırımcı, takası henüz gerçekleşmediği halde temettüyü nakden tahsil eder."
+      },
+      {
+        "key": "C",
+        "text": "Kâr payı bedelleri Takasbank sistemi kullanılmaksızın şirket muhasebesi tarafından ortakların adreslerine nakit postalanır."
+      },
+      {
+        "key": "D",
+        "text": "Ex-date'i izleyen iş günü (T+1) kapanışındaki MKK kayıtları hak sahipliğini belirler; nakit temettü T+2'de hesaplara aktarılır."
+      },
+      {
+        "key": "E",
+        "text": "Temettü dağıtımında MKK ve Takasbank kayıtları dikkate alınmaz; sadece şirket pay defterindeki fiziki kayıtlar esas kabul edilir."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: II-19.1 Kâr Payı Tebliği ve MKK Hak Kullanım Yönergesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Ex-date temettüsüz işlem günüdür. Takas T+2 olduğu için, ex-date'den önceki gün hisse alanın takası ex-date'den bir gün sonra (T+1) sonuçlanır ve Record Date'de MKK sicilinde görünür. Nakit ödeme T+2'de hesaba geçer.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği Record Date, MKK hak sahipliği ve Takasbank nakit ödeme döngüsünü eksiksiz açıklar.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Temettünün elden veya postayla gönderileceğini zannetmek.",
+    "trap": "Record Date'de MKK kayıtlarına göre tespit edilen hak sahiplerine nakit temettü Takasbank üzerinden T+2'de aktarılır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Kâr Payı Dağıtımında Hak Sahipliği Tespiti (Record Date)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_015",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Merkezi Takas Kuruluşu Garanti Fonu Yapısı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank nezdinde oluşturulan 'Garanti Fonu'nun (Default Fund) finansal kaynağı ve işleyiş ilkelerine ilişkin;\n\nI. Garanti Fonu'na MKT üyesi olan aracı kurumlar ve bankalar işlem hacimleri ve risk derecelerine göre nakit ve teminat katkısı sağlamak zorundadır.\nII. Garanti Fonu, temerrüde düşen üyenin kendi teminatlarının yetersiz kalması halinde diğer üyelerin ve Takasbank'ın haklarını korumak amacıyla kullanılır.\nIII. Temerrüt eden üyenin borcu Garanti Fonu'ndan karşılandığında, fonu kullanan üye borcunu ferileriyle birlikte fona derhal iade etmekle yükümlüdür.\n\nYukarıda yer alan tespitlerden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı tespit mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı tespit mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı tespitler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı tespitler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı tespitlerin tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank MKT Yönetmeliği m. 16, 17.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Garanti Fonu tüm MKT üyelerinin ortaklaşa finanse ettiği risk havuzudur. Temerrüt durumunda devreye girer ve temerrüt eden üyeden rücuen tahsil edilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü Garanti Fonunun yasal mahiyetini eksiksiz yansıtır.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Garanti Fonunun sadece devlet bütçesinden karşılandığını sanmak.",
+    "trap": "Garanti Fonu üyelerin katkılarıyla kurulur; temerrütte devreye girer ve borçlu üyeden rücuen tahsil edilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Merkezi Takas Kuruluşu Garanti Fonu Yapısı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_016",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Yatırımcı Tazmin Merkezi (YTM) Zamanaşımı İşlemleri",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 83 uyarınca yatırım kuruluşları nezdindeki yatırımcılara ait nakit ve menkul kıymetlerin zamanaşımına uğraması sürecine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yatırımcının son işlem, talep veya yazılı talimat tarihinden itibaren 10 yıl içinde aranmayan her türlü emanet ve alacaklar zamanaşımına uğrar ve YTM'ye devredilir."
+      },
+      {
+        "key": "B",
+        "text": "Zamanaşımı süresi hisse senetlerinde 1 yıl, nakit paralarda ise 6 aydır."
+      },
+      {
+        "key": "C",
+        "text": "Zamanaşımına uğrayan varlıklar doğrudan aracı kurumun kendi özkaynaklarına kâr olarak kaydedilir."
+      },
+      {
+        "key": "D",
+        "text": "Zamanaşımına uğrayıp YTM'ye devredilen varlıklar üzerinde yatırımcılar 50 yıl sonra dahi mülkiyet davası açabilirler."
+      },
+      {
+        "key": "E",
+        "text": "Yatırımcı vefat ettiğinde varlıkları zamanaşımı süresi beklenmeksizin aynı gün YTM'ye devredilir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 83/1.\n2. HUKUKİ / TEKNİK ÇERÇEVE: SPKn uyarınca zamanaşımı süresi 10 yıldır. 10 yıl boyunca hiçbir işlem görmeyen veya talep edilmeyen varlıklar YTM'ye devredilir ve Hazineye gelir kaydedilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı 10 yıllık zamanaşımı kuralını ve YTM'ye devir sonucunu tam olarak verir.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Zamanaşımı süresinin 5 yıl veya 2 yıl olduğunu zannetmek.",
+    "trap": "Yatırım kuruluşlarındaki varlıklar 10 yıl aranmazsa zamanaşımına uğrar ve Yatırımcı Tazmin Merkezi'ne devredilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Yatırımcı Tazmin Merkezi (YTM) Zamanaşımı İşlemleri"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_017",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Rehin ve Haciz Blokajı İşlemleri",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 13/4 ve İcra ve İflas Kanunu uyarınca, kayden izlenen hisse senetleri üzerinde 'Haciz' ve 'Rehin' işlemlerinin tesis edilmesine dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hisse senedi haczi sadece şirketin basılı fiziki pay senetlerinin icra memurunca elle teslim alınmasıyla mümkündür."
+      },
+      {
+        "key": "B",
+        "text": "Kaydi paylar üzerindeki rehin ve haciz işlemleri MKK nezdindeki ilgili hak sahibi alt hesaplarına elektronik blokaj konulması suretiyle tesis edilir ve üçüncü kişilere karşı hüküm ifade eder."
+      },
+      {
+        "key": "C",
+        "text": "Haciz konulan hisse senetleri MKK sisteminde blokaj konulmaksızın serbestçe borsada satılabilir."
+      },
+      {
+        "key": "D",
+        "text": "Rehin tesis edilebilmesi için hisse senetlerinin mülkiyetinin alacaklı bankaya kesin olarak devredilmesi şarttır."
+      },
+      {
+        "key": "E",
+        "text": "MKK haciz bildirimlerini sadece Türkiye Ticaret Sicili Gazetesi ilanı ile öğrenir, icra dairesi elektronik bildirim yapamaz."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 13/4 ve İİK m. 78, 88.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Kaydi sermaye piyasası araçlarında rehin ve haciz MKK nezdinde ilgili alt hesaba elektronik blokaj konulması ile kurulur. UYAP entegrasyonu ile elektronik haciz işlenir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B şıkkı MKK alt hesabına blokaj koyma suretiyle elektronik rehin ve haciz rejimini tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Fiziki teslim veya zilyetlik devri gerektiği yanılgısı (kaydi sistemde fiziki teslimat yoktur).",
+    "trap": "Kaydi paylarda rehin ve haciz MKK nezdindeki alt hesaplara elektronik blokaj konulmasıyla tesis edilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Rehin ve Haciz Blokajı İşlemleri"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_018",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Para Piyasasında Teminat Kabul Edilen Varlıklar",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank Para Piyasası'nda (TPP) borçlanma karşılığında Takasbank tarafından teminat olarak kabul edilebilecek finansal varlıklara ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadece fiziki gayrimenkul ipotekleri ile şirket yöneticilerinin aval verdiği ticari senetler teminat olarak kabul edilir."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca borsada işlem görmeyen kapalı anonim şirketlerin hisseleri ve vadeli çekler tam teminat değeriyle kabul edilir."
+      },
+      {
+        "key": "C",
+        "text": "TL nakit, DİBS, Eurobond, konvertibl döviz ve BIST pay senetleri risklerine göre belirlenen katsayılarla teminata kabul edilir."
+      },
+      {
+        "key": "D",
+        "text": "Kripto varlıklar ile tezgahüstü türev sözleşmeleri hiçbir iskonto uygulanmaksızın nakit para gibi birebir teminat sayılır."
+      },
+      {
+        "key": "E",
+        "text": "Takasbank Para Piyasası'nda menkul kıymet teminatı kabul edilmez; işlemler sadece bankaların karşılıklı kefaletiyle yürütülür."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank Para Piyasası Yönetmeliği m. 9.\n2. HUKUKİ / TEKNİK ÇERÇEVE: TPP'de likit, güvenilir varlıklar (TL, DİBS, Eurobond, döviz, BIST BIST 30 hisseleri) risk derecelerine göre belirlenen 'teminat katsayıları / saç kesimi (haircut)' uygulanarak teminata kabul edilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C seçeneği kabul edilen likit enstrümanları ve iskonto (saç kesimi) prensibini eksiksiz sayar.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Gayrimenkul veya çek gibi gayri likit araçların teminat kabul edilebileceğini sanmak.",
+    "trap": "TPP'de TL, DİBS, Eurobond, döviz ve BIST hisseleri saç kesimi (haircut) uygulanarak teminat kabul edilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Para Piyasasında Teminat Kabul Edilen Varlıklar"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_019",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Kolektif Yatırım Kuruluşları Saklama Hizmeti (III-40.1)",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "III-40.1 sayılı Portföy Saklama Hizmetine ve Bu Hizmette Bulunacak Kuruluşlara İlişkin Esaslar Tebliği uyarınca 'Portföy Saklayıcısı'nın görev ve sorumluluklarına dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Portföy saklayıcısı fon yönetim şirketinin idari harcamalarını denetlemekle görevli olup fon varlıklarını koruma görevi yoktur."
+      },
+      {
+        "key": "B",
+        "text": "Portföy saklayıcısı fon varlıklarını kendi mülkiyetine geçirerek şirketin banka kredilerine rehin gösterme yetkisine sahiptir."
+      },
+      {
+        "key": "C",
+        "text": "Fon malvarlığı saklayıcı bankanın iflas masasına dahil edilir ve saklayıcının kamu borçları sebebiyle haczedilebilir."
+      },
+      {
+        "key": "D",
+        "text": "Saklayıcı, fon varlıklarını saklamak, işlemlerin mevzuata uygunluğunu denetlemek ve fon birim pay fiyatını kontrol etmekle yükümlüdür."
+      },
+      {
+        "key": "E",
+        "text": "Saklama hizmeti yalnızca aracı kurumların genel merkezlerinde tahsis edilen fiziki kiralık kasalar üzerinden yürütülür."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 56 ve III-40.1 Tebliği m. 5, 6.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Portföy saklayıcısı fon varlıklarını korur, PYŞ'nin emirlerinin mevzuat ve içtüzüğe uygunluğunu denetler, pay fiyatını doğrular. Bağımsız bir gözetim organı işlevi görür.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği saklayıcının gözetim ve doğrulama yetkilerini tam doğru ifade eder.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Saklayıcının sadece pasif bir kasa görevi gördüğünü, kontrol yetkisi olmadığını sanmak.",
+    "trap": "Portföy saklayıcısı fon varlıklarını saklar, PYŞ işlemlerinin mevzuata uygunluğunu ve birim pay fiyatını kontrol eder.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Kolektif Yatırım Kuruluşları Saklama Hizmeti (III-40.1)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_020",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Merkezi Takas Kuruluşu Sermaye Yeterliliği ve Risk Fonu",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Avrupa Piyasa Altyapısı Düzenlemesi (EMIR) ve CPMI-IOSCO standartlarına uyum kapsamında Takasbank'ın MKT risk yönetimi çerçevesine ilişkin;\n\nI. Takasbank stres testleri ve geri geriye testler (backtesting) yaparak garanti fonunun ve teminat seviyelerinin yeterliliğini sürekli ölçer.\nII. Takasbank MKT olarak üstlendiği piyasalarda piyasa koşullarına göre teminat tutarlarını (Span teminat parametrelerini) resen artırma yetkisine sahiptir.\nIII. Takasbank'ın dedike özkaynak katkısı temerrüt durumunda diğer üyelerin garanti fonundan önce zararı karşılamak üzere feda edilir.\n\nYukarıda yer alan MKT risk yönetimi kurallarından hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı kural mevzuatça zorunludur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı kural mevzuatça zorunludur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı kurallar mevzuatça zorunludur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı kurallar mevzuatça zorunludur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı kuralların tamamı mevzuatça zorunludur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank MKT Yönetmeliği ve Uluslararası Finansal Altyapı İlkeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: MKT stres testi ve backtesting yapar (I). Span parametrelerini günceller (II). Kendi dedike sermayesini diğer üyelerin fonundan önce şelaleye koyar (Skin in the game) (III).\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü Takasbank MKT mimarisinin temel yapı taşlarıdır.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Takasbank'ın teminatları tek taraflı artıramayacağını varsaymak.",
+    "trap": "Takasbank düzenli stres testleri yapar, Span parametrelerini günceller ve kendi dedike özkaynağını öncelikli feda eder.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Merkezi Takas Kuruluşu Sermaye Yeterliliği ve Risk Fonu"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_021",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Bedelsiz Sermaye Artırımı ve MKK Hak Kullanım Takası",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Hisseleri Borsa İstanbul'da işlem gören bir anonim ortaklığın %200 bedelsiz sermaye artırımı yapması durumunda, yatırımcıların hesaplarına yeni bedelsiz payların kayden intikaline dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bedelsiz paylar, hak kullanım tarihinde MKK tarafından hak sahiplerinin alt hesaplarına hiçbir nakit talep edilmeksizin otomatik olarak kayden aktarılır."
+      },
+      {
+        "key": "B",
+        "text": "Yatırımcıların bedelsiz payları alabilmek için hisse başına 1 TL nakit ödemeyi aracı kuruma yapmaları zorunludur."
+      },
+      {
+        "key": "C",
+        "text": "Bedelsiz hisseler yatırımcıların banka hesabına nakit TL olarak aktarılır."
+      },
+      {
+        "key": "D",
+        "text": "Bedelsiz sermaye artırımında yeni paylar sadece şirketin yönetim kurulu üyelerine verilir, diğer ortaklara verilmez."
+      },
+      {
+        "key": "E",
+        "text": "Bedelsiz paylar ancak genel kurul toplantısına bizzat fiziken katılan ortaklara noter huzurunda teslim edilir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: VII-128.1 Pay Tebliği ve MKK Hak Kullanım Operasyon Yönergesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Bedelsiz sermaye artırımında iç kaynaklar sermayeye eklendiğinden yatırımcıdan para talep edilmez. MKK kayıtları üzerinden otomatik olarak hak sahiplerinin kaydi hesaplarına yeni paylar yansıtılır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı bedelsiz payların otomatik kaydi intikalini tam doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Bedelsiz artırımda da para ödeneceğini sanmak (bedellide para ödenir).",
+    "trap": "Bedelsiz paylar MKK nezdinde hiçbir nakit ödeme gerekmeksizin hak sahiplerinin hesaplarına otomatik kayden aktarılır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Bedelsiz Sermaye Artırımı ve MKK Hak Kullanım Takası"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_022",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Rüçhan Hakkı Kullanımı ve Nakit Bedel Takası",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Bedelli sermaye artırımında yeni pay alma (rüçhan) hakkını kullanmak isteyen bir yatırımcının takas ve saklama operasyonuna ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yatırımcının sadece sözlü talep iletmesi yeterli olup rüçhan bedeli yeni paylar borsada satıldıktan sonra tahsil edilir."
+      },
+      {
+        "key": "B",
+        "text": "Yatırımcı süresinde talimat vermeli ve nakdi hazır etmelidir; bedel Takasbank'tan ihraççıya, yeni paylar MKK'da hesaba geçer."
+      },
+      {
+        "key": "C",
+        "text": "Rüçhan hakkı kullanımı sonucunda ihraç edilen yeni pay senetleri 5 yıl boyunca MKK nezdinde bloke edilir ve satılamaz."
+      },
+      {
+        "key": "D",
+        "text": "Rüçhan kullanım bedeli doğrudan Borsa İstanbul Yönetim Kurulu başkanlığı adına açılan özel vadesiz hesaba yatırılır."
+      },
+      {
+        "key": "E",
+        "text": "Rüçhan hakkını kullanan yatırımcının portföyündeki eski paylar iptal edilerek yerine sadece yeni paylar tahsis edilir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: VII-128.1 Pay Tebliği m. 18, 19 ve Takasbank Hak Kullanım Kılavuzu.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Rüçhan kullanımında süre içinde talimat verilir, rüçhan kuponları hesaptan düşülür, karşılığı nakit Takasbank üzerinden ihraççıya ödenir ve karşılığında üretilen yeni hisseler MKK nezdinde hesaba aktarılır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B şıkkı talimat, nakit temin, Takasbank para aktarımı ve MKK pay intikalini eksiksiz belirtir.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Nakit olmadan da rüçhanın kullanılabileceği zannı.",
+    "trap": "Rüçhan hakkı kullanımında süresinde talimat ve nakit bedelin hazır olması zorunludur; takas Takasbank/MKK ile yürütülür.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Rüçhan Hakkı Kullanımı ve Nakit Bedel Takası"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_023",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Menkul Kıymet Nitelikli Saklama ve Sub-Custody",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Türkiye'de yerleşik yatırımcıların yabancı ülke borsalarında işlem gören hisse senetleri ve borçlanma araçlarının saklanmasına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yurt dışı menkul kıymetler fiziki senet olarak Türkiye'ye getirilir ve Darphane kasalarında kilit altında muhafaza edilir."
+      },
+      {
+        "key": "B",
+        "text": "Yurt dışı menkul kıymetlerin Türk yatırımcılar adına saklanması yasak olup tüm işlemler aracı kurumca fiktif yürütülür."
+      },
+      {
+        "key": "C",
+        "text": "Takasbank, Euroclear/Clearstream veya yabancı saklamacılar (sub-custodian) nezdindeki hesaplarıyla yabancı kıymetleri kayden saklar."
+      },
+      {
+        "key": "D",
+        "text": "Yabancı menkul kıymetlerin saklama ve mutabakat masrafları Borsa İstanbul tarafından sosyal sorumluluk fonundan karşılanır."
+      },
+      {
+        "key": "E",
+        "text": "Yurt dışı hisse alımlarında takas mutabakatı yalnızca diplomatik kuryelerle taşınan fiziki çekler üzerinden tamamlanır."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-40.1 Tebliği ve Takasbank Dış Saklama Yönergesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Takasbank küresel entegrasyon kapsamında Euroclear ve Clearstream nezdinde omnibus hesaplar açarak Türk yatırım kuruluşlarının yabancı sermaye piyasası araçlarını güvenli şekilde saklar (Global/Sub-custody).\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı Euroclear/Clearstream entegrasyonu ve kaydi saklama modelini tam yansıtır.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Fiziki kağıtların Türkiye'ye getirilip kasada saklanacağı zannı (A şıkkı).",
+    "trap": "Takasbank, Euroclear ve Clearstream gibi uluslararası saklama kuruluşları nezdindeki hesaplarıyla yabancı kıymetleri saklar.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Menkul Kıymet Nitelikli Saklama ve Sub-Custody"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_024",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Kıymet Ödünç İşlemlerinde Teminat Değerlemesi ve Çağrı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank Ödünç Pay Piyasası'nda (ÖPP) ödünç alan üyenin Takasbank'a yatırmış olduğu teminatların piyasa dalgalanmaları sebebiyle değer kaybetmesi durumunda işletilen teminat tamamlama kuralı nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Teminatlar piyasa dalgalanmalarından etkilenmez; sözleşme vadesi sonuna kadar hiçbir ilave teminat talep edilemez."
+      },
+      {
+        "key": "B",
+        "text": "Teminat oranı gerileyen üyenin faaliyeti derhal durdurulur ve şirket hakkında SPK tarafından re'sen iflas davası açılır."
+      },
+      {
+        "key": "C",
+        "text": "Oluşan teminat açığı Takasbank kuralları gereği ödünç veren yatırımcı tarafından nakit yatırılarak kapatılmak zorundadır."
+      },
+      {
+        "key": "D",
+        "text": "Takasbank teminatları günlük değerler (mark-to-market); oran düşerse tamamlama çağrısı yapar, uyulmazsa pozisyonu re'sen kapatır."
+      },
+      {
+        "key": "E",
+        "text": "Teminat açığı doğduğunda Takasbank eksik kalan tutarı kendi yedek akçelerinden karşılar ve üyeden hiçbir talepte bulunmaz."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank ÖPP Yönergesi m. 15, 16.\n2. HUKUKİ / TEKNİK ÇERÇEVE: ÖPP'de ödünç alan tarafın teminatları günlük değerlenir (mark-to-market). Teminat açığı oluştuğunda tamamlama çağrısı yapılır; tamamlanmazsa Takasbank piyasadan payı satın alarak ödünç verene iade eder ve teminatları nakde çevirir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği günlük değerleme, tamamlama çağrısı ve re'sen kapatma prosedürünü tam belirtir.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Ödünç verenin teminat açığını kapatacağı yanılgısı (C şıkkı; açığı ödünç alan kapatır).",
+    "trap": "ÖPP'de teminatlar günlük değerlenir; oran düşerse ödünç alana tamamlama çağrısı yapılır, uyulmazsa re'sen kapatılır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Kıymet Ödünç İşlemlerinde Teminat Değerlemesi ve Çağrı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_025",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Sicil Numarası ve Yatırımcı Kimlik Doğrulaması",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Sermaye piyasasında yatırım hesabı açan her bir yerli veya yabancı gerçek ve tüzel kişiye MKK tarafından tahsis edilen 'Sicil Numarası' ve hesap eşleştirmesine ilişkin;\n\nI. Her bir yatırımcıya MKK nezdinde tek bir benzersiz sicil numarası (MKK Sicil No) tahsis edilir.\nII. Yatırımcının farklı aracı kurumlarda veya bankalarda kaç tane hesabı olursa olsun, tüm bu hesaplar aynı MKK sicil numarası altında konsolide olarak izlenir.\nIII. Yatırımcı sicil numarası üzerinden kamu otoriteleri ve SPK nezdinde manipülasyon ve içeriden öğrenen ticaretine karşı piyasa gözetimi yürütülür.\n\nYukarıda yer alan MKK sicil ilkelerinden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı ilke mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı ilke mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı ilkeler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı ilkeler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı ilkelerin tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: MKK Üyelik ve Sicil Yönergesi m. 6, 7 ve 6362 sayılı SPKn m. 13.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Türkiye'de 'Tek Sicil - Çoklu Hesap' ilkesi geçerlidir. Bir yatırımcının 10 farklı aracı kurumda hesabı olsa da hepsi tek bir MKK sicil numarasına bağlıdır. Bu sayede piyasa dolandırıcılığı anlık gözetlenebilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin üçü de tek sicil ve konsolide izleme kuralını tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Her aracı kurum için ayrı bir MKK sicili tahsis edildiğini ve hesapların birleştirilemediğini sanmak.",
+    "trap": "MKK'da her yatırımcıya tek bir sicil no verilir; tüm kurumlardaki hesaplar bu sicilde konsolide izlenir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Sicil Numarası ve Yatırımcı Kimlik Doğrulaması"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_026",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "VİOP Takas ve Teminat Yönetimi (Span Algoritması)",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank'ın VİOP'ta portföy bazında teminat hesaplamasında kullandığı 'SPAN' (Standard Portfolio Analysis of Risk) algoritmasının temel çalışma prensibi hangisidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Farklı fiyat ve oynaklık senaryolarında portföyün maruz kalabileceği azami zararı simüle ederek gerekli başlangıç teminatını belirler."
+      },
+      {
+        "key": "B",
+        "text": "Portföyün toplam piyasa değerini her gün sabit kabul eden ve türev pozisyonlar için hiçbir teminat talep etmeyen basit bir yöntemdir."
+      },
+      {
+        "key": "C",
+        "text": "Yalnızca BIST 30 pay senedi işlemlerine uygulanan, vadeli işlem ve opsiyon sözleşmelerinde kullanılması kanunen yasak bir formüldür."
+      },
+      {
+        "key": "D",
+        "text": "Yatırımcının mesleki deneyimini ve yıllık gelir beyanını dikkate alarak her müşteri için tamamen subjektif teminat oranı belirler."
+      },
+      {
+        "key": "E",
+        "text": "Piyasa faizleri yükseldiğinde açık pozisyonları teminat seviyesine bakılmaksızın aynı gün re'sen kapatan bir risk filtresidir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank VİOP Takas ve Risk Yönetimi Yönergesi m. 11.\n2. HUKUKİ / TEKNİK ÇERÇEVE: SPAN algoritması (CME patentli, küresel standart) portföydeki ters yönlü pozisyonların riskini netleştirir (korelasyon indirimi). 16 farklı senaryo simülasyonu ile bir sonraki gün oluşabilecek azami zararı karşılayacak teminatı hesaplar.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı SPAN algoritmasının en kötü durum senaryosu ve azami zarar simülasyonu prensibini tam tanımlar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: SPAN'ın sadece hisse senetlerine uygulandığı yanılgısı.",
+    "trap": "SPAN algoritması, farklı fiyat ve oynaklık senaryolarında portföyün uğrayabileceği azami zararı simüle ederek teminat hesaplar.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "VİOP Takas ve Teminat Yönetimi (Span Algoritması)"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_027",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Aracı Kurum Takas Limitleri ve Gün İçi Limit",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank'ın üyelerine tahsis ettiği 'Takas Net Borç Limiti' ve gün içi risk sınırlarına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aracı kurumlar sermaye ve teminatlarına bakılmaksızın borsada diledikleri tutarda sınırsız takas borcu yükümlülüğü üstlenebilirler."
+      },
+      {
+        "key": "B",
+        "text": "Üyenin sermayesi ve Garanti Fonu katkısına göre Takas Net Borç Limiti tahsis edilir; limiti aşan üyenin yeni işlemleri durdurulur."
+      },
+      {
+        "key": "C",
+        "text": "Takas net borç limiti yalnızca yabancı yatırım bankalarına tahsis edilir; yerli sermayeli aracı kurumlar limitsiz işlem yaparlar."
+      },
+      {
+        "key": "D",
+        "text": "Takas limitini aşan bir yatırım kuruluşunun Borsa İstanbul ve Takasbank üyelik belgesi aynı gün geri dönülemez biçimde feshedilir."
+      },
+      {
+        "key": "E",
+        "text": "Takas net borç limiti yalnızca nakit borçlar için uygulanır; menkul kıymet teslim borçlarında herhangi bir sınır bulunmamaktadır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank MKT Yönetmeliği m. 12.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Risk yönetimi gereği üyelerin üstlenebilecekleri azami takas riski Takas Net Borç Limiti ile sınırlandırılır. Limit sermaye ve teminatla orantılıdır; limit dolduğunda sistem yeni pozisyon açılışını engeller.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B seçeneği garanti fonu, sermaye yeterliliği ve limit aşımı sonucunu doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Takas sisteminde hiçbir sınır olmadığını veya sınırsız borçlanılabileceğini sanmak (A şıkkı).",
+    "trap": "Takasbank üyenin sermaye ve garanti fonu katkısına göre Takas Net Borç Limiti belirler; limit aşılırsa işlemler durdurulur.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Aracı Kurum Takas Limitleri ve Gün İçi Limit"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_028",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Bilgi Güvenliği ve e-YÖNET Kurumsal Portalı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "MKK tarafından işletilen 'e-YÖNET: Kurumsal Yönetim ve Yatırımcı İlişkileri Portalı'nın işlevine dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Şirketlerin sadece vergi beyannamelerini Gelir İdaresi Başkanlığı'na iletmek için kullandıkları bir muhasebe yazılımıdır."
+      },
+      {
+        "key": "B",
+        "text": "Borsa İstanbul yönetim kurulu başkanının şirketlere günlük talimat göndermek için kullandığı mesajlaşma programıdır."
+      },
+      {
+        "key": "C",
+        "text": "Halka açık ortaklıkların pay sahipleri ile iletişimini sağlayan, ortaklık yapısını, kurumsal yönetim uyum raporlarını ve hak kullanım süreçlerini şeffaf şekilde yöneten elektronik platformdur."
+      },
+      {
+        "key": "D",
+        "text": "Yalnızca borsa aracı kurumlarının birbirlerine hisse virmanı yapmak için kullandıkları kapalı devre takas ağıdır."
+      },
+      {
+        "key": "E",
+        "text": "Halka açık şirketlerin hisse senedi fiyatlarını manipüle etmelerine izin veren bir borsa modülüdür."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: II-17.1 Kurumsal Yönetim Tebliği ve MKK Hizmet Portalları Düzenlemeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: e-YÖNET platformu, kurumsal yönetim ilkelerine uyumu artırmak, ihraççı şirketler ile pay sahipleri arasında doğrudan ve güvenli köprü kurmak amacıyla MKK tarafından geliştirilmiştir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı e-YÖNET portalının fonksiyon ve amacını tam olarak tanımlar.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Portalın sadece vergi amaçlı olduğunu düşünmek (A şıkkı).",
+    "trap": "e-YÖNET platformu, halka açık şirketlerin ortaklık yapısını, hak kullanımlarını ve kurumsal yönetim uyumunu yöneten MKK portalıdır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Bilgi Güvenliği ve e-YÖNET Kurumsal Portalı"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_029",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takas İşlemlerinde Temerrüt Eden Üyenin Menkul Kıymetlerinin Satışı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Borsa İstanbul Pay Piyasası takasında taahhüt ettiği menkul kıymet teslim yükümlülüğünü yerine getiremeyerek temerrüde düşen bir aracı kuruma karşı Takasbank'ın 'Açık Takas Pozisyonunu Kapatma' yöntemi nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takasbank teslim edilmeyen hisseler yerine alıcı yatırımcılara devlet iç borçlanma senedi teklif eder ve işlemi derhal kapatır."
+      },
+      {
+        "key": "B",
+        "text": "Takasbank borçlu aracı kurumun şirket araçlarına el koyarak satış bedelini alıcı yatırımcıların banka hesabına nakden aktarır."
+      },
+      {
+        "key": "C",
+        "text": "Teslim edilmeyen paylar için alıcı taraf hiçbir hak talebinde bulunamaz ve işlemin tamamlanması için 5 yıl boyunca beklemek zorundadır."
+      },
+      {
+        "key": "D",
+        "text": "Takasbank piyasadan veya ÖPP'den payı temin edip alıcıya teslim eder (buy-in); oluşan tüm maliyeti temerrüt eden üyeye rücu eder."
+      },
+      {
+        "key": "E",
+        "text": "Takasbank ihraççı şirkete resmi müzekkere yazarak teslim edilemeyen pay miktarı kadar bedelsiz yeni pay basılmasını talep eder."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank MKT Yönetmeliği m. 20, 21.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Menkul kıymet temerrüdünde alıcının mağdur olmaması için Takasbank bizzat devreye girer: ÖPP'den ödünç bulur veya piyasadan hisseyi satın alarak (Buy-in) alıcıya teslim eder. Maliyeti temerrüt eden üyeden tahsil eder.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği piyasadan temin ve alıcıya eksiksiz teslimat mekanizmasını tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Alıcının hisse yerine tahvil almaya zorlanacağı yanılgısı (A şıkkı).",
+    "trap": "Takasbank temerrüt halinde hisseyi piyasadan (ÖPP veya borsa) temin edip alıcıya teslim eder, faturayı borçluya rücu eder.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takas İşlemlerinde Temerrüt Eden Üyenin Menkul Kıymetlerinin Satışı"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_030",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Saklama Sisteminde Hak Sahipliği Blokajı İstisnaları",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "MKK nezdinde kayden izlenen hisse senetleri üzerine konulan blokajların kaldırılması ve transfer süreçlerine ilişkin;\n\nI. Yatırımcı tarafından konulan e-CAS blokajı, yatırımcının bizzat şifresi ve kimlik doğrulaması ile sistemden kaldırılmadıkça aracı kurumca transfer edilemez.\nII. Mahkeme veya icra dairesi tarafından konulan ihtiyati tedbir ve haciz blokajları ancak ilgili adli merciin resmi yazılı/elektronik müzekkeresi ile kaldırılabilir.\nIII. İflas masasına devredilen aracı kurumlardaki müşteri hesapları SPK ve MKK gözetiminde sağlam bir saklamacı kuruma topluca virmanlanabilir.\n\nYukarıda yer alan hukuki ve operasyonel kurallardan hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı kural mevzuatça öngörülmüştür."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı kural mevzuatça öngörülmüştür."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı kurallar mevzuatça öngörülmüştür."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı kurallar mevzuatça öngörülmüştür."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı kuralların tamamı mevzuatça öngörülmüştür."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: MKK İş ve İşleyiş Yönergesi ve SPKn m. 13.\n2. HUKUKİ / TEKNİK ÇERÇEVE: e-CAS blokajı yatırımcı iradesiyle (I), adli blokajlar mahkeme kararıyla (II) kalkar. İflas eden kurumdaki müşteri varlıkları sağlam kuruma aktarılır (III).\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü operasyonel blokaj kaldırma rejiminin kurallarıdır.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Mahkeme haciz blokajının aracı kurum talebiyle kaldırılabileceğini sanmak.",
+    "trap": "e-CAS blokajı yatırımcı şifresiyle, adli blokajlar mahkeme müzekkeresiyle kalkar; müşteri varlıkları korunur.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Saklama Sisteminde Hak Sahipliği Blokajı İstisnaları"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_031",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank BIST 30 Endeks Vadeli Sözleşmelerinde Nakdi Uzlaşma",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "BIST 30 Endeks Vadeli İşlem Sözleşmelerinin vade sonu uzlaşma yöntemi ve nakit akışına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vade sonu uzlaşma yöntemi nakdi uzlaşmadır; vade sonu uzlaşma fiyatı ile pozisyon fiyatı arasındaki fark hesaplanarak kâr/zarar nakit olarak Takasbank nezdinde takas edilir."
+      },
+      {
+        "key": "B",
+        "text": "Vade sonunda yatırımcıya endekste yer alan 30 şirketin hisse senetleri fiziki olarak kamyonla teslim edilir."
+      },
+      {
+        "key": "C",
+        "text": "Endeks vadeli sözleşmelerinde vade sonunda hiçbir hesaplaşma yapılmaz, sözleşme kendiliğinden imha edilir."
+      },
+      {
+        "key": "D",
+        "text": "Vade sonu uzlaşma fiyatı sadece Amerika Merkez Bankası (Fed) faiz kararına göre belirlenir."
+      },
+      {
+        "key": "E",
+        "text": "Nakdi uzlaşma yapıldığında kazanan taraf kârını sadece altın olarak Takasbank gişesinden çekebilir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul VİOP Prosedürü m. 16.\n2. HUKUKİ / TEKNİK ÇERÇEVE: BIST 30 Endeks sözleşmelerinde fiziki hisse teslimi imkansız olduğundan uzlaşma yöntemi NAKDİ UZLAŞMADIR (Cash Settlement). Kâr eden tarafın hesabına nakit aktarılır, zarar edenden düşülür.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı nakdi uzlaşma kuralını tam doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Endeks sözleşmelerinde de 30 hissenin fiziki teslim edileceğini sanmak (B şıkkı).",
+    "trap": "Endeks vadeli işlem sözleşmelerinde vade sonu uzlaşma yöntemi NAKDİ UZLAŞMADIR.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank BIST 30 Endeks Vadeli Sözleşmelerinde Nakdi Uzlaşma"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_032",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Çek Takas Sistemi (Elektronik Çek Takas)",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Bankalararası Takas Odaları Merkezi (BTOM) ve Takasbank nezdinde yürütülen 'Elektronik Çek Takas Sistemi' işleyişine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Çeklerin fiziki olarak banka şubeleri arasında elden dolaştırılması zorunlu olup dijital görüntü aktarımı yasaktır."
+      },
+      {
+        "key": "B",
+        "text": "Muhatap bankalar çeklerin fiziki asılları yerine elektronik ortamda taranmış görüntüleri üzerinden karşılık kontrolü ve takas mutabakatı yaparlar."
+      },
+      {
+        "key": "C",
+        "text": "Çek takas sistemi sadece yabancı para çekleri için geçerli olup Türk Lirası çekler takasa giremez."
+      },
+      {
+        "key": "D",
+        "text": "Elektronik çek takas sisteminde karşılıksız çıkan çekler için hiçbir yasal bildirim yapılmaz."
+      },
+      {
+        "key": "E",
+        "text": "Çek takas işlemlerinin sonuçlanması için asgari 6 ay süre tanınması zorunludur."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: 5941 sayılı Çek Kanunu ve Çek Takas Yönetmeliği.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Çek takas sistemi fiziki çek taşıma maliyetini bitirmiştir. Çekin taranmış yüksek çözünürlüklü dijital görüntüsü Takasbank sistemi üzerinden muhatap bankaya iletilir ve karşılığı sorgulanır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B seçeneği dijital çek görüntüsü üzerinden karşılık kontrolü ilkesini tam doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Çeklerin fiziki olarak takas odasında toplanması gerektiği eski kurala takılmak.",
+    "trap": "Çek takas sistemi elektronik ortamda taranmış çek görüntüleri üzerinden karşılık kontrolü ile yürütülür.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Çek Takas Sistemi (Elektronik Çek Takas)"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_033",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Pay Defteri ve Genel Kurul Blokajı",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "6102 sayılı TTK m. 417 uyarınca halka açık anonim ortaklıkların genel kurul toplantısına katılabilecek pay sahiplerinin listesinin hazırlanmasına dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Genel kurul listesi sadece genel kurul sabahı şirket kapısına gelen ortakların nüfus cüzdanlarına bakılarak elle yazılır."
+      },
+      {
+        "key": "B",
+        "text": "Genel kurula katılabilmek için pay sahiplerinin hisselerini en az 6 ay önceden Takasbank'a rehin vermeleri şarttır."
+      },
+      {
+        "key": "C",
+        "text": "Şirket yönetim kurulu, genel kurul toplantısına katılabilecek pay sahiplerinin listesini MKK'dan sağlayacağı 'Hazır Bulunanlar Listesi'ne göre düzenler."
+      },
+      {
+        "key": "D",
+        "text": "MKK hazır bulunanlar listesini sadece şirket kurucu ortaklarının onay vermesi halinde hazırlar."
+      },
+      {
+        "key": "E",
+        "text": "Hisselerini genel kurul gününden önce satmış olan eski ortaklar genel kurula katılıp şirket adına bağlayıcı oy kullanabilirler."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6102 sayılı TTK m. 417 ve MKK Genel Kurul İşlemleri Kılavuzu.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Halka açık şirketlerde genel kurula katılacak ortakların listesi MKK sicil kayıtlarından doğrudan çekilir (Hazır Bulunanlar Listesi). MKK kaydı esastır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı MKK'dan alınan liste üzerinden genel kurul hazır bulunanlar listesinin tanzimini doğru belirtir.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Şirketin kendi eski pay defterine bakarak liste yapacağını düşünmek (borsa şirketinde MKK esastır).",
+    "trap": "Genel kurula katılabilecek ortaklar listesi MKK'dan sağlanan Hazır Bulunanlar Listesi'ne göre düzenlenir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Pay Defteri ve Genel Kurul Blokajı"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_034",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Kıymetli Madenler ve Taşlar Piyasası Saklama Hizmeti",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Borsa İstanbul Kıymetli Madenler ve Kıymetli Taşlar Piyasası'nda (KMKTP) işlem gören standart ve standart dışı altın külçelerinin saklanmasına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Standart altın külçeleri her aracı kurumun kendi merkez ofisinde bulunan çelik kasalarda fiziki olarak saklanmak zorundadır."
+      },
+      {
+        "key": "B",
+        "text": "Altınlar fiziki olarak depolanmaz; yalnızca sanal bilgisayar kayıtları üzerinden fiktif bakiye olarak takip edilir."
+      },
+      {
+        "key": "C",
+        "text": "Altın saklama operasyonları mevzuat gereğince yalnızca Adalet Bakanlığı'na bağlı noterlik dairelerinde yürütülebilir."
+      },
+      {
+        "key": "D",
+        "text": "Kıymetli madenler Borsa İstanbul'un uluslararası standartlardaki özel saklama kasalarında fiziki ve kaydi olarak muhafaza edilir."
+      },
+      {
+        "key": "E",
+        "text": "Kıymetli Madenler Piyasası'nda takas mutabakatının tamamlanması için yasal olarak en az 6 ay beklenmesi zorunludur."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Kıymetli Madenler ve Kıymetli Taşlar Piyasası Yönergesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: KMKTP bünyesinde işlem gören altın ve gümüşler Borsa İstanbul'un uluslararası standartlardaki yüksek güvenlikli kasalarında fiziki olarak saklanır ve MKK/Takasbank ile entegre kayden izlenir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D şıkkı Borsa İstanbul altın saklama kasalarını tam doğru tarif eder.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Altınların her aracı kurumun kendi şubesinde saklandığı yanılgısı.",
+    "trap": "Kıymetli madenler Borsa İstanbul'un yüksek güvenlikli altın saklama kasalarında muhafaza edilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Kıymetli Madenler ve Taşlar Piyasası Saklama Hizmeti"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_035",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Merkezi Takas Kuruluşunda Üyelik Tipleri",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank MKT ve Takas Üyeliği mevzuatı kapsamında düzenlenen üyelik tipleri ve sorumluluklarına ilişkin;\n\nI. Genel Takas Üyeliği: Hem kendi işlemlerinin hem de takas üyesi olmayan diğer yatırım kuruluşlarının işlemlerinin takasını yürütmeye yetkilidir.\nII. Doğrudan Takas Üyeliği: Yalnızca kendi işlemlerinin ve kendi müşterilerinin işlemlerinin takasını yürütmeye yetkilidir; üçüncü kurumların takasını yapamaz.\nIII. Takas Üyesi Olmayan Kuruluşlar: Borsa işlemlerinin takasını ancak bir Genel Takas Üyesi ile sözleşme imzalayarak sonuçlandırabilirler.\n\nYukarıda yer alan takas üyeliği sınıflandırmalarından hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı sınıflandırma mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı sınıflandırma mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı sınıflandırmalar mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı sınıflandırmalar mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı sınıflandırmaların tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank MKT Yönetmeliği m. 7, 8.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Takasbank'ta 2 üyelik türü vardır: 1) Doğrudan Takas Üyesi (Sadece kendi işlemleri), 2) Genel Takas Üyesi (Hem kendi hem başkalarının işlemleri). Takas üyesi olmayanlar Genel Takas Üyesi üzerinden takas yapar.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncülleri bu sınıflandırmayı eksiksiz ifade eder.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Doğrudan takas üyesinin de üçüncü kurumlara takas hizmeti verebileceğini zannetmek.",
+    "trap": "Takas üyeliği: Genel Takas Üyesi başkalarının takasını da yapar; Doğrudan Takas Üyesi sadece kendininkini yapar.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Merkezi Takas Kuruluşunda Üyelik Tipleri"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_036",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK e-VEDO Elektronik Veri Deposu",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Sermaye piyasasında türev araç işlemlerinin şeffaflığını sağlamak amacıyla kurulan ve MKK bünyesinde faaliyet gösteren 'Elektronik Veri Deposu'na (e-VEDO / Trade Repository) ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tezgahüstü (OTC) ve borsa türev sözleşmelerine ilişkin detaylı işlem verilerinin raporlandığı MKK merkezi veri tabanıdır."
+      },
+      {
+        "key": "B",
+        "text": "Halka açık ortaklıkların basılı yıllık faaliyet raporları ile ürün kataloglarını depolayan fiziksel arşiv dairesidir."
+      },
+      {
+        "key": "C",
+        "text": "e-VEDO'ya yapılan tüm türev işlem bildirimleri anlık olarak günlük ulusal gazetelerde tam sayfa ilan edilmek zorundadır."
+      },
+      {
+        "key": "D",
+        "text": "Yalnızca bireysel döviz ve altın alım satımlarının kaydedildiği, türev ürünlerin kesinlikle bildirilmediği bir sistemdir."
+      },
+      {
+        "key": "E",
+        "text": "Sermaye piyasası aracı kurumlarının birbirlerine şifreli kısa mesaj göndermek amacıyla kullandıkları kapalı devre bir ağdır."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 87 ve MKK e-VEDO İşleyiş Esasları.\n2. HUKUKİ / TEKNİK ÇERÇEVE: e-VEDO (Trade Repository), küresel G20 taahhütleri uyarınca tezgahüstü türev işlemlerin sistemik riskini izlemek için MKK nezdinde kurulan yasal bildirim ve veri tabanı merkezidir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı tezgahüstü ve organize türev işlemlerin raporlama merkezi tanımını tam verir.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: e-VEDO'nun sadece fiziksel arşiv dairesi sanılması (B şıkkı).",
+    "trap": "e-VEDO, tezgahüstü ve borsa türev işlemlerinin raporlandığı MKK merkezi veri deposudur (Trade Repository).",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK e-VEDO Elektronik Veri Deposu"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_037",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Para ve Menkul Kıymet Teminatlarının Nemalandırılması",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank nezdinde MKT teminat hesaplarında ve takas hesaplarında nakit olarak tutulan Türk Lirası teminatların nemalandırılmasına dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takasbank nakit teminatlara hiçbir şekilde faiz işletmez ve tüm faiz gelirlerini kendi şirket sermayesine katar."
+      },
+      {
+        "key": "B",
+        "text": "Takasbank nezdinde bloke edilen serbest nakit teminatlar para piyasasında veya ters repoda gecelik olarak nemalandırılarak faiz getirisi ilgili üye ve yatırımcı hesaplarına yansıtılır."
+      },
+      {
+        "key": "C",
+        "text": "Nakit teminatların nemalandırılması sadece döviz hesaplarında geçerli olup TL hesaplarda nemalandırma yasaktır."
+      },
+      {
+        "key": "D",
+        "text": "Nakit teminat faizleri sadece SPK bütçesine aktarılır, yatırımcıya ödenmez."
+      },
+      {
+        "key": "E",
+        "text": "Teminatların nemalanabilmesi için yatırımcının bizzat Takasbank veznesine giderek her gün nakit para talep etmesi gerekir."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank Teminat Yönetimi Yönergesi m. 13.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Yatırımcıların ve üyelerin Takasbank nezdindeki nakit teminatları atıl bırakılmaz. Takasbank tarafından gecelik ters repo ve para piyasasında nemalandırılır; nemalar hesaplara günlük yansıtılır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B seçeneği serbest nakit teminatların gecelik nemalandırılması kuralını tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Teminatların nemalandırılmadığı zannı (A şıkkı).",
+    "trap": "Takasbank'taki nakit teminatlar para piyasasında gecelik nemalandırılarak getirisi hesaplara yansıtılır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Para ve Menkul Kıymet Teminatlarının Nemalandırılması"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_038",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Yatırımcı Bilgilendirme Sistemi (e-CAS) ve Şüpheli İşlem SMS/E-posta Bildirimi",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "MKK nezdinde faaliyet gösteren 'e-CAS' (Elektronik Yatırımcı Bilgilendirme ve Uyarı Sistemi) işleyişine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "e-CAS yalnızca borsa brokerlarının seans sırasında kendi aralarında iletişim kurmasını sağlayan kapalı devre mesajlaşma sistemidir."
+      },
+      {
+        "key": "B",
+        "text": "e-CAS sistemine kayıtlı yatırımcıların hesaplarından pay çıkışı yapıldığında gizlilik gereği hiçbir bilgilendirme mesajı iletilmez."
+      },
+      {
+        "key": "C",
+        "text": "Hesaptan menkul kıymet çıkışı veya virman olduğunda yatırımcıya anlık SMS ve e-posta göndererek yetkisiz işlemleri engeller."
+      },
+      {
+        "key": "D",
+        "text": "e-CAS sistemi yatırımcılara sadece yılda bir defa posta yoluyla basılı hesap bülteni ve genel kurul davetiyesi gönderen servistir."
+      },
+      {
+        "key": "E",
+        "text": "e-CAS bildirimleri yalnızca portföy büyüklüğü 50 milyon TL'nin üzerinde olan kurumsal fonlar için geçerli olup bireysele kapalıdır."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: MKK e-CAS Düzenlemeleri ve Yatırımcı Hakları Tebliği.\n2. HUKUKİ / TEKNİK ÇERÇEVE: e-CAS, yatırımcıların haberi olmadan aracı kurum personeli veya yetkisiz şahıslar tarafından hisse satışı/virmanı yapılmasını engeller. Çıkış hareketinde derhal anlık SMS/e-posta bildirimi gider.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı hisse çıkışında anlık SMS/e-posta uyarı mekanizmasını tam doğru belirtir.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: e-CAS'ın sadece yıllık basılı ekstre gönderdiği sanrısı (D şıkkı).",
+    "trap": "e-CAS, hesaptan menkul kıymet çıkışlarında yatırımcıya anlık SMS ve e-posta göndererek yetkisiz işlemleri engeller.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Yatırımcı Bilgilendirme Sistemi (e-CAS) ve Şüpheli İşlem SMS/E-posta Bildirimi"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_039",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Kredili İşlemlerde Özkaynak Tamamlama Operasyonel Bildirimi",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Seri: V, No: 65 sayılı Tebliğ uyarınca kredili pay alımı yapan bir müşterinin özkaynak açığı oluştuğunda aracı kurum operasyon biriminin yapacağı tebligat ve tamamlama süresine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Özkaynak bildirimi yalnızca noter kanalıyla yapılabilir ve yatırımcıya eksikliği gidermesi için en az 6 ay yasal süre verilir."
+      },
+      {
+        "key": "B",
+        "text": "Özkaynak tamamlama çağrısı yapılmasına gerek yoktur; kurum bildirim yapmaksızın aynı saniyede müşterinin tüm paylarını satar."
+      },
+      {
+        "key": "C",
+        "text": "Müşteriye telefonla ulaşılamadığı takdirde hiçbir işlem yapılamaz ve doğacak tüm takas zararları aracı kurumun üstünde kalır."
+      },
+      {
+        "key": "D",
+        "text": "Kurum sözleşmedeki yollarla bildirim yapar ve müşteriye eksikliği tamamlaması için ertesi iş günü mesai bitimine kadar süre tanır."
+      },
+      {
+        "key": "E",
+        "text": "Özkaynak tamamlama bildirimi yapılabilmesi için öncelikle şirket yönetim kurulu tarafından resmi karar alınması zorunludur."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: Seri: V, No: 65 Tebliği m. 15.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Kredili işlemde özkaynak tamamlama bildirimi sözleşmedeki yöntemlerle hızlıca yapılır. Yatırımcıya kural olarak ertesi iş günü mesai bitimine kadar süre verilir; tamamlanmazsa re'sen satış başlar.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği iletişim kanalları ve ertesi iş günü tamamlama süresini tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Sadece noter tebligatı şartı arandığı yanılgısı (hızlı elektronik kanallar geçerlidir).",
+    "trap": "Özkaynak tamamlama bildirimi sözleşmedeki kanallarla (SMS/e-posta) yapılır ve ertesi iş günü mesai bitimine kadar süre verilir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Kredili İşlemlerde Özkaynak Tamamlama Operasyonel Bildirimi"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_040",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Merkezi Takas Kuruluşunun Yasal İcra ve Haciz Muafiyeti",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 79 uyarınca Takasbank nezdinde tutulan MKT teminatları ve takas hesaplarının hukuki korumasına ilişkin;\n\nI. Takasbank'ın MKT sıfatıyla aldığı teminatlar, temerrüt eden üyenin veya üçüncü kişilerin kamu borçları dahil hiçbir borcu için haczedilemez.\nII. MKT teminatları üzerine iflas masası tarafından tedbir konulamaz ve iflas masasına devredilemez.\nIII. Takasbank'ın tasfiye hesabındaki varlıklar sadece takas taahhütlerinin yerine getirilmesi amacıyla kullanılır.\n\nYukarıda yer alan hukuki koruma ilkelerinden hangileri kanunen geçerlidir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı ilke kanunen geçerlidir."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı ilke kanunen geçerlidir."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı ilkeler kanunen geçerlidir."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı ilkeler kanunen geçerlidir."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı ilkelerin tamamı kanunen geçerlidir."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 79/1.\n2. HUKUKİ / TEKNİK ÇERÇEVE: SPKn m. 79 Takasbank MKT teminatlarına mutlak dokunulmazlık tanır. Kamu borcu, vergi borcu, SGK haczi veya iflas masası MKT teminatlarına el koyamaz; teminatlar yalnızca takasın tamamlanmasına tahsis edilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncülleri yasanın amir dokunulmazlık ve haciz muafiyeti hükmünü tam ifade eder.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Kamu alacakları için teminatların haczedilebileceğini düşünmek (SPK m. 79 kamu alacağını da yasaklar).",
+    "trap": "Takasbank MKT teminatları mutlak dokunulmazlığa sahiptir; kamu alacakları için dahi haczedilemez ve iflas masasına girmez.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Merkezi Takas Kuruluşunun Yasal İcra ve Haciz Muafiyeti"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_041",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Borçlanma Araçları Piyasasında Takas Esasları",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Borsa İstanbul Borçlanma Araçları Piyasası'nda (BAP) işlem gören Devlet İç Borçlanma Senetlerinin kesin alım satım takasına ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "İşlemler kural olarak aynı gün valörlü (T+0) veya tarafların tercihine göre belirlenen valörde (T+1 ila T+90) Takasbank nezdinde DVP prensibiyle takas edilir."
+      },
+      {
+        "key": "B",
+        "text": "BAP'ta takas işlemleri sadece 1 yıl sonra fiziki senet teslimi ile sonuçlandırılır."
+      },
+      {
+        "key": "C",
+        "text": "DİBS alım satım takasında nakit bedel ödenmeden tahviller doğrudan alıcıya teslim edilir."
+      },
+      {
+        "key": "D",
+        "text": "BAP takasında Takasbank hiçbir rol oynamaz, işlemler Türkiye Cumhuriyet Merkez Bankası gişelerinde elden nakitle yapılır."
+      },
+      {
+        "key": "E",
+        "text": "BAP kesin alım satım pazarında takas borcunu ödemeyen üyelere hiçbir temerrüt cezası uygulanamaz."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul Borçlanma Araçları Piyasası Yönergesi.\n2. HUKUKİ / TEKNİK ÇERÇEVE: BAP'ta işlemler aynı gün valörlü (T+0) veya ileri valörlü (T+n) yapılabilir. Takas Takasbank tarafından DVP (Ödeme Karşılığı Teslim) ile sonuçlandırılır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı T+0 / ileri valör ve DVP prensibini tam doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: BAP'ta da Pay Piyasası gibi zorunlu T+2 takas olduğunu sanmak.",
+    "trap": "Borçlanma Araçları Piyasasında takas kural olarak aynı gün (T+0) veya ileri valörlü olarak DVP ile yapılır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Borçlanma Araçları Piyasasında Takas Esasları"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_042",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK İhraççı Blokajı ve Halka Arz Sonrası Pay Satış Kısıtlamaları",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Payları ilk defa halka arz edilen ortaklıkların mevcut hakim ortaklarının ve yöneticilerinin halka arz edilen paylar dışındaki paylarına ilişkin MKK nezdinde uygulanan 'İhraççı Blokajı' ve satış yasağına dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hakim ortaklar halka arzın ertesi günü tüm hisselerini hiçbir izne gerek olmaksızın borsada satabilirler."
+      },
+      {
+        "key": "B",
+        "text": "Mevcut ortakların sahip oldukları paylar izahnamede taahhüt edilen süre boyunca (kural olarak 1 yıl) MKK nezdinde bloke edilir ve borsa satışına konu edilemez."
+      },
+      {
+        "key": "C",
+        "text": "İhraççı blokajı konulan paylar şirketin genel kurul toplantılarında oy hakkı kullanamaz."
+      },
+      {
+        "key": "D",
+        "text": "Hakim ortakların hisseleri halka arz sonrasında bedelsiz olarak halka arz konsorsiyum liderine devredilir."
+      },
+      {
+        "key": "E",
+        "text": "İhraççı blokajı sadece şirket iflas ettiğinde ticaret mahkemesince konulan bir cezadır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: VII-128.1 Pay Tebliği m. 8 ve MKK İhraççı Blokajı Kılavuzu.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Halka arz sonrası fiyat istikrarı ve yatırımcıyı korumak için ortaklar kural olarak 1 yıl boyunca borsa fiyatından hisse satmayacaklarını taahhüt ederler. MKK bu hisselere borsa satışını engelleyen 'İhraççı Blokajı' koyar.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B şıkkı 1 yıllık taahhüt ve MKK borsa satış blokajı mekanizmasını tam doğru yansıtır.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Blokajlı payların genel kurulda oy kullanamayacağını zannetmek (oy hakkı devam eder, sadece borsa satışı engellenir).",
+    "trap": "Mevcut ortakların payları izahnamedeki taahhüt süresince (1 yıl) MKK nezdinde bloke edilir ve borsada satılamaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK İhraççı Blokajı ve Halka Arz Sonrası Pay Satış Kısıtlamaları"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_043",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Altın Takası ve Fiziki Teslimat",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Borsa İstanbul Kıymetli Madenler Piyasası'nda işlem gören altınların takas ve teslimat sürecine dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Altın işlemleri borsa ekranında sadece sanal olarak takas edilir; hiçbir durumda fiziki külçe altın teslimatı gerçekleştirilemez."
+      },
+      {
+        "key": "B",
+        "text": "Kıymetli maden takasında altın teslimatı sadece alıcı tarafın bildireceği serbest bölgedeki döviz bürolarında elden nakitle yapılır."
+      },
+      {
+        "key": "C",
+        "text": "Altın Borsa kasasına teslim edilir, bedeli Takasbank'tan ödenir; mutabakatla alıcı altını fiziken çekebilir veya kayden saklar."
+      },
+      {
+        "key": "D",
+        "text": "Kıymetli madenler takas mutabakatında Takasbank yalnızca yabancı ülke merkez bankalarının ihraç ettiği altın çeklerini kabul eder."
+      },
+      {
+        "key": "E",
+        "text": "Fiziki teslimat yapılabilmesi için işlem gören külçelerin en az bir asırlık antika altın niteliği taşıması kanunen zorunludur."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Borsa İstanbul KMKTP Yönergesi ve Takasbank Kıymetli Madenler Takas Kılavuzu.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Altın piyasasında satıcı fiziki külçeyi Borsa kasasına teslim eder. Takasbank nakit ödemeyi alır. Alıcıya isterse fiziki külçe teslim edilir, isterse kaydi hesapta saklanır.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı Borsa kasasına fiziki teslim ve Takasbank nakit takas sürecini tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Fiziki altın teslimatının hiçbir şekilde yapılamayacağı zannı (A şıkkı).",
+    "trap": "Kıymetli maden takasında altın Borsa kasasına teslim edilir, para Takasbank'tan ödenir; fiziki çekim veya kaydi saklama mümkündür.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Altın Takası ve Fiziki Teslimat"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_044",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Yatırım Kuruluşlarının Tasfiyesinde Müşteri Varlıklarının İadesi",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Faaliyet yetki belgesi SPK tarafından iptal edilen veya iflasına karar verilen bir aracı kurumdaki müşteri varlıklarının iadesi sürecine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Müşterilerin menkul kıymetleri derhal haczedilerek parası tasfiye edilen kurumun banka kredi ve vergi borçlarına tahsis edilir."
+      },
+      {
+        "key": "B",
+        "text": "Müşteri hesapları mahkemece 20 yıl süreyle dondurulur ve tasfiye bitene kadar hak sahiplerine hiçbir ödeme veya virman yapılmaz."
+      },
+      {
+        "key": "C",
+        "text": "Müşterilere ödeme yapılabilmesi için tasfiye edilen kurumun ortaklarının oybirliğiyle yazılı muvafakat vermesi zorunludur."
+      },
+      {
+        "key": "D",
+        "text": "Müşteri varlıkları kurum malvarlığından ayrı olduğundan, SPK/MKK gözetiminde müşteriye iade edilir veya başka kuruma virmanlanır."
+      },
+      {
+        "key": "E",
+        "text": "Müşteriler alacaklarını tahsil edebilmek için yalnızca aracı kurum yönetim kurulu üyelerinin şahsi konutlarını haczedebilirler."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 47 ve m. 82-84.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Müşteri varlıkları aracı kurumun iflas masasına girmez. Kurum batsa dahi hisseler MKK ve Takasbank nezdinde müşteri adınadır; başka bir aracı kuruma aktarılır veya iade edilir.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği iflas masası dışılığı ve doğrudan virman/iade güvencesini tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Müşteri hisselerinin banka borcuna gideceğini düşünmek (A şıkkı).",
+    "trap": "Aracı kurum iflas etse dahi müşteri hisseleri MKK nezdinde ayrıdır; doğrudan müşteriye iade edilir veya başka kuruma virmanlanır.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Yatırım Kuruluşlarının Tasfiyesinde Müşteri Varlıklarının İadesi"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_045",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Tarafından Üretilen Raporlar ve Yatırımcı Hakları",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Merkezi Kayıt Kuruluşu (MKK) tarafından hak sahiplerine ve kamu otoritelerine sunulan raporlama ve bilgi sistemlerine ilişkin;\n\nI. İhraççı ortaklıklar kendi ortaklık yapılarını, pay defterlerini ve genel kurula katılacak ortak listelerini MKK sisteminden anlık raporlayabilirler.\nII. Yatırımcılar e-YATIRIMCI uygulaması üzerinden hesaplarındaki menkul kıymetleri, değerlerini ve üzerlerindeki blokajları görüntüleyebilirler.\nIII. Sermaye Piyasası Kurulu ve borsa gözetim birimleri piyasa dolandırıcılığı incelemelerinde MKK sicil kayıtlarını doğrudan denetim kanıtı olarak kullanabilir.\n\nYukarıda yer alan raporlama ve denetim işlevlerinden hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı işlev mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı işlev mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı işlevler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı işlevler mevzuat uyarınca doğrudur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı işlevlerin tamamı mevzuat uyarınca doğrudur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 13, 87 ve MKK Bilgi Güvenliği Düzenlemeleri.\n2. HUKUKİ / TEKNİK ÇERÇEVE: MKK sistemi ihraççılara pay defteri (I), yatırımcılara e-Yatırımcı portali (II) ve SPK'ya gözetim/denetim kanıtı (III) sunar.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin tümü MKK'nın yasal fonksiyonlarıdır.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: MKK kayıtlarının mahkemelerde veya SPK incelemelerinde delil sayılamayacağını düşünmek.",
+    "trap": "MKK sistemi ihraççıya pay defteri, yatırımcıya e-Yatırımcı ve SPK'ya resmi denetim kanıtı sağlar.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Tarafından Üretilen Raporlar ve Yatırımcı Hakları"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_046",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Portföy Saklama ve Kolektif Yatırım Kuruluşları Net Varlık Değeri Kontrolü",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "III-40.1 sayılı Tebliğ uyarınca portföy saklama hizmetini yürüten kuruluşun, yatırım fonunun günlük 'Net Varlık Değeri' ve 'Pay Birim Fiyatı' hesaplamalarındaki sorumluluğu nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Portföy yönetim şirketi tarafından hesaplanan günlük net varlık değerini ve katılma payı birim fiyatını kontrol etmek ve mevzuata uygunluğunu onaylamakla yükümlüdür."
+      },
+      {
+        "key": "B",
+        "text": "Fon pay birim fiyatının hesaplanmasında hiçbir kontrol yetkisi olmayıp tüm sorumluluk yalnızca fon denetçisindedir."
+      },
+      {
+        "key": "C",
+        "text": "Portföy saklayıcısı her gün fon pay birim fiyatını kendi inisiyatifiyle iki katına katlama yetkisine sahiptir."
+      },
+      {
+        "key": "D",
+        "text": "Fon pay birim fiyatı sadece 5 yılda bir hesaplanır ve saklayıcı kuruluş bu hesaba hiçbir şekilde dahil olamaz."
+      },
+      {
+        "key": "E",
+        "text": "Portföy saklayıcısı fiyat hatalı hesaplansa dahi SPK'ya bildirimde bulunmaktan kanunen men edilmiştir."
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "1. MEVZUAT DAYANAĞI: III-40.1 sayılı Tebliğ m. 6/2.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Portföy saklayıcısı PYŞ'nin hesapladığı fon birim fiyatını bağımsız olarak kontrol etmek, değerleme hatalarını tespit etmek ve mevzuata uygunluğunu teyit etmekle yükümlüdür.\n3. ADIM ADIM İNCELEME / HESAPLAMA: A şıkkı saklayıcının günlük kontrol ve doğrulama yükümlülüğünü tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: A seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Saklayıcının fiyata hiç karışmadığını zannetmek.",
+    "trap": "Portföy saklayıcısı fonun günlük net varlık değerini ve birim pay fiyatını kontrol etmek ve onaylamakla yükümlüdür.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Portföy Saklama ve Kolektif Yatırım Kuruluşları Net Varlık Değeri Kontrolü"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  },
+  {
+    "id": "q_1012_sert_047",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Merkezi Takas Kuruluşunda Zorunlu Karşılaştırma ve Eşleşme (Matching)",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Borsa işlemlerinin Takasbank nezdinde takasa intikal etmeden önce işlem teyidi ve karşılaştırma (Matching / Trade Confirmation) sürecine ilişkin hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Borsada gerçekleşen işlemler Takasbank'a aktarılmadan önce taraf kurumlar arasında telefonla sözlü olarak karşılıklı teyit edilir."
+      },
+      {
+        "key": "B",
+        "text": "Borsada eşleşen emirler anlık Takasbank'a aktarılır ve taraflar arasında ilave bir teyit aranmaksızın kesin işlem olarak takas edilir."
+      },
+      {
+        "key": "C",
+        "text": "Alıcı kurum seans bitiminde onay vermediği takdirde borsada eşleşmiş bir işlem Takasbank tarafından re'sen iptal edilir."
+      },
+      {
+        "key": "D",
+        "text": "Borsa işlemlerinin takasa intikal edebilmesi için her bir işlem bordrosunun noter tarafından tasdik edilmesi yasal zorunluluktur."
+      },
+      {
+        "key": "E",
+        "text": "İşlem teyitleri ve takas eşleşmeleri günlük olarak değil, sadece her ayın son iş günü topluca Takasbank komitesince onaylanır."
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank MKT Yönetmeliği m. 10.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Borsada emirler eşleştiği anda kesinleşir. Borsa sistemi doğrudan Takasbank'a elektronik veri akışı sağlar; kurumların ayrıca 'biz bu işlemi kabul etmiyoruz' deme veya ikili teyit bekleme hakkı yoktur.\n3. ADIM ADIM İNCELEME / HESAPLAMA: B şıkkı borsadan Takasbank'a doğrudan elektronik aktarım ve ikili teyitsiz kesinleşme ilkesini doğru açıklar.\n4. DOĞRU CEVAP VE SONUÇ: B seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: İşlem sonrası kurumların ayrıca telefonla onaylaşması gerektiği zannı.",
+    "trap": "Borsada eşleşen emirler elektronik olarak Takasbank'a iletilir ve ilave ikili teyit aranmaksızın kesinleşir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Merkezi Takas Kuruluşunda Zorunlu Karşılaştırma ve Eşleşme (Matching)"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_048",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank Para Piyasasında Temerrüt ve Garanti",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Takasbank Para Piyasası'nda (TPP) borçlanan bir üyenin vadesinde anapara ve faiz borcunu ödeyememesi durumunda Takasbank'ın borç veren üyeye karşı tutumu nedir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Takasbank borç veren üyeye paranın tahsil edilemediğini bildirerek alacağını şahsen dava etmesini tavsiye eder ve çekilir."
+      },
+      {
+        "key": "B",
+        "text": "Takasbank borç veren üyenin alacağını tamamen siler ve meydana gelen tüm nakit açığını borç veren kuruma fatura eder."
+      },
+      {
+        "key": "C",
+        "text": "Takasbank MKT olarak borç verenin parasını tam öder; temerrüt eden üyenin teminatlarını paraya çevirerek yasal takip başlatır."
+      },
+      {
+        "key": "D",
+        "text": "Borç veren kuruma nakit ödeme yapılmaz, alacağı tutar karşılığında Takasbank'ın halka kapalı pay senetleri devredilir."
+      },
+      {
+        "key": "E",
+        "text": "Takasbank işlemi tek taraflı feshederek borçlanma günündeki faiz ve anapara şartlarını başlangıç tarihine geri döndürür."
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "1. MEVZUAT DAYANAĞI: Takasbank Para Piyasası Yönetmeliği m. 12, 13.\n2. HUKUKİ / TEKNİK ÇERÇEVE: TPP'de Takasbank MKT olduğu için borç veren üye borçlunun temerrüdünden etkilenmez. Takasbank parayı öder ve borçlu üyenin teminatlarını nakde çevirerek tahsil eder.\n3. ADIM ADIM İNCELEME / HESAPLAMA: C şıkkı Takasbank'ın borç verene alacağını eksiksiz ödeme MKT garantisini tam açıklar.\n4. DOĞRU CEVAP VE SONUÇ: C seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: TPP'de garantinin olmadığını sanmak.",
+    "trap": "Takasbank MKT olarak borç verenin parasını tam öder, temerrüt eden üyenin teminatlarını paraya çevirir.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank Para Piyasasında Temerrüt ve Garanti"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_049",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "MKK Saklama Sisteminde Hak Sahipliği İhtilafları",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "6362 sayılı Sermaye Piyasası Kanunu m. 13/5 uyarınca kayden izlenen sermaye piyasası araçlarının mülkiyetine veya hak sahipliğine ilişkin açılacak davalarda MKK'nın hukuki sorumluluğuna dair hangisi DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "MKK ihtilaflarda tarafların haklılığını bizzat araştırıp ticaret mahkemesi gibi nihai bağlayıcı hüküm vermekle yükümlüdür."
+      },
+      {
+        "key": "B",
+        "text": "MKK pay sahipleri arasındaki mülkiyet davalarında zorunlu davalı gösterilir ve oluşacak tüm zararları kusursuz tazmin eder."
+      },
+      {
+        "key": "C",
+        "text": "MKK nezdinde tutulan kaydi siciller adli makamlarda resmi delil niteliği taşımaz; yalnızca basılı şirket defterleri geçerlidir."
+      },
+      {
+        "key": "D",
+        "text": "MKK adli bildirimleri uygular; ağır kusuru bulunmadıkça üye bildirimlerine dayanılarak yapılan tescillerden sorumlu tutulamaz."
+      },
+      {
+        "key": "E",
+        "text": "MKK aleyhine tazminat davası açılabilmesi için SPK ve Borsa İstanbul Yönetim Kurulundan ön izin alınması kanunen şarttır."
+      }
+    ],
+    "correct_answer": "D",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 13/5.\n2. HUKUKİ / TEKNİK ÇERÇEVE: MKK sicil tutucudur. Mahkeme kararlarını uygular. MKK'nın kendi ağır kusuru veya kastı olmadıkça, üyelerin bildirdiği verilere dayanarak yaptığı tescillerden ötürü MKK sorumlu tutulamaz.\n3. ADIM ADIM İNCELEME / HESAPLAMA: D seçeneği yasanın amir sorumluluk sınırını ve adli bildirim uygulama görevini tam ifade eder.\n4. DOĞRU CEVAP VE SONUÇ: D seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: MKK'nın her davada taraf olup tazminat ödeyeceğini zannetmek.",
+    "trap": "MKK mahkeme kararlarını uygular; kusuru bulunmadıkça üye bildirimlerine dayalı işlemlerden sorumlu tutulamaz.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "MKK Saklama Sisteminde Hak Sahipliği İhtilafları"
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
+  },
+  {
+    "id": "q_1012_sert_050",
+    "module_id": "1012",
+    "source": "cikmis",
+    "topic": "Takasbank ve MKK Arasındaki Görev Dağılımı Özeti",
+    "chapter": "TAKAS SAKLAMA MKT ŞELALESİ VE OPERASYON İŞLEMLERİ",
+    "text": "Türkiye sermaye piyasalarında 'Takasbank' ile 'Merkezi Kayıt Kuruluşu' (MKK) arasındaki kurumsal görev ayrımına ilişkin;\n\nI. Takasbank: İşlemlerin takasını ve nakit mutabakatını yürüten, Merkezi Karşı Taraf (MKT) güvencesi sağlayan merkezi kuruluştur.\nII. MKK: Sermaye piyasası araçlarının kaydileştirilerek hak sahipleri bazında mülkiyet kayıtlarının tutulduğu Merkezi Saklama Kuruluşudur (CSD).\nIII. Takasbank nakit ve teminat yönetimini üstlenirken, MKK menkul kıymetlerin mülkiyet ve hak sahipliği sicilini yönetir.\n\nYukarıda yer alan kurumsal görev tanımlarından hangileri DOĞRUDUR?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yalnızca I numaralı görev tanımı mevzuata uygundur."
+      },
+      {
+        "key": "B",
+        "text": "Yalnızca II numaralı görev tanımı mevzuata uygundur."
+      },
+      {
+        "key": "C",
+        "text": "I ve II numaralı görev tanımları mevzuata uygundur."
+      },
+      {
+        "key": "D",
+        "text": "II ve III numaralı görev tanımları mevzuata uygundur."
+      },
+      {
+        "key": "E",
+        "text": "I, II ve III numaralı görev tanımlarının tamamı mevzuata uygundur."
+      }
+    ],
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 13, 77, 81.\n2. HUKUKİ / TEKNİK ÇERÇEVE: Türk sermaye piyasası altyapısında Takasbank takas, nakit mutabakatı ve MKT rolündedir. MKK ise Merkezi Saklama Kuruluşu (Central Securities Depository - CSD) olarak mülkiyet sicilini tutar.\n3. ADIM ADIM İNCELEME / HESAPLAMA: I, II ve III öncüllerinin her biri Takasbank ve MKK arasındaki yetki ve görev paylaşımını tam doğru ortaya koyar.\n4. DOĞRU CEVAP VE SONUÇ: E seçeneğidir.\n5. ÇELDİRİCİ TUZAĞI: Takasbank ile MKK'nın aynı kurum olduğunu ve tüm görevleri tek kurumun yürüttüğünü düşünmek.",
+    "trap": "Takasbank takas ve MKT nakit mutabakatını yönetir; MKK kaydi mülkiyet sicilini tutan CSD kuruluşudur.",
+    "difficulty": "hard",
+    "tags": [
+      "1012",
+      "Takasbank ve MKK Arasındaki Görev Dağılımı Özeti"
+    ],
+    "cognitive_skill": "KB1_Kavramsal"
+  }
+]

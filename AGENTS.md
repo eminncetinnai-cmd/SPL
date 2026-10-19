@@ -57,7 +57,7 @@ Sayısal sorularda gerçek SPL sınavında sorulan formüller tam olarak işlenm
 1. **Çift Dosya Eşzamanlılığı:**
    - Sorularda yapılan herhangi bir değişiklik hem `src/data/all_questions.json` hem de `src/data/questions_master.json` dosyasına birebir aynı anda uygulanmalıdır.
 2. **Toplam Soru Sayısı Assertion'ı:**
-   - Havuz toplamı **tam 935 soru** olarak korunmalıdır (1001: 233, 1003: 240, 1005: 238, 1012: 224).
+   - Havuz toplamı **tam 1135 soru** olarak korunmalıdır (1001: 283, 1003: 290, 1005: 288, 1012: 274).
 3. **Doğrulama ve Derleme Zorunluluğu:**
    Her güncelleme sonrası şu testler çalıştırılmalıdır:
    - `python scripts/verify_all.py` -> %100 Başarı (PASS)
