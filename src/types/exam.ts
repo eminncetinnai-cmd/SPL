@@ -5,6 +5,8 @@ export interface Option {
   text: string;
 }
 
+export type CognitiveSkill = 'KB1_Kavramsal' | 'KB2_Muhakeme' | 'KB3_Vaka';
+
 export interface Question {
   id: string;
   module_id: ModuleId;
@@ -18,6 +20,7 @@ export interface Question {
   explanation: string;
   trap?: string;
   difficulty: 'easy' | 'medium' | 'hard';
+  cognitive_skill?: CognitiveSkill;
   tags: string[];
 }
 
@@ -131,5 +134,6 @@ export interface MistakeEntry {
   wrong_count: number;
   last_wrong_date: string;
   last_selected_option: string;
+  correct_streak?: number;
   resolved: boolean;
 }

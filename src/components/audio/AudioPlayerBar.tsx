@@ -45,7 +45,7 @@ export const AudioPlayerBar: React.FC = () => {
   // 1. MINIMIZED FLOATING PILL (KÜÇÜK MOD - EKRANI HİÇ KAPLAMAZ)
   if (isMinimized) {
     return (
-      <div className="fixed bottom-4 right-4 sm:right-6 z-50 flex items-center gap-2 bg-slate-950/95 backdrop-blur-xl border border-teal-500/50 rounded-full px-3 py-1.5 shadow-2xl shadow-teal-950/60 animate-slide-up text-white max-w-[calc(100vw-32px)] select-none">
+      <div className="fixed bottom-16 md:bottom-4 right-4 sm:right-6 z-50 flex items-center gap-2 bg-slate-950/95 backdrop-blur-xl border border-teal-500/50 rounded-full px-3 py-1.5 shadow-2xl shadow-teal-950/60 animate-slide-up text-white max-w-[calc(100vw-32px)] select-none">
         {/* Play / Pause button */}
         <button
           onClick={togglePlayPause}
@@ -94,7 +94,7 @@ export const AudioPlayerBar: React.FC = () => {
 
   // 2. EXPANDED COMPACT BAR (TAŞMAYI ÖNLEYEN SIKI VE DÜZENLİ TASARIM)
   return (
-    <div className="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 w-[calc(100vw-24px)] max-w-2xl bg-slate-950/95 backdrop-blur-2xl border border-teal-500/40 rounded-2xl p-3 shadow-2xl shadow-teal-950/60 animate-slide-up text-white overflow-hidden box-border select-none">
+    <div className="fixed bottom-16 md:bottom-3 left-1/2 -translate-x-1/2 z-50 w-[calc(100vw-24px)] max-w-2xl bg-slate-950/95 backdrop-blur-2xl border border-teal-500/40 rounded-2xl p-3 shadow-2xl shadow-teal-950/60 animate-slide-up text-white overflow-hidden box-border select-none">
       {/* Clickable Thin Progress Line */}
       <div 
         onClick={(e) => {

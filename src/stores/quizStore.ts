@@ -108,9 +108,6 @@ export const useQuizStore = create<QuizState>((set, get) => ({
     // Shuffles options (A, B, C, D, E) for every question and re-maps correct_answer dynamically
     selectedQuestions = selectedQuestions.map(shuffleQuestionOptions);
 
-    // Mark questions as seen so they are not repeated in future tests
-    useProgressStore.getState().markQuestionsSeen(selectedQuestions.map((q) => q.id));
-
     const sessionId = `session_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`;
     const timeLimitSeconds = options.timeLimitMinutes
       ? options.timeLimitMinutes * 60
@@ -223,9 +220,11 @@ export const useQuizStore = create<QuizState>((set, get) => ({
       explanationRead: currentSession.mode !== 'practice',
     });
 
-    // In practice mode, immediately persist question answer to progressStore
+    // In practice mode, recordAnswer marks as seen + updates stats + mistakes in a single pass
     if (currentSession.mode === 'practice') {
       useProgressStore.getState().recordAnswer(activeQuestion, optionKey, isCorrect);
+    } else {
+      useProgressStore.getState().markQuestionsSeen([activeQuestion.id]);
     }
   },
 
@@ -308,13 +307,8 @@ export const useQuizStore = create<QuizState>((set, get) => ({
   updateTimer: (elapsedSeconds) => {
     const { currentSession } = get();
     if (!currentSession || currentSession.is_completed) return;
-
-    set({
-      currentSession: {
-        ...currentSession,
-        duration_seconds: elapsedSeconds,
-      },
-    });
+    // Update duration in-place so finishQuiz has exact elapsed time without re-rendering the entire quiz tree every 1s
+    currentSession.duration_seconds = elapsedSeconds;
   },
 
   finishQuiz: () => {

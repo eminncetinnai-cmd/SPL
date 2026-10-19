@@ -4326,38 +4326,39 @@
     "source": "ogretici",
     "topic": "Öğretici Kavram Soruları",
     "chapter": "Modül 1003 Öğretici Banka",
-    "text": "Devlet tahvili ile hazine bonosu arasındaki temel ayrım genel olarak hangi unsurla ilişkilidir?",
+    "text": "T.C. Hazine ve Maliye Bakanlığı tarafından Devlet İç Borçlanma Senetleri'nin (DİBS) doğrudan ihale yoluyla ihracına ilişkin;\nI. Rekabetçi Olmayan Teklif (ROT) veren Piyasa Yapıcı bankalar ve kamu kuruluşları, faiz oranı belirtmeksizin yalnızca talep ettikleri nominal tutarı Hazineye bildirirler.\nII. ROT talepleri, doğrudan ihalede gerçekleşen ağırlıklı ortalama faiz veya tek fiyat üzerinden ihale öncesinde karşılanır.\nIII. İhalede kazanan tekliflerin tamamı ihaledeki en yüksek faiz oranına çekilerek tüm katılımcılara zaruri olarak en yüksek faiz ödenir.\nifadelerinden hangileri DOĞRUDUR?",
     "options": [
       {
         "key": "A",
-        "text": "Vade yapısı"
+        "text": "Yalnız I"
       },
       {
         "key": "B",
-        "text": "Her ikisinin de devlet tarafından ihraç edilmesi"
+        "text": "I ve II"
       },
       {
         "key": "C",
-        "text": "Kaydi sistemde izlenebilmesi"
+        "text": "II ve III"
       },
       {
         "key": "D",
-        "text": "Alım satıma konu olabilmesi"
+        "text": "I ve III"
       },
       {
         "key": "E",
-        "text": "Yatırımcı açısından piyasa riskinin bulunması"
+        "text": "I, II ve III"
       }
     ],
-    "correct_answer": "A",
-    "explanation": "Sınıflandırmada temel ayrım vade yapısı üzerinden yapılır.",
-    "trap": "Devlet ihraççısı olmaları ayrım değil ortak özelliktir.",
-    "difficulty": "medium",
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: Kamu Finansmanı Kanunu ve DİBS İhale Yönergesi.\n2. ANALİZ:\n   - ROT talebinde faiz teklif edilmez, ihale ortalamasından alınır (I ve II doğru).\n   - III. YANLIŞTIR: Hazine ihaleleri çoklu fiyat (herkes kendi teklif ettiği fiyattan) veya tek fiyat (en düşük fiyat/kesme fiyatı) üzerinden yapılır; en yüksek faiz herkese uygulanmaz.\n3. SONUÇ: I ve II doğru, III yanlıştır.",
+    "trap": "ROT tekliflerinde faiz belirtilmez; ihalede oluşan ağırlıklı ortalama fiyattan karşılanır.",
+    "difficulty": "hard",
     "tags": [
       "1003",
       "öğretici",
       "tuzak-analizi"
-    ]
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
   },
   {
     "id": "q_1003_ogretici_010",
@@ -4566,38 +4567,39 @@
     "source": "ogretici",
     "topic": "Öğretici Kavram Soruları",
     "chapter": "Modül 1003 Öğretici Banka",
-    "text": "Aşağıdaki ifadelerden hangisi, Borçlanma araçlarında kupon ödemesi kavramı en çok neyle ilişkilidir?",
+    "text": "Kira Sertifikaları Tebliği (III-61.1) kapsamında 'Sahipliğe Dayalı Kira Sertifikası' (İcara) ihracında varlık devri ve yatırımcı haklarına ilişkin;\nI. Kaynak kuruluşa ait gayrimenkulün mülkiyeti tapu sicilinde resmi olarak Varlık Kiralama Şirketi (VKŞ) adına tescil edilmeden sahipliğe dayalı kira sertifikası ihraç edilemez.\nII. VKŞ mülkiyetindeki gayrimenkul, kaynak kuruluşun borçları veya iflası sebebiyle haczedilemez ve iflas masasına devredilemez.\nIII. Vade sonunda kaynak kuruluş geri alım taahhüdünü yerine getiremezse, VKŞ gayrimenkulü piyasada satarak elde edilen bedeli kira sertifikası sahiplerine itfa bedeli olarak dağıtma yetkisine sahiptir.\nifadelerinden hangileri kanunen DOĞRUDUR?",
     "options": [
       {
         "key": "A",
-        "text": "Dönemsel faiz/gelir ödemesi"
+        "text": "Yalnız I"
       },
       {
         "key": "B",
-        "text": "Ortaklık hakkı"
+        "text": "I ve II"
       },
       {
         "key": "C",
-        "text": "Sermaye artırımı"
+        "text": "II ve III"
       },
       {
         "key": "D",
-        "text": "Temettü zorunluluğu"
+        "text": "I ve III"
       },
       {
         "key": "E",
-        "text": "Saklama ücreti"
+        "text": "I, II ve III"
       }
     ],
-    "correct_answer": "A",
-    "explanation": "Kupon, borçlanma aracına ilişkin dönemsel nakit akışını ifade eder.",
-    "trap": "Kupon ile pay temettüsü aynı hukuki ve ekonomik kavram değildir.",
-    "difficulty": "medium",
+    "correct_answer": "E",
+    "explanation": "1. MEVZUAT DAYANAĞI: Kira Sertifikaları Tebliği (III-61.1) ve SPKn m. 61.\n2. İCARA ESASLARI:\n   - Mülkiyet VKŞ adına tescil edilmelidir (I doğru).\n   - İflas masasına girmez, haczedilemez (II doğru).\n   - Geri alım ihlal edilirse varlık satılıp yatırımcıya ödenir (III doğru).\n3. SONUÇ: I, II ve III öncüllerinin tamamı geçerlidir.",
+    "trap": "İcara modelinde mülkiyet gerçekten VKŞ'ye geçer; temerrütte VKŞ varlığı satıp yatırımcıya ödeme hakkına sahiptir.",
+    "difficulty": "hard",
     "tags": [
       "1003",
       "öğretici",
       "tuzak-analizi"
-    ]
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
   },
   {
     "id": "q_1003_ogretici_016",
@@ -8646,38 +8648,39 @@
     "source": "ogretici",
     "topic": "Öğretici Kavram Soruları",
     "chapter": "Modül 1005 Öğretici Banka",
-    "text": "Aşağıdaki ifadelerden hangisi, Kredili işlemde temel ekonomik özellik nedir?",
+    "text": "SPK'nın III-37.1 ve III-39.1 sayılı Tebliğleri uyarınca Türkiye'de yerleşik bireysel yatırımcıların aracı kurumlar nezdinde gerçekleştirecekleri 'Kaldıraçlı Alım Satım İşlemleri'ne (Forex / FX) ilişkin;\nI. Gerçek kişi bireysel müşterilerin kaldıraçlı işlem hesabı açabilmesi ve pozisyon alabilmesi için yatırmaları gereken asgari başlangıç teminatı tutarı 50.000 TL veya muadili dövizdir.\nII. Kaldıraçlı işlemlerde uygulanabilecek azami yasal kaldıraç oranı 1:10 ile sınırlandırılmıştır; aracı kurumlar genel müşterilere bu oranın üzerinde kaldıraç sağlayamaz.\nIII. Aracı kurumlar, müşterilerinin Forex işlemlerinde uğradığı tüm temerrüt zararlarını kanunen kendi özkaynaklarından bedelsiz olarak karşılamakla yükümlüdür.\nifadelerinden hangileri kanunen DOĞRUDUR?",
     "options": [
       {
         "key": "A",
-        "text": "1:100"
+        "text": "Yalnız I"
       },
       {
         "key": "B",
-        "text": "1:10"
+        "text": "I ve II"
       },
       {
         "key": "C",
-        "text": "1:50"
+        "text": "II ve III"
       },
       {
         "key": "D",
-        "text": "1:20"
+        "text": "I ve III"
       },
       {
         "key": "E",
-        "text": "1:5"
+        "text": "I, II ve III"
       }
     ],
-    "correct_answer": "A",
-    "explanation": "Kredi kullanımı potansiyel getiriyi ve zararı büyütebilen kaldıraç etkisi yaratabilir.",
-    "trap": "Kaldıraç kazancı artırabileceği gibi kaybı da artırabilir.",
-    "difficulty": "medium",
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: SPK Forex Düzenlemeleri ve III-37.1 sayılı Tebliğ.\n2. FOREX KURALLARI:\n   - Asgari başlangıç teminatı: 50.000 TL veya muadili dövizdir (I doğru).\n   - Azami kaldıraç oranı: 1:10'dur (II doğru).\n   - III. YANLIŞTIR: Müşteri kendi pozisyonunun zararından sorumludur, kurum zararı karşılamaz.\n3. SONUÇ: I ve II doğru, III yanlıştır.",
+    "trap": "Forexte asgari teminat 50.000 TL, azami kaldıraç 1:10'dur.",
+    "difficulty": "hard",
     "tags": [
       "1005",
       "öğretici",
       "tuzak-analizi"
-    ]
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
   },
   {
     "id": "q_1005_ogretici_018",
@@ -12046,38 +12049,39 @@
     "source": "ogretici",
     "topic": "Öğretici Kavram Soruları",
     "chapter": "Modül 1012 Öğretici Banka",
-    "text": "Saklama hizmetinin temel amacı nedir?",
+    "text": "İstanbul Takas ve Saklama Bankası A.Ş.'nin (Takasbank) Merkezi Karşı Taraf (MKT / CCP) hizmeti sunduğu piyasalar ile MKT HİZMETİ VERMEDİĞİ piyasaların ayrımına ilişkin;\nI. Borsa İstanbul Pay Piyasası, Borçlanma Araçları Piyasası (BAP) ve Vadeli İşlem ve Opsiyon Piyasası'nda (VİOP) Takasbank Merkezi Karşı Taraf olarak takas garantisi verir.\nII. Borsa İstanbul Kıymetli Madenler ve Taşlar Piyasası'nda (KMTP) Takasbank Merkezi Karşı Taraf rolü ÜSTLENMEZ; takas brüt bazda fiziki altın ve döviz teslimi ile sonuçlandırılır.\nIII. Takasbank Para Piyasası'nda (TPP) Takasbank MKT hizmeti vermez; borç alan ile borç veren doğrudan birbirlerinin iflas riskini üstlenir.\nifadelerinden hangileri kanunen ve operasyonel olarak DOĞRUDUR?",
     "options": [
       {
         "key": "A",
-        "text": "Sermaye piyasası araçları ve ilgili varlıkların güvenli şekilde muhafaza ve kayıt süreçlerinin yürütülmesi"
+        "text": "Yalnız I"
       },
       {
         "key": "B",
-        "text": "Yatırımcı adına getiri garantisi vermek"
+        "text": "I ve II"
       },
       {
         "key": "C",
-        "text": "Her yatırım kararını saklama kuruluşunun vermesi"
+        "text": "II ve III"
       },
       {
         "key": "D",
-        "text": "Piyasa fiyatını sabitlemek"
+        "text": "I ve III"
       },
       {
         "key": "E",
-        "text": "Vergi oranını belirlemek"
+        "text": "I, II ve III"
       }
     ],
-    "correct_answer": "A",
-    "explanation": "Saklama, varlıkların korunması ve kayıt/izleme altyapısıyla ilişkilidir.",
-    "trap": "Saklama kuruluşu portföy yöneticisi olmak zorunda değildir.",
-    "difficulty": "medium",
+    "correct_answer": "B",
+    "explanation": "1. MEVZUAT DAYANAĞI: 6362 sayılı SPKn m. 77 ve Takasbank MKT Yönetmeliği.\n2. MKT OLAN VE OLMAYAN PİYASALAR:\n   - MKT OLDUĞU: Pay Piyasası, BAP, VİOP, Takasbank Para Piyasası (TPP), SWAP (I doğru).\n   - MKT OLMADIĞI: Kıymetli Madenler ve Taşlar Piyasası (KMTP) ve Dış Borçlanma Araçları (II doğru).\n   - III. YANLIŞTIR: Takasbank Para Piyasası'nda Takasbank MKT'dir; borç veren kurumu temerrüde karşı garanti eder.\n3. SONUÇ: I ve II doğru, III yanlıştır.",
+    "trap": "Takasbank Kıymetli Madenler Piyasasında (KMTP) MKT değildir; ancak Takasbank Para Piyasasında (TPP) kesinlikle MKT'dir.",
+    "difficulty": "hard",
     "tags": [
       "1012",
       "öğretici",
       "tuzak-analizi"
-    ]
+    ],
+    "cognitive_skill": "KB2_Muhakeme"
   },
   {
     "id": "q_1012_ogretici_003",
@@ -12130,27 +12134,27 @@
     "options": [
       {
         "key": "A",
-        "text": "İşlem tarafları arasındaki karşı taraf riskini yönetmeye yardımcı olmak"
+        "text": "Aracı kurumlara sermaye piyasası faaliyet izni ve lisans belgesi tahsis etmek"
       },
       {
         "key": "B",
-        "text": "Her yatırımcıya zarar garantisi vermek"
+        "text": "İşlem tarafları arasındaki karşı taraf kredi riskini yönetmek ve takasın ifasını garanti etmek"
       },
       {
         "key": "C",
-        "text": "Borsa fiyatlarını belirlemek"
+        "text": "Yatırımcıların portföylerini yöneterek borsa endeksinin üzerinde getiri performansı sağlamak"
       },
       {
         "key": "D",
-        "text": "Şirketlerin bilançosunu hazırlamak"
+        "text": "Şirketlerin genel kurul toplantılarını bizzat yönetmek ve yönetim kurulu üyelerini seçmek"
       },
       {
         "key": "E",
-        "text": "Müşteri sınıflandırması yapmak"
+        "text": "Halka açık şirketlerin mali tablolarını bağımsız denetim standartlarına göre denetlemek"
       }
     ],
-    "correct_answer": "A",
-    "explanation": "MKT, uygun piyasalarda işlemlerde karşı taraf olarak devreye girerek risk yönetimi ve teminat mekanizmalarını işletir.",
+    "correct_answer": "B",
+    "explanation": "MKT, uygun piyasalarda işlemlerde karşı taraf olarak devreye girerek risk yönetimi ve teminat mekanizmalarını işletir. Bu işlev, aracı kuruma lisans vermek gibi yetki ve denetim işlevlerinden farklıdır; lisans ve izin düzenleme SPK'nın görev alanında yer alır.",
     "trap": "MKT tüm piyasa risklerini ortadan kaldırmaz.",
     "difficulty": "medium",
     "tags": [
@@ -12170,27 +12174,27 @@
     "options": [
       {
         "key": "A",
-        "text": "Yükümlülüğün zamanında veya usulüne uygun yerine getirilmemesi durumunu"
+        "text": "Merkezi Kayıt Kuruluşu nezdinde açılan hesapların kimlik teyidi yapılmadan kullanıma sunulmasıdır."
       },
       {
         "key": "B",
-        "text": "İşlemin kârla kapanmasını"
+        "text": "Aracı kurumun müşterilerine sunduğu yatırım danışmanlığı tavsiyelerinde isabetsiz tahmin yapmasıdır."
       },
       {
         "key": "C",
-        "text": "Sermaye artırımı yapılmasını"
+        "text": "Halka açık şirketin genel kurulunda pay sahiplerine temettü dağıtılmaması yönünde karar alınmasıdır."
       },
       {
         "key": "D",
-        "text": "Fonun yeni pay ihraç etmesini"
+        "text": "Takas yükümlülüğünün süresinde yerine getirilmemesi sonucu üyenin mali taahhüdünü ifa edememesidir."
       },
       {
         "key": "E",
-        "text": "Sadece fiyatın düşmesini"
+        "text": "Üyenin Borsa İstanbul nezdinde rekor düzeyde işlem hacmine ulaşarak işlem limitlerini doldurmasıdır."
       }
     ],
-    "correct_answer": "A",
-    "explanation": "Temerrüt, teslimat, ödeme veya diğer yükümlülüklerin belirlenen şartlarda yerine getirilmemesiyle ilgilidir.",
+    "correct_answer": "D",
+    "explanation": "Temerrüt, teslimat, ödeme veya diğer yükümlülüklerin belirlenen şartlarda yerine getirilmemesiyle ilgilidir. Takas süreçlerinde bunun tipik görünümü, üyenin vadesinde yerine getirmesi gereken nakit veya menkul kıymet yükümlülüğünü ifa edememesidir.",
     "trap": "Fiyat düşüşü tek başına temerrüt değildir.",
     "difficulty": "medium",
     "tags": [

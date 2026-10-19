@@ -1,0 +1,32 @@
+{
+  "name": "SPK SPL Düzey 1 Sınav Hazırlık",
+  "short_name": "SPL Düzey 1",
+  "description": "SPK Sermaye Piyasası Faaliyetleri Düzey 1 Sınavı Hazırlık Platformu - 935 Soru, 400 Kart, 249 Hap Bilgi",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#0B0F19",
+  "orientation": "portrait",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "finance"]
+}

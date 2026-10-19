@@ -1,4 +1,4 @@
-import html2pdf from 'html2pdf.js';
+import { jsPDF } from 'jspdf';
 
 export interface DurationItem {
   id: string;
@@ -47,43 +47,103 @@ export interface PdfExportOptions {
   filterTitle?: string;
 }
 
+const packagedPdfNames: Record<string, string> = {
+  all: 'hap-bilgiler.pdf',
+  '1001': 'hap-1001.pdf',
+  '1003': 'hap-1003.pdf',
+  '1005': 'hap-1005.pdf',
+  '1012': 'hap-1012.pdf',
+};
+
+function packagedPdfUrl(scope: keyof typeof packagedPdfNames): string {
+  return new URL(`kaynaklar/${packagedPdfNames[scope]}`, document.baseURI).toString();
+}
+
+export function downloadPackagedCheatSheetPdf(scope: keyof typeof packagedPdfNames): void {
+  const link = document.createElement('a');
+  link.href = packagedPdfUrl(scope);
+  link.download = packagedPdfNames[scope];
+  link.rel = 'noopener';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+}
+
+export function openPackagedCheatSheetPdf(scope: keyof typeof packagedPdfNames): void {
+  const opened = window.open(packagedPdfUrl(scope), '_blank', 'noopener,noreferrer');
+  if (!opened) {
+    throw new Error('PDF önizlemesi açılamadı. Tarayıcı açılır pencere iznini kontrol edin.');
+  }
+}
+
 /**
  * Downloads a direct PDF file without window.print or iframes
  */
 export async function downloadCheatSheetPdf(options: PdfExportOptions): Promise<void> {
-  const container = document.createElement('div');
-  container.innerHTML = generateCheatSheetInnerHtml(options, true);
-  container.style.width = '760px';
-  container.style.padding = '16px';
-  container.style.background = '#ffffff';
-  container.style.color = '#0f172a';
-  container.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
-  container.style.position = 'fixed';
-  container.style.top = '-99999px';
-  container.style.left = '0';
-  document.body.appendChild(container);
-
   const totalCount = options.durations.length + options.ratios.length + options.comparisons.length + options.traps.length;
-  const fileName = `SPK_SPL_1_Altin_Hap_Bilgiler_${totalCount}_Madde.pdf`;
-
-  try {
-    const opt = {
-      margin: [8, 8, 10, 8] as [number, number, number, number],
-      filename: fileName,
-      image: { type: 'jpeg' as const, quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true, logging: false },
-      jsPDF: { unit: 'mm' as const, format: 'a4' as const, orientation: 'portrait' as const },
-      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-    };
-    await (html2pdf() as any).set(opt).from(container).save();
-  } catch (err) {
-    console.error('html2pdf doğrudan kaydetme hatası, yeni sekmede açılıyor:', err);
-    openCheatSheetInNewTab(options);
-  } finally {
-    if (container.parentNode) {
-      container.parentNode.removeChild(container);
-    }
+  if (totalCount === 0) {
+    throw new Error('PDF oluşturmak için aktarılacak hap bilgi bulunamadı.');
   }
+
+  const fileName = `SPK_SPL_1_Altin_Hap_Bilgiler_${totalCount}_Madde_${Date.now()}.pdf`;
+  const pdf = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
+  pdf.setTextColor(15, 23, 42);
+  pdf.setDrawColor(15, 118, 110);
+  pdf.setLineWidth(0.5);
+  pdf.line(12, 8, 198, 8);
+  const pageWidth = pdf.internal.pageSize.getWidth();
+  const pageHeight = pdf.internal.pageSize.getHeight();
+  const margin = 12;
+  const lineHeight = 4.6;
+  let y = margin;
+
+  const addText = (text: string, size = 8, bold = false) => {
+    pdf.setFont('helvetica', bold ? 'bold' : 'normal');
+    pdf.setFontSize(size);
+    const lines = pdf.splitTextToSize(text, pageWidth - margin * 2);
+    lines.forEach((line: string) => {
+      if (y + lineHeight > pageHeight - margin) {
+        pdf.addPage();
+        y = margin;
+      }
+      pdf.text(String(line), margin, y);
+      y += lineHeight;
+    });
+    y += 1.5;
+  };
+
+  addText(options.title || 'SPK SERMAYE PIYASASI LİSANSLAMA DUZEY 1', 13, true);
+  addText(options.filterTitle || 'Tum Konular ve 4 Temel Modul', 9);
+  addText(`Toplam ${totalCount} madde`, 9, true);
+
+  const addSection = <T extends { moduleName: string }>(
+    title: string,
+    items: T[],
+    format: (item: T, index: number) => string
+  ) => {
+    if (items.length === 0) return;
+    addText(title, 10, true);
+    items.forEach((item, index) => addText(`${index + 1}. [${item.moduleName}] ${format(item, index)}`));
+  };
+
+  addSection('1. KANUNI SURELER, GUNLER VE VALORLER', options.durations, (item) =>
+    `${item.duration} - ${item.title}. ${item.description} Tuzak: ${item.trap}`
+  );
+  addSection('2. KRITIK ESİK DEGERLERI, RAKAMLAR VE ORANLAR', options.ratios, (item) =>
+    `${item.value} - ${item.title}. ${item.description} Tuzak: ${item.trap}`
+  );
+  addSection('3. KARISTIRILAN IKILI KAVRAMLAR', options.comparisons, (item) =>
+    `${item.conceptA.title}: ${item.conceptA.desc} ${item.conceptB.title}: ${item.conceptB.desc} Fark: ${item.differenceRule}`
+  );
+  addSection('4. OLUMCUL SINAV TUZAKLARI', options.traps, (item) =>
+    `Mit: ${item.myth} Gercek: ${item.reality} Onemi: ${item.whyImportant}`
+  );
+
+  const pdfBytes = pdf.output('arraybuffer');
+  if (pdf.getNumberOfPages() === 0 || pdfBytes.byteLength === 0) {
+    throw new Error('PDF oluşturuldu ancak geçerli içerik üretilemedi.');
+  }
+  pdf.save(fileName);
 }
 
 /**
@@ -98,9 +158,15 @@ export function generateCheatSheetPdf(options: PdfExportOptions): void {
  */
 export function openCheatSheetInNewTab(options: PdfExportOptions): void {
   const html = generateFullStandaloneHtml(options);
-  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
-  const url = URL.createObjectURL(blob);
-  window.open(url, '_blank');
+  const previewWindow = window.open('', '_blank');
+  if (!previewWindow) {
+    throw new Error('Önizleme penceresi açılamadı. Tarayıcı açılır pencere iznini kontrol edin.');
+  }
+
+  previewWindow.document.open();
+  previewWindow.document.write(html);
+  previewWindow.document.close();
+  previewWindow.focus();
 }
 
 /**
@@ -503,8 +569,7 @@ function generateFullStandaloneHtml(options: PdfExportOptions): string {
         📋 SPK SPL 1 Altın Hap Bilgiler Raporu
       </div>
       <div style="display: flex; gap: 8px;">
-        <button class="btn btn-print" onclick="window.print()">🖨️ Yazdır / PDF Kaydet</button>
-        <button class="btn btn-close" onclick="window.close()">✕ Kapat</button>
+        <button type="button" class="btn btn-print" onclick="window.focus(); window.print();">🖨️ Yazdır / PDF Kaydet</button>
       </div>
     </div>
 

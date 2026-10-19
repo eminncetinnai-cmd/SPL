@@ -46,6 +46,13 @@ export function exportQuizHistoryToCSV(history: PastQuizSummary[]): void {
   document.body.removeChild(link);
 }
 
+import allQuestionsData from '../data/all_questions.json';
+import { Question } from '../types/exam';
+
+const canonicalMap = new Map<string, Question>(
+  (allQuestionsData as Question[]).map((q) => [q.id, q])
+);
+
 export function exportMistakesToCSV(mistakes: MistakeEntry[]): void {
   if (!mistakes || mistakes.length === 0) {
     alert('Dışa aktarılacak hatalı soru bulunamadı.');
@@ -64,17 +71,20 @@ export function exportMistakesToCSV(mistakes: MistakeEntry[]): void {
     'Son Hata Tarihi'
   ];
 
-  const rows = mistakes.map((item) => [
-    `"${item.question.id}"`,
-    `"${item.question.module_id}"`,
-    `"${(item.question.topic || '').replace(/"/g, '""')}"`,
-    `"${item.question.text.replace(/"/g, '""')}"`,
-    `"${item.question.correct_answer}"`,
-    `"${(item.question.explanation || '').replace(/"/g, '""')}"`,
-    `"${(item.question.trap || '').replace(/"/g, '""')}"`,
-    item.wrong_count,
-    `"${item.last_wrong_date}"`
-  ]);
+  const rows = mistakes.map((item) => {
+    const q = canonicalMap.get(item.question.id) || item.question;
+    return [
+      `"${q.id}"`,
+      `"${q.module_id}"`,
+      `"${(q.topic || '').replace(/"/g, '""')}"`,
+      `"${q.text.replace(/"/g, '""')}"`,
+      `"${q.correct_answer}"`,
+      `"${(q.explanation || '').replace(/"/g, '""')}"`,
+      `"${(q.trap || '').replace(/"/g, '""')}"`,
+      item.wrong_count,
+      `"${item.last_wrong_date}"`
+    ];
+  });
 
   const csvContent = '\uFEFF' + [headers.join(';'), ...rows.map(r => r.join(';'))].join('\r\n');
   const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });

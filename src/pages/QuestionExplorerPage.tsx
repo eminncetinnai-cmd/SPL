@@ -234,15 +234,27 @@ export const QuestionExplorerPage: React.FC<QuestionExplorerPageProps> = ({
 
       {/* Results Header */}
       <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-2 font-mono">
-        <span>Toplam {filteredQuestions.length} Soru Eşleşti</span>
-        <span>Sayfa {page} / {totalPages}</span>
+        <span>Toplam {filteredQuestions.length} Soru Eşleşti (Sayfa {page} / {totalPages})</span>
+        <button
+          onClick={() => {
+            const allCurrentlyExpanded = paginatedQuestions.every((q) => !!expandedItems[q.id]);
+            const nextState: Record<string, boolean> = { ...expandedItems };
+            paginatedQuestions.forEach((q) => {
+              nextState[q.id] = !allCurrentlyExpanded;
+            });
+            setExpandedItems(nextState);
+          }}
+          className="text-teal-600 dark:text-teal-400 font-bold hover:underline cursor-pointer"
+        >
+          {paginatedQuestions.every((q) => !!expandedItems[q.id]) ? 'Tümünü Daralt' : 'Sayfadakileri Aç'}
+        </button>
       </div>
 
       {/* Question Cards List */}
       <div className="space-y-4">
         {paginatedQuestions.map((q, idx) => {
           const globalIndex = (page - 1) * pageSize + idx + 1;
-          const isExpanded = expandedItems[q.id] !== false;
+          const isExpanded = !!expandedItems[q.id];
           const bookmarked = isBookmarked(q.id);
           const isSeen = isQuestionSeen(q.id);
 

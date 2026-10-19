@@ -1,28 +1,22 @@
 import React, { useState } from 'react';
-import { 
-  Sparkles, 
-  Moon, 
-  Sun, 
-  Volume2, 
-  VolumeX, 
-  Award, 
-  CheckCircle2, 
-  Flame, 
+import {
+  Sparkles,
+  Moon,
+  Sun,
+  Volume2,
+  VolumeX,
+  Award,
+  CheckCircle2,
+  Flame,
   BookMarked,
   Menu,
   X,
-  Home,
-  FileText,
   AlertTriangle,
   Star,
   Search,
   BarChart3,
   Settings,
-  Scale,
-  Coins,
-  Building2,
-  ShieldCheck,
-  Zap
+  Zap,
 } from 'lucide-react';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useProgressStore } from '../../stores/progressStore';
@@ -32,13 +26,13 @@ interface NavbarProps {
   currentPage: string;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
   const { theme, toggleTheme, soundEnabled, setSoundEnabled } = useSettingsStore();
   const { history, bookmarks, mistakes } = useProgressStore();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const totalQuizzes = history.length;
-  const mistakeCount = Object.values(mistakes).filter(m => !m.resolved).length;
+  const mistakeCount = Object.values(mistakes).filter((m) => !m.resolved).length;
   const bookmarkCount = bookmarks.length;
 
   const totalScore = history.reduce((acc, h) => acc + h.score, 0);
@@ -50,226 +44,181 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-fintech-border bg-fintech-dark/95 backdrop-blur-md px-4 sm:px-6 py-3">
-      <div className="flex items-center justify-between">
+    <header className="sticky top-0 z-40 w-full border-b border-fintech-border bg-fintech-dark/95 backdrop-blur-md px-3 sm:px-6 py-2.5">
+      <div className="flex items-center justify-between gap-2">
         {/* Brand & Logo */}
-        <div 
-          onClick={() => onNavigate('home')} 
-          className="flex items-center gap-3 cursor-pointer group select-none"
+        <div
+          onClick={() => onNavigate('home')}
+          className="flex items-center gap-2.5 cursor-pointer group select-none min-w-0"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-600 to-emerald-500 p-[1px] shadow-sm group-hover:shadow-md transition-all">
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-teal-600 to-emerald-500 p-[1px] shadow-sm shrink-0">
             <div className="w-full h-full bg-white dark:bg-fintech-surface rounded-xl flex items-center justify-center">
-              <Award className="w-5 h-5 text-teal-600 dark:text-teal-400 group-hover:scale-110 transition-transform" />
+              <Award className="w-4 h-4 text-teal-600 dark:text-teal-400" />
             </div>
           </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="text-lg font-black tracking-tight text-slate-900 dark:text-white group-hover:text-teal-600 transition-colors">
+          <div className="min-w-0">
+            <div className="flex items-center gap-1.5">
+              <span className="text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white truncate">
                 SPK SPL 1
               </span>
-              <span className="text-[10px] uppercase font-mono tracking-widest px-2 py-0.5 rounded-full bg-teal-50 dark:bg-teal-500/10 text-teal-700 dark:text-teal-400 border border-teal-200 dark:border-teal-500/30 font-bold">
-                PRO EXAM
+              <span className="text-[9px] uppercase font-mono tracking-wider px-1.5 py-0.5 rounded-full bg-teal-50 dark:bg-teal-500/10 text-teal-700 dark:text-teal-400 border border-teal-200 dark:border-teal-500/30 font-bold shrink-0">
+                PRO
               </span>
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">
-              Sermaye Piyasası Lisanslama Sınavı Hazırlık Platformu
-            </p>
           </div>
         </div>
 
-        {/* Quick KPI stats in Navbar */}
-        <div className="hidden lg:flex items-center gap-4">
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border">
-            <Flame className="w-4 h-4 text-amber-500" />
-            <span className="text-xs text-slate-500 dark:text-slate-400">Çözülen Sınav:</span>
-            <span className="text-xs font-mono font-bold text-slate-900 dark:text-slate-200">{totalQuizzes}</span>
+        {/* Quick KPI stats in Navbar (Desktop) */}
+        <div className="hidden lg:flex items-center gap-3">
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-xs">
+            <Flame className="w-3.5 h-3.5 text-amber-500" />
+            <span className="text-slate-500 dark:text-slate-400">Test:</span>
+            <span className="font-mono font-bold text-slate-900 dark:text-slate-200">{totalQuizzes}</span>
           </div>
 
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border">
-            <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-            <span className="text-xs text-slate-500 dark:text-slate-400">Ort. Başarı:</span>
-            <span className="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">%{avgScore}</span>
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-xs">
+            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+            <span className="text-slate-500 dark:text-slate-400">Başarı:</span>
+            <span className="font-mono font-bold text-emerald-600 dark:text-emerald-400">%{avgScore}</span>
           </div>
 
           {mistakeCount > 0 && (
-            <button 
+            <button
               onClick={() => onNavigate('mistakes')}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-rose-50 dark:bg-rose-500/10 border border-rose-200 dark:border-rose-500/30 text-rose-700 dark:text-rose-400 hover:bg-rose-100 dark:hover:bg-rose-500/20 transition-all text-xs font-semibold"
+              className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-rose-50 dark:bg-rose-500/10 border border-rose-200 dark:border-rose-500/30 text-rose-700 dark:text-rose-400 hover:bg-rose-100 transition-all text-xs font-semibold"
             >
-              <span>{mistakeCount} Hatalı Soru</span>
+              <span>{mistakeCount} Hatalı</span>
             </button>
           )}
 
           {bookmarkCount > 0 && (
-            <button 
+            <button
               onClick={() => onNavigate('bookmarks')}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-500/20 transition-all text-xs font-semibold"
+              className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-400 hover:bg-amber-100 transition-all text-xs font-semibold"
             >
               <BookMarked className="w-3.5 h-3.5" />
-              <span>{bookmarkCount} Yıldızlı</span>
+              <span>{bookmarkCount}</span>
             </button>
           )}
         </div>
 
         {/* Action Controls */}
-        <div className="flex items-center gap-2">
-          {/* Sınav Hapları CTA */}
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* Sınav Sabahı Modu CTA */}
           <button
-            onClick={() => onNavigate('cheat-sheet')}
-            className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-800 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-500/20 text-xs font-bold transition-all"
+            onClick={() => onNavigate('exam-morning')}
+            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white text-xs font-black tracking-wide shadow-xs transition-all active:scale-95 cursor-pointer"
+            title="Sınav Salonuna Girmeden Önceki Son 15 Dakika Hap Bilgileri"
           >
-            <Zap className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-            <span>⚡ Sınav Hapları (10 Dk)</span>
+            <Zap className="w-3.5 h-3.5 fill-white text-white" />
+            <span className="hidden sm:inline">Sınav Sabahı (15 Dk)</span>
+            <span className="sm:hidden">15 Dk</span>
           </button>
+
+          {/* Mobile Mistake Quick Badge */}
+          {mistakeCount > 0 && (
+            <button
+              onClick={() => onNavigate('mistakes')}
+              className="lg:hidden flex items-center gap-1 px-2 py-1.5 rounded-lg bg-rose-50 dark:bg-rose-500/15 border border-rose-200 dark:border-rose-500/30 text-rose-700 dark:text-rose-300 text-xs font-bold"
+              title="Yanlışlarım Defteri"
+            >
+              <AlertTriangle className="w-3.5 h-3.5 text-rose-500" />
+              <span>{mistakeCount}</span>
+            </button>
+          )}
 
           {/* Sound Toggle */}
           <button
             onClick={() => setSoundEnabled(!soundEnabled)}
-            className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card dark:hover:bg-fintech-cardHover border border-slate-200 dark:border-fintech-border text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition-colors"
-            title={soundEnabled ? "Ses Efektleri Açık" : "Ses Efektleri Kapalı"}
+            className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card dark:hover:bg-fintech-cardHover border border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-300 transition-colors"
+            title={soundEnabled ? 'Ses Efektleri Açık' : 'Ses Efektleri Kapalı'}
           >
-            {soundEnabled ? <Volume2 className="w-4 h-4 text-teal-600 dark:text-teal-400" /> : <VolumeX className="w-4 h-4 text-slate-400" />}
+            {soundEnabled ? (
+              <Volume2 className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+            ) : (
+              <VolumeX className="w-4 h-4 text-slate-400" />
+            )}
           </button>
 
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card dark:hover:bg-fintech-cardHover border border-slate-200 dark:border-fintech-border text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition-colors"
+            className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card dark:hover:bg-fintech-cardHover border border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-300 transition-colors"
             title="Tema Değiştir"
           >
-            {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-600" />}
+            {theme === 'dark' ? (
+              <Sun className="w-4 h-4 text-amber-400" />
+            ) : (
+              <Moon className="w-4 h-4 text-slate-600" />
+            )}
           </button>
 
-          {/* Quick Simulation CTA */}
+          {/* Quick Simulation CTA (Desktop) */}
           <button
             onClick={() => onNavigate('simulation-prep')}
-            className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white font-bold text-xs tracking-wide shadow-sm hover:shadow transition-all active:scale-95"
+            className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs shadow-xs transition-all active:scale-95"
           >
             <Sparkles className="w-3.5 h-3.5 text-white" />
-            <span>Deneme Sınavı Başlat</span>
+            <span>Deneme Sınavı</span>
           </button>
 
-          {/* Mobile Hamburger Toggle */}
+          {/* Mobile Secondary Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card dark:hover:bg-fintech-cardHover border border-slate-200 dark:border-fintech-border text-slate-600 hover:text-slate-900 dark:text-slate-300 md:hidden transition-colors"
-            title="Menüyü Aç"
+            className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-300 md:hidden transition-colors"
+            title="Diğer Araçlar"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Compact Mobile Drawer (Secondary Tools Only) */}
       {mobileMenuOpen && (
-        <div className="md:hidden pt-4 pb-2 border-t border-slate-200 dark:border-fintech-border mt-3 space-y-3 animate-slide-up">
-          <div className="grid grid-cols-2 gap-2 text-xs font-medium">
-            <button
-              onClick={() => handleMobileNav('home')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-teal-800 dark:text-teal-300 text-left font-bold shadow-xs"
-            >
-              <Home className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-              <span>Ana Sayfa</span>
-            </button>
-            <button
-              onClick={() => handleMobileNav('cheat-sheet')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-amber-50 dark:bg-amber-500/20 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 text-left font-bold shadow-xs"
-            >
-              <Zap className="w-4 h-4 text-amber-600 dark:text-amber-400 fill-amber-500 dark:fill-amber-400" />
-              <span>⚡ Sınav Hapları (10 Dk)</span>
-            </button>
-            <button
-              onClick={() => handleMobileNav('practice')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-teal-800 dark:text-teal-300 text-left font-bold shadow-xs"
-            >
-              <Sparkles className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-              <span>Test Çöz (860 Soru)</span>
-            </button>
+        <div className="md:hidden pt-3 pb-2 border-t border-slate-200 dark:border-fintech-border mt-2.5 animate-slide-up">
+          <div className="grid grid-cols-2 gap-2 text-xs font-semibold">
             <button
               onClick={() => handleMobileNav('simulation-prep')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left font-bold shadow-xs"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
             >
-              <Award className="w-4 h-4 text-amber-500" />
-              <span>Sınav Simülasyonu</span>
-            </button>
-            <button
-              onClick={() => handleMobileNav('flashcards')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left font-bold shadow-xs"
-            >
-              <Sparkles className="w-4 h-4 text-purple-600 dark:text-purple-400" />
-              <span>Öğrenme Kartları (400)</span>
-            </button>
-            <button
-              onClick={() => handleMobileNav('study-notes')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left shadow-xs"
-            >
-              <FileText className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
-              <span>Konu Anlatımları</span>
+              <Award className="w-4 h-4 text-amber-500 shrink-0" />
+              <span>Deneme Sınavı</span>
             </button>
             <button
               onClick={() => handleMobileNav('mistakes')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-rose-800 dark:text-rose-300 text-left shadow-xs"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-rose-700 dark:text-rose-300 text-left"
             >
-              <AlertTriangle className="w-4 h-4 text-rose-600 dark:text-rose-400" />
+              <AlertTriangle className="w-4 h-4 text-rose-500 shrink-0" />
               <span>Yanlışlarım ({mistakeCount})</span>
             </button>
             <button
               onClick={() => handleMobileNav('bookmarks')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-amber-800 dark:text-amber-300 text-left shadow-xs"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-amber-700 dark:text-amber-300 text-left"
             >
-              <Star className="w-4 h-4 text-amber-500 dark:text-amber-400" />
+              <Star className="w-4 h-4 text-amber-500 shrink-0" />
               <span>Yıldızlılar ({bookmarkCount})</span>
             </button>
             <button
               onClick={() => handleMobileNav('explorer')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left shadow-xs"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
             >
-              <Search className="w-4 h-4 text-purple-600 dark:text-purple-400" />
-              <span>Soru Havuzu Ara</span>
+              <Search className="w-4 h-4 text-purple-500 shrink-0" />
+              <span>Soru Ara (935)</span>
             </button>
             <button
               onClick={() => handleMobileNav('dashboard')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left shadow-xs"
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
             >
-              <BarChart3 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-              <span>İstatistik & Grafik</span>
+              <BarChart3 className="w-4 h-4 text-emerald-500 shrink-0" />
+              <span>İstatistik & Analitik</span>
             </button>
-          </div>
-
-          <div className="pt-2 border-t border-slate-200 dark:border-fintech-border/60">
-            <p className="text-[10px] font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold mb-2">
-              Ders Pratik Testleri
-            </p>
-            <div className="grid grid-cols-2 gap-2 text-xs">
-              <button
-                onClick={() => handleMobileNav('module-quiz-prep', { moduleId: '1001' })}
-                className="flex items-center gap-1.5 p-2 rounded-lg bg-emerald-50 text-emerald-900 border border-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-300 dark:border-emerald-500/30 text-left font-medium"
-              >
-                <Scale className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span>1001 Mevzuat</span>
-              </button>
-              <button
-                onClick={() => handleMobileNav('module-quiz-prep', { moduleId: '1003' })}
-                className="flex items-center gap-1.5 p-2 rounded-lg bg-cyan-50 text-cyan-900 border border-cyan-200 dark:bg-cyan-500/10 dark:text-cyan-300 dark:border-cyan-500/30 text-left font-medium"
-              >
-                <Coins className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
-                <span>1003 Araçlar</span>
-              </button>
-              <button
-                onClick={() => handleMobileNav('module-quiz-prep', { moduleId: '1005' })}
-                className="flex items-center gap-1.5 p-2 rounded-lg bg-purple-50 text-purple-900 border border-purple-200 dark:bg-purple-500/10 dark:text-purple-300 dark:border-purple-500/30 text-left font-medium"
-              >
-                <Building2 className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
-                <span>1005 Yatırım Kur.</span>
-              </button>
-              <button
-                onClick={() => handleMobileNav('module-quiz-prep', { moduleId: '1012' })}
-                className="flex items-center gap-1.5 p-2 rounded-lg bg-amber-50 text-amber-900 border border-amber-200 dark:bg-amber-500/10 dark:text-amber-300 dark:border-amber-500/30 text-left font-medium"
-              >
-                <ShieldCheck className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-                <span>1012 Takas/Saklama</span>
-              </button>
-            </div>
+            <button
+              onClick={() => handleMobileNav('settings')}
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
+            >
+              <Settings className="w-4 h-4 text-slate-500 shrink-0" />
+              <span>Ayarlar & Sıfırla</span>
+            </button>
           </div>
         </div>
       )}

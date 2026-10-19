@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { ModuleId, PastQuizSummary, MistakeEntry, Question, QuizSession } from '../types/exam';
+import allQuestionsData from '../data/all_questions.json';
 
 interface ModuleStats {
   attempts: number;
@@ -24,6 +25,7 @@ interface ProgressState {
   
   // Actions
   recordAnswer: (question: Question, selected: string, isCorrect: boolean) => void;
+  recordMistakeCorrect: (questionId: string) => void;
   recordQuizCompletion: (session: QuizSession) => void;
   addMistake: (question: Question, selected: string) => void;
   removeMistake: (questionId: string) => void;
@@ -40,10 +42,11 @@ interface ProgressState {
   getSeenCountByModule: (moduleId: ModuleId) => number;
   clearHistory: () => void;
   clearMistakes: () => void;
+  resetSolvedQuestions: (options?: { includeHistory?: boolean }) => void;
   resetAll: () => void;
 }
 
-const STORAGE_KEY = 'spk_spl1_progress_v5';
+const STORAGE_KEY = 'spk_spl1_progress_v7';
 
 const defaultModuleStats: Record<ModuleId, ModuleStats> = {
   '1001': { attempts: 0, totalQuestions: 0, totalCorrect: 0, totalWrong: 0, averageAccuracy: 0, bestScore: 0, lastScore: null, lastDate: null },
@@ -52,11 +55,44 @@ const defaultModuleStats: Record<ModuleId, ModuleStats> = {
   '1012': { attempts: 0, totalQuestions: 0, totalCorrect: 0, totalWrong: 0, averageAccuracy: 0, bestScore: 0, lastScore: null, lastDate: null },
 };
 
+const canonicalQuestions = new Map(
+  (allQuestionsData as Question[]).map((question) => [question.id, question])
+);
+
+function normalizeMistakeEntry(entry: MistakeEntry): MistakeEntry {
+  const canonicalQuestion = canonicalQuestions.get(entry.question.id);
+  if (!canonicalQuestion) return entry;
+
+  const selectedOption = entry.question.options.find(
+    (option) => option.key === entry.last_selected_option
+  );
+  const canonicalSelectedKey = selectedOption
+    ? canonicalQuestion.options.find((option) => option.text === selectedOption.text)?.key
+    : undefined;
+
+  return {
+    ...entry,
+    question: canonicalQuestion,
+    last_selected_option: canonicalSelectedKey || entry.last_selected_option,
+  };
+}
+
+function normalizeMistakes(
+  mistakes: Record<string, MistakeEntry>
+): Record<string, MistakeEntry> {
+  return Object.fromEntries(
+    Object.entries(mistakes).map(([questionId, entry]) => [
+      questionId,
+      normalizeMistakeEntry(entry),
+    ])
+  );
+}
+
 const initialData = (() => {
   try {
     if (typeof localStorage !== 'undefined') {
       // Clear legacy storage versions if any exist to guarantee clean state
-      ['spk_spl1_progress_v1', 'spk_spl1_progress_v2', 'spk_spl1_progress_v3', 'spk_spl1_progress_v4'].forEach((oldKey) => {
+      ['spk_spl1_progress_v1', 'spk_spl1_progress_v2', 'spk_spl1_progress_v3', 'spk_spl1_progress_v4', 'spk_spl1_progress_v5', 'spk_spl1_progress_v6'].forEach((oldKey) => {
         try { localStorage.removeItem(oldKey); } catch (e) {}
       });
 
@@ -65,7 +101,7 @@ const initialData = (() => {
         const parsed = JSON.parse(saved);
         return {
           history: parsed.history || [],
-          mistakes: parsed.mistakes || {},
+          mistakes: normalizeMistakes(parsed.mistakes || {}),
           bookmarks: parsed.bookmarks || [],
           learnedCards: parsed.learnedCards || [],
           starredCards: parsed.starredCards || [],
@@ -90,7 +126,20 @@ const initialData = (() => {
   };
 })();
 
-function saveToStorage(state: Partial<ProgressState>) {
+const arraySetCache = new WeakMap<string[], Set<string>>();
+function getCachedSet(arr: string[]): Set<string> {
+  let set = arraySetCache.get(arr);
+  if (!set) {
+    set = new Set(arr);
+    arraySetCache.set(arr, set);
+  }
+  return set;
+}
+
+let pendingStateToSave: Partial<ProgressState> | null = null;
+let saveTimeoutId: ReturnType<typeof setTimeout> | null = null;
+
+function flushToStorage(state: Partial<ProgressState>) {
   try {
     if (typeof localStorage === 'undefined') return;
     const dataToSave = {
@@ -100,13 +149,37 @@ function saveToStorage(state: Partial<ProgressState>) {
       learnedCards: state.learnedCards || [],
       starredCards: state.starredCards || [],
       seenQuestionIds: state.seenQuestionIds || [],
-      avoidQuestionRepetition: state.avoidQuestionRepetition !== undefined ? state.avoidQuestionRepetition : true,
+      avoidQuestionRepetition:
+        state.avoidQuestionRepetition !== undefined ? state.avoidQuestionRepetition : true,
       moduleStats: state.moduleStats || defaultModuleStats,
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
   } catch (e) {
     console.error('Failed to save progress to localStorage', e);
   }
+}
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('beforeunload', () => {
+    if (pendingStateToSave) {
+      flushToStorage(pendingStateToSave);
+      pendingStateToSave = null;
+    }
+  });
+}
+
+function saveToStorage(state: Partial<ProgressState>) {
+  pendingStateToSave = state;
+  if (saveTimeoutId) {
+    clearTimeout(saveTimeoutId);
+  }
+  saveTimeoutId = setTimeout(() => {
+    if (pendingStateToSave) {
+      flushToStorage(pendingStateToSave);
+      pendingStateToSave = null;
+    }
+    saveTimeoutId = null;
+  }, 120);
 }
 
 export const useProgressStore = create<ProgressState>((set, get) => ({
@@ -120,8 +193,9 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   moduleStats: initialData.moduleStats,
 
   recordAnswer: (question: Question, selected: string, isCorrect: boolean) => {
+    const state = get();
     const mid = question.module_id as ModuleId;
-    const current = get().moduleStats[mid] || { ...defaultModuleStats[mid] };
+    const current = state.moduleStats[mid] || { ...defaultModuleStats[mid] };
 
     const newTotalQ = current.totalQuestions + 1;
     const newTotalCorrect = current.totalCorrect + (isCorrect ? 1 : 0);
@@ -129,7 +203,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     const newAccuracy = Math.round((newTotalCorrect / newTotalQ) * 100);
 
     const updatedStats = {
-      ...get().moduleStats,
+      ...state.moduleStats,
       [mid]: {
         ...current,
         totalQuestions: newTotalQ,
@@ -140,25 +214,79 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       },
     };
 
-    // Mark as seen
-    const seenSet = new Set(get().seenQuestionIds);
-    seenSet.add(question.id);
-    const newSeenQuestionIds = Array.from(seenSet);
+    // Mark as seen only if not already in set
+    const seenSet = getCachedSet(state.seenQuestionIds);
+    const newSeenQuestionIds = seenSet.has(question.id)
+      ? state.seenQuestionIds
+      : [...state.seenQuestionIds, question.id];
+
+    // Compute updated mistakes in the same pass (single Zustand set + single storage write)
+    let newMistakes = state.mistakes;
+    if (!isCorrect) {
+      const existingMistake = state.mistakes[question.id];
+      const newCount = existingMistake ? existingMistake.wrong_count + 1 : 1;
+      const canonicalQuestion = canonicalQuestions.get(question.id) || question;
+      const selectedOption = question.options.find((option) => option.key === selected);
+      const canonicalSelected = selectedOption
+        ? canonicalQuestion.options.find((option) => option.text === selectedOption.text)?.key
+        : undefined;
+      newMistakes = {
+        ...state.mistakes,
+        [question.id]: {
+          question: canonicalQuestion,
+          wrong_count: newCount,
+          last_wrong_date: new Date().toISOString(),
+          last_selected_option: canonicalSelected || selected,
+          correct_streak: 0,
+          resolved: false,
+        },
+      };
+    } else {
+      const existingMistake = state.mistakes[question.id];
+      if (existingMistake && !existingMistake.resolved) {
+        const correctStreak = (existingMistake.correct_streak || 0) + 1;
+        newMistakes = {
+          ...state.mistakes,
+          [question.id]: {
+            ...existingMistake,
+            correct_streak: correctStreak,
+            resolved: correctStreak >= 2,
+          },
+        };
+      }
+    }
 
     set({
       moduleStats: updatedStats,
       seenQuestionIds: newSeenQuestionIds,
+      mistakes: newMistakes,
     });
 
     saveToStorage({
       ...get(),
       moduleStats: updatedStats,
       seenQuestionIds: newSeenQuestionIds,
+      mistakes: newMistakes,
     });
+  },
 
-    if (!isCorrect) {
-      get().addMistake(question, selected);
-    }
+  recordMistakeCorrect: (questionId: string) => {
+    const current = get().mistakes[questionId];
+    if (!current || current.resolved) return;
+
+    const correctStreak = (current.correct_streak || 0) + 1;
+    const updatedEntry: MistakeEntry = {
+      ...current,
+      correct_streak: correctStreak,
+      resolved: correctStreak >= 2,
+    };
+    const newMistakes = {
+      ...get().mistakes,
+      [questionId]: updatedEntry,
+    };
+
+    set({ mistakes: newMistakes });
+    saveToStorage({ ...get(), mistakes: newMistakes });
   },
 
   recordQuizCompletion: (session: QuizSession) => {
@@ -182,7 +310,12 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
 
     // Automatically mark all questions from this session as seen
     const existingSeen = new Set(get().seenQuestionIds);
-    session.questions.forEach((q) => existingSeen.add(q.id));
+    session.questions.forEach((q) => {
+      const answer = session.user_answers[q.id];
+      if (answer?.selected_option !== null && answer?.selected_option !== undefined) {
+        existingSeen.add(q.id);
+      }
+    });
     const newSeenQuestionIds = Array.from(existingSeen);
 
     // Update module stats
@@ -227,11 +360,15 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     }
 
     // Automatically record all mistakes
-    if (session.user_answers) {
+    if (session.user_answers && session.mode === 'simulation') {
       session.questions.forEach((q) => {
         const ans = session.user_answers[q.id];
-        if (ans && ans.selected_option !== null && !ans.is_correct) {
-          get().addMistake(q, ans.selected_option);
+        if (ans && ans.selected_option !== null) {
+          if (!ans.is_correct) {
+            get().addMistake(q, ans.selected_option);
+          } else {
+            get().recordMistakeCorrect(q.id);
+          }
         }
       });
     }
@@ -268,7 +405,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
 
   isQuestionSeen: (questionId: string) => {
-    return get().seenQuestionIds.includes(questionId);
+    return getCachedSet(get().seenQuestionIds).has(questionId);
   },
 
   resetSeenQuestions: (moduleId?: ModuleId | 'all') => {
@@ -277,7 +414,9 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       saveToStorage({ ...get(), seenQuestionIds: [] });
     } else {
       // Keep seen questions from other modules, reset only for this module
-      const filtered = get().seenQuestionIds.filter((id) => !id.includes(`_${moduleId}_`));
+      const filtered = get().seenQuestionIds.filter(
+        (id) => canonicalQuestions.get(id)?.module_id !== moduleId
+      );
       set({ seenQuestionIds: filtered });
       saveToStorage({ ...get(), seenQuestionIds: filtered });
     }
@@ -289,17 +428,30 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
 
   getSeenCountByModule: (moduleId: ModuleId) => {
-    return get().seenQuestionIds.filter((id) => id.includes(`_${moduleId}_`)).length;
+    let count = 0;
+    const seen = get().seenQuestionIds;
+    for (let i = 0; i < seen.length; i++) {
+      if (canonicalQuestions.get(seen[i])?.module_id === moduleId) {
+        count++;
+      }
+    }
+    return count;
   },
 
   addMistake: (question: Question, selected: string) => {
     const current = get().mistakes[question.id];
     const newCount = current ? current.wrong_count + 1 : 1;
+    const canonicalQuestion = canonicalQuestions.get(question.id) || question;
+    const selectedOption = question.options.find((option) => option.key === selected);
+    const canonicalSelected = selectedOption
+      ? canonicalQuestion.options.find((option) => option.text === selectedOption.text)?.key
+      : undefined;
     const entry: MistakeEntry = {
-      question,
+      question: canonicalQuestion,
       wrong_count: newCount,
       last_wrong_date: new Date().toISOString(),
-      last_selected_option: selected,
+      last_selected_option: canonicalSelected || selected,
+      correct_streak: 0,
       resolved: false,
     };
 
@@ -341,7 +493,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
 
   isBookmarked: (questionId: string) => {
-    return get().bookmarks.includes(questionId);
+    return getCachedSet(get().bookmarks).has(questionId);
   },
 
   toggleLearnedCard: (cardId) => {
@@ -361,7 +513,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
 
   isCardLearned: (cardId) => {
-    return get().learnedCards.includes(cardId);
+    return getCachedSet(get().learnedCards).has(cardId);
   },
 
   toggleStarredCard: (cardId) => {
@@ -381,7 +533,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
 
   isCardStarred: (cardId) => {
-    return get().starredCards.includes(cardId);
+    return getCachedSet(get().starredCards).has(cardId);
   },
 
   clearHistory: () => {
@@ -392,6 +544,25 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   clearMistakes: () => {
     set({ mistakes: {} });
     saveToStorage({ ...get(), mistakes: {} });
+  },
+
+  resetSolvedQuestions: (options?: { includeHistory?: boolean }) => {
+    if (options?.includeHistory) {
+      set({
+        seenQuestionIds: [],
+        history: [],
+        moduleStats: defaultModuleStats,
+      });
+      saveToStorage({
+        ...get(),
+        seenQuestionIds: [],
+        history: [],
+        moduleStats: defaultModuleStats,
+      });
+    } else {
+      set({ seenQuestionIds: [] });
+      saveToStorage({ ...get(), seenQuestionIds: [] });
+    }
   },
 
   resetAll: () => {

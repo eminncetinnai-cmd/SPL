@@ -1,9 +1,7 @@
 import React from 'react';
-import { Star, Flag, CheckCircle, XCircle, AlertCircle, HelpCircle } from 'lucide-react';
+import { Star, Flag, CheckCircle, XCircle } from 'lucide-react';
 import { Question, UserAnswer, QuizMode } from '../../types/exam';
 import { useProgressStore } from '../../stores/progressStore';
-
-import { formatQuestionId } from '../../utils/questionSelector';
 
 interface QuestionCardProps {
   question: Question;
@@ -16,7 +14,7 @@ interface QuestionCardProps {
   onToggleReviewFlag?: () => void;
 }
 
-export const QuestionCard: React.FC<QuestionCardProps> = ({
+export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   question,
   userAnswer,
   mode,
@@ -26,9 +24,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   onSelectOption,
   onToggleReviewFlag,
 }) => {
-  const { toggleBookmark, isBookmarked, isQuestionSeen } = useProgressStore();
+  const { toggleBookmark, isBookmarked } = useProgressStore();
   const bookmarked = isBookmarked(question.id);
-  const isPreviouslySeen = isQuestionSeen(question.id);
   const selectedKey = userAnswer?.selected_option;
   const isCorrectAnswer = question.correct_answer;
 
@@ -38,49 +35,47 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   };
 
   return (
-    <div className="w-full bg-white dark:bg-fintech-surface rounded-3xl border border-slate-200 dark:border-fintech-border shadow-sm p-5 sm:p-8 space-y-6">
-      {/* Header Info */}
-      <div className="flex items-center justify-between gap-3 border-b border-slate-200 dark:border-fintech-border/70 pb-4">
-        <div className="flex items-center gap-2.5 flex-wrap">
-          <span className="px-3 py-1 rounded-lg bg-teal-50 text-teal-800 border border-teal-200 font-mono text-xs font-bold dark:bg-teal-500/10 dark:text-teal-400 dark:border-teal-500/20">
+    <div className="w-full bg-white dark:bg-fintech-surface rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-fintech-border shadow-xs sm:shadow-sm p-4 sm:p-6 space-y-4 sm:space-y-5">
+      {/* Compact iOS-style Header Info */}
+      <div className="flex items-center justify-between gap-2 border-b border-slate-100 dark:border-fintech-border/70 pb-3">
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="px-3 py-1 rounded-xl bg-teal-500/10 text-teal-800 dark:text-teal-300 border border-teal-500/20 font-mono text-xs font-bold">
             Soru {questionIndex + 1} / {totalQuestions}
           </span>
-          <span className="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 font-mono text-xs font-bold border border-slate-200 dark:bg-slate-800 dark:text-teal-300 dark:border-slate-700" title="Her sorunun benzersiz kalıcı kimlik kodu">
-            ID: {formatQuestionId(question.id)}
-          </span>
-          <span className="px-2.5 py-0.5 rounded-lg bg-slate-100 text-slate-700 font-mono text-xs border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">
+          <span className="px-2.5 py-1 rounded-xl bg-slate-100 text-slate-700 font-mono text-xs font-semibold border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700">
             Modül {question.module_id}
           </span>
-          {isPreviouslySeen ? (
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 dark:bg-amber-500/10 dark:text-amber-300 dark:border-amber-500/20 font-semibold" title="Bu soru daha önce çözüldü">
-              🔄 Havuz Tekrarı
+          {question.cognitive_skill === 'KB3_Vaka' && (
+            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-lg bg-indigo-50 text-indigo-800 border border-indigo-200 dark:bg-indigo-500/15 dark:text-indigo-300 dark:border-indigo-500/30 font-bold">
+              Vaka
             </span>
-          ) : (
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-300 dark:border-emerald-500/20 font-semibold" title="Bu soru ile ilk kez karşılaşıyorsunuz">
-              ✨ Yeni Soru
+          )}
+          {question.cognitive_skill === 'KB2_Muhakeme' && (
+            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-lg bg-sky-50 text-sky-800 border border-sky-200 dark:bg-sky-500/15 dark:text-sky-300 dark:border-sky-500/30 font-bold">
+              Muhakeme
+            </span>
+          )}
+          {question.cognitive_skill === 'KB1_Kavramsal' && (
+            <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 font-bold">
+              Kavramsal
             </span>
           )}
           {isLocked && question.topic && (
-            <span className="text-xs text-teal-800 dark:text-teal-300 font-mono font-semibold px-2 py-0.5 rounded bg-teal-50 border border-teal-200 dark:bg-teal-950/40 dark:border-teal-500/30 hidden sm:inline-block">
-              Konu: {question.topic}
-            </span>
-          )}
-          {question.source === 'ogretici' && (
-            <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-purple-50 text-purple-800 border border-purple-200 dark:bg-purple-500/10 dark:text-purple-300 dark:border-purple-500/20 font-bold">
-              Öğretici & Tuzak Analizli
+            <span className="text-[11px] text-teal-800 dark:text-teal-300 font-mono font-semibold px-2 py-0.5 rounded-lg bg-teal-50 border border-teal-200 dark:bg-teal-950/40 dark:border-teal-500/30 hidden sm:inline-block">
+              {question.topic}
             </span>
           )}
         </div>
 
         {/* Action Buttons: Star and Review Flag */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 shrink-0">
           {mode === 'simulation' && onToggleReviewFlag && (
             <button
               onClick={onToggleReviewFlag}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              className={`flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
                 userAnswer?.marked_for_review
                   ? 'bg-amber-100 text-amber-900 border border-amber-300 shadow-sm dark:bg-amber-500/20 dark:text-amber-300 dark:border-amber-500/40'
-                  : 'bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 dark:bg-slate-800/80 dark:text-slate-400 dark:hover:text-slate-200 dark:border-slate-700'
+                  : 'bg-slate-100 text-slate-600 hover:text-slate-900 border border-slate-200 dark:bg-slate-800/80 dark:text-slate-400 dark:border-slate-700'
               }`}
               title="Daha sonra tekrar incelemek üzere bayrakla"
             >
@@ -91,48 +86,57 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
           <button
             onClick={() => toggleBookmark(question.id)}
-            className={`p-2 rounded-lg transition-all border ${
+            className={`p-2.5 rounded-xl transition-all border ${
               bookmarked
-                ? 'bg-amber-100 text-amber-600 border-amber-300 dark:bg-amber-500/15 dark:text-amber-400 dark:border-amber-500/30'
-                : 'bg-slate-100 text-slate-500 hover:text-amber-600 border-slate-200 dark:bg-slate-800/80 dark:text-slate-400 dark:hover:text-amber-300 dark:border-slate-700'
+                ? 'bg-amber-100 text-amber-600 border-amber-300 dark:bg-amber-500/15 dark:text-amber-400 dark:border-amber-500/30 shadow-xs'
+                : 'bg-slate-100 text-slate-500 hover:text-amber-600 border-slate-200 dark:bg-slate-800/80 dark:text-slate-400 dark:border-slate-700'
             }`}
-            title={bookmarked ? "Yıldızı Kaldır" : "Soruya Yıldız Ekle"}
+            title={bookmarked ? 'Yıldızı Kaldır' : 'Soruya Yıldız Ekle'}
           >
             <Star className={`w-4 h-4 ${bookmarked ? 'fill-amber-500 text-amber-500' : ''}`} />
           </button>
         </div>
       </div>
 
-      {/* Question Text */}
+      {/* Question Text with comfortable typography for 6.9" OLED */}
       <div className="text-slate-900 dark:text-slate-100 text-base sm:text-lg leading-relaxed font-semibold whitespace-pre-line select-text">
         {question.text}
       </div>
 
-      {/* Options List */}
-      <div className="space-y-3 pt-2">
+      {/* Options List - Large, Thumb-Friendly Tap Targets */}
+      <div className="space-y-3 pt-1">
         {question.options.map((opt) => {
           const isSelected = selectedKey === opt.key;
           const isCorrect = opt.key === isCorrectAnswer;
           const isPracticeMode = mode === 'practice';
 
-          let buttonStyle = 'bg-white hover:bg-slate-50 border-slate-200 text-slate-800 hover:border-slate-300 shadow-sm dark:bg-fintech-card dark:hover:bg-fintech-cardHover dark:border-fintech-border dark:text-slate-200';
-          let badgeStyle = 'bg-slate-100 text-slate-800 border-slate-300 font-bold dark:bg-slate-800 dark:text-slate-200 dark:border-slate-600';
+          let buttonStyle =
+            'bg-white hover:bg-slate-50 border-slate-200 text-slate-800 hover:border-slate-300 shadow-xs dark:bg-fintech-card dark:hover:bg-fintech-cardHover dark:border-fintech-border dark:text-slate-200';
+          let badgeStyle =
+            'bg-slate-100 text-slate-800 border-slate-300 font-bold dark:bg-slate-800 dark:text-slate-200 dark:border-slate-600';
 
           if (isPracticeMode && isLocked) {
             if (isCorrect) {
-              buttonStyle = 'bg-emerald-50 border-emerald-500 text-emerald-950 shadow-sm ring-1 ring-emerald-500 font-medium dark:bg-emerald-950/40 dark:border-emerald-500 dark:text-emerald-100';
-              badgeStyle = 'bg-emerald-600 text-white border-emerald-700 font-bold dark:bg-emerald-500 dark:text-slate-950 dark:border-emerald-400';
+              buttonStyle =
+                'bg-emerald-50/90 border-emerald-500 text-emerald-950 shadow-xs ring-2 ring-emerald-500/30 font-medium dark:bg-emerald-950/50 dark:border-emerald-500 dark:text-emerald-100';
+              badgeStyle =
+                'bg-emerald-600 text-white border-emerald-700 font-bold dark:bg-emerald-500 dark:text-slate-950 dark:border-emerald-400';
             } else if (isSelected && !isCorrect) {
-              buttonStyle = 'bg-rose-50 border-rose-500 text-rose-950 shadow-sm ring-1 ring-rose-500 font-medium dark:bg-rose-950/40 dark:border-rose-500 dark:text-rose-100';
-              badgeStyle = 'bg-rose-600 text-white border-rose-700 font-bold dark:bg-rose-500 dark:text-white dark:border-rose-400';
+              buttonStyle =
+                'bg-rose-50/90 border-rose-500 text-rose-950 shadow-xs ring-2 ring-rose-500/30 font-medium dark:bg-rose-950/50 dark:border-rose-500 dark:text-rose-100';
+              badgeStyle =
+                'bg-rose-600 text-white border-rose-700 font-bold dark:bg-rose-500 dark:text-white dark:border-rose-400';
             } else {
-              buttonStyle = 'bg-slate-50/60 border-slate-200 text-slate-400 opacity-60 dark:bg-slate-900/40 dark:border-slate-800/80 dark:text-slate-500';
-              badgeStyle = 'bg-slate-100 text-slate-400 border-slate-200 dark:bg-slate-900 dark:text-slate-600 dark:border-slate-800';
+              buttonStyle =
+                'bg-slate-50/50 border-slate-200 text-slate-400 opacity-50 dark:bg-slate-900/40 dark:border-slate-800/80 dark:text-slate-500';
+              badgeStyle =
+                'bg-slate-100 text-slate-400 border-slate-200 dark:bg-slate-900 dark:text-slate-600 dark:border-slate-800';
             }
           } else if (isSelected) {
-            // Simulation or before lock
-            buttonStyle = 'bg-teal-50/90 border-teal-500 text-teal-950 shadow-sm ring-1 ring-teal-500 font-medium dark:bg-teal-950/40 dark:border-teal-500 dark:text-teal-100';
-            badgeStyle = 'bg-teal-600 text-white border-teal-700 font-bold dark:bg-teal-500 dark:text-slate-950 dark:border-teal-400';
+            buttonStyle =
+              'bg-teal-50/95 border-teal-500 text-teal-950 shadow-xs ring-2 ring-teal-500/40 font-medium dark:bg-teal-950/60 dark:border-teal-500 dark:text-teal-100';
+            badgeStyle =
+              'bg-teal-600 text-white border-teal-700 font-bold dark:bg-teal-500 dark:text-slate-950 dark:border-teal-400';
           }
 
           return (
@@ -140,12 +144,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               key={opt.key}
               onClick={() => handleKeySelect(opt.key)}
               disabled={isPracticeMode && isLocked}
-              className={`w-full flex items-start gap-4 p-4 rounded-xl border text-left transition-all relative group ${buttonStyle} ${
-                isPracticeMode && isLocked ? 'cursor-default' : 'active:scale-[0.995]'
+              className={`w-full min-h-[56px] sm:min-h-[60px] flex items-start gap-3.5 p-3.5 sm:p-4 rounded-2xl border text-left transition-all relative group cursor-pointer ${buttonStyle} ${
+                isPracticeMode && isLocked ? 'cursor-default' : 'active:scale-[0.985]'
               }`}
             >
               {/* Option Letter Badge */}
-              <div className={`w-8 h-8 rounded-lg flex items-center justify-center font-mono text-sm shrink-0 border transition-all ${badgeStyle}`}>
+              <div
+                className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center font-mono text-xs sm:text-sm shrink-0 border transition-all ${badgeStyle}`}
+              >
                 {opt.key}
               </div>
 
@@ -158,10 +164,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               {isPracticeMode && isLocked && (
                 <div className="shrink-0 pt-0.5">
                   {isCorrect && (
-                    <CheckCircle className="w-5 h-5 text-emerald-400 fill-emerald-500/20" />
+                    <CheckCircle className="w-5 h-5 text-emerald-500 fill-emerald-500/20" />
                   )}
                   {isSelected && !isCorrect && (
-                    <XCircle className="w-5 h-5 text-rose-400 fill-rose-500/20" />
+                    <XCircle className="w-5 h-5 text-rose-500 fill-rose-500/20" />
                   )}
                 </div>
               )}
@@ -171,4 +177,4 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       </div>
     </div>
   );
-};
+});

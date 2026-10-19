@@ -67,7 +67,11 @@
           "İzahname Onay Süreleri: SPK'ya yapılan başvurularda Kurul, izahnameyi başvuru tarihinden itibaren kural olarak 10 iş günü içinde karara bağlar. Ancak ortaklık payları ilk defa halka arz edilecekse (ilk halka arz), inceleme süresi 20 iş günüdür. Eksiklik bildirilirse süre durur ve eksiklerin tamamlanmasından itibaren 10 iş günü başlar.",
           "İzahnamenin Geçerlilik Süresi: Onaylanan bir izahname, tescil ve ilan edildikten sonra 12 ay boyunca geçerlidir. Bu 12 aylık süre zarfında ihraç edilecek yeni tertipler için sadece sermaye piyasası aracı notu ve özet hazırlanması yeterlidir.",
           "İzahnameden Doğan Hukuki Sorumluluk (Müteselsil Sorumluluk): İzahnamede yer alan yanlış, yanıltıcı veya eksik bilgilerden kaynaklanan zararlardan birincil derecede 'İhraççı' sorumludur. Zarar ihraççıdan tazmin edilemezse; halka arz edenler, ihraca aracılık eden lider aracı kurum, bağımsız denetim kuruluşu, gayrimenkul değerleme ve derecelendirme kuruluşları kusurları oranında müteselsilen sorumlu olurlar.",
-          "Halka Arz Edilmeksizin İhraçlar (İhraç Belgesi): Sermaye piyasası araçları halka arz edilmeden yalnızca nitelikli yatırımcılara veya tahsisli olarak satılacaksa, izahname yerine daha sade bir belge olan 'İhraç Belgesi' düzenlenir ve Kurulca onaylanır."
+          "Halka Arz Edilmeksizin İhraçlar (İhraç Belgesi): Sermaye piyasası araçları halka arz edilmeden yalnızca nitelikli yatırımcılara veya tahsisli olarak satılacaksa, izahname yerine daha sade bir belge olan 'İhraç Belgesi' düzenlenir ve Kurulca onaylanır.",
+          "Halka Arz Sonrası İhraççı ve Ortakların Pay Satmama Taahhütleri (Pay Tebliği VII-128.1 m. 8): İzahnamenin onaylandığı tarih itibarıyla şirket sermayesinde %10 veya daha fazla paya sahip olan ortaklar ile sermaye oranına bakılmaksızın yönetim kontrolünü elinde bulunduran pay sahipleri, sahip oldukları payları şirket paylarının borsada işlem görmeye başladığı tarihten itibaren 1 YIL SÜREYLE borsada satamazlar veya borsada satılması sonucunu doğuracak şekilde devredemezler. Ayrıca bu ortaklar, payların borsada işlem görmeye başladığı tarihten itibaren 1 YIL SÜREYLE, ellerinde bulunan halka arza konu edilmeyen payları halka arz fiyatının altındaki bir fiyattan borsada satmayacaklarını Kurula taahhüt ederler.",
+          "İhraççı Şirketin Sermaye Artırımı Yasağı Taahhüdü: İhraççı ortaklık da payların borsada işlem görmeye başladığı tarihten itibaren Kurulun izni saklı kalmak kaydıyla 1 YIL SÜREYLE sermaye artırımı yapmayacağını ve dolaşımdaki pay miktarını artırmayacağını taahhüt etmekle yükümlüdür.",
+          "Yetkili Kuruluş / Aracı Kurum Yüklenim Payları (Underwriting Lock-up): Halka arza aracılık eden yetkili kuruluşlar (konsorsiyum lideri ve üyeleri), bakiye yüklenim kapsamında satılamayarak kendi portföylerine aldıkları payları, payların borsada işlem görmeye başladığı tarihten itibaren 6 AY SÜREYLE halka arz fiyatının altında bir fiyattan borsada satamazlar.",
+          "Halka Arz Başvurusundan Önceki Pay Edinimleri Kısıtlaması: Şirketin halka arz başvuru tarihinden önceki son 1 yıl içinde sermaye artırımı yoluyla veya mevcut ortaklardan nominal veya indirimli bedelle pay edinen kişilerin, bu payları halka arz fiyatının altında bir bedelle borsada satmayacakları taahhüt altına alınır."
         ],
         "concrete_examples": [
           "Hukuki Olay: Bir teknoloji şirketi ilk halka arzında finansal tablolarında stoklarını 200 Milyon TL fazla göstermiştir. Yatırımcılar şirkete dava açtığında, şirket tazminatı ödeyemezse halka arza aracılık eden lider aracı kurum ve bağımsız denetim firması kusurları ölçüsünde zararı cebinden ödemekle yükümlüdür."
@@ -85,9 +89,9 @@
         "tables": [
           {
             "headers": [
-              "İşlem / Belge Türü",
-              "Yasal İnceleme Süresi",
-              "Geçerlilik ve Temel Kural"
+              "İşlem / Belge / Yükümlülük",
+              "Yasal Süre / Kısıtlama",
+              "Temel Kural ve Sınav Notu"
             ],
             "rows": [
               [
@@ -103,10 +107,30 @@
               [
                 "İzahname Geçerlilik Süresi",
                 "12 Ay",
-                "Yıllık finansal tablolar güncellenerek kullanılır"
+                "Finansal tablolar güncellenerek yeni ihraç yapılabilir"
               ],
               [
-                "Halka Arz Dışı Satış",
+                "Ortakların Borsada Satmama Taahhüdü",
+                "1 Yıl (12 Ay)",
+                "%10+ pay sahipleri ve hakim ortaklar borsada satamaz"
+              ],
+              [
+                "Fiyat Altında Satmama Taahhüdü",
+                "1 Yıl (12 Ay)",
+                "Ortaklar halka arz fiyatının altına satış yapamaz"
+              ],
+              [
+                "İhraççı Sermaye Artırımı Yasağı",
+                "1 Yıl (12 Ay)",
+                "İhraççı şirket dolaşımdaki pay adedini artıramaz"
+              ],
+              [
+                "Aracı Kurum Yüklenim Payları",
+                "6 Ay",
+                "Yüklenilen paylar halka arz fiyatının altına satılamaz"
+              ],
+              [
+                "Halka Arz Dışı Satış (Tahsisli/Nitelikli)",
                 "İhraç Belgesi Düzenlenir",
                 "Yalnızca nitelikli yatırımcıya veya tahsisli satış"
               ]
@@ -122,7 +146,10 @@
           "İçsel Bilgi (İçeriden Öğrenilen Bilgi): Henüz kamuya açıklanmamış, doğrudan veya dolaylı olarak ortaklıkla ilişkili, açığa çıktığında hisse senedinin fiyatını veya yatırımcıların kararlarını önemli ölçüde etkileyebilecek nitelikteki somut bilgi ve olaylardır.",
           "Açıklama Zamanlaması ve Yöntemi: Ortaklıklar içsel bir bilgi ortaya çıktığında veya bunu öğrendiklerinde derhal KAP'ta açıklama yapmak zorundadır. Olay seans sırasında gerçekleşmişse derhal, seans kapalıyken gerçekleşmişse en geç ertesi iş günü seans açılışından önce açıklanmalıdır.",
           "İçsel Bilginin Açıklanmasının Ertelenmesi: Ortaklıklar; meşru menfaatlerinin zarar göreceği durumlarda, kamuoyunun yanıltılmasına yol açmamak ve bilginin gizliliğini korumak şartıyla yönetim kurulu kararıyla açıklamayı erteleyebilir. Ancak piyasada dedikodu yayılır veya gizlilik ihlal edilirse derhal açıklama yapılmalıdır.",
-          "Finansal Raporlama Takvimi: Halka açık ortaklıklar yıllık ve ara dönem finansal tablolarını bağımsız denetimden geçirerek KAP'ta ilan ederler. Konsolide olmayan yıllık tablolar en geç 60 gün, konsolide yıllık tablolar ise en geç 70 gün içinde açıklanır."
+          "Finansal Raporlama ve Bağımsız Denetim Takvimi (Tebliğ II-14.1):\nHalka açık ortaklıklar ve sermaye piyasası kurumları finansal raporlarını belirlenen yasal sürelerde KAP'ta ilan etmek zorundadır:\n1) Yıllık Finansal Raporlar (Tam Bağımsız Denetimden Geçmiş):\n   - Solo (Konsolide Olmayan): Hesap döneminin bitimini takip eden en geç 60 GÜN içinde,\n   - Konsolide: Hesap döneminin bitimini takip eden en geç 70 GÜN içinde açıklanır.\n2) Ara Dönem Finansal Raporlar:\n   - 3 Aylık (1. Çeyrek) ve 9 Aylık (3. Çeyrek) [Sınırlı Bağımsız Denetime Tabi Olmayan]: Solo için 30 GÜN, Konsolide için 40 GÜN,\n   - 6 Aylık (2. Çeyrek) [Sınırlı Bağımsız Denetimden Geçmek Zorunda]: Solo için 40 GÜN, Konsolide için 50 GÜN içinde açıklanır.\n3) Bağımsız Denetim Rotasyon Süreleri (TTK m. 400 ve SPK Bağımsız Denetim Tebliği):\n   - Bağımsız Denetim Kuruluşu: Aynı şirkette 10 yıl içinde en fazla 7 YIL görev yapabilir. 7 yılın ardından en az 3 YIL (soğuma/rotasyon süresi) geçmedikçe aynı şirketin denetimini üstlenemez.\n   - Sorumlu Denetçi (Başdenetçi): En fazla 5 YIL görev yapabilir; rotasyon bekleme süresi 2 YILDIR.",
+          "Konsolide vs. Solo (Konsolide Olmayan) Finansal Raporlar (TFRS 10 & II-14.1): Bir ana ortaklığın doğrudan veya dolaylı olarak oy haklarının %50'sinden fazlasına ya da fiili yönetim kontrolüne sahip olduğu şirketler 'Bağlı Ortaklık' sayılır ve tam konsolidasyona tabi tutulur. %20-%50 arasında oy hakkına sahip olunan şirketler ise 'İştirak' niteliğinde olup konsolide tablolarda özkaynak yöntemiyle muhasebeleştirilir. Bağlı ortaklıkların ana ortaklığa ait olmayan özkaynak ve net dönem kârı payları konsolide bilançoda 'Kontrol Gücü Olmayan Paylar (Azınlık Payları)' olarak özkaynak içinde ayrı gösterilir.",
+          "Konsolide ve Solo Finansal Raporların Kamuya Açıklanma Takvimi (II-14.1 m. 10): Yıllık Bağımsız Denetimli: Solo en geç 60 Gün, Konsolide en geç 70 Gün; 6 Aylık Sınırlı Denetimli: Solo en geç 40 Gün, Konsolide en geç 50 Gün; 3 ve 9 Aylık Denetimsiz Ara Dönem: Solo en geç 30 Gün, Konsolide en geç 40 Gün içinde KAP'ta açıklanır.",
+          "Bağımsız Denetçi Rapor Türleri ve Hükümleri (BDS 700 & 705): 1) Olumlu Görüş: Tablolar tüm önemli yönleriyle standartlara uygundur. 2) Şartlı Görüş (Sınırlı Olumlu): Hata veya kanıt eksikliği önemlidir ancak finansal tabloların geneline sirayet edecek derecede YAYGIN (pervasive) DEĞİLDİR. 3) Olumsuz Görüş: Yanlışlıklar ve aykırılıklar hem ÖNEMLİ hem de finansal tablolara YAYGINDIR; tablolar gerçeği yansıtmaz. 4) Görüş Bildirmekten Kaçınma: Denetçi yeterli ve uygun denetim kanıtı elde edememiştir ve olası etkiler hem ÖNEMLİ hem YAYGINDIR (veya işletmenin sürekliliğine ilişkin çoklu belirsizlik vardır). BIST Kotasyon Yönergesi uyarınca finansal tablolarına Olumsuz Görüş verilen veya Görüş Bildirmekten Kaçınılan şirketler Yakın İzleme Pazarı'na (Gözaltı Pazarı) alınabilir veya kottan çıkarılabilir."
         ],
         "concrete_examples": [
           "Piyasa Olayı: Borsa İstanbul'da işlem gören bir savunma sanayii şirketi yurt dışından 500 Milyon Dolarlık dev bir sipariş aldığında, bu sözleşmeyi imzalar imzalamaz derhal KAP'a bildirmek zorundadır. Şirket CEO'su bunu önce basına veya yakınlarına fısıldayamaz."
@@ -232,7 +259,11 @@
           "Pay Sahibinin Hakları: İkiye ayrılır: 1) Malvarlığı Hakları (Kâr payı/temettü, tasfiye bakiyesi, yeni pay alma/rüçhan hakkı), 2) İdari Haklar (Genel kurula katılma, oy kullanma, bilgi alma ve inceleme, iptal davası açma, özel denetçi atanmasını isteme).",
           "Azınlık Hakları Eşiği: Halka açık anonim ortaklıklarda sermayenin en az %5'ine, halka kapalı anonim ortaklıklarda ise en az %10'una sahip olan pay sahipleri 'Azınlık' kabul edilir. Azınlık hakları: Genel kurulu toplantıya çağırma, gündeme madde ekletme, finansal tabloların müzakeresini 1 ay erteletme ve mahkemeden özel denetçi atanmasını talep etme haklarıdır.",
           "Önemli Nitelikteki İşlemler: Şirketin başka bir şirketle birleşmesi, bölünmesi, tür değiştirmesi, malvarlığının önemli bir kısmını devretmesi veya borsa kotundan çıkması gibi şirketin temel yapısını değiştiren işlemlerdir.",
-          "Ayrılma Hakkı Mekanizması: Önemli nitelikteki işlemlere genel kurulda ret oyu veren ve muhalefet şerhini tutanağa işleten pay sahipleri, hisselerini şirkete satarak ortaklıktan ayrılma hakkına sahiptir. Şirket bu payları adil piyasa değerinden nakden satın almak zorundadır."
+          "Ayrılma Hakkı Mekanizması: Önemli nitelikteki işlemlere genel kurulda ret oyu veren ve muhalefet şerhini tutanağa işleten pay sahipleri, hisselerini şirkete satarak ortaklıktan ayrılma hakkına sahiptir. Şirket bu payları adil piyasa değerinden nakden satın almak zorundadır.",
+          "Pay Alım Teklifi (Zorunlu Çağrı) Yükümlülüğü ve Tetikleyicileri (II-26.1): Halka açık ortaklıkların sermayesinde veya oy haklarında doğrudan veya dolaylı olarak %50'den fazlasına ya da oy oranına bakılmaksızın yönetim kurulu üye sayısının salt çoğunluğunu seçme hakkı veren imtiyazlı paylara sahip olunması 'Yönetim Kontrolünün Kazanılması' sayılır ve zorunlu pay alım teklifi doğurur. Yönetim kontrolünün kazanıldığı tarihten itibaren en geç 6 İŞ GÜNÜ İÇİNDE SPK'ya pay alım teklifinde bulunmak üzere başvurulması zorunludur. Kurul onayından sonra en geç 45 İŞ GÜNÜ içinde fiili pay alım teklifine başlanır. Fiili teklif süresi en az 10 iş günü, en fazla 20 iş günüdür.",
+          "Pay Alım Teklifi Fiyatı ve Muafiyet Halleri (II-26.1 m. 15 & m. 18): Asgari teklif fiyatı; çağrıyı doğuran işlem dahil teklif verenin son 6 ay içinde ödediği en yüksek fiyat ile işlemden önceki son 6 aylık dönemde borsada oluşan günlük ağırlıklı ortalama borsa fiyatlarının ortalamasından YÜKSEK OLANIDIR. Zorunlu Pay Alım Teklifi Muafiyetleri: 1) Kredi teminatı olan payların borç ödenmemesi nedeniyle kredi veren bankaya geçmesi, 2) Finansal Yeniden Yapılandırma çerçevesinde kontrolün alacaklılara geçmesi, 3) Miras ve mal rejimi sözleşmeleri sonucu kontrolün geçmesi, 4) Grup içi kontrolü değiştirmeyen devirler.",
+          "Ortaklıktan Çıkarma ve Satma Hakları (II-27.2 Tebliği - %98 Eşiği ve 3 Aylık Hak Düşürücü Süre): Halka açık anonim ortaklıklarda birlikte hareket etmek suretiyle veya tek başına ortaklığın oy haklarının EN AZ %98'İNE ulaşan pay sahibi 'Hâkim Ortak' sıfatını kazanır. Hâkim ortak konumunun kazanıldığının KAP'ta ilan edildiği tarihten itibaren 3 AYLIK HAK DÜŞÜRÜCÜ SÜRE içinde: 1) Azınlıkta kalan diğer pay sahipleri paylarını adil bir bedel karşılığında hâkim ortağa satma hakkına ('Satma Hakkı') sahiptir. 2) Hâkim ortak da 3 aylık süre içinde kalan azınlık ortakları ortaklıktan çıkarma hakkını ('Ortaklıktan Çıkarma Hakkı') kullanabilir. 3) Satma ve çıkarma hakkı kullanım bedelinin tespiti için SPK lisanslı bağımsız bir kuruluşa DEĞERLEME RAPORU hazırlatılması KANUNEN ZORUNLUDUR. 4) Çıkarma hakkı süreci tamamlandığında ortaklık Borsa İstanbul kotundan çıkarılarak halka kapalı statüye geçer.",
+          "Ayrılma Hakkı Kullanım Fiyatı ve Süresi (II-23.3 Tebliği m. 12 & m. 14): Önemli nitelikteki işlemlere genel kurulda ret oyu verip muhalefet şerhini tutanağa işleten ortakların ayrılma hakkı kullanım süresi, genel kurul tarihinden itibaren en çok 6 iş günü içinde başlar ve kullanım süresi EN AZ 10 İŞ GÜNÜ, EN FAZLA 20 İŞ GÜNÜDÜR. Payları borsada işlem gören ortaklıklarda ayrılma hakkı kullanım fiyatı; işlemin ilk defa kamuya açıklandığı tarihten önceki SON 1 AYLIK veya 6 AYLIK dönemde borsada oluşan düzeltilmiş ağırlıklı ortalama fiyatların (AOF) aritmetik ortalamasından düşük olamaz ve SPK düzenlemeleri uyarınca hazırlanan değerleme raporuyla kıyaslanarak adil bedel üzerinden nakden ve peşin ödenir."
         ],
         "concrete_examples": [
           "Genel Kurul Senaryosu: Halka açık bir holding, tüm fabrikalarını satarak enerji sektörüne girme kararı alır. Bu işleme karşı olan %6 hisseye sahip yatırımcı grubu genel kurulda ret oyu verip şerh düşer. Şirket bu yatırımcıların hisselerini Kanunda belirlenen adil bedelden nakit ödeyerek geri almakla yükümlüdür."
@@ -241,11 +272,13 @@
           "Azınlık hakkı nisabı halka açık şirketlerde %5, halka kapalı şirketlerde %10'dur.",
           "Azınlık, bilanço görüşmelerini 1 ay süreyle erteletme hakkına sahiptir.",
           "Ayrılma hakkını kullanmak için genel kurulda ret oyu verip muhalefet şerhini tutanağa işletmek şarttır.",
-          "Kâr payı ve tasfiye payı malvarlığı hakkıdır; oy ve bilgi alma hakkı idari haktır."
+          "Kâr payı ve tasfiye payı malvarlığı hakkıdır; oy ve bilgi alma hakkı idari haktır.",
+          "Ortaklıktan çıkarma ve satma hakkında 'Hâkim Ortak' eşiği oy haklarının en az %98'idir; KAP ilanından itibaren 3 aylık hak düşürücü süre içinde kullanılır ve değerleme raporu zorunludur."
         ],
         "exam_traps": [
           "Tuzak: Halka açık şirketlerde azınlık hakkı %10 değil, %5'tir!",
-          "Tuzak: Ayrılma hakkından yararlanabilmek için sadece ret oyu vermek yetmez; muhalefet şerhinin tutanağa işletilmesi zorunludur."
+          "Tuzak: Ayrılma hakkından yararlanabilmek için sadece ret oyu vermek yetmez; muhalefet şerhinin tutanağa işletilmesi zorunludur.",
+          "Ayrılma hakkı kullanım süresini 3 iş günü veya ortaklıktan çıkarma eşiğini eski oran olan %95 zannetmeyin; güncel eşik %98 ve süre 3 aydır!"
         ],
         "tables": [
           {
@@ -470,7 +503,10 @@
           "Adi ve İmtiyazlı Paylar: Kural olarak her pay sahibine eşit hak sağlar (Adi Pay). Ancak esas sözleşmeyle kâr payında, tasfiye bakiyesinde veya yönetim kuruluna aday göstermede imtiyaz tanınabilir (İmtiyazlı Pay). Oyda imtiyaz tanınması halinde, bir paya en fazla 15 OY HAKKI tanınabilir. Şirket haklı bir sebep olmaksızın peş peşe 3 yıl kâr dağıtmazsa veya genel kurul yapılamazsa oyda imtiyaz hakkı Kurul kararıyla kalkar.",
           "Bedelli ve Bedelsiz Sermaye Artırımı: Bedelli sermaye artırımında ortaklar yeni pay alma (rüçhan) haklarını kullanarak şirkete nakit koyarlar. Bedelsiz sermaye artırımında ise şirketin iç kaynakları (geçmiş yıl kârları, yeniden değerleme fonları) sermayeye eklenir; ortakların cebinden para çıkmaz, sadece sahip oldukları hisse adedi artar.",
           "2026 Halka Arz Yüklenim Zorunluluğu Eşikleri: Halka arzlarda satılamayan payların aracı kurumca satın alınması (bakiye yüklenim) kuralları güncel parasal eşiklere bağlanmıştır: Halka arz piyasa değeri 750 Milyon TL'nin altındaysa satılamayan payların TAMAMI için bakiye yüklenim zorunludur. 750 Milyon TL ile 1.5 Milyar TL arasındaysa 750 Milyon TL'si ve aşan kısmın %50'si için bakiye yüklenim zorunludur. 1.5 Milyar TL'nin üzerindeki halka arzlarda ise yüklenim zorunluluğu yoktur.",
-          "Satışa Hazır Bekletilen Paylar (Ek Satış / Greenshoe): Halka arz edilen payların piyasa değeri 950 Milyon TL'nin altında olan şirketlerde, halka arz edilen nominal değerin %25'ine tekabül eden paylar 1 yıl süreyle satışa hazır bekletilir. Bu paylar halka arz fiyatının en az %25 fazlasına çıkmadıkça borsada satılamaz."
+          "Satışa Hazır Bekletilen Paylar (Ek Satış / Greenshoe): Halka arz edilen payların piyasa değeri 950 Milyon TL'nin altında olan şirketlerde, halka arz edilen nominal değerin %25'ine tekabül eden paylar 1 yıl süreyle satışa hazır bekletilir. Bu paylar halka arz fiyatının en az %25 fazlasına çıkmadıkça borsada satılamaz.",
+          "Tahsisli Sermaye Artırımı Sonrası Borsada Satış Kısıtlaması (Pay Tebliği VII-128.1 m. 13 & m. 33): Halka açık ortaklıkların mevcut ortakların rüçhan haklarını kısıtlayarak belirli kişi veya kurumlara tahsisli olarak gerçekleştirdikleri sermaye artırımlarında, tahsisli olarak ihraç edilen payları edinen yatırımcılar bu payları edindikleri (MKK hesaplarına intikal ettiği) tarihten itibaren 1 YIL SÜREYLE BORSADA SATAMAZLAR. Bu paylar MKK nezdinde 'borsada işlem görmeyen nitelikte pay' olarak kilitlenir. 1 yıllık süre dolmadan borsa dışı devir yapılsa dahi devralan kişi de kalan süre boyunca satış yasağına tabidir.",
+          "Halka Arz Olmayan Anonim Şirketlerde Sermaye Artırımı ve Pay Devri Sınırlamaları (TTK m. 490 - 493): Halka kapalı anonim şirketlerde kural olarak pay devri serbesttir (TTK m. 490). Ancak nakdi sermaye artırımı sonrası taahhüt edilen pay bedellerinin en az %25'i tescilden önce, kalan %75'i ise tescili izleyen 24 ay içinde ödenir. TTK m. 491 uyarınca, bedeli tamamen ödenmemiş nama yazılı paylar ŞİRKETİN ONAYI OLMADIKÇA DEVREDİLEMEZ. Şirket sadece devralanın ödeme gücü şüpheliyse onay vermekten kaçınabilir. Ayrıca esas sözleşmeye bağlam hükümleri konularak pay devri haklı sebeplerle veya payların gerçek değeri üzerinden şirket/ortaklarca devralınması suretiyle şirket onayına tabi kılınabilir (TTK m. 492-493).",
+          "Eşzamanlı Bedelli ve Bedelsiz Sermaye Artırımı Referans Fiyat ve Rüçhan Kuponu Hesabı (Sınav Bankosu): Bir şirket hem bedelli (nakit karşılığı) hem de bedelsiz (iç kaynaklardan/kâr payından) sermaye artırımını aynı anda gerçekleştirdiğinde bölünme günü sabahı oluşan yeni teorik referans fiyat formülü: P_yeni = [P_eski + (B × R_fiyat)] / [1 + B + BD]. Burada P_eski: Bölünme öncesi son kapanış ağırlıklı ortalama fiyatı, B: Bedelli artırım oranı (ondalık), BD: Bedelsiz artırım oranı (ondalık), R_fiyat: 1 adet yeni pay için ödenecek rüçhan hakkı kullanım fiyatıdır (aksi belirtilmedikçe nominal 1 TL). 1 adet eski paya bağlı Rüçhan Hakkı Kupon Pazarı Teorik Değeri ise: R_kupon = P_eski - P_yeni formülüyle hesaplanır. Somut Sayısal Örnek: Kapanış fiyatı 40 TL olan bir hisse %100 bedelli (R_fiyat = 2 TL) ve %100 bedelsiz artırım yaparsa; P_yeni = [40 + (1 × 2)] / [1 + 1 + 1] = 42 / 3 = 14 TL olur. Rüçhan kupon değeri ise 40 - 14 = 26 TL'dir. Kullanılmayan rüçhan haklarına tekabül eden paylar asla diğer ortaklara bedelsiz dağıtılmaz; Borsa Birincil Piyasa'da 2 iş günü süreyle nominal değerin altında olmamak kaydıyla satışa sunulur."
         ],
         "concrete_examples": [
           "Halka Arz Senaryosu: Piyasa değeri 600 Milyon TL olan bir perakende şirketi halka arz edilirken satışa sunulan hisselerin %20'si talep görmezse, konsorsiyum lideri aracı kurum 'Bakiye Yüklenimi' taahhüdü gereği satılamayan tüm hisseleri kendi portföyüne nakit bedelini ödeyerek almak zorundadır."
@@ -479,39 +515,56 @@
           "Oyda imtiyaz tavanı en çok 15 oy hakkıdır.",
           "2026 Halka arz yüklenim zorunluluğu eşiği: 750 Milyon TL ve 1.5 Milyar TL.",
           "Satışa hazır bekletilen paylar eşiği 950 Milyon TL'dir; nominalin %25'i 1 yıl bekletilir.",
-          "Bedelsiz sermaye artırımında şirketin özkaynak toplamı değişmez, sadece sermaye kalemi artar."
+          "Bedelsiz sermaye artırımında şirketin özkaynak toplamı değişmez, sadece sermaye kalemi artar.",
+          "Bedelli + Bedelsiz birlikte artırımda P_yeni = [P_eski + (B × R_fiyat)] / (1 + B + BD) ve Rüçhan Kupon Değeri = P_eski - P_yeni'dir."
         ],
         "exam_traps": [
           "Tuzak: Bir paya en çok tanınabilecek oy hakkı 20 veya 10 değil, tam 15 OY HAKKIDIR!",
-          "Tuzak: 1.5 Milyar TL üzerindeki halka arzlarda yüklenim zorunluluğu bulunmamaktadır."
+          "Tuzak: 1.5 Milyar TL üzerindeki halka arzlarda yüklenim zorunluluğu bulunmamaktadır.",
+          "Bedelsiz sermaye artırım oranını (BD) paydaya eklemeyi unutmayın! Kullanılmayan rüçhan payları bedelsiz dağıtılmaz, Birincil Piyasa'da 2 iş günü satılır."
         ],
         "tables": [
           {
             "headers": [
-              "Halka Arz Piyasa Değeri",
-              "Yüklenim Zorunluluğu Şartı",
-              "Sınav Notu"
+              "Şirket ve Artırım Türü",
+              "Elden Çıkarma / Satış Kısıtlaması Süresi",
+              "Yasal Dayanak ve Temel Hüküm"
             ],
             "rows": [
               [
-                "750 Milyon TL Altı",
-                "Satılamayan Payların TAMAMI İçin Zorunlu",
-                "Bakiye yüklenim şarttır"
+                "Halka Arzda %10+ ve Hakim Ortaklar",
+                "1 Yıl Borsada Satış Yasağı & Fiyat Garantisi",
+                "Pay Tebliği m. 8 (Halka arz fiyatı altında satılamaz)"
               ],
               [
-                "750 Milyon - 1.5 Milyar TL",
-                "750M Tamamı + Aşan Kısmın %50'si",
-                "Kademeli bakiye yüklenim"
+                "Tahsisli Sermaye Artırımı Payları",
+                "1 Yıl Borsada Satılamaz (MKK Şerhi)",
+                "Pay Tebliği m. 13/33 (Borsa dışı devirde de kısıt sürer)"
               ],
               [
-                "1.5 Milyar TL Üzeri",
-                "Yüklenim Zorunluluğu Yoktur",
-                "En iyi gayret aracılığı yapılabilir"
+                "Aracı Kurum Bakiye Yüklenim Payları",
+                "6 Ay Halka Arz Fiyatı Altında Satılamaz",
+                "Pay Tebliği m. 17 (Konsorsiyum portföyündeki paylar)"
               ],
               [
-                "Piyasa Değeri < 950 Milyon TL",
-                "Nominalin %25'i Satışa Hazır Bekletilir",
-                "Halka arz fiyatının %25 fazlasına satılabilir"
+                "Halka Arz Öncesi Son 1 Yılda Edinilen Paylar",
+                "1 Yıl Halka Arz Fiyatı Altında Satılamaz",
+                "SPK İlke Kararları (İskontolu edinim kısıtlaması)"
+              ],
+              [
+                "Halka Kapalı A.Ş. Bedeli Ödenmemiş Paylar",
+                "Şirket Onayı Olmaksızın Devredilemez",
+                "TTK m. 491 (Kalan bedel 24 ay içinde ödenir)"
+              ],
+              [
+                "Halka Kapalı A.Ş. Esas Sözleşmesel Bağlam",
+                "Şirket Onayına Tabi (Haklı Sebep / Kaçış Klozu)",
+                "TTK m. 492-493 (Nama yazılı pay devir kısıtlaması)"
+              ],
+              [
+                "Halka Arzda Bireysel Dağıtım Payları",
+                "90 Gün Borsa Dışı Satış & Virman Yasağı",
+                "i-SPK.128.23 İlke Kararı (19/09/2024)"
               ]
             ]
           }
@@ -524,8 +577,10 @@
           "Özet Mantık: Borçlanma araçları, ihraççının borçlu, yatırımcının alacaklı olduğu; belirli bir vade sonunda anaparanın ve dönemsel faizin geri ödenmesini taahhüt eden menkul kıymetlerdir. Şirkete ortaklık hakkı veya oy hakkı vermez.",
           "Tahvil vs Finansman Bonosu (Vade Kriteri): Tahvil vadesi en az 1 yıl (365 gün) olan uzun vadeli borçlanma aracıdır. Finansman Bonosu ise vadesi 30 günden az, 364 günden fazla olamayan kısa vadeli borçlanma senedidir.",
           "Temiz Fiyat ve Kirli Fiyat: Borsa Borçlanma Araçları Piyasası'nda tahviller 'Temiz Fiyat' (işlemiş faiz hariç) üzerinden kote edilir ve işlem görür. Ancak takas günü alıcının satıcıya ödediği gerçek nakit bedel 'Kirli Fiyat'tır (Kirli Fiyat = Temiz Fiyat + İşlemiş Faiz).",
-          "Borçlanma Araçları Genel İhraç Tavanı: Bir şirketin ihraç edebileceği azami borçlanma aracı tutarı son finansal tablolardaki ÖZKAYNAK TUTARINA göre belirlenir (sermayeye göre değil!). Halka açık ortaklıklarda özkaynakların 5 katı, halka açık olmayan ortaklıklarda ise özkaynakların 3 katı ihraç tavanıdır. Derecelendirme notu yüksek bankalarda bu limitler 2 katına (10 kat ve 6 kat) çıkar.",
-          "BASK (Borçlanma Aracı Sahipleri Kurulu) Karar Nisabı: İhraççı şirket tahvilin faizini, vadesini veya itfa şartlarını değiştirmek isterse BASK toplantısı yapmak zorundadır. Kararlar tedavüldeki nominal tutarın en az 2/3 (üçte iki) ÇOĞUNLUĞUYLA alınır. Yönetim kurulu bu kararı 3 iş günü içinde onaylar."
+          "Borçlanma Araçları Genel İhraç Tavanı ve Konsolide Finansal Tablo Kuralı (Tebliğ II-31.1 m. 9):\n1) İhraç Tavanı Oranları:\n   - Halka açık ortaklıklar ve bankalar için: İhraç tavanı Özkaynak tutarının 5 KATIDIR.\n   - Halka açık olmayan ortaklıklar için: İhraç tavanı Özkaynak tutarının 3 KATIDIR.\n   - Derecelendirme notu yatırım yapılabilir seviyede olan ortaklıklarda Kurulca bu oranlar artırılabilir.\n2) Konsolidasyon ve Finansal Tablo Esası:\n   - İhraç tavanı hesabında, bağımsız denetimden geçmiş en son yıllık veya ara dönem finansal tablolar esas alınır.\n   - İhraççı ortaklığın (veya bankanın) konsolide finansal tablo hazırlama yükümlülüğü bulunması halinde, solo özkaynak değil, KONSOLİDE FİNANSAL TABLOLARDA YER ALAN \"ANA ORTAKLIĞA AİT ÖZKAYNAK\" tutarı dikkate alınır (azınlık/kontrol gücü olmayan paylar hariç tutulur).\n3) Bankaların Özkaynak Hesaplamasına Dahil Edilecek Borçlanma Araçları (AT1 ve Tier 2):\n   - Bankaların ihraç ettiği borçlanma araçlarının özkaynak (ilave ana sermaye veya katkı sermaye) sayılabilmesi için yasal şartları taşıdığının BAĞIMSIZ DENETİM KURULUŞU GÖRÜŞÜ ile teyit edilmesi zorunludur.\n   - Tetikleyici Olay (Trigger Event): Bankanın konsolide veya solo Çekirdek Sermaye Yeterliliği Oranının %5,125 seviyesinin altına düşmesi durumunda, bu borçlanma araçları değer azaltımına (write-down) veya paya dönüştürmeye tabi tutulur.",
+          "BASK (Borçlanma Aracı Sahipleri Kurulu) Karar Nisabı: İhraççı şirket tahvilin faizini, vadesini veya itfa şartlarını değiştirmek isterse BASK toplantısı yapmak zorundadır. Kararlar tedavüldeki nominal tutarın en az 2/3 (üçte iki) ÇOĞUNLUĞUYLA alınır. Yönetim kurulu bu kararı 3 iş günü içinde onaylar.",
+          "Borçlanma Araçlarında 'En İyi Gayret Aracılığı' (Best Efforts Underwriting): Borçlanma araçlarının (tahvil, finansman bonosu) halka arzında aracı kurumun satılamayan araçları kendi parasıyla satın alma taahhüdü altına girmeksizin yalnızca satışı için azami gayret gösterdiği, satış süresi sonunda satılamayan borçlanma araçlarının ise ihraççıya iade edildiği yöntemdir. Dar ve Kısmi Yetkili Aracı Kurumlar yalnızca en iyi gayret halka arzı yapabilir; satılamayanı satın alma taahhüdü olan 'Bakiye Yüklenim' ise münhasıran Geniş Yetkili Aracı Kurumlarca yapılabilir.",
+          "Tahvil Kirli Fiyat (Dirty Price) ve Birikmiş Faiz (Accrued Interest) Sayısal Hesaplama Kuralları: Borsa İstanbul Borçlanma Araçları Piyasası (BAP) ekranlarında tahviller daima işlemiş faizi içermeyen 'Temiz Fiyat' (Clean Price) üzerinden kote edilir ve emirler temiz fiyatla girilir. Ancak takas gününde alıcının satıcıya fiilen ödeyeceği nakit tutar, temiz fiyata son kupon ödeme tarihinden takas (valör) gününe kadar geçen günlerin faizinin eklenmesiyle bulunan 'Kirli Fiyat'tır (Dirty Price): Birikmiş Faiz = Dönemsel Kupon Tutarı × [Kupon Başlangıcından Geçen Gün (t) / Kupon Dönemi Toplam Gün Sayısı (T)]. Kirli Fiyat = Temiz Fiyat + Birikmiş Faiz. Somut Sayısal Örnek: Nominal değeri 1.000 TL olan, 180 günde bir %10 dönemsel kupon ödeyen tahvilin temiz fiyatı 1.040 TL'dir. Kuponun üzerinden 90 gün geçmişse; Dönemsel Kupon = 1.000 × %10 = 100 TL, Birikmiş Faiz = 100 × (90 / 180) = 50 TL, Takasta ödenecek Kirli Fiyat = 1.040 + 50 = 1.090 TL'dir. Kupon ödemesinin yapıldığı günün hemen ertesinde geçen gün (t = 0) olduğundan birikmiş faiz sıfırlanır ve Temiz Fiyat = Kirli Fiyat olur."
         ],
         "concrete_examples": [
           "Fiyatlama Örneği: Nominal değeri 1.000 TL olan %20 faizli bir tahvilin kupon ödeme tarihinden 90 gün sonra temiz fiyatı 1.020 TL ise, 90 günlük işlemiş faiz (50 TL) eklenerek alıcının Takasbank'a ödeyeceği kirli fiyat 1.070 TL olur."
@@ -534,11 +589,13 @@
           "Finansman bonosu vadesi 30 - 364 gün arasındadır; tahvil en az 1 yıldır (365 gün).",
           "Borsada işlem temiz fiyattan geçer, takasta kirli fiyattan tahsil edilir.",
           "İhraç tavanı halka açıkta özkaynakların 5 katı, kapalıda 3 katıdır.",
-          "BASK karar nisabı tedavüldeki nominal tutarın en az 2/3 (üçte iki) çoğunluğudur."
+          "BASK karar nisabı tedavüldeki nominal tutarın en az 2/3 (üçte iki) çoğunluğudur.",
+          "Tahvilde Takas Ödemesi (Kirli Fiyat) = Borsa Kotasyonu (Temiz Fiyat) + Birikmiş Faiz [Dönemsel Kupon × (t / T)]."
         ],
         "exam_traps": [
           "Tuzak: İhraç tavanı şirketin ödenmiş sermayesine göre değil, ÖZKAYNAK TOPLAMINA göre hesaplanır!",
-          "Tuzak: BASK karar nisabı eski 3/4 değil, güncel tebliğ uyarınca en az 2/3'tür (üçte iki)!"
+          "Tuzak: BASK karar nisabı eski 3/4 değil, güncel tebliğ uyarınca en az 2/3'tür (üçte iki)!",
+          "Soruda '%10 dönemsel kupon faizi' verildiğinde bu oranı tekrar ikiye veya dörde bölmeyin; doğrudan nominal değerle çarpıp geçen gün oranıyla (t/T) ağırlıklandırın!"
         ],
         "tables": [
           {
@@ -758,7 +815,9 @@
           "Fon Malvarlığının Dokunulmazlığı: Fon malvarlığı; kurucunun, portföy saklayıcısının veya yatırımcının borçları nedeniyle kamu borçları dahil haczedilemez, rehin edilemez ve iflas masasına dahil edilemez.",
           "TEFAS (Türkiye Elektronik Fon Dağıtım Platformu): Takasbank tarafından işletilen merkezi platformdur. Yatırımcılar herhangi bir banka veya aracı kurumdaki hesabından TEFAS'a açık olan tüm fonları tek tıkla alıp satabilirler.",
           "Borsa Yatırım Fonları (BYF / ETF): Katılma payları borsada hisse senedi gibi seans saatleri içinde anlık fiyatlarla işlem gören fonlardır. 'Yetkilendirilmiş Katılımcı' adı verilen aracı kurumlar aracılığıyla pay oluşturma ve geri alma işlemleri yürütülür.",
-          "Serbest Fonlar ve Girişim Sermayesi (GSYF): Serbest Fonlar yalnızca SPK mevzuatına göre Nitelikli Yatırımcılara satılabilir; SPK'nın genel portföy sınırlamalarına tabi değildir. Girişim Sermayesi Yatırım Fonları (GSYF) ise halka açık olmayan büyüme potansiyeli yüksek şirketlere sermaye koyar."
+          "Serbest Fonlar ve Girişim Sermayesi (GSYF): Serbest Fonlar yalnızca SPK mevzuatına göre Nitelikli Yatırımcılara satılabilir; SPK'nın genel portföy sınırlamalarına tabi değildir. Girişim Sermayesi Yatırım Fonları (GSYF) ise halka açık olmayan büyüme potansiyeli yüksek şirketlere sermaye koyar.",
+          "İki Yatırım Fonu Birleştiğinde Değişim Oranı ve Yeni Pay Adedi Hesabı (III-52.1 m. 27): Aynı veya Kurul izniyle farklı kuruculara ait fonlar birleşebilir. Birleşme tescil tarihindeki ilan edilen fon birim pay fiyatları esas alınır. Değişim Oranı (Birleşme Oranı) = Devrolunan (Birleşen) Fon Birim Pay Fiyatı / Devralan Fon Birim Pay Fiyatı formülüyle hesaplanır. Yatırımcının alacağı yeni katılma payı adedi = Eski Pay Adedi x Değişim Oranı (veya Toplam Portföy Değeri / Devralan Fon Birim Fiyatı). Birleşme anında yatırımcının toplam portföy parasal değeri kesinlikle değişmez. Tam paya tekabül etmeyen kesirli pay tutarları yatırımcılara nakden ödenir. Birleşmeye katılmak istemeyen pay sahipleri, birleşme ilanından itibaren (en az 30 gün) komisyonsuz olarak paylarını fona iade edebilir.",
+          "Garantili Yatırım Fonu vs. Koruma Amaçlı Yatırım Fonu (III-52.1 m. 25): Garantili Fonlarda yatırımcının anaparasının tamamının, bir kısmının veya getirinin vadede geri ödeneceği üçüncü bir tüzel kişi olan Garanti Veren Kuruluş (yatırım yapılabilir notuna sahip banka/finans kuruluşu) tarafından HUKUKEN GARANTİ edilir. Garanti sözleşmesi kurucu ile garantör arasında akdedilir; garanti maliyeti asla fon malvarlığından karşılanamaz. Koruma Amaçlı Fonlarda ise anaparanın veya getirinin korunması finansal teknikler ve türev araçlarla EN İYİ GAYRET (BEST EFFORTS) esasına dayalı olarak hedeflenir; üçüncü taraf garantisi KESİNLİKLE YOKTUR. Koruma amaçlı fonların unvanında ve tanıtımında 'garanti' kelimesi veya kesin getiri vaadi kullanılamaz."
         ],
         "concrete_examples": [
           "Alım-Satım Farkı: Standart bir hisse senedi fonu TEFAS'tan saat 13:30'a kadar sipariş verilip ertesi günün kapanış fiyatıyla (T+1) alınırken; Borsa Yatırım Fonu (BYF) seans açıkken hisse senedi gibi saniyelik fiyattan doğrudan alınabilir."
@@ -816,7 +875,9 @@
           "3) Opsiyon: Alıcıya belirli fiyattan alma (Call) veya satma (Put) HAKKI veren; satıcıya ise YÜKÜMLÜLÜK yükleyen sözleşme. Alıcı prim öder, satıcı prim tahsil eder.",
           "4) Swap: İki tarafın faiz veya döviz nakit akışlarını takas etmesi sözleşmesi.",
           "VİOP'ta Uzlaşma Biçimleri: BIST 30 Endeks ve Altın vadeli işlem sözleşmeleri NAKDİ UZLAŞMA ile sonlanır (fiyat farkı nakit ödenir). Pay vadeli işlem sözleşmeleri ise FİZİKİ TESLİMAT ile sonlanır (hisse senedi fiilen teslim edilir).",
-          "Varantlar ve Moneyness: Varant, menkul kıymetleştirilmiş opsiyondur. İhraççı tarafından ihraç edilir. Kullanım Fiyatı (Strike) ve Dayanak Varlık Fiyatı (Spot) ilişkisine göre 3 durum vardır: Kârda (In-the-money), Başa Baş (At-the-money), Zararda (Out-of-the-money). Bir varantın fiyatı = Asli Değer + Zaman Değeri formülüyle hesaplanır."
+          "Varantlar ve Moneyness: Varant, menkul kıymetleştirilmiş opsiyondur. İhraççı tarafından ihraç edilir. Kullanım Fiyatı (Strike) ve Dayanak Varlık Fiyatı (Spot) ilişkisine göre 3 durum vardır: Kârda (In-the-money), Başa Baş (At-the-money), Zararda (Out-of-the-money). Bir varantın fiyatı = Asli Değer + Zaman Değeri formülüyle hesaplanır.",
+          "VİOP Vadeli İşlem Sözleşmelerinde Taşıma Maliyeti Modeli (Cost of Carry) ve Teorik Fiyat: Vadeli işlem teorik fiyatı F = S x [1 + (r - q) x t/365] formülüyle hesaplanır. Burada S spot fiyat, r yıllık risksiz faiz oranı, q hissenin temettü verimi ve t vadeye kalan gün sayısıdır. Faiz oranı arttıkça vadeli işlem fiyatı yükselir; hissenin vadesi içinde ödeyeceği temettü tutarı arttıkça vadeli fiyat düşer.",
+          "VİOP Vade Sonu Uzlaşma Türleri (Pay Vadeli vs. Endeks Vadeli): 1) Pay Vadeli İşlem Sözleşmeleri (Single Stock Futures): Vade sonunda kural olarak kesinlikle FİZİKİ UZLAŞMA uygulanır; satıcı dayanak hisse senetlerini Takasbank Pay Piyasası takas takvimine (T+2) göre teslim eder, alıcı nakit öder. 2) BIST 30 Endeks Vadeli İşlem Sözleşmeleri: Dayanak varlık fiziken teslim edilemeyen bir sepet olduğundan NAKDİ UZLAŞMA uygulanır; uzlaşma fiyatı seansın son 30 dakikasındaki endeks değerleri ve kapanış fiyatının ağırlıklı ortalamasıyla belirlenir."
         ],
         "concrete_examples": [
           "Varant Değerleme: Kullanım fiyatı 100 TL olan bir THYAO Alım Varantında, hisse spot piyasada 120 TL ise; varantın Asli Değeri 20 TL'dir (Kârdadır). Hisse 90 TL'ye düşerse Asli Değer 0 TL olur (Zarardadır); varant sadece zaman değerine sahip olur."
@@ -1073,7 +1134,8 @@
           "- Aktif Toplamı: En az 500.000.000 TL",
           "- Yıllık Net Hasılat: En az 1.000.000.000 TL (1 Milyar TL)",
           "- Özsermaye: En az 50.000.000 TL",
-          "Talebe Bağlı Profesyonellik: Bu şartları taşımayan gerçek veya tüzel kişiler yazılı başvuruda bulunarak profesyonel müşteri muamelesi görmeyi talep edebilirler; ancak kurum inceleme yaparak kabul edip etmemekte serbesttir."
+          "Talebe Bağlı Profesyonellik: Bu şartları taşımayan gerçek veya tüzel kişiler yazılı başvuruda bulunarak profesyonel müşteri muamelesi görmeyi talep edebilirler; ancak kurum inceleme yaparak kabul edip etmemekte serbesttir.",
+          "Kredili Menkul Kıymet İşlemlerinde Özkaynak Oranı ve Tamamlama Hesaplamaları (Seri V-65): Başlangıç Özkaynak Oranı asgari %50'dir. Sürdürme Özkaynak Oranı ise asgari %35'tir. Hisselerin piyasa değerinin düşmesiyle özkaynak oranı %35'in altına düştüğünde aracı kurum 'Özkaynak Tamamlama Bildirimi' (Margin Call) yapar. Özkaynak %35'e değil, BAŞLANGIÇ SEVİYESİ OLAN %50'YE tamamlanır. Gereken Nakit = (Piyasa Değeri x 0,50) - Mevcut Özkaynak. Yatırımcı hisse senedi getirmek isterse, getirilen hisseler özkaynak hesabında %50 katsayı ile kabul edildiğinden NAKİT AÇIĞININ TAM 2 KATI piyasa değerinde hisse senedi getirmelidir. Müşteriye tanınan süre en geç 2 İŞ GÜNÜDÜR (T+2); tamamlanmazsa kurum re'sen satış yapar."
         ],
         "concrete_examples": [
           "Kriter İncelemesi: Aktif toplamı 600 Milyon TL, özsermayesi 80 Milyon TL, ancak cirosu 400 Milyon TL olan bir sanayi şirketi; 3 şarttan 2'sini (Aktif ve Özsermaye) sağladığı için Kurumsal Profesyonel Müşteri statüsü kazanır."
@@ -1479,7 +1541,9 @@
           "Kritik Gün İçi Operasyon Saatleri (Altın Saatler):",
           "- Pay Piyasası Takas Borcu Kapanış Saati: EN GEÇ 16:45'tir. Üyeler nakit ve menkul kıymet borçlarını 16:45'e kadar kapatmak zorundadır.",
           "- Teminat Tamamlama Çağrısı (Margin Call) Kapanış Saati: EN GEÇ 15:00'tir.",
-          "- BAP Ön Temerrüt Süresi (16:46 - 17:00): BAP'ta saat 16:45'e kadar borcunu ödemeyen üye ön temerrüde düşer; 17:00'ye kadar gecikmeli ödeme yaparsa temerrüt faizine ek olarak 0.25 ceza katsayısı uygulanır."
+          "- BAP Ön Temerrüt Süresi (16:46 - 17:00): BAP'ta saat 16:45'e kadar borcunu ödemeyen üye ön temerrüde düşer; 17:00'ye kadar gecikmeli ödeme yaparsa temerrüt faizine ek olarak 0.25 ceza katsayısı uygulanır.",
+          "Açığa Satışta 'Yukarı Adım Kuralı' (Up-Tick Rule): Açığa satış işlemlerinde piyasadaki düşüş yönlü manipülatif baskıyı önlemek için açığa satış emrinin son gerçekleşen işlem fiyatından daha yüksek bir fiyattan verilmesi zorunluluğudur. İstisna (Zero-Plus Tick): Dayanak payın son gerçekleşen işlem fiyatı bir önceki fiyattan yüksekse, son işlem fiyatından da açığa satış yapılabilir. Kural devredeyken son fiyattan daha düşük fiyata asla açığa satış emri girilemez.",
+          "Borsa Temerrüt Sırası (Buy-in) Operasyonu: Pay Piyasası takas döngüsünde (T+2) saat 16:45'e kadar menkul kıymet borcunu kapatamayan aracı kurum adına, ertesi iş günü T+3 günü saat 11:00'de Borsa İstanbul bünyesinde 'Temerrüt Sırası' (Buy-in) açılarak aynı gün valörle (T+0) piyasadan re'sen alım yapılır ve takas açığı kapatılır."
         ],
         "concrete_examples": [
           "Takas Takvimi: Pazartesi günü Borsa İstanbul'da hisse senedi alan bir yatırımcının işlemi T+2 kuralı gereği Çarşamba günü saat 16:45'e kadar Takasbank nezdinde takas edilir. Çarşamba günü resmi tatil ise takas Perşembe gününe sarkar."
@@ -1537,7 +1601,8 @@
           "3) Fiziki Teslimat Teminatı: Vade sonunda mal teslimi gerektiren sözleşmelerde teslimatı garanti etmek için alınan ek marjindir.",
           "BISTECH Çoklu Varlık Portföy Marjin Modeli: BISTECH risk motoru; portföydeki farklı enstrümanların risklerini birbiriyle eşleştirerek net risk hesaplar. Risk faktörleri: Fiyat değişim aralığı, volatilite aralığı ve vade içi/arası spread indirimleridir.",
           "Teminat Değerleme Katsayısı Formülü: Nakit dışı teminatlar (hisse, eurobond, döviz) risklerine göre iskonto edilir (saç tıraşı / haircut). Formül: Teminat Değerleme Katsayısı = 1 - (Piyasa Riski + Likidite Riski + Kredi Riski).",
-          "Asgari Nakit TL Oranları: BAP ve Pay Piyasasında toplam teminatın belirli bir kısmı (en az %10 - %30), VİOP'ta ise asgari %50'si nakit Türk Lirası olmak zorundadır."
+          "Asgari Nakit TL Oranları: BAP ve Pay Piyasasında toplam teminatın belirli bir kısmı (en az %10 - %30), VİOP'ta ise asgari %50'si nakit Türk Lirası olmak zorundadır.",
+          "VİOP Teminat Tamamlama Çağrısı (Margin Call) Sayısal Hesaplama Kuralı ve Operasyonel Saat (T+1 15:00): VİOP'ta açık pozisyonlar gün sonu uzlaşma fiyatlarıyla değerlenir (Mark-to-Market). Zarar nedeniyle yatırımcının mevcut teminat bakiyesi 'Sürdürme Teminatı' (genellikle Başlangıç Teminatının %75'i) seviyesinin ALTINA DÜŞERSE yatırımcıya Teminat Tamamlama Çağrısı (Margin Call) yapılır. ALTIN SINAV KURALI: Teminat sürdürme teminatı seviyesine DEĞİL, doğrudan 'BAŞLANGIÇ TEMİNATI' seviyesine tamamlanmak zorundadır! Margin Call Tutarı = Başlangıç Teminatı - Mevcut Teminat Bakiyesi. Somut Sayısal Örnek: Başlangıç teminatı 100.000 TL, sürdürme teminatı 75.000 TL olan bir pozisyonda gün sonu teminatı 65.000 TL'ye düşerse; 65.000 < 75.000 olduğu için çağrı tetiklenir. Yatırılması gereken tutar 75.000 - 65.000 = 10.000 TL DEĞİL; 100.000 - 65.000 = 35.000 TL'dir! Tamamlama Süresi: Teminat tamamlama çağrıları T+1 günü en geç saat 15:00'e kadar (yarım iş günlerinde saat 11:00'e kadar) karşılanmalıdır. Bu saate kadar tamamlanmayan pozisyonlar temerrüde düşer ve aracı kurum/Takasbank tarafından piyasada re'sen tasfiye edilir (likidasyon)."
         ],
         "concrete_examples": [
           "İskonto Örneği: Yatırımcı teminat olarak 1.000.000 TL değerinde BIST 30 hissesi vermek istediğinde, hissenin piyasa ve likidite riski toplamı %20 ise değerleme katsayısı 0.80 olur. Takasbank bu hisseyi 800.000 TL teminat olarak kabul eder."
@@ -1546,11 +1611,13 @@
           "Teminat türleri: Başlangıç, Değişim (Mark-to-Market) ve Fiziki Teslimat teminatıdır.",
           "BISTECH portföy marjin algoritması riskleri ve spread indirimlerini netleştirir.",
           "Teminat formülü: 1 - (Piyasa Riski + Likidite Riski + Kredi Riski).",
-          "VİOP takas üyeliğinde asgari %50 nakit Türk Lirası teminat zorunludur."
+          "VİOP takas üyeliğinde asgari %50 nakit Türk Lirası teminat zorunludur.",
+          "VİOP'ta teminat Sürdürme Teminatı altına indiğinde çağrı tutarı sürdürmeye değil, BAŞLANGIÇ TEMİNATINA kadar olan farktır ve T+1 saat 15:00'e kadar kapatılır."
         ],
         "exam_traps": [
           "Tuzak: Değişim teminatı maktu bir tutar değildir; piyasadaki günlük fiyat hareketlerine göre her gün yeniden hesaplanan Mark-to-Market farkıdır!",
-          "Tuzak: Nakit dışı teminatlar nominal veya piyasa değerinden tam olarak kabul edilmez; iskonto (haircut) uygulanır."
+          "Tuzak: Nakit dışı teminatlar nominal veya piyasa değerinden tam olarak kabul edilmez; iskonto (haircut) uygulanır.",
+          "Sınavdaki sayısal VİOP sorularında mevcut teminatı Sürdürme Teminatından çıkararak bulunan şık A veya B seçeneğine konur; sakın düşmeyin, daima Başlangıç Teminatından çıkarın!"
         ],
         "tables": [
           {
@@ -1598,7 +1665,8 @@
           "5. Adım: Takasbank'ın MKT için ayırdığı Kalan Özkaynak Tutarı kullanılır.",
           "6. Adım: Garanti Fonu Ek Katkı Payları (üyelerden mevcut katkılarının 1 katına kadar ek nakit talep edilir).",
           "7. Adım: Karşılıklı Tahsis / Kayıp Paylaşımı (Kalan bakiye zarar üyelere dağıtılır).",
-          "Garanti Fonu Faiz Geliri: Garanti fonuna yatırılan nakitlerin nemalandırılması sonucu oluşan getiri Takasbank'a değil, katkı payını yatıran takas üyelerine aittir."
+          "Garanti Fonu Faiz Geliri: Garanti fonuna yatırılan nakitlerin nemalandırılması sonucu oluşan getiri Takasbank'a değil, katkı payını yatıran takas üyelerine aittir.",
+          "Takasbank MKT Temerrüt Şelalesi (Waterfall) Somut Sayısal Uygulama Vaka Analizi: Bir aracı kurumun 50 Milyon TL takas borcunu ödeyemeyerek temerrüde düştüğünü, kurumun Takasbank'ta 20 Milyon TL işlem teminatı ve 5 Milyon TL Garanti Fonu katkı payı bulunduğunu varsayalım. Kanuni şelale sırasına göre: 1) İlk olarak temerrüt eden kurumun 20 Milyon TL işlem teminatı nakde çevrilir (Kalan açık: 30 Milyon TL). 2) İkinci olarak temerrüt eden kurumun 5 Milyon TL Garanti Fonu katkı payı kullanılır (Kalan açık: 25 Milyon TL). 3) Üçüncü sırada, temerrüde düşmeyen diğer masum aracı kurumların Garanti Fonu paylarına DOKUNULMADAN ÖNCE, Takasbank'ın ilgili piyasa için önceden tahsis ettiği 'MKT Özkaynak Katkı Payı' (First-Loss Capital) devreye girer! 4) Ancak bu tahsisli Takasbank özkaynağı da yetmezse 4. aşamada diğer üyelerin Garanti Fonu katkı paylarına müteselsilen başvurulur."
         ],
         "concrete_examples": [
           "Şelale İşleyişi: X Kurumu 50 Milyon TL borçla batarsa; Takasbank önce X'in 30 Milyonluk teminatını ve 2 Milyonluk garanti fonu payını satar (Kalan açık 18 Milyon). Ardından Takasbank taahhüt ettiği kendi özkaynağını devreye sokar; yetmezse diğer üyelerin fon paylarına geçer."
@@ -1607,11 +1675,13 @@
           "Temerrütte ilk kullanılan kaynak temerrüde düşen üyenin kendi işlem teminatlarıdır.",
           "Takasbank'ın taahhüt ettiği özkaynak, diğer üyelerin garanti fonundan ÖNCE kullanılır (3. Adım).",
           "Sabit Garanti Fonu katkıları: Pay 200K, BAP 700K, VİOP 3.575M TL.",
-          "Garanti Fonu nema gelirleri üyelerin mülkiyetindedir."
+          "Garanti Fonu nema gelirleri üyelerin mülkiyetindedir.",
+          "MKT Temerrüt Şelalesinde 3. sırada (diğer üyelerin garanti fonundan ÖNCE) Takasbank'ın tahsis ettiği özkaynak (First-loss capital) kullanılır."
         ],
         "exam_traps": [
           "Tuzak: Temerrüt şelalesinde diğer masum üyelerin garanti fonu 3. sırada DEĞİL, 4. sıradadır; Takasbank'ın taahhüt ettiği özkaynak diğer üyelerden ÖNCE kullanılır!",
-          "Tuzak: Temerrüt anında ilk başvurulan kaynak Garanti Fonu değil, üyenin KENDİ İŞLEM TEMİNATIDIR!"
+          "Tuzak: Temerrüt anında ilk başvurulan kaynak Garanti Fonu değil, üyenin KENDİ İŞLEM TEMİNATIDIR!",
+          "Takasbank özkaynaklarının sadece en son aşamada kullanılacağı iddiası yanlıştır; tahsisli özkaynak 3. sırada masum üyeleri korumak için devreye girer!"
         ],
         "tables": [
           {

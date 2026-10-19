@@ -136,8 +136,9 @@ export function selectSmartQuestions(
 
   const shouldAvoidRepetition = filterMode === 'all' ? false : avoidRepetition;
 
-  // 1. Filter the candidate pool by module and source, ensuring fingerprint uniqueness
-  const seenFingerprints = new Set<string>();
+  // 1. Filter the candidate pool by module and source.
+  // Every question ID remains selectable; similar wording does not make a
+  // distinct question unavailable from the unseen pool.
   const candidatePool: Question[] = [];
 
   allQuestions.forEach((q) => {
@@ -153,11 +154,7 @@ export function selectSmartQuestions(
     if (sourceFilter !== 'all' && sourceFilter !== 'genel' && sourceFilter !== 'cikmis' && q.source !== sourceFilter) {
       return;
     }
-    const fp = getQuestionFingerprint(q.text);
-    if (!seenFingerprints.has(fp)) {
-      seenFingerprints.add(fp);
-      candidatePool.push(q);
-    }
+    candidatePool.push(q);
   });
 
   const totalPoolCount = candidatePool.length;

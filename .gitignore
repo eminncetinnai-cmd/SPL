@@ -1,4 +1,4 @@
-﻿# Dependencies
+# Dependencies
 node_modules/
 /.pnp
 .pnp.js
@@ -32,3 +32,6 @@ pnpm-debug.log*
 
 # Scratch & temporary
 *.tmp
+.vercel
+kaynak/
+*.pdf

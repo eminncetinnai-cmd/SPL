@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
-  Zap, 
+  Zap,
+  Brain, 
   Clock, 
   Percent, 
   Scale, 
@@ -9,17 +10,11 @@ import {
   Printer, 
   Play, 
   CheckCircle2, 
-  BookOpen, 
   HelpCircle,
-  Flame,
-  ShieldCheck,
-  Building2,
-  Coins,
   Download,
   Loader2
 } from 'lucide-react';
 import { ModuleId } from '../types/exam';
-import { downloadCheatSheetPdf, openCheatSheetInNewTab } from '../utils/cheatSheetPdfGenerator';
 
 interface CheatSheetPageProps {
   onNavigate: (page: string, params?: any) => void;
@@ -52,6 +47,17 @@ interface ComparisonItem {
   conceptA: { title: string; desc: string; keyPoint: string };
   conceptB: { title: string; desc: string; keyPoint: string };
   differenceRule: string;
+}
+
+interface DiagnosisItem {
+  id: string;
+  moduleId: ModuleId;
+  moduleName: string;
+  scenarioEvent: string;
+  legalDiagnosis: string;
+  applicableLaw: string;
+  consequenceOrPenalty: string;
+  examTrap: string;
 }
 
 interface TrapItem {
@@ -320,10 +326,10 @@ const DURATIONS: DurationItem[] = [
     id: 'dur_29',
     moduleId: '1001',
     moduleName: 'Mevzuat',
-    duration: '2 Yıl Faaliyetsizlik / 3 Ay',
+    duration: '1 Yıl Faaliyetsizlik',
     title: 'Sermaye Piyasası Faaliyet İzinlerinin İptal Süresi',
-    description: 'SPKn md. 44 uyarınca izin tarihinden itibaren 2 yıl süreyle faaliyette bulunulmaması veya şartların kaybedildiğinin tespitinden itibaren 3 ay içinde şartların sağlanamaması halinde yetki belgesi iptal edilir.',
-    trap: 'Faaliyetsizlik süresi 1 yıl değil 2 yıldır; şartların düzeltilmesi süresi 3 aydır.'
+    description: 'SPKn md. 41/1-a uyarınca faaliyet izninin verildiği tarihten itibaren 1 yıl süreyle ilgili izin kapsamında herhangi bir faaliyette bulunulmaması, faaliyet izninin iptali nedenidir.',
+    trap: "Faaliyete başlamama veya ilgili izin kapsamında faaliyet yürütmeme süresi 2 yıl değil 1 yıldır; dayanak madde SPKn md. 41/1-a'dır."
   },
   {
     id: 'dur_30',
@@ -334,14 +340,14 @@ const DURATIONS: DurationItem[] = [
     description: 'SPKn md. 92 uyarınca ihraççıların malvarlığını azaltıcı hukuka aykırı işlemlerinin Kurulca tespiti tarihinden itibaren 3 ay ve her halde işlemden itibaren 3 yıl içinde iptal, 5 yıl içinde butlan davası açılabilir.',
     trap: 'Öğrenmeden/tespitten itibaren 3 ay, mutlak işlem tarihinden itibaren 3 yıldır.'
   },
-{
+  {
     id: 'dur_31',
     moduleId: '1003',
     moduleName: 'SP Araçları',
-    duration: '90 Gün / 180 Gün',
-    title: 'Halka Arz Sonrası Satış ve Virman Kısıtlamaları (i-SPK.128.23)',
-    description: '19/09/2024 tarihli Kurul Kararı uyarınca, halka arzda dağıtımdan pay alan yatırımcılar payların hesaplarına geçtiği tarihten itibaren 90 gün boyunca borsa dışında satamaz, virmanlayamaz veya toptan satış yapamaz. Mevcut ortaklar ise izahname onayından itibaren 180 gün borsa içi dahil satış yapamaz.',
-    trap: 'Dağıtılan paylarda borsa dışı satış yasağı 90 gün, ortakların satış yasağı ise 180 gündür. Süreler birbiriyle karıştırılmamalıdır.'
+    duration: '1 Yıl / 180 Gün / 90 Gün',
+    title: 'Halka Arz ve Tahsisli Artırım Sonrası Pay Satmama / Kısıtlama Süreleri',
+    description: 'Pay Tebliği (VII-128.1) m. 8 uyarınca halka arzda %10+ pay sahibi ortaklar ve yönetim kontrolündekiler ile ihraççı 1 YIL boyunca borsada pay satamaz/sermaye artıramaz ve halka arz fiyatının altında satamaz. Tahsisli sermaye artırımında ihraç edilen paylar da edinimden itibaren 1 YIL süreyle borsada satılamaz (MKK kilitli statü). 19/09/2024 Kurul Kararıyla bireysel dağıtım payları 90 gün borsa dışı satılamaz/virmanlanamaz; ortaklar 180 gün borsa içi dahil satış yapamaz.',
+    trap: 'Tahsisli artırımda borsada satılamazlık süresi ve halka arzda %10+ ortakların satmama taahhüdü 1 yıldır (12 ay). Dağıtım alan bireysel yatırımcının borsa dışı virman yasağı ise 90 gündür; süreler karıştırılmamalıdır.'
   },
   {
     id: 'dur_32',
@@ -513,6 +519,78 @@ const DURATIONS: DurationItem[] = [
     title: 'Takasbank MKT Tahsis ve Taahhüt Sermaye Takvimi',
     description: 'Takasbank MKT karşılanmış riskler tahsis ve taahhüt sermayesini yılda bir kez en geç 4. ayın (Nisan) ilk iş günü günceller ve ilan eder. Temerrütte kullanılan tahsisli sermaye ise 1 ay içinde tamamlanır.',
     trap: 'Yıllık güncelleme yılbaşı değil Nisan başıdır; eksilen sermayenin ikame süresi 1 aydır.'
+  },
+  {
+    id: 'dur_51',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    duration: '1 Yıl (İhraççı & %10+ Ortak) / 6 Ay (Aracı Kurum)',
+    title: 'Halka Arzda İhraççı, Ortaklar ve Aracı Kurumun Pay Satmama Taahhütleri',
+    description: 'Pay Tebliği (VII-128.1) m. 8 uyarınca izahname onayındaki %10+ pay sahipleri ve yönetim kontrolündeki ortaklar 1 yıl süreyle borsada pay satamaz ve halka arz fiyatı altından satmama taahhüdü verir. İhraççı 1 yıl süreyle sermaye artıramaz. Yetkili aracı kurum ise yüklenim kapsamında aldığı satılamayan payları 6 ay süreyle halka arz fiyatı altında satamaz.',
+    trap: 'Ortakların ve ihraççının taahhüdü 1 yıl (12 ay) iken, yetkili aracı kurumun yüklenim paylarını halka arz fiyatının altında satmama taahhüdü 6 aydır.'
+  },
+  {
+    id: 'dur_52',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    duration: 'Şirket Onayı / 24 Ay',
+    title: 'Halka Açık Olmayan A.Ş.\'de Sermaye Artırımı Sonrası Pay Devri ve Bedel Ödeme Süresi',
+    description: 'TTK m. 491 uyarınca bedeli tamamen ödenmemiş nama yazılı paylar şirket onayı olmadıkça devredilemez. Nakdi sermaye artırımında taahhüt edilen pay bedellerinin en az %25\'i tescilden önce, kalanı tescili izleyen 24 ay içinde ödenir. Esas sözleşmeye bağlam konularak pay devri haklı sebeplerle şirket onayına bağlanabilir (TTK m. 492-493).',
+    trap: 'Halka açık olmayan şirketlerde pay devri kural olarak serbesttir; ancak bedeli tam ödenmemiş paylar şirket onayı olmadan asla devredilemez.'
+  },
+  {
+    id: 'dur_53',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    duration: '60 Gün (Solo) / 70 Gün (Konsolide)',
+    title: 'Yıllık Finansal Raporların Kamuya Açıklanma Yasal Süresi',
+    description: 'Sermaye Piyasasında Finansal Raporlamaya İlişkin Esaslar Tebliği (II-14.1) m. 10 uyarınca, yıllık tam bağımsız denetimden geçmiş finansal raporların solo ortaklıklarda hesap dönemini izleyen 60 gün, konsolide ortaklıklarda ise en geç 70 gün içinde KAP\'ta açıklanması zorunludur.',
+    trap: 'Solo ile konsolide arasındaki 10 günlük farkı unutmayın; 6 aylık raporlarda süre solo için 40, konsolide için 50 gündür.'
+  },
+  {
+    id: 'dur_54',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    duration: 'En Az 30 Gün Önce',
+    title: 'Yatırım Fonu Birleşme İlanı ve Komisyonsuz Çıkış Süresi',
+    description: 'Yatırım Fonlarına İlişkin Esaslar Tebliği (III-52.1) m. 27 uyarınca fon birleşme kararı birleşme tarihinden en az 30 gün önce KAP\'ta ilan edilir. Katılma payı sahipleri bu 30 günlük süre içinde hiçbir komisyon ödemeksizin paylarını fona iade etme hakkına sahiptir.',
+    trap: 'İlan ve ayrılma süresi 15 gün veya 1 ay değil, kanunen en az 30 gündür.'
+  },
+  {
+    id: 'dur_55',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    duration: '6 İş Günü / 45 İş Günü',
+    title: 'Zorunlu Pay Alım Teklifi (Çağrı) Başvuru ve Fiili Başlama Süresi',
+    description: 'Pay Alım Teklifi Tebliği (II-26.1) uyarınca ortaklıkta %50 üzeri oy hakkı veya yönetim kontrolü kazanıldığında en geç 6 iş günü içinde SPK\'ya başvurulur. Kurul onayından sonra en geç 45 iş günü içinde fiili teklif başlar ve talep toplama 10 - 20 iş günü sürer.',
+    trap: 'Başvuru süresi 30 gün değil 6 iş günüdür; fiili teklif süresi ise en az 10 iş günü, en fazla 20 iş günüdür.'
+  },
+  {
+    id: 'dur_56',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    duration: 'En Geç 2 İş Günü (T+2)',
+    title: 'Kredili İşlemlerde Özkaynak Tamamlama ve 2 Kat Hisse Senedi Kuralı',
+    description: 'Özkaynak oranı %35\'in altına düştüğünde aracı kurum çağrı yapar ve özkaynak başlangıç oranı olan %50\'ye tamamlanır. Süre en geç 2 iş günüdür. Nakit yerine hisse senedi getirilirse %50 katsayı uygulandığından nakit açığının tam 2 KATI değerinde hisse getirilmelidir.',
+    trap: 'Özkaynak %35\'e değil %50\'ye tamamlanır; hisse senedi getirilirse nakit açığının 1 katı değil 2 katı hisse piyasa değeri gerekir.'
+  },
+  {
+    id: 'dur_57',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    duration: '3 Ay (Hak Düşürücü Süre)',
+    title: 'Ortaklıktan Çıkarma ve Satma Hakkı Kullanım Süresi (II-27.2)',
+    description: 'Ortaklığın oy haklarının en az %98\'ine ulaşarak Hâkim Ortak konumunun kazanıldığının KAP\'ta ilan edildiği tarihten itibaren 3 aylık hak düşürücü süre içinde azınlık pay sahipleri satma hakkını, hâkim ortak ise çıkarma hakkını kullanabilir. Değerleme raporu zorunludur.',
+    trap: 'Eşik %95 değil %98\'dir; kullanım süresi ise 1 ay veya 6 iş günü değil, KAP ilanından itibaren 3 aydır.'
+  },
+  {
+    id: 'dur_58',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    duration: 'T+1 Saat 15:00 (Yarım Gün 11:00)',
+    title: 'VİOP Teminat Tamamlama Çağrısı (Margin Call) ve Başlangıç Teminatına Çıkma',
+    description: 'Gün sonu değerlemesi sonrası teminatı Sürdürme Teminatının altına düşen pozisyonlar için T+1 günü en geç saat 15:00\'e kadar (yarım günlerde 11:00) teminatın Sürdürme seviyesine değil, BAŞLANGIÇ TEMİNATI seviyesine tamamlanması zorunludur.',
+    trap: 'Sayısal sorularda mevcut teminatı sürdürme teminatından değil, DAİMA BAŞLANGIÇ TEMİNATINDAN çıkararak tamamlama tutarını hesaplayın!'
   }
 ];
 
@@ -597,6 +675,15 @@ const RATIOS: RatioItem[] = [
     title: 'Hisse Senedi Yoğun Fon Portföy Sınırı',
     description: 'Bir yatırım fonunun hisse senedi yoğun fon sayılabilmesi için portföyünün en az %80\'inin sürekli BIST paylarından oluşması şarttır.',
     trap: 'Fon Sepeti Fonunda da en az %80 fon katılma payı şartı vardır.'
+  },
+  {
+    id: 'rat_greeks',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    value: 'Delta • Gamma • Teta • Vega • Rho',
+    title: 'Varant Greeks — Hızlı Ezber',
+    description: 'Delta (Δ): dayanak varlık fiyatındaki değişimin varant fiyatına etkisi. Gamma (Γ): Delta\'nın değişim hızı. Teta (Θ): zaman geçtikçe varant değerindeki değişim ve zaman erimesi. Vega (ν): oynaklık değişiminin varant fiyatına etkisi. Rho (ρ): faiz oranındaki değişimin varant fiyatına etkisi.',
+    trap: 'Delta = fiyat, Gamma = Delta değişimi, Teta = zaman, Vega = volatilite, Rho = faiz.'
   },
   {
     id: 'rat_10',
@@ -1002,6 +1089,15 @@ const RATIOS: RatioItem[] = [
     title: 'Takasbank Nezdinde Nemalandırma Alt Sınırı',
     description: 'Takasbank nezdinde saat 15:40 itibarıyla işlem ve garanti fonu nakit TL bakiyeleri nemalandırılır. Bakiyesi 5.000 TL\'nin altında kalan hesaplara nema ödenmez.',
     trap: '15:40\'tan sonra yatırılan nakitler o gün için nemalanmaz; ayrıca 5.000 TL altı bakiyeler nema kapsamı dışındadır.'
+  },
+  {
+    id: 'rat_isin',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    value: '12 Hane',
+    title: 'ISIN Kodu — Menkul Kıymetin Kimliği',
+    description: 'ISIN (International Securities Identification Number), menkul kıymetleri tanımlayan 12 haneli alfanümerik koddur. 1-2. haneler ülke kodunu (TR), 3. hane menkul kıymet türünü, 4-9. haneler vade/itfa tarihini, 10. hane para birimi veya ödeme niteliğini, 11. hane aynı vadedeki kıymetleri ayıran sıra numarasını, 12. hane ise kontrol hanesini gösterir.',
+    trap: 'Sınavda en kritik bölüm 3. hanedir: DİBS örneklerinde T = Devlet Tahvili, B = Hazine Bonosu; finansman bonolarında piyasa örneklerinde F harfi görülebilir. 12. hane ise kontrol hanesidir.'
   }
 ];
 
@@ -1077,7 +1173,7 @@ const COMPARISONS: ComparisonItem[] = [
     conceptA: {
       title: 'İçsel Bilgiye Dayalı Ticaret (m.106)',
       desc: 'Henüz kamuya açıklanmamış gizli bilgiye dayanarak menfaat sağlama suçu.',
-      keyPoint: 'Cezası 3-8 yıl hapis. Kanunda ETKİN PİŞMANLIK HÜKMÜ YOKTUR.'
+      keyPoint: 'Cezası 3-5 yıl hapis. Kanunda ETKİN PİŞMANLIK HÜKMÜ YOKTUR.'
     },
     conceptB: {
       title: 'Piyasa Dolandırıcılığı / Manipülasyon (m.107)',
@@ -1517,6 +1613,261 @@ const COMPARISONS: ComparisonItem[] = [
       keyPoint: 'Fon malvarlığını PYŞ\'den korur; harcamaların, birim pay değerinin ve kaldıraç limitlerinin gözetimini yapar.'
     },
     differenceRule: 'Genel saklama müşteri varlığını korur; Portföy saklama ise kolektif fon malvarlığını PYŞ\'nin usulsüz işlemlerine karşı gözetler ve denetler.'
+  },
+  {
+    id: 'comp_33',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    conceptA: {
+      title: 'Repo (Ters Repo Yapan Tarafın Karşıtı)',
+      desc: 'Menkul kıymetin nakit karşılığında geçici olarak satılması ve vade sonunda geri alınması işlemidir.',
+      keyPoint: 'Repo yapan taraf menkul kıymeti verir, nakdi alır; vade sonunda nakdi faiziyle ödeyerek menkul kıymeti geri alır.'
+    },
+    conceptB: {
+      title: 'Ters Repo',
+      desc: 'Nakit verilerek karşılığında menkul kıymetin teminat olarak alınması ve vade sonunda iade edilmesi işlemidir.',
+      keyPoint: 'Ters repo yapan taraf nakdi verir, menkul kıymeti alır; vade sonunda menkul kıymeti iade ederek nakdi faiziyle geri alır.'
+    },
+    differenceRule: 'Repo = nakit alan ve menkul kıymeti geçici olarak satan taraf; ters repo = nakit veren ve menkul kıymeti teminat olarak alan taraf. Kısa ezber: Repo nakit alır, ters repo nakit verir.'  },
+  {
+    id: 'comp_28',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    conceptA: {
+      title: 'Aktif Fiille Örtülü Kazanç Aktarımı (SPKn m.110/1-b)',
+      desc: 'İlişkili tarafla emsaline bariz aykırı fiyatla gayrimenkul veya malvarlığı devrederek kârı eksiltmek.',
+      keyPoint: '3 yıldan 5 yıla kadar hapis ve 5.000 günden 10.000 güne kadar adli para cezası gerektiren ADLİ SUÇTUR.'
+    },
+    conceptB: {
+      title: 'İhmali/Pasif Fiille Örtülü Kazanç Aktarımı (SPKn m.103/6)',
+      desc: 'Kârlı bir patent, lisans veya ticari fırsatı bilerek değerlendirmeyip malvarlığı artışına engel olmak.',
+      keyPoint: 'Adli bir suç oluşturmaz; kabahat niteliğinde olup İDARİ PARA CEZASI yaptırımına tabidir.'
+    },
+    differenceRule: 'Aktif malvarlığı eksiltme adli suç (hapis) iken; ticari fırsatı şirkete kazandırmayı ihmal etme adli suç değil, idari para cezasıdır.'
+  },
+  {
+    id: 'comp_29',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    conceptA: {
+      title: 'İçsel Bilginin Ertelenmesi (II-15.1 m.6)',
+      desc: 'İhraççının meşru çıkarlarının zarar görmemesi için KAP açıklamasını kendi sorumluluğunda ertelemesi.',
+      keyPoint: 'Yatırımcıların yanıltılmaması ve gizliliğin korunabilmesi ön koşuldur; sebepler kalkınca derhal açıklanır.'
+    },
+    conceptB: {
+      title: 'Söylenti Halinde Doğrulama Yükümlülüğü (II-15.1 m.9)',
+      desc: 'Erteleme devam ederken basında veya internette hisse fiyatını etkileyecek haber çıkması hali.',
+      keyPoint: 'SPK veya Borsa uyarısı beklenmeksizin DERHAL VE RE\'SEN KAP\'ta özel durum açıklaması yapılması ZORUNLUDUR.'
+    },
+    differenceRule: 'Erteleme kararı olsa dahi piyasada söylenti veya haber çıkarsa gizlilik kaybolur ve SPK/Borsa talebi beklenmeden derhal açıklama yapılır.'
+  },
+  {
+    id: 'comp_30',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    conceptA: {
+      title: 'Yaygın Olmayan İlişkili Taraf Varlık Alımı (II-17.1 m.9)',
+      desc: 'İlişkili taraftan tek seferlik veya yaygın olmayan gayrimenkul, tesis veya hisse devralınması.',
+      keyPoint: 'İşlem tutarı aktif toplamı veya hasılatın %5\'ini aşarsa LİSANSLI DEĞERLEME RAPORU ve Bağımsız YK Onayı şarttır.'
+    },
+    conceptB: {
+      title: 'Yaygın ve Süreklilik Arz Eden İşlemler (II-17.1 m.10)',
+      desc: 'İlişkili tarafla ticari faaliyet gereği devamlı yapılan hammadde veya mamul alış-satışları.',
+      keyPoint: 'Bir dönemdeki tutar hasılat veya maliyetin %10\'unu aşarsa Yönetim Kurulu Raporu hazırlanıp KAP\'ta açıklanır.'
+    },
+    differenceRule: 'Tekil varlık alımında değerleme eşiği %5\'tir; yaygın ve sürekli ticari işlemlerde yönetim kurulu raporu eşiği %10\'dur.'
+  },
+  {
+    id: 'comp_31',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    conceptA: {
+      title: 'Şube Yetkileri (III-39.1 m.43)',
+      desc: 'Yatırım kuruluşunun merkeze bağlı bağımsız hizmet ve işlem birimidir.',
+      keyPoint: 'Müşteri emri alabilir, hesap açabilir, sözleşme akdedebilir, nakit ve menkul kıymet teslim alabilir.'
+    },
+    conceptB: {
+      title: 'İrtibat Bürosu Kesin Yasakları (III-39.1 m.44)',
+      desc: 'Yalnızca yatırım kuruluşunun ve sunduğu hizmetlerin tanıtım ve pazarlamasını yapar.',
+      keyPoint: 'Müşteri emri alamaz, sözleşme imzalayamaz, hesap açamaz, hiçbir suretle nakit veya kıymet kabul edemez.'
+    },
+    differenceRule: 'Şube tam yetkili işlem birimidir; İrtibat Bürosu ise sadece tanıtım yapabilir, asla emir ve para kabul edemez.'
+  },
+  {
+    id: 'comp_32',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    conceptA: {
+      title: 'Dar Yetkili Aracı Kurum (Asgari 45M TL)',
+      desc: 'Sermaye piyasasında en sınırlı faaliyet iznine sahip aracı kurum kategorisidir.',
+      keyPoint: 'Yalnızca emir iletimine aracılık ve en iyi gayret halka arza yetkilidir; KENDİ NAMINA İŞLEM YAPAMAZ, kredi veremez.'
+    },
+    conceptB: {
+      title: 'Kısmi ve Geniş Yetkili Aracı Kurum (190M / 380M TL)',
+      desc: 'Kendi nam ve hesabına işlem (portföy aracılığı) yapabilen yetkili kategorilerdir.',
+      keyPoint: 'İşlem aracılığı, portföy aracılığı, kredili alım, açığa satış, genel saklama ve türev araç işlemlerine yetkilidir.'
+    },
+    differenceRule: 'Dar yetkili kurumlar sadece müşteri emirlerini iletir, kendi portföyüne alım-satım yapamaz; Kısmi ve Geniş yetkililer portföy aracılığı yapabilir.'
+  },
+  {
+    id: 'comp_33',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    conceptA: {
+      title: 'Doğrudan Takas Üyesi (MKT m.9)',
+      desc: 'Takasbank MKT sistemine doğrudan bağlanan takas üyesidir.',
+      keyPoint: 'Yalnızca KENDİ PORTFÖYÜ ve KENDİ MÜŞTERİLERİ ad ve hesabına gerçekleştirilen işlemlerin takasını yapar.'
+    },
+    conceptB: {
+      title: 'Genel Takas Üyesi (MKT m.10)',
+      desc: 'Genişletilmiş takas yetkisine ve yüksek sermaye taahhüdüne sahip MKT üyesidir.',
+      keyPoint: 'Kendi ve müşterilerinin yanı sıra, TAKAS ÜYESİ OLMAYAN DİĞER YATIRIM KURULUŞLARININ işlemlerini de takas eder.'
+    },
+    differenceRule: 'Doğrudan üye sadece kendi ve müşterisinin takasını yapar; Genel takas üyesi ise üye olmayan üçüncü kuruluşların takasını da üstlenir.'
+  },
+  {
+    id: 'comp_34',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    conceptA: {
+      title: 'Halka Açık Ortaklıkta Sermaye Artırımı (Halka Arz & Tahsisli)',
+      desc: 'SPKn ve Pay Tebliği (VII-128.1) hükümleri uygulanır.',
+      keyPoint: 'Tahsisli artırımda paylar 1 YIL borsada satılamaz; halka arzda %10+ ortaklar 1 YIL satamaz ve fiyat altı satmama taahhüdü verir.'
+    },
+    conceptB: {
+      title: 'Halka Açık Olmayan A.Ş.\'de Sermaye Artırımı',
+      desc: 'TTK m. 456 vd. ve m. 490-493 hükümleri uygulanır.',
+      keyPoint: 'Devir serbesttir; ancak bedeli ödenmemiş paylar şirket onayı olmadan devredilemez (TTK m. 491) ve bağlam kuralı geçerlidir.'
+    },
+    differenceRule: 'Halka açık ortaklıklarda tahsisli paylar MKK nezdinde kilitlenerek 1 yıl borsada satış yasağı uygulanırken; halka kapalı ortaklıklarda kanuni borsa yasağı yoktur, pay devri şirket onayı veya esas sözleşmedeki bağlam hükümleriyle (TTK m. 491-493) sınırlandırılır.'
+  },
+  {
+    id: 'comp_35',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    conceptA: {
+      title: 'Garantili Yatırım Fonu (III-52.1 m.25)',
+      desc: 'Anapara ve/veya getiri üçüncü bir kuruluş tarafından garanti edilir.',
+      keyPoint: 'GARANTİ VEREN KURULUŞ (yetkili banka/finans kurumu) taahhütte bulunur; maliyet fondan karşılanamaz.'
+    },
+    conceptB: {
+      title: 'Koruma Amaçlı Yatırım Fonu (III-52.1 m.25)',
+      desc: 'Anaparanın korunması türev ve finansal tekniklerle hedeflenir.',
+      keyPoint: 'ÜÇÜNCÜ TARAF GARANTİSİ KESİNLİKLE YOKTUR; anapara korunması EN İYİ GAYRET (best effort) esasına dayanır.'
+    },
+    differenceRule: 'Garantili fonda garantörün kesin hukuki ve mali garantisi vardır; koruma amaçlı fonda ise portföy yöneticisi en iyi gayretle koruma hedefler, üçüncü taraf garantisi kesinlikle bulunmaz ve fon unvanında garanti kelimesi kullanılamaz.'
+  },
+  {
+    id: 'comp_36',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    conceptA: {
+      title: 'Şartlı (Sınırlı Olumlu) Görüş (BDS 705)',
+      desc: 'Finansal tablolarda belirli kalemlerde hata/kanıt yetersizliği vardır.',
+      keyPoint: 'Aykırılık veya kısıtlama ÖNEMLİDİR ancak tablonun geneline sirayet edecek kadar YAYGIN DEĞİLDİR.'
+    },
+    conceptB: {
+      title: 'Olumsuz Görüş vs Kaçınma (BDS 705)',
+      desc: 'Finansal tabloların bütününe yansıyan ağır kusurlar.',
+      keyPoint: 'Kanıt var ve yaygın yanlışlık varsa OLUMSUZ GÖRÜŞ; kanıt toplanamıyor ve olası etki yaygınsa GÖRÜŞ BİLDİRMEKTEN KAÇINMA verilir.'
+    },
+    differenceRule: 'Hata önemli fakat yaygın değilse Şartlı Görüş; hata hem önemli hem yaygınsa Olumsuz Görüş; denetim kanıtı toplanamamış ve olası etki hem önemli hem yaygınsa Görüş Bildirmekten Kaçınma kararı verilir.'
+  },
+  {
+    id: 'comp_37',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    conceptA: {
+      title: 'Konsolide Finansal Rapor (TFRS 10)',
+      desc: 'Ana ortaklık ve kontrol ettiği bağlı ortaklıkların tek bilançosudur.',
+      keyPoint: '%50 üzeri veya fiili yönetim kontrolü olan bağlı ortaklıklar TAM KONSOLİDASYON ile birleştirilir.'
+    },
+    conceptB: {
+      title: 'Solo Finansal Rapor & İştirakler',
+      desc: 'Tek başına tüzel kişiliğin bireysel finansal tablosudur.',
+      keyPoint: '%20-%50 arası oy hakkı bulunan iştirakler konsolide tablolarda ÖZKAYNAK YÖNTEMİYLE gösterilir.'
+    },
+    differenceRule: 'Kontrol gücü (>%50) olanlar tam konsolidasyona tabi tutulup azınlık payları özkaynak altında ayrılır; önemli etki (%20-%50) olan iştirakler ise özkaynak yöntemiyle konsolide edilir.'
+  },
+  {
+    id: 'comp_38',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    conceptA: {
+      title: 'VİOP Pay Vadeli Sözleşmeleri (Tek Hisse)',
+      desc: 'Dayanak varlığı BIST Pay Piyasası hisse senedi olan vadeli sözleşmeler.',
+      keyPoint: 'Vade sonunda FİZİKİ UZLAŞMA uygulanır; Takasbank Pay Piyasası T+2 takasında hisse teslim edilir.'
+    },
+    conceptB: {
+      title: 'VİOP Endeks Vadeli Sözleşmeleri (BIST 30)',
+      desc: 'Dayanak varlığı hisse senedi sepeti/endeksi olan vadeli sözleşmeler.',
+      keyPoint: 'Vade sonunda NAKDİ UZLAŞMA uygulanır; son 30 dakika ve kapanış ortalamasıyla kâr/zarar nakit hesaba yansır.'
+    },
+    differenceRule: 'Pay vadeli sözleşmelerde fiziki teslimat (hisse senedi transferi T+2) zorunludur; Endeks vadeli sözleşmelerde ise fiziki teslimat imkânsız olduğundan nakdi uzlaşma yapılır.'
+  },
+  {
+    id: 'comp_39',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    conceptA: {
+      title: 'Açığa Satışta Yukarı Adım Kuralı (Up-Tick)',
+      desc: 'Piyasa düşüş yönlüyken panik satışları durdurmak için uygulanan kural.',
+      keyPoint: 'Emir son işlem fiyatının ÜZERİNDE girilmek zorundadır (son işlem bir önceki fiyattan yüksekse son fiyattan da girilebilir).'
+    },
+    conceptB: {
+      title: 'Borsa Temerrüt Sırası (Buy-in Pazarı)',
+      desc: 'T+2 saat 16:45\'te menkul kıymet borcunu kapatamayan aracı kurumlar için açılır.',
+      keyPoint: 'T+3 günü saat 11:00\'de Borsa İstanbul bünyesinde açılarak T+0 valörle re\'sen hisse alımı yapılır.'
+    },
+    differenceRule: 'Yukarı adım kuralı işlem anında emir fiyatını kısıtlar; Temerrüt sırası ise takas günü teslim edilemeyen hisse açığını T+3 saat 11:00\'de piyasadan re\'sen kapatır.'
+  },
+  {
+    id: 'comp_40',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    conceptA: {
+      title: 'Tahvil Temiz Fiyat (Clean Price)',
+      desc: 'Son kupon ödeme tarihinden itibaren biriken faizi içermeyen çıplak anapara piyasa fiyatı.',
+      keyPoint: 'Borsa İstanbul BAP ekranlarında DAİMA TEMİZ FİYAT kote edilir ve emirler temiz fiyat üzerinden girilir.'
+    },
+    conceptB: {
+      title: 'Tahvil Kirli Fiyat (Dirty Price)',
+      desc: 'Temiz fiyata son kupondan takas gününe kadar geçen sürenin birikmiş faizinin eklenmiş hali (Temiz + Birikmiş Faiz).',
+      keyPoint: 'Takas gününde alıcının satıcıya FİİLEN ÖDEDİĞİ nakit tutar daima KİRLİ FİYATTIR.'
+    },
+    differenceRule: 'Borsa ekranında görünen fiyat Temiz Fiyat, takasta cepten çıkan para ise Kirli Fiyattır (Kirli = Temiz + Dönemsel Kupon × t/T). Kupon ödeme gününde birikmiş faiz sıfırlandığından ikisi birbirine eşitlenir.'
+  },
+  {
+    id: 'comp_41',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    conceptA: {
+      title: 'Eşzamanlı Bedelli + Bedelsiz Artırım Referans Fiyatı',
+      desc: 'Hem nakit girişi (bedelli) hem iç kaynak aktarımı (bedelsiz) aynı anda yapıldığında oluşan açılış fiyatı.',
+      keyPoint: 'Formül: P_yeni = [P_eski + (B × R_fiyat)] / (1 + B + BD). Şirkete sadece bedelli kısmından nakit girer.'
+    },
+    conceptB: {
+      title: 'Rüçhan Hakkı Kupon Pazarı Teorik Değeri',
+      desc: 'Eski pay sahibinin yeni pay alma hakkını (kuponunu) borsada satmak istemesi halinde oluşan referans değer.',
+      keyPoint: 'Formül: R_kupon = P_eski - P_yeni. Kullanılmayan rüçhan payları Birincil Piyasa\'da 2 iş günü satılır.'
+    },
+    differenceRule: 'Yeni referans fiyat hesaplanırken paydaya hem bedelli (B) hem bedelsiz (BD) oranı eklenir; rüçhan kupon değeri ise doğrudan eski fiyat ile yeni fiyat arasındaki farktır (P_eski - P_yeni).'
+  },
+  {
+    id: 'comp_42',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    conceptA: {
+      title: 'MKT Şelalesi İlk 3 Aşama (Kusurlu Üye + Takasbank İlk Kayıp)',
+      desc: 'Temerrüde düşmeyen masum üyelere dokunulmadan önce kullanılan birincil kaynaklar.',
+      keyPoint: '1) Kusurlu üyenin işlem teminatı -> 2) Kusurlu üyenin Garanti Fonu payı -> 3) Takasbank Tahsisli Özkaynağı (First-Loss Capital).'
+    },
+    conceptB: {
+      title: 'MKT Şelalesi 4. ve Sonraki Aşamalar (Masum Üyeler & Kalan Sermaye)',
+      desc: 'İlk 3 aşama zararı kapatmaya yetmediğinde devreye giren müteselsil kaynaklar.',
+      keyPoint: '4) Diğer masum üyelerin Garanti Fonu katkı payları -> 5) Takasbank kalan özkaynağı -> 6) Ek garanti fonu katkısı.'
+    },
+    differenceRule: 'Takasbank\'ın tahsis ettiği özkaynak (First-loss capital) en sonda değil, masum üyelerin Garanti Fonu paylarından ÖNCE tam 3. SIRADA kullanılır!'
   }
 ];
 
@@ -1576,6 +1927,14 @@ const TRAPS: TrapItem[] = [
     myth: 'Bir aracı kurum temerrüde düştüğünde Takasbank doğrudan diğer masum aracı kurumların Garanti Fonu paralarını kullanır.',
     reality: 'Temerrüt şelalesinde (MKT Yönetmeliği m.36) 7 aşamalı kesin öncelik sırası uygulanır: 1. Temerrüt eden üyenin teminatları -> 2. Temerrüt eden üyenin yatırılmış garanti fonu katkısı -> 3. Varsa sigorta tazminleri -> 4. Takasbank tahsisli sermayesi -> 5. Diğer MKT üyelerinin yatırılmış garanti fonu katkıları -> 6. Üyelerden talep edilecek ilave garanti fonu katkıları -> 7. Takasbank taahhütlü sermayesi.',
     whyImportant: 'MKT Madde 36 kaynak kullanım sırası SPL 1012 sınavının en banko ve ayırt edici sorusudur.'
+  },
+  {
+    id: 'trap_7b',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    myth: 'Temerrüt halinde önce Takasbank’ın diğer üyelerin katkılarını kullanır; mütemerrit üyenin kaynakları daha sonra gelir.',
+    reality: 'Sorudaki kısaltılmış ve doğru sırada önce mütemerrit üyenin işlem teminatları ve Garanti Fonu katkısı kullanılır; sonra Takasbank tahsisli sermayesi; en nihayet temerrüt etmeyen diğer üyelerin Garanti Fonu katkıları devreye girer. Tam MKT sıralaması 7 aşamalıdır: teminat -> mütemerrit GF -> sigorta -> Takasbank tahsisli sermayesi -> diğer üyeler GF -> ilave GF -> Takasbank taahhütlü sermayesi.',
+    whyImportant: 'Bu sırayı karıştıran soruların doğru cevabı çoğu zaman “mütemerrit üye önce, Takasbank sonra, diğer üyeler en son” şeklindedir.'
   },
   {
     id: 'trap_8',
@@ -1827,40 +2186,550 @@ const TRAPS: TrapItem[] = [
   }
 ];
 
+const DIAGNOSES: DiagnosisItem[] = [
+  {
+    id: 'diag_1',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Şirket yönetim kurulu üyesinin henüz KAP\'ta açıklanmamış rekor kâr/ihale bilgisini kullanarak pay alması ve haksız menfaat sağlaması.',
+    legalDiagnosis: 'Bilgi Suistimali (Insider Trading)',
+    applicableLaw: '6362 sayılı SPKn m. 106',
+    consequenceOrPenalty: '3 yıldan 8 yıla kadar hapis veya adli para cezası (menfaatin 2 katından az olamaz)',
+    examTrap: 'Etkin pişmanlık (m. 107/3) YALNIZCA işlem bazlı piyasa dolandırıcılığında geçerlidir; Bilgi Suistimalinde (m. 106) etkin pişmanlık KESİNLİKLE YOKTUR.'
+  },
+  {
+    id: 'diag_2',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Halka açık ortaklığın 40 Milyon TL değerindeki gayrimenkulünü ilişkili tarafın şahsi şirketine emsaline bariz aykırı şekilde 15 Milyon TL bedelle satması.',
+    legalDiagnosis: 'Aktif Yolla Örtülü Kazanç Aktarımı (Güveni Kötüye Kullanma)',
+    applicableLaw: 'SPKn m. 21 ve m. 110/1-b',
+    consequenceOrPenalty: 'Nitelikli Güveni Kötüye Kullanma Suçu (Hapis Cezası ve Zararın İadesi)',
+    examTrap: 'Pasif/ihmali yolla kazanç kaybında idari para cezası (m. 103/6) verilirken; aktif fiille malvarlığını eksiltmede m. 110/1-b adli hapis cezası uygulanır.'
+  },
+  {
+    id: 'diag_3',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Şirket hakkında geçerli ertelenmiş içsel bir satın alma bilgisi varken basında haber çıkması ve Başkanın \'SPK sormadıkça açıklama yapmayız\' demesi.',
+    legalDiagnosis: 'Özel Durum Açıklaması Derhal Doğrulama / Tekzip Yükümlülüğü İhlali',
+    applicableLaw: 'II-15.1 Özel Durumlar Tebliği m. 9',
+    consequenceOrPenalty: 'Kurul veya Borsa talebi beklenmeksizin DERHAL KAP\'ta açıklama zorunluluğu',
+    examTrap: 'Kurulun veya Borsa\'nın yazı göndermesi beklenmez; basında haber veya söylenti çıktığı anda erteleme düşer ve derhal KAP açıklaması şarttır.'
+  },
+  {
+    id: 'diag_4',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Sosyal medyada organize olarak hisse tavsiyesi verip takipçiler alırken kendi paylarını el altından satan grubun durumu (Pump & Dump).',
+    legalDiagnosis: 'Bilgi Bazlı ve İşlem Bazlı Piyasa Dolandırıcılığı (Manipülasyon)',
+    applicableLaw: '6362 sayılı SPKn m. 107/1 ve 107/2',
+    consequenceOrPenalty: '3 yıldan 5 yıla kadar hapis ve 5.000 güne kadar adli para cezası',
+    examTrap: 'Bilgi bazlı manipülasyonda (m. 107/2) Etkin Pişmanlık uygulanmaz; Etkin Pişmanlık yalnızca işlem bazlı manipülasyonda (m. 107/1) geçerlidir.'
+  },
+  {
+    id: 'diag_5',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Halka açık şirketin tüm malvarlığını devretme kararına genel kurulda muhalefet eden ortağın ayrılma hakkını kullanmak istemesi.',
+    legalDiagnosis: 'Önemli Nitelikteki İşlem ve Ayrılma Hakkı Kullanımı',
+    applicableLaw: 'SPKn m. 23 ve 24; II-23.3 sayılı Tebliğ',
+    consequenceOrPenalty: 'Ortaklık payları kamuya açıklama tarihindeki borsa düzeltilmiş fiyatından satın almakla yükümlüdür',
+    examTrap: 'Ayrılma hakkı genel kurul toplantısına bizzat katılıp muhalif oy kullanarak tutanağa muhalefet şerhi işleten ortaklara tanınır.'
+  },
+  {
+    id: 'diag_6',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'BIST 1. Grup halka açık şirketin Bağımsız Yönetim Kurulu üyesinin son 3 yılda şirkette danışmanlık yaptığının anlaşılması.',
+    legalDiagnosis: 'Bağımsız Yönetim Kurulu Üyeliği Kriteri İhlali (Bağımsızlığın Kaybı)',
+    applicableLaw: 'Kurumsal Yönetim Tebliği (II-17.1) m. 4.3.4',
+    consequenceOrPenalty: 'Üyelik sıfatı derhal düşer; yerine en geç yapılacak ilk genel kurulda yeni bağımsız üye seçilir',
+    examTrap: 'Bağımsız üyenin şirket, hâkim ortak veya iştiraklerle son 5 YIL içinde istihdam veya ticari ilişkisinin bulunmaması şarttır.'
+  },
+  {
+    id: 'diag_7',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'SPK tarafından aracı kuruma kesilen 5 milyon TL idari para cezasına karşı yönetim kurulunun dava açmak istemesi.',
+    legalDiagnosis: 'İdari Yaptırım Kararlarına Karşı Yargı Yolu ve Görevli Mahkeme',
+    applicableLaw: '6362 sayılı SPKn m. 105 ve 2577 sayılı İYUK',
+    consequenceOrPenalty: 'Tebliğden itibaren 30 GÜN içinde yetkili İDARE MAHKEMESİNDE iptal davası açılır',
+    examTrap: 'SPK para cezalarına karşı Sulh Ceza Hakimliği değil; İDARE MAHKEMESİ yetkilidir (Süre 30 gündür).'
+  },
+  {
+    id: 'diag_8',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Anonim şirket genel kurulunda kanuna aykırı olarak pay sahiplerinin bilgi alma ve genel kurula katılma hakkının engellenmesi.',
+    legalDiagnosis: 'Genel Kurul Kararının İptali ve Butlan Davası',
+    applicableLaw: '6102 sayılı TTK m. 445 ve 447',
+    consequenceOrPenalty: 'Karar tarihinden itibaren 3 AY içinde şirket merkezinin bulunduğu Asliye Ticaret Mahkemesinde iptal davası açılır',
+    examTrap: 'İptal davası açma süresi 30 gün değil, 3 AYDIR; butlan hallerinde ise süre aranmaksızın her zaman tespit istenebilir.'
+  },
+  {
+    id: 'diag_9',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Brokerın kurumsal müşteriden gelen 1 milyon lotluk alım emrini borsaya iletmeden önce şahsi hesabına alım emri girmesi (Front-Running).',
+    legalDiagnosis: 'Müşteri Emrine Öncelik Kuralı ve Sadakat Yükümlülüğünün Ağır İhlali',
+    applicableLaw: 'TSPB Meslek Kuralları m. 14 ve SPKn m. 106',
+    consequenceOrPenalty: 'Disiplin cezası, meslekten geçici/sürekli men ve Bilgi Suistimali kapsamında adli kovuşturma',
+    examTrap: 'Front-Running sadece şirket içi bir kusur değil; haksız menfaat sağlayan doğrudan bir sermaye piyasası suçudur.'
+  },
+  {
+    id: 'diag_10',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Yatırım fonu kurucusu olan Portföy Yönetim Şirketi\'nin iflas etmesi ve alacaklıların fon malvarlığına haciz koydurmak istemesi.',
+    legalDiagnosis: 'Yatırım Fonu Malvarlığının Mutlak Korunması ve Ayrılığı',
+    applicableLaw: '6362 sayılı SPKn m. 53',
+    consequenceOrPenalty: 'Fon malvarlığı kamu alacakları için dahi haczedilemez, iflas masasına dahil edilemez',
+    examTrap: 'Vergi ve SGK gibi kamu alacakları dahi fon malvarlığını haczedemez; portföy başka bir saklayıcıya devredilir.'
+  },
+  {
+    id: 'diag_11',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Halka arz izahnamesi onaylandıktan sonra şirketin en büyük üretim tesisinde yangın çıkması ve üretimin durması.',
+    legalDiagnosis: 'İzahnamede Önemli Yeni Gelişme ve Ek/Tadil Yükümlülüğü',
+    applicableLaw: 'II-5.1 İzahname Tebliği m. 11',
+    consequenceOrPenalty: 'Gelişmeden itibaren 7 iş gününde Kurula başvurulur; Kurul 7 iş gününde onaylar; yatırımcılara 3 iş günü cayma hakkı doğar',
+    examTrap: 'İzahname onaylanmış olsa dahi halka arz tamamlanana kadar meydana gelen yeni gelişmeler izahname ekiyle onaylatılmak zorundadır.'
+  },
+  {
+    id: 'diag_12',
+    moduleId: '1001',
+    moduleName: 'Mevzuat',
+    scenarioEvent: 'Kayıtlı sermaye tavanı 500 Milyon TL olan şirkette genel kurulca verilen 5 yıllık sürenin dolması ve YK\'nın tavan dahilinde sermaye artırmak istemesi.',
+    legalDiagnosis: 'Kayıtlı Sermaye Sistemi Yetki Süresinin Sona Ermesi',
+    applicableLaw: 'SPKn m. 18 ve II-18.1 Tebliği m. 6',
+    consequenceOrPenalty: 'Genel kuruldan yeni bir 5 yıllık yetki alınmadıkça yönetim kurulu kararıyla sermaye artırımı yapılamaz',
+    examTrap: 'Süre dolduğunda şirket kayıtlı sermaye sisteminden çıkmış sayılmaz; ancak yönetim kurulu sermaye artıramaz (yetki genel kurula döner).'
+  },
+  {
+    id: 'diag_13',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'Şirketin ihraç ettiği tahvillerin kupon faiz ödemesini vadesinde yapamaması ve temerrüde düşmesi.',
+    legalDiagnosis: 'Borçlanma Araçları Sahipleri Kurulu (BASK) Toplantı ve Karar Süreci',
+    applicableLaw: 'Borçlanma Araçları Tebliği (VII-128.8) m. 25-28',
+    consequenceOrPenalty: 'Tedavüldeki tahvillerin en az %10\'una sahip yatırımcılar BASK\'ı çağırır; kararlar 2/3 sermaye çoğunluğuyla alınır',
+    examTrap: 'BASK toplantı çağrısı için tedavüldeki tahvil nominal tutarının en az %10\'u, karar için ise en az 2/3 (üçte iki) çoğunluk aranır.'
+  },
+  {
+    id: 'diag_14',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'Bedelli sermaye artırımında yönetim kurulunun mevcut ortakların rüçhan haklarını kısıtlayarak tahsisli hisse ihraç etmesi.',
+    legalDiagnosis: 'Rüçhan Hakkının Sınırlandırılması ve Esas Sözleşme Yetkisi',
+    applicableLaw: '6102 sayılı TTK m. 461 ve Pay Tebliği (VII-128.1)',
+    consequenceOrPenalty: 'Esas sözleşmede açık yetki bulunması ve YK gerekçe raporunun KAP\'ta ilanı şarttır',
+    examTrap: 'Rüçhan hakkı kısıtlaması için esas sözleşmede yönetim kuruluna açıkça yetki verilmiş olması ve YK raporunun KAP\'ta ilanı zorunludur.'
+  },
+  {
+    id: 'diag_15',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'Şirket genel kurulunda esas sözleşme değişikliği ve yönetim kurulunun ibrası oylanırken imtiyazlı pay sahiplerinin 15 oy kullanmak istemesi.',
+    legalDiagnosis: 'Oyda İmtiyazın Kullanılamayacağı Emredici Kanuni Haller',
+    applicableLaw: 'SPKn m. 28 ve 6102 sayılı TTK m. 479',
+    consequenceOrPenalty: 'Esas sözleşme değişikliği ve ibra oylamalarında her pay sahibi yalnızca TEK OY (1 pay = 1 oy) kullanabilir',
+    examTrap: 'Esas sözleşme değişikliği, yönetim kurulu üyelerinin ibrası ve sorumluluk davası açılmasında oyda imtiyaz KESİNLİKLE KULLANILAMAZ.'
+  },
+  {
+    id: 'diag_16',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'Enflasyonun yükseldiği dönemde TÜFE\'ye endeksli devlet tahvili alan kurumsal yatırımcının dönemsel getiri hesabı.',
+    legalDiagnosis: 'Enflasyona Endeksli Borçlanma Aracı Anapara ve Kupon Güncellemesi',
+    applicableLaw: 'Hazine Finansman Kanunu ve Borçlanma Araçları Tebliği',
+    consequenceOrPenalty: 'Hem dönemsel kupon ödemeleri hem de vade sonu anapara enflasyon endeks katsayısıyla çarpılarak ödenir',
+    examTrap: 'TÜFE tahvilinde enflasyon artışı sadece kuponu değil, tahvilin anapara nominal değerini de doğrudan artırır.'
+  },
+  {
+    id: 'diag_17',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'VKŞ tarafından ihraç edilen yönetim sözleşmesine dayalı kira sertifikasında kaynak kuruluşun kâr payını ödeyememesi.',
+    legalDiagnosis: 'Yönetim Sözleşmesine Dayalı Kira Sertifikası (Vekâlet Sukuk) Temerrüdü',
+    applicableLaw: 'III-61.1 Kira Sertifikaları Tebliği',
+    consequenceOrPenalty: 'Kaynak kuruluş taahhüt ettiği getiri ve anaparanın tamamından VKŞ\'ye ve yatırımcılara karşı doğrudan müteselsilen sorumludur',
+    examTrap: 'Kira sertifikalarında kaynak kuruluş iflas etse dahi dayanak varlıklar VKŞ nezdinde ayrı bir malvarlığı olarak güvence altındadır.'
+  },
+  {
+    id: 'diag_18',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'VİOP vadeli sözleşmesinde yatırımcının teminatının sürdürme seviyesinin altına düşmesi üzerine aracı kurumun çağrı yapması.',
+    legalDiagnosis: 'Margin Call ve Başlangıç Teminatına Tamamlama Kuralı',
+    applicableLaw: 'VİOP İşleyiş Esasları ve Takasbank Prosedürleri',
+    consequenceOrPenalty: 'Yatırımcı ertesi iş günü (T+1) saat 15:00\'e kadar teminatını tekrar BAŞLANGIÇ seviyesine tamamlamak zorundadır',
+    examTrap: 'Teminat sürdürme seviyesine kadar değil; TEKRAR BAŞLANGIÇ TEMİNATI DÜZEYİNE tamamlanmak zorundadır.'
+  },
+  {
+    id: 'diag_19',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'Alım (Call) opsiyonu alan yatırımcının hisse fiyatının kullanım fiyatının altında kalması üzerine zarara uğraması.',
+    legalDiagnosis: 'Opsiyon Alıcısının Hukuki Durumu ve Zararın Sınırlandırılması',
+    applicableLaw: 'Türev Araçlar İlkeleri',
+    consequenceOrPenalty: 'Alıcı opsiyon hakkını kullanmaz; azami zararı ödediği primle sınırlı kalır',
+    examTrap: 'Opsiyon alıcısının teslim yükümlülüğü yoktur; aleyhine olan durumda hakkını kullanmaktan vazgeçebilir ve zararı prim kadardır.'
+  },
+  {
+    id: 'diag_20',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'Varant ihraç eden aracı kurumun iflas etmesi durumunda varant sahiplerinin Takasbank\'a başvurması.',
+    legalDiagnosis: 'Varantlarda İhraççı Kredi Riski ve MKT Garantisinin Olmaması',
+    applicableLaw: 'VII-128.3 Varantlar Tebliği',
+    consequenceOrPenalty: 'Varant ihraççının menkul kıymetidir; Takasbank MKT garantisi ihraççı iflasını kapsamaz, yatırımcı genel masaya başvurur',
+    examTrap: 'Varantlarda teminat tamamlama çağrısı yoktur ancak İHRAÇÇI KREDİ RİSKİ vardır; Takasbank CCP garantisi varant ihraççısının batmasını ödemez.'
+  },
+  {
+    id: 'diag_21',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'GYO\'nun portföyündeki nakit fazlasıyla bizzat inşaat makineleri alıp yüklenici sıfatıyla inşaat yapmaya başlaması.',
+    legalDiagnosis: 'GYO Faaliyet Yasakları (Bizzat Müteahhitlik Yapma Yasağı)',
+    applicableLaw: 'III-48.1 GYO Tebliği m. 22',
+    consequenceOrPenalty: 'GYO bizzat inşaat yapamaz; inşaat işlerini müteahhitlik şirketlerine ihale etmek zorundadır',
+    examTrap: 'GYO inşaat yapamaz, arsa geliştirip projeyi taşerona yaptırır; kazançları Kurumlar Vergisinden tamamen istisnadır (%0 KV).'
+  },
+  {
+    id: 'diag_22',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'VDMK ihraç eden fonun teminat havuzuna vadesi geçmiş ve icra takibine uğramış batık tüketici kredilerinin devredilmesi.',
+    legalDiagnosis: 'VDMK Teminat Havuzuna Kabul Edilemeyecek Varlık Yasağı',
+    applicableLaw: 'III-58.1 VDMK Tebliği m. 7',
+    consequenceOrPenalty: 'Batık/şüpheli alacaklar teminat havuzuna devredilemez; ihraç belgesi Kurulca onaylanmaz',
+    examTrap: 'VDMK teminat havuzuna vadesi gelmemiş ve tahsilatında gecikme olmayan standart sağlam alacaklar devredilebilir.'
+  },
+  {
+    id: 'diag_23',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'Borsa Yatırım Fonu (BYF) katılma paylarının seans içinde işlem görmesi ve fon payı yaratma/bozdurma mekanizması.',
+    legalDiagnosis: 'Yetkilendirilmiş Katılımcı ve Ayni Pay Yaratma/Bozdurma (Creation/Redemption)',
+    applicableLaw: 'III-52.2 BYF Tebliği',
+    consequenceOrPenalty: 'BYF borsada hisse gibi işlem görür; yetkilendirilmiş katılımcı baz varlık sepeti teslim ederek anlık pay yaratır/bozar',
+    examTrap: 'BYF katılma payları TEFAS\'ta tek fiyattan değil; seans boyunca Borsa İstanbul Pay Piyasası\'nda sürekli işlem görür.'
+  },
+  {
+    id: 'diag_24',
+    moduleId: '1003',
+    moduleName: 'SP Araçları',
+    scenarioEvent: 'Halka açık şirkette hâkim ortağın pay oranının %98\'e ulaşması üzerine azınlık ortakların durumdan rahatsız olması.',
+    legalDiagnosis: 'Ortaklıktan Çıkarma Hakkı ve Satma Hakkı Eşiği',
+    applicableLaw: 'II-27.3 Ortaklıktan Çıkarma ve Satma Hakları Tebliği',
+    consequenceOrPenalty: 'Hâkim ortak azınlığı şirketten çıkarabilir; azınlık pay sahipleri de paylarını hâkim ortağa satmaya zorlayabilir',
+    examTrap: 'Ortaklıktan çıkarma ve satma hakkı eşiği %50 veya %75 değil, KESİNLİKLE %98 OY HAKKI EŞİĞİDİR.'
+  },
+  {
+    id: 'diag_25',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Dar yetkili aracı kurumun Borsa İstanbul Pay Piyasası terminallerinden bizzat hisse alım satım emri icra etmesi.',
+    legalDiagnosis: 'Dar Yetkili Aracı Kurum Faaliyet Yetki Aşımı (İşlem Aracılığı Yasağı)',
+    applicableLaw: 'Yatırım Kuruluşları Tebliği (III-39.1) m. 5',
+    consequenceOrPenalty: 'Dar yetkili kurum borsada doğrudan işlem yapamaz; emirleri kısmi/geniş yetkili kuruma iletmek zorundadır',
+    examTrap: 'Dar yetkili aracı kurumlar emir iletimi yapabilir; ancak borsa terminallerinde bizzat emir icra edemez (işlem aracılığı yapamaz).'
+  },
+  {
+    id: 'diag_26',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Aracı kurum irtibat bürosu çalışanının müşteriden elden 500.000 TL nakit tahsil ederek hisse alım sözleşmesi imzalatması.',
+    legalDiagnosis: 'İrtibat Bürosu Ağır Yetki Aşımı ve Nakit Tahsilat Yasağı',
+    applicableLaw: 'Yatırım Kuruluşları Tebliği (III-39.1) m. 44',
+    consequenceOrPenalty: 'İrtibat bürosu hesap açamaz, sözleşme imzalayamaz, nakit/kıymet teslim alamaz ve ödeme yapamaz',
+    examTrap: 'Şubeler nakit/sözleşme işlemi yapabilir; irtibat büroları ise yalnızca tanıtım yapabilir ve emirleri merkeze iletebilir.'
+  },
+  {
+    id: 'diag_27',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Müşteri temsilcisinin belirli bir müşterinin mali gücünü analiz ederek şahsa özel hisse portföy sepeti önermesi.',
+    legalDiagnosis: 'Yatırım Danışmanlığı Hizmeti ve Yazılı Çerçeve Sözleşme Zorunluluğu',
+    applicableLaw: 'Yatırım Hizmetleri Tebliği (III-37.1) m. 11',
+    consequenceOrPenalty: 'Kişiye özel yönlendirici tavsiye Yatırım Danışmanlığıdır; SPK yetki belgesi, Düzey 3 Lisansı ve sözleşme şarttır',
+    examTrap: 'Web sitesinde herkese açık sabah bülteni Genel Tavsiyedir; müşterinin mali durumuna özel hazırlanan öneri Yatırım Danışmanlığıdır.'
+  },
+  {
+    id: 'diag_28',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Bireysel portföy yönetiminde piyasa krizi sebebiyle müşterinin 10 Milyon TL\'lik portföyünün 8 Milyon TL\'ye gerilemesi ve müşterinin zararı istemesi.',
+    legalDiagnosis: 'Vekâlet Sözleşmesi Sorumluluk Sınırı ve Getiri Garantisi Yasağı',
+    applicableLaw: 'TBK m. 502 ve III-55.1 Tebliği',
+    consequenceOrPenalty: 'Yönetici basiretli vekil gibi davrandığı sürece piyasa kaybından sorumlu tutulamaz; getiri taahhüdü kanunen yasaktır',
+    examTrap: 'Portföy yöneticiliği vekâlet akdidir; yönetici kâr garantisi veremez, kusuru olmaksızın oluşan piyasa kaybını tazmin etmez.'
+  },
+  {
+    id: 'diag_29',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Hisse hesabı olan müşterinin Uygunluk Testi sonucunda VİOP için \'uygun değildir\' uyarısı almasına rağmen işlem yapmak istemesi.',
+    legalDiagnosis: 'Uygunluk Testinde Müşteri Israrı ve Yazılı Beyanla İşlem İcrası',
+    applicableLaw: 'Yatırım Hizmetleri Tebliği (III-37.1) m. 33',
+    consequenceOrPenalty: 'Kurum yazılı risk uyarısı yapar; müşteri riski üstlendiğini yazılı beyan ederse işlem gerçekleştirilebilir',
+    examTrap: 'Uygunluk testinde müşteri ısrar ederse yazılı beyanla işlem yapılabilir; ancak Yerindelik Testinde (danışmanlık/portföy) ısrar etse dahi hizmet verilemez!'
+  },
+  {
+    id: 'diag_30',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Aracı kurumun hesabında 50 milyon TL bulunan bireysel fabrikatör müşteriyi doğrudan profesyonel müşteri sınıfına alması.',
+    legalDiagnosis: 'Müşteri Sınıflandırma Hatası (Gerçek Kişilerin Kendiliğinden Profesyonel Olamaması)',
+    applicableLaw: 'III-37.1 Tebliği m. 31 ve 32',
+    consequenceOrPenalty: 'Gerçek kişiler doğrudan profesyonel müşteri olamaz; yazılı talep ve 3 şarttan en az 2\'sini sağlaması zorunludur',
+    examTrap: 'Gerçek kişi ne kadar zengin olursa olsun doğrudan profesyonel müşteri DEĞİLDİR; sadece yazılı taleple Talebe Dayalı Profesyonel Müşteri olabilir.'
+  },
+  {
+    id: 'diag_31',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Kısmi yetkili bir aracı kurumun özsermayesinin 2026 yılı yasal eşiği olan 190 Milyon TL\'nin altına (150 Milyon TL\'ye) inmesi.',
+    legalDiagnosis: 'Asgari Özsermaye Yükümlülüğü Açığı ve Tamamlama Süreci',
+    applicableLaw: 'Yatırım Kuruluşları Tebliği (III-39.1)',
+    consequenceOrPenalty: 'Kurum derhal Kurula bildirir ve eksilen özsermayeyi mevzuatta tanınan yasal sürede tamamlamak zorundadır',
+    examTrap: '2026 Asgari Özsermaye Eşikleri: Dar Yetkili: 45M TL, Kısmi Yetkili: 190M TL, Geniş Yetkili: 380M TL\'dir.'
+  },
+  {
+    id: 'diag_32',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Kredili işlemde hisse düşüşüyle müşterinin özkaynak oranının %30\'a gerilemesi üzerine kurumun müşteriyi araması.',
+    legalDiagnosis: 'Sürdürme Özkaynak Oranı İhlali ve Tamamlama Süresi',
+    applicableLaw: 'Seri: V, No: 65 sayılı Tebliğ m. 13-17',
+    consequenceOrPenalty: 'Müşteri bildirimi izleyen 2 İŞ GÜNÜ içinde özkaynağını tekrar asgari %50 (Başlangıç) seviyesine tamamlamalıdır',
+    examTrap: 'Tamamlama süresi 2 takvim günü değil 2 İŞ GÜNÜDÜR; tamamlanması gereken oran %35 değil, BAŞLANGIÇ ORANI olan asgari %50\'dir.'
+  },
+  {
+    id: 'diag_33',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Açığa satış yasağı olmayan bir BIST hissesinde yatırımcının en son işlem fiyatı olan 100 TL\'den açığa satış emri girmesi (Up-tick Kuralı).',
+    legalDiagnosis: 'Yukarı Adım (Up-Tick) Kuralı Uygulama Zorunluluğu',
+    applicableLaw: 'Borsa İstanbul Açığa Satış Yönergesi',
+    consequenceOrPenalty: 'Fiyat düşüşünü engellemek için açığa satış son fiyattan daha yüksek bir fiyattan (en az 100,10 TL) yapılmalıdır',
+    examTrap: 'Yukarı adım kuralı geçerliyken son gerçekleşen fiyattan daha düşük fiyata açığa satış emri girilemez; en az son fiyattan yüksek girilmelidir.'
+  },
+  {
+    id: 'diag_34',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Görüntülü görüşmeyle uzaktan hesap açan müşterinin ilk para transferini şirket ortağının banka hesabından yapması.',
+    legalDiagnosis: 'Uzaktan Müşteri Ediniminde İlk Para Transferi Kuralı İhlali',
+    applicableLaw: 'Sermaye Piyasasında Uzaktan Kimlik Tespiti Tebliği',
+    consequenceOrPenalty: 'Hesap aktifleşmez; ilk EFT/Havale MUTLAKA müşterinin kendi adına açılmış banka hesabından gelmelidir',
+    examTrap: 'Uzaktan edinimde ilk para transferi eş, ortak veya akraba hesabından yapılamaz; bizzat müşterinin kendi ad ve soyadına kayıtlı olmalıdır.'
+  },
+  {
+    id: 'diag_35',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Aracı kurumun yer darlığı nedeniyle 3 yıl önceki müşteri emir formlarını ve telefon ses kayıtlarını imha etmesi.',
+    legalDiagnosis: 'Belge ve Kayıt Düzeni Saklama Süresi İhlali',
+    applicableLaw: 'III-45.1 Belge ve Kayıt Düzeni Tebliği m. 28',
+    consequenceOrPenalty: 'Müşteri sözleşmeleri, emir kayıtları ve telefon ses kayıtları EN AZ 5 YIL saklanmak zorundadır',
+    examTrap: 'TTK genel ticari defter saklama süresi 10 yıldır; ancak SPK Belge ve Kayıt Düzeni Tebliği uyarınca müşteri kayıtları EN AZ 5 YIL saklanır.'
+  },
+  {
+    id: 'diag_36',
+    moduleId: '1005',
+    moduleName: 'Yatırım Kur.',
+    scenarioEvent: 'Aracı kurum organizasyon şemasında İç Denetim Birimi yöneticisinin doğrudan Şirket Genel Müdürüne bağlanması.',
+    legalDiagnosis: 'İç Denetimin Bağımsızlığı İlkesi İhlali',
+    applicableLaw: 'Yatırım Kuruluşları Tebliği (III-39.1) m. 18',
+    consequenceOrPenalty: 'İç denetim icraya (Genel Müdüre) bağlanamaz; doğrudan Yönetim Kurulu veya Denetim Komitesine bağlı olmalıdır',
+    examTrap: 'İç Denetim ve İç Kontrol birimleri Genel Müdüre DEĞİL, doğrudan Yönetim Kurulu\'na veya Denetim Komitesi\'ne bağlı çalışır.'
+  },
+  {
+    id: 'diag_37',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'Pay Piyasasında T+2 takas günü saat 16:45 itibarıyla nakit takas borcunu kapatamayan aracı kurumun durumu.',
+    legalDiagnosis: 'Takas Borcu Temerrüdü ve 16:45 Kesin Takas Kapanış Saati',
+    applicableLaw: 'Takasbank Merkezi Karşı Taraf Yönergesi',
+    consequenceOrPenalty: '16:45\'te borç kapatılmazsa temerrüt başlar; teminatlar ve garanti fonu şelale sırasıyla devreye girer',
+    examTrap: 'Pay Piyasası takas kapanış saati 17:30 veya 18:00 değil, tam olarak 16:45\'tir. Teminat tamamlama çağrısı son saati ise 15:00\'tir.'
+  },
+  {
+    id: 'diag_38',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'Borçlanma Araçları Piyasası (BAP) takasında üyenin nakit borcunu saat 16:48\'de Takasbank hesabına yatırması.',
+    legalDiagnosis: 'BAP Ön Temerrüt Süreci ve 0.25 İndirimli Gecikme Katsayısı',
+    applicableLaw: 'Takasbank BAP Takas ve Temerrüt Esasları',
+    consequenceOrPenalty: '16:46 - 17:00 arası ön temerrüttür; üye 0.25 gecikme katsayısıyla faiz ödeyerek temerrütsüz borcunu kapatır',
+    examTrap: 'Ön temerrüt (16:46-17:00 arası 0.25 katsayı) SADECE Borçlanma Araçları Piyasası\'nda vardır; Pay Piyasası\'nda ön temerrüt yoktur.'
+  },
+  {
+    id: 'diag_39',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'Takasbank MKT temerrüt şelalesinde temerrüde düşen üyenin teminatları ve garanti fonu katkı payı yetersiz kaldığında devreye giren kaynak.',
+    legalDiagnosis: 'Takasbank Taahhütlü MKT Özkaynak Payı (3. Sıra Sermaye Katkısı)',
+    applicableLaw: 'Takasbank MKT Yönergesi m. 36',
+    consequenceOrPenalty: 'Masum diğer üyelerin Garanti Fonuna geçilmeden ÖNCE Takasbank kendi taahhüt ettiği sermaye katkısını harcar',
+    examTrap: 'Takasbank özkaynağı en sona bırakılmaz; 3. sırada Takasbank taahhütlü özkaynağı devreye girer, 4. sırada diğer üyelerin fonu kullanılır.'
+  },
+  {
+    id: 'diag_40',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'MKK doğrudan hak sahipliği sisteminde işlem yapan bir aracı kurumun iflas etmesi halinde müşteri hisselerinin hukuki durumu.',
+    legalDiagnosis: 'Doğrudan Hak Sahipliği ve Mülkiyetin Ayrılığı İlkesi',
+    applicableLaw: '6362 sayılı SPKn m. 13 ve 81',
+    consequenceOrPenalty: 'Paylar aracı kurum havuzunda değil müşteri TCKN alt hesabında olduğundan iflas masasına devredilemez',
+    examTrap: 'Türkiye\'de Omnibus saklama değil Doğrudan Hak Sahipliği geçerlidir; kurum batsa dahi müşterinin hisseleri eksiksiz korunur.'
+  },
+  {
+    id: 'diag_41',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'Yatırımcının e-YATIRIMCI uygulamasından hisselerine \'Yatırımcı Blokajı\' koyması sonrasında kurumun hisseyi virmanlamak istemesi.',
+    legalDiagnosis: 'MKK Yatırımcı Blokajı Güvenlik Modülü ve Virman Engeli',
+    applicableLaw: 'MKK Hak Sahipliği ve e-YATIRIMCI Yönergesi',
+    consequenceOrPenalty: 'Blokajı yalnızca yatırımcı kaldırabilir; aracı kurum veya çalışanları hisse üzerinde hiçbir işlem yapamaz',
+    examTrap: 'Yatırımcı blokajı Takasbank nezdinde değil; Merkezi Kayıt Kuruluşu (MKK) e-YATIRIMCI uygulaması üzerinden konulur.'
+  },
+  {
+    id: 'diag_42',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'Borsada hisseleri %70 düşen yatırımcının uğradığı sermaye kaybını Yatırımcı Tazmin Merkezi\'nden (YTM) talep etmesi.',
+    legalDiagnosis: 'YTM Kanuni Tazmin Kapsamı Dışılık (Piyasa Fiyat Düşüşü Zararları)',
+    applicableLaw: '6362 sayılı SPKn m. 82-84',
+    consequenceOrPenalty: 'Tazmin talebi reddedilir; YTM borsa fiyat düşüşü ve yatırım risklerini KESİNLİKLE TAZMİN ETMEZ',
+    examTrap: 'YTM piyasa kaybını ödemez; yalnızca aracı kurumun iflası/tasfiyesi nedeniyle müşteriye emanet kıymet ve nakdi verememesi halinde devreye girer.'
+  },
+  {
+    id: 'diag_43',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'BAP Kesin Alım Satım Pazarında saat 11:30\'da aynı gün valörlü (T+0) gerçekleşen DİBS alım satımının takas saati.',
+    legalDiagnosis: 'BAP T+0 Kesin Takas Kapanış Saati',
+    applicableLaw: 'Borsa İstanbul BAP Yönergesi ve Takas Esasları',
+    consequenceOrPenalty: 'İşlem T+0 günü en geç saat 16:45 itibarıyla nakit ve kıymet takası tamamlanmak zorundadır',
+    examTrap: 'Aynı gün valörlü (T+0) DİBS işlemlerinde de takas borcu kapama son saati 16:45\'tir.'
+  },
+  {
+    id: 'diag_44',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'Satış yapan üyenin T+2\'de hisseyi teslim edememesi ve ÖPP\'den de ödünç hisse bulunamaması üzerine Takasbank\'ın harekete geçmesi.',
+    legalDiagnosis: 'Takasbank Temerrüt İkame Alımı (Borsa Temerrüt Sırası / Buy-in)',
+    applicableLaw: 'Takasbank Ödünç Pay Piyasası ve Temerrüt Yönergesi',
+    consequenceOrPenalty: 'Takasbank T+3 günü saat 11:00\'e kadar açık piyasadan re\'sen ikame alım yapar; oluşan maliyeti temerrüt eden üyeden tahsil eder',
+    examTrap: 'Takasbank açık piyasadan re\'sen alımı takas günü değil; takası izleyen iş günü olan T+3 saat 11:00\'e kadar Borsa Temerrüt Sırasında yapar.'
+  },
+  {
+    id: 'diag_45',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'Portföy saklayıcısı bankanın portföy yönetim şirketi ile yaptığı saklama sözleşmesini feshetmek istemesi.',
+    legalDiagnosis: 'Portföy Saklama Sözleşmesi Fesih İhbar Süresi Zorunluluğu',
+    applicableLaw: 'Portföy Saklama Tebliği (III-56.1) m. 14',
+    consequenceOrPenalty: 'Fesih ihbarı en az 90 GÜN önceden karşı tarafa ve SPK\'ya yazılı olarak bildirilmek zorundadır',
+    examTrap: 'Saklama sözleşmesi fesih ihbar süresi 30 gün veya 60 gün değil; tam olarak 90 GÜNDÜR.'
+  },
+  {
+    id: 'diag_46',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'BISTECH risk algoritmasında üyenin teminat olarak sunduğu BIST 30 hisseleri ve DİBS\'lerin değerlemesi.',
+    legalDiagnosis: 'Nakit Dışı Teminatlarda Saç Tıraşı (Haircut / İskonto) ve Asgari Nakit TL Kuralı',
+    applicableLaw: 'Takasbank MKT Teminat Yönetmeliği',
+    consequenceOrPenalty: 'Kıymetlere risk katsayısı (iskonto) uygulanır ve VİOP pozisyonlarında asgari %50 nakit TL teminat oranı aranır',
+    examTrap: 'Nakit dışı teminatlar piyasa fiyatından %100 kabul edilmez; likidite ve fiyat riskine göre iskonto (haircut) kesilerek kabul edilir.'
+  },
+  {
+    id: 'diag_47',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: '2012 yılında kaydileştirilmeyen fiziki pay senetlerinin 10 yıl sonra mülkiyetinin YTM\'ye devredilmek istenmesi.',
+    legalDiagnosis: 'Kaydileştirilmeyen Paylarda Zamanaşımı Mülkiyet Devrinin AYM Tarafından İptali',
+    applicableLaw: 'Anayasa Mahkemesi İptal Kararı (2012/100 E., 2015/18 K.)',
+    consequenceOrPenalty: 'Payların mülkiyeti 10 yıl geçse dahi devlete geçmez; yönetim hakları donar, kâr payları YTM hesabında saklanır',
+    examTrap: 'Eski SPKn m. 13\'teki 10 yıllık zamanaşımıyla mülkiyetin devlete geçmesi hükmü AYM tarafından İPTAL EDİLMİŞTİR; mülkiyet hakkı zamanaşımına uğramaz.'
+  },
+  {
+    id: 'diag_48',
+    moduleId: '1012',
+    moduleName: 'Takas & Saklama',
+    scenarioEvent: 'Borsa İstanbul Kıymetli Madenler ve Taşlar Piyasası\'nda (KMTP) gerçekleşen altın ve gümüş işlemlerinin takas güvencesi.',
+    legalDiagnosis: 'Takasbank\'ın Merkezi Karşı Taraf OLMADIĞI Piyasa Statüsü',
+    applicableLaw: 'Takasbank MKT Yönergesi m. 3',
+    consequenceOrPenalty: 'Takasbank KMTP\'de takas bankasıdır ancak Merkezi Karşı Taraf (CCP) garantisi VERMEZ',
+    examTrap: 'Takasbank Pay, VİOP, BAP, TPP ve SWAP piyasalarında MKT\'dir; ancak Kıymetli Madenler ve Taşlar Piyasası\'nda (KMTP) MKT DEĞİLDİR!'
+  }
+];
+
 export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) => {
-  const [activeTab, setActiveTab] = useState<'all' | 'durations' | 'ratios' | 'comparisons' | 'traps'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'durations' | 'ratios' | 'comparisons' | 'traps' | 'diagnoses'>('all');
   const [moduleFilter, setModuleFilter] = useState<ModuleId | 'all'>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [showAllInAllTab, setShowAllInAllTab] = useState<boolean>(false);
+
+  const normalizedQuery = searchQuery.trim().toLowerCase();
 
   const filterItem = (text: string, modId: ModuleId) => {
     const matchesModule = moduleFilter === 'all' || moduleFilter === modId;
-    const matchesSearch = !searchQuery || text.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = !normalizedQuery || text.toLowerCase().includes(normalizedQuery);
     return matchesModule && matchesSearch;
   };
 
-  const filteredDurations = DURATIONS.filter(d => 
-    filterItem(`${d.duration} ${d.title} ${d.description} ${d.trap}`, d.moduleId)
+  const filteredDurations = useMemo(
+    () => DURATIONS.filter((d) => filterItem(`${d.duration} ${d.title} ${d.description} ${d.trap}`, d.moduleId)),
+    [moduleFilter, normalizedQuery]
   );
 
-  const filteredRatios = RATIOS.filter(r => 
-    filterItem(`${r.value} ${r.title} ${r.description} ${r.trap}`, r.moduleId)
+  const filteredRatios = useMemo(
+    () => RATIOS.filter((r) => filterItem(`${r.value} ${r.title} ${r.description} ${r.trap}`, r.moduleId)),
+    [moduleFilter, normalizedQuery]
   );
 
-  const filteredComparisons = COMPARISONS.filter(c => 
-    filterItem(`${c.conceptA.title} ${c.conceptB.title} ${c.differenceRule}`, c.moduleId)
+  const filteredComparisons = useMemo(
+    () => COMPARISONS.filter((c) => filterItem(`${c.conceptA.title} ${c.conceptB.title} ${c.differenceRule}`, c.moduleId)),
+    [moduleFilter, normalizedQuery]
   );
 
-  const filteredTraps = TRAPS.filter(t => 
-    filterItem(`${t.myth} ${t.reality} ${t.whyImportant}`, t.moduleId)
+  const filteredTraps = useMemo(
+    () => TRAPS.filter((t) => filterItem(`${t.myth} ${t.reality} ${t.whyImportant}`, t.moduleId)),
+    [moduleFilter, normalizedQuery]
   );
 
-  const filteredTotal = filteredDurations.length + filteredRatios.length + filteredComparisons.length + filteredTraps.length;
+  const filteredDiagnoses = useMemo(
+    () => DIAGNOSES.filter((d) => filterItem(`${d.scenarioEvent} ${d.legalDiagnosis} ${d.applicableLaw} ${d.consequenceOrPenalty} ${d.examTrap}`, d.moduleId)),
+    [moduleFilter, normalizedQuery]
+  );
+
+  const shouldCapAllTab = activeTab === 'all' && !showAllInAllTab && !normalizedQuery && moduleFilter === 'all';
+  const visibleDurations = shouldCapAllTab ? filteredDurations.slice(0, 9) : filteredDurations;
+  const visibleRatios = shouldCapAllTab ? filteredRatios.slice(0, 9) : filteredRatios;
+  const visibleComparisons = shouldCapAllTab ? filteredComparisons.slice(0, 6) : filteredComparisons;
+  const visibleTraps = shouldCapAllTab ? filteredTraps.slice(0, 6) : filteredTraps;
+  const visibleDiagnoses = shouldCapAllTab ? filteredDiagnoses.slice(0, 6) : filteredDiagnoses;
+
+  const filteredTotal = filteredDurations.length + filteredRatios.length + filteredComparisons.length + filteredTraps.length + filteredDiagnoses.length;
   const [isGeneratingPdf, setIsGeneratingPdf] = useState<boolean>(false);
-  const isFilterActive = moduleFilter !== 'all' || searchQuery.trim() !== '' || activeTab !== 'all';
+  const packagedScope = moduleFilter === 'all' ? 'all' : moduleFilter;
+  const canUsePackagedPdf = activeTab === 'all' && searchQuery.trim() === '';
 
   const handleDownloadPdf = async (scope: 'all' | 'filtered' = 'all') => {
     setIsGeneratingPdf(true);
     try {
+      const { downloadCheatSheetPdf, downloadPackagedCheatSheetPdf } = await import(
+        '../utils/cheatSheetPdfGenerator'
+      );
+      if (scope === 'all' && canUsePackagedPdf) {
+        downloadPackagedCheatSheetPdf(packagedScope);
+        return;
+      }
       if (scope === 'all') {
         await downloadCheatSheetPdf({
           durations: DURATIONS,
@@ -1868,7 +2737,7 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
           comparisons: COMPARISONS,
           traps: TRAPS,
           title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
-          filterTitle: 'Tüm Müfredat ve 4 Temel Modül (1001, 1003, 1005, 1012) - 115 Altın Hap Bilgi',
+          filterTitle: 'Tüm Müfredat ve 4 Temel Modül (1001, 1003, 1005, 1012) - 249 Altın Hap Bilgi ve Vaka Teşhisi',
         });
       } else {
         const moduleNameMap: Record<string, string> = {
@@ -1904,144 +2773,127 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
     }
   };
 
-  const handleOpenPreview = () => {
-    openCheatSheetInNewTab({
-      durations: activeTab === 'all' || activeTab === 'durations' ? filteredDurations : [],
-      ratios: activeTab === 'all' || activeTab === 'ratios' ? filteredRatios : [],
-      comparisons: activeTab === 'all' || activeTab === 'comparisons' ? filteredComparisons : [],
-      traps: activeTab === 'all' || activeTab === 'traps' ? filteredTraps : [],
-      title: 'SPK SERMAYE PİYASASI FAALİYETLERİ DÜZEY 1',
-      filterTitle: 'Altın Hap Bilgiler Raporu',
-    });
+  const handleOpenPreview = async () => {
+    if (canUsePackagedPdf) {
+      const { openPackagedCheatSheetPdf } = await import('../utils/cheatSheetPdfGenerator');
+      openPackagedCheatSheetPdf(packagedScope);
+      return;
+    }
+    await handleDownloadPdf('filtered');
   };
 
   return (
     <div className="space-y-8 animate-fadeIn pb-16">
       {/* Header Banner */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500/10 via-amber-50/40 to-white dark:from-amber-500/20 dark:via-fintech-card dark:to-slate-900/90 border border-amber-200 dark:border-amber-500/30 p-6 sm:p-8 shadow-sm dark:shadow-2xl">
-        <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div className="space-y-2 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-500/20 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 text-xs font-mono font-bold tracking-wide">
-              <Zap className="w-3.5 h-3.5 fill-amber-500 dark:fill-amber-300 text-amber-600 dark:text-amber-300" />
-              <span>SINAV ÖNCESİ 10 DAKİKA HIZLI TEKRAR</span>
+      <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-white dark:bg-fintech-surface border border-amber-200 dark:border-amber-500/30 p-4 sm:p-6 shadow-sm">
+        <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div className="space-y-1.5 max-w-2xl">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/20 border border-amber-300 dark:border-amber-500/40 text-amber-900 dark:text-amber-300 text-[11px] font-mono font-bold">
+              <Zap className="w-3 h-3 fill-amber-500 text-amber-600" />
+              <span>HIZLI TEKRAR • 249 ALTIN HAP BİLGİ</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
-              ⚡ Sınavın Altın Eşikleri, Süreleri ve Karıştırılan Tanımları
+            <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">
+              Sınavın Altın Eşikleri, Süreleri ve Karşılaştırmaları
             </h1>
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              Sınav salonuna girmeden önce 10 dakikada göz gezdirerek hata yapma ihtimalini ortadan kaldıran 36 kanuni süre, 36 kritik oran/sayı, 18 ikili kavram ayrımı ve 25 ölümcül sınav tuzağı (Temmuz 2026 SPL Düzey 1 Sınavına %100 Uyumlu).
+            <p className="hidden sm:block text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              58 kanuni süre, 56 kritik oran/sayı, 48 ikili kavram ayrımı, 39 sınav tuzağı ve 48 vaka teşhisi.
             </p>
           </div>
 
           {/* Quick Actions */}
-          <div className="flex flex-wrap items-center gap-3 shrink-0">
-            {/* Primary PDF Download Button */}
+          <div className="flex flex-wrap items-center gap-2 shrink-0 w-full md:w-auto">
+            <button
+              onClick={() => onNavigate('exam-morning')}
+              className="flex-1 md:flex-initial flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white text-xs font-black shadow-xs transition-all active:scale-95 cursor-pointer"
+            >
+              <Zap className="w-3.5 h-3.5 fill-white text-white" />
+              <span>Sınav Sabahı (15 Dk)</span>
+            </button>
+
             <button
               onClick={() => handleDownloadPdf('all')}
               disabled={isGeneratingPdf}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs font-bold shadow-md shadow-teal-700/20 transition-all active:scale-95 disabled:opacity-60 cursor-pointer"
-              title="115 Altın Hap Bilgiyi doğrudan bilgisayarına PDF olarak indir"
+              className="flex-1 md:flex-initial flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-bold shadow-xs transition-all active:scale-95 disabled:opacity-60 cursor-pointer"
             >
               {isGeneratingPdf ? (
-                <Loader2 className="w-4 h-4 text-white animate-spin" />
+                <Loader2 className="w-3.5 h-3.5 text-white animate-spin" />
               ) : (
-                <Download className="w-4 h-4 text-white stroke-[2.5]" />
+                <Download className="w-3.5 h-3.5 text-white" />
               )}
-              <span className="text-white font-bold">{isGeneratingPdf ? 'PDF Hazırlanıyor...' : 'PDF İndir (115 Madde)'}</span>
-            </button>
-
-            {/* Preview in New Tab Button */}
-            <button
-              onClick={handleOpenPreview}
-              className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-card border border-slate-300 dark:border-fintech-border text-slate-800 dark:text-slate-100 text-xs font-bold transition-all shadow-sm active:scale-95 cursor-pointer"
-              title="Yeni sekmede temiz A4 formatında görüntüle veya yazdır"
-            >
-              <Printer className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-              <span>Önizle / Yazdır</span>
-            </button>
-
-            {/* Filtered Download Button (only shown when filtered) */}
-            {isFilterActive && (
-              <button
-                onClick={() => handleDownloadPdf('filtered')}
-                disabled={isGeneratingPdf}
-                className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition-all shadow-sm active:scale-95 disabled:opacity-60 cursor-pointer"
-                title="Sadece ekranda listelenen maddeleri PDF olarak indir"
-              >
-                <Download className="w-3.5 h-3.5 text-slate-950" />
-                <span className="text-slate-950 font-bold">Seçili Görünümü İndir ({filteredTotal})</span>
-              </button>
-            )}
-
-            {/* Test CTA */}
-            <button
-              onClick={() => onNavigate('practice', { initialFilterMode: 'unseen' })}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-card border border-slate-300 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-xs font-bold transition-all shadow-sm active:scale-95 cursor-pointer"
-            >
-              <Play className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400 fill-teal-600 dark:fill-teal-400" />
-              <span>Çözülmemiş Sorular</span>
+              <span>{isGeneratingPdf ? 'Hazırlanıyor...' : 'PDF İndir (249)'}</span>
             </button>
           </div>
         </div>
       </div>
 
       {/* Control Bar: Filters & Search */}
-      <div className="bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-4 space-y-4 shadow-sm">
+      <div className="bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-3 sm:p-4 space-y-3 shadow-sm">
         {/* Category Tabs */}
-        <div className="flex flex-wrap items-center gap-2 border-b border-slate-100 dark:border-fintech-border/60 pb-3">
+        <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-slate-100 dark:border-fintech-border/60">
           <button
             onClick={() => setActiveTab('all')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'all'
                 ? 'bg-teal-600 text-white shadow-sm'
                 : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
-            Tüm Hap Bilgiler ({DURATIONS.length + RATIOS.length + COMPARISONS.length + TRAPS.length})
+            Tümü ({DURATIONS.length + RATIOS.length + COMPARISONS.length + TRAPS.length + DIAGNOSES.length})
           </button>
           <button
             onClick={() => setActiveTab('durations')}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'durations'
                 ? 'bg-amber-500 text-slate-950 shadow-sm'
                 : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             <Clock className="w-3.5 h-3.5" />
-            <span>⏱️ Kanuni Süreler & Günler ({DURATIONS.length})</span>
+            <span>Süreler ({DURATIONS.length})</span>
           </button>
           <button
             onClick={() => setActiveTab('ratios')}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'ratios'
                 ? 'bg-emerald-600 text-white shadow-sm'
                 : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             <Percent className="w-3.5 h-3.5" />
-            <span>📊 Rakamlar & Oranlar ({RATIOS.length})</span>
+            <span>Oranlar ({RATIOS.length})</span>
           </button>
           <button
             onClick={() => setActiveTab('comparisons')}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'comparisons'
                 ? 'bg-purple-600 text-white shadow-sm'
                 : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             <Scale className="w-3.5 h-3.5" />
-            <span>⚖️ Karıştırılan İkili Tanımlar ({COMPARISONS.length})</span>
+            <span>Karşılaştırmalar ({COMPARISONS.length})</span>
           </button>
           <button
             onClick={() => setActiveTab('traps')}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'traps'
                 ? 'bg-rose-600 text-white shadow-sm'
                 : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
             }`}
           >
             <AlertTriangle className="w-3.5 h-3.5" />
-            <span>🚨 Ölümcül Sınav Tuzakları ({TRAPS.length})</span>
+            <span>Tuzaklar ({TRAPS.length})</span>
+          </button>
+          <button
+            onClick={() => setActiveTab('diagnoses')}
+            className={`shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              activeTab === 'diagnoses'
+                ? 'bg-indigo-600 text-white shadow-sm'
+                : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-fintech-card'
+            }`}
+          >
+            <Brain className="w-3.5 h-3.5" />
+            <span>Vaka Teşhisi ({DIAGNOSES.length})</span>
           </button>
         </div>
 
@@ -2088,14 +2940,24 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
       {/* SECTION 1: DURATION CARDS */}
       {(activeTab === 'all' || activeTab === 'durations') && filteredDurations.length > 0 && (
         <div className="space-y-4">
-          <div className="flex items-center gap-2 border-b border-slate-200 dark:border-fintech-border/70 pb-2">
-            <Clock className="w-5 h-5 text-amber-500 dark:text-amber-400" />
-            <h2 className="text-lg font-black text-slate-900 dark:text-white">⏱️ Kanuni Süreler, Günler ve Valörler</h2>
-            <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredDurations.length} Eşik)</span>
+          <div className="flex items-center justify-between border-b border-slate-200 dark:border-fintech-border/70 pb-2">
+            <div className="flex items-center gap-2">
+              <Clock className="w-5 h-5 text-amber-500 dark:text-amber-400" />
+              <h2 className="text-lg font-black text-slate-900 dark:text-white">⏱️ Kanuni Süreler, Günler ve Valörler</h2>
+              <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredDurations.length} Eşik)</span>
+            </div>
+            {shouldCapAllTab && (
+              <button
+                onClick={() => setActiveTab('durations')}
+                className="text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline cursor-pointer"
+              >
+                Tümünü Gör ({filteredDurations.length}) →
+              </button>
+            )}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredDurations.map((item) => (
+            {visibleDurations.map((item) => (
               <div 
                 key={item.id}
                 className="bg-white dark:bg-fintech-surface rounded-2xl border border-amber-200 dark:border-amber-500/30 p-5 space-y-3 shadow-sm hover:border-amber-400 dark:hover:border-amber-500/60 transition-all flex flex-col justify-between"
@@ -2130,14 +2992,24 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
       {/* SECTION 2: RATIOS & THRESHOLDS */}
       {(activeTab === 'all' || activeTab === 'ratios') && filteredRatios.length > 0 && (
         <div className="space-y-4">
-          <div className="flex items-center gap-2 border-b border-slate-200 dark:border-fintech-border/70 pb-2">
-            <Percent className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-            <h2 className="text-lg font-black text-slate-900 dark:text-white">📊 Kritik Yüzdeler, Oranlar ve Parasal Eşikler</h2>
-            <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredRatios.length} Eşik)</span>
+          <div className="flex items-center justify-between border-b border-slate-200 dark:border-fintech-border/70 pb-2">
+            <div className="flex items-center gap-2">
+              <Percent className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+              <h2 className="text-lg font-black text-slate-900 dark:text-white">📊 Kritik Yüzdeler, Oranlar ve Parasal Eşikler</h2>
+              <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredRatios.length} Eşik)</span>
+            </div>
+            {shouldCapAllTab && (
+              <button
+                onClick={() => setActiveTab('ratios')}
+                className="text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline cursor-pointer"
+              >
+                Tümünü Gör ({filteredRatios.length}) →
+              </button>
+            )}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredRatios.map((item) => (
+            {visibleRatios.map((item) => (
               <div 
                 key={item.id}
                 className="bg-white dark:bg-fintech-surface rounded-2xl border border-emerald-200 dark:border-emerald-500/30 p-5 space-y-3 shadow-sm hover:border-emerald-400 dark:hover:border-emerald-500/60 transition-all flex flex-col justify-between"
@@ -2172,14 +3044,24 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
       {/* SECTION 3: COMPARISON CARDS */}
       {(activeTab === 'all' || activeTab === 'comparisons') && filteredComparisons.length > 0 && (
         <div className="space-y-4">
-          <div className="flex items-center gap-2 border-b border-slate-200 dark:border-fintech-border/70 pb-2">
-            <Scale className="w-5 h-5 text-purple-600 dark:text-purple-400" />
-            <h2 className="text-lg font-black text-slate-900 dark:text-white">⚖️ Sınavda En Çok Karıştırılan İkili Kavramlar</h2>
-            <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredComparisons.length} İkili)</span>
+          <div className="flex items-center justify-between border-b border-slate-200 dark:border-fintech-border/70 pb-2">
+            <div className="flex items-center gap-2">
+              <Scale className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+              <h2 className="text-lg font-black text-slate-900 dark:text-white">⚖️ Sınavda En Çok Karıştırılan İkili Kavramlar</h2>
+              <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredComparisons.length} İkili)</span>
+            </div>
+            {shouldCapAllTab && (
+              <button
+                onClick={() => setActiveTab('comparisons')}
+                className="text-xs font-bold text-purple-600 dark:text-purple-400 hover:underline cursor-pointer"
+              >
+                Tümünü Gör ({filteredComparisons.length}) →
+              </button>
+            )}
           </div>
 
           <div className="space-y-4">
-            {filteredComparisons.map((item) => (
+            {visibleComparisons.map((item) => (
               <div 
                 key={item.id}
                 className="bg-white dark:bg-fintech-surface rounded-2xl border border-purple-200 dark:border-purple-500/30 p-5 sm:p-6 space-y-4 shadow-sm"
@@ -2227,14 +3109,24 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
       {/* SECTION 4: EXAM TRAPS */}
       {(activeTab === 'all' || activeTab === 'traps') && filteredTraps.length > 0 && (
         <div className="space-y-4">
-          <div className="flex items-center gap-2 border-b border-slate-200 dark:border-fintech-border/70 pb-2">
-            <AlertTriangle className="w-5 h-5 text-rose-600 dark:text-rose-400" />
-            <h2 className="text-lg font-black text-slate-900 dark:text-white">🚨 Ölümcül Sınav Tuzakları (Doğru Bilinen Yanlışlar)</h2>
-            <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredTraps.length} Altın Kural)</span>
+          <div className="flex items-center justify-between border-b border-slate-200 dark:border-fintech-border/70 pb-2">
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="w-5 h-5 text-rose-600 dark:text-rose-400" />
+              <h2 className="text-lg font-black text-slate-900 dark:text-white">🚨 Ölümcül Sınav Tuzakları (Doğru Bilinen Yanlışlar)</h2>
+              <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredTraps.length} Altın Kural)</span>
+            </div>
+            {shouldCapAllTab && (
+              <button
+                onClick={() => setActiveTab('traps')}
+                className="text-xs font-bold text-rose-600 dark:text-rose-400 hover:underline cursor-pointer"
+              >
+                Tümünü Gör ({filteredTraps.length}) →
+              </button>
+            )}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {filteredTraps.map((item) => (
+            {visibleTraps.map((item) => (
               <div 
                 key={item.id}
                 className="bg-white dark:bg-fintech-surface rounded-2xl border border-rose-200 dark:border-rose-500/30 p-5 space-y-3.5 shadow-sm flex flex-col justify-between"
@@ -2268,8 +3160,86 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
         </div>
       )}
 
+      {/* SECTION 5: SCENARIO DIAGNOSES (MAARİF MODELİ VAKA TEŞHİSİ) */}
+      {(activeTab === 'all' || activeTab === 'diagnoses') && filteredDiagnoses.length > 0 && (
+        <div className="space-y-4">
+          <div className="flex items-center justify-between border-b border-slate-200 dark:border-fintech-border/70 pb-2">
+            <div className="flex items-center gap-2">
+              <Brain className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+              <h2 className="text-lg font-black text-slate-900 dark:text-white">🧠 Maarif Modeli: Vaka Teşhis & Hukuki Nitelendirme Matrisi</h2>
+              <span className="text-xs font-mono text-slate-500 dark:text-slate-400">({filteredDiagnoses.length} Somut Olay)</span>
+            </div>
+            {shouldCapAllTab && (
+              <button
+                onClick={() => setActiveTab('diagnoses')}
+                className="text-xs font-bold text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer"
+              >
+                Tümünü Gör ({filteredDiagnoses.length}) →
+              </button>
+            )}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {visibleDiagnoses.map((item) => (
+              <div 
+                key={item.id}
+                className="bg-white dark:bg-fintech-surface rounded-2xl border border-indigo-200 dark:border-indigo-500/30 p-5 space-y-3.5 shadow-sm hover:border-indigo-400 dark:hover:border-indigo-500/60 transition-all flex flex-col justify-between"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="px-2.5 py-1 rounded-xl bg-indigo-100 dark:bg-indigo-500/20 border border-indigo-300 dark:border-indigo-500/40 text-indigo-900 dark:text-indigo-300 font-mono text-xs font-bold">
+                      {item.applicableLaw}
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-fintech-card px-2 py-0.5 rounded-md border border-slate-200 dark:border-fintech-border">
+                      Modül {item.moduleId}
+                    </span>
+                  </div>
+
+                  <div className="space-y-1">
+                    <span className="text-[10px] font-mono uppercase text-indigo-600 dark:text-indigo-400 font-bold block">
+                      📌 Somut Finansal Olay / Senaryo:
+                    </span>
+                    <p className="text-xs text-slate-800 dark:text-slate-200 font-medium leading-relaxed bg-slate-50 dark:bg-fintech-card/60 p-2.5 rounded-xl border border-slate-200 dark:border-fintech-border/60">
+                      {item.scenarioEvent}
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                    <div className="p-2.5 rounded-xl bg-teal-50 dark:bg-teal-950/20 border border-teal-200 dark:border-teal-500/30">
+                      <span className="font-bold text-teal-900 dark:text-teal-300 block text-[11px] mb-0.5">🎯 Hukuki Teşhis:</span>
+                      <span className="text-slate-800 dark:text-slate-200 font-semibold">{item.legalDiagnosis}</span>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-500/30">
+                      <span className="font-bold text-purple-900 dark:text-purple-300 block text-[11px] mb-0.5">⚖️ Hukuki Sonuç / Yaptırım:</span>
+                      <span className="text-slate-800 dark:text-slate-200">{item.consequenceOrPenalty}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-500/20 text-[11px] text-slate-800 dark:text-amber-200/90 leading-relaxed">
+                  <span className="font-bold text-amber-700 dark:text-amber-400 block mb-0.5">⚠️ Sınav Çeldiricisi & Komisyon Hilesi:</span>
+                  {item.examTrap}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {shouldCapAllTab && (
+        <div className="flex justify-center pt-2">
+          <button
+            onClick={() => setShowAllInAllTab(true)}
+            className="px-6 py-3 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-black text-xs sm:text-sm shadow-md hover:opacity-90 active:scale-95 transition-all cursor-pointer"
+          >
+            Tüm 249 Hap Bilgi Kartını Tek Sayfada Göster
+          </button>
+        </div>
+      )}
+
+
       {/* Empty State */}
-      {filteredDurations.length === 0 && filteredRatios.length === 0 && filteredComparisons.length === 0 && filteredTraps.length === 0 && (
+      {filteredDurations.length === 0 && filteredRatios.length === 0 && filteredComparisons.length === 0 && filteredTraps.length === 0 && filteredDiagnoses.length === 0 && (
         <div className="bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-12 text-center text-slate-500 dark:text-slate-400 space-y-3 shadow-sm">
           <HelpCircle className="w-8 h-8 text-slate-400 dark:text-slate-500 mx-auto" />
           <p className="text-sm font-medium">Arama kriterinize uygun hap bilgi bulunamadı.</p>
@@ -2280,7 +3250,7 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
       <div className="rounded-2xl bg-gradient-to-r from-teal-50 via-slate-50 to-white dark:from-teal-500/10 dark:via-fintech-card dark:to-slate-900 border border-teal-200 dark:border-teal-500/30 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
         <div>
           <h4 className="text-sm font-black text-slate-900 dark:text-white">Sınav Bilgilerini Tazeledin mi?</h4>
-          <p className="text-xs text-slate-600 dark:text-slate-400">115 altın hap bilgiyi PDF olarak saklayabilir veya çözülmemiş sorularla hemen pratik yapabilirsin.</p>
+          <p className="text-xs text-slate-600 dark:text-slate-400">249 altın hap bilgiyi PDF olarak saklayabilir veya çözülmemiş sorularla hemen pratik yapabilirsin.</p>
         </div>
 
         <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
@@ -2290,14 +3260,14 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
             className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs font-bold transition-all shadow-sm disabled:opacity-60 cursor-pointer"
           >
             {isGeneratingPdf ? <Loader2 className="w-4 h-4 text-white animate-spin" /> : <Download className="w-4 h-4 text-white" />}
-            <span className="text-white font-bold">{isGeneratingPdf ? 'PDF Hazırlanıyor...' : 'PDF İndir (115 Madde)'}</span>
+            <span className="text-white font-bold">{isGeneratingPdf ? 'PDF Hazırlanıyor...' : 'PDF İndir (249 Madde)'}</span>
           </button>
           <button
             onClick={handleOpenPreview}
             className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-fintech-surface border border-slate-300 dark:border-fintech-border text-slate-800 dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-fintech-card text-xs font-bold transition-all shadow-sm cursor-pointer"
           >
             <Printer className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-            <span>Önizle / Yazdır</span>
+            <span>PDF Önizle / İndir</span>
           </button>
           <button
             onClick={() => onNavigate('practice', { initialFilterMode: 'unseen' })}
@@ -2310,7 +3280,7 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
             onClick={() => onNavigate('practice')}
             className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-black shadow-md shadow-teal-700/20 transition-all cursor-pointer"
           >
-            <span className="text-white font-bold">Rastgele Test Başlat (860)</span>
+            <span className="text-white font-bold">Rastgele Test Başlat (935)</span>
           </button>
         </div>
       </div>

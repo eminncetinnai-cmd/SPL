@@ -33,10 +33,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => 
 
   const navItems = [
     { id: 'home', label: 'Ana Sayfa', icon: Home },
-    { id: 'practice', label: 'Test Çöz', icon: Sparkles, badge: '860 Soru', color: 'text-teal-600 dark:text-teal-400' },
+    { id: 'exam-morning', label: '🔥 Sınav Sabahı (15 Dk)', icon: Zap, badge: 'Hap Kartlar', color: 'text-amber-500 animate-pulse font-bold' },
+    { id: 'practice', label: 'Test Çöz', icon: Sparkles, badge: '935 Soru', color: 'text-teal-600 dark:text-teal-400' },
     { id: 'cheat-sheet', label: '⚡ Sınav Hapları (10 Dk)', icon: Zap, badge: 'Hızlı Tekrar', color: 'text-amber-600 dark:text-amber-400' },
     { id: 'flashcards', label: 'Öğrenme Kartları', icon: Layers, badge: '400 Kart' },
     { id: 'study-notes', label: 'Konu Anlatımları', icon: FileText, badge: '32 Bölüm' },
+    { id: 'licenses', label: 'Lisanslar & Dersler', icon: Award, badge: '9 Lisans', color: 'text-indigo-600 dark:text-indigo-400' },
     { id: 'mistakes', label: 'Yanlışlarım Defteri', icon: AlertTriangle, count: mistakeCount, color: 'text-rose-500 dark:text-rose-400' },
     { id: 'bookmarks', label: 'Yıldızlı Sorular', icon: Star, count: bookmarkCount, color: 'text-amber-500 dark:text-amber-400' },
     { id: 'dashboard', label: 'Analitik & İstatistik', icon: BarChart3 },
@@ -126,7 +128,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => 
           <span className="text-emerald-600 dark:text-emerald-400 font-bold">ONLINE</span>
         </div>
         <div className="text-[11px] text-slate-600 dark:text-slate-300 leading-tight">
-          860 Soru • 400 Flashcard • 32 Ders Notu
+          935 Soru • 400 Flashcard • 32 Ders Notu
         </div>
         <div className="pt-2 border-t border-slate-200 dark:border-fintech-border/60 text-[10px] space-y-0.5">
           <div className="flex items-center justify-between">

@@ -11,7 +11,10 @@ import {
   ShieldCheck, 
   Database,
   Award,
-  BookOpen
+  BookOpen,
+  Smartphone,
+  CheckCircle2,
+  Share2
 } from 'lucide-react';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useProgressStore } from '../stores/progressStore';
@@ -233,14 +236,14 @@ export const SettingsPage: React.FC = () => {
             <div>
               <span className="text-xs font-bold text-teal-600 dark:text-teal-400 block">Soru Rotasyon Havuzunu Sıfırla</span>
               <span className="text-[11px] text-slate-500 dark:text-slate-400">
-                Sınav geçmişinizi silmeden, sadece çözülmüş soru işaretlerini temizler ({seenQuestionIds.length} soru çözülmüş). Tüm 800 soru tekrar yeni soru olarak sınavlara girer.
+                Sınav geçmişinizi silmeden, sadece çözülmüş soru işaretlerini temizler ({seenQuestionIds.length} soru çözülmüş). Tüm 935 soru tekrar yeni soru olarak sınavlara girer.
               </span>
             </div>
             <button
               onClick={() => {
                 if (confirm('Çözülmüş soru havuzu sıfırlanacak ve tüm sorular tekrar ilk kez çıkıyormuş gibi döngüye girecek. Sınav geçmişiniz silinmez. Onaylıyor musunuz?')) {
                   resetSeenQuestions('all');
-                  alert('Soru rotasyon havuzu başarıyla sıfırlandı. 800 soru taze olarak havuza döndü.');
+                  alert('Soru rotasyon havuzu başarıyla sıfırlandı. 935 soru taze olarak havuza döndü.');
                 }
               }}
               className="px-4 py-2 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-700 dark:text-teal-300 border border-teal-500/30 text-xs font-bold transition-all shrink-0 self-start sm:self-auto"
@@ -262,6 +265,60 @@ export const SettingsPage: React.FC = () => {
             >
               Fabrika Ayarlarına Dön
             </button>
+          </div>
+        </div>
+
+        {/* iPhone / iPad PWA Offline Guide Card */}
+        <div className="bg-gradient-to-br from-teal-500/10 via-slate-50 to-white dark:from-teal-500/10 dark:via-fintech-surface dark:to-slate-900 rounded-2xl border border-teal-300 dark:border-teal-500/30 p-5 sm:p-6 space-y-4 shadow-sm">
+          <div className="flex items-center justify-between border-b border-teal-200 dark:border-teal-500/20 pb-3">
+            <div className="flex items-center gap-2.5">
+              <div className="p-2 rounded-xl bg-teal-500/15 text-teal-700 dark:text-teal-400">
+                <Smartphone className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="text-sm font-black text-slate-900 dark:text-white">
+                  iPhone & iPad Çevrimdışı (Offline) Kurulum Rehberi
+                </h3>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  İnternetsiz metroda, uçakta ve yolda test çözmek için ana ekrana ekleyin.
+                </p>
+              </div>
+            </div>
+            <span className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-500/15 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-500/30 text-[10px] font-mono font-bold">
+              <CheckCircle2 className="w-3.5 h-3.5" />
+              <span>iOS Uyumlu</span>
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div className="p-3.5 rounded-xl bg-white dark:bg-fintech-card border border-slate-200 dark:border-fintech-border space-y-1.5 shadow-xs">
+              <span className="w-5 h-5 rounded-full bg-teal-600 text-white font-mono font-bold text-[11px] flex items-center justify-center">1</span>
+              <h4 className="font-bold text-slate-900 dark:text-white">Safari'de Açın</h4>
+              <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
+                Platformu iPhone'unuzun yerleşik <strong>Safari</strong> tarayıcısında açın.
+              </p>
+            </div>
+
+            <div className="p-3.5 rounded-xl bg-white dark:bg-fintech-card border border-slate-200 dark:border-fintech-border space-y-1.5 shadow-xs">
+              <span className="w-5 h-5 rounded-full bg-teal-600 text-white font-mono font-bold text-[11px] flex items-center justify-center">2</span>
+              <h4 className="font-bold text-slate-900 dark:text-white">Paylaş'a Dokunun</h4>
+              <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
+                Alttaki <strong>Paylaş (kare ve yukarı ok ⎋)</strong> butonuna tıklayın.
+              </p>
+            </div>
+
+            <div className="p-3.5 rounded-xl bg-white dark:bg-fintech-card border border-slate-200 dark:border-fintech-border space-y-1.5 shadow-xs">
+              <span className="w-5 h-5 rounded-full bg-teal-600 text-white font-mono font-bold text-[11px] flex items-center justify-center">3</span>
+              <h4 className="font-bold text-slate-900 dark:text-white">Ana Ekrana Ekle</h4>
+              <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
+                Menüden <strong>"Ana Ekrana Ekle"</strong>yi seçin ve <strong>"Ekle"</strong>ye basın.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-[11px] font-mono text-teal-800 dark:text-teal-300 bg-teal-50 dark:bg-teal-950/30 p-2.5 rounded-xl border border-teal-200 dark:border-teal-500/20 flex items-center gap-2">
+            <span>💡 İpucu:</span>
+            <span>Uygulama olarak eklendiğinde adres çubuğu kalkar, tam ekran ve tamamen internetsiz çalışır.</span>
           </div>
         </div>
 
@@ -291,13 +348,13 @@ export const SettingsPage: React.FC = () => {
               </span>
             </div>
             <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-              Programın tüm yazılım mimarisi, kullanıcı arayüzü tasarımı, sınav soru havuzu (860 soru), öğrenme kartları (400 kart) ve özet analiz tabloları <strong>Emin ÇETİN</strong> tarafından oluşturulmuştur. 5846 sayılı Fikir ve Sanat Eserleri Kanunu ile ilgili mevzuat hükümleri uyarınca <strong>tüm hakları saklıdır</strong>.
+              Programın tüm yazılım mimarisi, kullanıcı arayüzü tasarımı, sınav soru havuzu (935 soru), öğrenme kartları (400 kart) ve özet analiz tabloları <strong>Emin ÇETİN</strong> tarafından oluşturulmuştur. 5846 sayılı Fikir ve Sanat Eserleri Kanunu ile ilgili mevzuat hükümleri uyarınca <strong>tüm hakları saklıdır</strong>.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-2 pt-1 text-[11px] font-mono text-slate-500 dark:text-slate-400">
             <span>Müfredat: Temmuz 2026 SPL Standartları</span>
-            <span>Veri Tabanı: 860 Soru • 400 Kart • 32 Bölüm</span>
+            <span>Veri Tabanı: 935 Soru • 400 Kart • 32 Bölüm</span>
           </div>
         </div>
       </div>

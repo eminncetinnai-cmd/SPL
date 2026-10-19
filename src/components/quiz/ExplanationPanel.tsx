@@ -4,9 +4,13 @@ import {
   AlertTriangle, 
   CheckCircle2, 
   XCircle, 
-  ArrowRight,
-  BookOpen,
-  CornerDownRight
+  ArrowRight, 
+  BookOpen, 
+  Brain, 
+  Scale, 
+  FileText,
+  HelpCircle,
+  Sparkles
 } from 'lucide-react';
 import { Question } from '../../types/exam';
 
@@ -19,7 +23,7 @@ interface ExplanationPanelProps {
   isLastQuestion?: boolean;
 }
 
-export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
+export const ExplanationPanel: React.FC<ExplanationPanelProps> = React.memo(({
   question,
   isCorrect,
   selectedOption,
@@ -45,6 +49,36 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
   };
 
   const correctOptionObj = question.options?.find((o) => o.key === question.correct_answer);
+
+  // Maarif Cognitive Skill Metadata
+  const cognitiveMeta = {
+    KB3_Vaka: {
+      badge: '🧠 Maarif Düzeyi: KB3 (Vaka / Senaryo Tabanlı Hukuki Teşhis)',
+      subtitle: 'Gerçek hayattaki bir finansal vaka / eylem analiz edilerek ilgili sermaye piyasası normu ve hukuki sonucu teşhis edilmektedir.',
+      bg: 'bg-indigo-50/80 dark:bg-indigo-950/30',
+      border: 'border-indigo-200 dark:border-indigo-500/30',
+      text: 'text-indigo-900 dark:text-indigo-300',
+      icon: Brain
+    },
+    KB2_Muhakeme: {
+      badge: '⚖️ Maarif Düzeyi: KB2 (Hukuki Muhakeme & Karşılaştırma)',
+      subtitle: 'İki farklı kurum, tebliğ, kural veya istisna arasındaki ince hukuki ayrımlar ve kümülatif/seçimlik şartlar değerlendirilmektedir.',
+      bg: 'bg-sky-50/80 dark:bg-sky-950/30',
+      border: 'border-sky-200 dark:border-sky-500/30',
+      text: 'text-sky-900 dark:text-sky-300',
+      icon: Scale
+    },
+    KB1_Kavramsal: {
+      badge: '📚 Maarif Düzeyi: KB1 (Kavramsal Bilgi & Temel Norm)',
+      subtitle: 'Doğrudan kanuni tanım, süre, oran, asgari sermaye tutarı ve yetkili organ bilgisi ölçülmektedir.',
+      bg: 'bg-emerald-50/80 dark:bg-emerald-950/30',
+      border: 'border-emerald-200 dark:border-emerald-500/30',
+      text: 'text-emerald-900 dark:text-emerald-300',
+      icon: FileText
+    }
+  }[question.cognitive_skill || 'KB1_Kavramsal'];
+
+  const CognitiveIcon = cognitiveMeta.icon;
 
   return (
     <div 
@@ -97,7 +131,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
         {onNextQuestion && (
           <button
             onClick={onNextQuestion}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white font-bold text-xs shadow-sm active:scale-95 transition-all"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white font-bold text-xs shadow-sm active:scale-95 transition-all cursor-pointer"
           >
             <span>{isLastQuestion ? 'Sonuçlar' : 'Sonraki'}</span>
             <ArrowRight className="w-4 h-4" />
@@ -110,6 +144,19 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
         onScroll={handleScroll}
         className="p-6 sm:p-7 space-y-5 text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed"
       >
+        {/* Maarif Pedagogical Skill Banner */}
+        <div className={`p-3.5 rounded-2xl border ${cognitiveMeta.bg} ${cognitiveMeta.border} space-y-1`}>
+          <div className="flex items-center gap-2">
+            <CognitiveIcon className="w-4 h-4 text-teal-600 dark:text-teal-400 shrink-0" />
+            <span className={`text-xs font-mono font-bold uppercase tracking-wider ${cognitiveMeta.text}`}>
+              {cognitiveMeta.badge}
+            </span>
+          </div>
+          <p className="text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            {cognitiveMeta.subtitle}
+          </p>
+        </div>
+
         {/* Solution & Glossary Section */}
         {question.explanation && (() => {
           const parts = question.explanation.split('📌 Soruda Geçen Kısaltmalar & Terimler:');
@@ -121,9 +168,9 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-teal-700 dark:text-teal-400 font-bold text-xs tracking-wider uppercase font-mono">
                   <Lightbulb className="w-4 h-4 text-amber-500" />
-                  <span>Analitik Çözüm & Kanun Açıklaması</span>
+                  <span>Formatif Çözüm & Kanuni Gerekçe</span>
                 </div>
-                <div className="bg-slate-50 dark:bg-fintech-card/80 p-4 rounded-2xl border border-slate-200 dark:border-fintech-border/80 text-slate-800 dark:text-slate-200 text-sm whitespace-pre-line leading-relaxed">
+                <div className="bg-slate-50 dark:bg-fintech-card/80 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-fintech-border/80 text-slate-800 dark:text-slate-200 text-sm whitespace-pre-line leading-relaxed">
                   {mainExplanation}
                 </div>
               </div>
@@ -164,7 +211,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
           <div className="space-y-2 pt-1">
             <div className="flex items-center gap-2 text-amber-700 dark:text-amber-400 font-bold text-xs tracking-wider uppercase font-mono">
               <AlertTriangle className="w-4 h-4 text-amber-500" />
-              <span>Sınavda Çeldirici & Tuzak Noktası</span>
+              <span>Sınavda Çeldirici & Tuzak Noktası (Komisyon Hilesi)</span>
             </div>
             <div className="bg-amber-50/70 dark:bg-amber-950/20 p-4 rounded-2xl border border-amber-200 dark:border-amber-500/30 text-amber-950 dark:text-amber-200/90 text-sm leading-relaxed">
               {question.trap}
@@ -183,9 +230,9 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
           {onNextQuestion && (
             <button
               onClick={onNextQuestion}
-              className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl font-black text-xs shadow-md bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white active:scale-95 transition-all"
+              className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl font-black text-xs shadow-md bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white active:scale-95 transition-all cursor-pointer"
             >
-              <span>{isLastQuestion ? 'Testi Tamamla & Karneni Gör' : 'Sonraki Soruya Geç (Enter / →)'}</span>
+              <span>{isLastQuestion ? 'Testi Tamamla & Bilişsel Karneni Gör' : 'Sonraki Soruya Geç (Enter / →)'}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           )}
@@ -193,4 +240,4 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
       </div>
     </div>
   );
-};
+});

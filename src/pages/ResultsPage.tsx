@@ -15,7 +15,10 @@ import {
   ChevronUp, 
   Star,
   Sparkles,
-  HelpCircle
+  HelpCircle,
+  Brain,
+  Scale,
+  FileText
 } from 'lucide-react';
 import { useQuizStore } from '../stores/quizStore';
 import { useProgressStore } from '../stores/progressStore';
@@ -76,6 +79,38 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({ onNavigate }) => {
   const toggleExpand = (qId: string) => {
     setExpandedQuestions((prev) => ({ ...prev, [qId]: !prev[qId] }));
   };
+
+  // Compute Maarif Cognitive Skill Breakdown
+  const cognitiveBreakdown = React.useMemo(() => {
+    const stats: Record<string, { total: number; correct: number; wrong: number; empty: number; pct: number }> = {
+      KB1_Kavramsal: { total: 0, correct: 0, wrong: 0, empty: 0, pct: 0 },
+      KB2_Muhakeme: { total: 0, correct: 0, wrong: 0, empty: 0, pct: 0 },
+      KB3_Vaka: { total: 0, correct: 0, wrong: 0, empty: 0, pct: 0 }
+    };
+
+    questions.forEach((q) => {
+      const skill = q.cognitive_skill || 'KB1_Kavramsal';
+      const ans = user_answers[q.id];
+      if (!stats[skill]) {
+        stats[skill] = { total: 0, correct: 0, wrong: 0, empty: 0, pct: 0 };
+      }
+      stats[skill].total += 1;
+      if (ans && ans.is_correct) {
+        stats[skill].correct += 1;
+      } else if (ans && ans.selected_option !== null) {
+        stats[skill].wrong += 1;
+      } else {
+        stats[skill].empty += 1;
+      }
+    });
+
+    Object.keys(stats).forEach((k) => {
+      const s = stats[k];
+      s.pct = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
+    });
+
+    return stats;
+  }, [questions, user_answers]);
 
   const filteredQuestions = questions.filter((q) => {
     const ans = user_answers[q.id];
@@ -269,6 +304,92 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({ onNavigate }) => {
           </div>
         )}
 
+        {/* Türkiye Maarif Modeli: Bilişsel Yetkinlik Karnesi */}
+        <div className="space-y-3 pt-2">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Brain className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-800 dark:text-slate-200">
+                Türkiye Maarif Modeli: Bilişsel Yetkinlik Profili
+              </h3>
+            </div>
+            <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 font-semibold">
+              Formatif Ölçme & Analiz
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {/* KB1: Kavramsal Bilgi */}
+            <div className="p-4 rounded-2xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-500/30 space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-1.5 text-emerald-900 dark:text-emerald-300 font-bold text-xs">
+                  <FileText className="w-3.5 h-3.5" />
+                  <span>KB1: Kavramsal Bilgi</span>
+                </div>
+                <span className="font-mono text-xs font-black text-emerald-700 dark:text-emerald-400">
+                  %{cognitiveBreakdown.KB1_Kavramsal.pct}
+                </span>
+              </div>
+              <div className="w-full bg-emerald-200/60 dark:bg-emerald-900/40 h-2 rounded-full overflow-hidden">
+                <div 
+                  className="bg-emerald-500 h-full rounded-full transition-all duration-500" 
+                  style={{ width: `${cognitiveBreakdown.KB1_Kavramsal.pct}%` }}
+                />
+              </div>
+              <div className="flex justify-between text-[11px] font-mono text-slate-600 dark:text-slate-400 pt-0.5">
+                <span>{cognitiveBreakdown.KB1_Kavramsal.correct} / {cognitiveBreakdown.KB1_Kavramsal.total} Doğru</span>
+                <span className="text-[10px] text-emerald-800 dark:text-emerald-300 font-sans">Tanım & Süreler</span>
+              </div>
+            </div>
+
+            {/* KB2: Hukuki Muhakeme */}
+            <div className="p-4 rounded-2xl bg-sky-50/60 dark:bg-sky-950/20 border border-sky-200 dark:border-sky-500/30 space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-1.5 text-sky-900 dark:text-sky-300 font-bold text-xs">
+                  <Scale className="w-3.5 h-3.5" />
+                  <span>KB2: Hukuki Muhakeme</span>
+                </div>
+                <span className="font-mono text-xs font-black text-sky-700 dark:text-sky-400">
+                  %{cognitiveBreakdown.KB2_Muhakeme.pct}
+                </span>
+              </div>
+              <div className="w-full bg-sky-200/60 dark:bg-sky-900/40 h-2 rounded-full overflow-hidden">
+                <div 
+                  className="bg-sky-500 h-full rounded-full transition-all duration-500" 
+                  style={{ width: `${cognitiveBreakdown.KB2_Muhakeme.pct}%` }}
+                />
+              </div>
+              <div className="flex justify-between text-[11px] font-mono text-slate-600 dark:text-slate-400 pt-0.5">
+                <span>{cognitiveBreakdown.KB2_Muhakeme.correct} / {cognitiveBreakdown.KB2_Muhakeme.total} Doğru</span>
+                <span className="text-[10px] text-sky-800 dark:text-sky-300 font-sans">Karşılaştırma</span>
+              </div>
+            </div>
+
+            {/* KB3: Vaka Analizi */}
+            <div className="p-4 rounded-2xl bg-indigo-50/60 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-500/30 space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-1.5 text-indigo-900 dark:text-indigo-300 font-bold text-xs">
+                  <Brain className="w-3.5 h-3.5" />
+                  <span>KB3: Vaka Analizi</span>
+                </div>
+                <span className="font-mono text-xs font-black text-indigo-700 dark:text-indigo-400">
+                  %{cognitiveBreakdown.KB3_Vaka.pct}
+                </span>
+              </div>
+              <div className="w-full bg-indigo-200/60 dark:bg-indigo-900/40 h-2 rounded-full overflow-hidden">
+                <div 
+                  className="bg-indigo-500 h-full rounded-full transition-all duration-500" 
+                  style={{ width: `${cognitiveBreakdown.KB3_Vaka.pct}%` }}
+                />
+              </div>
+              <div className="flex justify-between text-[11px] font-mono text-slate-600 dark:text-slate-400 pt-0.5">
+                <span>{cognitiveBreakdown.KB3_Vaka.correct} / {cognitiveBreakdown.KB3_Vaka.total} Doğru</span>
+                <span className="text-[10px] text-indigo-800 dark:text-indigo-300 font-sans">Senaryo & Teşhis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-3 pt-3 border-t border-slate-100 dark:border-fintech-border/70">
           {wrong_count > 0 && (
@@ -388,6 +509,21 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({ onNavigate }) => {
                         <span className="font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
                           Modül {q.module_id}
                         </span>
+                        {q.cognitive_skill === 'KB3_Vaka' && (
+                          <span className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-200 dark:bg-indigo-500/20 dark:text-indigo-300 dark:border-indigo-500/30 font-bold">
+                            KB3: Vaka
+                          </span>
+                        )}
+                        {q.cognitive_skill === 'KB2_Muhakeme' && (
+                          <span className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 border border-sky-200 dark:bg-sky-500/20 dark:text-sky-300 dark:border-sky-500/30 font-bold">
+                            KB2: Muhakeme
+                          </span>
+                        )}
+                        {q.cognitive_skill === 'KB1_Kavramsal' && (
+                          <span className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 font-bold">
+                            KB1: Bilgi
+                          </span>
+                        )}
                         {q.topic && (
                           <span className="text-slate-500 dark:text-slate-400 truncate max-w-xs hidden sm:inline">
                             {q.topic}

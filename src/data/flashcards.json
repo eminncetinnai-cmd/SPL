@@ -2013,31 +2013,31 @@
     "id": "fc_1005_002",
     "module_id": "1005",
     "number": 2,
-    "title": "3 Kademeli Yetki Belgesi Sistemi",
+    "title": "3 Kademeli Yetki Sistemi ve 2026 Asgari Özsermayeleri",
     "chapter": "BÖLÜM 1: YATIRIM KURULUŞLARININ KURULUŞ VE FAALİYET ESASLARI",
-    "definition": "Aracı kurumlar yetki ve sermaye güçlerine göre 3 gruba ayrılır: 1- Dar Yetkili, 2- Kısmi Yetkili, 3- Geniş Yetkili Aracı Kurumlar.",
-    "example": "Dar Yetkili sadece emir iletir; Kısmi Yetkili bizzat işlem aracılığı yapar; Geniş Yetkili ise kendi namına işlem (portföy aracılığı) ve bakiye yüklenimi yapabilir.",
-    "trap": "Faaliyet yetkileri arttıkça kurumun sahip olması gereken asgari özsermaye yükümlülüğü katlanarak artar."
+    "definition": "Aracı kurumlar yetki ve sermaye güçlerine göre 3 gruba ayrılır: 1- Dar Yetkili (2026 Asgari Özsermaye: 45 Milyon TL), 2- Kısmi Yetkili (190 Milyon TL), 3- Geniş Yetkili (380 Milyon TL). Yeni kurulan PYŞ asgari sermayesi ise 440 Milyon TL'dir.",
+    "example": "Dar Yetkili (45M TL) sadece emir iletir; Kısmi Yetkili (190M TL) bizzat işlem aracılığı yapar; Geniş Yetkili (380M TL) ise kendi namına işlem (portföy aracılığı), bakiye yüklenimi ve genel saklama yapabilir.",
+    "trap": "2026 güncel limitleri Dar: 45M, Kısmi: 190M, Geniş: 380M TL'dir. Eski yıllara ait sermaye tutarları sınavdaki en büyük tuzaktır."
   },
   {
     "id": "fc_1005_003",
     "module_id": "1005",
     "number": 3,
-    "title": "Dar Yetkili Aracı Kurumların Sınırları",
+    "title": "Dar Yetkili Aracı Kurumlar ve 2026 Sermayesi (45M TL)",
     "chapter": "BÖLÜM 1: YATIRIM KURULUŞLARININ KURULUŞ VE FAALİYET ESASLARI",
-    "definition": "Sadece emir iletimine aracılık, en iyi gayret halka arzı ve yatırım danışmanlığı yapabilirler; KESİNLİKLE kendi namına işlem yapamaz, kredili işlem/açığa satış yaptıramazlar.",
-    "example": "Dar yetkili bir kurum müşteri emrini alır, bizzat borsaya iletemez; anlaşmalı olduğu geniş yetkili aracı kuruma aktarır.",
-    "trap": "Dar yetkili kurumlar portföy aracılığı ve bakiye yüklenimi KESİNLİKLE YAPAMAZ."
+    "definition": "Sadece emir iletimine aracılık, en iyi gayret halka arzı ve yatırım danışmanlığı yapabilirler; asgari özsermayeleri 45.000.000 TL'dir. KESİNLİKLE kendi namına işlem yapamaz, bakiye yüklenemez, kredili işlem/açığa satış yaptıramazlar.",
+    "example": "Dar yetkili bir kurum müşteri emrini alır, bizzat borsaya iletemez; anlaşmalı olduğu geniş veya kısmi yetkili aracı kuruma aktarır.",
+    "trap": "Dar yetkili kurumlar portföy aracılığı, bakiye yüklenimi ve kredili işlem KESİNLİKLE YAPAMAZ; sermaye eşiği 45M TL'dir."
   },
   {
     "id": "fc_1005_004",
     "module_id": "1005",
     "number": 4,
-    "title": "Geniş Yetkili Aracı Kurumların Ayrıcalıklı Faaliyetleri",
+    "title": "Geniş Yetkili Aracı Kurumlar ve 2026 Sermayesi (380M TL)",
     "chapter": "BÖLÜM 1: YATIRIM KURULUŞLARININ KURULUŞ VE FAALİYET ESASLARI",
-    "definition": "Portföy aracılığı (kendi nam ve hesabına işlem), bakiye/tümünü yüklenim halka arz, varant ihracı ve tezgahüstü türev işlemler yalnızca Geniş Yetkili kurumlara açıktır.",
-    "example": "Borsada piyasa yapıcılığı üstlenen veya kendi adına hisse alıp satan büyük ölçekli bir aracı kurum.",
-    "trap": "En yüksek sermaye yeterliliği şartına tabi olan gruptur."
+    "definition": "Portföy aracılığı (kendi nam ve hesabına işlem), bakiye/tümünü yüklenim halka arz, varant ihracı ve genel saklama hizmetleri yalnızca Geniş Yetkili kurumlara açıktır; 2026 asgari özsermayesi 380.000.000 TL'dir.",
+    "example": "Borsada piyasa yapıcılığı üstlenen, bakiye yüklenimiyle halka arza liderlik eden veya kendi adına portföy işleten büyük ölçekli aracı kurum.",
+    "trap": "En yüksek sermaye yeterliliği şartına (380M TL) tabi gruptur. Portföy aracılığı sadece geniş yetkiliye mahsustur."
   },
   {
     "id": "fc_1005_005",
@@ -2193,11 +2193,11 @@
     "id": "fc_1005_020",
     "module_id": "1005",
     "number": 20,
-    "title": "Asgari Özsermaye Yükümlülüğünün Kaybedilmesi",
+    "title": "Asgari Özsermaye Yükümlülüğünün Kaybedilmesi ve Süreler",
     "chapter": "BÖLÜM 1: YATIRIM KURULUŞLARININ KURULUŞ VE FAALİYET ESASLARI",
-    "definition": "Özsermayesi yasal sınırın altına düşen aracı kuruma SPK tarafından tamamlaması için süre verilir; tamamlanamazsa faaliyet yetkileri sınırlandırılır veya iptal edilir.",
-    "example": "Sermaye yeterliliği açığı veren kuruma 3 ay süre tanınması, ortakların sermaye koymaması halinde işlemlerin durdurulması.",
-    "trap": "Kurumun mali güvenliğini koruyan en temel denetim eşiğidir."
+    "definition": "Özsermayesi yasal sınırın (Dar: 45M, Kısmi: 190M, Geniş: 380M TL) altına düşen aracı kuruma SPK tarafından tamamlaması için en fazla 3 ay süre verilir; tamamlanamazsa faaliyet yetkileri sınırlandırılır veya iptal edilir.",
+    "example": "Zarar nedeniyle özsermayesi 380M TL altına düşen geniş yetkili kuruma SPK'nın 3 ay süre vermesi; sermaye artırımı yapılmazsa yetkisinin kısmi yetkiliye düşürülmesi.",
+    "trap": "Asgari sermayenin altına düşüldüğünde derhal lisans iptal edilmez; kanunen eksikliğin giderilmesi için süre tanınır."
   },
   {
     "id": "fc_1005_021",

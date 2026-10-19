@@ -14,10 +14,25 @@ export default defineConfig({
     chunkSizeWarningLimit: 2000,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'zustand'],
-          charts: ['recharts'],
-          icons: ['lucide-react'],
+        manualChunks(id) {
+          if (id.includes('node_modules/react') || id.includes('node_modules/zustand')) {
+            return 'vendor';
+          }
+          if (id.includes('node_modules/recharts') || id.includes('node_modules/d3-')) {
+            return 'charts';
+          }
+          if (id.includes('node_modules/lucide-react')) {
+            return 'icons';
+          }
+          if (id.includes('node_modules/jspdf') || id.includes('node_modules/html2canvas')) {
+            return 'pdf-export';
+          }
+          if (id.includes('src/data/all_questions.json')) {
+            return 'data-questions';
+          }
+          if (id.includes('src/data/flashcards.json') || id.includes('src/data/topic_notes.json')) {
+            return 'data-study';
+          }
         },
       },
     },

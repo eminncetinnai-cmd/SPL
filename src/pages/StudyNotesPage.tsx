@@ -178,9 +178,9 @@ export const StudyNotesPage: React.FC<StudyNotesPageProps> = ({
       </div>
 
       {/* Search and Study Container */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
         {/* Left Column: Chapters / Sections Index & Search */}
-        <div className="lg:col-span-4 space-y-4">
+        <div className="lg:col-span-4 space-y-3">
           {/* Search Box */}
           <div className="relative">
             <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
@@ -189,12 +189,32 @@ export const StudyNotesPage: React.FC<StudyNotesPageProps> = ({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Konu, süre veya kanun maddesi ara..."
-              className="w-full bg-white dark:bg-fintech-surface border border-slate-200 dark:border-fintech-border rounded-xl pl-10 pr-4 py-2.5 text-xs text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors shadow-sm"
+              className="w-full bg-white dark:bg-fintech-surface border border-slate-200 dark:border-fintech-border rounded-xl pl-10 pr-4 py-2.5 text-xs text-slate-900 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors shadow-xs"
             />
           </div>
 
-          {/* Section Index List */}
-          <div className="bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-3 space-y-1.5 max-h-[600px] overflow-y-auto shadow-sm">
+          {/* Mobile Horizontal Chapter Selector (lg:hidden) */}
+          <div className="lg:hidden flex items-center gap-2 overflow-x-auto pb-1.5 -mx-1 px-1">
+            {filteredSections.map((sec, idx) => {
+              const isSelected = selectedSection?.id === sec.id;
+              return (
+                <button
+                  key={sec.id}
+                  onClick={() => setActiveSectionId(sec.id)}
+                  className={`shrink-0 px-3 py-2 rounded-xl border text-xs font-bold transition-all cursor-pointer ${
+                    isSelected
+                      ? 'bg-teal-600 text-white border-teal-700 shadow-xs'
+                      : 'bg-white dark:bg-fintech-surface text-slate-700 dark:text-slate-300 border-slate-200 dark:border-fintech-border'
+                  }`}
+                >
+                  Bölüm {idx + 1}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Desktop Section Index List (hidden lg:block) */}
+          <div className="hidden lg:block bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-3 space-y-1.5 max-h-[600px] overflow-y-auto shadow-sm">
             <p className="text-[11px] font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold px-2 py-1">
               İçindekiler ({filteredSections.length} Konu Başlığı)
             </p>
@@ -223,7 +243,7 @@ export const StudyNotesPage: React.FC<StudyNotesPageProps> = ({
                         </span>
                       )}
                       {isSecPlaying && (
-                        <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono inline-flex items-center gap-1 animate-pulse">
+                        <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono inline-flex items-center gap-1">
                           <Volume2 className="w-2.5 h-2.5" /> Çalıyor
                         </span>
                       )}
@@ -238,7 +258,7 @@ export const StudyNotesPage: React.FC<StudyNotesPageProps> = ({
         {/* Right Column: Active Section Reader */}
         <div className="lg:col-span-8">
           {selectedSection ? (
-            <div className="bg-white dark:bg-fintech-surface rounded-3xl border border-slate-200 dark:border-fintech-border p-6 sm:p-8 space-y-6 shadow-sm dark:shadow-xl leading-relaxed">
+            <div className="bg-white dark:bg-fintech-surface rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-fintech-border p-4 sm:p-8 space-y-5 sm:space-y-6 shadow-sm leading-relaxed">
               {/* Section Header with Audio Play Button */}
               <div className="border-b border-slate-100 dark:border-fintech-border/70 pb-5 space-y-3">
                 <div className="flex items-center justify-between gap-3">

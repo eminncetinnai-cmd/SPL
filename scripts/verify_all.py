@@ -28,11 +28,11 @@ except Exception as e:
     errors.append(f"Modules Test Error: {e}")
     print("  [FAIL] 1. Modules metadata:", e)
 
-# 2. QUESTIONS TEST (810 Questions)
+# 2. QUESTIONS TEST (935 Questions)
 try:
     with open("src/data/all_questions.json", encoding="utf-8") as f:
         questions = json.load(f)
-    assert len(questions) == 860, f"Expected 860 unique questions, got {len(questions)}"
+    assert len(questions) == 935, f"Expected 935 unique questions, got {len(questions)}"
     
     unique_texts = set(q["text"].strip().lower() for q in questions)
     assert len(unique_texts) == len(questions), f"Duplicate questions found: {len(questions) - len(unique_texts)} duplicates"
@@ -49,14 +49,18 @@ try:
             assert len(o["text"].strip()) > 0, f"Q {i} option {o['key']} text empty"
         assert q.get("correct_answer") in ["A", "B", "C", "D", "E"], f"Q {i} invalid correct_answer: {q.get('correct_answer')}"
         assert len(q.get("explanation", "").strip()) > 0, f"Q {i} missing explanation"
+        assert q.get("cognitive_skill") in ["KB1_Kavramsal", "KB2_Muhakeme", "KB3_Vaka"], f"Q {i} invalid cognitive_skill: {q.get('cognitive_skill')}"
         
     mod_counts = {m: sum(1 for q in questions if q["module_id"] == m) for m in ["1001", "1003", "1005", "1012"]}
-    assert mod_counts["1001"] == 210, f"Expected 210 questions for 1001, got {mod_counts['1001']}"
-    assert mod_counts["1003"] == 210, f"Expected 210 questions for 1003, got {mod_counts['1003']}"
-    assert mod_counts["1005"] == 230, f"Expected 230 questions for 1005, got {mod_counts['1005']}"
-    assert mod_counts["1012"] == 210, f"Expected 210 questions for 1012, got {mod_counts['1012']}"
-    print(f"  [PASS] 2. Soru Havuzu (860 %100 Benzersiz Soru: 1001: 210, 1003: 210, 1005: 230, 1012: 210 Soru, 5 Şık A-E, Sıfır Kopya, Cevap Anahtarı & Çözümler Doğrulandı)")
+    assert mod_counts["1001"] == 233, f"Expected 233 questions for 1001, got {mod_counts['1001']}"
+    assert mod_counts["1003"] == 240, f"Expected 240 questions for 1003, got {mod_counts['1003']}"
+    assert mod_counts["1005"] == 238, f"Expected 238 questions for 1005, got {mod_counts['1005']}"
+    assert mod_counts["1012"] == 224, f"Expected 224 questions for 1012, got {mod_counts['1012']}"
+    
+    skill_counts = {s: sum(1 for q in questions if q.get("cognitive_skill") == s) for s in ["KB1_Kavramsal", "KB2_Muhakeme", "KB3_Vaka"]}
+    print(f"  [PASS] 2. Soru Havuzu (935 %100 Benzersiz Soru: 1001: 233, 1003: 240, 1005: 238, 1012: 224 Soru, 5 Şık A-E, Sıfır Kopya, Cevap Anahtarı & Çözümler Doğrulandı)")
     print(f"         Modül Dağılımı: {mod_counts}")
+    print(f"         Maarif Bilişsel Düzey Dağılımı: {skill_counts}")
 except Exception as e:
     errors.append(f"Questions Test Error: {e}")
     print("  [FAIL] 2. Question Pool:", e)

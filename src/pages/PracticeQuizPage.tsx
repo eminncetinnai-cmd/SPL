@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -10,10 +10,18 @@ import {
   Scale, 
   Coins, 
   Building2, 
-  ShieldCheck,
-  AlertCircle,
-  Zap,
-  Pause
+  ShieldCheck, 
+  AlertCircle, 
+  Zap, 
+  Pause, 
+  Brain,
+  ChevronDown,
+  ChevronUp,
+  X,
+  SlidersHorizontal,
+  Flame,
+  Star,
+  ListOrdered
 } from 'lucide-react';
 import { useQuizStore } from '../stores/quizStore';
 import { useSettingsStore } from '../stores/settingsStore';
@@ -27,6 +35,13 @@ import { ModuleId, Question } from '../types/exam';
 import modulesData from '../data/modules.json';
 
 import allQuestionsData from '../data/all_questions.json';
+
+const ALL_QUESTIONS = allQuestionsData as Question[];
+const QUESTION_BY_ID = new Map<string, Question>(ALL_QUESTIONS.map((q) => [q.id, q]));
+const MODULE_TOTAL_COUNTS: Record<string, number> = ALL_QUESTIONS.reduce((acc, q) => {
+  acc[q.module_id] = (acc[q.module_id] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
 
 interface PracticeQuizPageProps {
   initialModuleId?: ModuleId;
@@ -61,7 +76,16 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   } = useQuizStore();
 
   const { soundEnabled } = useSettingsStore();
-  const { seenQuestionIds, avoidQuestionRepetition, setAvoidRepetition, resetSeenQuestions, mistakes, bookmarks } = useProgressStore();
+  const {
+    seenQuestionIds,
+    avoidQuestionRepetition,
+    setAvoidRepetition,
+    resetSeenQuestions,
+    isQuestionSeen,
+    getSeenCountByModule,
+    mistakes,
+    bookmarks,
+  } = useProgressStore();
 
   // Setup state for configuration
   const [selectedModule, setSelectedModule] = useState<ModuleId | 'all'>(initialModuleId || 'all');
@@ -71,28 +95,74 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   const [testMode, setTestMode] = useState<'practice' | 'simulation'>(
     initialTestMode || 'practice'
   );
+  const [cognitiveFilter, setCognitiveFilter] = useState<'all' | 'KB1_Kavramsal' | 'KB2_Muhakeme' | 'KB3_Vaka'>('all');
   const [questionCount, setQuestionCount] = useState<number>(25);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
+  const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
+  const [showMobileOptical, setShowMobileOptical] = useState(false);
 
-  const allQs = allQuestionsData as Question[];
-  const candidatePool = allQs.filter((q) => {
-    if (selectedModule !== 'all' && q.module_id !== selectedModule) return false;
-    return true;
-  });
+  const allQs = ALL_QUESTIONS;
+
+  const candidatePool = useMemo(() => {
+    return allQs.filter((q) => {
+      if (selectedModule !== 'all' && q.module_id !== selectedModule) return false;
+      if (cognitiveFilter !== 'all' && q.cognitive_skill !== cognitiveFilter) return false;
+      if (initialSourceFilter === 'cikmis' && q.source !== 'cikmis') return false;
+      if (initialSourceFilter === 'genel' && q.source === 'cikmis') return false;
+      if (
+        initialSourceFilter &&
+        initialSourceFilter !== 'all' &&
+        initialSourceFilter !== 'genel' &&
+        initialSourceFilter !== 'cikmis' &&
+        q.source !== initialSourceFilter
+      ) {
+        return false;
+      }
+      return true;
+    });
+  }, [allQs, selectedModule, cognitiveFilter, initialSourceFilter]);
+
+  const kbCounts = useMemo(() => {
+    let all = 0;
+    let KB3_Vaka = 0;
+    let KB2_Muhakeme = 0;
+    let KB1_Kavramsal = 0;
+    for (let i = 0; i < allQs.length; i++) {
+      const q = allQs[i];
+      if (selectedModule === 'all' || q.module_id === selectedModule) {
+        all++;
+        if (q.cognitive_skill === 'KB3_Vaka') KB3_Vaka++;
+        else if (q.cognitive_skill === 'KB2_Muhakeme') KB2_Muhakeme++;
+        else if (q.cognitive_skill === 'KB1_Kavramsal') KB1_Kavramsal++;
+      }
+    }
+    return { all, KB3_Vaka, KB2_Muhakeme, KB1_Kavramsal };
+  }, [allQs, selectedModule]);
 
   const totalModulePool = candidatePool.length;
-  const seenCount = candidatePool.filter((q) => seenQuestionIds.includes(q.id)).length;
+  const seenCount = useMemo(
+    () => candidatePool.filter((q) => isQuestionSeen(q.id)).length,
+    [candidatePool, isQuestionSeen, seenQuestionIds]
+  );
   const unseenCount = Math.max(0, totalModulePool - seenCount);
 
   // Active mistakes and bookmarks in the selected scope
-  const mistakeCountInScope = Object.values(mistakes).filter(
-    (m) => !m.resolved && (selectedModule === 'all' || m.question.module_id === selectedModule)
-  ).length;
+  const mistakeCountInScope = useMemo(
+    () =>
+      Object.values(mistakes).filter(
+        (m) => !m.resolved && (selectedModule === 'all' || m.question.module_id === selectedModule)
+      ).length,
+    [mistakes, selectedModule]
+  );
 
-  const bookmarkCountInScope = bookmarks.filter((bId) => {
-    const q = allQs.find((item) => item.id === bId);
-    return q && (selectedModule === 'all' || q.module_id === selectedModule);
-  }).length;
+  const bookmarkCountInScope = useMemo(
+    () =>
+      bookmarks.filter((bId) => {
+        const q = QUESTION_BY_ID.get(bId);
+        return q && (selectedModule === 'all' || q.module_id === selectedModule);
+      }).length,
+    [bookmarks, selectedModule]
+  );
 
   const [autoAdvance, setAutoAdvance] = useState(false);
   const [autoAdvanceTimer, setAutoAdvanceTimer] = useState<number | null>(null);
@@ -197,6 +267,17 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
     }
   };
 
+  const handleResetSeenPool = () => {
+    const scopeText = selectedModule === 'all' 
+      ? 'Tüm modüllere ait çözülmüş soru havuzu döngüsü' 
+      : `Modül ${selectedModule} dersine ait çözülmüş soru havuzu döngüsü`;
+    
+    if (window.confirm(`${scopeText} sıfırlanacak ve sorular tekrar taze (çözülmemiş) olarak testlere dahil edilecektir.\n\nSınav geçmişiniz ve başarı karneleriniz korunur.\n\nSıfırlamak istiyor musunuz?`)) {
+      resetSeenQuestions(selectedModule);
+      alert('Soru havuzu başarıyla sıfırlandı. Tüm sorular taze olarak hazır.');
+    }
+  };
+
   const handleStart = () => {
     // Validate question count for specialized filters
     if (filterMode === 'mistakes' && mistakeCountInScope === 0) {
@@ -222,6 +303,54 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
     });
   };
 
+  const handleQuickStart = (type: 'fresh' | 'mistakes' | 'simulation') => {
+    if (type === 'mistakes') {
+      if (mistakeCountInScope === 0) {
+        alert('Seçili kapsamda kayıtlı hatalı sorunuz bulunmamaktadır.');
+        return;
+      }
+      const count = Math.min(25, mistakeCountInScope);
+      startQuiz({
+        mode: 'practice',
+        moduleId: selectedModule,
+        questionCount: count,
+        filterMode: 'mistakes',
+        title: selectedModule === 'all'
+          ? `Tüm Dersler - Hataları Temizleme (${count} Soru)`
+          : `Modül ${selectedModule} - Hataları Temizleme (${count} Soru)`,
+      });
+      return;
+    }
+
+    if (type === 'simulation') {
+      const count = 25;
+      startQuiz({
+        mode: 'simulation',
+        moduleId: selectedModule,
+        questionCount: count,
+        filterMode: 'all',
+        timeLimitMinutes: 30,
+        title: selectedModule === 'all'
+          ? `Tüm Dersler Süreli Sınav Provası (25 Soru • 30 Dk)`
+          : `Modül ${selectedModule} Süreli Sınav Provası (25 Soru • 30 Dk)`,
+      });
+      return;
+    }
+
+    // type === 'fresh'
+    const targetFilter = unseenCount > 0 ? 'unseen' : 'all';
+    const count = 25;
+    startQuiz({
+      mode: 'practice',
+      moduleId: selectedModule,
+      questionCount: count,
+      filterMode: targetFilter,
+      title: selectedModule === 'all'
+        ? `Tüm Dersler Pratik Test (${count} Soru)`
+        : `Modül ${selectedModule} Pratik Test (${count} Soru)`,
+    });
+  };
+
   const handleFinish = () => {
     handleCancelAutoAdvance();
     const completed = finishQuiz();
@@ -233,305 +362,367 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   // If no active session, show setup configuration
   if (!currentSession || currentSession.is_completed) {
     return (
-      <div className="max-w-4xl mx-auto space-y-8 animate-fade-in py-4">
+      <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 animate-fade-in pb-10">
         {/* Header */}
-        <div className="flex items-center gap-4">
-          <button
-            onClick={() => onNavigate('home')}
-            className="p-2.5 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white shadow-sm transition-all"
-          >
-            <ArrowLeft className="w-5 h-5" />
-          </button>
-          <div>
-            <h1 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-              Test & Soru Çözümü
-            </h1>
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-              860 soruluk tek ve birleşik soru havuzundan modül bazlı veya karma test başlatın. Sorular ve şıklar otomatik karıştırılır.
-            </p>
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => onNavigate('home')}
+              className="p-2 rounded-xl bg-white dark:bg-fintech-surface hover:bg-slate-100 dark:hover:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 shadow-xs transition-all active:scale-95"
+            >
+              <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+            </button>
+            <div>
+              <h1 className="text-lg sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">
+                Test & Soru Çözümü
+              </h1>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                1-dokunuş hızlı testler veya modül seçimiyle hemen başlayın
+              </p>
+            </div>
+          </div>
+
+          {seenCount > 0 && (
+            <button
+              type="button"
+              onClick={handleResetSeenPool}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-50 hover:bg-amber-100 dark:bg-amber-500/10 border border-amber-300 dark:border-amber-500/30 transition-all cursor-pointer shrink-0 active:scale-95"
+              title="Çözülmüş soruları sıfırlayarak tüm soruları taze yap"
+            >
+              <RotateCcw className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+              <span>Sıfırla ({seenCount})</span>
+            </button>
+          )}
+        </div>
+
+        {/* 1. Ders / Modül Seçimi */}
+        <div className="bg-white dark:bg-fintech-surface rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-fintech-border p-4 sm:p-5 space-y-3 shadow-xs">
+          <div className="flex items-center justify-between">
+            <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold flex items-center gap-1.5">
+              <BookOpen className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
+              <span>Ders Seçimi</span>
+            </label>
+            <span className="text-[11px] font-mono text-teal-600 dark:text-teal-400 font-bold">
+              {candidatePool.length} Soru Hazır
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+            <button
+              onClick={() => setSelectedModule('all')}
+              className={`p-3 rounded-2xl border text-left transition-all col-span-2 sm:col-span-1 active:scale-[0.98] ${
+                selectedModule === 'all'
+                  ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-900 dark:text-teal-300 ring-2 ring-teal-500/30 shadow-xs'
+                  : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 hover:border-slate-300'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="font-mono text-[10px] font-bold text-teal-600 dark:text-teal-400">KARMA</span>
+                <span className="text-[10px] font-mono font-bold text-slate-400">{allQs.length}</span>
+              </div>
+              <span className="font-bold text-xs sm:text-sm block text-slate-900 dark:text-white truncate">Tüm Dersler</span>
+              <span className="text-[10px] text-slate-500 dark:text-slate-400 block mt-0.5">Gerçek Sınav Dağılımı</span>
+            </button>
+
+            {modulesData.map((m) => {
+              const modTotal = MODULE_TOTAL_COUNTS[m.id] || 0;
+              const modSeen = getSeenCountByModule(m.id as ModuleId);
+              const modUnseen = Math.max(0, modTotal - modSeen);
+
+              return (
+                <button
+                  key={m.id}
+                  onClick={() => setSelectedModule(m.id as ModuleId)}
+                  className={`p-3 rounded-2xl border text-left transition-all active:scale-[0.98] ${
+                    selectedModule === m.id
+                      ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-900 dark:text-teal-300 ring-2 ring-teal-500/30 shadow-xs'
+                      : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 hover:border-slate-300'
+                  }`}
+                >
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="font-mono text-[10px] font-bold text-teal-600 dark:text-teal-400">
+                      Modül {m.code}
+                    </span>
+                    <span className="text-[10px] font-mono font-bold text-slate-400">{modTotal}</span>
+                  </div>
+                  <span className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white block truncate">
+                    {m.short_name}
+                  </span>
+                  <span className="text-[10px] text-teal-600 dark:text-teal-400 font-semibold block mt-0.5">
+                    {modUnseen} taze soru
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
 
-        {/* Configuration Card */}
-        <div className="bg-white dark:bg-fintech-surface rounded-3xl border border-slate-200 dark:border-fintech-border p-6 sm:p-8 space-y-8 shadow-sm dark:shadow-2xl">
-          {/* Step 1: Select Module */}
-          <div className="space-y-3">
-            <div className="flex items-center justify-between">
-              <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-                1. ÇALIŞILACAK DERSİ SEÇİN
-              </label>
-              <span className="text-[11px] font-mono text-teal-600 dark:text-teal-400 font-bold">
-                Toplam Havuz: {candidatePool.length} Soru
-              </span>
-            </div>
+        {/* 2. ⚡ 1-Dokunuş Hızlı Başlat Kartları (Önerilen) */}
+        <div className="space-y-2.5">
+          <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold flex items-center gap-1.5 px-1">
+            <Flame className="w-3.5 h-3.5 text-amber-500" />
+            <span>Hızlı Başlat (Önerilen)</span>
+          </label>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              <button
-                onClick={() => setSelectedModule('all')}
-                className={`p-4 rounded-2xl border text-left transition-all flex items-center justify-between sm:col-span-2 lg:col-span-1 ${
-                  selectedModule === 'all'
-                    ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-900 dark:text-teal-300 shadow-sm ring-1 ring-teal-500/30'
-                    : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600'
-                }`}
-              >
-                <div>
-                  <span className="font-bold text-sm block text-slate-900 dark:text-white">Tüm Dersler Karma</span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">4 Modül Ortak Havuz ({allQs.length} Soru)</span>
-                </div>
-                <Sparkles className="w-5 h-5 text-teal-600 dark:text-teal-400 shrink-0" />
-              </button>
-
-              {modulesData.map((m) => {
-                const modTotal = allQs.filter((q) => q.module_id === m.id).length;
-                const modSeen = seenQuestionIds.filter((id) => allQs.find(q => q.id === id && q.module_id === m.id)).length;
-                const modUnseen = Math.max(0, modTotal - modSeen);
-
-                return (
-                  <button
-                    key={m.id}
-                    onClick={() => setSelectedModule(m.id as ModuleId)}
-                    className={`p-4 rounded-2xl border text-left transition-all flex items-center justify-between ${
-                      selectedModule === m.id
-                        ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-900 dark:text-teal-300 shadow-sm ring-1 ring-teal-500/30'
-                        : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-600'
-                    }`}
-                  >
-                    <div className="min-w-0 pr-2">
-                      <span className="font-mono text-xs font-bold text-teal-600 dark:text-teal-400 block">Modül {m.code}</span>
-                      <span className="font-bold text-sm text-slate-900 dark:text-white block truncate">{m.short_name}</span>
-                      <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5">
-                        {modUnseen} taze / {modTotal} soru
-                      </span>
-                    </div>
-                    <div className="w-2 h-2 rounded-full shrink-0 bg-teal-500" />
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Step 2: Question Selection Filter Mode */}
-          <div className="space-y-3">
-            <div className="flex items-center justify-between">
-              <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-                2. SORU SEÇİM KRİTERİ (FİLTRE)
-              </label>
-              <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400">
-                {filterMode === 'unseen' ? `🟢 ${unseenCount} Çözülmemiş Soru` : `${totalModulePool} Soru Kapsamı`}
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              {[
-                {
-                  id: 'unseen',
-                  label: '🟢 Sadece Çözülmemiş Sorular (Önerilen)',
-                  badge: `${unseenCount} Soru Hazır`,
-                  tag: 'SIFIR TEKRAR & TAZE SORULAR',
-                  desc: 'Daha önce hiç çözmediğiniz yeni sorular öncelikli olarak getirilir. Tüm müfredatı eksiksiz taramak için idealdir.',
-                  count: unseenCount,
-                },
-                {
-                  id: 'all',
-                  label: '⚪ Tüm Sorulardan Rastgele Karışık',
-                  badge: `${totalModulePool} Soru`,
-                  tag: 'GENEL TEKRAR',
-                  desc: 'Çözülmüş veya çözülmemiş olmasına bakılmaksızın tüm soru havuzundan tamamen rastgele soru seçilir.',
-                  count: totalModulePool,
-                },
-                {
-                  id: 'mistakes',
-                  label: '🔴 Hatalı Sorularım (Yanlış Defteri)',
-                  badge: `${mistakeCountInScope} Soru`,
-                  tag: 'HATA TELAFİSİ',
-                  desc: 'Daha önceki testlerde yanlış cevapladığınız soruları tekrar çözerek zayıf noktalarınızı pekiştirin.',
-                  count: mistakeCountInScope,
-                },
-                {
-                  id: 'bookmarks',
-                  label: '⭐ Yıldızlı Sorularım (Favoriler)',
-                  badge: `${bookmarkCountInScope} Soru`,
-                  tag: 'ÖZEL LİSTE',
-                  desc: 'Çözerken önemli veya zor bulup yıldızladığınız favori sorularınızdan test oluşturur.',
-                  count: bookmarkCountInScope,
-                },
-              ].map((filter) => (
-                <button
-                  key={filter.id}
-                  onClick={() => setFilterMode(filter.id as any)}
-                  className={`p-4 rounded-2xl border text-left transition-all relative overflow-hidden ${
-                    filterMode === filter.id
-                      ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-400 text-teal-950 dark:text-teal-200 ring-2 ring-teal-400/40 shadow-sm'
-                      : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600'
-                  }`}
-                >
-                  <div className="flex items-center justify-between gap-2 mb-1.5">
-                    <span className="font-bold text-sm block text-slate-900 dark:text-white">{filter.label}</span>
-                    <span className={`text-[11px] font-mono px-2.5 py-0.5 rounded-full font-bold ${
-                      filterMode === filter.id
-                        ? 'bg-teal-100 dark:bg-teal-500/20 text-teal-800 dark:text-teal-300 border border-teal-300 dark:border-teal-500/40'
-                        : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
-                    }`}>
-                      {filter.badge}
-                    </span>
-                  </div>
-                  <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-2.5">
-                    {filter.desc}
-                  </p>
-                  <div className="inline-flex items-center gap-1.5 text-[10px] font-mono font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                    <span className={`w-1.5 h-1.5 rounded-full ${filterMode === filter.id ? 'bg-teal-500' : 'bg-slate-400'}`} />
-                    <span>{filter.tag}</span>
-                  </div>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Step 3: Test Mode & Question Count */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 border-t border-slate-200 dark:border-fintech-border/60">
-            {/* 3A: Test Mode */}
-            <div className="space-y-3">
-              <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-                3. ÇALIŞMA FORMATI
-              </label>
-              <div className="grid grid-cols-2 gap-3">
-                <button
-                  type="button"
-                  onClick={() => setTestMode('practice')}
-                  className={`p-3.5 rounded-2xl border text-left transition-all ${
-                    testMode === 'practice'
-                      ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-400 text-teal-950 dark:text-teal-200 ring-2 ring-teal-400/40 shadow-sm'
-                      : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600'
-                  }`}
-                >
-                  <div className="flex items-center gap-2 mb-1">
-                    <Zap className="w-4 h-4 text-amber-500" />
-                    <span className="font-bold text-sm text-slate-900 dark:text-white">Pratik Modu</span>
-                  </div>
-                  <span className="text-[11px] text-slate-500 dark:text-slate-400 block leading-tight">
-                    Anında çözüm, gerekçeli açıklama ve kanun maddesi gösterilir.
-                  </span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setTestMode('simulation')}
-                  className={`p-3.5 rounded-2xl border text-left transition-all ${
-                    testMode === 'simulation'
-                      ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-400 text-teal-950 dark:text-teal-200 ring-2 ring-teal-400/40 shadow-sm'
-                      : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600'
-                  }`}
-                >
-                  <div className="flex items-center gap-2 mb-1">
-                    <Sparkles className="w-4 h-4 text-teal-500" />
-                    <span className="font-bold text-sm text-slate-900 dark:text-white">Süreli Sınav</span>
-                  </div>
-                  <span className="text-[11px] text-slate-500 dark:text-slate-400 block leading-tight">
-                    Süre sayacı, optik form ve sınav sonunda ayrıntılı karne analizi.
-                  </span>
-                </button>
-              </div>
-            </div>
-
-            {/* 3B: Question Count */}
-            <div className="space-y-3">
-              <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
-                4. TESTTEKİ SORU SAYISI
-              </label>
-              <div className="grid grid-cols-4 gap-2">
-                {[10, 25, 50, 100].map((count) => (
-                  <button
-                    key={count}
-                    onClick={() => setQuestionCount(count)}
-                    className={`py-3 rounded-xl border font-mono font-bold text-sm transition-all ${
-                      questionCount === count
-                        ? 'bg-teal-600 text-white border-teal-700 shadow-sm'
-                        : 'bg-slate-50 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border-slate-200 dark:border-fintech-border hover:border-slate-300 dark:hover:border-slate-600'
-                    }`}
-                  >
-                    {count} Soru
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Anti-Repeat Smart Pool Status Banner */}
-          <div className="bg-teal-50/70 dark:bg-slate-900/90 rounded-2xl border border-teal-200 dark:border-teal-500/30 p-5 space-y-3">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-teal-500/15 border border-teal-500/30 flex items-center justify-center shrink-0">
-                  <ShieldCheck className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-                </div>
-                <div>
-                  <span className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white block">
-                    🛡️ Soru Havuzu Kapsamı & Rotasyon
-                  </span>
-                  <span className="text-xs text-slate-600 dark:text-slate-300 block">
-                    {unseenCount} / {totalModulePool} çözülmemiş soru sırada bekliyor
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2 flex-wrap">
-                <button
-                  type="button"
-                  onClick={() => setAvoidRepetition(!avoidQuestionRepetition)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all border ${
-                    avoidQuestionRepetition
-                      ? 'bg-teal-100 dark:bg-teal-500/20 text-teal-800 dark:text-teal-300 border-teal-300 dark:border-teal-500/40'
-                      : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-700'
-                  }`}
-                  title="Açık olduğunda çözdüğünüz sorular havuza tekrar girmez"
-                >
-                  Tekrarsız Havuz: {avoidQuestionRepetition ? 'AÇIK' : 'KAPALI'}
-                </button>
-
-                {seenCount > 0 && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if (confirm('Bu modüle ait çözülmüş soru geçmişi sıfırlanacak ve tüm sorular taze havuza dönecektir. Onaylıyor musunuz?')) {
-                        resetSeenQuestions(selectedModule);
-                      }
-                    }}
-                    className="px-2.5 py-1.5 rounded-xl text-xs font-mono bg-white dark:bg-slate-800 hover:bg-rose-50 text-slate-600 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-300 border border-slate-200 dark:border-slate-700 transition-all"
-                    title="Döngüyü baştan başlat"
-                  >
-                    Döngüyü Sıfırla
-                  </button>
-                )}
-              </div>
-            </div>
-
-            {/* Progress bar of pool coverage */}
-            <div className="space-y-1">
-              <div className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
-                <div 
-                  className="h-full bg-gradient-to-r from-teal-500 to-emerald-400 transition-all duration-300"
-                  style={{ width: `${Math.round((seenCount / Math.max(1, totalModulePool)) * 100)}%` }}
-                />
-              </div>
-              <div className="flex justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">
-                <span>Çözülen Havuz: %{Math.round((seenCount / Math.max(1, totalModulePool)) * 100)} ({seenCount} Soru)</span>
-                <span>{unseenCount > 0 ? `${unseenCount} taze soru hazır` : 'Tüm sorular çözüldü! Yeni tur başlayacak.'}</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Start CTA */}
-          <div className="space-y-2">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {/* Quick 1: 25 Taze Soru */}
             <button
-              onClick={handleStart}
-              className="w-full flex items-center justify-center gap-3 py-4 rounded-2xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-black text-base shadow-lg shadow-teal-700/25 active:scale-95 transition-all cursor-pointer"
+              onClick={() => handleQuickStart('fresh')}
+              className="p-4 rounded-2xl bg-gradient-to-br from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white shadow-md shadow-teal-700/20 text-left transition-all active:scale-[0.98] cursor-pointer flex flex-col justify-between"
             >
-              <Play className="w-5 h-5 fill-white text-white" />
-              <span className="text-white font-black">Testi Başlat ({questionCount} Soru • {testMode === 'practice' ? 'Pratik Modu' : 'Süreli Sınav'})</span>
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="p-2 rounded-xl bg-white/20 backdrop-blur-xs text-white">
+                    <Play className="w-4 h-4 fill-white" />
+                  </span>
+                  <span className="px-2 py-0.5 rounded-full bg-white/25 text-[10px] font-mono font-bold text-white">
+                    25 Soru
+                  </span>
+                </div>
+                <h3 className="font-black text-sm sm:text-base text-white">
+                  25 Taze Soru Başlat
+                </h3>
+                <p className="text-xs text-teal-50/90 mt-1">
+                  Seçili dersten henüz çözmediğiniz sorularla hemen pratik yapın.
+                </p>
+              </div>
+              <div className="mt-3 pt-2 border-t border-white/20 flex items-center justify-between text-[11px] font-mono text-teal-100">
+                <span>{unseenCount} taze soru havuzda</span>
+                <span className="font-bold underline">Hemen Çöz →</span>
+              </div>
             </button>
-            <p className="text-center text-[11px] font-mono text-slate-500 dark:text-slate-400">
-              🎲 Sorular ve cevap seçenekleri (A, B, C, D, E) her testte otomatik olarak rastgele karıştırılır.
-            </p>
+
+            {/* Quick 2: Yanlışlarımı Temizle */}
+            <button
+              onClick={() => handleQuickStart('mistakes')}
+              disabled={mistakeCountInScope === 0}
+              className={`p-4 rounded-2xl border text-left transition-all flex flex-col justify-between ${
+                mistakeCountInScope > 0
+                  ? 'bg-white dark:bg-fintech-surface border-rose-300 dark:border-rose-500/40 hover:border-rose-400 active:scale-[0.98] cursor-pointer shadow-xs'
+                  : 'bg-slate-50 dark:bg-fintech-card/50 border-slate-200 dark:border-fintech-border opacity-60 cursor-not-allowed'
+              }`}
+            >
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className={`p-2 rounded-xl ${mistakeCountInScope > 0 ? 'bg-rose-100 dark:bg-rose-500/20 text-rose-600 dark:text-rose-400' : 'bg-slate-200 dark:bg-slate-800 text-slate-400'}`}>
+                    <RotateCcw className="w-4 h-4" />
+                  </span>
+                  <span className={`px-2 py-0.5 rounded-full text-[10px] font-mono font-bold ${
+                    mistakeCountInScope > 0 ? 'bg-rose-100 dark:bg-rose-500/20 text-rose-700 dark:text-rose-300' : 'bg-slate-200 dark:bg-slate-800 text-slate-500'
+                  }`}>
+                    {mistakeCountInScope} Hata
+                  </span>
+                </div>
+                <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-white">
+                  Yanlışlarımı Temizle
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                  {mistakeCountInScope > 0
+                    ? 'Daha önce yanlış yaptığınız soruları çözerek eksiklerinizi kapatın.'
+                    : 'Tebrikler! Seçili derste çözülmemiş yanlış soru bulunmuyor.'}
+                </p>
+              </div>
+              <div className="mt-3 pt-2 border-t border-slate-100 dark:border-fintech-border flex items-center justify-between text-[11px] font-mono">
+                <span className="text-slate-500">{mistakeCountInScope > 0 ? 'Hatalı Sorular' : 'Temiz'}</span>
+                <span className="font-bold text-rose-600 dark:text-rose-400">{mistakeCountInScope > 0 ? 'Düzelt →' : 'Tamam'}</span>
+              </div>
+            </button>
+
+            {/* Quick 3: Süreli Sınav Simülasyonu */}
+            <button
+              onClick={() => handleQuickStart('simulation')}
+              className="p-4 rounded-2xl bg-white dark:bg-fintech-surface border border-slate-200 dark:border-fintech-border hover:border-teal-500/50 text-left transition-all active:scale-[0.98] cursor-pointer shadow-xs flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="p-2 rounded-xl bg-amber-100 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400">
+                    <Sparkles className="w-4 h-4" />
+                  </span>
+                  <span className="px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/20 text-[10px] font-mono font-bold text-amber-700 dark:text-amber-300">
+                    30 Dakika
+                  </span>
+                </div>
+                <h3 className="font-black text-sm sm:text-base text-slate-900 dark:text-white">
+                  Süreli Sınav Provası
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                  Gerçek sınav zamanlaması (30 dk, 25 soru), süre sayacı ve sınav sonu detaylı karne.
+                </p>
+              </div>
+              <div className="mt-3 pt-2 border-t border-slate-100 dark:border-fintech-border flex items-center justify-between text-[11px] font-mono text-amber-600 dark:text-amber-400">
+                <span>Zamanlı Prova</span>
+                <span className="font-bold">Başla →</span>
+              </div>
+            </button>
           </div>
+        </div>
+
+        {/* 3. Gelişmiş Filtreler & Özel Ayarlar (Açılır-Kapanır Accordion) */}
+        <div className="bg-white dark:bg-fintech-surface rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-fintech-border overflow-hidden shadow-xs">
+          <button
+            type="button"
+            onClick={() => setShowAdvancedFilters(!showAdvancedFilters)}
+            className="w-full p-4 flex items-center justify-between text-left hover:bg-slate-50 dark:hover:bg-fintech-card transition-colors cursor-pointer"
+          >
+            <div className="flex items-center gap-2">
+              <SlidersHorizontal className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+              <span className="font-bold text-xs sm:text-sm text-slate-800 dark:text-slate-200">
+                Gelişmiş Filtreler ve Soru Sayısı Ayarla
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-[11px] font-mono text-slate-400 hidden sm:inline">
+                {filterMode} • {cognitiveFilter} • {questionCount} Soru
+              </span>
+              {showAdvancedFilters ? (
+                <ChevronUp className="w-4 h-4 text-slate-400" />
+              ) : (
+                <ChevronDown className="w-4 h-4 text-slate-400" />
+              )}
+            </div>
+          </button>
+
+          {showAdvancedFilters && (
+            <div className="p-4 pt-2 border-t border-slate-100 dark:border-fintech-border/60 space-y-4 animate-fade-in">
+              {/* Soru Filtresi */}
+              <div className="space-y-2">
+                <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
+                  Soru Filtresi
+                </label>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  {[
+                    { id: 'unseen', label: '🟢 Çözülmemiş', sub: `${unseenCount} Taze Soru` },
+                    { id: 'all', label: '⚪ Tüm Havuz', sub: `${totalModulePool} Soru` },
+                    { id: 'mistakes', label: '🔴 Yanlışlarım', sub: `${mistakeCountInScope} Soru` },
+                    { id: 'bookmarks', label: '⭐ Yıldızlılar', sub: `${bookmarkCountInScope} Soru` },
+                  ].map((filter) => (
+                    <button
+                      key={filter.id}
+                      onClick={() => setFilterMode(filter.id as any)}
+                      className={`p-2.5 rounded-xl border text-left transition-all ${
+                        filterMode === filter.id
+                          ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-950 dark:text-teal-200 ring-1 ring-teal-400/40'
+                          : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400'
+                      }`}
+                    >
+                      <span className="font-bold text-xs block text-slate-900 dark:text-white truncate">
+                        {filter.label}
+                      </span>
+                      <span className="text-[10px] font-mono text-slate-500 dark:text-slate-400 block mt-0.5">
+                        {filter.sub}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Bilişsel Düzey (Maarif) */}
+              <div className="space-y-2">
+                <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold flex items-center gap-1.5">
+                  <Brain className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
+                  <span>Maarif Bilişsel Düzey</span>
+                </label>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  {[
+                    { id: 'all', label: '🌟 Tümü Karma', count: kbCounts.all },
+                    { id: 'KB3_Vaka', label: '🧠 Vaka & Hesap', count: kbCounts.KB3_Vaka },
+                    { id: 'KB2_Muhakeme', label: '⚖️ Öncüllü (I-II-III)', count: kbCounts.KB2_Muhakeme },
+                    { id: 'KB1_Kavramsal', label: '📚 Mevzuat & Tanım', count: kbCounts.KB1_Kavramsal },
+                  ].map((kb) => (
+                    <button
+                      key={kb.id}
+                      type="button"
+                      onClick={() => setCognitiveFilter(kb.id as any)}
+                      className={`p-2 rounded-xl border text-left transition-all cursor-pointer flex items-center justify-between gap-1 ${
+                        cognitiveFilter === kb.id
+                          ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-950 dark:text-teal-200 ring-1 ring-teal-400/40'
+                          : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400'
+                      }`}
+                    >
+                      <span className="font-bold text-xs text-slate-900 dark:text-white truncate">{kb.label}</span>
+                      <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 shrink-0">
+                        {kb.count}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Çalışma Modu & Soru Sayısı */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-slate-100 dark:border-fintech-border/60">
+                <div className="space-y-1.5">
+                  <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
+                    Çalışma Modu
+                  </label>
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setTestMode('practice')}
+                      className={`p-2 rounded-xl border text-left transition-all ${
+                        testMode === 'practice'
+                          ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-950 dark:text-teal-200 ring-1 ring-teal-400/40'
+                          : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400'
+                      }`}
+                    >
+                      <div className="flex items-center gap-1.5">
+                        <Zap className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                        <span className="font-bold text-xs text-slate-900 dark:text-white">Pratik Modu</span>
+                      </div>
+                      <span className="text-[10px] text-slate-500 dark:text-slate-400 block mt-0.5">Anında açıklama</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setTestMode('simulation')}
+                      className={`p-2 rounded-xl border text-left transition-all ${
+                        testMode === 'simulation'
+                          ? 'bg-teal-50 dark:bg-teal-500/15 border-teal-500 text-teal-950 dark:text-teal-200 ring-1 ring-teal-400/40'
+                          : 'bg-slate-50 dark:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-600 dark:text-slate-400'
+                      }`}
+                    >
+                      <div className="flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-teal-500 shrink-0" />
+                        <span className="font-bold text-xs text-slate-900 dark:text-white">Süreli Sınav</span>
+                      </div>
+                      <span className="text-[10px] text-slate-500 dark:text-slate-400 block mt-0.5">Sonunda karne</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="space-y-1.5">
+                  <label className="text-xs font-mono uppercase tracking-wider text-slate-700 dark:text-slate-300 font-bold block">
+                    Soru Sayısı
+                  </label>
+                  <div className="grid grid-cols-4 gap-2">
+                    {[10, 25, 50, 100].map((count) => (
+                      <button
+                        key={count}
+                        onClick={() => setQuestionCount(count)}
+                        className={`py-2 rounded-xl border font-mono font-bold text-xs transition-all ${
+                          questionCount === count
+                            ? 'bg-teal-600 text-white border-teal-700 shadow-xs'
+                            : 'bg-slate-50 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border-slate-200 dark:border-fintech-border'
+                        }`}
+                      >
+                        {count}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Start with Custom Filters Button */}
+              <button
+                onClick={handleStart}
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-black text-xs sm:text-sm shadow-md shadow-teal-700/20 active:scale-95 transition-all cursor-pointer"
+              >
+                <Play className="w-4 h-4 fill-white text-white" />
+                <span className="text-white font-black">
+                  Özel Ayarlarla Başlat ({questionCount} Soru • {testMode === 'practice' ? 'Pratik' : 'Süreli'})
+                </span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -549,53 +740,64 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
   ).length;
 
   return (
-    <div className="max-w-6xl mx-auto space-y-6 animate-fade-in pb-12">
+    <div className="max-w-6xl mx-auto space-y-4 sm:space-y-6 animate-fade-in pb-16 sm:pb-12">
       {/* Top Header Bar */}
-      <div className="bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm dark:shadow-lg">
-        <div className="flex items-center gap-3">
+      <div className="bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-3 sm:p-4 flex items-center justify-between gap-2.5 sm:gap-4 shadow-xs">
+        <div className="flex items-center gap-2 sm:gap-3 min-w-0">
           <button
             onClick={() => setShowExitConfirm(true)}
-            className="p-2 rounded-xl bg-slate-50 dark:bg-fintech-card hover:bg-rose-50 text-slate-500 hover:text-rose-600 border border-slate-200 dark:border-fintech-border transition-all shadow-sm"
+            className="p-2 rounded-xl bg-slate-50 dark:bg-fintech-card hover:bg-rose-50 text-slate-500 hover:text-rose-600 border border-slate-200 dark:border-fintech-border transition-all shadow-xs shrink-0 active:scale-95"
             title="Testten Çık"
           >
-            <ArrowLeft className="w-5 h-5" />
+            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
-          <div>
-            <h2 className="font-black text-slate-900 dark:text-white text-sm sm:text-base tracking-tight truncate max-w-xs sm:max-w-md">
-              {currentSession.title}
-            </h2>
-            <div className="flex items-center gap-3 text-xs text-slate-600 dark:text-slate-400 font-mono">
-              <span>{answeredCount} / {total} Tamamlandı</span>
-              <span>•</span>
-              <span className="text-teal-600 dark:text-teal-400 font-semibold">
-                %{Math.round((answeredCount / total) * 100)} İlerleme
+          <div className="min-w-0">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="font-black text-slate-900 dark:text-white text-xs sm:text-base tracking-tight truncate">
+                Soru {currentIndex + 1} / {total}
+              </span>
+              <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-full bg-teal-50 dark:bg-teal-500/15 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-500/30 shrink-0">
+                %{Math.round((answeredCount / total) * 100)}
               </span>
             </div>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 truncate hidden sm:block">
+              {currentSession.title}
+            </p>
           </div>
         </div>
 
-        <div className="flex items-center gap-3 self-end sm:self-auto flex-wrap">
+        <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          {/* Mobile Optical Form Button */}
+          <button
+            onClick={() => setShowMobileOptical(true)}
+            className="lg:hidden flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-teal-50 dark:bg-teal-500/15 text-teal-800 dark:text-teal-300 border border-teal-300 dark:border-teal-500/40 text-xs font-bold transition-all active:scale-95 cursor-pointer"
+            title="Soru Listesi ve Optik Form"
+          >
+            <ListOrdered className="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" />
+            <span>Optik ({answeredCount}/{total})</span>
+          </button>
+
           {/* Auto Advance Toggle */}
           <button
             onClick={() => setAutoAdvance(!autoAdvance)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-mono font-semibold transition-all ${
+            className={`flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-xl border text-xs font-mono font-semibold transition-all active:scale-95 ${
               autoAdvance
-                ? 'bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-500/40 shadow-sm'
-                : 'bg-slate-50 dark:bg-fintech-card text-slate-600 dark:text-slate-400 border-slate-200 dark:border-fintech-border hover:text-slate-900 dark:hover:text-white'
+                ? 'bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-500/40 shadow-xs'
+                : 'bg-slate-50 dark:bg-fintech-card text-slate-500 dark:text-slate-400 border-slate-200 dark:border-fintech-border'
             }`}
-            title="Şık seçildiğinde 1.5 saniye sonra sonraki soruya otomatik geçiş yapar"
+            title="Şık seçildiğinde sonraki soruya otomatik geçiş yapar"
           >
             <Zap className={`w-3.5 h-3.5 ${autoAdvance ? 'text-amber-500 fill-amber-500 dark:text-amber-400 dark:fill-amber-400' : ''}`} />
-            <span>Otomatik İlerle: {autoAdvance ? 'AÇIK' : 'KAPALI'}</span>
+            <span className="hidden md:inline">Oto: {autoAdvance ? 'AÇIK' : 'KAPALI'}</span>
           </button>
 
           <ExamTimer onTick={updateTimer} />
 
           <button
             onClick={handleFinish}
-            className="px-4 py-2 rounded-xl bg-emerald-50 dark:bg-emerald-500/20 hover:bg-emerald-100 dark:hover:bg-emerald-500/30 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-500/40 text-xs font-bold transition-all shadow-sm"
+            className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl bg-emerald-50 dark:bg-emerald-500/20 hover:bg-emerald-100 dark:hover:bg-emerald-500/30 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/40 text-xs font-bold transition-all shadow-xs cursor-pointer active:scale-95"
           >
-            Testi Bitir
+            Bitir
           </button>
         </div>
       </div>
@@ -625,10 +827,10 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
         </div>
       )}
 
-      {/* Main Layout: Question on left, Optical Form on right */}
+      {/* Main Layout: Question on left, Optical Form on right (desktop) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left / Center: Question & Explanation */}
-        <div className="lg:col-span-8 space-y-6">
+        <div className="lg:col-span-8 space-y-5 sm:space-y-6">
           <QuestionCard
             question={currentQ}
             userAnswer={currentAns}
@@ -651,47 +853,59 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
             />
           )}
 
-          {/* Bottom Navigation Buttons */}
-          <div className="flex items-center justify-between pt-2">
+          {/* Bottom Navigation Buttons (Ergonomic for iPhone 16 Pro Max thumb zones) */}
+          <div className="sticky bottom-0 z-20 -mx-4 px-4 py-3 bg-white/95 dark:bg-fintech-surface/95 backdrop-blur-md border-t border-slate-200/80 dark:border-fintech-border/80 sm:static sm:bg-transparent sm:backdrop-blur-none sm:border-0 sm:p-0 sm:mx-0 flex items-center justify-between gap-2.5 pb-[calc(0.75rem+env(safe-area-inset-bottom))] sm:pb-0 shadow-lg sm:shadow-none">
             <button
               onClick={prevQuestion}
               disabled={currentIndex === 0}
-              className={`flex items-center gap-2 px-5 py-3 rounded-2xl border text-xs font-bold transition-all ${
+              className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-3.5 sm:py-3 rounded-2xl border text-xs sm:text-sm font-bold transition-all active:scale-95 ${
                 currentIndex === 0
                   ? 'opacity-40 cursor-not-allowed bg-slate-100 dark:bg-fintech-surface border-slate-200 dark:border-fintech-border text-slate-400'
-                  : 'bg-white dark:bg-fintech-surface hover:bg-slate-50 dark:hover:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white shadow-sm'
+                  : 'bg-white dark:bg-fintech-surface hover:bg-slate-50 dark:hover:bg-fintech-card border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-200 shadow-xs'
               }`}
             >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Önceki Soru</span>
+              <ArrowLeft className="w-4 h-4 shrink-0" />
+              <span>Önceki</span>
+            </button>
+
+            {/* Mobile quick optical button in bottom bar */}
+            <button
+              onClick={() => setShowMobileOptical(true)}
+              className="lg:hidden px-3.5 py-3.5 rounded-2xl bg-slate-100 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300 text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+              title="Optik Form"
+            >
+              <ListOrdered className="w-4 h-4 text-teal-600 dark:text-teal-400" />
+              <span>{answeredCount}/{total}</span>
             </button>
 
             {isLastQuestion ? (
               <button
                 onClick={handleFinish}
-                className="flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-black text-xs shadow-md shadow-emerald-700/25 active:scale-95 transition-all cursor-pointer"
+                className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-black text-xs sm:text-sm shadow-md shadow-emerald-700/25 active:scale-95 transition-all cursor-pointer"
               >
-                <CheckCircle2 className="w-4 h-4 text-white" />
-                <span className="text-white font-black">Testi Tamamla & Sonuçları Gör</span>
+                <CheckCircle2 className="w-4 h-4 text-white shrink-0" />
+                <span className="text-white font-black">Testi Tamamla</span>
               </button>
             ) : (
               <button
                 onClick={handleNextOrFinish}
-                className={`flex items-center gap-2 px-6 py-3.5 rounded-2xl font-black text-xs transition-all cursor-pointer ${
+                className={`flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-3 rounded-2xl font-black text-xs sm:text-sm transition-all cursor-pointer active:scale-95 ${
                   (currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null)
-                    ? 'bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white shadow-md shadow-teal-700/25 active:scale-95'
-                    : 'bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-fintech-border'
+                    ? 'bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white shadow-md shadow-teal-700/25'
+                    : 'bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-fintech-border'
                 }`}
               >
-                <span className={(currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null) ? 'text-white font-black' : ''}>Sonraki Soru (Enter / →)</span>
-                <ArrowRight className={`w-4 h-4 ${(currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null) ? 'text-white' : ''}`} />
+                <span className={(currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null) ? 'text-white font-black' : ''}>
+                  Sonraki Soru
+                </span>
+                <ArrowRight className={`w-4 h-4 ${(currentSession.mode === 'practice' ? isAnswerLocked : currentAns?.selected_option !== null) ? 'text-white' : ''} shrink-0`} />
               </button>
             )}
           </div>
         </div>
 
-        {/* Right Column: Optical Form & Keyboard Hints */}
-        <div className="lg:col-span-4 space-y-6">
+        {/* Right Column: Optical Form & Keyboard Hints (Desktop Only) */}
+        <div className="hidden lg:block lg:col-span-4 space-y-6">
           <OpticalForm
             questions={currentSession.questions}
             userAnswers={currentSession.user_answers}
@@ -700,8 +914,8 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
             onSelectQuestion={goToQuestion}
           />
 
-          {/* Shortcut Keys Box */}
-          <div className="bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-4 space-y-2 text-xs text-slate-600 dark:text-slate-400 shadow-sm">
+          {/* Shortcut Keys Box (Desktop Only) */}
+          <div className="bg-white dark:bg-fintech-surface rounded-2xl border border-slate-200 dark:border-fintech-border p-4 space-y-2 text-xs text-slate-600 dark:text-slate-400 shadow-xs">
             <h5 className="font-bold text-slate-800 dark:text-slate-300 uppercase tracking-wider text-[10px] font-mono">
               Klavye Kısayolları
             </h5>
@@ -712,6 +926,44 @@ export const PracticeQuizPage: React.FC<PracticeQuizPageProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Mobile Optical Form Bottom Sheet Modal */}
+      {showMobileOptical && (
+        <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex flex-col justify-end p-0 sm:p-4">
+          <div className="bg-white dark:bg-fintech-surface rounded-t-3xl sm:rounded-3xl border-t sm:border border-slate-200 dark:border-fintech-border max-w-lg w-full mx-auto p-5 space-y-4 shadow-2xl animate-slide-up max-h-[85vh] flex flex-col">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-fintech-border/60">
+              <div>
+                <h3 className="font-black text-base text-slate-900 dark:text-white">Optik Form & Soru Listesi</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400">{answeredCount} / {total} Tamamlandı</p>
+              </div>
+              <button
+                onClick={() => setShowMobileOptical(false)}
+                className="p-2 rounded-full bg-slate-100 dark:bg-fintech-card text-slate-500 hover:text-slate-800 dark:text-slate-300 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="overflow-y-auto flex-1 pr-1">
+              <OpticalForm
+                questions={currentSession.questions}
+                userAnswers={currentSession.user_answers}
+                currentIndex={currentIndex}
+                mode={currentSession.mode}
+                onSelectQuestion={(idx) => {
+                  goToQuestion(idx);
+                  setShowMobileOptical(false);
+                }}
+              />
+            </div>
+            <button
+              onClick={() => setShowMobileOptical(false)}
+              className="w-full py-3 rounded-2xl bg-teal-600 text-white font-bold text-sm shadow-md shadow-teal-700/20 active:scale-95 transition-all"
+            >
+              Soruyu Çözmeye Dön
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Exit Confirmation Modal */}
       {showExitConfirm && (

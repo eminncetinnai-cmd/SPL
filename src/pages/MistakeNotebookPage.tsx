@@ -14,7 +14,12 @@ import {
 import { useProgressStore } from '../stores/progressStore';
 import { useQuizStore } from '../stores/quizStore';
 import { exportMistakesToCSV } from '../utils/csvExport';
-import { ModuleId } from '../types/exam';
+import { ModuleId, Question } from '../types/exam';
+import allQuestionsData from '../data/all_questions.json';
+
+const canonicalMap = new Map<string, Question>(
+  (allQuestionsData as Question[]).map((q) => [q.id, q])
+);
 
 interface MistakeNotebookPageProps {
   onNavigate: (page: string, params?: any) => void;
@@ -49,7 +54,7 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
 
   const handleStartMistakeQuiz = () => {
     if (filteredMistakes.length === 0) return;
-    const questions = filteredMistakes.map((m) => m.question);
+    const questions = filteredMistakes.map((m) => canonicalMap.get(m.question.id) || m.question);
 
     startQuiz({
       mode: 'practice',
@@ -161,9 +166,22 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
           </div>
 
           {filteredMistakes.map((item, idx) => {
-            const q = item.question;
+            const rawQ = item.question;
+            const q = canonicalMap.get(rawQ.id) || rawQ;
             const isExpanded = expandedItems[q.id] !== false;
             const bookmarked = isBookmarked(q.id);
+
+            // Resolve selected option key to canonical question options
+            let canonicalSelectedKey = item.last_selected_option;
+            if (rawQ.options && q.options) {
+              const selectedOpt = rawQ.options.find((o) => o.key === item.last_selected_option);
+              if (selectedOpt) {
+                const matchedInCanonical = q.options.find((o) => o.text.trim() === selectedOpt.text.trim());
+                if (matchedInCanonical) {
+                  canonicalSelectedKey = matchedInCanonical.key;
+                }
+              }
+            }
 
             return (
               <div
@@ -190,6 +208,11 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
                         <span className="text-[11px] font-mono text-rose-700 dark:text-rose-400 bg-rose-50 dark:bg-rose-500/10 px-2 py-0.5 rounded font-semibold">
                           {item.wrong_count} Kez Yanlış Yapıldı
                         </span>
+                        {(item.correct_streak || 0) > 0 && (
+                          <span className="text-[11px] font-mono text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-500/10 px-2 py-0.5 rounded font-semibold">
+                            {item.correct_streak}/2 Doğru
+                          </span>
+                        )}
                       </div>
                       <p className="text-sm font-semibold text-slate-900 dark:text-slate-200 truncate mt-1">
                         {q.text}
@@ -241,7 +264,7 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
                     <div className="grid grid-cols-1 gap-2">
                       {q.options.map((opt) => {
                         const isCorrect = opt.key === q.correct_answer;
-                        const wasSelected = item.last_selected_option === opt.key;
+                        const wasSelected = canonicalSelectedKey === opt.key;
 
                         let style = 'bg-slate-50 dark:bg-fintech-card/50 border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-300';
                         if (isCorrect) {

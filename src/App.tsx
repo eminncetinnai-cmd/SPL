@@ -1,23 +1,54 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Sidebar } from './components/layout/Sidebar';
 import { HomePage } from './pages/HomePage';
-import { PracticeQuizPage } from './pages/PracticeQuizPage';
-import { SimulationExamPage } from './pages/SimulationExamPage';
-import { ResultsPage } from './pages/ResultsPage';
-import { StudyNotesPage } from './pages/StudyNotesPage';
-import { FlashcardsPage } from './pages/FlashcardsPage';
-import { MistakeNotebookPage } from './pages/MistakeNotebookPage';
-import { BookmarksPage } from './pages/BookmarksPage';
-import { QuestionExplorerPage } from './pages/QuestionExplorerPage';
-import { DashboardPage } from './pages/DashboardPage';
-import { SettingsPage } from './pages/SettingsPage';
-import { CheatSheetPage } from './pages/CheatSheetPage';
 import { useSettingsStore } from './stores/settingsStore';
 import { ModuleId } from './types/exam';
 
 import { AudioPlayerBar } from './components/audio/AudioPlayerBar';
 import { Footer } from './components/layout/Footer';
+import { MobileBottomNav } from './components/layout/MobileBottomNav';
+
+// Lazy-loaded pages to speed up initial startup and mobile JS parse time
+const PracticeQuizPage = lazy(() =>
+  import('./pages/PracticeQuizPage').then((m) => ({ default: m.PracticeQuizPage }))
+);
+const SimulationExamPage = lazy(() =>
+  import('./pages/SimulationExamPage').then((m) => ({ default: m.SimulationExamPage }))
+);
+const ResultsPage = lazy(() =>
+  import('./pages/ResultsPage').then((m) => ({ default: m.ResultsPage }))
+);
+const StudyNotesPage = lazy(() =>
+  import('./pages/StudyNotesPage').then((m) => ({ default: m.StudyNotesPage }))
+);
+const FlashcardsPage = lazy(() =>
+  import('./pages/FlashcardsPage').then((m) => ({ default: m.FlashcardsPage }))
+);
+const MistakeNotebookPage = lazy(() =>
+  import('./pages/MistakeNotebookPage').then((m) => ({ default: m.MistakeNotebookPage }))
+);
+const BookmarksPage = lazy(() =>
+  import('./pages/BookmarksPage').then((m) => ({ default: m.BookmarksPage }))
+);
+const QuestionExplorerPage = lazy(() =>
+  import('./pages/QuestionExplorerPage').then((m) => ({ default: m.QuestionExplorerPage }))
+);
+const DashboardPage = lazy(() =>
+  import('./pages/DashboardPage').then((m) => ({ default: m.DashboardPage }))
+);
+const SettingsPage = lazy(() =>
+  import('./pages/SettingsPage').then((m) => ({ default: m.SettingsPage }))
+);
+const CheatSheetPage = lazy(() =>
+  import('./pages/CheatSheetPage').then((m) => ({ default: m.CheatSheetPage }))
+);
+const ExamMorningPage = lazy(() =>
+  import('./pages/ExamMorningPage').then((m) => ({ default: m.ExamMorningPage }))
+);
+const LicensesPage = lazy(() =>
+  import('./pages/LicensesPage').then((m) => ({ default: m.LicensesPage }))
+);
 
 export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<string>('home');
@@ -95,6 +126,15 @@ export const App: React.FC = () => {
         return <DashboardPage onNavigate={handleNavigate} />;
       case 'cheat-sheet':
         return <CheatSheetPage onNavigate={handleNavigate} />;
+      case 'exam-morning':
+        return (
+          <ExamMorningPage
+            initialModuleId={pageParams.moduleId}
+            onNavigate={handleNavigate}
+          />
+        );
+      case 'licenses':
+        return <LicensesPage onNavigate={handleNavigate} />;
       case 'settings':
         return <SettingsPage />;
       default:
@@ -109,13 +149,24 @@ export const App: React.FC = () => {
       <div className="flex flex-1">
         <Sidebar currentPage={currentPage} onNavigate={handleNavigate} />
 
-        <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto w-full overflow-x-hidden flex flex-col justify-between">
+        <main className="flex-1 p-3 sm:p-5 lg:p-7 max-w-7xl mx-auto w-full overflow-x-hidden flex flex-col justify-between">
           <div className="flex-1">
-            {renderPage()}
+            <Suspense
+              fallback={
+                <div className="flex items-center justify-center py-20">
+                  <div className="w-8 h-8 rounded-full border-3 border-teal-500/30 border-t-teal-500 animate-spin" />
+                </div>
+              }
+            >
+              {renderPage()}
+            </Suspense>
           </div>
           <Footer onNavigate={handleNavigate} />
         </main>
       </div>
+
+      {/* Mobile Bottom Tab Bar */}
+      <MobileBottomNav currentPage={currentPage} onNavigate={handleNavigate} />
 
       {/* Global Floating Audio Player Bar */}
       <AudioPlayerBar />
