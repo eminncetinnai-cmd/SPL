@@ -185,11 +185,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
               <span>Deneme Sınavı</span>
             </button>
             <button
-              onClick={() => handleMobileNav('mistakes')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-rose-700 dark:text-rose-300 text-left"
+              onClick={() => handleMobileNav('study-notes')}
+              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
             >
-              <AlertTriangle className="w-4 h-4 text-rose-500 shrink-0" />
-              <span>Yanlışlarım ({mistakeCount})</span>
+              <Zap className="w-4 h-4 text-teal-500 shrink-0" />
+              <span>Ders Notları</span>
             </button>
             <button
               onClick={() => handleMobileNav('bookmarks')}
@@ -197,20 +197,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             >
               <Star className="w-4 h-4 text-amber-500 shrink-0" />
               <span>Yıldızlılar ({bookmarkCount})</span>
-            </button>
-            <button
-              onClick={() => handleMobileNav('explorer')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
-            >
-              <Search className="w-4 h-4 text-purple-500 shrink-0" />
-              <span>Soru Ara (935)</span>
-            </button>
-            <button
-              onClick={() => handleMobileNav('dashboard')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
-            >
-              <BarChart3 className="w-4 h-4 text-emerald-500 shrink-0" />
-              <span>İstatistik & Analitik</span>
             </button>
             <button
               onClick={() => handleMobileNav('settings')}

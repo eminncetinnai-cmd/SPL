@@ -6,11 +6,10 @@ import { useSettingsStore } from './stores/settingsStore';
 import { useQuizStore } from './stores/quizStore';
 import { ModuleId } from './types/exam';
 
-import { AudioPlayerBar } from './components/audio/AudioPlayerBar';
 import { Footer } from './components/layout/Footer';
 import { MobileBottomNav } from './components/layout/MobileBottomNav';
 
-// Lazy-loaded pages to speed up initial startup and mobile JS parse time
+// Lazy-loaded essential study pages
 const PracticeQuizPage = lazy(() =>
   import('./pages/PracticeQuizPage').then((m) => ({ default: m.PracticeQuizPage }))
 );
@@ -32,23 +31,11 @@ const MistakeNotebookPage = lazy(() =>
 const BookmarksPage = lazy(() =>
   import('./pages/BookmarksPage').then((m) => ({ default: m.BookmarksPage }))
 );
-const QuestionExplorerPage = lazy(() =>
-  import('./pages/QuestionExplorerPage').then((m) => ({ default: m.QuestionExplorerPage }))
-);
-const DashboardPage = lazy(() =>
-  import('./pages/DashboardPage').then((m) => ({ default: m.DashboardPage }))
-);
 const SettingsPage = lazy(() =>
   import('./pages/SettingsPage').then((m) => ({ default: m.SettingsPage }))
 );
 const CheatSheetPage = lazy(() =>
   import('./pages/CheatSheetPage').then((m) => ({ default: m.CheatSheetPage }))
-);
-const ExamMorningPage = lazy(() =>
-  import('./pages/ExamMorningPage').then((m) => ({ default: m.ExamMorningPage }))
-);
-const LicensesPage = lazy(() =>
-  import('./pages/LicensesPage').then((m) => ({ default: m.LicensesPage }))
 );
 
 export const App: React.FC = () => {
@@ -120,27 +107,9 @@ export const App: React.FC = () => {
         return <MistakeNotebookPage onNavigate={handleNavigate} />;
       case 'bookmarks':
         return <BookmarksPage onNavigate={handleNavigate} />;
-      case 'explorer':
-        return (
-          <QuestionExplorerPage
-            initialModuleId={pageParams.moduleId}
-            initialStatus={pageParams.status}
-            onNavigate={handleNavigate}
-          />
-        );
-      case 'dashboard':
-        return <DashboardPage onNavigate={handleNavigate} />;
       case 'cheat-sheet':
-        return <CheatSheetPage onNavigate={handleNavigate} />;
       case 'exam-morning':
-        return (
-          <ExamMorningPage
-            initialModuleId={pageParams.moduleId}
-            onNavigate={handleNavigate}
-          />
-        );
-      case 'licenses':
-        return <LicensesPage onNavigate={handleNavigate} />;
+        return <CheatSheetPage onNavigate={handleNavigate} />;
       case 'settings':
         return <SettingsPage />;
       default:
@@ -192,9 +161,6 @@ export const App: React.FC = () => {
 
       {/* Mobile Bottom Tab Bar */}
       <MobileBottomNav currentPage={currentPage} onNavigate={handleNavigate} />
-
-      {/* Global Floating Audio Player Bar */}
-      <AudioPlayerBar />
     </div>
   );
 };

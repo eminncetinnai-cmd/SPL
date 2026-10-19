@@ -33,16 +33,13 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => 
 
   const navItems = [
     { id: 'home', label: 'Ana Sayfa', icon: Home },
-    { id: 'exam-morning', label: '🔥 Sınav Sabahı (15 Dk)', icon: Zap, badge: 'Hap Kartlar', color: 'text-amber-500 animate-pulse font-bold' },
     { id: 'practice', label: 'Test Çöz', icon: Sparkles, badge: '935 Soru', color: 'text-teal-600 dark:text-teal-400' },
-    { id: 'cheat-sheet', label: '⚡ Sınav Hapları (10 Dk)', icon: Zap, badge: 'Hızlı Tekrar', color: 'text-amber-600 dark:text-amber-400' },
-    { id: 'flashcards', label: 'Öğrenme Kartları', icon: Layers, badge: '400 Kart' },
-    { id: 'study-notes', label: 'Konu Anlatımları', icon: FileText, badge: '32 Bölüm' },
-    { id: 'licenses', label: 'Lisanslar & Dersler', icon: Award, badge: '9 Lisans', color: 'text-indigo-600 dark:text-indigo-400' },
     { id: 'mistakes', label: 'Yanlışlarım Defteri', icon: AlertTriangle, count: mistakeCount, color: 'text-rose-500 dark:text-rose-400' },
     { id: 'bookmarks', label: 'Yıldızlı Sorular', icon: Star, count: bookmarkCount, color: 'text-amber-500 dark:text-amber-400' },
-    { id: 'dashboard', label: 'Analitik & İstatistik', icon: BarChart3 },
-    { id: 'settings', label: 'Ayarlar & Yedek', icon: Settings },
+    { id: 'cheat-sheet', label: '249 Altın Hap Bilgi', icon: Zap, badge: 'Özet', color: 'text-amber-600 dark:text-amber-400' },
+    { id: 'flashcards', label: 'Öğrenme Kartları', icon: Layers, badge: '400 Kart' },
+    { id: 'study-notes', label: 'Konu Anlatımları', icon: FileText, badge: '32 Bölüm' },
+    { id: 'settings', label: 'Ayarlar', icon: Settings },
   ];
 
   const modules = [

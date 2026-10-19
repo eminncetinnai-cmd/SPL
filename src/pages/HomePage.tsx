@@ -8,6 +8,7 @@ import {
   BarChart3,
   ArrowRight,
   Zap,
+  Layers,
 } from 'lucide-react';
 import { ModuleProgressCards } from '../components/dashboard/ModuleProgressCards';
 import { useProgressStore } from '../stores/progressStore';
@@ -69,15 +70,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               className="flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl bg-amber-400 hover:bg-amber-500 text-slate-950 font-bold text-xs sm:text-sm shadow-xs active:scale-95 transition-all cursor-pointer"
             >
               <Zap className="w-4 h-4 fill-slate-950 text-slate-950" />
-              <span>249 Hap Bilgi</span>
+              <span>249 Altın Kural</span>
             </button>
 
             <button
-              onClick={() => onNavigate('exam-morning')}
-              className="flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-rose-500 hover:from-amber-600 hover:to-rose-600 text-white font-black text-xs sm:text-sm shadow-xs active:scale-95 transition-all cursor-pointer"
+              onClick={() => onNavigate('mistakes')}
+              className={`flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl font-bold text-xs sm:text-sm shadow-xs active:scale-95 transition-all cursor-pointer ${
+                mistakeCount > 0
+                  ? 'bg-rose-500 hover:bg-rose-600 text-white'
+                  : 'bg-slate-100 dark:bg-fintech-card text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-fintech-border'
+              }`}
             >
-              <Zap className="w-4 h-4 fill-white text-white" />
-              <span>Sınav Sabahı (15 Dk)</span>
+              <AlertTriangle className="w-4 h-4" />
+              <span>Hata Defterim ({mistakeCount})</span>
             </button>
           </div>
         </div>
@@ -185,16 +190,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </button>
 
         <button
-          onClick={() => onNavigate('dashboard')}
+          onClick={() => onNavigate('flashcards')}
           className="p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-fintech-surface hover:bg-slate-50 dark:hover:bg-fintech-card border border-slate-200 dark:border-fintech-border text-left transition-all flex items-center justify-between group shadow-xs cursor-pointer"
         >
           <div className="min-w-0 pr-2">
             <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-bold text-xs sm:text-sm">
-              <BarChart3 className="w-4 h-4 shrink-0" />
-              <span className="truncate">Analitik & Karnem</span>
+              <Layers className="w-4 h-4 shrink-0" />
+              <span className="truncate">Öğrenme Kartları</span>
             </div>
             <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5">
-              Detaylı başarı grafiği
+              400 Kavram & Özet
             </span>
           </div>
           <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-emerald-500 shrink-0" />

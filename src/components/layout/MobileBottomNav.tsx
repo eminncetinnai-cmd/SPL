@@ -1,5 +1,4 @@
-import React from 'react';
-import { Home, Sparkles, Zap, FileText, Layers } from 'lucide-react';
+import { Home, Sparkles, Zap, Layers, AlertTriangle } from 'lucide-react';
 
 interface MobileBottomNavProps {
   currentPage: string;
@@ -10,8 +9,8 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ currentPage, o
   const tabs = [
     { id: 'home', label: 'Ana Sayfa', icon: Home },
     { id: 'practice', label: 'Test Çöz', icon: Sparkles },
+    { id: 'mistakes', label: 'Yanlışlarım', icon: AlertTriangle },
     { id: 'cheat-sheet', label: 'Hap Bilgi', icon: Zap },
-    { id: 'study-notes', label: 'Ders Notu', icon: FileText },
     { id: 'flashcards', label: 'Kartlar', icon: Layers },
   ];
 
