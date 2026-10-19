@@ -26,16 +26,29 @@ interface MistakeNotebookPageProps {
 }
 
 export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavigate }) => {
-  const { mistakes, removeMistake, toggleBookmark, isBookmarked, clearMistakes } = useProgressStore();
+  const { 
+    mistakes, 
+    removeMistake, 
+    resolveMistake, 
+    unresolveMistake, 
+    toggleBookmark, 
+    isBookmarked, 
+    clearMistakes 
+  } = useProgressStore();
   const { startQuiz } = useQuizStore();
 
+  const [activeTab, setActiveTab] = useState<'active' | 'resolved'>('active');
   const [selectedModule, setSelectedModule] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
 
-  const mistakeList = Object.values(mistakes).filter((m) => !m.resolved);
+  const allMistakesList = Object.values(mistakes);
+  const activeMistakes = allMistakesList.filter((m) => !m.resolved);
+  const resolvedMistakes = allMistakesList.filter((m) => m.resolved);
 
-  const filteredMistakes = mistakeList.filter((m) => {
+  const currentTabList = activeTab === 'active' ? activeMistakes : resolvedMistakes;
+
+  const filteredMistakes = currentTabList.filter((m) => {
     if (selectedModule !== 'all' && m.question.module_id !== selectedModule) return false;
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
@@ -83,10 +96,10 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
             </div>
           </div>
 
-          {mistakeList.length > 0 && (
+          {activeMistakes.length > 0 && activeTab === 'active' && (
             <div className="flex items-center gap-3">
               <button
-                onClick={() => exportMistakesToCSV(mistakeList)}
+                onClick={() => exportMistakesToCSV(activeMistakes)}
                 className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-fintech-card dark:hover:bg-fintech-cardHover text-slate-700 dark:text-slate-300 text-xs font-semibold border border-slate-200 dark:border-fintech-border shadow-sm transition-colors"
               >
                 <Download className="w-4 h-4 text-teal-600 dark:text-teal-400" />
@@ -104,8 +117,35 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
           )}
         </div>
 
+        {/* Active vs Resolved Tabs */}
+        <div className="flex items-center gap-2 border-t border-slate-100 dark:border-fintech-border/60 pt-3">
+          <button
+            onClick={() => setActiveTab('active')}
+            className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
+              activeTab === 'active'
+                ? 'bg-rose-500 text-white shadow-xs'
+                : 'bg-slate-100 dark:bg-fintech-card text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-fintech-cardHover'
+            }`}
+          >
+            <AlertTriangle className="w-4 h-4" />
+            <span>Aktif Hatalar ({activeMistakes.length})</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('resolved')}
+            className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all ${
+              activeTab === 'resolved'
+                ? 'bg-emerald-600 text-white shadow-xs'
+                : 'bg-slate-100 dark:bg-fintech-card text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-fintech-cardHover'
+            }`}
+          >
+            <CheckCircle className="w-4 h-4" />
+            <span>Eritilenler / Öğrenilenler ({resolvedMistakes.length})</span>
+          </button>
+        </div>
+
         {/* Filter and Search Bar */}
-        <div className="grid grid-cols-1 sm:grid-cols-12 gap-3 pt-2">
+        <div className="grid grid-cols-1 sm:grid-cols-12 gap-3 pt-1">
           <div className="sm:col-span-8 relative">
             <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
             <input
@@ -123,7 +163,7 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
               onChange={(e) => setSelectedModule(e.target.value)}
               className="w-full bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border rounded-xl px-3 py-2.5 text-xs text-slate-900 dark:text-slate-200 focus:outline-none focus:border-rose-500 transition-colors shadow-xs"
             >
-              <option value="all">Tüm Modüller ({mistakeList.length})</option>
+              <option value="all">Tüm Modüller ({currentTabList.length})</option>
               <option value="1001">Modül 1001 Mevzuat</option>
               <option value="1003">Modül 1003 Araçlar</option>
               <option value="1005">Modül 1005 Yatırım Kuruluşları</option>
@@ -139,21 +179,23 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
           <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto">
             <CheckCircle className="w-6 h-6" />
           </div>
-          <h3 className="text-base font-bold text-slate-900 dark:text-white">Harika! Hatalı Soru Bulunmuyor</h3>
+          <h3 className="text-base font-bold text-slate-900 dark:text-white">
+            {activeTab === 'active' ? 'Harika! Aktif Hatalı Soru Bulunmuyor' : 'Henüz Eritilen Soru Yok'}
+          </h3>
           <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
-            {mistakeList.length === 0
-              ? 'Çözdüğünüz testlerde yanlış yaptığınız sorular burada listelenecek ve tekrar etmeniz sağlanacaktır.'
-              : 'Seçili filtreye uyan hatalı soru bulunamadı.'}
+            {activeTab === 'active'
+              ? 'Çözdüğünüz testlerde yanlış yaptığınız sorular burada listelenecek ve doğru çözdükçe otomatik eritilecektir.'
+              : 'Aktif hatalarınızdan birini doğru çözdüğünüzde veya "Erit" butonuna bastığınızda burada listelenir.'}
           </p>
         </div>
       ) : (
         <div className="space-y-4">
           <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 px-2 font-mono">
-            <span>{filteredMistakes.length} Hatalı Soru Listeleniyor</span>
-            {mistakeList.length > 0 && (
+            <span>{filteredMistakes.length} {activeTab === 'active' ? 'Aktif Hatalı Soru' : 'Eritilen/Öğrenilen Soru'} Listeleniyor</span>
+            {currentTabList.length > 0 && activeTab === 'active' && (
               <button
                 onClick={() => {
-                  if (confirm('Tüm hatalı soru geçmişi temizlensin mi?')) {
+                  if (confirm('Tüm aktif hatalı soru geçmişi temizlensin mi?')) {
                     clearMistakes();
                   }
                 }}
@@ -221,6 +263,32 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
                   </div>
 
                   <div className="flex items-center gap-2 shrink-0">
+                    {activeTab === 'active' ? (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          resolveMistake(q.id);
+                        }}
+                        className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-600 text-xs font-bold transition-all shadow-xs cursor-pointer"
+                        title="Bu soruyu kavradım, eritilenlere taşı"
+                      >
+                        <CheckCircle className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">Erit</span>
+                      </button>
+                    ) : (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          unresolveMistake(q.id);
+                        }}
+                        className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-600 text-xs font-bold transition-all shadow-xs cursor-pointer"
+                        title="Bu soruyu aktif hatalara geri taşı"
+                      >
+                        <RotateCcw className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">Geri Al</span>
+                      </button>
+                    )}
+
                     <button
                       onClick={(e) => {
                         e.stopPropagation();

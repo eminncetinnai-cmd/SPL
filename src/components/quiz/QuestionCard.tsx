@@ -1,7 +1,8 @@
-import React from 'react';
-import { Star, Flag, CheckCircle, XCircle } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Star, Flag, CheckCircle, XCircle, Calculator } from 'lucide-react';
 import { Question, UserAnswer, QuizMode } from '../../types/exam';
 import { useProgressStore } from '../../stores/progressStore';
+import { FormulaDrawer } from './FormulaDrawer';
 
 interface QuestionCardProps {
   question: Question;
@@ -25,17 +26,56 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   onToggleReviewFlag,
 }) => {
   const { toggleBookmark, isBookmarked } = useProgressStore();
+  const [showFormulaDrawer, setShowFormulaDrawer] = useState(false);
+
   const bookmarked = isBookmarked(question.id);
   const selectedKey = userAnswer?.selected_option;
   const isCorrectAnswer = question.correct_answer;
 
+  const isNumericalQuestion = useMemo(() => {
+    const text = (question.text + ' ' + (question.topic || '')).toLowerCase();
+    return (
+      text.includes('hesaplay') ||
+      text.includes('bedelli') ||
+      text.includes('rüçhan') ||
+      text.includes('temettü') ||
+      text.includes('margin call') ||
+      text.includes('özkaynak') ||
+      text.includes('özsermaye') ||
+      text.includes('kirli fiyat') ||
+      text.includes('tahvil') ||
+      text.includes('kupon') ||
+      text.includes('başlangıç teminat') ||
+      text.includes('tl') ||
+      text.includes('%')
+    );
+  }, [question]);
+
   const handleKeySelect = (key: 'A' | 'B' | 'C' | 'D' | 'E') => {
     if (mode === 'practice' && isLocked) return;
+
+    // Web Haptic vibration feedback
+    if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+      try {
+        if (mode === 'practice') {
+          const isCorrect = key === isCorrectAnswer;
+          navigator.vibrate(isCorrect ? [15, 25, 20] : 30);
+        } else {
+          navigator.vibrate(15);
+        }
+      } catch (e) {}
+    }
+
     onSelectOption(key);
   };
 
   return (
     <div className="w-full bg-white dark:bg-fintech-surface rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-fintech-border shadow-xs sm:shadow-sm p-4 sm:p-6 space-y-4 sm:space-y-5">
+      {/* Formula Drawer Bottom Sheet */}
+      <FormulaDrawer
+        isOpen={showFormulaDrawer}
+        onClose={() => setShowFormulaDrawer(false)}
+      />
       {/* Compact iOS-style Header Info */}
       <div className="flex items-center justify-between gap-2 border-b border-slate-100 dark:border-fintech-border/70 pb-3">
         <div className="flex items-center gap-2">
@@ -52,8 +92,21 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           )}
         </div>
 
-        {/* Action Buttons: Star and Review Flag */}
+        {/* Action Buttons: Formula, Star and Review Flag */}
         <div className="flex items-center gap-1.5 shrink-0">
+          <button
+            onClick={() => setShowFormulaDrawer(true)}
+            className={`flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border ${
+              isNumericalQuestion
+                ? 'bg-amber-500/15 text-amber-700 dark:text-amber-300 border-amber-500/40 shadow-xs'
+                : 'bg-slate-100 text-slate-600 hover:text-slate-900 border-slate-200 dark:bg-slate-800/80 dark:text-slate-400 dark:border-slate-700'
+            }`}
+            title="Sayısal Formül Çekmecesini Aç"
+          >
+            <Calculator className={`w-3.5 h-3.5 ${isNumericalQuestion ? 'text-amber-500' : ''}`} />
+            <span className="text-[11px]">Formül</span>
+          </button>
+
           {mode === 'simulation' && onToggleReviewFlag && (
             <button
               onClick={onToggleReviewFlag}
@@ -71,7 +124,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
           <button
             onClick={() => toggleBookmark(question.id)}
-            className={`p-2.5 rounded-xl transition-all border ${
+            className={`p-2 rounded-xl transition-all border ${
               bookmarked
                 ? 'bg-amber-100 text-amber-600 border-amber-300 dark:bg-amber-500/15 dark:text-amber-400 dark:border-amber-500/30 shadow-xs'
                 : 'bg-slate-100 text-slate-500 hover:text-amber-600 border-slate-200 dark:bg-slate-800/80 dark:text-slate-400 dark:border-slate-700'

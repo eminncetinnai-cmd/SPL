@@ -22,6 +22,10 @@ interface ProgressState {
   seenQuestionIds: string[]; // question IDs that have been solved in tests
   avoidQuestionRepetition: boolean; // toggle to avoid repeating seen questions
   moduleStats: Record<ModuleId, ModuleStats>;
+  streakCount: number;
+  lastActiveDate: string | null;
+  todaySolvedCount: number;
+  todayDate: string;
   
   // Actions
   recordAnswer: (question: Question, selected: string, isCorrect: boolean) => void;
@@ -29,6 +33,8 @@ interface ProgressState {
   recordQuizCompletion: (session: QuizSession) => void;
   addMistake: (question: Question, selected: string) => void;
   removeMistake: (questionId: string) => void;
+  resolveMistake: (questionId: string) => void;
+  unresolveMistake: (questionId: string) => void;
   toggleBookmark: (questionId: string) => boolean;
   isBookmarked: (questionId: string) => boolean;
   toggleLearnedCard: (cardId: string) => boolean;
@@ -88,7 +94,19 @@ function normalizeMistakes(
   );
 }
 
+function getTodayDateString(): string {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+}
+
+function getYesterdayDateString(): string {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
 const initialData = (() => {
+  const todayStr = getTodayDateString();
   try {
     if (typeof localStorage !== 'undefined') {
       // Clear legacy storage versions if any exist to guarantee clean state
@@ -99,6 +117,7 @@ const initialData = (() => {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
+        const isToday = parsed.todayDate === todayStr;
         return {
           history: parsed.history || [],
           mistakes: normalizeMistakes(parsed.mistakes || {}),
@@ -108,6 +127,10 @@ const initialData = (() => {
           seenQuestionIds: parsed.seenQuestionIds || [],
           avoidQuestionRepetition: parsed.avoidQuestionRepetition !== undefined ? parsed.avoidQuestionRepetition : true,
           moduleStats: { ...defaultModuleStats, ...(parsed.moduleStats || {}) },
+          streakCount: parsed.streakCount || 0,
+          lastActiveDate: parsed.lastActiveDate || null,
+          todaySolvedCount: isToday ? (parsed.todaySolvedCount || 0) : 0,
+          todayDate: todayStr,
         };
       }
     }
@@ -123,6 +146,10 @@ const initialData = (() => {
     seenQuestionIds: [],
     avoidQuestionRepetition: true,
     moduleStats: defaultModuleStats,
+    streakCount: 0,
+    lastActiveDate: null,
+    todaySolvedCount: 0,
+    todayDate: todayStr,
   };
 })();
 
@@ -152,6 +179,10 @@ function flushToStorage(state: Partial<ProgressState>) {
       avoidQuestionRepetition:
         state.avoidQuestionRepetition !== undefined ? state.avoidQuestionRepetition : true,
       moduleStats: state.moduleStats || defaultModuleStats,
+      streakCount: state.streakCount || 0,
+      lastActiveDate: state.lastActiveDate || null,
+      todaySolvedCount: state.todaySolvedCount || 0,
+      todayDate: state.todayDate || getTodayDateString(),
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(dataToSave));
   } catch (e) {
@@ -191,6 +222,10 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   seenQuestionIds: initialData.seenQuestionIds,
   avoidQuestionRepetition: initialData.avoidQuestionRepetition,
   moduleStats: initialData.moduleStats,
+  streakCount: initialData.streakCount,
+  lastActiveDate: initialData.lastActiveDate,
+  todaySolvedCount: initialData.todaySolvedCount,
+  todayDate: initialData.todayDate,
 
   recordAnswer: (question: Question, selected: string, isCorrect: boolean) => {
     const state = get();
@@ -250,16 +285,38 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
           [question.id]: {
             ...existingMistake,
             correct_streak: correctStreak,
-            resolved: correctStreak >= 2,
+            resolved: true, // Auto-resolve on correct answer
           },
         };
       }
+    }
+
+    // Daily streak & solved count calculation
+    const todayStr = getTodayDateString();
+    const yesterdayStr = getYesterdayDateString();
+    let currentStreak = state.streakCount;
+    let todayCount = state.todaySolvedCount;
+
+    if (state.todayDate !== todayStr) {
+      if (state.lastActiveDate === yesterdayStr) {
+        currentStreak += 1;
+      } else if (state.lastActiveDate !== todayStr) {
+        currentStreak = 1;
+      }
+      todayCount = 1;
+    } else {
+      if (currentStreak === 0) currentStreak = 1;
+      todayCount += 1;
     }
 
     set({
       moduleStats: updatedStats,
       seenQuestionIds: newSeenQuestionIds,
       mistakes: newMistakes,
+      streakCount: currentStreak,
+      lastActiveDate: todayStr,
+      todaySolvedCount: todayCount,
+      todayDate: todayStr,
     });
 
     saveToStorage({
@@ -267,6 +324,10 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       moduleStats: updatedStats,
       seenQuestionIds: newSeenQuestionIds,
       mistakes: newMistakes,
+      streakCount: currentStreak,
+      lastActiveDate: todayStr,
+      todaySolvedCount: todayCount,
+      todayDate: todayStr,
     });
   },
 
@@ -278,7 +339,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     const updatedEntry: MistakeEntry = {
       ...current,
       correct_streak: correctStreak,
-      resolved: correctStreak >= 2,
+      resolved: true,
     };
     const newMistakes = {
       ...get().mistakes,
@@ -287,6 +348,30 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
 
     set({ mistakes: newMistakes });
     saveToStorage({ ...get(), mistakes: newMistakes });
+  },
+
+  resolveMistake: (questionId: string) => {
+    const current = get().mistakes[questionId];
+    if (current) {
+      const newMistakes = {
+        ...get().mistakes,
+        [questionId]: { ...current, resolved: true },
+      };
+      set({ mistakes: newMistakes });
+      saveToStorage({ ...get(), mistakes: newMistakes });
+    }
+  },
+
+  unresolveMistake: (questionId: string) => {
+    const current = get().mistakes[questionId];
+    if (current) {
+      const newMistakes = {
+        ...get().mistakes,
+        [questionId]: { ...current, resolved: false },
+      };
+      set({ mistakes: newMistakes });
+      saveToStorage({ ...get(), mistakes: newMistakes });
+    }
   },
 
   recordQuizCompletion: (session: QuizSession) => {
@@ -373,10 +458,35 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       });
     }
 
+    // Update streak and daily count if in simulation mode
+    const todayStr = getTodayDateString();
+    const yesterdayStr = getYesterdayDateString();
+    let currentStreak = get().streakCount;
+    let todayCount = get().todaySolvedCount;
+
+    if (session.mode === 'simulation') {
+      const answeredCount = Object.values(session.user_answers || {}).filter((a) => a.selected_option !== null).length;
+      if (get().todayDate !== todayStr) {
+        if (get().lastActiveDate === yesterdayStr) {
+          currentStreak += 1;
+        } else if (get().lastActiveDate !== todayStr) {
+          currentStreak = 1;
+        }
+        todayCount = answeredCount;
+      } else {
+        if (currentStreak === 0) currentStreak = 1;
+        todayCount += answeredCount;
+      }
+    }
+
     set({
       history: newHistory,
       seenQuestionIds: newSeenQuestionIds,
       moduleStats: updatedStats,
+      streakCount: currentStreak,
+      lastActiveDate: todayStr,
+      todaySolvedCount: todayCount,
+      todayDate: todayStr,
     });
 
     saveToStorage({
@@ -384,6 +494,10 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       history: newHistory,
       seenQuestionIds: newSeenQuestionIds,
       moduleStats: updatedStats,
+      streakCount: currentStreak,
+      lastActiveDate: todayStr,
+      todaySolvedCount: todayCount,
+      todayDate: todayStr,
     });
   },
 
@@ -566,7 +680,8 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
 
   resetAll: () => {
-    set({
+    const todayStr = getTodayDateString();
+    const cleanState = {
       history: [],
       mistakes: {},
       bookmarks: [],
@@ -575,16 +690,12 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       seenQuestionIds: [],
       avoidQuestionRepetition: true,
       moduleStats: defaultModuleStats,
-    });
-    saveToStorage({
-      history: [],
-      mistakes: {},
-      bookmarks: [],
-      learnedCards: [],
-      starredCards: [],
-      seenQuestionIds: [],
-      avoidQuestionRepetition: true,
-      moduleStats: defaultModuleStats,
-    });
+      streakCount: 0,
+      lastActiveDate: null,
+      todaySolvedCount: 0,
+      todayDate: todayStr,
+    };
+    set(cleanState);
+    saveToStorage(cleanState);
   },
 }));

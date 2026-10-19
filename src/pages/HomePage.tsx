@@ -9,8 +9,10 @@ import {
   ArrowRight,
   Zap,
   Layers,
+  Flame,
 } from 'lucide-react';
 import { ModuleProgressCards } from '../components/dashboard/ModuleProgressCards';
+import { SpkBarrierCard } from '../components/dashboard/SpkBarrierCard';
 import { useProgressStore } from '../stores/progressStore';
 import allQuestionsData from '../data/all_questions.json';
 
@@ -19,7 +21,19 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
-  const { history, mistakes, bookmarks, learnedCards, moduleStats, seenQuestionIds } = useProgressStore();
+  const { 
+    history, 
+    mistakes, 
+    bookmarks, 
+    learnedCards, 
+    moduleStats, 
+    seenQuestionIds,
+    streakCount,
+    todaySolvedCount,
+  } = useProgressStore();
+
+  const dailyGoal = 25;
+  const dailyProgressPercent = Math.min(100, Math.round((todaySolvedCount / dailyGoal) * 100));
 
   const mistakeCount = Object.values(mistakes).filter((m) => !m.resolved).length;
   const bookmarkCount = bookmarks.length;
@@ -87,6 +101,42 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
         </div>
 
+        {/* Daily Streak & 25 Questions Goal Bar */}
+        <div className="p-3 sm:p-4 rounded-2xl bg-gradient-to-r from-teal-500/10 via-amber-500/10 to-teal-500/10 border border-teal-500/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-amber-500/20 text-amber-500 shrink-0">
+              <Flame className="w-6 h-6 fill-amber-500" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-black uppercase text-amber-700 dark:text-amber-400">
+                  {streakCount > 0 ? `${streakCount} GÜNLÜK SERİ 🔥` : 'GÜNLÜK DİSİPLİN HEDEFİ'}
+                </span>
+                <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">
+                  Bugün: {todaySolvedCount} / {dailyGoal} Soru
+                </span>
+              </div>
+              <p className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+                {todaySolvedCount >= dailyGoal
+                  ? '🎉 Harika! Bugünkü 25 taze soru hedefinize ulaştınız.'
+                  : `Bugünkü hedefin tamamlanmasına son ${dailyGoal - todaySolvedCount} soru kaldı.`}
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 self-stretch sm:self-auto min-w-[140px]">
+            <div className="flex-1 sm:w-28 h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-gradient-to-r from-amber-500 to-teal-500 rounded-full transition-all duration-500"
+                style={{ width: `${dailyProgressPercent}%` }}
+              />
+            </div>
+            <span className="text-xs font-mono font-black text-teal-700 dark:text-teal-300">
+              %{dailyProgressPercent}
+            </span>
+          </div>
+        </div>
+
         {/* Compact KPI Strip */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-3 border-t border-slate-100 dark:border-fintech-border/60">
           <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200/80 dark:border-fintech-border flex items-center justify-between">
@@ -124,6 +174,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
         </div>
       </div>
+
+      {/* SPK Baraj Teşhisi & Risk Analizi */}
+      <SpkBarrierCard onNavigate={onNavigate} />
 
       {/* 4 SPL Module Cards Section */}
       <div className="space-y-3">
