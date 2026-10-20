@@ -1,4 +1,4 @@
-const CACHE_NAME = 'spk-spl1-v3';
+const CACHE_NAME = 'spk-spl1-v4';
 
 const STATIC_PRECACHE = [
   '/',

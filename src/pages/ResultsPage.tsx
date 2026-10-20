@@ -164,17 +164,17 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({ onNavigate }) => {
             </h1>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
             <button
               onClick={() => exportQuizHistoryToCSV(history)}
-              className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-fintech-card dark:hover:bg-fintech-cardHover text-slate-700 dark:text-slate-300 text-xs font-semibold border border-slate-200 dark:border-fintech-border shadow-sm transition-colors"
+              className="flex-1 sm:flex-initial min-h-[44px] flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-fintech-card dark:hover:bg-fintech-cardHover text-slate-700 dark:text-slate-300 text-xs font-semibold border border-slate-200 dark:border-fintech-border shadow-sm active:scale-98 transition-all cursor-pointer"
             >
               <Download className="w-4 h-4 text-teal-600 dark:text-teal-400" />
               <span>CSV İndir</span>
             </button>
             <button
               onClick={() => onNavigate('home')}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card dark:hover:bg-fintech-cardHover text-slate-900 dark:text-white text-xs font-semibold border border-slate-200 dark:border-fintech-border shadow-sm transition-colors"
+              className="flex-1 sm:flex-initial min-h-[44px] flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-fintech-card dark:hover:bg-fintech-cardHover text-slate-900 dark:text-white text-xs font-semibold border border-slate-200 dark:border-fintech-border shadow-sm active:scale-98 transition-all cursor-pointer"
             >
               <Home className="w-4 h-4" />
               <span>Ana Sayfa</span>

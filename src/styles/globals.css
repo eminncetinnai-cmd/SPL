@@ -214,3 +214,51 @@ button.bg-amber-500 * {
 .animate-pulse-subtle {
   animation: pulseSubtle 3s infinite ease-in-out;
 }
+
+/* ========================================================= */
+/* iOS & iPhone 16 Pro Max Ergonomics (Apple HIG & Safe Area) */
+/* ========================================================= */
+
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  overscroll-behavior-y: none;
+}
+
+/* Touch manipulation: removes the 300ms tap delay on iOS Mobile Safari */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+/* Prevent unwanted iOS auto-zoom on form inputs when focused */
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="number"],
+  input[type="search"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Safe area padding utilities for iPhone Dynamic Island and Home Indicator */
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pl-safe {
+  padding-left: env(safe-area-inset-left, 0px);
+}
+
+.pr-safe {
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+/* Smooth momentum scrolling for iOS tables and cards */
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
+}

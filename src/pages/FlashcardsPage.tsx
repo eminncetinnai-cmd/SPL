@@ -243,7 +243,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({
           {/* 3D Interactive Flip Card Box */}
           <div
             onClick={() => setIsFlipped(!isFlipped)}
-            className="w-full min-h-[380px] sm:min-h-[420px] bg-gradient-to-br from-white via-slate-50 to-slate-100 dark:from-slate-900 dark:via-fintech-surface dark:to-slate-900 rounded-3xl border border-slate-200 dark:border-teal-500/30 hover:border-teal-500/60 p-7 sm:p-10 shadow-lg cursor-pointer select-none transition-all duration-300 relative flex flex-col justify-between group hover:shadow-teal-500/10"
+            className="w-full min-h-[380px] sm:min-h-[420px] bg-gradient-to-br from-white via-slate-50 to-slate-100 dark:from-slate-900 dark:via-fintech-surface dark:to-slate-900 rounded-3xl border border-slate-200 dark:border-teal-500/30 hover:border-teal-500/60 p-5 sm:p-8 shadow-lg cursor-pointer select-none transition-all duration-300 relative flex flex-col justify-between group hover:shadow-teal-500/10"
           >
             {/* Top Row on Card */}
             <div className="flex items-center justify-between gap-3">
@@ -348,7 +348,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
             <button
               onClick={handlePrev}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-white hover:bg-slate-50 dark:bg-fintech-surface dark:hover:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white text-xs font-bold transition-all shadow-sm"
+              className="w-full sm:w-auto min-h-[48px] flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-white hover:bg-slate-50 dark:bg-fintech-surface dark:hover:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white text-xs font-bold transition-all shadow-sm"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Önceki Kart</span>
@@ -392,7 +392,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({
 
             <button
               onClick={handleNext}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs font-black shadow-md shadow-teal-700/20 active:scale-95 transition-all cursor-pointer"
+              className="w-full sm:w-auto min-h-[48px] flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white text-xs font-black shadow-md shadow-teal-700/20 active:scale-95 transition-all cursor-pointer"
             >
               <span className="text-white font-black">Sonraki Kart</span>
               <ArrowRight className="w-4 h-4 text-white" />

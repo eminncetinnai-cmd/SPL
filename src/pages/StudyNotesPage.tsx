@@ -271,7 +271,7 @@ export const StudyNotesPage: React.FC<StudyNotesPageProps> = ({
                   {/* Audio Podcast Mode Button */}
                   <button
                     onClick={handleListenSection}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-md ${
+                    className={`min-h-[44px] flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-md ${
                       isCurrentSectionPlaying
                         ? 'bg-emerald-500 text-slate-950 shadow-emerald-500/20 ring-2 ring-emerald-400 animate-pulse'
                         : 'bg-teal-50 dark:bg-teal-500/15 hover:bg-teal-100 dark:hover:bg-teal-500/25 text-teal-900 dark:text-teal-300 border border-teal-300 dark:border-teal-500/40 active:scale-95'
@@ -426,8 +426,8 @@ export const StudyNotesPage: React.FC<StudyNotesPageProps> = ({
                 </div>
 
                 <button
-                  onClick={() => onNavigate('practice', { initialModuleId: activeModule, initialSourceFilter: 'genel' })}
-                  className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-md shadow-teal-500/25 active:scale-95 transition-all"
+                  onClick={() => onNavigate('practice', { moduleId: activeModule, sourceFilter: 'genel' })}
+                  className="w-full sm:w-auto min-h-[48px] flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-black text-xs shadow-md shadow-teal-500/25 active:scale-95 transition-all"
                 >
                   <Play className="w-4 h-4 fill-slate-950" />
                   <span>🎯 Modül {activeModule} Testini Başlat</span>

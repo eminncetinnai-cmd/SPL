@@ -44,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-fintech-border bg-fintech-dark/95 backdrop-blur-md px-3 sm:px-6 py-2.5">
+    <header className="sticky top-0 z-40 w-full border-b border-fintech-border bg-fintech-dark/95 backdrop-blur-md px-3 sm:px-6 pt-[calc(0.625rem+env(safe-area-inset-top,0px))] pb-2.5">
       <div className="flex items-center justify-between gap-2">
         {/* Brand & Logo */}
         <div
@@ -179,28 +179,28 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
           <div className="grid grid-cols-2 gap-2 text-xs font-semibold">
             <button
               onClick={() => handleMobileNav('practice')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left cursor-pointer"
+              className="min-h-[44px] flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left cursor-pointer active:scale-95 transition-all"
             >
               <Award className="w-4 h-4 text-amber-500 shrink-0" />
               <span>Soru Çözümü</span>
             </button>
             <button
               onClick={() => handleMobileNav('study-notes')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
+              className="min-h-[44px] flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left active:scale-95 transition-all"
             >
               <Zap className="w-4 h-4 text-teal-500 shrink-0" />
               <span>Ders Notları</span>
             </button>
             <button
               onClick={() => handleMobileNav('bookmarks')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-amber-700 dark:text-amber-300 text-left"
+              className="min-h-[44px] flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-amber-700 dark:text-amber-300 text-left active:scale-95 transition-all"
             >
               <Star className="w-4 h-4 text-amber-500 shrink-0" />
               <span>Yıldızlılar ({bookmarkCount})</span>
             </button>
             <button
               onClick={() => handleMobileNav('settings')}
-              className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left"
+              className="min-h-[44px] flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-fintech-card border border-slate-200 dark:border-fintech-border text-slate-800 dark:text-slate-200 text-left active:scale-95 transition-all"
             >
               <Settings className="w-4 h-4 text-slate-500 shrink-0" />
               <span>Ayarlar & Sıfırla</span>

@@ -87,7 +87,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = React.memo(({
     >
       {/* Header Banner */}
       <div
-        className={`px-6 py-4 flex items-center justify-between border-b ${
+        className={`px-4 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between border-b ${
           isCorrect
             ? 'bg-emerald-50 border-emerald-200 text-emerald-950 dark:bg-emerald-950/40 dark:border-emerald-500/30 dark:text-emerald-300'
             : 'bg-rose-50 border-rose-200 text-rose-950 dark:bg-rose-950/40 dark:border-rose-500/30 dark:text-rose-300'
@@ -131,7 +131,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = React.memo(({
         {onNextQuestion && (
           <button
             onClick={onNextQuestion}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white font-bold text-xs shadow-sm active:scale-95 transition-all cursor-pointer"
+            className="min-h-[44px] flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white font-bold text-xs shadow-sm active:scale-95 transition-all cursor-pointer"
           >
             <span>{isLastQuestion ? 'Sonuçlar' : 'Sonraki'}</span>
             <ArrowRight className="w-4 h-4" />
@@ -142,7 +142,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = React.memo(({
       {/* Content Body */}
       <div
         onScroll={handleScroll}
-        className="p-6 sm:p-7 space-y-5 text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed"
+        className="p-4 sm:p-6 space-y-4 sm:space-y-5 text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed"
       >
         {/* Solution & Glossary Section */}
         {question.explanation && (() => {
@@ -223,7 +223,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = React.memo(({
           {onNextQuestion && (
             <button
               onClick={onNextQuestion}
-              className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl font-black text-xs shadow-md bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white active:scale-95 transition-all cursor-pointer"
+              className="w-full sm:w-auto min-h-[48px] flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl font-black text-xs shadow-md bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white active:scale-95 transition-all cursor-pointer"
             >
               <span>{isLastQuestion ? 'Testi Tamamla & Bilişsel Karneni Gör' : 'Sonraki Soruya Geç (Enter / →)'}</span>
               <ArrowRight className="w-4 h-4" />

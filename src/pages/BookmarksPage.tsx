@@ -74,7 +74,7 @@ export const BookmarksPage: React.FC<BookmarksPageProps> = ({ onNavigate }) => {
           {bookmarkedQuestions.length > 0 && (
             <button
               onClick={handleStartBookmarkQuiz}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-teal-500 hover:from-amber-400 hover:to-teal-400 text-slate-950 font-black text-xs shadow-md shadow-amber-500/20 active:scale-95 transition-all"
+              className="w-full sm:w-auto min-h-[44px] flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-teal-500 hover:from-amber-400 hover:to-teal-400 text-slate-950 font-black text-xs shadow-md shadow-amber-500/20 active:scale-95 transition-all cursor-pointer"
             >
               <Play className="w-4 h-4 fill-slate-950" />
               <span>Yıldızlı Sorulardan Test Çöz ({filtered.length})</span>

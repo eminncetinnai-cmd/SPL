@@ -115,7 +115,7 @@ export const App: React.FC = () => {
   // 100% Distraction-Free Pure Exam Cockpit (No Navbar, No Bottom Tabs, No Audio Bar, No Sidebar)
   if (isQuizActive) {
     return (
-      <div className="min-h-screen bg-slate-900 dark:bg-fintech-dark text-slate-100 flex flex-col font-sans selection:bg-teal-500/30 selection:text-teal-200">
+      <div className="min-h-screen bg-slate-900 dark:bg-fintech-dark text-slate-100 flex flex-col font-sans selection:bg-teal-500/30 selection:text-teal-200 pt-[calc(0.5rem+env(safe-area-inset-top,0px))] pb-[env(safe-area-inset-bottom,0px)] pl-[env(safe-area-inset-left,0px)] pr-[env(safe-area-inset-right,0px)]">
         <main className="flex-1 p-2 sm:p-4 lg:p-6 max-w-5xl mx-auto w-full">
           <Suspense
             fallback={
@@ -138,7 +138,7 @@ export const App: React.FC = () => {
       <div className="flex flex-1">
         <Sidebar currentPage={currentPage} onNavigate={handleNavigate} />
 
-        <main className="flex-1 p-3 sm:p-5 lg:p-7 max-w-7xl mx-auto w-full overflow-x-hidden flex flex-col justify-between">
+        <main className="flex-1 p-3 sm:p-5 lg:p-7 pb-28 md:pb-7 max-w-7xl mx-auto w-full overflow-x-hidden flex flex-col justify-between">
           <div className="flex-1">
             <Suspense
               fallback={

@@ -272,10 +272,10 @@ export const FormulaDrawer: React.FC<FormulaDrawerProps> = ({ isOpen, onClose })
         </div>
 
         {/* Footer */}
-        <div className="p-3 border-t border-slate-200 dark:border-fintech-border bg-slate-50 dark:bg-fintech-card/80 text-center">
+        <div className="p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom,0px))] border-t border-slate-200 dark:border-fintech-border bg-slate-50 dark:bg-fintech-card/80 text-center">
           <button
             onClick={onClose}
-            className="w-full py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs sm:text-sm shadow-xs transition-colors"
+            className="w-full min-h-[44px] flex items-center justify-center py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-white font-bold text-xs sm:text-sm shadow-xs active:scale-98 transition-all cursor-pointer"
           >
             Anladım, Soruya Geri Dön
           </button>

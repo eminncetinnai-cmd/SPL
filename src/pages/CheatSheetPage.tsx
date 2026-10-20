@@ -3253,7 +3253,7 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
           <p className="text-xs text-slate-600 dark:text-slate-400">249 altın hap bilgiyi PDF olarak saklayabilir veya çözülmemiş sorularla hemen pratik yapabilirsin.</p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex items-center gap-2.5 w-full lg:w-auto">
           <button
             onClick={() => handleDownloadPdf('all')}
             disabled={isGeneratingPdf}
@@ -3270,7 +3270,7 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
             <span>PDF Önizle / İndir</span>
           </button>
           <button
-            onClick={() => onNavigate('practice', { initialFilterMode: 'unseen' })}
+            onClick={() => onNavigate('practice', { filterMode: 'unseen' })}
             className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition-all shadow-sm cursor-pointer"
           >
             <Play className="w-3.5 h-3.5 fill-slate-950 text-slate-950" />
@@ -3280,7 +3280,7 @@ export const CheatSheetPage: React.FC<CheatSheetPageProps> = ({ onNavigate }) =>
             onClick={() => onNavigate('practice')}
             className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-700 text-white text-xs font-black shadow-md shadow-teal-700/20 transition-all cursor-pointer"
           >
-            <span className="text-white font-bold">Rastgele Test Başlat (935)</span>
+            <span className="text-white font-bold">Rastgele Test Başlat (1.135)</span>
           </button>
         </div>
       </div>

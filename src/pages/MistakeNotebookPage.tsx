@@ -97,10 +97,10 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
           </div>
 
           {activeMistakes.length > 0 && activeTab === 'active' && (
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3 w-full sm:w-auto">
               <button
                 onClick={() => exportMistakesToCSV(activeMistakes)}
-                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-fintech-card dark:hover:bg-fintech-cardHover text-slate-700 dark:text-slate-300 text-xs font-semibold border border-slate-200 dark:border-fintech-border shadow-sm transition-colors"
+                className="min-h-[44px] flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-50 hover:bg-slate-100 dark:bg-fintech-card dark:hover:bg-fintech-cardHover text-slate-700 dark:text-slate-300 text-xs font-semibold border border-slate-200 dark:border-fintech-border shadow-sm active:scale-98 transition-all cursor-pointer"
               >
                 <Download className="w-4 h-4 text-teal-600 dark:text-teal-400" />
                 <span>CSV İndir</span>
@@ -108,7 +108,7 @@ export const MistakeNotebookPage: React.FC<MistakeNotebookPageProps> = ({ onNavi
 
               <button
                 onClick={handleStartMistakeQuiz}
-                className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-400 hover:to-amber-400 text-slate-950 font-black text-xs shadow-md shadow-rose-500/20 active:scale-95 transition-all"
+                className="min-h-[44px] flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-400 hover:to-amber-400 text-slate-950 font-black text-xs shadow-md shadow-rose-500/20 active:scale-95 transition-all cursor-pointer"
               >
                 <Play className="w-4 h-4 fill-slate-950" />
                 <span>Yanlışlardan Test Başlat ({filteredMistakes.length})</span>
